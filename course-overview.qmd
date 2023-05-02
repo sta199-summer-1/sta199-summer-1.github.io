@@ -6,10 +6,7 @@ Intro to data science and statistical thinking. Learn to explore, visualize, and
 
 ## Class meetings
 
-| Meeting | Location                       | Time                     |
-|---------|--------------------------------|--------------------------|
+| Meeting | Location                       | Time                       |
+|---------|--------------------------------|----------------------------|
 | Lecture | Perkins LINK 087 (Classroom 3) | M, Tu & Th 12:30 - 2:35 pm |
-| Lab 01  | Perkins Link 087 (Classroom 3) | M & Th 3:30 - 4:45 am     |
-
-
-
+| Lab 01  | Perkins Link 087 (Classroom 3) | M & Th 3:30 - 4:45 am      |

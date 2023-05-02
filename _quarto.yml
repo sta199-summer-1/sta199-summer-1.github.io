@@ -18,10 +18,10 @@ website:
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023, Elijah Meyer"
-    background: "#735b1f" # Orange - Summer 2023
+    background: "#f7bd2a" # Orange - Summer 2023
 
   sidebar:
-    background: "#735b1f" # Pantone Amazon - Summer 2023
+    background: "#f7bd2a" # Orange - Summer 2023
     logo: "images/logo.png"
     pinned: true
     align: center
