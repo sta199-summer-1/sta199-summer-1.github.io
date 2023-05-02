@@ -1,675 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-01-A.html</loc>
-    <lastmod>2023-05-02T17:09:08.145Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-02-A.html</loc>
-    <lastmod>2023-05-02T17:09:11.771Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-03-A.html</loc>
-    <lastmod>2023-05-02T17:09:15.605Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-04-A.html</loc>
-    <lastmod>2023-05-02T17:09:19.624Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-05-A.html</loc>
-    <lastmod>2023-05-02T17:09:23.540Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-06-A.html</loc>
-    <lastmod>2023-05-02T17:09:27.664Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-07-A.html</loc>
-    <lastmod>2023-05-02T17:09:32.558Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-09-A.html</loc>
-    <lastmod>2023-05-02T17:09:36.310Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-10-A.html</loc>
-    <lastmod>2023-05-02T17:09:40.276Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-11-A.html</loc>
-    <lastmod>2023-05-02T17:09:44.481Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-12-A.html</loc>
-    <lastmod>2023-05-02T17:09:49.526Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-13-A.html</loc>
-    <lastmod>2023-05-02T17:09:55.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-14-A.html</loc>
-    <lastmod>2023-05-02T17:10:01.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-15-A.html</loc>
-    <lastmod>2023-05-02T17:10:06.484Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-16-A.html</loc>
-    <lastmod>2023-05-02T17:10:11.723Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-17-A.html</loc>
-    <lastmod>2023-05-02T17:10:16.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-18-A.html</loc>
-    <lastmod>2023-05-02T17:10:21.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-19-A.html</loc>
-    <lastmod>2023-05-02T17:10:27.036Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-20-A.html</loc>
-    <lastmod>2023-05-02T17:10:32.459Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-21-A.html</loc>
-    <lastmod>2023-05-02T17:10:37.968Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-22-A.html</loc>
-    <lastmod>2023-05-02T17:10:42.991Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/ae-23-A.html</loc>
-    <lastmod>2023-05-02T17:10:47.918Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/debuggin-A.html</loc>
-    <lastmod>2023-05-02T17:10:51.796Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/exam1-review-A.html</loc>
-    <lastmod>2023-05-02T17:10:55.344Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/ae-sa/exam2-review-A.html</loc>
-    <lastmod>2023-05-02T17:11:00.790Z</lastmod>
-  </url>
-  <url>
     <loc>https://sta199-summer-1.github.io/computing-access.html</loc>
-    <lastmod>2023-05-02T17:11:01.308Z</lastmod>
+    <lastmod>2023-05-02T19:27:18.132Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/computing-cheatsheets.html</loc>
-    <lastmod>2023-05-02T17:11:01.854Z</lastmod>
+    <lastmod>2023-05-02T19:27:18.531Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/computing-troubleshooting.html</loc>
-    <lastmod>2023-05-02T17:11:02.485Z</lastmod>
+    <lastmod>2023-05-02T19:27:18.894Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/course-faq.html</loc>
-    <lastmod>2023-05-02T17:11:03.041Z</lastmod>
+    <lastmod>2023-05-02T19:27:19.283Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/course-links.html</loc>
-    <lastmod>2023-05-02T17:11:03.480Z</lastmod>
+    <lastmod>2023-05-02T19:27:19.733Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/course-overview.html</loc>
-    <lastmod>2023-05-02T17:11:03.883Z</lastmod>
+    <lastmod>2023-05-02T19:27:20.124Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/course-support.html</loc>
-    <lastmod>2023-05-02T17:11:04.364Z</lastmod>
+    <lastmod>2023-05-02T19:27:20.624Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/course-syllabus.html</loc>
-    <lastmod>2023-05-02T17:11:05.038Z</lastmod>
+    <lastmod>2023-05-02T19:27:21.190Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/course-team.html</loc>
-    <lastmod>2023-05-02T17:11:05.411Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/hw/hw-1.html</loc>
-    <lastmod>2023-05-02T17:11:08.773Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/hw/hw-2.html</loc>
-    <lastmod>2023-05-02T17:11:11.959Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/hw/hw-3.html</loc>
-    <lastmod>2023-05-02T17:11:16.611Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/hw/hw-4.html</loc>
-    <lastmod>2023-05-02T17:11:20.194Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/hw/hw-5.html</loc>
-    <lastmod>2023-05-02T17:11:24.675Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/hw/hw-6.html</loc>
-    <lastmod>2023-05-02T17:11:25.253Z</lastmod>
+    <lastmod>2023-05-02T19:27:21.585Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/index.html</loc>
-    <lastmod>2023-05-02T17:11:31.295Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-0.html</loc>
-    <lastmod>2023-05-02T17:11:37.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-1.html</loc>
-    <lastmod>2023-05-02T17:11:40.257Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-2.html</loc>
-    <lastmod>2023-05-02T17:11:43.890Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-3.html</loc>
-    <lastmod>2023-05-02T17:11:47.540Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-4.html</loc>
-    <lastmod>2023-05-02T17:11:50.935Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-5.html</loc>
-    <lastmod>2023-05-02T17:11:55.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-7.html</loc>
-    <lastmod>2023-05-02T17:11:59.850Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-9-meyer.html</loc>
-    <lastmod>2023-05-02T17:12:03.905Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/labs/lab-project-peer-review.html</loc>
-    <lastmod>2023-05-02T17:12:05.007Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/practice/practice1.html</loc>
-    <lastmod>2023-05-02T17:12:07.526Z</lastmod>
+    <lastmod>2023-05-02T19:27:27.401Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/01-18.html</loc>
-    <lastmod>2023-05-02T17:12:08.031Z</lastmod>
+    <lastmod>2023-05-02T19:27:27.968Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/01-20.html</loc>
-    <lastmod>2023-05-02T17:12:08.552Z</lastmod>
+    <lastmod>2023-05-02T19:27:28.557Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/01-24.html</loc>
-    <lastmod>2023-05-02T17:12:09.130Z</lastmod>
+    <lastmod>2023-05-02T19:27:29.120Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-05.html</loc>
-    <lastmod>2023-05-02T17:12:09.688Z</lastmod>
+    <lastmod>2023-05-02T19:27:29.721Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-07.html</loc>
-    <lastmod>2023-05-02T17:12:10.132Z</lastmod>
+    <lastmod>2023-05-02T19:27:30.259Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-08.html</loc>
-    <lastmod>2023-05-02T17:12:10.562Z</lastmod>
+    <lastmod>2023-05-02T19:27:30.666Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-19.html</loc>
-    <lastmod>2023-05-02T17:12:10.967Z</lastmod>
+    <lastmod>2023-05-02T19:27:31.140Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-21.html</loc>
-    <lastmod>2023-05-02T17:12:11.421Z</lastmod>
+    <lastmod>2023-05-02T19:27:31.560Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-22.html</loc>
-    <lastmod>2023-05-02T17:12:11.855Z</lastmod>
+    <lastmod>2023-05-02T19:27:31.986Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-26.html</loc>
-    <lastmod>2023-05-02T17:12:12.268Z</lastmod>
+    <lastmod>2023-05-02T19:27:32.367Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-28.html</loc>
-    <lastmod>2023-05-02T17:12:12.684Z</lastmod>
+    <lastmod>2023-05-02T19:27:32.735Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/09-29.html</loc>
-    <lastmod>2023-05-02T17:12:13.114Z</lastmod>
+    <lastmod>2023-05-02T19:27:33.157Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/1-25.html</loc>
-    <lastmod>2023-05-02T17:12:13.552Z</lastmod>
+    <lastmod>2023-05-02T19:27:33.556Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/1-27.html</loc>
-    <lastmod>2023-05-02T17:12:13.967Z</lastmod>
+    <lastmod>2023-05-02T19:27:33.964Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/1-31.html</loc>
-    <lastmod>2023-05-02T17:12:14.355Z</lastmod>
+    <lastmod>2023-05-02T19:27:34.362Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-03-p2.html</loc>
-    <lastmod>2023-05-02T17:12:14.745Z</lastmod>
+    <lastmod>2023-05-02T19:27:34.731Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-03.html</loc>
-    <lastmod>2023-05-02T17:12:15.170Z</lastmod>
+    <lastmod>2023-05-02T19:27:35.129Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-05.html</loc>
-    <lastmod>2023-05-02T17:12:15.559Z</lastmod>
+    <lastmod>2023-05-02T19:27:35.505Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-12.html</loc>
-    <lastmod>2023-05-02T17:12:15.955Z</lastmod>
+    <lastmod>2023-05-02T19:27:35.910Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-17.html</loc>
-    <lastmod>2023-05-02T17:12:16.399Z</lastmod>
+    <lastmod>2023-05-02T19:27:36.325Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-19.html</loc>
-    <lastmod>2023-05-02T17:12:16.772Z</lastmod>
+    <lastmod>2023-05-02T19:27:36.729Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-20.html</loc>
-    <lastmod>2023-05-02T17:12:17.175Z</lastmod>
+    <lastmod>2023-05-02T19:27:37.121Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-24.html</loc>
-    <lastmod>2023-05-02T17:12:17.565Z</lastmod>
+    <lastmod>2023-05-02T19:27:37.531Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-26.html</loc>
-    <lastmod>2023-05-02T17:12:17.933Z</lastmod>
+    <lastmod>2023-05-02T19:27:37.921Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/10-31.html</loc>
-    <lastmod>2023-05-02T17:12:18.359Z</lastmod>
+    <lastmod>2023-05-02T19:27:38.319Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/11-02.html</loc>
-    <lastmod>2023-05-02T17:12:18.771Z</lastmod>
+    <lastmod>2023-05-02T19:27:38.689Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/11-07.html</loc>
-    <lastmod>2023-05-02T17:12:19.157Z</lastmod>
+    <lastmod>2023-05-02T19:27:39.082Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/11-09.html</loc>
-    <lastmod>2023-05-02T17:12:19.532Z</lastmod>
+    <lastmod>2023-05-02T19:27:39.493Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/11-28.html</loc>
-    <lastmod>2023-05-02T17:12:19.932Z</lastmod>
+    <lastmod>2023-05-02T19:27:39.859Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/11-30.html</loc>
-    <lastmod>2023-05-02T17:12:20.300Z</lastmod>
+    <lastmod>2023-05-02T19:27:40.306Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-1.html</loc>
-    <lastmod>2023-05-02T17:12:20.671Z</lastmod>
+    <lastmod>2023-05-02T19:27:40.689Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-10.html</loc>
-    <lastmod>2023-05-02T17:12:21.042Z</lastmod>
+    <lastmod>2023-05-02T19:27:41.071Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-15.html</loc>
-    <lastmod>2023-05-02T17:12:21.408Z</lastmod>
+    <lastmod>2023-05-02T19:27:41.438Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-17.html</loc>
-    <lastmod>2023-05-02T17:12:21.827Z</lastmod>
+    <lastmod>2023-05-02T19:27:41.818Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-22.html</loc>
-    <lastmod>2023-05-02T17:12:22.219Z</lastmod>
+    <lastmod>2023-05-02T19:27:42.178Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-24.html</loc>
-    <lastmod>2023-05-02T17:12:22.612Z</lastmod>
+    <lastmod>2023-05-02T19:27:42.567Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-3.html</loc>
-    <lastmod>2023-05-02T17:12:23.039Z</lastmod>
+    <lastmod>2023-05-02T19:27:42.980Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/2-7.html</loc>
-    <lastmod>2023-05-02T17:12:23.413Z</lastmod>
+    <lastmod>2023-05-02T19:27:43.375Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-1.html</loc>
-    <lastmod>2023-05-02T17:12:23.796Z</lastmod>
+    <lastmod>2023-05-02T19:27:43.771Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-10.html</loc>
-    <lastmod>2023-05-02T17:12:24.148Z</lastmod>
+    <lastmod>2023-05-02T19:27:44.165Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-22.html</loc>
-    <lastmod>2023-05-02T17:12:24.535Z</lastmod>
+    <lastmod>2023-05-02T19:27:44.552Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-24.html</loc>
-    <lastmod>2023-05-02T17:12:24.922Z</lastmod>
+    <lastmod>2023-05-02T19:27:44.949Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-29.html</loc>
-    <lastmod>2023-05-02T17:12:25.288Z</lastmod>
+    <lastmod>2023-05-02T19:27:45.320Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-3.html</loc>
-    <lastmod>2023-05-02T17:12:25.674Z</lastmod>
+    <lastmod>2023-05-02T19:27:45.719Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-31.html</loc>
-    <lastmod>2023-05-02T17:12:26.041Z</lastmod>
+    <lastmod>2023-05-02T19:27:46.079Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/3-8.html</loc>
-    <lastmod>2023-05-02T17:12:26.437Z</lastmod>
+    <lastmod>2023-05-02T19:27:46.460Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/4-12.html</loc>
-    <lastmod>2023-05-02T17:12:26.808Z</lastmod>
+    <lastmod>2023-05-02T19:27:46.813Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/4-19.html</loc>
-    <lastmod>2023-05-02T17:12:27.235Z</lastmod>
+    <lastmod>2023-05-02T19:27:47.211Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/9-12.html</loc>
-    <lastmod>2023-05-02T17:12:27.603Z</lastmod>
+    <lastmod>2023-05-02T19:27:47.606Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/9-14.html</loc>
-    <lastmod>2023-05-02T17:12:27.983Z</lastmod>
+    <lastmod>2023-05-02T19:27:47.990Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/9-15.html</loc>
-    <lastmod>2023-05-02T17:12:28.365Z</lastmod>
+    <lastmod>2023-05-02T19:27:48.363Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/hypo-II.html</loc>
-    <lastmod>2023-05-02T17:12:28.729Z</lastmod>
+    <lastmod>2023-05-02T19:27:48.723Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/hypo-III.html</loc>
-    <lastmod>2023-05-02T17:12:29.092Z</lastmod>
+    <lastmod>2023-05-02T19:27:49.103Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/prepare/sample.html</loc>
-    <lastmod>2023-05-02T17:12:29.480Z</lastmod>
+    <lastmod>2023-05-02T19:27:49.474Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/project-description-post-later.html</loc>
-    <lastmod>2023-05-02T17:12:30.183Z</lastmod>
+    <lastmod>2023-05-02T19:27:50.389Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/project-description-s23.html</loc>
-    <lastmod>2023-05-02T17:12:30.945Z</lastmod>
+    <lastmod>2023-05-02T19:27:51.206Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/project-description.html</loc>
-    <lastmod>2023-05-02T17:12:31.366Z</lastmod>
+    <lastmod>2023-05-02T19:27:51.576Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/project-tips-resources.html</loc>
-    <lastmod>2023-05-02T17:12:31.734Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/01-welcome-199.html</loc>
-    <lastmod>2023-05-02T17:12:32.312Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/02-Meet-the-toolkit.html</loc>
-    <lastmod>2023-05-02T17:12:32.731Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/03-Grammer-of-Graphics.html</loc>
-    <lastmod>2023-05-02T17:12:33.384Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/04-Visualizing-various-types-of-data.html</loc>
-    <lastmod>2023-05-02T17:12:33.805Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/05-grammar-of-data-wrangling-2.html</loc>
-    <lastmod>2023-05-02T17:12:34.450Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/05-grammar-of-data-wrangling.html</loc>
-    <lastmod>2023-05-02T17:12:34.866Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/06-working-with-multiple-data-frames.html</loc>
-    <lastmod>2023-05-02T17:12:35.438Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/07-tidying-data.html</loc>
-    <lastmod>2023-05-02T17:12:35.841Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/08-debugging.html</loc>
-    <lastmod>2023-05-02T17:12:36.235Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/08-tidying-data.html</loc>
-    <lastmod>2023-05-02T17:12:36.651Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/09-data-import.html</loc>
-    <lastmod>2023-05-02T17:12:37.073Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/10-exam-review.html</loc>
-    <lastmod>2023-05-02T17:12:37.433Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/10-probability.html</loc>
-    <lastmod>2023-05-02T17:12:37.805Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/11-data-ethics.html</loc>
-    <lastmod>2023-05-02T17:12:38.265Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/11-prob-2.html</loc>
-    <lastmod>2023-05-02T17:12:38.630Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/11-slr-23.html</loc>
-    <lastmod>2023-05-02T17:12:38.979Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/12-cat-mlr.html</loc>
-    <lastmod>2023-05-02T17:12:39.371Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/12-data-privacy.html</loc>
-    <lastmod>2023-05-02T17:12:39.814Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/13-mrl-2.html</loc>
-    <lastmod>2023-05-02T17:12:40.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/13-web-scraping.html</loc>
-    <lastmod>2023-05-02T17:12:40.682Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/14-functions-iteration.html</loc>
-    <lastmod>2023-05-02T17:12:41.022Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/15-model-selection.html</loc>
-    <lastmod>2023-05-02T17:12:41.414Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/15-models.html</loc>
-    <lastmod>2023-05-02T17:12:41.782Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/16-logistic-s23.html</loc>
-    <lastmod>2023-05-02T17:12:42.259Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/16-single-pred.html</loc>
-    <lastmod>2023-05-02T17:12:42.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/17-multiple-pred.html</loc>
-    <lastmod>2023-05-02T17:12:42.939Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/17-prediction.html</loc>
-    <lastmod>2023-05-02T17:12:43.326Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/18-mlr.2.html</loc>
-    <lastmod>2023-05-02T17:12:43.671Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/19-logistic.html</loc>
-    <lastmod>2023-05-02T17:12:44.091Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/20-bootstrap-s23.html</loc>
-    <lastmod>2023-05-02T17:12:44.440Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/20-bootstrap.html</loc>
-    <lastmod>2023-05-02T17:12:44.793Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/21-Testing.html</loc>
-    <lastmod>2023-05-02T17:12:45.130Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/22-MoreTesting.html</loc>
-    <lastmod>2023-05-02T17:12:45.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/23-communication.html</loc>
-    <lastmod>2023-05-02T17:12:45.839Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/24-customizing.html</loc>
-    <lastmod>2023-05-02T17:12:46.189Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/26-lookingforward.html</loc>
-    <lastmod>2023-05-02T17:12:46.554Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/27-shiny.html</loc>
-    <lastmod>2023-05-02T17:12:46.903Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/4-22.html</loc>
-    <lastmod>2023-05-02T17:12:47.249Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/boot-clt.html</loc>
-    <lastmod>2023-05-02T17:12:47.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/CI-hypo-slides.html</loc>
-    <lastmod>2023-05-02T17:12:48.001Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/exam-2-review-23.html</loc>
-    <lastmod>2023-05-02T17:12:48.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/exam2-review.html</loc>
-    <lastmod>2023-05-02T17:12:48.973Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/hypo-I.html</loc>
-    <lastmod>2023-05-02T17:12:49.341Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/hypo-II.html</loc>
-    <lastmod>2023-05-02T17:12:49.740Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/hypo-III.html</loc>
-    <lastmod>2023-05-02T17:12:50.089Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/hypo-IV.html</loc>
-    <lastmod>2023-05-02T17:12:50.434Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-0-slides.html</loc>
-    <lastmod>2023-05-02T17:12:50.845Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-1-lecture.html</loc>
-    <lastmod>2023-05-02T17:12:51.172Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-2.html</loc>
-    <lastmod>2023-05-02T17:12:51.519Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-3-slides.html</loc>
-    <lastmod>2023-05-02T17:12:51.855Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-4.html</loc>
-    <lastmod>2023-05-02T17:12:52.268Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-5.html</loc>
-    <lastmod>2023-05-02T17:12:52.620Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-6-proposal.html</loc>
-    <lastmod>2023-05-02T17:12:52.991Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-7.html</loc>
-    <lastmod>2023-05-02T17:12:53.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/lab-9.html</loc>
-    <lastmod>2023-05-02T17:12:53.689Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/LabSurveySlide.html</loc>
-    <lastmod>2023-05-02T17:12:54.022Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/project-viz.html</loc>
-    <lastmod>2023-05-02T17:12:54.463Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta199-summer-1.github.io/slides/project-work-day-2.html</loc>
-    <lastmod>2023-05-02T17:12:54.817Z</lastmod>
+    <lastmod>2023-05-02T19:27:51.957Z</lastmod>
   </url>
   <url>
     <loc>https://sta199-summer-1.github.io/workflow_formatting.html</loc>
-    <lastmod>2023-05-02T17:12:59.129Z</lastmod>
+    <lastmod>2023-05-02T19:27:57.065Z</lastmod>
   </url>
 </urlset>
