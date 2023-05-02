@@ -1,9 +1,0 @@
----
-title: "Prepare"
-subtitle: "Due: Friday March 31, 2023"
-categories: "prepare"
----
-
--   Watch [Hypothesis testing](https://warpwire.duke.edu/w/YQ4GAA/)
-
--   Read (optional): [chapter 11: hypothesis testing with randomization](https://openintro-ims.netlify.app/index.html)

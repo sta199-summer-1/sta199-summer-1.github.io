@@ -1,8 +1,0 @@
----
-title: "Prepare"
-subtitle: "Due: Friday March 10, 2023"
-categories: "prepare"
----
-
--   No required prepare.
--   Read (optional) review: [Chapter 10 Applications: Model](https://openintro-ims.netlify.app/model-application.html)

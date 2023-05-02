@@ -1,8 +1,0 @@
----
-title: "Prepare"
-subtitle: "Due: Wednesday March 22, 2023"
-categories: "prepare"
----
-
-- Watch [Bootstrapping](https://www.youtube.com/watch?v=bdqpI3iVOso)
-- Read (optional): [section 12](https://openintro-ims.netlify.app/foundations-bootstrapping.html)

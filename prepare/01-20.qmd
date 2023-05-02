@@ -1,9 +1,0 @@
----
-title: "Prepare"
-subtitle: "Due: January 20"
-categories: "prepare"
----
-
--   Read:
-
-    -   R4DS: [Chp 2 - Data visualization - Sections 2.1 and 2.4](https://r4ds.hadley.nz/data-visualize.html)

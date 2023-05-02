@@ -1,7 +1,0 @@
----
-title: "Prepare"
-subtitle: "Due: Wednesday April 7, 2023"
-categories: "prepare"
----
-
--   Read: [chapter 16.1, 17.1](https://openintro-ims.netlify.app/index.html)
