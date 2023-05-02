@@ -1,0 +1,25 @@
+---
+title: "Computing troubleshooting"
+---
+
+If you're having difficulty launching an RStudio session from your reserved container, go to [status.oit.duke.edu](https://status.oit.duke.edu/) and scroll down to **Teaching and Learning Tools**. Under this heading you'll find an entry called *Container Manager (CMGR Coursework Containers)*.
+
+-   If the status shows something other than `Operational`, this means there is a known incident with the containers. Check back later to see if it's been resolved. If there's a deadline coming up soon, post on the course forum to let us know that there's an issue. We can look into how quickly it might get resolved and decide on what to do about the deadline accordingly. Note: We don't anticipate this to happen regularly, the systems are Operational a huge majority of the time!
+
+-   If the status shows `Operational`, this means the system is expected to be working. Check your internet connection, if need be, restart your computer to ensure a fresh new connection. If your issue persists, post on the course forum with details on what you've tried and the errors you see (including verbatim errors and/or screenshots).
+
+## Tips for not rendering
+
+These are questions to ask yourself / check if you are having trouble rendering your document.
+
+-- Are my code chunk labels weird? To create a code chunk label, you need the following `#| label:` at the start of your code chunk. If you have spaces in the name you put, or if you are using special characters, you may not be able to render your document. Note: if you want to make a comment, use `#` only. 
+
+-- Does your code run? If you have errors in your code, you will also have errors when rendering the document.
+
+-- Did you put View() in a code chunk? We don't use View often, but we need to be aware that any function that calls for an external viewer will break the render. 
+
+
+## Tips for not seeing my changes in Git
+
+-- Are you in the right project? You can see the project you are working in in the top right corner of your screen. This MUST be the project that you cloned for the exam / assignment / lab. Do not use the files tab to go search for a file outside of your project repo. 
+

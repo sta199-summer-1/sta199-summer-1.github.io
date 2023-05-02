@@ -1,0 +1,10 @@
+---
+title: "Prepare"
+subtitle: "Due: October 20, 2022"
+categories: "prepare"
+---
+
+-   📖 Read:
+    -   IMS: [Chp 2 - Study Design](https://openintro-ims.netlify.app/data-design.html.)
+-   📖 Read (Optional / Recommended):
+    -   IS: [Chp 23 - Probability (Section 23.1 - 23.2)](https://mtstateintrostats.github.io/IntroStatTextbook/probability.html) ::: callout-note Videos use the "old school" pipe (`%>%`) but we'll be using the newer (`|>`) pipe operator in class. :::

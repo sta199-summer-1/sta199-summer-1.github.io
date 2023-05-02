@@ -1,0 +1,180 @@
+---
+title: "Suggested Answers: CLT"
+format: html
+editor: visual
+---
+
+```{r}
+#| label: packages
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(tidymodels)
+library(palmerpenguins)
+
+```
+
+## Central Limit Theorem
+
+To start this activity, we are going to demonstrate what the CLT is all about.
+
+Below, we are going to generate a *population distribution*. This is not observed in real life. We are simply pretending we know this for demonstration purposes.
+
+```{r}
+
+rs_pop <- tibble(x = rbeta(100000, 1, 5) * 100)
+
+
+rs_pop |>
+  ggplot(
+    aes(x = x)) +
+  geom_density(fill = "blue") 
+  
+
+```
+
+We are now going to draw samples from this population distribution, take the mean and repeat this process!
+
+Below, draw one sample.
+
+```{r}
+
+set.seed(2)
+
+samp_2 <- rs_pop |>
+  sample_n(size = 50) |>
+  summarize(x_bar = mean(x))
+
+samp_2
+
+```
+
+To make a distribution of sample means.... we need to do this process over and over and over again. Let's do this below.
+
+```{r}
+set.seed(333) 
+
+sampling <- rs_pop |>
+  rep_sample_n(size = 50, reps = 5000) |>
+  group_by(replicate) |>
+  summarize(xbar = mean(x))
+```
+
+Now, create a histogram of the sample means below. But, before you do.... please answer the following question:
+
+-- Do you expect this distribution to be normally distributed or not? Justify your answer?
+
+**Yes! We meet the sample size requirement. n greater than 30**
+
+```{r}
+
+sampling |> 
+  ggplot(
+    aes(x = xbar)
+  ) + 
+  geom_histogram()
+
+```
+
+We know that the mean of our sampling distribution should be about the same as the mean of our population distribution. Check this below:
+
+```{r}
+
+sampling |>
+  summarize(m = mean(xbar))
+
+rs_pop |>
+  summarize(m = mean(x))
+
+```
+
+**Takeaway** And we can use this to create confidence intervals for our population parameter of interest (much like we can with bootstrap methods)
+
+## Small Sample Size
+
+Now, let's change our sample size to 3, violating as assumption of the CLT, and see how it impacts our sampling distribution.
+
+```{r}
+set.seed(333) 
+
+sampling <- rs_pop |>
+  rep_sample_n(size = 3, reps = 5000) |>
+  group_by(replicate) |>
+  summarize(xbar = mean(x))
+```
+
+Again, create a histogram of the sample means and comment on the shape of the distribution below.
+
+```{r}
+
+sampling |>
+  ggplot(
+    aes(x = xbar)
+  ) + 
+  geom_histogram()
+
+```
+
+**The histogram is skewed right**
+
+## Central Limit Theorem vs Bootstrapping
+
+Now, we will use each method to calculate 95% confidence intervals for true mean flipper length of penguins using each method.
+
+### Bootstrap Confidence Interval
+
+```{r}
+
+penguins2 <- penguins |>
+  filter(species !="Gentoo")
+
+boot_df <- penguins2 |>
+  specify(response = flipper_length_mm , explanatory = species) |>
+  generate(reps = 20000, type = "bootstrap") |>
+  calculate(stat = "diff in means")
+
+```
+
+Now, let's use `boot_df`to create our 95% confidence interval.
+
+```{r}
+
+boot_df |> 
+  summarize(lower = quantile(stat , 0.025),
+            upper = quantile(stat , 0.975))
+
+```
+
+Interpret your 95% confidence interval in the context of the problem below:
+
+We are 95% confident that the true mean flipper length for penguins is between 199 and 202 mm.
+
+### CLT
+
+Are we justified to use CLT to create a 95% confidence interval? Why or why not?
+
+Independence - We will assume this is a random sample of all penguins
+
+Sample Size - 344 greater than 30
+
+Fill in the following code to calculate a 95% CI using the CLT
+
+```{r}
+penguins |> 
+  summarize(m = mean(flipper_length_mm , na.rm = T))
+
+
+est_mu <- 201
+est_sigma <- sd(penguins$flipper_length_mm , na.rm = T) / sqrt(344)
+
+qnorm(c(0.025, 0.975), est_mu, est_sigma)
+```
+
+Is the CI from CLT the same or different than the one using bootstrap methods?
+
+**The Same**
+
+# BUT
+
+These were only roughly the same because of a large sample size. With a small sample size, we need to use a distribution different from *Normal*. See AE-19!

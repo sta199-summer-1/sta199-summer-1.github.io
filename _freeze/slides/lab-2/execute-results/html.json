@@ -1,0 +1,18 @@
+{
+  "hash": "0d005103e5701cfd85cbce66adfbd7de",
+  "result": {
+    "markdown": "---\ntitle: \"Lab-2: Data wrangling\"\nsubtitle: \"Lab-Lecture\"\ndate: \"January 31, 2023\"\nformat: revealjs\n---\n\n\n## Checklist\n\n-- Go to the course [GitHub org](https://github.com/sta199-s23-2) and find your `lab-02` (repo name will be suffixed with your GitHub name).\n\n-- Clone the repo in your container, open the Quarto document in the repo\n\n## Announcements\n\n-- HW-1 due tonight (11:59) - Gradescope\n\n-- Labs due Fri (11:59) - Gradescope\n\n-- Do not forget to select pages!!\n\n## Inline text Demo\n\n-- How to seemlessly add code output to bodies of text\n\n## Example\n\n-- The mean mpg for the `mtcars` data set is 20.090625\n\n-- In the rendered document, it will display the output from the code you've written inline. \n\n## Common Mistakes \n\n-- Forgetting the tick marks \n\n-- Forgetting the r\n\n# Check your document to make sure the code produces what you think\n\n# group_by \n\n## group_by \n\n-- group_by() takes an existing tbl and converts it into a grouped tbl where operations are performed \"by group\"\n\n-- often used with `summarize()`\n\n## group_by \n\n![](images/group_by.png){fig-align=\"\\\"center\"}\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\r\n<script>\r\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\r\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\r\n  // slide changes (different for each slide format).\r\n  (function () {\r\n    function fireSlideChanged(previousSlide, currentSlide) {\r\n\r\n      // dispatch for htmlwidgets\r\n      const event = window.document.createEvent(\"Event\");\r\n      event.initEvent(\"slideenter\", true, true);\r\n      window.document.dispatchEvent(event);\r\n\r\n      // dispatch for shiny\r\n      if (window.jQuery) {\r\n        if (previousSlide) {\r\n          window.jQuery(previousSlide).trigger(\"hidden\");\r\n        }\r\n        if (currentSlide) {\r\n          window.jQuery(currentSlide).trigger(\"shown\");\r\n        }\r\n      }\r\n    }\r\n\r\n    // hookup for reveal\r\n    if (window.Reveal) {\r\n      window.Reveal.addEventListener(\"slidechanged\", function(event) {\r\n        fireSlideChanged(event.previousSlide, event.currentSlide);\r\n      });\r\n    }\r\n\r\n    // hookup for slidy\r\n    if (window.w3c_slidy) {\r\n      window.w3c_slidy.add_observer(function (slide_num) {\r\n        // slide_num starts at position 1\r\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\r\n      });\r\n    }\r\n\r\n  })();\r\n</script>\r\n\r\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

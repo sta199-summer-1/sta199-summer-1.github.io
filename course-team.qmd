@@ -1,0 +1,32 @@
+---
+title: "Teaching team"
+---
+
+## Instructor
+
+![](images/team/elijah.jpeg){width="150" height="180" style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Elijah Meyer"}
+
+**Dr. Elijah Meyer** - Hello! I'm very excited to work with you all this semester. I've earned a Master's degree in statistics and a Ph.D. in statistics with a focus in education from Montana State University. I have taught at STA199 at Duke University during the F22 and S23 semesters. My early research is in sports statistics, with an emphasis on spatial data visualizations to enhance sports strategy. My Ph.D. work is in how to best support graduate student instructors and early career teachers to use active learning in their classrooms. Currently, my research focus is around creating a dynamic interactive shiny application in R to better students' understanding of statistics and data science. Other endeavors include creating an online data science course Coursera.
+
+Prior to my time at Duke, I've taught multiple sections of Introductory and Intermediate Statistics at Montana State, developed their Intermediate Statistics online course, and helped integrate R into the Introductory Statistics curricula. I prioritize **community**, **communication**, and **respect** in my classroom. I want to provide a space where we can freely talk about the material, embrace mistakes, and learn together throughout the semester.
+
+When I'm not in the books, I enjoy playing disc golf, tennis, basketball, and anything else that gets me outside and active. I'm looking forward to meeting you all and having a great semester!
+
++------------------+--------------------------------------------------------------------------------+
+| Office hours     | Location                                                                       |
++==================+================================================================================+
+| TBD              | Old Chemistry Building 208 / [Zoom](https://bit.ly/3QZ8JAL) (Password: 5MYp7A) |
++------------------+--------------------------------------------------------------------------------+
+
+## Lab Group Information
+
+More coming later in the semester!
+
+## Teaching assistants
+
++-------------------+----------------+---------------------------------------------------------+----------------+
+| Name              | Role           | Lab section                                             | Office hours   |
++===================+================+=========================================================+================+
+| TBD <br>\         | Lab Leader     | Tu & Th 3:30PM - 4:45PM: Perkins LINK 087 (Classroom 3) | TBD <br> Where |
+| (email)           |                |                                                         |                |
++-------------------+----------------+---------------------------------------------------------+----------------+

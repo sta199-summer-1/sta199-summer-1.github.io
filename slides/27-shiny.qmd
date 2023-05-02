@@ -1,0 +1,96 @@
+---
+title: "R-Shiny Interactive Plots"
+subtitle: ""
+date: "April 26th, 2023"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `shiny`
+
+
+## Announcements
+
+-- Project Final Report Due Friday at 11:59pm ET.
+
+--- You will lose access to your repo soon after 
+
+-- Homework 6 is due Friday at 11:59pm ET.
+
+-- Peer Eval 3 due Sunday (4-30)
+
+## To-Dos (5-7 minutes)
+
+-- For Evaluations
+
+-- https://shiny.rstudio.com/gallery/
+
+## Goals
+
+-- Intro to Shiny
+
+## What and Why Shiny?
+
+-- Shiny is an R package that makes it easy to build interactive web apps straight from R
+
+-- Shiny combines the computational power of R with the interactivity of the modern web
+
+-- https://christianstratton.shinyapps.io/batapp/?_ga=2.176377317.1341335816.1666368887-1922592585.1666368887
+
+
+# shiny
+
+## 
+
+![](images/shinydemo.png){fig-align="center"}
+
+## moives
+
+![](images/shiny/slide1.png){fig-align="center"}
+
+## 
+
+![](images/shiny/slide2.png){fig-align="center"}
+
+## 
+
+![](images/shiny/slide3.png){fig-align="center"}
+
+## 
+
+![](images/shiny/slide4.png){fig-align="center"}
+
+## 
+
+![](images/shiny/slide5.png){fig-align="center"}
+
+## 
+
+![](images/shiny/slide6.png){fig-align="center"}
+
+## 
+
+![](images/shiny/slide7.png){fig-align="center"}
+
+## 
+
+![](images/shiny/slide8.png){fig-align="center"}
+
+## 
+
+![](images/shinydemo2.png){fig-align="center"}
+
+## 
+
+![](images/shinydemo3.png){fig-align="center"}
+
+## 
+
+![](images/shinydemo4.png){fig-align="center"}
+
+## 
+
+![](images/shinydemo5.png){fig-align="center"}
+
+# Thank you!

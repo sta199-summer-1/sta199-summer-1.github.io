@@ -1,0 +1,170 @@
+---
+title: "AE 07: Debugging"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+In this activity, we will go over how to identify and fix common coding errors. This demonstration will use the `mtcars` data set. In each of these code chunks, you will either need to add or alter code in order to get it running. Please take notes and treat this AE as a "common errors debugging sheet" to use in the future. There will only be one error per code chunk.
+
+1.  First, let's make a quick exploratory plot to assess these data.
+
+```{r}
+#| label: plot-1
+
+library(tidyverse)
+
+mtcars |> 
+  ggplot(
+    aes(x = mpg, y = wt)
+  ) + 
+  geom_point()
+```
+
+**Takeaway** - need to library packages
+
+2.  
+
+```{r}
+#| label: plot-2
+
+mtcars |>
+  ggplot(
+    aes(x = mpg, y = gear)
+  ) + 
+  geom_point()
+```
+
+**Takeaway** - object must be defined. Watch for mispellings 
+
+```{r}
+#|label: plot-3
+#|eval: false 
+
+mtcars |>
+  ggplot(
+    aes(x = mpg, y = wt)
+  ) + 
+  geom_point()
+```
+
+**Takeaway** - match up ()s
+
+```{r}
+#|label: plot-4
+#|eval: false
+
+mtcars |>
+  ggplot(
+    aes(x = mpg)
+  ) + 
+  geom_bar()
+```
+
+**Takeaway** - can't have x and y
+
+```{r}
+#|label: plot-5
+#|eval: false
+
+mtcars.new <- mtcars |>
+  filter(mpg > 17)
+
+mtcars.new |>
+  ggplot(
+    aes(x = mpg, y = wt)
+  ) + 
+  geom_point()
+  
+
+```
+
+**Takeaway** - must define new data set
+
+```{r}
+#|label: plot-6
+#|eval: false
+
+
+mtcars |>
+  ggplot(
+    aes(x = mpg, y = wt)
+  ) + 
+  geom_point()
+  
+
+```
+
+**Takeaway** - don't have pipe on own line
+
+```{r}
+#| label: plot-7
+
+p <- mtcars |>
+  mutate(cyl = factor(cyl)) |>
+  ggplot(
+    aes(x = mpg, y = wt, color = cyl)
+  ) + 
+  geom_point() 
+  
+p + scale_color_viridis_d()
+
+
+```
+
+**Takeaway** - _c vs _d 
+
+```{r}
+#| label: plot-8
+
+mtcars |>
+  mutate(cyl = factor(cyl)) |>
+  ggplot(
+    aes(x = mpg, y = wt, color = cyl)
+  ) + 
+  geom_point() 
+  
+
+
+```
+
+**Takeaway** - missing ,
+
+## HW-1 Demo
+
+The following code has multiple errors. Let's fix the code to the point where we make the following graph:
+
+![](images/recreate.png)
+
+Strategies:
+
+-   Don't diagnose all errors at once
+
+-   Go line by line
+
+```{r}
+#| label: price-garage
+#| message: false
+#| warning: false
+
+library(openintro)
+ 
+duke_forest |>
+  mutate(garage = if_else(str_detect(parking, "Garage"), "Garage", "No garage")) |>
+  ggplot(aes(x = price, fill = garage)) +
+  geom_histogram() +
+  facet_wrap(~garage, ncol = 1) +
+  labs(
+    x = "Price in $",
+    y = "",
+    title = "Histogram of Price of Homes by Garage or not",
+    fill = "Garage or not"
+  )
+```
+
+
+**Takeaway** - str_detect needs variable to search for 
+
+x = needs quotes 
+
+facet_wrap needs ~ before variable 

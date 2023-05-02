@@ -1,0 +1,18 @@
+{
+  "hash": "3a3195f472a29d6336d39ca68cbbaffb",
+  "result": {
+    "markdown": "---\ntitle: \"Welcome to Lab\"\nsubtitle: \"Lab 0\"\ndate: \"January 17, 2023\"\nformat: revealjs\n---\n\n\n## Introductions\n\n\n::: {.cell}\n\n:::\n\n\n-- Meet the TA!\n\n-- Introduce yourself \n\n-- The file that you work in will be on `GitHub`\n\n-- You can find Lab on `sta199-s23-2.github.io/`\n\n-- Bookmark this website! \n\n## What to expect in labs\n\n-- Introduce lab assignment (5-10 minutes, longer today)\n\n-- Work on the lab assignment (you can find it on the course website). You will work with others but your submission must be your own for the first several labs.\n\n-- Lab may end with important announcements \n\n-- If you don't finish labs in-class they will typically be due the upcoming Friday \n\n\n\n## Tips\n\n-- Read all instructions on the lab.\n\n-- Be involved! \n\n-- Make use of office hours.\n\n-- Make use of Slack. \n\n\n## Demo: setting up\n\nNow that your lab repo is created, let’s setup git to work within RStudio.\n\nTo begin, open\n\n-- the lab instructions [here](https://sta199-s23-2.github.io/labs/lab-0.html) and\n\n-- the RStudio containers [here](https://cmgr.oit.duke.edu/containers)\n\nFollow the instructions in the lab as I demo.\n\n\n## Demo: How to turn something in via Gradescope\n\n**Please do not lose free points!** \n\n-- How to turn in a PDF\n\n-- How to select pages \n\n## Remember \n\nNo programming experience is required or expected to take this class. Come to lecture, lab and office hours. It’s okay to be confused. Stick with it, you will get the hang of it!\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\r\n<script>\r\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\r\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\r\n  // slide changes (different for each slide format).\r\n  (function () {\r\n    function fireSlideChanged(previousSlide, currentSlide) {\r\n\r\n      // dispatch for htmlwidgets\r\n      const event = window.document.createEvent(\"Event\");\r\n      event.initEvent(\"slideenter\", true, true);\r\n      window.document.dispatchEvent(event);\r\n\r\n      // dispatch for shiny\r\n      if (window.jQuery) {\r\n        if (previousSlide) {\r\n          window.jQuery(previousSlide).trigger(\"hidden\");\r\n        }\r\n        if (currentSlide) {\r\n          window.jQuery(currentSlide).trigger(\"shown\");\r\n        }\r\n      }\r\n    }\r\n\r\n    // hookup for reveal\r\n    if (window.Reveal) {\r\n      window.Reveal.addEventListener(\"slidechanged\", function(event) {\r\n        fireSlideChanged(event.previousSlide, event.currentSlide);\r\n      });\r\n    }\r\n\r\n    // hookup for slidy\r\n    if (window.w3c_slidy) {\r\n      window.w3c_slidy.add_observer(function (slide_num) {\r\n        // slide_num starts at position 1\r\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\r\n      });\r\n    }\r\n\r\n  })();\r\n</script>\r\n\r\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

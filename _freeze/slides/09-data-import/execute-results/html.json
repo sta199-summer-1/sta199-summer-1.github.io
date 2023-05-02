@@ -1,0 +1,20 @@
+{
+  "hash": "512d9ee12fbf5474a8048a217e9cde9b",
+  "result": {
+    "markdown": "---\ntitle: \"Data Import\"\nsubtitle: \"Lecture 9\"\ndate: \"September 26, 2022\"\nformat: revealjs\n---\n\n\n## Checklist\n\n\n::: {.cell}\n\n:::\n\n\n-   Open your `ae-08` project in RStudio.\n\n-   Lab-03 Due Tonight.\n\n-   Exam 1 is coming (This week!)\n\n## Exam Study Tips\n\n-- Take notes that you can reference \n\n-- Go back through feedback \n\n-- Revisit AEs \n\n-- Review keys \n\n-- Ask questions \n\n## Survey \n\n-- Review \n\n-- Feedback\n\n## Regrades \n\n-- What they are \n\nand are not...\n\n\n## Goals\n\n-- Understand how to export data files \n\n-- Understand multiple ways to read in data \n\n-- \"New\" functions: str_detect and fill \n\n-- Review\n\n## Prep Questions\n\n[Slido-Exam](https://app.sli.do/event/ve6T56b8H5FdUpqgV9U7tQ)\n\n[Slido-Reading](https://app.sli.do/event/ppjZjZRgcEL8u9DVhe1CsD)\n\n## Warm Up \nWhy should we bother with writing code to edit data rather than just editing the Excel file? \n\nWhat is the difference between read.csv and read_csv? \n\n## read.csv vs read_csv\n\n![](images/tibble.png){fig-align=\"center\" width=\"801\"}\n\n# Application exercise\n\n## `ae-08`\n\n--   Go to the course [GitHub org](https://github.com/sta199-f22-2) and find your `ae-08` (repo name will be suffixed with your GitHub name).\n\n--   Clone the repo in your container, open the Quarto document in the repo, and follow along and complete the exercises.\n\n--   Render, commit, and push your edits by the AE deadline -- 3 days from today.\n\n## Recap of AE {.smaller}\n\n![](images/import.png){fig-align=\"center\"}\n\n## Recap of AE\n\n-- There are also special functions to work with dates and times! See preperation reading. \n",
+    "supporting": [
+      "09-data-import_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\r\n<script>\r\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\r\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\r\n  // slide changes (different for each slide format).\r\n  (function () {\r\n    function fireSlideChanged(previousSlide, currentSlide) {\r\n\r\n      // dispatch for htmlwidgets\r\n      const event = window.document.createEvent(\"Event\");\r\n      event.initEvent(\"slideenter\", true, true);\r\n      window.document.dispatchEvent(event);\r\n\r\n      // dispatch for shiny\r\n      if (window.jQuery) {\r\n        if (previousSlide) {\r\n          window.jQuery(previousSlide).trigger(\"hidden\");\r\n        }\r\n        if (currentSlide) {\r\n          window.jQuery(currentSlide).trigger(\"shown\");\r\n        }\r\n      }\r\n    }\r\n\r\n    // hookup for reveal\r\n    if (window.Reveal) {\r\n      window.Reveal.addEventListener(\"slidechanged\", function(event) {\r\n        fireSlideChanged(event.previousSlide, event.currentSlide);\r\n      });\r\n    }\r\n\r\n    // hookup for slidy\r\n    if (window.w3c_slidy) {\r\n      window.w3c_slidy.add_observer(function (slide_num) {\r\n        // slide_num starts at position 1\r\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\r\n      });\r\n    }\r\n\r\n  })();\r\n</script>\r\n\r\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

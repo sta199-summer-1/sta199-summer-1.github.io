@@ -1,0 +1,18 @@
+---
+title: "Prepare"
+subtitle: "Due: March 1st, 2023"
+categories: "prepare"
+---
+
+This is the same prepare material as 2-24. If you have not read / watched the videos below, do so now.
+
+-   📖 Read:
+
+    -   IMS :: [Chp 8 - Linear regression with multiple predictors](https://openintro-ims.netlify.app/model-mlr.html)
+
+-   ⌨️ Watch:
+
+    -   [Unit 4 - Deck 4: Models with multiple predictors](https://www.youtube.com/watch?v=mjkNabD4oi4)
+    -   [Unit 4 - Deck 5: More models with multiple predictors](https://www.youtube.com/watch?v=nJAYRnLPb10)
+
+    ::: callout-note Videos use the "old school" pipe (`%>%`) but we'll be using the newer (`|>`) pipe operator in class. :::

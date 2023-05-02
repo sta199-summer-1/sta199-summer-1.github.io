@@ -1,0 +1,16 @@
+---
+title: "Prepare"
+subtitle: "Due: February 22, 2023"
+categories: "prepare"
+---
+
+-   📖 Read:
+
+    -   IMS :: [Chp 7 - Linear regression with a single predictor](https://openintro-ims.netlify.app/model-slr.html)
+
+-   ⌨️ Watch:
+
+    -   [Unit 4 - Deck 2: Fitting and interpreting models](https://www.youtube.com/watch?v=69U92Q3pwnA)
+    -   [Unit 4 - Deck 3: Modelling nonlinear relationships](https://www.youtube.com/watch?v=j4MZ6ZdHnHg)
+
+    ::: callout-note Videos use the "old school" pipe (`%>%`) but we'll be using the newer (`|>`) pipe operator in class. :::

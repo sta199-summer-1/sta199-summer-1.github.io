@@ -1,0 +1,99 @@
+---
+title: "Exam-Review - SUGGESTED ANSWERS"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+```{r}
+#| label: packages
+
+library(tidyverse)
+```
+
+Below, we are going to practice joins using the following fake data sets about coffee. 
+
+```{r}
+#| label: data
+
+coffee1 <- tibble(
+  Month = c("July" , "July", "August", "August" , "September"),
+  Coffee_Shop = c("Starbucks" , "Starbucks", "ThePerk" , "ThePerk", "Starbucks"),
+  Drinks_Sold = c(3,2,6,5,1)
+)
+
+coffee2 <- tibble(
+  month = c("June", "July", "August"),
+  Special = c("Free Drink", "Half-Off", "Free Drink")
+  )
+```
+
+Below, left_join coffee2 to coffee1. Comment on how these two data sets were joined together.
+Hint: You may need to use the `by` argument in the left_join function. 
+
+```{r}
+#| label: join-prac
+
+coffee1 |>
+  left_join(coffee2 , by = c("Month" = "month"))
+
+```
+
+Same thing different way: 
+
+The reason we used the `by` argument in the left_join function was because the column names were not the same across the two data sets. Run the following code below, and compare it to the output above. Same? Different?
+
+```{r}
+#| label: rename
+
+coffee2 <- coffee2 |>
+  rename("Month" = month)
+
+coffee1 |>
+  left_join(coffee2)
+```
+
+Now, `full_join` and `right_join` the two data sets together. Comment on the results. 
+
+```{r}
+#| label: more-joins
+
+coffee1 |>
+  left_join(coffee2)
+
+coffee1 |>
+  full_join(coffee2)
+
+coffee1 |>
+  right_join(coffee2)
+```
+
+left_join - coffee2 gets joined to coffee1 by Month. Anywhere there is a match from the Month, it will add informatino from the other columns of Y. Only keeps rows of coffee1. 
+
+right_join - the opposite of left_join. Keeps rows of y and adds x columns. 
+
+full_join - includes both x and y rows. 
+
+
+## Summary Statistics
+
+In this short activity, we will use the `Orange` data set built in R. Please run `?Orange` to learn more.
+
+Below, please complete the following:
+
+-   Calculate the mean circumference of each tree.
+
+-   Create a new variable called `old` to indicate when the tree became over 1000 years old. Use the value `Yes` if the measurement is over 1000, and `No` if it is not. Hint: A way to answer this involves using `if_else`
+
+```{r}
+#| label: practice-2
+
+Orange |>
+  group_by(Tree) |>
+  summarize(mean_cir = mean(circumference))
+
+Orange |>
+  mutate(circumference = if_else(age > 1000, "Yes", "No"))
+
+
+```

@@ -1,0 +1,165 @@
+---
+title: "Bootstrap + Central Limit Theorm"
+subtitle: "Lecture 19"
+date: "March 24th, 2023"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-18`
+
+## Announcements
+
+-- HW 4 Due *Friday*
+
+-- Lab 7 Due next Tuesday
+
+-- Project proposal feedback by today
+
+-- Peer Review Survey 
+
+-- HW 6 - Statistical Experience
+
+
+## Warm Up 
+
+![](images/CIpeng.png)
+
+## Warm Up 
+
+Our goal is to create a 95% confidence interval to estimate the true mean fipper length of penguins.
+
+-- What are the simulation methods called to create a confidence interval?
+
+-- How is one observation ("dot") created when using such simulation methods? 
+
+Note: There are 344 penguins in the data set. 
+
+## Warm Up 
+
+-- What are the simulation methods called to create a confidence interval?
+
+- Bootstrap methods 
+
+
+## Warm Up 
+
+-- How is one observation ("dot") created when using such simulation methods? 
+
+- Sample WITH REPLACEMENT 344 (n) times 
+
+- Calculate the new sample mean
+
+## Last Time 
+
+-- Calculated bootstrap confidence intervals 
+
+-- Interpreted confidence intervals
+
+## Last Time
+
+-- What is the difference between confidence and probability? 
+
+-- Why is using the term probability incorrect when interpreting a confidence interval? 
+
+## Confidence vs Probability 
+
+-- Probability is simply how likely something is to happen
+
+--- This implies that the event has not happened yet! 
+
+--- This implies that there is a random outcome associated with this event.
+
+## Probability coin example 
+
+What is the probability that this coin will land on heads?
+
+- Before the flip, what's the probability that this coin lands on heads 
+
+- What about when it lands? 
+
+- What about if I cover it with my hand so you can't see it? 
+
+- What about if I flip it and cover it with my hand so you can't see it? 
+
+- *Takeaway*: Being unknown is not the same as being random 
+
+## Confidence
+
+Confidence - the percentage of all possible confidence intervals, created under the same conditions, expected to include the true population parameter
+
+-- For your confidence interval, the parameter is not random
+
+- *Takeaway*: Being unknown is not the same as being random 
+
+
+## What you need to know 
+
+-- Correct: We are 95% confident the true mean price per night for Airbnbs in Asheville is between 63.3 and 91.0 dollars.
+
+-- Incorrect: There is a 95% probability the true mean price per night for an Airbnb in Asheville is between 63.3 and 91.0.
+
+## For Today 
+
+-- Central Limit Theorem (CLT)
+
+-- What impacts confidence intervals
+
+-- How to use CLT in practice
+
+## Goal of Statistical Inference 
+
+-- Before we define CLT, let's remind ourselves of our goal... 
+
+**We are interested in population parameters, which we do not observe. So we calculate statistics from our sample to learn about them**
+
+**As part of this process, we must quantify the degree of uncertainty in our sample statistic** - which is why we make distributions!
+
+## Central Limit Theorem 
+
+-- For a large enough n, the shape of the sampling distribution of the means is ~ normally distributed 
+
+-- As n -> $\infty$, the mean of the sample distribution is identical to the population mean $\mu$ (so for a large n, our best guess of $\mu$ is the mean of the sampling distribution)
+
+-- The standard deviation of the distribution of the sample means is $\frac{s}{\sqrt(n)}$ (so for a large n, our best guess of $\sigma$ is the standard deviation of the sampling distribution)
+
+We will use the above guesses when we use a normal distribution to calculate a confidence interval
+
+## Assumptions 
+
+-- Independence 
+
+-- Sample Size 
+
+## Independence 
+
+-- Independent observations 
+
+-- "Does one observation influence the other?"
+
+## Sample Size 
+
+-- n > 30 (for quantitative variables)
+
+-- 10 successes + 10 failures (for categorical variables)
+
+## ae-18 
+
+We will walk through the CLT in action 
+
+Practice creating confidence intervals using the CLT and Bootstrap methods 
+
+## Discussion 
+
+-- Bootstrapping is less restrictive when it comes to sample size ( ~ n > 10)
+
+-- CLT does not work for other statistics besides the mean
+
+-- Both require the independence assumption 
+
+
+
+
+
+

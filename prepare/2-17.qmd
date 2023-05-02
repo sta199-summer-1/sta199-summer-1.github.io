@@ -1,0 +1,8 @@
+---
+title: "Prepare"
+subtitle: "Due: February 17th, 2023"
+categories: "prepare"
+---
+
+--   Play with the Bayes’ theorem applet [here](https://seeing-theory.brown.edu/bayesian-inference/#section1) and reflect about what you observe (not due for grade).
+

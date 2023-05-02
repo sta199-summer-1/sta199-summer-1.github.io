@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>STA 199 - HW 5</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+</head>
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">HW 5</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sta199-s23-2/sta199-s23-2.github.io" title="GitHub organization" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="sidebar-tool px-1"><i class="bi bi-code-square"></i></a>
+    <a href="" title="Sakai" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+<li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://sakai.duke.edu/portal/site/3c0a7e6f-cbfc-4e54-bcbf-faf6fa16761c/tool/5e2471ea-c385-4d18-84ba-84122f412512/">
+          Gradescope
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://sakai.duke.edu/portal/site/3c0a7e6f-cbfc-4e54-bcbf-faf6fa16761c/tool/5e2471ea-c385-4d18-84ba-84122f412512/">
+          Gradebook
+          </a>
+        </li>
+    </ul>
+<a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Course information</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-overview.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-support.html" class="sidebar-item-text sidebar-link">Support</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-team.html" class="sidebar-item-text sidebar-link">Teaching team</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Schedule</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-links.html" class="sidebar-item-text sidebar-link">Useful links</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-faq.html" class="sidebar-item-text sidebar-link">FAQ</a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Computing</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing-access.html" class="sidebar-item-text sidebar-link">Access</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing-troubleshooting.html" class="sidebar-item-text sidebar-link">Troubleshooting</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing-cheatsheets.html" class="sidebar-item-text sidebar-link">Cheatsheets</a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Project</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project-description-s23.html" class="sidebar-item-text sidebar-link">Description</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project-tips-resources.html" class="sidebar-item-text sidebar-link">Tips + resources</a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
+  <li>
+<a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+<li>
+<a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
+  <ul class="collapse">
+<li><a href="#investigating-sleep" id="toc-investigating-sleep" class="nav-link" data-scroll-target="#investigating-sleep">Investigating sleep</a></li>
+  <li><a href="#beyond-this-class-pick-a-package" id="toc-beyond-this-class-pick-a-package" class="nav-link" data-scroll-target="#beyond-this-class-pick-a-package">Beyond this class: pick a package</a></li>
+  </ul>
+</li>
+  <li><a href="#optional-research-participation" id="toc-optional-research-participation" class="nav-link" data-scroll-target="#optional-research-participation">Optional Research Participation</a></li>
+  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  </ul>
+</li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sta199-s23-2/sta199-s23-2.github.io/edit/main/hw/hw-5.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/sta199-s23-2/sta199-s23-2.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title d-none d-lg-block">HW 5</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Homework</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header><div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This homework is due Thursday, April 13 at 11:59pm.</p>
+</div>
+</div>
+<section id="getting-started" class="level2"><h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<ul>
+<li><p>Go to the <a href="https://github.com/sta199-s23-2">Github Organization page</a> and open your <code>hw-5-s23-username</code> repo</p></li>
+<li><p>Clone the repository, open a new project in RStudio. It contains the starter documents you need to complete the homework assignment.</p></li>
+</ul></section><section id="packages" class="level1"><h1>Packages</h1>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidymodels.tidymodels.org">tidymodels</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="data" class="level1"><h1>Data</h1>
+<p>Load the data:</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sleep</span> <span class="op">=</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"https://sta101-fa22.netlify.app/static/labs/data/sleep.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The data we are working with today comes from Herbie Lee. Please read information about the data set <a href="https://stat.duke.edu/datasets/sleep">here</a>, where you will also find a codebook.</p>
+<section id="exercises" class="level2"><h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<section id="investigating-sleep" class="level3"><h3 class="anchored" data-anchor-id="investigating-sleep">Investigating sleep</h3>
+<ol type="1">
+<li><ol type="a">
+<li><p>Find the mean time it takes the participant to fall asleep.</p></li>
+<li><p>Check whether or not you can use central limit theorem to construct a 95% confidence interval to report with your estimate. For purposes of this exercise, you may consider samples of time to sleep as random.</p></li>
+<li><p>If you can use CLT, please do so to construct and report the confidence interval. Otherwise, construct a bootstrap confidence interval with <code>set.seed(5)</code> and <code>10000</code> reps. Interpret your interval in context.</p></li>
+</ol></li>
+<li>
+<p>Does the participant take more than 35 minutes on average to fall asleep? Perform a hypothesis test to investigate. What is the null? What is the alternative? Use <code>set.seed(2)</code> and <code>reps=5000</code> to simulate a distribution under the assumption of the null hypothesis.</p>
+<ol start="2" type="a">
+<li><p>Visualize the null distribution and shade the p-value. Be sure to label the x-axis.</p></li>
+<li><p>Write a proper decision and conclusion based on a significance level of <span class="math inline">\(\alpha\)</span> = 0.05. Given your response from the previous exercise, does this result surprise you? Why or why not?</p></li>
+<li><p>What is the probability of rejecting the null if it’s actually true? What type of error is this (type 1 or type 2)?</p></li>
+</ol>
+</li>
+<li><ol type="a">
+<li><p><em>Do calcium-magnesium supplements reduce median time to fall asleep?</em> Construct a hypothesis test to investigate. To begin, state the null and alternative hypothesis in words and in proper notation.</p></li>
+<li><p>Use simulation-based inference to generate <code>5000</code> samples from the null distribution with <code>set.seed(5)</code>.</p></li>
+<li><p>Compute and state your observed statistic.</p></li>
+<li><p>Finally, compute the p-value and report it as well as significance at the alpha = 0.05 level and state your conclusion in context of the problem.</p></li>
+</ol></li>
+</ol>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Hint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For the following problem, you will need to mutate to ensure that one of the variables is non-numeric.</p>
+</div>
+</div>
+<ol start="4" type="1">
+<li>The more time an individual spends lying in bed, awake, and trying to sleep, the worse their overall quality of sleep. To begin investigating quality of sleep, create a new column <code>timeAwake</code> that shows the total number of minutes the individual spent in bed but not asleep. When <code>timeAwake</code> is large, sleep is awful and interrupted. Save your data frame with the new column as <code>sleep2</code>.</li>
+</ol>
+<p>Example: <code>TTS</code> is the time to fall asleep, <code>TBT</code> is total bed time, i.e.&nbsp;total time spent, lying in bed and trying to sleep.</p>
+<p>So if the participant gets into bed at 9:00pm and then falls asleep at 9:30pm and wakes up at 1:00am and lies awake for an hour only to finally sleep until 6:00am and gets out of bed then</p>
+<ul>
+<li>
+<code>TTS</code> is 30 minutes,</li>
+<li>
+<code>TBT</code> is 9 hours,</li>
+<li>Total Sleep Time (<code>TST</code>) is 3.5h + 4h = 7.5 hours and the total time awake is 1.5 hours.</li>
+</ul>
+<ol start="5" type="1">
+<li><ol type="a">
+<li><p><em>Hypothesis: Most nights, the participant spends over fifty minutes lying in bed awake.</em> Construct a hypothesis test to investigate. To begin, state the null and alternative hypothesis in words and in statistical notation.</p></li>
+<li><p>Use simulation-based inference to generate <code>5000</code> samples from the null distribution with <code>set.seed(8)</code>.</p></li>
+<li><p>Compute and state your observed statistic.</p></li>
+<li><p>Finally, compute the p-value and report. Interpret your p-value in the context of the problem.</p></li>
+<li><p>At a significance at the alpha = 0.01 level, write your conclusion in the context of the problem.</p></li>
+</ol></li>
+</ol>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Hint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For the next exercise, start with <code>sleep2</code> from the previous exercise.</p>
+</div>
+</div>
+</section><section id="beyond-this-class-pick-a-package" class="level3"><h3 class="anchored" data-anchor-id="beyond-this-class-pick-a-package">Beyond this class: pick a package</h3>
+<ol start="6" type="1">
+<li>In this exercise, you will find a new package that you haven’t used in class and learn how to use it. Being able to find new packages, install them, read the documentation and finally use the package is an essential skill beyond the classroom.</li>
+</ol>
+<p>To begin,</p>
+<ul>
+<li><p>Pick a package. You can choose one from the list below, or venture into the great unknown and find another online. If you have trouble getting a package to work, ask for help on slack or come to office hours.</p></li>
+<li><p>Install the package. Be sure to do this in the Console, not in your Quarto document because you do not want to keep re-installing every time you render the document.</p></li>
+</ul>
+<p>Depending on where the package comes from, how you install the package differs:</p>
+<ul>
+<li><p>If the package is on CRAN (Comprehensive R Archive Network), you can install it with <code>install.packages</code>.</p></li>
+<li><p>If the package is only on Github (most likely because it is still under development), you need to use the <code>install_github</code> function, click here for more details.</p></li>
+<li><p>Load the package. Regardless of how you installed the package you can load it with the <code>library</code> function.</p></li>
+<li><p>Do something with the package. Typically, simpler is better. The goal is for you to read and understand the package documentation to carry out a simple task.</p></li>
+<li><p>Finally, write a short 3-4 sentence statement (at the beginning of your solution to this exercise) and include:</p></li>
+</ul>
+<ol type="1">
+<li><p>The name of the package you use and whether it is from CRAN or GitHub</p></li>
+<li><p>A short description of what the package does (in your own words)</p></li>
+<li><p>A short description of what you do with the package.</p></li>
+</ol>
+<p>Sample list of packages on CRAN:</p>
+<table class="table">
+<thead><tr class="header">
+<th>package name</th>
+<th>description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/ape/index.html">ape</a></td>
+<td>Manipulate, plot and interact with phylogenetic trees and models. Comes with sample data</td>
+</tr>
+<tr class="even">
+<td><a href="https://cran.r-project.org/web/packages/astrodatR/index.html">astrodatR</a></td>
+<td>Astronomy datasets</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/cowsay/vignettes/cowsay_tutorial.html">cowsay</a></td>
+<td>Allows printing of character strings as messages/warnings/etc. with ASCII animals, including cats, cows, frogs, chickens, ghosts, and more</td>
+</tr>
+<tr class="even">
+<td><a href="http://hadley.github.io/babynames/">babynames</a></td>
+<td>US Baby Names 1880-2015</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/dragracer/vignettes/dragracer-intro.html">dragracer</a></td>
+<td>These are data sets for the hit TV show, RuPaul’s Drag Race. Data right now include episode-level data, contestant-level data, and episode-contestant-level data</td>
+</tr>
+<tr class="even">
+<td><a href="https://milesmcbain.github.io/datapasta/">datapasta</a></td>
+<td>RStudio addins and R functions that make copy-pasting vectors and tables to text painless</td>
+</tr>
+<tr class="odd">
+<td><a href="https://rich-iannone.github.io/DiagrammeR/">DiagrammeR</a></td>
+<td>Graph/Network Visualization</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/juliasilge/janeaustenr">janeaustenr</a></td>
+<td>Full texts for Jane Austen’s 6 completed novels, ready for text analysis. These novels are “Sense and Sensibility”, “Pride and Prejudice”, “Mansfield Park”, “Emma”, “Northanger Abbey”, and “Persuasion”</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/ggimage/vignettes/ggimage.html">ggimage</a></td>
+<td>Supports image files and graphic objects to be visualized in ‘ggplot2’ graphic system</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/dgrtwo/gganimate">gganimate</a></td>
+<td>Create easy animations with ggplot2</td>
+</tr>
+<tr class="odd">
+<td><a href="https://gt.rstudio.com/">gt</a></td>
+<td>Easily Create Presentation-Ready Display Tables</td>
+</tr>
+<tr class="even">
+<td><a href="https://rstudio.github.io/leaflet/">leaflet</a></td>
+<td>Create Interactive Web Maps with the JavaScript ‘Leaflet’ Library</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/praise/praise.pdf">praise</a></td>
+<td>Build friendly R packages that praise their users if they have done something good, or they just need it to feel better</td>
+</tr>
+<tr class="even">
+<td><a href="https://plotly-r.com/">plotly</a></td>
+<td>Create interactive web graphics from ggplot2 graphs and/or a custom interface to the JavaScript library plotly.js inspired by the grammar of graphics</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/suncalc/suncalc.pdf">suncalc</a></td>
+<td>R interface to <code>suncalc.js</code> library, part of the <a href="http://suncalc.net">SunCalc.net project</a>, for calculating sun position, sunlight phases (times for sunrise, sunset, dusk, etc.), moon position and lunar phase for the given location and time</td>
+</tr>
+<tr class="even">
+<td><a href="https://bradlindblad.github.io/schrute/">schrute</a></td>
+<td>The complete scripts from the American version of the Office television show in tibble format</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/statebins/statebins.pdf">statebins</a></td>
+<td>The cartogram heatmaps generated by the included methods are an alternative to choropleth maps for the United States and are based on work by the Washington Post graphics department in their report on <a href="http://www.washingtonpost.com/wp-srv/special/business/states-most-threatened-by-trade/">“The states most threatened by trade”</a>
+</td>
+</tr>
+<tr class="even">
+<td><a href="https://cran.r-project.org/web/packages/ttbbeer/ttbbeer.pdf">ttbbeer</a></td>
+<td>An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/ttbbeer/ttbbeer.pdf">ttbbeer</a></td>
+<td>An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)</td>
+</tr>
+<tr class="even">
+<td><a href="https://cran.r-project.org/web/packages/ukbabynames/ukbabynames.pdf">ukbabynames</a></td>
+<td>Full listing of UK baby names occurring more than three times per year between 1996 and 2015, and rankings of baby name popularity by decade from 1904 to 1994</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/wesanderson/wesanderson.pdf">wesanderson</a></td>
+<td>Color palettes from Wes Anderson films</td>
+</tr>
+<tr class="even">
+<td><a href="https://cran.r-project.org/web/packages/scatterplot3d/scatterplot3d.pdf">scatterplot3d</a></td>
+<td>Create 3D plots</td>
+</tr>
+</tbody>
+</table></section></section><section id="optional-research-participation" class="level2"><h2 class="anchored" data-anchor-id="optional-research-participation">Optional Research Participation</h2>
+<p>A research team at Duke University is creating an intro data science assessment. They are hopeful to have students in an intro data science course take the assessment to better pin down how students think about and reason through data science assessment questions. If you are able and willing, please consider participating in this research.</p>
+<p>Participation is completely optional, and has no impact on your academic standing in STA199.</p>
+<p><a href="https://duke.qualtrics.com/jfe/form/SV_cMbAsWeIOe6ZFGK">Qualtrics Survey</a></p>
+</section><section id="rubric" class="level2"><h2 class="anchored" data-anchor-id="rubric">Rubric</h2>
+<ul>
+<li><p>Ex 1: 5 pts.</p></li>
+<li><p>Ex 2: 10 pts.</p></li>
+<li><p>Ex 3: 8 pts.</p></li>
+<li><p>Ex 4: 2 pts.</p></li>
+<li><p>Ex 5: 8 pts.</p></li>
+<li><p>Ex 6: 12 pts.</p></li>
+<li><p>Workflow and formatting - 5 pts</p></li>
+</ul></section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<ul>
+<li>Go to <a href="http://www.gradescope.com" class="uri">http://www.gradescope.com</a> and click Log in in the top right corner.</li>
+<li>Click School Credentials Duke Net ID and log in using your Net ID credentials.</li>
+<li>Click on your STA 199 course.</li>
+<li>Click on the assignment, and you’ll be prompted to submit it.</li>
+<li>Mark all the pages associated with exercise. All the pages of your homework should be associated with at least one question (i.e., should be “checked”). If you do not do this, you will be subject to lose points on the assignment.</li>
+<li>Select <strong>all pages</strong> of your PDF submission to be associated with the “Workflow &amp; formatting” question.</li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The “Workflow &amp; formatting” grade is to assess the reproducible workflow. This includes:</p>
+<ul>
+<li><p>linking all pages appropriately on Gradescope</p></li>
+<li><p>putting your name in the YAML at the top of the document</p></li>
+<li><p>committing the submitted version of your <code>.qmd</code> to GitHub</p></li>
+<li><p>Are you under the 80 character code limit? (You shouldn’t have to scroll to see all your code).</p></li>
+<li><p>Pipes <code>%&gt;%</code>, <code>|&gt;</code> and ggplot layers <code>+</code> should be followed by a new line</p></li>
+<li><p>You should be consistent with stylistic choices, e.g.&nbsp;only use 1 of <code>=</code> vs <code>&lt;-</code> and <code>%&gt;%</code> vs <code>|&gt;</code></p></li>
+<li><p>All binary operators should be surrounded by space. For example <code>x + y</code> is appropriate. <code>x+y</code> is not.</p></li>
+</ul>
+</div>
+</div>
+
+
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">© Copyright 2023, Elijah Meyer</div>   
+    <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+</body></html>

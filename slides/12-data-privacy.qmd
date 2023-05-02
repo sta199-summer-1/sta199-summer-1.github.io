@@ -1,0 +1,174 @@
+---
+title: "Data Ethics 2"
+subtitle: "Lecture 12"
+date: "October 5, 2022"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-11-ethics-privacy`
+
+## Announcements 
+
+Lab Group Instructions: 
+
+-- You can find your groups in the `teams` repo after class. 
+
+-- You may only switch groups under extreme circumstances (working with friends does not count)
+
+-- **View group number** before Lab 04. This will make it easier for TAs to seat / group you. 
+
+## Goals 
+
+- Think 
+
+- Data Ethics 
+
+- Data privacy 
+
+- Bias 
+
+# Data Privacy 
+
+##
+
+Every time we use apps, websites, and devices, our data is being collected and used or sold to others. More importantly, decisions are made by law enforcement, financial institutions, and governments based on data that directly affect the lives of people.
+
+## Warm up: What are you okay with? {.smaller}
+
+- Name
+- Age
+- Email
+- Phone Number
+- List of every video you watch
+- List of every video you comment on
+- How you type: speed, accuracy
+- How long you spend on different content
+- List of all your private messages (date, time, person sent to)
+- Info about your photos (how it was taken, where it was taken (GPS), when it was taken)
+- Browsing history
+
+# Case study: OK Cupid
+
+## OK Cupid data breach {.smaller}
+
+-- In 2016, researchers published data of 70,000 OkCupid users—including usernames, political leanings, drug usage, and intimate sexual details
+
+-- Researchers didn't release the real names and pictures of OKCupid users, but their identities could easily be uncovered from the details provided, e.g. usernames
+
+> Some may object to the ethics of gathering and releasing this data. However, all the data found in the dataset are or were already publicly available, so releasing this dataset merely presents it in a more useful form. 
+
+> Researchers Emil Kirkegaard and Julius Daugbjerg Bjerrekær
+
+
+## Question 
+
+In analysis of data that individuals willingly shared publicly on a given platform (e.g. social media), how do you make sure you don't violate reasonable expectations of privacy?
+
+
+
+## 
+![](images/10-data-ethics/okcupid-tweet.png){}
+
+## Questions for you 
+
+- Should you scrape these data? 
+
+- How do you not violate reasonable expectations of privacy? 
+
+
+
+# Application Exercise 11 - data privacy - part 1
+
+
+
+## Intended use {.smaller}
+
+-- Name
+
+-- Age
+
+-- Email
+
+-- Phone Number
+
+-- How long you spend on different content
+
+-- List of all your private messages (date, time, person sent to)
+
+-- Info about your photos (how it was taken, where it was taken (GPS), when it was taken)
+
+-- Browsing history
+
+- Targeted ads 
+- Candidate for a job (Amazon has done this)
+- Predict your race to map votes (This is being done)
+
+# Application Exercise 11 - data privacy - part 2
+
+# Bias in algorithims - part 3
+
+## Gettysburg Activity: Representative words of word length
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+![](images/11-data-privacy/getty.png){fig-align="center"}
+```{r}
+#| echo: false
+
+countdown(minutes = .5)
+```
+
+## Question of Interest
+
+What is the typical word length in the Gettysburg Address?
+
+-- Using R, calculate the mean word length of your 10 words.
+
+## Population Word Length 
+
+Write down the population mean word length
+
+Write down the mean of your 10 words
+
+Were you close? How about the rest of the class? 
+
+Are humans bias? How does this activity relate to bias in algorithms? 
+
+## Bias 
+
+Bias is a disproportionate weight in favor of or against an idea or thing
+
+- We all have bias 
+
+- Bias can be a part of science and research 
+
+# Examples 
+
+## Facial Recognition 
+
+![](images/11-data-privacy/facialanalysis.png){fig-align="center" width="500"}
+
+
+##
+
+![](images/11-data-privacy/bigdata.png){fig-align="center" width="500"}
+
+##
+
+![](images/11-data-privacy/USAtt.png){fig-align="center" width="500"}
+
+
+
+## Parting Thoughts 
+
+- Ask questions 
+
+- Slow down 
+
+- Think critically 

@@ -1,0 +1,223 @@
+---
+title: "Data Wrangling - Part 2"
+subtitle: "Lecture 6"
+date: "September 14, 2022"
+format: revealjs
+---
+
+## Checklist
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+-- Clone ae-04
+
+-- HW-1 Due Tonight on Gradescope 
+
+## Announcements 
+
+-- AE's are being graded 
+
+-- Keep posting on Slack 
+
+-- Feedback for Lab-0 is live
+
+## Goals for today
+
+-- Continue practicing with `dplyr` functions
+
+-- Change variable types
+
+-- Understand variable types
+
+## Warm up
+
+Identify which `dplyr` functions chooses *rows* or changes *columns* of an exsisting data set 
+
+-- `filter()`
+
+-- `select()`
+
+-- `slice()`
+
+-- `arrange()`
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()`
+
+-- `slice()`
+
+-- `arrange()`
+
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()` - column 
+
+-- `slice()`
+
+-- `arrange()`
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()` - column 
+
+-- `slice()` - row
+
+-- `arrange()`
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()` - column 
+
+-- `slice()` - row
+
+-- `arrange()` - row
+
+# Single pipeline 
+
+## What is a single pipeline?
+
+-- "Do everything in one go" 
+
+Ex. 
+
+```{r}
+#| eval: false
+
+mtcars |>
+  mutate(cyl = factor(cyl)) |>
+  ggplot(
+    aes(x = mpg, y = wt, fill = cyl)
+  ) +
+  geom_point()
+
+
+```
+
+## What isn't a single pipeline?
+
+Ex. 
+
+```{r}
+#| eval: false
+
+mtcars <- mtcars |>
+  mutate(cyl = factor(cyl))
+
+mtcars |>
+  ggplot(
+    aes(x = mpg, y = wt, fill = cyl)
+  ) +
+  geom_point()
+
+
+```
+
+# Types of variables 
+
+## Types of variables 
+
+Type is how an object is stored in memory.
+
+-- `glimpse` is a great way to check data types 
+
+-- Can also use `typeof()`
+
+## Examples 
+
+-- `glimpse(mtcars)`
+
+-- `typeof(mtcars$mpg)`
+
+## Types of variables 
+
+Some of the types of variables include: 
+
+-- "logical" 
+
+-- "integer" 
+
+-- "double" 
+
+-- "character" 
+
+-- "factor"
+
+## logical 
+
+-- `logi` in `glimpse`
+
+-- The logical data type in R is also known as boolean data type. It can only have two values: TRUE and FALSE. <br>
+
+-- `as.logical` can turn a variable into a logical. `False` = 0; `True` everything else
+
+## integer 
+
+-- `int` in `glimpse` 
+
+-- Integers are whole numbers (those numbers without a decimal point)
+
+-- `as.integer` can turn a double into an integer. Forces 22.8 -> 22. 
+
+## double 
+
+-- `dbl` in `glimpse`
+
+-- Real numbers (can include decimals)
+
+-- `as.double`can force a column to be a double. Identical to `as.numeric`. 
+
+## character 
+
+-- `chr` in `glimpse`
+
+-- Character string (text)
+
+-- `as.character` attempts to coerce its argument to character type
+
+## factor
+
+-- `fct` in `glimpse`
+
+-- Factor in R is also known as a categorical variable that stores both string and integer data values as **levels**.
+
+-- `factor` attempts to coerce its argument to factor type
+
+## Why this matters 
+
+-- Plotting 
+
+-- Summary statistics 
+
+## General takeaways 
+
+-- Can you identify variable types 
+
+-- Often need to turn something into a factor to make it categorical 
+
+-- Often need to turn something into a double (numeric) to make it quantitative 
+
+# More on this later
+
+# ae-04
+
+## Wrap up 
+
+-- Data types matter. Get in the habit of checking them at the beginning of analysis 
+
+-- Have the tools to create new variables, calculate summary statistics, etc. that accompany strong visualizations 
+
+

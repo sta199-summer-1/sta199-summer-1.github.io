@@ -1,0 +1,16 @@
+institute: "Duke University <br> STA 199 - Spring 2023"
+author: "Dr. Elijah Meyer"
+footer: "[🔗 sta199-s23-2.github.io](https://sta199-s23-2.github.io/)"
+logo: "images/logo.png"
+format:
+  revealjs:
+    theme: [dark, slides.scss]
+    incremental: true
+    multiplex: true
+    transition: fade
+    slide-number: true
+
+editor: visual
+execute:
+  freeze: auto
+  echo: true

@@ -1,0 +1,287 @@
+---
+title: "Suggested Answers: ae-14"
+format: html
+editor: visual
+---
+
+Note - if you don't have the MASS package, you can install it before running `library` by writing the following code in the console: install.packages("MASS")
+
+## Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+library(tidyverse)
+library(tidymodels)
+library(palmerpenguins)
+library(MASS) #for stepAIC
+```
+
+## Warm Up
+
+```{r}
+#| label: fct-relevel
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island *flipper_length_mm, data = penguins) |>
+  tidy()
+
+penguins <- penguins |>
+  mutate(island = factor(island, levels = c("Dream" , "Biscoe", "Torgersen")))
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island * flipper_length_mm, data = penguins) |>
+  tidy()
+```
+
+## R-squared demonstration
+
+```{r}
+#| label: r-squared demo
+
+model_1 <- linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island, data = penguins) 
+
+set.seed(33)
+penguins <- penguins |>
+  mutate(random_numbers = rnorm(nrow(penguins), 1, 10))
+
+model_2 <- linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island * random_numbers, data = penguins) 
+
+
+glance(model_1)$r.squared
+glance(model_2)$r.squared
+```
+
+-- Did r-squared increase or decrease from model 1 to model 2? Why?
+
+Increased. it will always increase as we add more terms.
+
+# Building a model
+
+Scenario: We have fit many models over the last 3 classes that model body mass of penguins as a response. Any of the variables in the data set *could* be used as predictors (explanatory variables). We want our model to only include the most useful predictors.
+
+## Adjusted r-squared
+
+Run `names(penguins)` to recall the number of variables in our data set. Next, fit two competing models that model body mass as the response variable. Make an argument for the "better fitting model" using adjusted r-squared below.
+
+Hint: In the same pipe used to fit the model, use `glance |> pull(adj.r.squared)` to get the appropriate information
+
+```{r}
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island*year + flipper_length_mm, data = penguins) |>
+  glance() |>
+  pull(adj.r.squared)
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island*bill_length_mm, data = penguins) |>
+  glance() |>
+  pull(adj.r.squared)
+
+```
+
+## Backward elimination
+
+Backward elimination starts with the the model that includes all potential predictor variables. Variables are eliminated one-at-a-time from the model until we cannot improve the model any further.
+
+Procedure:
+
+-   Start with a full model that has all predictors we consider and compute the AIC or adjusted-r-squared.
+
+-   Next fit every possible model with 1 less predictor.
+
+-   Compare AIC or adjusted-r-squared scores to select the best model with 1 less predictor if they show improvement over full model.
+
+-   Repeat steps 2 and 3 until you score the model with no predictors.
+
+-   Compare AIC or adjusted-r-squared among all tested models to select the best model.
+
+## Example
+
+To better understand the idea of backwards selection, we are going to manually walk through one iteration of the procedure above. Our "full" model will be defined as an additive model with flipper length, bill length and island on our response body mass. With this information, perform backwards selection and report which variable *will not* be in the final backward elimination model. Use AIC as your criteria.
+
+Hint: In the same pipe used to fit the model, instead of using `tidy()`, use `glance |> pull(AIC)` to get the appropriate information.
+
+```{r}
+#| label: backward-demo
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm + bill_length_mm + island, data = penguins) |>
+  glance() |>
+  pull(AIC)
+
+## Choose the model above 
+
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~  bill_length_mm + island, data = penguins) |>
+  glance() |>
+  pull(AIC)
+
+```
+
+## Forward Selection
+
+Procedure:
+
+-   Start with a model that has no predictors.
+
+-   Next fit every possible model with 1 additional predictor and score each model.
+
+-   Compare AIC scores to select the best model with 1 additional predictor vs first model.
+
+-   Repeat steps 2 and 3 until you can no longer improve the model.
+
+Perform 1 step of forward selection using the same variables mentioned above. What variable *will be* in the final forward selection model?
+
+Hint: We can fit a model with no predictors using `~ 1` in place of any explanatory variable.
+
+```{r}
+#| label: forward-demo
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ 1 , data = penguins) |>
+  glance() |>
+  pull(AIC)
+
+### island, flipper length, bill length 
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm, data = penguins) |>
+  glance() |>
+  pull(AIC)
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm + island, data = penguins) |>
+  glance() |>
+  pull(AIC)
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm * island * bill_length_mm, data = penguins) |>
+  glance() |>
+  pull(AIC)
+
+
+```
+
+**Notes about model selection**
+
+-- what a "meaningful" difference? You should set it
+
+-- backward elimination and forward selection sometimes arrive at different final models
+
+**So which do I choose?**
+
+Forward stepwise selection is used when the number of variables under consideration is very large
+
+Starting with the full model (backward selection) has the advantage of considering the effects of all variables simultaneously.
+
+# Performing stepwise in R
+
+Before we show how to do this in R.....
+
+*Note! Please read!*
+
+It is a bad idea to simply let R alone choose your best fitting model for you. Good practices include:
+
+-- Talking with the subject expert about variables that must or should not be in your model
+
+-- Align variables to your research question. This includes:
+
+--- keeping the variables you are interested in.... and the variables you want to account for...
+
+# If Time (Not Main Focus of Lesson)
+
+People use stepwise selection when their goal is to pick the overall "best" model.
+
+There are many functions that will allow you to perform stepwise selection in R. Today, we are going to introduce ourselves to `stepAIC`. Currently, performing stepwise selection is very difficult with tidymodels, so we are going to write our models in base R using the `lm` function. Let's do this below.
+
+```{r}
+lm1 <- lm(body_mass_g ~ flipper_length_mm*island, data = penguins)
+```
+
+In `stepAIC`, the arguments are:
+
+-- object: your model name -- scope: your "full model" if doing forward selection -- direction: "forward", or "backward".
+
+## Backward selection
+
+Let's assume that our full model is an additive model between flipper length and island. Is this the best model? Is a SLR model better?
+
+```{r}
+
+lm1 <- lm(body_mass_g ~ flipper_length_mm+island, data = penguins)
+
+stepAIC(lm1,  direction = "backward")
+
+```
+
+Write out how to interpret the output below:
+
+The code suggests what the AIC would be if the variable listed in the first column was removed. The <none> represents the "full" model, or when no variables are removed.
+
+Now, fit the interaction model and perform backward selection using `stepAIC`.
+
+```{r}
+
+lm1 <- lm(body_mass_g ~ flipper_length_mm*island, data = penguins)
+
+```
+
+Write out how to interpret the output below:
+
+Based on the output, we should select the interaction model.
+
+## Forward Selection
+
+When performing forward selection, we need to be conscious about the scope (full model). Fit a model with just island as the explanatory variable. Define the scope as an additive model between island, bill length, and flipper length.
+
+```{r}
+
+lm3 <- lm(body_mass_g ~ island, data = penguins)
+
+stepAIC(lm3,  scope = ~bill_length_mm + island + flipper_length_mm, direction = "forward")
+```
+
+**An important note**
+
+The calculations of AIC are well beyond the scope of this course. However, it should be noted that `stepAIC` makes this calculation slightly differently than how AIC is calculated and pulled form our tidy model with glance and pull. Thus, it is critical that you (for whatever reason) do not cross compare AIC values when trying to make a model selection decision.
+
+## Additional Practice
+
+Researcher 1 wants to model flipper length by sex of the penguin. A second researcher wants to add island to the model as well, arguing their model will be better. Researcher 1 does not believe so. Who is right? Justify your answer below.
+
+Suggestion: For practice, use adjusted-r-squared
+
+```{r}
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ sex, data = penguins) |>
+  glance() |>
+  pull(adj.r.squared)
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ sex + island, data = penguins) |>
+  glance() |>
+  pull(adj.r.squared)
+
+```
+
+Researcher 2 is right. Adding island to the model vastly improves the adjusted r squared, suggesting that this model has a better overall fit.

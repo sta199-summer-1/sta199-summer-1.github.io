@@ -1,0 +1,276 @@
+---
+title: "Lecture 11 - Data Ethics"
+subtitle: "Lecture 10"
+date: "October 3, 2022"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone exam data ethics
+
+-- Breath a little! The exam is over :)
+
+## Announcements
+
+-- Exams graded by Friday
+
+-- Groups are coming
+
+## Goals
+
+-- Understand causality
+
+-- Understand how to improve graphs
+
+axes
+
+scales
+
+uncertainty
+
+-- Think about data
+
+-- Be a skeptic
+
+-- Practice in R
+
+# Causality
+
+```{r}
+#| echo: false
+
+library(countdown)
+library(tidyverse)
+library(lubridate)
+library(scales)
+```
+
+## 
+
+![](images/10-data-ethics/chocolate.png){width="900" height="400" fig-align="center"}
+
+-- What questions do you have?
+
+-- What do you wonder?
+
+## The Study
+
+-- 5 men and 11 women showed up, aged 19 to 67.
+
+-- Frank randomly assigned the subjects to one of three diet groups. One group followed a low-carbohydrate diet. Another followed the same low-carb diet plus a daily 1.5 oz. bar of dark chocolate. And the rest, a control group, were instructed to make no changes to their current diet.
+
+-- They weighed themselves each morning for 21 days, and the study finished with a final round of questionnaires and blood tests.
+
+## The Great Chocolate Hoak
+
+"If you measure a large number of things about a small number of people, you are almost guaranteed to get a "statistically significant" result. Our study included 18 different measurements---weight, cholesterol, sodium, blood protein levels, sleep quality, well-being, etc.---from 15 people. . . ."
+
+"It was, in fact, a fairly typical study for the field of diet research. Which is to say: It was terrible science. The results are meaningless, and the health claims that the media blasted out to millions of people around the world are utterly unfounded."
+
+## 
+
+![](images/10-data-ethics/exercise-cancer-latimes.png){width="900" height="400" fig-align="center"}
+
+## Original study {.smaller}
+
+Moore, Steven C., et al. [**"Association of leisure-time physical activity with risk of 26 types of cancer in 1.44 million adults."**](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2521826) JAMA internal medicine 176.6 (2016): 816-825.
+
+-   **Volunteers** were **asked** about their physical activity level over the preceding year.
+-   Half exercised less than about 150 minutes per week, half exercised more.
+-   Compared to the bottom 10% of exercisers, the top 10% had lower rates of esophageal, liver, lung, endometrial, colon, and breast cancer.
+-   Researchers found no association between exercising and 13 other cancers (e.g. pancreatic, ovarian, and brain).
+
+## 
+
+![](images/10-data-ethics/exercise-cancer-time.png){width="900" height="400" fig-align="center"}
+
+## The Takeaway
+
+-- Be a skeptic
+
+-- Ask questions
+
+-- Let the data tell the story, don't tell the data for the story
+
+-- Most studies should not claim causality
+
+# Telling a story {.smaller}
+
+##  {.smaller}
+
+![](images/10-data-ethics/interest1.png){width="200\"" height="400" fig-align="center"}
+
+-- What does this graph represent?
+
+-- What are the story of these data?
+
+-- Is the graph misleading?
+
+-- How could you improve this graph?
+
+## 
+
+![](images/10-data-ethics/interest2.png){width="400\"" height="700" fig-align="center"}
+
+![](images/10-data-ethics/axis-start-at-0.png){width="900" height="400" fig-align="center"}
+
+## How woul you fix this graph?
+
+![](images/10-data-ethics/cost_of_gas.png){width="900" height="400" fig-align="center"}
+
+## 
+
+```{r}
+#| echo: false
+
+df <- tibble(
+  date = ymd(c("2019-11-01", "2020-10-25", "2020-11-01")),
+  cost = c(3.17, 3.51, 3.57)
+)
+ggplot(df, aes(x = date, y = cost, group = 1)) +
+  geom_point() +
+  geom_line() +
+  geom_label(aes(label = cost), hjust = -0.25) +
+  labs(
+    title = "Cost of gas",
+    subtitle = "National average",
+    x = NULL, y = NULL, 
+    caption = "Source: AAA Fuel Gauge Report"
+  ) +
+  scale_x_continuous(
+    breaks = ymd(c("2019-11-01", "2020-10-25", "2020-11-01")), 
+    labels = c("Last year", "Last week", "Current"),
+    guide = guide_axis(angle = 90),
+    limits = ymd(c("2019-11-01", "2020-11-29"))
+  ) +
+  scale_y_continuous(labels = label_dollar())
+
+```
+
+## What's wrong with this graph?
+
+![](images/10-data-ethics/ga-dph-declining-bars.jpg){width="900" height="500" fig-align="center"}
+
+# Visualising uncertainty
+
+## What is uncertainty?
+
+-- "How sure are you of your conclusions?"
+
+## What is uncertainty?
+
+There are many reasons why a data analysis might still leave us in a position of uncertainty
+
+-- We don't have population data
+
+-- Measurement error
+
+-- Reporting error
+
+## Quick Example {.smaller}
+
+![](images/10-data-ethics/coin-flip.png){width="400" height="400" fig-align="center"}
+
+-   Flip 1: Heads
+-   Flip 2: Heads
+-   Flip 3: Tails
+-   Flip 4: Heads
+
+## 
+
+![](images/10-data-ethics/freq-coin.png){width="650" height="500" fig-align="center"}
+
+## 
+
+Suppose a researcher was interested in how diet impacted chicken weight? They assigned 5 chickens to 1 of 4 different diets. Here are the reported median weights of the 4 groups of chickens:
+
+-- Diet 1: 160 grams
+
+-- Diet 2: 225 grams
+
+-- Diet 3: 280 grams
+
+-- Diet 4: 245 grams
+
+-   So Diet 4 causes heavier chickens? Other reasons?
+
+## 
+
+![](images/10-data-ethics/chickweight.png){width="650" height="600" fig-align="center"}
+
+##  {.smaller}
+
+```{r}
+#| echo: false
+
+catalan <- tibble(
+  response = c("No", "Yes", "No answer"),
+  rate     = c(45.3, 44.5, 10.2)
+) %>%
+  mutate(response = fct_relevel(response, "No", "Yes", "No answer"))
+
+ggplot(catalan, aes(y = fct_rev(response), x = rate, color = response, group = response)) +
+  geom_point() +
+  geom_segment(aes(x = 0, xend = rate, 
+                   y = fct_rev(response), yend = fct_rev(response)),
+               size = 1) +
+  scale_color_manual(values = c("#5C8AA9", "#9D303A", "gray")) +
+  scale_x_continuous(labels = label_percent(scale = 1)) +
+  guides(color = "none") +
+  theme_minimal(base_size = 16) +
+  labs(
+    title = "Do you want Catalonia\nto become an independent state?",
+    caption = "",
+    x = NULL, y = NULL
+  )
+```
+
+So the answer is No! .... No?
+
+##  {.smaller}
+
+```{r}
+#| echo: false
+catalan <- catalan %>%
+  mutate(
+    low = rate - 2.95,
+    high = rate + 2.95
+  )
+ggplot(catalan, aes(y = fct_rev(response), x = rate, color = response, group = response)) +
+  geom_segment(aes(x = low, xend = high, 
+                   y = fct_rev(response), yend = fct_rev(response)),
+               size = 0.8, color = "black") +
+  geom_point(size = 3) +
+  scale_color_manual(values = c("#5C8AA9", "#9D303A", "gray")) +
+  scale_x_continuous(labels = label_percent(scale = 1)) +
+  guides(color = "none") +
+  theme_minimal(base_size = 16) +
+  labs(
+    title = "Do you want Catalonia\nto become an independent state?",
+    caption = "The probability of the tiny difference between the\n'No' and 'Yes' being just due to random chance is very high.",
+    x = NULL, y = NULL
+  )
+```
+
+## 
+
+![](images/10-data-ethics/calling-bullshit.png){width="300" height="430"}
+
+The Art of Skepticism in a Data-Driven World\
+
+by Carl Bergstrom and Jevin West
+
+## 
+
+![](images/10-data-ethics/cairo-how-charts-lie.jpg){width="300" height="430"}
+
+Getting Smarter about Visual Information\
+
+by Alberto Cairo
+
+# ae-10 Data Ethics
+
+## For Next Time: Don't do this
+
+"It looks like we can scrape student ID and email information. What type of project can we do with this?"

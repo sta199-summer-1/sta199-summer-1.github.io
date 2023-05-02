@@ -1,0 +1,50 @@
+---
+title: "Multiple Predictors"
+subtitle: "Lecture 17"
+date: "October 26, 2022"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-16`
+
+-- Review context of `ae-15` for warm up question
+
+## Announcements
+
+-- Lab Feedback
+
+-- Project Repos Coming
+
+## Goals
+
+-- Finish categorical single predictor
+
+-- Model with multiple predictors
+
+-- Adjusted R-squared
+
+## Warm Up
+
+Recall that we ended last class by modeling the relationship between a penguin's body mass and the insland they were recorded on. Using the following output, write the estimated model below:
+
+![](images/SLRCat.png)
+
+## Further
+
+-- What if we want to account for both their flipper length and island?
+
+-- Would a different model explain more variation in the response body mass?
+
+## Modeling More Than one Variable
+
+-- **Multiple linear regression** is used to estimate the relationship between **two or more** explanatory variables and one response variable.
+
+-- we want to predict the value of a variable based on the value of two or more other variables
+
+-- "account for X1 and assess the relationship between X2 and Y" - main effects
+
+-- "does X1's relationship with Y change based on X2"
+
+## In Summary

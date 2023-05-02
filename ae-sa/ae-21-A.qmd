@@ -1,0 +1,199 @@
+---
+title: "Suggested Answers: Hypo-II"
+format: html
+editor: visual
+---
+
+# Packages
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+
+abb <- read_csv("data/asheville.csv")
+```
+
+## Conclude the Null Hypothesis
+
+To start this activity, we are going to demonstrate why we can never conclude the null hypothesis. We will use the airbrb data set for this demonstration.
+
+Decisions are always in terms of the null hypothesis, but we can never conclude the null hypothesis.... why?
+
+Let's assume your null hypothesis for the Airbnb question is: $\mu$ = 70, and you are interested in $\mu$ \> 70
+
+```{r}
+null_dist2 <- abb |>
+  specify(response = ppg) |>
+  hypothesize(null = "point", mu = 70) |>
+  generate(reps = 1000, type = "bootstrap") |>
+  calculate(stat = "mean")
+
+visualize(null_dist2) +
+ shade_p_value(obs_stat = 76.6, direction = "greater")
+
+null_dist2 |>
+  get_p_value(obs_stat = 76.6, direction = "greater")
+```
+
+So now.... I **incorrectly** conclude that $\mu$ = 70.
+
+Another research assumes that $\mu$ = 72....
+
+```{r}
+null_dist3 <- abb |>
+  specify(response = ppg) |>
+  hypothesize(null = "point", mu = 72) |>
+  generate(reps = 1000, type = "bootstrap") |>
+  calculate(stat = "mean")
+
+visualize(null_dist3) +
+ shade_p_value(obs_stat = 76.6, direction = "greater")
+
+null_dist3 |>
+  get_p_value(obs_stat = 76.6, direction = "greater")
+```
+
+So now.... I **incorrectly** conclude that $\mu$ = 72....??????
+
+# Difference in means
+
+The Iris Dataset contains four features (length and width of sepals and petals) of 50 samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). A sepal is the outer parts of the flower (often green and leaf-like) that enclose a developing bud. The petal are parts of a flower that are the pollen producing part of the flower that are often conspicuously colored. The difference between sepals and petals can be seen below.
+
+The data were collected in 1936 at the Gaspé Peninsula, in Canada. For the first question of the exam, you will use this data sets to investigate a variety of relationships to learn more about each of these three flower species. The data set is prepackaged in R, and is called `iris`.
+
+```{r}
+
+data(iris)
+
+```
+
+Goal: Previously, we had conducted a hypothesis test for a single mean (price per guest). Now, we are extending what we know to the difference in mean case.
+
+Specifically, we are going to test for a difference in mean Sepal length between the Setosa and Versicolor.
+
+## EDA
+
+First, we want to filter the data set to only contain our two `Species`. Please create a new data set that achieves this below.
+
+```{r}
+iris_filter <- iris |>
+  filter(Species != "virginica")
+```
+
+Below, calculate and create the following:
+
+-- Mean sepal length for each group
+
+-- Box plot of Sepal length for each group
+
+```{r}
+
+iris_filter |>
+  group_by(Species) |>
+  summarize(mean_sep = mean(Sepal.Length))
+
+iris_filter |>
+  ggplot(
+    aes(x = Sepal.Length, y = Species)
+  ) + 
+  geom_boxplot()
+
+
+```
+
+What is your point estimate? Using proper notation, report it below (setosa - versicolor).
+
+$\bar{x_s} - \bar{x_v}$ = -0.93
+
+Now, we are going to see if this difference is by chance, or if this difference is meaningful...
+
+Below, write out the null and alternative hypothesis in both words + notation.
+
+$H_o$: $\mu_s - \mu_v$ = 0
+
+$H_a$: $\mu_s - \mu_v \neq$ 0
+
+Ho: The true mean Sepal Length for the setosa species is the same as the true mean Sepal Length for the versicolor species.
+
+Ha: The true mean Sepal Length for the setosa species is different than the true mean Sepal Length for the versicolor species.
+
+## Building a distribution
+
+Let's use simulation-based methods to conduct the hypothesis test specified above. We'll start by generating the null distribution.
+
+```{r}
+
+iris_filter |>
+  group_by(Species) |>
+  summarize(count = n())
+
+```
+
+-   How do we generate the null distribution? Detail the steps below.
+
+-- PERMUTE or shuffle all observations together, regardless of their original species
+
+-- Distribute observations into two new groups of size n1 = 50 and size n2 = 50
+
+-- Calculate the new sample means for each group
+
+-- Subtract the new sample means
+
+Now, let's do the above process many many times...
+
+```{r}
+
+null_dist <- iris_filter |>
+  specify(response = Sepal.Length, explanatory = Species) |>
+  hypothesize(null = "independence") |>
+  generate(reps = 1000, type = "permute") |>
+  calculate(stat = "diff in means", order = c("setosa", "versicolor"))
+```
+
+## Visualize
+
+Now, create an appropriate visualization fo your null distribution. Where is this distribution centered? Why does this make sense?
+
+```{r}
+
+null_dist |>
+  ggplot(
+    aes(x = stat)
+  ) + 
+  geom_histogram()
+
+```
+
+This distribution is centered roughly at 0. This makes sense because we assume that the null hypothesis is true.
+
+Now, add a vertical line on your null distribution that represents your sample statistic. Based on the position of this line, do you your sample mean is an unusual observation under the assumption of the null hypothesis?
+
+```{r}
+
+null_dist |>
+  ggplot(
+    aes(x = stat)
+  ) + 
+  geom_histogram() + 
+  geom_vline(xintercept = -0.93)
+```
+
+Calculate your p-value below
+
+```{r}
+null_dist |>
+  get_p_value(obs_stat = -0.93, direction = "two sided")
+```
+
+\<0.001
+
+And visualize it..
+
+Let's visualize it!
+
+```{r}
+visualize(null_dist) +
+ shade_p_value(obs_stat = -0.93, direction = "two sided") + 
+ shade_p_value(obs_stat = 0.93, direction = "two sided")
+```
+

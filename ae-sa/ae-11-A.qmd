@@ -1,0 +1,115 @@
+---
+title: "Suggested Answers: Regression with a Single Predictor"
+format: html
+editor: visual
+---
+
+## Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+library(tidyverse)
+library(tidymodels)
+library(palmerpenguins)
+```
+
+Today, we will revisit the penguins data set. If needed, please re-familiarize yourself by reading the following context and taking a `glimpse` at the data set before we get started.
+
+This data set comprising various measurements of three different penguin species, namely Adelie, Gentoo, and Chinstrap. The rigorous study was conducted in the islands of the Palmer Archipelago, Antarctica. These data were collected from 2007 to 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data set is called `penguins`.
+
+-   Take a glimpse of the data set below.
+
+```{r}
+
+glimpse(penguins)
+
+```
+
+We want to understand more about a penguin's body mass. First, we are going to investigate the relationship between a penguin's flipper length and their body mass.
+
+-   Based on our research question, which variable is the response variable?
+
+body mass
+
+-   Now, visualize the relationship between the two variables. Include the "line of best fit" in your plot.
+
+```{r}
+
+penguins |>
+  ggplot(
+    aes(y = body_mass_g, x = flipper_length_mm)
+  ) + 
+  geom_point() + 
+  geom_smooth(method = "lm" , se = F) 
+
+```
+
+This line **estimates** the relationship between our two variables. Below, we will practice writing out population and estimated models.
+
+## Model these Data
+
+-   Write the population model below that explains the relationship between body mass and flipper length.
+
+Hint: You can type equations within dollar signs. LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and treat the equation as math in the code chunks). It will appear as rendered math in your document.
+
+Useful tips:
+
+";" is a space in Pandoc markdown
+
+More tips below:
+
+$x^2 \; superscript$
+
+$x_2 \; subscript$
+
+$\hat{x}\; adds\; hat\; to\; x$
+
+$\beta \; this\; is\; beta$
+
+$\epsilon\; this\; is\; epsilon$
+
+Example:
+
+$\hat{x^n} + \beta^n = z_n + \epsilon_i$
+
+$body_mass = \beta_o + \beta1*flipper_length + \epsilon_i$
+
+-   Now, fit the linear regression model and display the results. Write the estimated model output below.
+
+```{r}
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm, data = penguins) |>
+  tidy()
+
+```
+
+$\hat{body\_mass} = -5781 + 49.7*flipper_length$
+
+## Interpretation
+
+-   Interpret the slope and the intercept in the context of the data.
+
+Hint: Think about what happens to y when we increase x by 1.
+
+Slope: For a 1 mm increase in flipper length, we **estimate** a **mean** change of 49.7 grams in body mass.
+
+Intercept: When flipper_length is 0 mm, we estimate a mean body mass of -5791 grams.
+
+Does the intercept make sense? Why or why not? In statistics, what does predicting outside the bounds of our data called?
+
+Extrapolation
+
+## Prediction
+
+-   What is the estimated mean body mass for a penguin with a flipper length of 210?
+
+```{r}
+
+-5791 + 49.7*210
+
+-5791 + 49.7*100
+```

@@ -1,0 +1,161 @@
+---
+title: "Lab 9 - Confidence Intervals and Hypothesis Testing"
+format: html
+execute:
+  eval: true
+---
+
+::: callout-important
+This lab is due Tuesday, April 11th at 11:59pm.
+:::
+
+```{r}
+#| warning: false
+#| message: false
+library(tidyverse)
+library(tidymodels)
+```
+
+Today we will continue learning about hypothesis testing using the `chickwts` that comes built in with `R`.
+From the help file: "An experiment was conducted to measure and compare the effectiveness of various feed supplements on the growth rate of chickens... Newly hatched chicks were randomly allocated into six groups, and each group was given a different feed supplement. Their weights in grams after six weeks are given along with feed types." We will evaluate the strength of statistical evidence that the various feed groups had significantly different expected weights.
+
+## Exercise 1
+
+Which of the following affect the p-value and why?
+
+-   Null hypothesis
+-   Alternative hypothesis
+-   Observed statistic
+-   Significance level ($\alpha$)
+
+## Exercise 2
+
+You are interested in testing whether or not average chick weight, regardless of the feed the chick eats, is different from 200 grams.
+What is wrong with the following null hypothesis?
+
+$$
+H_0: \bar{x} = 200
+$$
+
+## Exercise 3 - Load and visualize the datasest
+
+a.  Load the data set into an environment variable so that tab-autocomplete functions will work more smoothly inside RStudio (i.e., run `chickwts <- chickwts`).
+    Then, use `ggplot` to make an appropriate visualization for the distribution of chick weights by feed.
+    Make sure to give the plot an informative title and label the axes.
+
+b.  Based on the distributions visualized in the plot above, does feed supplementation seem to have an effect on chick weight? Why or why not?
+
+c.  Another type of plot that is helpful for visualizing distributions of continuous variables (like `weight`) across levels of a categorical treatment (like `feed`) is called a *violin plot*.
+    A violin plot represents each distribution with a smooth density estimate.
+    Create a new plot to answer part (a) using `geom_violin` to see how this works. Describe the distributions of each group.
+
+## Exercise 4 - Single comparison
+
+Is the average weight of chicks that eat `sunflower` feed different from the average weight of chicks that eat `meatmeal` feed?
+To answer this, you will setup a hypothesis test.
+
+a.  State the null and alternative hypothesis in proper notation, letting $\mu_s$ be the true mean weight of sunflower fed chicks and $\mu_m$ the true mean weight of meatmeal fed chicks.
+
+b.  Compute and report the observed statistic.
+
+c.  To quantify the evidence *against* the null hypothesis, we estimate the probability that, if the null hypothesis were true, we would have observed a difference in means as large or larger than what we observed in part b.
+    This "tail probability" is called the *p-value* associated with the difference in means we computed.
+
+-   Simulate under the null distribution using `reps = 5000` and `set.seed(3)`. Save your simulation as `null_dist`. Next, compute the p-value and state your conclusion.
+
+## Exercise 5 - Evaluating evidence and multiple testing
+
+We do not want to "reject" the null hypothesis when it is in fact true - that is called a "false positive" or **type 1 error**.
+In this case, we don't want to claim sunflower feed leads to higher expected chick weight if in fact it does not.
+So we want to set a bar high enough that we should rarely incur type 1 error.
+
+An experimenter will often decide in advance what is an acceptable false positive rate.
+In many situations, by convention, the threshold of requiring p-values below 0.05 is adopted.
+
+a.  Suppose a scientist repeats the experiment 100 times in a row. If the true difference in weight between group is in fact 0, in roughly how many of the experiments would the scientist expect to find a p-value of less than 0.05?
+
+The phenomenon described in part (a) is called p-hacking.
+The idea is that, by design, a "significance threshold" of level $\alpha$ will mean that, even if we only conduct experiments for which the null hypothesis is always true, we will expect to reject the null with probability $\alpha$.
+Thus, if you simply conduct enough experiments then eventually you will have "significant" findings even if the true effect is nonexistent.
+
+b.  Suppose we would like to compare all pairs of feed groups to test for differences in expected weight. There are 6 types of feed, so there are ${6 \choose{2}} = 6*5/2 = 15$ pairs we could compare. If we reject the null hypothesis for any p-value less than or equal to 0.05, and we assume the p-values are independent for each pair, and we also assume the null is true for every comparison, what is the probability that we don't reject the null for any of the pairs?
+
+::: callout-tip
+## Hint
+
+P(A, B) = P(A)P(B) when events A and B are independent.
+:::
+
+c.  Based on your answer in part b, if we compared all 15 pairs of feeds for differences in expected weight, assuming the p-values are independent for each pair, what is the probability that we will make a type 1 error (i.e., the probability that we *do* reject the null for at least one pair)?
+
+::: callout-tip
+## Hint
+
+P($A$) + P($A^C$) = 1 where $A^C$ denotes "not $A$".
+In other words, probabilities of complementary events add to 1.
+:::
+
+## Exercise 6 - Bonferroni Correction
+
+If the probability of event $A$ is $p_1$ and the probability of event $B$ is $p_2$, the *largest possible probability for the either* the event $A$ or $B$ occuring is $p_1 + p_2$.
+Hence, in the worst possible case, if we perform a series of tests $T_1, \dots, T_k$ calibrated to have type 1 error probabilities $p_1, \dots, p_k$, the largest possible probability that at least one of the tests results in a type 1 error is $p_1 + \dots + p_k$.
+
+If all of the tests have a common type 1 error probability $p^*$, then this value will equal $kp^*$.
+
+a.  If we were to perform all pairwise tests for the `chickwts` data set, what p-value threshold must we use if we want to guarantee that the probability of one or more type 1 errors is less than 0.05?
+
+This "higher bar" for p-values in multiple testing situations is called the **Bonferroni correction**.
+
+b.  I will spare you from performing all possible pairwise comparisons. However, you can see from the plots in exercise 3 that the difference in sample means between the sunflower and horsebean groups will likely be the greatest of any pair in the data set. If we began our experiment with no particular hypothesis and choose to formally compare these two groups based on a visualization, we are *implicitly performing multiple testing* by pre-screening out all pairs which do not have an obvious visual difference, thus we should impose a higher bar on the evidence for rejecting our null if we wish to maintain a low type 1 error rate overall. Is that pair significantly different if we use the Bonferroni-corrected threshold from part (a) above?
+
+::: callout-tip
+## Hint
+
+Re-use your code from exercise 4(c) with the necessary modifications.
+:::
+
+## Submission
+
+::: callout-warning
+Before you wrap up the assignment, make sure all documents are updated on your GitHub repo.
+We will be checking these to make sure you have been practicing how to render and push changes.
+
+You must turn in a PDF file to the Gradescope page by the submission deadline to be considered "on time".
+
+Make sure your data are tidy!
+That is, your code should not be running off the pages and spaced properly.
+See: <https://style.tidyverse.org/ggplot2.html>.
+:::
+
+To submit your assignment:
+
+-   Go to <http://www.gradescope.com> and click *Log in* in the top right corner.
+-   Click *School Credentials* $\rightarrow$ *Duke NetID* and log in using your NetID credentials.
+-   Click on your *STA 199* course.
+-   Click on the assignment, and you'll be prompted to submit it.
+-   Mark all the pages associated with exercise. All the pages of your lab should be associated with at least one question (i.e., should be "checked"). *If you do not do this, you will be subject to lose points on the assignment.*
+-   Do not select any pages of your .pdf submission to be associated with the *"Workflow & formatting"* question.
+
+# Grading
+
+| Component             | Points |
+|:----------------------|:-------|
+| Ex 1                  | 8     |
+| Ex 2                  | 4     |
+| Ex 3                  | 9      |
+| Ex 4                  | 10     |
+| Ex 5                  | 8     |
+| Ex 6                  | 6      |
+| Workflow & formatting | 5      |
+| **Total**             | 50     |
+
+::: callout-note
+The "Workflow & formatting" component assesses the reproducible workflow.
+This includes:
+
+-   having at least 3 informative commit messages
+-   labeling the code chunks
+-   having readable code that does not exceed 80 characters, i.e., we can read all your code in the rendered PDF
+-   each team member contributing to the repo with commits at least once
+-   the issue being closed with a commit message
+:::

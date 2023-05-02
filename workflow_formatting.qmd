@@ -1,0 +1,207 @@
+---
+title: "Workflow and Formatting"
+author: "STA199 TA team"
+format: html
+editor: visual
+---
+
+### Rubrics for workflow and formatting
+
+Breakdown of overall workflow and formatting grading listed below:
+
+-   1 pts: 1 point given if all *code chunks are appropriately labelled*
+    -   take off 0.5 pt if anything less
+    -   take off 1 pt if none of the code chunks are appropriately labelled
+-   3 pts: Consistent code style.
+-   1 point given if narrative and text does not exceed the 80 character limit.
+-   1 point given for consistent use of operators (i.e. %\>% or \|\> and \<- or = but not both)
+-   1 point given for consistent and appropriate use of spacing (i.e. pipes and layers followed by newline and binary operators like + and - are surrounded by spaces)
+-   1 pt: author name updated to the student's name at the YAML (at the top) of the document.
+
+### Common Mistakes
+
+#### 1. meaningless labels
+
+```{r chunk-0}
+library(tidyverse)
+```
+
+```{r chunk-1}
+iris |>
+  glimpse()
+```
+
+Some good examples
+
+```{r iris-dataset}
+iris |>
+  glimpse()
+```
+
+```{r library}
+iris |>
+  glimpse()
+```
+
+If you have multiple models or plots for the homework/labs, you can number them.
+
+```{r lm-1}
+iris_sum <- iris |>
+  as_tibble() |>
+  lm(formula = Petal.Width ~ Sepal.Width) |>
+  summary()
+```
+
+```{r boxplot-1}
+iris_boxplot <- iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + geom_boxplot()
+```
+
+#### 2. Inconsistent use of operator
+
+Bad examples: use both %\>% and \|\>, both \<- and = in the homework/lab.
+
+```{r bad-op-1}
+iris_boxplot <- iris |>
+  as_tibble() %>%
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot()
+```
+
+```{r bad-op-2}
+iris_tbl <- iris |>
+  as_tibble()
+iris_boxplot = ggplot(iris_tbl, aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot()
+```
+
+Good examples:
+
+```{r good-op-1}
+iris_boxplot <- iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot()
+```
+
+```{r good-op-2}
+iris_tbl <- iris |>
+  as_tibble()
+iris_boxplot <- ggplot(iris_tbl, aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot()
+```
+
+#### 3. Narrative and text exceeding character limit
+
+Bad examples: text overflow. Only part of the text will appear in both coding part and plot.
+
+```{r bad-txt-1}
+iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot() +
+  labs(title = "The title is super long and exceeds the word limits. Please do not take my points off.")
+```
+
+Possible solutions: have a new line inside your code or have subtitle. It is always a good idea to do proofreading on your knitted pdf file.
+
+```{r good-txt-1}
+iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot() +
+  labs(title = "The title is super long and exceeds the word limits.
+       Please do not take my points off.")
+
+iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot() +
+  labs(title = "The title is super long and exceeds the word limits.",
+       subtitle = "Please do not take my points off.")
+```
+
+Bad examples: text overflow when the functions have a lot of arguments needed specification
+
+```{r bad-txt-2}
+iris_boxplot <- iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species, fill = Species)) + 
+  geom_boxplot() +
+  labs(title = "Boxplot for petal width versus species", x = "species", y = "petal width", fill = "species")
+```
+
+A solution: represent them in separate lines
+
+```{r good-txt-2}
+iris_boxplot <- iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species, fill = Species)) + 
+  geom_boxplot() +
+  labs(title = "Boxplot for petal width versus species", 
+       x = "species", 
+       y = "petal width", 
+       fill = "species")
+```
+
+#### 4. Inappropriate use of spacing
+
+Bad example: +/-/=/\</\| are not surrounded by spaces
+
+```{r bad-spacing-1}
+iris_boxplot<-iris|>
+  as_tibble()|>
+  ggplot(aes(y=Petal.Width, x=Species, fill=Species))+ 
+  geom_boxplot() 
+```
+
+Good example:
+
+```{r good-spacing-1}
+iris_boxplot <- iris |>
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species, fill = Species)) + 
+  geom_boxplot() 
+```
+
+#### 5. New layer/pipline not begin with a newline
+
+The code should be in a newline if it is a new function, such as pipeline, ggplot layers, model fitting.
+
+Bad examples:
+
+```{r bad-newline-1}
+iris_boxplot <- iris |> as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot() 
+```
+
+```{r bad-newline-2}
+iris_boxplot <- iris |> 
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + geom_boxplot() 
+```
+
+```{r bad-newline-3}
+iris_boxplot <- iris |> 
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot() + ggtitle("Boxplot for width versus species")
+```
+
+```{r bad-newline-4}
+iris_sum <- iris |>
+  as_tibble() |>
+  lm(formula = Petal.Width ~ Sepal.Width) |> summary()
+```
+
+Good examples
+
+```{r good-newline-3}
+iris_boxplot <- iris |> 
+  as_tibble() |>
+  ggplot(aes(y = Petal.Width, x = Species)) + 
+  geom_boxplot() + 
+  ggtitle("Boxplot for width versus species")
+```

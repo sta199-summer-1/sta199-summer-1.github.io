@@ -1,0 +1,166 @@
+---
+title: "HW 2 - The Joy of Probability"
+categories: "Homework"
+---
+
+::: callout-important
+This homework is due Friday, Feb 24 at 11:59pm.
+:::
+
+## Getting Started
+
+-   Go to the [Github Organization page](https://github.com/sta199-s23-2) and open your `hw-2-s23-username` repo
+
+-   If needed, see the [Lab 0 instructions](https://sta199-s23-2.github.io/labs/lab-0.html) for details on cloning a repo and starting a new R project.
+
+-   Clone the repository, open a new project in RStudio. It contains the starter documents you need to complete the homework assignment.
+
+# Packages
+
+We will work with the `tidyverse` package as usual. Our data comes from the `fivethirtyeight` package. You may also want to use `viridis` to help with pallet colors.
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+
+
+library(tidyverse)
+library(fivethirtyeight)
+library(viridis)
+```
+
+# Data
+
+Bob Ross was a painter who was most famous for his PBS television show The Joy of Painting. In each episode, Ross created a new oil painting and provided instructions and commentary as he painted it. Ambitious viewers could paint along but viewers also simply enjoyed watching and listening to Ross's soothing voice as he painted an outdoor scene in 30 minutes.
+
+In 2014, Walt Hickey wrote an article for FiveThirtyEight using statistics to analyze the paintings created on the show.The article focused on features that were often seen in Ross's paintings, such as trees, clouds, cabins, among others. [Click here to see the article](https://fivethirtyeight.com/features/a-statistical-analysis-of-the-work-of-bob-ross/)
+
+In this assignment, you will analyze the data that was used for the article. The data is in the `bob_ross` data set in the fivethirtyeight R package. Each observation represents an episode of the TV show. One painting was created in an episode. To access the full codebook of variables, explore the documentation using `?bob_ross`.
+
+We'll focus on the following variables in this assignment:
+
+-   `tree`: Whether or not the painting contains at least 1 tree
+-   `guest`: Whether or not the episode featured a guest painter
+-   `steve_ross`: Whether or not Steve Ross was the featured guest
+-   `cirrus`: Whether the painting contains cirrus clouds
+-   `cumulus`: Whether the painting contains cumulus clouds
+-   `mountain`: Whether the painting contains a mountain
+-   `river`: Whether the painting contains a river
+-   `cabin`: Whether the painting contains a cabin
+-   `lake`: Whether the painting contains a lake
+
+## Exercise 1
+
+-   How many episodes are there of the show: **Joy of Painting**?
+
+"There's nothing wrong with having a tree as a friend."
+
+-   In how many episodes was a tree painted?
+
+-   What is the probability a randomly selected episode featured a tree?
+
+## Exercise 2
+
+The **Joy of Painting** occasionally featured a guest painter other than Bob Ross. One guest painter was Bob's son Steve Ross.
+
+-   What's the probability the show featured Steve Ross given there was a guest painter?
+
+-   Did Steve Ross like to paint mountains more or less than the other guest painters? Create a stacked bar plot of guest painters. Have whether or not Steve was the guest painter on the x-axis and fill the bars according to whether or not a mountain exists in the painting. Note: rename observations so that they are more informative than 0 and 1.
+
+## Exercise 3
+
+The next few questions will focus only on paintings created by Bob Ross. Make a new data frame called `ross_paintings` that only includes episodes (and thus paintings) made by Bob Ross. Save this data frame and use it for exercises 4 - 6.
+
+## Exercise 4
+
+"Let's build us a happy, little cloud that floats around the sky."
+
+Are the following two events disjoint (mutually exclusive)? Why or why not?
+
+-   A: Bob Ross paints a `cirrus` cloud
+-   B: Bob Ross paints a `cumulus` cloud
+
+## Exercise 5
+
+Suppose you randomly select a Bob Ross painting and see that it features a mountain. Use Bayes Theorem to calculate the probability this painting also features a river. Show your work by using a code chunk as a calculator.
+
+Hint: p(mountain \| river) = 0.39
+
+-   Follow up question: Does Bob Ross paint mountains independent of whether or not he paints rivers? Why? In other words, is event A independent of B? Here we define events:
+
+-   A: Bob Ross paints a mountain
+
+-   B: Bob Ross paints a river
+
+## Exercise 6
+
+Your turn! Use this data to explore a question of your choice about paintings created in the TV show The Joy of Painting. Your question should explore the relationship between 3 variables in the data set; at least one of the variables must be one that hasn't been used in exercises 1 - 6. You may use the entire data set or focus the analysis on paintings made by Bob Ross.
+
+-   Clearly state the question you're exploring.
+-   Create 1 - 2 visualizations that can be used to explore the question. Customize the colors of your visualization using some of the colors commonly used in Bob Ross paintings.[Click here](https://sites.radford.edu/~cdc/seansevillair.html) for a list of common Bob Ross hex codes.
+
+Hint: [Click here for functions to manually create color palettes in ggplot2.](https://ggplot2.tidyverse.org/reference/scale_manual.html)
+
+-   Calculate the relevant probabilities needed to answer your question.
+-   Write a short narrative, about 2 - 4 sentences, answering the research question based on the visualization and probabilities. Note: The narrative should not exceed 4 sentences.
+
+## Exercise 7
+
+Please watch the following video on data visualization [here](https://www.youtube.com/watch?v=jbkSRLYSojo&t=121s)
+
+Next, answer the following questions.
+
+$a$ What was one key takeaway from the data that Hans Rosling presented?
+
+$b$ What is one way that Hans Rosling was effective in communicating the story of the data?
+
+$c$ What is one strategy you may try and implement during your end of the year presentation? Why?
+
+# Wrap up
+
+## Reminder:
+
+-   All plots should follow the best visualization practices: include an informed title, label axes, and carefully consider aesthetic choices.
+-   All code should follow the tidyverse style guidelines, including not exceeding the 80 character limit.
+
+## Submission
+
+-   Go to <http://www.gradescope.com> and click Log in in the top right corner.
+-   Click School Credentials Duke Net ID and log in using your Net ID credentials.
+-   Click on your STA 199 course.
+-   Click on the assignment, and you'll be prompted to submit it.
+-   Mark all the pages associated with exercise. All the pages of your homework should be associated with at least one question (i.e., should be "checked"). If you do not do this, you will be subject to lose points on the assignment.
+-   Select the first page of your PDF submission to be associated with the "Workflow & formatting" question.
+
+## Rubric
+
+-   Ex 1: 5 pts.
+
+-   Ex 2: 8 pts.
+
+-   Ex 3: 3 pts.
+
+-   Ex 4: 5 pts.
+
+-   Ex 5: 8 pts.
+
+-   Ex 6: 6 pts.
+
+-   Ex 7: 10 pts.
+
+-   Workflow and formatting - 5 pts ::: callout-note The "Workflow & formatting" grade is to assess the reproducible workflow. This includes:
+
+-   linking all pages appropriately on Gradescope
+
+-   putting your name in the YAML at the top of the document
+
+-   committing the submitted version of your `.qmd` to GitHub
+
+-   Are you under the 80 character code limit? (You shouldn't have to scroll to see all your code).
+
+-   Pipes `%>%`, `|>` and ggplot layers `+` should be followed by a new line
+
+-   You should be consistent with stylistic choices, e.g. only use 1 of `=` vs `<-` and `%>%` vs `|>`
+
+-   All binary operators should be surrounded by space. For example `x + y` is appropriate. `x+y` is not. :::

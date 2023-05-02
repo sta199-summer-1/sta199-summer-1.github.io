@@ -1,0 +1,146 @@
+---
+title: "Working with multiple data frames"
+subtitle: "Lecture 6"
+date: "February 1st, 2023"
+format: revealjs
+---
+
+## Checklist
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+-- Clone ae-05
+
+-- Make sure you are keeping up with **Preperation Videos**
+
+-- If you need to turn HW in late, see late policy 
+
+-- If you have extenuating circumstances (see syllabus), contact Ed. 
+
+
+## Announcements
+
+Videos
+
+-- Requesting videos for missed classes
+
+Homework + Labs
+
+-- Late work policy
+
+-- Drop 1
+
+## Announcements
+
+Exam 
+
+-- February 10th 
+
+-- Take home
+
+-- Open Notes / Internet / etc
+
+## Exam 
+
+-- Coding + Short answer questions 
+
+-- Extension questions 
+
+-- Can NOT be late 
+
+-- Pull -> Commit -> Push after every question
+
+## Announcements
+
+Updates to deadlines 
+
+-- More time for labs (1 week: Tuesday -> Tuesday)
+
+-- Homework (1 week: Wednesday -> Wednesday)
+
+-- Subject to change around Exam time / holiday / etc
+
+## Announcements
+
+-- A lot of errors happen when coding (and that's okay)
+
+## Warm Up 
+
+Glimpse `mtcars` if you need to refamilarize yourself with these data
+
+
+```
+mtcars |>
+  summarize(mean_mpg = mean(mpg))
+  
+---------------------------------
+mtcars |>
+  mutate(cyl = factor(cyl)) |>
+  group_by(cyl) |>
+  summarize(mean_mpg = mean(mpg))
+```
+
+## Warm Up{.smaller} 
+
+```{r}
+library(tidyverse)
+mtcars |>
+  summarize(mean_mpg = mean(mpg))
+
+mtcars |>
+  mutate(cyl = factor(cyl)) |>
+  group_by(cyl) |>
+  summarize(mean_mpg = mean(mpg))
+```
+
+
+## Goals
+
+-- Understand join functions
+
+-- Join multiple data frames
+
+## Motivation 
+
+Messy data
+
+-- The sheer volume of information is sometimes referred to as “messy” data, because it's hard to make sense of it all. 
+
+## Messy data 
+
+![](images/join-motivation.png){width="950" height="550" fig-align="center"}
+
+# How? 
+
+## Joining datasets
+
+**Data merging** is the process of combining two or more data sets into a single data set. Most often, this process is necessary when you have raw data stored in multiple files, worksheets, or data tables, that you want to analyze together.
+
+## Joining datasets 
+
+-- Left Join 
+
+-- Inner Join 
+
+-- Right Join 
+
+-- Full Join
+
+## Joining datasets 
+
+![](images/join.png){width="950" height="500" fig-align="center"}
+
+
+## AE-05
+
+Clone ae-05
+
+## Recap of AE
+
+-- This is important! Data are messy!
+
+-- Think carefully about the join you use

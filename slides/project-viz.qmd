@@ -1,0 +1,195 @@
+---
+title: "Communicating Visualizations Effectively"
+subtitle: "Lecture 25-ish?"
+date: "April 19th, 2023"
+format: revealjs
+---
+
+## Announcements {.smaller}
+
+-- Clone ae-24
+
+-- Exam 2 is over. You did it :)
+
+-- HW-6 (Statistics Experience) due April 28th
+
+-- Project Final Report (April 28th)
+
+-- Project Presentations (April 25th)
+
+-- Third Peer Evaluation Coming (Dates announced soon)
+
+## Regrade Requests
+
+-- Once grades are changed on Gradescope, they will not be reflected in Sakai Gradebook
+
+## Grading Announcements
+
+-- Drop lowest HW (This can be a HW that you have earned a 0 on)
+
+-- Drop lowest Lab
+
+-- 80% of the AEs pushed -\> earning 100%
+
+# Project
+
+## Project
+
+-- Contribute! Communicate!
+
+You are not guaranteed to earn the same grade as your project peers
+
+--- Peer Evaluations
+
+--- Lab participation
+
+--- TA input
+
+## Project
+
+-- You are expected to be in lab on April 28th. If there is an extreme circumstance, please get your Dean involved.
+
+-- The presentation must be no longer than 5 minutes. You can choose to present live in class (recommended) or pre-record a video to be shown in class.
+
+-- I will have a computer hooked up for presenting. I will pull up your presentation from your hosted website.
+
+-- Each individual is expected to be engaged when others are presenting.
+
+## Expectations of the report
+
+Check `project description` on our website
+
+-- Introduction
+
+-- Literature Review
+
+-- Methods
+
+-- Results
+
+-- Discussions
+
+## Methods
+
+This section includes any exploratory data analysis and a brief description of your statistical procedure.
+
+In this section, explore your data and justify the procedures you will be using to answer your research question.
+
+## Results
+
+Make it look like a report. Before you finalize your write up, make sure the printing of code chunks is off with the option `echo: false` in the YAML
+
+Discuss your overall finding and describe the key results from your analysis
+
+The goal is not to interpret every single element of an output shown, but instead to address the research questions, using the interpretations to support your conclusions
+
+## Penguins Example
+
+(3 min): Interested in looking at the relationship between flipper length and bill length. I don't want to interpret it.....So why did I include body_mass?
+
+```{r}
+#| echo: false
+
+library(palmerpenguins)
+library(tidymodels)
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(flipper_length_mm ~ bill_length_mm + body_mass_g, data = penguins) |>
+  tidy()
+
+```
+
+## Suggestions
+
+Your report should tell a story!
+
+-- What are you interested in finding out?
+
+-- What have others done that is *related to what you are interested in*
+
+-- How did you explore data in relation to your research question?
+
+-- How are you attempting to answer your research question?
+
+-- Limitations things to consider with what you found out?
+
+## Presentation Suggestions
+
+-- Try not to fill your slides up with words
+
+-- Well-organized
+
+-- Know your audience (we know nothing about your project)
+
+## Presentation Suggestions {.smaller}
+
+Get excited about showing off your hard work!
+
+-- Things to consider when presenting....
+
+-   Well designed research question?
+
+-   Appropriate statistical procedures and/or interpretations to answer the question?
+
+-   Any limitations considered?
+
+-   Are slides professional? Is your presentation professional?
+
+-   Time management.
+
+## Presentation Creation
+
+-- Google Slides
+
+-- Quarto (if you like!)
+
+-- Will have Google sheet to paste slide link into prior to your presentation
+
+# Communicating Visualizations Effectively
+
+## Warm Up
+
+How do we effectively communicate data?
+
+![](images/bad.png){fig-align="center"}
+
+## Warm Up
+
+How do we effectively communicate data?
+
+![](images/bad2.png){fig-align="center"}
+
+## Goals for today
+
+-- Go over plotting techniques to make visualizations better
+
+-- Review Quarto customization tools
+
+-- AE-24
+
+## AE-24
+
+-- Go over what we've learned
+
+-- Introduce new code
+
+**You are not suppose to be able to write this code without help! Use this ae as a guide / reference**
+
+Play around with the code to learn about the functionality
+
+## AAUP staff-employment
+
+![](images/staff-employment.png){fig-align="center"}
+
+## AAUP by total proportions
+
+![](images/plot2-create.png)
+
+## Red-green color blindness - Deuteranopia (doo-tr-uh-now-pee-uh)
+
+![](images/red-green.png)
+
+## Red-green color blindness - Protanopia (prow-tuh-now-pee-uh)
+
+![](images/red-green2.png)

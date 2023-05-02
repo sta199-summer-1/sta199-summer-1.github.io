@@ -1,0 +1,88 @@
+---
+title: "Data Import"
+subtitle: "Lecture 9"
+date: "September 26, 2022"
+format: revealjs
+---
+
+## Checklist
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+-   Open your `ae-08` project in RStudio.
+
+-   Lab-03 Due Tonight.
+
+-   Exam 1 is coming (This week!)
+
+## Exam Study Tips
+
+-- Take notes that you can reference 
+
+-- Go back through feedback 
+
+-- Revisit AEs 
+
+-- Review keys 
+
+-- Ask questions 
+
+## Survey 
+
+-- Review 
+
+-- Feedback
+
+## Regrades 
+
+-- What they are 
+
+and are not...
+
+
+## Goals
+
+-- Understand how to export data files 
+
+-- Understand multiple ways to read in data 
+
+-- "New" functions: str_detect and fill 
+
+-- Review
+
+## Prep Questions
+
+[Slido-Exam](https://app.sli.do/event/ve6T56b8H5FdUpqgV9U7tQ)
+
+[Slido-Reading](https://app.sli.do/event/ppjZjZRgcEL8u9DVhe1CsD)
+
+## Warm Up 
+Why should we bother with writing code to edit data rather than just editing the Excel file? 
+
+What is the difference between read.csv and read_csv? 
+
+## read.csv vs read_csv
+
+![](images/tibble.png){fig-align="center" width="801"}
+
+# Application exercise
+
+## `ae-08`
+
+--   Go to the course [GitHub org](https://github.com/sta199-f22-2) and find your `ae-08` (repo name will be suffixed with your GitHub name).
+
+--   Clone the repo in your container, open the Quarto document in the repo, and follow along and complete the exercises.
+
+--   Render, commit, and push your edits by the AE deadline -- 3 days from today.
+
+## Recap of AE {.smaller}
+
+![](images/import.png){fig-align="center"}
+
+## Recap of AE
+
+-- There are also special functions to work with dates and times! See preperation reading. 

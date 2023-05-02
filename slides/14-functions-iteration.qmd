@@ -1,0 +1,50 @@
+---
+title: "Functions + Iteration"
+subtitle: "Lecture 15"
+date: "October 17, 2022"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-13`
+
+## Announcements
+
+-- No Homework this week 
+
+-- Project Proposal Due Thursday
+
+## Reminder
+
+-- Merge conflicts can be avoided if you *pull* before making changes
+
+-- Refer to previous lab for steps on how to fix "simple" merge conflicts 
+
+-- If conflicts continue to pile up..... save locally and "restart" 
+
+## Goals 
+
+-- Review R (Finish ae-12)
+
+-- What is a function? 
+
+-- How can we write them? 
+
+-- Why should we write them? 
+
+-- Review web scraping 
+
+## Warm up - Temperature Function
+
+To convert temperatures in degrees Fahrenheit to Celsius, subtract 32 and multiply by .5556 (or 5/9). 
+
+Write a function in R that can take an input of a Fahrenheit temperature and output a temperature in Celsius. 
+
+## Why we need functions? 
+
+![](images/functions.png){}
+
+## Iteration
+
+![](images/map.png){}

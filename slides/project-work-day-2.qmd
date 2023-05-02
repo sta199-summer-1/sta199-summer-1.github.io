@@ -1,0 +1,81 @@
+---
+title: "Project Work Day 2"
+subtitle: "Lab-Lecture"
+date: "March 28th, 2023"
+format: revealjs
+---
+
+## Announcements
+
+-- HW-4 Due this Friday 
+
+-- Lab-7 Due Tonight 
+
+-- HW-6 (Statistics Experience) due April 28th
+
+-- Project Draft Report due April 7th
+
+-- TEAMMATES Survey - Due this Wednesday 
+
+--- Email (Dr. Meyer if you have not recieved an email invite)
+
+## Project Work Day 
+
+Pick 1 of the 3 proposed data sets and create the following in the `report.qmd`
+
+– Introduction and data
+
+– Methodology
+
+– Results
+
+– W+F
+
+— update about section
+
+— Respond to all issues from chosen data set
+
+— Everyone is your group must have at least 3 commits
+
+## Introduction and data
+
+-- Do not copy and paste what you see about your data online 
+
+-- Flush out where the data come from, how they were sampled, description of observations, etc.
+
+-- Challenge: Put more detail into the intro (even if feedback was not given)
+
+## Methodology
+
+-- How do you plan to answer your research question? 
+
+-- Prediction? Inference? Both? 
+
+## Adding Additional Variables 
+
+-- Since multiple linear regression analysis allows us to estimate the association between a given explanatory variable and the response holding all other variables constant, it provides a way of adjusting for **(or accounting for) potentially confounding variables that have been included in the model.**
+
+## Results
+
+-- What are you finding out? 
+
+-- Make sure that this is connected to your research question. It is easy to get excited and explore your data set. Make sure that all results you generate are in-line with the research question you have asked. 
+
+## W + F 
+
+— update about section
+
+— Respond to all issues from chosen data set
+
+— Everyone is your group must have at least 3 commits
+
+## Tips + Tricks 
+
+-- Ask questions early and often (to your groupmates; lab helpers; lab leaders; and the instructor)
+
+-- Do not break up this project into individual assignments. Each part of the project is everyone's responsibility 
+
+
+
+
+

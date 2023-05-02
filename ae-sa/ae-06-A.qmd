@@ -1,0 +1,215 @@
+---
+title: "AE 06: Finish AE-05 + AE-06 Suggested Answers"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+::: callout-important
+Run the following code until you need to recreate the plot. This is the warm up question for today's class.
+:::
+
+```{r}
+#| label: load-packages-data
+
+library(tidyverse)
+library(scales)
+
+fisheries <- read_csv("data/fisheries.csv")
+continents <- read_csv("data/continents.csv")
+```
+
+## Global aquaculture production
+
+The Fisheries and Aquaculture Department of the Food and Agriculture Organization of the United Nations collects data on fisheries production of countries.
+
+**Goal**: Our goal is to create a visualization of the mean share of aquaculture by continent.
+
+-- Join data sets together
+
+```{r}
+#| label: join-fisheries-continents
+
+joined_fish <- fisheries |> 
+  left_join(continents)
+```
+
+-- Fill in NA values with appropriate continent information
+
+```{r}
+#| label: case-when-update
+
+joined_fish <- joined_fish |> 
+  mutate(
+    continent = case_when(
+    country == "Democratic Republic of the Congo" ~ "Africa",
+    country == "Hong Kong" ~ "Asia",
+    country == "Myanmar" ~ "Asia", 
+    TRUE ~ continent
+    )
+  )
+
+```
+
+-- Add a new column to the `joined_fish` data frame called `aq_prop`. We will calculate it as `aquaculture / total`.
+
+```{r}
+#| label: add-aq-prop
+
+
+joined_fish <- joined_fish |>
+  mutate(aq_prop = aquaculture / total)
+  
+```
+
+-   **Demo:** Using your code above, create a new data frame called `fisheries_summary` that calculates minimum, mean, and maximum aquaculture proportion for each continent in the fisheries data.
+
+```{r}
+#| label: fisheries-summary-save
+
+fisheries_summary <- joined_fish |>
+  group_by(continent) |>
+  summarize(
+    min_aq_prop = min(aq_prop),
+    max_aq_prop = max(aq_prop),
+    mean_aq_prop = mean(aq_prop)
+  )
+```
+
+## Warm up starts here!
+
+-   **Demo:** Recreate the following plot using the data frame `fisheries_summary` you have developed so far.
+
+Hint: We use `ftc_relevel` to manually specify levels of a factor
+
+We use `fct_reorder` to reorder a factor based on another variable
+
+We can use functions in R to create more appropriate axis labels (such as adding %s). We can do this through the following: `scale_x_continuous(labels = scales::)` and `scale_y_continuous(labels = scales::)`. See documentation [here](https://ggplot2.tidyverse.org/reference/scale_continuous.html) and create axis labels that match the picture.
+
+![](images/aquaculture-production-by-continent.png){fig-align="center"}
+
+```{r}
+#| label: fisheries-plot
+
+fisheries_summary |>
+  ggplot(
+    aes(y = fct_reorder(continent, mean_aq_prop),
+        x = mean_aq_prop)) + 
+  geom_col() + 
+  labs(
+    title = "Average share of aquaculture by continent",
+    subtitle = "out of total fisheries harvest, 2016",
+    y =" ",
+    x = " "
+  ) + 
+  scale_x_continuous(labels = scales:: percent)
+
+
+```
+
+## Pivot Practice
+
+Run the following code below. Are these data in long or wide format? Why?
+
+```{r}
+#| label: pivot-prac
+
+
+x <- tibble(
+  state = rep(c("MT", "NC" , "SC"),2),
+  group = c(rep("C", 3), rep("D", 3)),
+  obs = c(1:6)
+  )
+
+x
+
+```
+
+Pivot these data so that the data are wide. i.e. Each state should be it's own unique observation (row). Save this new data set as `y`.
+
+```{r}
+#| label: pivot
+
+y <- x |>
+  pivot_wider(names_from = group, values_from = obs)
+
+```
+
+Now, let's change it back. Introducing `pivot_longer`. There are three things we need to consider with `pivot_longer`:
+
+-   What the columns will be
+-   `names_to`
+-   `values_to`
+
+```{r}
+#| label: pivot-2
+
+y |>
+  pivot_longer(cols = !state, names_to = "group", values_to = "obs")
+
+```
+
+## Pivot Practice 2
+
+Let's try this on a real data set.
+
+The Portland Trailblazers are a National Basketball Association (NBA) sports team. These data reflect the points scored by 9 Portland Trailblazers players across the first 10 games of the 2021-2022 NBA season.
+
+```{r}
+#| label: data-2
+trailblazer <- read_csv("data/trailblazer21.csv")
+```
+
+-- Take a slice at the data. Are these data in wide or long format?
+
+```{r}
+#| label: slice-blazer
+
+slice(trailblazer)
+```
+
+-- Pivot the data so that you have columns for `Player`, `Game`, `Points`. Save this as a new data set called `new.blazer`.
+
+```{r}
+#| label: pivot-3
+
+new.blazer <- trailblazer |>
+  pivot_longer(
+    cols = !Player,
+    names_to = "Game",
+    values_to = "Points"
+  )
+
+
+  
+```
+
+----------------------------- Answer Below -------------------------------------
+
+-- Suppose now that you are asked to have two separate columns within these data. One column to represent `Game`, and one to represent `Location`. Make this happen below. Save your new data set as `new.blazer`
+
+```{r}
+#| label: separate
+
+new.blazer <- trailblazer |>  
+  pivot_longer(
+    cols = -Player,
+    names_to = "Game",
+    values_to = "Points",
+  ) |> 
+  separate(Game, sep = "_", into = c("Game", "Location"))
+
+```
+
+-- Now, use `pivot_wider` to reshape the `new.blazer` data frame such that you have a 90 x 4 tibble with columns `Player`, `Game`, `Home`, `Away`.
+
+```{r}
+#| label: pivot-4
+
+new.blazer |>
+  pivot_wider(
+    names_from = Location,
+    values_from = Points
+  )
+
+```

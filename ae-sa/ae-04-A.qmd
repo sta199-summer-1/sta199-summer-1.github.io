@@ -1,0 +1,277 @@
+---
+title: "AE 04: Wrangling flights - Suggest Answers"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+::: callout-important
+This AE is due Monday, Jan 30 at 11:59pm.
+:::
+
+To demonstrate data wrangling we will use `flights`, a tibble in the **nycflights13** R package. It includes characteristics of all flights departing from New York City (JFK, LGA, EWR) in 2013.
+
+**Note: As we go through the AE, practicing thinking in steps, and reading your code as sentences**
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(nycflights13) # the data are called flights
+```
+
+# finish ae-03 material
+
+## `filter()`
+
+-   Demo: Filter the data frame by selecting the rows where the destination airport is RDU. Save this new data set as `RDU_flights`. Make sure that this data set only contains the columns `dest`, `year`, and `carrier`.
+
+```{r}
+#| label: rdu
+#| eval: false
+
+RDU_flights <- flights |>
+  filter(dest == "RDU") |>
+  select(dest, year, carrier)
+
+```
+
+Now, run the following code with one equals sign instead of two. Does it still work?
+
+*(=) is a Assignment operator while (==) is a Equal to operator. (=) is used for assigning the values from right to left while (==) is used for showing equality between values.*
+
+-   Demo: We can also filter using more than one condition. Here we select all rows where the destination airport is RDU and the arrival delay is less than 0. As we've learned, conditions within functions are separated by a `,`.
+
+```{r}
+#| label: rdu-ontime
+
+flights |>
+  filter(dest == "RDU", arr_delay < 0)
+
+```
+
+We can do more complex tasks using logical operators:
+
+| operator      | definition                   |
+|:--------------|:-----------------------------|
+| `<`           | is less than?                |
+| `<=`          | is less than or equal to?    |
+| `>`           | is greater than?             |
+| `>=`          | is greater than or equal to? |
+| `==`          | is exactly equal to?         |
+| `!=`          | is not equal to?             |
+| `x & y`       | is x AND y?                  |
+| `x \| y`      | is x OR y?                   |
+| `is.na(x)`    | is x NA?                     |
+| `!is.na(x)`   | is x not NA?                 |
+| `x %in% y`    | is x in y?                   |
+| `!(x %in% y)` | is x not in y?               |
+| `!x`          | is not x?                    |
+
+The final operator only makes sense if `x` is logical (TRUE / FALSE).
+
+-   **Your turn (4 minutes):** Describe what the code is doing in words.
+
+```{r}
+#| label: nc-early
+#| eval: false
+
+flights |> # Data set 
+  filter(dest %in% "RDU", # Is RDU in dest?
+         arr_delay < 0 | dep_delay < 0
+         ) |>
+  glimpse()
+```
+
+-   What if we want to like at destinations of RDU and GSO? How does the below code change?
+
+```{r}
+#| label: GSO
+
+  flights |>
+  filter(dest %in% c("RDU", "GSO"),
+         arr_delay < 0 | dep_delay < 0
+         )
+```
+
+Why `c`?
+
+combine: Use when we create a list
+
+**Your turn (2 minutes):** Subset the data to only include planes that traveled more than 500 in distance and had a negative departure delay.
+
+```{r}
+#| label: extra-example
+
+
+flights |>
+  filter(distance > 500 & dep_delay < 0)
+
+```
+
+## `count()`
+
+-   Demo: Create a frequency table of the destination locations for flights from New York.
+
+```{r}
+#| label: count-dest
+
+
+flights |> 
+  count(dest)
+
+```
+
+-   Demo: In which month was there the fewest number of flights? How many flights were there in that month? Hint: Type `?min` into the console.
+
+```{r}
+#| label: count-month
+
+flights |>
+  count(month) |>
+  filter(n == min(n))
+
+```
+
+-   On which date (month + day) was there the largest number of flights? How many flights were there on that day?
+
+```{r}
+#| label: count-date
+
+flights |> 
+  count(month,day) |>
+  filter(n == max(n))
+  
+```
+
+## `mutate()`
+
+Use `mutate()` to create a new variable.
+
+-   Demo: In the code chunk below, `air_time` (minutes in the air) is converted to hours, and then new variable `mph` is created, corresponding to the miles per hour of the flight. Run the code. Next, comment each line of code below.
+
+```{r}
+#| label: calculate-mph
+
+flights |> 
+  mutate(hours = air_time / 60, 
+         mph = distance / hours) |>
+  select(air_time, distance, hours, mph)
+```
+
+-   **Your turn (4 minutes):** Create a new variable to calculate the percentage of flights in each month. What percentage of flights take place in July?
+
+```{r}
+#| label: months-perc
+
+
+flights |>
+  count(month) |>
+  mutate(perc = n / sum(n) * 100)
+```
+
+## changing variable type
+
+-   **Your turn (5 minutes):** We want to create a visualization to assess the relationship between `dep_delay` and `dep_time` conditioned on the months January and June. Using the code chunk below, check to see which types of variables each of the three listed above are. Next, create an appropriate visualization to answer the question above. Hint: You may have to change the type of one variable using `factor`. Comment each line of code below.
+
+```{r}
+#| label: data-viz-factor
+
+
+flights |>
+  filter(month %in% c(1 , 6)) |>
+  mutate(month = factor(month)) |>
+  #droplevels() |>
+  ggplot(
+    aes(x = dep_delay, y = dep_time, color = month)
+  ) + 
+  geom_point()
+
+```
+
+## `summarize()`
+
+`summarize()` collapses the rows into summary statistics and removes columns irrelevant to the calculation.
+
+Be sure to name your columns!
+
+-   Calculate the mean departure delay below.
+
+```{r}
+#| label: find-mean-delay
+
+
+flights |> 
+  summarize(mean_dep_delay = mean(dep_delay))
+```
+
+**Question: Why did this code return `NA`?**
+
+Let's fix it! We can use `na.rm` to remove `NA`s.
+
+```{r}
+#| label: find-mean-delay-no-na
+#| eval: false
+
+flights |> 
+  summarize(mean_dep_delay = mean(dep_delay, na.rm = F))
+```
+
+## `group_by()`
+
+`group_by()` is used for grouped operations. It's very powerful when paired with `summarise()` to calculate summary statistics by group.
+
+Here we find the mean and standard deviation of departure delay for each month. Comment each line of code below.
+
+```{r}
+#| label: delays-by-month
+
+flights |> 
+  group_by(month) |> # groups together all observations that have the same month
+  summarize(mean_dep_delay = mean(dep_delay, na.rm=T), #calculate mean
+            sd_dep_delay = sd(dep_delay, na.rm=T) #calculate sd
+            )
+```
+
+-   **Your turn (4 minutes):** What is the median departure delay for each airports around NYC (`origin`)? Which airport has the shortest median departure delay?
+
+```{r}
+#| label: dep-origin
+#| eval: false 
+
+flights |>
+  group_by(origin) |>
+  summarize(med_dep_delay = median(dep_delay, na.rm = T))
+  
+```
+
+## Optional
+
+Create a new data set that only contains flights that do not have a missing departure time. Include the columns `year`, `month`, `day`, `dep_time`, `dep_delay`, and `dep_delay_hours` (the departure delay in hours). *Hint: Note you may need to use `mutate()` to make one or more of these variables.*
+
+```{r}
+#| label: add-practice-1
+
+
+new.data <- flights |>
+  filter(!is.na(dep_time)) |>
+  select(dep_time, dep_delay) |>
+  mutate(dep_delay_hours = dep_delay / 60)
+
+```
+
+For each airplane (uniquely identified by `tailnum`), use a `group_by()` paired with `summarize()` to find the sample size, mean, and standard deviation of flight distances. Then include only the top 5 and bottom 5 airplanes in terms of mean distance traveled per flight in the final data frame.
+
+```{r}
+#| label: add-practice-2
+
+flights |>
+  group_by(tailnum) |>
+  summarize(n = n(),
+            mean = mean(distance),
+            sd = sd(distance)) |>
+  arrange(desc(mean)) |>
+  slice(c(1:5, (n()-4):n()))
+```

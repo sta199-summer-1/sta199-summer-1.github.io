@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$presentation-title-slide-text-align: "left";
+$code-block-font-size: 0.9em;
+
+/*-- scss:rules --*/
+
+details>summary {
+  font-size: 0.75em;
+}
+
+#title-slide .subtitle {
+  font-weight: bold
+}
+
+#title-slide .author {
+  text-align: right;
+}
+
+#title-slide .institute {
+  text-align: right;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.reveal .slide .question {
+  border-left: 3px solid #838383;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #a9a9a9;
+}
+
+.reveal .slide .poll {
+  border-left: 3px solid #838383;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #a9a9a9;
+}
+
+.reveal .slide .appex {
+  border-left: 3px solid #838383;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background: #a9a9a9;
+}

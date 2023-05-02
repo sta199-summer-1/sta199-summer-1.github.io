@@ -1,0 +1,68 @@
+---
+title: "Lab-1: Describing Visualizations"
+subtitle: "Lab-Lecture"
+date: "January 24, 2023"
+format: revealjs
+---
+
+## Checklist
+
+-- Go to the course [GitHub org](https://github.com/sta199-s23-2) and find your `lab-01` (repo name will be suffixed with your GitHub name).
+
+-- Clone the repo in your container, open the Quarto document in the repo
+
+## Announcements
+
+-- Labs due Fri (11:59) - Gradescope
+
+-- Do not forget to select pages!!
+
+## Formatting Demo
+
+-- Add a line in your qmd file to signal when code starts to fall off the page
+
+# Describing Visualizations
+
+## Describing Visualizations
+
+When able...
+
+**-- shape**
+
+-- center
+
+-- spread
+
+**-- outliers**
+
+## Shape
+
+We often talk about skew when describing shape of data
+
+-- Positive Skew (Right Skew)
+
+-- Negative Skew (Left Skew)
+
+-- Roughlyl Symmentric
+
+![](images/skew.png){fig-align="\"center"}
+
+## Outliers
+
+A data point that does not follow the general trend of the data
+
+![](images/boxplot.out.png){fig-align="\"center"}
+
+## Center
+
+-- What's the mean
+
+-- What's the median
+
+## Spread (More Coming Later!)
+
+How spread out things are...
+
+-- Standard deviation
+
+-- IQR

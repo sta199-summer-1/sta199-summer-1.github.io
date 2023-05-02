@@ -1,0 +1,93 @@
+project:
+  type: website
+  output-dir: docs
+  resouces:
+    - sta199-s23-2-syllabus.pdf #need to update
+
+website:
+  page-navigation: true
+  title: "STA 199"
+  description: "Homepage for STA 199 - Introduction to Data Science at Duke University, Summer 2023, First Session."
+  site-url: "https://sta199-summer-1.github.io/"
+
+  repo-url: https://github.com/sta199-summer-1/sta199-summer-1.github.io/
+  repo-actions: [edit, issue]
+
+  opengraph: true
+
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023, Elijah Meyer"
+    background: "#735b1f" # Orange - Summer 2023
+
+  sidebar:
+    background: "#735b1f" # Pantone Amazon - Summer 2023
+    logo: "images/logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/sta199-summer-1/sta199-summer-1.github.io
+        text: "GitHub organization"
+      - icon: code-square
+        href: https://cmgr.oit.duke.edu/containers
+        text: "RStudio Containers"
+      - icon: person-fill
+        text: "Sakai"
+        menu:
+          - text: Gradescope #update when I get access
+            url: https://sakai.duke.edu/portal/site/3c0a7e6f-cbfc-4e54-bcbf-faf6fa16761c/tool/5e2471ea-c385-4d18-84ba-84122f412512/
+          - text: Gradebook
+            url: https://sakai.duke.edu/portal/site/3c0a7e6f-cbfc-4e54-bcbf-faf6fa16761c/tool/5e2471ea-c385-4d18-84ba-84122f412512/
+
+    style: docked
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Course information"
+        contents:
+          - href: course-overview.qmd
+            text: Overview
+          - href: course-syllabus.qmd
+            text: Syllabus
+          - href: course-support.qmd
+            text: Support
+          - href: course-team.qmd
+            text: Teaching team
+          - href: index.qmd
+            text: Schedule
+          - href: course-links.qmd
+            text: Useful links
+          - href: course-faq.qmd
+            text: FAQ
+      - section: "Computing"
+        contents:
+          - href: computing-access.qmd
+            text: Access
+          - href: computing-troubleshooting.qmd
+            text: Troubleshooting
+          - href: computing-cheatsheets.qmd
+            text: Cheatsheets
+      - section: "Project"
+        contents:
+          - href: project-description-s23.qmd
+            text: Description
+          - href: project-tips-resources.qmd
+            text: Tips + resources
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/sta199.scss]
+      dark: [cosmo, style/sta199.scss, style/dark.scss]
+    linkcolor: "#1F7349" # Pantone Amazon - Fall 2022
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    code-link: true
+    mainfont: "Atkinson Hyperlegible"
+
+execute:
+  freeze: auto
+
+editor: visual

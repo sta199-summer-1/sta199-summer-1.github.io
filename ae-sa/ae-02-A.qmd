@@ -1,0 +1,195 @@
+---
+title: "Visualizing Penguins - Suggested Answers"
+format: html
+---
+
+For this ae, we'll use the **tidyverse** and **palmerpenguins** packages.
+
+## Packages
+
+```{r}
+#| label: load-packages
+#| warning: false
+
+library(tidyverse)
+library(palmerpenguins) #The data set name is penguins
+```
+
+## Data
+
+The dataset we will visualize is called `penguins`. Let's `glimpse()` at it.
+
+```{r}
+#| label: glimpse
+
+glimpse(penguins)
+
+```
+
+# Visualizing penguin weights - Demo
+
+## Useful links:
+
+https://ggplot2.tidyverse.org/reference/
+
+## Single variable
+
+::: callout-note
+Analyzing the a single variable is called **univariate** analysis.
+:::
+
+Create visualizations of the distribution of `weight`s of penguins.
+
+1.  Make a histogram by filling in the `...` with the appropriate arguments. Set an appropriate binwidth.
+
+```{r}
+#| label: histogram-weight
+
+
+penguins |>
+  ggplot( 
+       aes(x = body_mass_g)) + #type variable name here
+       geom_histogram(binwidth = 300) #type geom here
+
+```
+
+2.  Now, make a boxplot of `weight`s of penguins.
+
+```{r}
+#| label: boxplot-weight
+
+penguins |>
+  ggplot(
+    aes(x = body_mass_g)) +
+    geom_boxplot()
+
+```
+
+-------------------------------- Answer for #2 Below
+
+3.  Add a theme to your boxplot! https://ggplot2.tidyverse.org/reference/ggtheme.html
+
+```{r}
+#| label: theme
+
+penguins |>
+  ggplot(
+    aes(x = body_mass_g)) + 
+    geom_boxplot() + 
+    theme_dark() # type theme here
+
+```
+
+## Two variables
+
+::: callout-note
+Analyzing the relationship between two variables is called **bivariate** analysis.
+:::
+
+Create visualizations of the distribution of `weight`s of penguins by `species`. Note: `aes`thetic is a visual property of one of the objects in your plot. Aesthetic options are:
+
+-   shape
+-   color
+-   size
+-   fill
+
+4.  Make a histogram of penguins' weight where the bars are filled in by species type. Set an appropriate binwidth and alpha value.
+
+```{r}
+#| label: histogram-weight-species
+
+
+penguins |>
+  ggplot( 
+       aes(x = body_mass_g, color = species )) +
+       geom_histogram(binwidth = 200, alpha = 1)
+
+```
+
+5.  What if we don't want the overlap? We can use `facet_wrap` to split the histograms apart! This function takes the name of the variable you want to split by, and how many cols/rows you want your plots to show up in.
+
+```{r}
+#| label: facet
+
+penguins |>
+  ggplot( 
+       aes(x = body_mass_g, fill = species )) +
+       geom_histogram(binwidth = 200, alpha = .7) +
+       facet_wrap("species", ncol = 1)
+```
+
+6.  Create side-by-side boxplots to compare body mass across species. Turn off the legend so it is not displayed.
+
+```{r}
+#| label: boxplot-weight-species
+
+penguins |>
+  ggplot(
+    aes(x = body_mass_g, y = species)) + 
+    geom_boxplot(show.legend = F)
+
+```
+
+7.  We need to think critically about color when thinking about creating visualizations for a larger audience: https://ggplot2.tidyverse.org/reference/scale_viridis.html
+
+We can create a colorblind friendly pallet using `scale_colour_viridis_d()`. Comment the code below to describe what it's doing:
+
+```{r}
+#| label: color-demo
+
+p <- penguins |> 
+  ggplot(
+    aes(x = body_mass_g, y = bill_length_mm , color = species)
+  ) + 
+    geom_point() 
+
+
+p
+
+p + scale_colour_viridis_d()
+
+```
+
+8.  Let's use multiple geoms on a single plot. Be deliberate about the order of plotting. Our task is to recreate the following image below. Hint: This plot uses `theme_minimal` and `scale_color_viridis_d(option = "D")`.
+
+Note: Themes are a powerful way to customize the non-data components of your plots: i.e. titles, labels, fonts, background, gridlines, and legends: `theme()`.
+
+![](plot1.png){width="650" height="400" fig-align="center"}
+
+```{r}
+#| label: re-create
+
+penguins |>
+  ggplot(
+       aes(x = body_mass_g, y = species, color = species)) +
+  geom_boxplot(binwidth = 500) +
+  geom_jitter() +
+  scale_color_viridis_d(option = "D", end = 0.8) +
+  theme_minimal() +
+  labs(x= "Weight",
+       y = "Species", 
+       title= "Weight Disrtribution of Penguins") +
+  theme(legend.position = "None")
+
+
+```
+
+## Optional
+
+Make your own plot! Revist the geoms page here: https://ggplot2.tidyverse.org/reference/
+
+Here is a cool one!
+
+```{r}
+#| label: on-your-own
+
+ggplot(penguins, 
+       aes(x = species, fill = sex)) +
+  geom_bar(show.legend = T) +
+  scale_color_viridis_d(option = "D", end = 0.8) +
+  theme_minimal() +
+  labs(
+    x = "Species by Sex",
+    title = "Penguins by species and sex"
+  )
+```

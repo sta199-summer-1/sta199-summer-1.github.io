@@ -1,0 +1,258 @@
+---
+title: "Lab 7 - Logistic regression"
+categories: "Lab"
+execute:
+  eval: true
+editor: 
+  markdown: 
+    wrap: 80
+---
+
+::: callout-important
+This lab is due Tuesday, March 28 at 11:59pm.
+:::
+
+# Closing an Issue
+
+Go to your GitHub repository. You should see an issue with the title "Learn to
+close an issue with a commit". Your goal is to close this issue with a commit to
+practice this workflow, which is the workflow you will use when you are
+addressing feedback on your projects.
+
+-   Go to Exercise 1 Part a in your lab .qmd file.
+-   Delete the sentence that says "Delete this text!!!".
+-   Render the document.
+-   Commit your changes from the git tab with the commit message "Delete
+    sentence, closes #1."
+-   Push your changes to your repo and observe that the issue is now closed and
+    the commit associated with this move is linked from the issue.
+
+GitHub allows you to close an issue directly with commits if the commit uses one
+of the following keywords followed by the issue number (which you can find next
+to the issue title): close, closes, closed, fix, fixes, fixed, resolve,
+resolves, and resolved.
+
+# Lab
+
+## Packages
+
+You'll need the following packages for today's lab.
+
+```{r}
+#| warning: false
+#| message: false
+library(tidyverse)
+library(tidymodels)
+library(dsbox)
+```
+
+## Data
+
+The data can be found in the **dsbox** package, and it's called `gss16`. Since
+the dataset is distributed with the package, we don't need to load it
+separately; it becomes available to us when we load the package.
+
+If you would like to explicitly load the data into your environment so you can
+view it, you can do so by running this code.
+
+```{r}
+#| warning: false
+#| message: false
+
+gss16 <- gss16
+```
+
+You can find out more about the dataset by inspecting its documentation, which
+you can access by running `?gss16` in the Console or using the Help menu in
+RStudio to search for `gss16`. You can also find this information
+[here](https://rstudio-education.github.io/dsbox/reference/gss16.html).
+
+# Exercises
+
+## Exercise 1 - Data wrangling
+
+::: callout-important
+Remember: For each exercise, you should choose one person to type. All others
+should contribute to the discussion, but only one person should type up the
+answer, render the document, commit, and push to GitHub. All others should
+**not** touch the document.
+:::
+
+a)  Create a new data frame called `gss16_advfront` that includes the variables
+    `advfront`, `educ`, `polviews`, and `wrkstat`. Then, use the `drop_na()`
+    function to remove rows that contain `NA`s from this new data frame. Sample
+    code is provided below.
+
+```{r}
+#| eval: false
+gss16_advfront <- gss16 |>
+  select(___, ___, ___, ___) |>
+  drop_na()
+```
+
+b)  Re-level the `advfront` variable such that it has two levels:
+    `"Strongly agree"` and `"Agree"` combined into a new level called `"Agree"`
+    and the remaining levels combined into `"Not agree"`. Then, re-order the
+    levels in the following order: `"Agree"` and `"Not agree"`. Finally,
+    `count()` how many times each new level appears in the `advfront` variable.
+
+Hint: You can do this in various ways, but you'll likely need to use `mutate`
+along with either `if_else()` or `case_when()` to re-level the variable and then `fct_relevel()` to
+re-order the levels. (See Lab 2 for an example of using `if_else` and HW 1 Exercise 4 for an example of using `fct_relevel`.)
+
+c)  Combine the levels of the `polviews` variable such that levels that have the
+    word "liberal" in them are lumped into a level called `"Liberal"` and those
+    that have the word "conservative" in them are lumped into a level called
+    `"Conservative"`. Then, re-order the levels in the following order:
+    `"Conservative"` , `"Moderate"`, and `"Liberal"`. Finally, `count()` how
+    many times each new level appears in the `polviews` variable.
+
+::: callout-important
+After the team member working on Exercise 1 renders, commits, and pushes, all
+other team members should pull. Then, choose a new team member to write the
+answer to Exercise 2. (And so on for the remaining exercises.)
+:::
+
+## Exercise 2 - Train and test sets
+
+Now, let's split the data into training and test sets so that we can evaluate
+the models we're going to fit by how well they predict outcomes on data that
+wasn't used to fit the models.
+
+Specify a random seed of 1234 (i.e., include `set.seed(1234)` at the beginning
+of your code chunk), and then split `gss16_advfront` randomly into a training
+set `train_data` and a test set `test_data`. Do this so that the training set
+contains 80% of the rows of the original data.
+
+## Exercise 3 - Logistic Regression
+
+a)  Using the training data, specify a logistic regression model that predicts
+    `advfront` by `educ`. In particular, the model should predict the
+    probability that `advfront` has value `"Not agree"`. Name this model
+    `model1`. Report the tidy output below.
+
+b)  Write out the estimated model in proper notation. State the meaning of any
+    variables in the context of the data.
+
+c)  Using your estimated model, predict the probability of agreeing with the
+    following statement: Even if it brings no immediate benefits, scientific
+    research that advances the frontiers of knowledge is necessary and should be
+    supported by the federal government (`Agree` in advfront) if you have an
+    education of 7 years.
+
+## Exercise 4 - Another model
+
+a)  Again using the training data, fit a new model that adds the additional
+    explanatory variable of `polviews`. Name this model `model2`. Report the
+    tidy output below.
+
+b)  Now, predict the probability of agreeing with the following statement: Even
+    if it brings no immediate benefits, scientific research that advances the
+    frontiers of knowledge is necessary and should be supported by the federal
+    government (`Agree` in advfront) if you have an education of 7 years and are
+    Conservative.
+
+## Exercise 5 - Evaluating models with AIC
+
+a)  Report the AIC values for each of `model1` and `model2`.
+
+b)  Based on your results in part a, does it appear that including political
+    views in addition to years of education is useful for modeling whether
+    employees agree with the statement "Even if it brings no immediate benefits,
+    scientific research that advances the frontiers of knowledge is necessary
+    and should be supported by the federal government"? Explain.
+
+## Exercise 6 - Evaluating models using test data
+
+a)  For each of `model1` and `model2`, plot an ROC curve to visualize the true
+    positive rate (sensitivity) and false positive rate (1 - specificity) for
+    predictions on the observations in `test_data`. Add a title to each graph
+    indicating which model they represent.
+
+    You can use the code below to make the plot for model 1. Then adapt it as
+    needed for model 2.
+
+```{r}
+#| eval: false
+
+model1_pred <- predict(model1, test_data, type = "prob") |>  
+  bind_cols(test_data |> select(advfront))
+
+model1_pred |>
+  roc_curve(
+    truth = advfront, # advfront contains the true labels
+    `.pred_Not agree`, # we're predicting the probability of "Not agree"
+    event_level = "second" # "Not agree" is the 2nd level of advfront
+  ) |>
+  autoplot() +
+  labs(title = "ROC curve for model 1")
+```
+
+b)  Report the area under the curve (AUC) for each of the ROC curves from part
+    a.
+
+c)  Are the AUC values consistent with your conclusion in Exercise 5b? Explain.
+
+# Submission
+
+::: callout-warning
+Before you wrap up the assignment, make sure all documents are updated on your
+GitHub repo. We will be checking these to make sure you have been practicing how
+to render and push changes.
+
+You must turn in a PDF file to the Gradescope page by the submission deadline to
+be considered "on time". Only one team member should submit to Gradescope, but
+they should add all other team members to the submission.
+
+Make sure your data are tidy! That is, your code should not be running off the
+pages and spaced properly. See: <https://style.tidyverse.org/ggplot2.html>.
+:::
+
+To submit your assignment:
+
+-   Go to <http://www.gradescope.com> and click *Log in* in the top right
+    corner.
+-   Click *School Credentials* $\rightarrow$ *Duke NetID* and log in using your
+    NetID credentials.
+-   Click on your *STA 199* course.
+-   Click on the assignment, and you'll be prompted to submit it.
+-   Mark all the pages associated with exercise. All the pages of your lab
+    should be associated with at least one question (i.e., should be "checked").
+    *If you do not do this, you will be subject to lose points on the
+    assignment.*
+-   Do not select any pages of your .pdf submission to be associated with the
+    *"Workflow & formatting"* question.
+
+# Grading
+
+| Component             | Points |
+|:----------------------|:-------|
+| Ex 1                  | 10     |
+| Ex 2                  | 10     |
+| Ex 3                  | 5      |
+| Ex 4                  | 10     |
+| Ex 5                  | 5      |
+| Ex 6                  | 5      |
+| Workflow & formatting | 5      |
+| **Total**             | 50     |
+
+::: callout-note
+The "Workflow & formatting" grade is to assess the reproducible workflow. This
+includes:
+
+-   linking all pages appropriately on Gradescope
+
+-   putting your team and member names in the YAML at the top of the document
+
+-   committing the submitted version of your `.qmd` to GitHub
+
+-   Are you under the 80 character code limit? (You shouldn't have to scroll to
+    see all your code). Pipes `%>%`, `|>` and ggplot layers `+` should be
+    followed by a new line
+
+-   You should be consistent with stylistic choices, e.g. only use 1 of `=` vs
+    `<-` and `%>%` vs `|>`
+
+-   All binary operators should be surrounded by space. For example `x + y` is
+    appropriate. `x+y` is not.
+:::

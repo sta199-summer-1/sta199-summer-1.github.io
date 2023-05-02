@@ -1,0 +1,178 @@
+id,team_name,team,Last_Name,First_Name,User_Name,Github_Username,Github_Email,Slack_Email,section
+2,sec-6-team-1,sec-6-team-1,Cai,Laura,lyc15@duke.edu,lauracai,lyc15@duke.edu,laura.cai@duke.edu,Tu 10:15am - 11:30am
+3,sec-6-team-1,sec-6-team-1,Chen,Andy,ac828@duke.edu,ac919,andy.chen@duke.edu,andy.chen@duke.edu,Tu 10:15am - 11:30am
+4,sec-6-team-1,sec-6-team-1,Faunteroy,Jaden,jdf66@duke.edu,Jdf66,Jaden.faunteroy@duke.edu,Jaden.faunteroy@duke.edu,Tu 10:15am - 11:30am
+5,sec-6-team-1,sec-6-team-1,Hardin,Luke,ldh46@duke.edu,lukehardin,Luke.hardin@duke.edu,"Luke.hardin@duke.edu
+
+",Tu 10:15am - 11:30am
+7,stattastic,sec-6-team-2,Lipp,Mikaela,mal141@duke.edu,Mikaelalipp,mikaelalipp@gmail.com,mikaela.lipp@duke.edu,Tu 10:15am - 11:30am
+8,stattastic,sec-6-team-2,Matarangas,Ariana,aim15@duke.edu,arianamatarangas,aim15@duke.edu,ariana.matarangas@duke.edu,Tu 10:15am - 11:30am
+9,stattastic,sec-6-team-2,Rosen,Jake,jar151@duke.edu,jakerosen903,jake.rosen@duke.edu,jakerosen27@gmail.com,Tu 10:15am - 11:30am
+10,stattastic,sec-6-team-2,Seaman,Anna,ars148@duke.edu,AnnaSeaman,aseaman@unc.edu,aseaman@unc.edu,Tu 10:15am - 11:30am
+14,avocado,sec-6-team-3,Kotelanski,Maia,mbk33@duke.edu,maiakot,mbk33@duke.edu,maiabeth8@gmail.com,Tu 10:15am - 11:30am
+15,avocado,sec-6-team-3,Liu,Cai,cl539@duke.edu,caimiaol,caimiao.liu@duke.edu,caimiao.liu@duke.edu,Tu 10:15am - 11:30am
+16,avocado,sec-6-team-3,Pertsemlidis,Helen,hmp26@duke.edu,hpertsemlidis43,helen.pertsemlidis@duke.edu,helen.pertsemlidis@duke.edu,Tu 10:15am - 11:30am
+17,avocado,sec-6-team-3,Yin,Alina,yy355@duke.edu,yinyikun-00,yinyikun0@163.com,yikun.yin@duke.edu,Tu 10:15am - 11:30am
+18,statisfactory,sec-6-team-4,Gorman,Elissa,eng16@duke.edu,elissagorman,Elissa.gorman@duke.edu,Elissa.gorman@duke.edu,Tu 10:15am - 11:30am
+19,statisfactory,sec-6-team-4,Milton,Sancia,NA,SanciaMilton,NA,NA,Tu 10:15am - 11:30am
+20,statisfactory,sec-6-team-4,Richter,Samantha,ser80@duke.edu,srichter18,samantha.richter@duke.edu,samantha.richter@duke.edu,Tu 10:15am - 11:30am
+21,statisfactory,sec-6-team-4,Storm,Griffin,gds17@duke.edu,griffinstorm3,griffin.storm@duke.edu,griffin.storm@duke.edu,Tu 10:15am - 11:30am
+22,statisfactory,sec-6-team-4,Dutton,Joshua,jdd93@duke.edu,jutton1,joshuadutton003@gmail.com,joshua.d.dutton@duke.edu,Tu 10:15am - 11:30am
+23,stat4,sec-6-team-5,Gnanavel,Sreya,sg626@duke.edu,sgnanavel23,sg626@duke.edu,sg626@duke.edu,Tu 10:15am - 11:30am
+24,stat4,sec-6-team-5,Peng,Laura,lp244@duke.edu,llaurapeng,llaurapeng@gmail.com,llaurapeng@gmail.com,Tu 10:15am - 11:30am
+13,stat4,sec-6-team-5,Gandavarapu,Sathvika,sg629@duke.edu,sathvig999,sathvig999@gmail.com,sathvig999@gmail.com,Tu 10:15am - 11:30am
+25,stat4,sec-6-team-5,Zheng,Tina,tz132@duke.edu,tmaeve67,NA,NA,Tu 10:15am - 11:30am
+26,sec-6-team-6,sec-6-team-6,Navas,Cris,cdn17@duke.edu,crisnavas1,Cristofer.navas@duke.edu,crisn9@icloud.com,Tu 10:15am - 11:30am
+1,sec-6-team-6,sec-6-team-6,Bhima,Miran,mb793@duke.edu,MiranBh,miranbhima@gmail.com,miranbhima@gmail.com,Tu 10:15am - 11:30am
+11,sec-6-team-6,sec-6-team-6,Chang,Austin,awc37@duke.edu,PandaIsFluffy,Pangeoneer@gmail.com,Pangeoneer@gmail.com,Tu 10:15am - 11:30am
+27,sec-6-team-6,sec-6-team-6,Real-Aguilar,Sigrid,snr35@duke.edu,snr35,sreal628@gmail.com,snr35@duke.edu,Tu 10:15am - 11:30am
+28,lucky-7,sec-6-team-7,Correderas,Sophia,slc125@duke.edu,SophiaCorrederas,slc125@duke.edu,slc125@duke.edu,Tu 10:15am - 11:30am
+12,lucky-7,sec-6-team-7,Clevenger,Whitney,wmc18@duke.edu,wmc18,wmc18@duke.edu,wmc18@duke.edu,Tu 10:15am - 11:30am
+6,lucky-7,sec-6-team-7,Evans,Cam,cre25@duke.edu,cre25,cre25@duke.edu,cre25@duke.edu,Tu 10:15am - 11:30am
+29,lucky-7,sec-6-team-7,Martinez,Ana,akm74@duke.edu,anamartnez,akm74@duke.edu,ana.k.martinez@duke.edu,Tu 10:15am - 11:30am
+30,banana-boat,sec-7-team-1,Bell,Pascal,pkb20@duke.edu,pascalbell,pascalbell16@gmail.com,pkb20@duke.edu,Tu 12:00pm - 1:15pm
+31,banana-boat,sec-7-team-1,Herman,Arthur,aph52@duke.edu,aherman03,arthur.herman@duke.edu,arthur.herman@duke.edu,Tu 12:00pm - 1:15pm
+32,banana-boat,sec-7-team-1,Likosar,Cooper,cl614@duke.edu,cooperlikosar,cooper.likosar@duke.edu,cjlikosar@gmail.com,Tu 12:00pm - 1:15pm
+33,banana-boat,sec-7-team-1,Nguyen,Jonathan,kdn19@duke.edu,kienjnguyen,kdn19@duke.edu,kdn19@duke.edu,Tu 12:00pm - 1:15pm
+34,banana-boat,sec-7-team-1,Williams,Grant,gw106@duke.edu,grantwilliams37,grant.williams@duke.edu,grant.williams@duke.edu,Tu 12:00pm - 1:15pm
+35,r-s2dio,sec-7-team-2,Maher,Kaitlyn,kam213@duke.edu,kaitlynmaher,kaitlyn.maher@duke.edu,kaitlynmaher@gmail.com,Tu 12:00pm - 1:15pm
+36,r-s2dio,sec-7-team-2,Quimbo,Angelie,amq10@duke.edu,angeliequimbo,angelie.quimbo@duke.edu,angelie.quimbo@duke.edu,Tu 12:00pm - 1:15pm
+37,r-s2dio,sec-7-team-2,Roberts,Jack,jwr44@duke.edu,jroberts11,johnroberts0730@gmail.com,johnroberts0730@gmail.com,Tu 12:00pm - 1:15pm
+38,r-s2dio,sec-7-team-2,Sanchez,Lukas,ls423@duke.edu,lsanchez1402,ls423@duke.edu,lukas.sanchez142@gmail.com,Tu 12:00pm - 1:15pm
+39,the-butterflies,sec-7-team-3,Blank,Carly,crb112@duke.edu,CarlyBlank,carly.blank@duke.edu,carly.blank@duke.edu,Tu 12:00pm - 1:15pm
+40,the-butterflies,sec-7-team-3,Feenaghty,Dolce,dmf53@duke.edu,dmf7,NA,NA,Tu 12:00pm - 1:15pm
+41,the-butterflies,sec-7-team-3,Purnell,Catherine,cp303@duke.edu,catpurn,catherine.purnell@duke.edu,catherine.purnell@duke.edu,Tu 12:00pm - 1:15pm
+42,the-butterflies,sec-7-team-3,Silver,Ryan,rds86@duke.edu,RyanDSilver,ryan.silver@duke.edu,ryandsilver@icloud.com,Tu 12:00pm - 1:15pm
+43,sec-7-team-4,sec-7-team-4,Ankoma-Sey,Kristin,kea34@duke.edu,krisanksey,kea34@duke.edu,krisanksey@gmail.com,Tu 12:00pm - 1:15pm
+44,sec-7-team-4,sec-7-team-4,Batra,Ayush,ab943@duke.edu,AyushBatra01,ab943@duke.edu,ab943@duke.edu,Tu 12:00pm - 1:15pm
+45,sec-7-team-4,sec-7-team-4,Chen,Ethan,eyc12@duke.edu,ethanc930206,ethan930206@gmail.com,ethan.chen@duke.edu,Tu 12:00pm - 1:15pm
+46,sec-7-team-4,sec-7-team-4,Habersaat,Hunter,hah50@duke.edu,habersaat,hunterhabersaat@gmail.com,hunter.habersaat@duke.edu,Tu 12:00pm - 1:15pm
+47,sec-7-team-4,sec-7-team-4,Sun,Zeqi,zs147@duke.edu,zeqisun,zeqi.sun@duke.edu,zeqi.sun@duke.edu,Tu 12:00pm - 1:15pm
+48,hunger-games-catching-meyer,sec-7-team-5,Adams,Will,wra9@duke.edu,willadams042,william.adams@duke.edu,william.adams@duke.edu,Tu 12:00pm - 1:15pm
+49,hunger-games-catching-meyer,sec-7-team-5,Chen,Kyra,kc514@duke.edu,kyrachen04,kyrachen04@gmail.com,kyra.chen@duke.edu,Tu 12:00pm - 1:15pm
+50,hunger-games-catching-meyer,sec-7-team-5,Jiang,Janet,jcj42@duke.edu,janet-jiang,janetcj03@gmail.com,janet.jiang@duke.edu,Tu 12:00pm - 1:15pm
+51,hunger-games-catching-meyer,sec-7-team-5,Lehrer,Maile,mml57@duke.edu,mailelehrer,maile.lehrer@duke.edu,maile.lehrer@duke.edu,Tu 12:00pm - 1:15pm
+52,toryes,sec-7-team-6,Hur,Teddy,th310@duke.edu,TeddyHurley1,th310@duke.edu,theodore.hur@duke.edu,Tu 12:00pm - 1:15pm
+53,toryes,sec-7-team-6,Jennings,Owen,otj4@duke.edu,otjrocks,otjrocks2@gmail.com,owen.jennings@duke.edu,Tu 12:00pm - 1:15pm
+54,toryes,sec-7-team-6,Paz-Martinez,Yadira,yp107@duke.edu,yadirapazmtz,yp107@duke.edu,ypazmartinez7@gmail.com,Tu 12:00pm - 1:15pm
+55,toryes,sec-7-team-6,Robinson,Rodricka,rlr61@duke.edu,Rodricka,rrodricka@gmail.com,rlr61@duke.edu,Tu 12:00pm - 1:15pm
+56,sec-7-team-7,sec-7-team-7,Bettegowda,Anya,anb90@duke.edu,anyab4,abettegowda@gmail.com,anb90@duke.edu,Tu 12:00pm - 1:15pm
+57,sec-7-team-7,sec-7-team-7,Hess,Oliver,obh3@duke.edu,oliverbh3,obh3@duke.edu,oliverbhess@gmail.com,Tu 12:00pm - 1:15pm
+58,sec-7-team-7,sec-7-team-7,Hubert,Carly,clh131@duke.edu,carlylhubert,clh131@duke.edu,clh131@duke.edu,Tu 12:00pm - 1:15pm
+59,sec-7-team-7,sec-7-team-7,Poduri,Kethan,ksp39@duke.edu,Kethan-p,kethan.poduri@duke.edu,kethan.poduri@duke.edu,Tu 12:00pm - 1:15pm
+60,stat-legends,sec-8-team-1,Abbas,Joshua,jja37@duke.edu,joshabbas13,joshua.abbas@duke.edu,joshuaabbas13@gmail.com,Tu 1:45pm - 3:00pm
+61,stat-legends,sec-8-team-1,Beischer,Zach,zmb9@duke.edu,zachmbeischer,zmb9@duke.edu,zmb9@duke.edu,Tu 1:45pm - 3:00pm
+62,stat-legends,sec-8-team-1,Gambino,Julia,jmg161@duke.edu,juliagambino,jmg161@duke.edu,jmg161@duke.edu,Tu 1:45pm - 3:00pm
+63,stat-legends,sec-8-team-1,Kenny,Hayden,hck13@duke.edu,hckenny,hck13@duke.edu,hck13@duke.edu,Tu 1:45pm - 3:00pm
+64,stat-legends,sec-8-team-1,Shah,Ashka,as1077@duke.edu,ashkashah06,ashka.shah@duke.edu,ashka.shah@duke.edu,Tu 1:45pm - 3:00pm
+65,sec-8-team-2,sec-8-team-2,Chen,Teresa,tc352@duke.edu,Teresachen-26,tc352@duke.edu,tc352@duke.edu,Tu 1:45pm - 3:00pm
+66,sec-8-team-2,sec-8-team-2,Garbelotto,Valentina,vg134@duke.edu,vgarbelotto,valentina.garbelotto@duke.edu,valentina.garbelotto@duke.edu,Tu 1:45pm - 3:00pm
+67,sec-8-team-2,sec-8-team-2,Sengupta,Sneha,ss1358@duke.edu,ss1358,ss1358@duke.edu,sneha.sengupta@duke.edu,Tu 1:45pm - 3:00pm
+68,sec-8-team-2,sec-8-team-2,Wang,Emily,eyw7@duke.edu,emilyw03,emilywang9379@gmail.com,emilywang9379@gmail.com,Tu 1:45pm - 3:00pm
+69,sec-8-team-2,sec-8-team-2,Dong,Karen,xd51@duke.edu,karenkatd,kxdong2004@gmail.com,kxdong2004@gmail.com,Tu 1:45pm - 3:00pm
+70,james-and-crew,sec-8-team-3,Awofisayo,Damilola,oaa32@duke.edu,dawofisayo,damismile1@gmail.com,dami.awofisayo@duke.edu,Tu 1:45pm - 3:00pm
+71,james-and-crew,sec-8-team-3,Crowley,Anastasia,anc89@duke.edu,anastasiacrowley,asia.crowley@duke.edu,asia.crowley@duke.edu,Tu 1:45pm - 3:00pm
+72,james-and-crew,sec-8-team-3,Hopson,James,jah176@duke.edu,JamesHopson,skiphopson@gmail.com,skiphopson@gmail.com,Tu 1:45pm - 3:00pm
+73,james-and-crew,sec-8-team-3,Newbold,Kate,kyn3@duke.edu,katenewbold,kate.newbold@duke.edu,kate.newbold@duke.edu,Tu 1:45pm - 3:00pm
+74,data-dudes,sec-8-team-4,Flyer,Luke,lhf9@duke.edu,lukeflyer,luke.flyer@duke.edu,luke.flyer@duke.edu,Tu 1:45pm - 3:00pm
+75,data-dudes,sec-8-team-4,Jammula,Mahika,mj268@duke.edu,mj268,mahika.jammula@gmail.com,mahika.jammula@gmail.com,Tu 1:45pm - 3:00pm
+76,data-dudes,sec-8-team-4,Seeman,Caprice,cas210@duke.edu,capriceseeman,caprice.seeman@duke.edu,caprice.seeman@duke.edu,Tu 1:45pm - 3:00pm
+77,data-dudes,sec-8-team-4,Webb,Skylar,slw127@duke.edu,skylarwebb,skylar.webb@duke.edu,skylar.webb@duke.edu,Tu 1:45pm - 3:00pm
+78,data-dudes,sec-8-team-4,Wiest,Katherine,kaw109@duke.edu,kwiest5,kaw109@duke.edu,kaw109@duke.edu,Tu 1:45pm - 3:00pm
+79,sec-8-team-5,sec-8-team-5,Kotler,Katie,knk25@duke.edu,katiekotler25,kathryn.kotler@duke.edu,katiekotler1@gmail.com,Tu 1:45pm - 3:00pm
+80,sec-8-team-5,sec-8-team-5,Peng,Steven,sgp26@duke.edu,stevengpeng,"steven.peng@duke.edu
+
+","stvnpeng19@gmail.com
+
+",Tu 1:45pm - 3:00pm
+81,sec-8-team-5,sec-8-team-5,Sala,Angelina,ams308@duke.edu,ams308,angelina.sala@duke.edu,angelina.sala@duke.edu,Tu 1:45pm - 3:00pm
+82,sec-8-team-5,sec-8-team-5,Shang,Ethan,eds48@duke.edu,ethan-shang,eds48@duke.edu,eds48@duke.edu,Tu 1:45pm - 3:00pm
+83,sec-8-team-5,sec-8-team-5,Urberg,Kristina,kcu4@duke.edu,kcurberg,kristina.urberg@duke.edu,kristina.urberg@duke.edu,Tu 1:45pm - 3:00pm
+84,super-staters,sec-8-team-6,Evans,Logan,lee18@duke.edu,loganevans3,lee18@duke.edu,logan.evans@duke.edu,Tu 1:45pm - 3:00pm
+85,super-staters,sec-8-team-6,Hauser,Natalia,neh17@duke.edu,nataliahauser13,natalia.hauser@duke.edu,natalia.hauser@duke.edu,Tu 1:45pm - 3:00pm
+86,super-staters,sec-8-team-6,Jonas,Katherine,kj210@duke.edu,kjshokz,katherine.jonas@duke.edu,katherine.jonas@duke.edu,Tu 1:45pm - 3:00pm
+87,super-staters,sec-8-team-6,Zhu,Lewis,llz5@duke.edu,lewiszhu11,lewis.zhu@duke.edu,lewis.zhu@duke.edu,Tu 1:45pm - 3:00pm
+88,super-staters,sec-8-team-6,Lin,Diane,dl358@duke.edu,sincerelydiane,dl358@duke.edu,dl358@duke.edu,Tu 1:45pm - 3:00pm
+89,stat-wizards,sec-9-team-1,Beamer,Elliot,eb393@duke.edu,ebbeamer,elliot.beamer@duke.edu,elliot.beamer@duke.edu,Tu 3:30pm - 4:45pm
+90,stat-wizards,sec-9-team-1,Lane,Amelia,arl72@duke.edu,amelialane123,amelialane427@gmail.com,amelialane427@gmail.com,Tu 3:30pm - 4:45pm
+91,stat-wizards,sec-9-team-1,Monaco,Sophia,stm53@duke.edu,stmonaco,sophia.monaco@duke.edu,stmonaco812@gmail.com,Tu 3:30pm - 4:45pm
+92,stat-wizards,sec-9-team-1,Slayton,Weston,ws187@duke.edu,westonslayton,ws187@duke.edu,ws187@duke.edu,Tu 3:30pm - 4:45pm
+93,ggplotheads,sec-9-team-2,Fox,Sydney,saf57@duke.edu,sydney-fox,saf57@duke.edu,saf57@duke.edu,Tu 3:30pm - 4:45pm
+94,ggplotheads,sec-9-team-2,Gross,Lindsay,lrg30@duke.edu,lindsaygross,lindsay.gross@duke.edu,lindsay.gross@duke.edu,Tu 3:30pm - 4:45pm
+95,ggplotheads,sec-9-team-2,Hirshfield,Noah,nsh23@duke.edu,NoahHirshfield,nsh23@duke.edu,noah.hirshfield@duke.edu,Tu 3:30pm - 4:45pm
+96,ggplotheads,sec-9-team-2,Marrs,Jake,jpm114@duke.edu,jakemarrs14,jpm114@duke.edu,jpm114@duke.edu,Tu 3:30pm - 4:45pm
+97,ggplotheads,sec-9-team-2,Yacht,Ben,bhy6@duke.edu,byacht120,bhy6@duke.edu,bhy6@duke.edu,Tu 3:30pm - 4:45pm
+98,the-great-group-3,sec-9-team-3,Gupta,Ishrit,ig66@duke.edu,Fishyyyyyyyy,ishritg@gmail.com,ishritg@gmail.com,Tu 3:30pm - 4:45pm
+99,the-great-group-3,sec-9-team-3,Payne,Rees,rwp21@duke.edu,legoman77,rplegos@gmail.com,rwp21@duke.edu,Tu 3:30pm - 4:45pm
+100,the-great-group-3,sec-9-team-3,Schwartzman,Salma,sts60@duke.edu,SalmaSchwartzman,salma.schwartzman@duke.edu,sts60@duke.edu,Tu 3:30pm - 4:45pm
+101,the-great-group-3,sec-9-team-3,Spooner,Garrett,gcs31@duke.edu,garrettspooner,garrett.spooner@duke.edu,garrett.spooner@duke.edu,Tu 3:30pm - 4:45pm
+102,THAN,sec-9-team-4,de Andrade,Harper,hjd15@duke.edu,HarperdeA,deandrade.harper@gmail.com,hjd15@duke.edu,Tu 3:30pm - 4:45pm
+103,THAN,sec-9-team-4,Hernandez,Andres,amh192@duke.edu,andres-hernandez199,amh192@duke.edu,amh192@duke.edu,Tu 3:30pm - 4:45pm
+104,THAN,sec-9-team-4,Kulkarni,Naman,nk246@duke.edu,nkulkarni1717,nk246@duke.edu,nk246@duke.edu,Tu 3:30pm - 4:45pm
+105,THAN,sec-9-team-4,Nahoum,Teddy,tn129@duke.edu,TeddyNahoum,teddy.nahoum@duke.edu,teddy.nahoum@duke.edu,Tu 3:30pm - 4:45pm
+106,we-r-group-5,sec-9-team-5,Lee,Joshua,jl1161@duke.edu,joshualee9063,joshua.lee@duke.edu,joshua.lee@duke.edu,Tu 3:30pm - 4:45pm
+107,we-r-group-5,sec-9-team-5,Ma,Martin,jm838@duke.edu,MartinM1231,jm838@duke.edu,jm838@duke.edu,Tu 3:30pm - 4:45pm
+108,we-r-group-5,sec-9-team-5,Miller,Lyla,lsm51@duke.edu,lylamiller,Lyla.miller@duke.edu,Lyla.miller@duke.edu,Tu 3:30pm - 4:45pm
+109,we-r-group-5,sec-9-team-5,Wang,Yeeke,yrw@duke.edu,yeekewang,yeeke.wang@duke.edu,yeeke.wang@duke.edu,Tu 3:30pm - 4:45pm
+110,the-wranglers,sec-9-team-6,Lessing,Reed,rnl8@duke.edu,reedlessing9,rnl8@duke.edu,reed.lessing@gmail.com,Tu 3:30pm - 4:45pm
+111,the-wranglers,sec-9-team-6,Lovato,Sirena,sil6@duke.edu,sirenalovato,sil6@duke.edu,sil6@duke.edu,Tu 3:30pm - 4:45pm
+112,the-wranglers,sec-9-team-6,Massare,Sofia,smm212@duke.edu,sofiamassare,sofia.massare@duke.edu,sofia.massare@duke.edu,Tu 3:30pm - 4:45pm
+113,the-wranglers,sec-9-team-6,Nackley,Elise,ecn13@duke.edu,elisenackley,elise.nackley@duke.edu,elisenackley@gmail.com,Tu 3:30pm - 4:45pm
+114,the-wranglers,sec-9-team-6,Rooney,Connor,jlr124@duke.edu,connorooney,james.rooney@duke.edu,james.rooney@duke.edu,Tu 3:30pm - 4:45pm
+115,team-007,sec-9-team-7,Bayer,Nick,ncb39@duke.edu,ncb2011,nick.bayer@duke.edu,nbayer2011@gmail.com,Tu 3:30pm - 4:45pm
+116,team-007,sec-9-team-7,Evans,Ella,mee35@duke.edu,ellaevanss,mary.evans@duke.edu,mary.evans@duke.edu,Tu 3:30pm - 4:45pm
+117,team-007,sec-9-team-7,Nguyen,Madison,mvn9@duke.edu,madisonnguyen7,mvn9@duke.edu,mvn9@duke.edu,Tu 3:30pm - 4:45pm
+118,team-007,sec-9-team-7,Rodriguez,Jacqueline,jar172@duke.edu,jar172,jar172@duke.edu,jacqueline.rodriguez@duke.edu,Tu 3:30pm - 4:45pm
+119,PX,sec-10-team-1,Adovor,Ajani,aea63@duke.edu,Analytix1,analyticalaj@gmail.com,aea63@duke.edu,Tu 5:15pm - 6:30pm (10L)
+120,PX,sec-10-team-1,Coleman,Ellie,ecc58@duke.edu,Ecoleman03,elizabeth.coleman@duke.edu,elizabeth.coleman@duke.edu,Tu 5:15pm - 6:30pm (10L)
+121,PX,sec-10-team-1,Gaur,Ayush,ag558@duke.edu,yushbets,ayushgaur101@gmail.com,ayushgaur101@gmail.com,Tu 5:15pm - 6:30pm (10L)
+122,PX,sec-10-team-1,Golechha,Harssh,hg148@duke.edu,harssh03,harssh.golechha@duke.edu,harssh.golechha@duke.edu,Tu 5:15pm - 6:30pm (10L)
+123,PX,sec-10-team-1,Kick,Colin,cpk24@duke.edu,colinkick,colin.kick@duke.edu,colin.kick@duke.edu,Tu 5:15pm - 6:30pm (10L)
+124,Cris_Jenner,sec-10-team-2,Biju,Irene,imb21@duke.edu,irenebiju,irene.biju@duke.edu,irene.biju@duke.edu,Tu 5:15pm - 6:30pm (10L)
+125,Cris_Jenner,sec-10-team-2,Collins,Rachel,rec59@duke.edu,rachelevelyn139,rachel.collins@duke.edu,rachel.collins@duke.edu,Tu 5:15pm - 6:30pm (10L)
+126,Cris_Jenner,sec-10-team-2,Liu,Sophia,sl796@duke.edu,sl796,s.liu@duke.edu,s.liu@duke.edu,Tu 5:15pm - 6:30pm (10L)
+127,Cris_Jenner,sec-10-team-2,Raney,Claire,cr374@duke.edu,claireraney,claireraney@gmail.com,claire.raney@duke.edu,Tu 5:15pm - 6:30pm (10L)
+128,Team_Freedom,sec-10-team-3,Brathwaite,Matthew,mb794@duke.edu,mbrathwaite1,matthew.brathwaite@duke.edu,matthew.brathwaite@duke.edu,Tu 5:15pm - 6:30pm (10L)
+129,Team_Freedom,sec-10-team-3,Bromberger,Abigail,afb40@duke.edu,abigailbrom,afb40@duke.edu,abigail.bromberger@duke.edu,Tu 5:15pm - 6:30pm (10L)
+130,Team_Freedom,sec-10-team-3,Farley,Grant,gef9@duke.edu,grantfarley,grant.farley@duke.edu,grant.farley@duke.edu,Tu 5:15pm - 6:30pm (10L)
+131,Team_Freedom,sec-10-team-3,Ganz,Maddy,NA,Maddyganz,NA,NA,Tu 5:15pm - 6:30pm (10L)
+132,AAAW,sec-10-team-4,Chegu,Akhilesh,ac797@duke.edu,akhichegu,akhilesh.chegu@duke.edu,akhilesh.chegu@duke.edu,Tu 5:15pm - 6:30pm (10L)
+133,AAAW,sec-10-team-4,Patterson,Audrey,ap676@duke.edu,audreydpatterson,audrey.patterson@duke.edu,audreydpatterson@gmail.com,Tu 5:15pm - 6:30pm (10L)
+134,AAAW,sec-10-team-4,Tarakji,Anthony,amt96@duke.edu,atarakji23,amtarakji19@gmail.com,amtarakji19@gmail.com,Tu 5:15pm - 6:30pm (10L)
+135,AAAW,sec-10-team-4,Yan,William,wy72@duke.edu,Williamyan123,william.yan2013@gmail.com,william.yan2013@gmail.com,Tu 5:15pm - 6:30pm (10L)
+136,Team_199,sec-10-team-5,Davis,Ella,erd28@duke.edu,erdavis21,erd28@duke.edu,erd28@duke.edu,Tu 5:15pm - 6:30pm (10L)
+137,Team_199,sec-10-team-5,Desir,Amalia,agd41@duke.edu,amalia48,agd41@duke.edu,Amalia.desir@duke.edu,Tu 5:15pm - 6:30pm (10L)
+138,Team_199,sec-10-team-5,Francese,Luke,lmf53@duke.edu,lukefrancese,lmf53@duke.edu,lmf53@duke.edu,Tu 5:15pm - 6:30pm (10L)
+139,Team_199,sec-10-team-5,Mesalles,Ruben,rjm77@duke.edu,rubenmesalles,ruben.mesalles@duke.edu,rmesalles11@gmail.com,Tu 5:15pm - 6:30pm (10L)
+140,heartemoji,sec-10-team-6,Feng,Morgan,mwf15@duke.edu,MorganFeng12,padres1027@gmail.com,mwf15@duke.edu,Tu 5:15pm - 6:30pm (10L)
+141,heartemoji,sec-10-team-6,Mansoor,Sophie,ssm88@duke.edu,sophym9,sophie.mansoor@gmail.com,sophie.mansoor@gmail.com,Tu 5:15pm - 6:30pm (10L)
+142,heartemoji,sec-10-team-6,Wu,Sarah,ssw47@duke.edu,ssw47,ssw47@duke.edu,ssw47@duke.edu,Tu 5:15pm - 6:30pm (10L)
+143,sevenr,sec-10-team-7,Bilbao,Koji,kmb155@duke.edu,baoic,koji.bilbao@duke.edu,koji.bilbao@duke.edu,Tu 5:15pm - 6:30pm (10L)
+144,sevenr,sec-10-team-7,Markus-Malone,Maya,mcm151@duke.edu,mmarkusmalone,mcm151@duke.edu,mcm151@duke.edu,Tu 5:15pm - 6:30pm (10L)
+145,sevenr,sec-10-team-7,Rosenzweig,Jacob,jar152@duke.edu,JacobARosenzweig,jar152@duke.edu,jar152@duke.edu,Tu 5:15pm - 6:30pm (10L)
+146,sevenr,sec-10-team-7,Tremblay,Scott,sjt40@duke.edu,ScottTremblay,scott.tremblay@duke.edu,scott.tremblay@duke.edu,Tu 5:15pm - 6:30pm (10L)
+147,sevenr,sec-10-team-7,Wang,Michael,mw463@duke.edu,lolitsmichael,mw463@duke.edu,michael.wang489@duke.edu,Tu 5:15pm - 6:30pm (10L)
+148,git-it-done,sec-12-team-1,Bergan,Abigail,aeb131@duke.edu,abigailbergan,abigail.bergan@duke.edu,aelbergan@gmail.com,Tu 5:15pm - 6:30pm (12L)
+149,git-it-done,sec-12-team-1,Gress,Gus,cag90@duke.edu,gusgress,carl.gress@duke.edu,carl.gress@duke.edu,Tu 5:15pm - 6:30pm (12L)
+150,git-it-done,sec-12-team-1,Phillips,Jordan,jnp40@duke.edu,jojop252,jordan.phillips@duke.edu,jordanphillips2004@gmail.com,Tu 5:15pm - 6:30pm (12L)
+151,git-it-done,sec-12-team-1,Ye,Elysia,ry80@duke.edu,lysiye,elysia.ye@duke.edu,elysiaye@gmail.com,Tu 5:15pm - 6:30pm (12L)
+152,abele,sec-12-team-2,Bhargava,Taira,tb343@duke.edu,bhargavataira,taira.bhargava@duke.edu,taira.bhargava@duke.edu,Tu 5:15pm - 6:30pm (12L)
+153,abele,sec-12-team-2,Dean,Madeleine,mcd74@duke.edu,madeleinedean,madeleine.dean@duke.edu,madeleinedean78@gmail.com,Tu 5:15pm - 6:30pm (12L)
+154,abele,sec-12-team-2,Van Voorhis,Chloe,csv13@duke.edu,chloevanvoorhis,chloe.van.voorhis@duke.edu,chloe.van.voorhis@duke.edu,Tu 5:15pm - 6:30pm (12L)
+155,abele,sec-12-team-2,Wolde,Kidest,khw23@duke.edu,kw0lde,kidest.wolde@duke.edu,kidest.wolde@duke.edu,Tu 5:15pm - 6:30pm (12L)
+156,statstars,sec-12-team-3,Cho,Calvin,hc344@duke.edu,CalvinCho9,calvincho23@gmail.com,calvincho23@gmail.com,Tu 5:15pm - 6:30pm (12L)
+157,statstars,sec-12-team-3,Hunter,Kyla,kah147@duke.edu,kylahunter,kylahunter5729@gmail.com,kyla.hunter@duke.edu,Tu 5:15pm - 6:30pm (12L)
+158,statstars,sec-12-team-3,Becker Pombo,Carmen,crb117@duke.edu,carmenbecker,carmenrabepo@gmail.com,carmen.beckerpombo@duke.edu,Tu 5:15pm - 6:30pm (12L)
+159,statstars,sec-12-team-3,Lin,Sarah,NA,SarahELin,NA,NA,Tu 5:15pm - 6:30pm (12L)
+160,sec-12-team-4,sec-12-team-4,Gwanbobmuga,Agnes,afg27@duke.edu,Agnes-Gw,agnes.gwanbobmuga@duke.edu,agnes.gwanbobmuga@duke.edu,Tu 5:15pm - 6:30pm (12L)
+161,sec-12-team-4,sec-12-team-4,Kim,Brian,bdk21@duke.edu,bdk21,bdk21@duke.edu,bdk21@duke.edu,Tu 5:15pm - 6:30pm (12L)
+162,sec-12-team-4,sec-12-team-4,Shivaramakrishnan,Akhilesh,as1231@duke.edu,akhileshs03,as1231@duke.edu,as1231@duke.edu,Tu 5:15pm - 6:30pm (12L)
+163,sec-12-team-4,sec-12-team-4,Smith,Sean,sbs66@duke.edu,seannn03,sean.b.smith@duke.edu,sean.b.smith@duke.edu,Tu 5:15pm - 6:30pm (12L)
+164,auto-as,sec-12-team-5,Chae,Joanne,jc940@duke.edu,gyul0102,joanne.chae@duke.edu,joanne.chae@duke.edu,Tu 5:15pm - 6:30pm (12L)
+165,auto-as,sec-12-team-5,Grune,George,gvg5@duke.edu,georgegrune,george.grune@duke.edu,george.grune@duke.edu,Tu 5:15pm - 6:30pm (12L)
+166,auto-as,sec-12-team-5,Haston,Dylan,dch41@duke.edu,dylhast,dylan.haston.22@gmail.com,dylan.haston.22@gmail.com,Tu 5:15pm - 6:30pm (12L)
+167,auto-as,sec-12-team-5,Schneid,Rebecca,rps34@duke.edu,rebeccaschneid,rps34@duke.edu,rps34@duke.edu,Tu 5:15pm - 6:30pm (12L)
+168,so-on-and-so-forth,sec-12-team-6,Vieira Silva Neto,Adeildo,av259@duke.edu,adeildovieira,adeildo.vieira@duke.edu,adeildo.vieira@duke.edu,Tu 5:15pm - 6:30pm (12L)
+169,so-on-and-so-forth,sec-12-team-6,Haufes,Joao Pedro,jh809@duke.edu,Joao-Haufes,joaopedrohaufes1@gmail.com,joaopedro.haufes@duke.edu,Tu 5:15pm - 6:30pm (12L)
+170,so-on-and-so-forth,sec-12-team-6,Mendoza,Gabriel,gam70@duke.edu,gamendoza26,gam70@duke.edu,gam70@duke.edu,Tu 5:15pm - 6:30pm (12L)
+171,so-on-and-so-forth,sec-12-team-6,Pour-Biazar,Aubteen,ap675@duke.edu,aubteenp,ap675@duke.edu,ap675@duke.edu,Tu 5:15pm - 6:30pm (12L)
