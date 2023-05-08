@@ -109,7 +109,7 @@
     "href": "course-support.html#email",
     "title": "Course support",
     "section": "Email",
-    "text": "Email\nPlease refrain from emailing any course content questions (those should go to Slack), and only use email for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, accommodations, etc.). For such matters, you may email Dr. Elijah Meyer at elijah.meyer@duke.edu.\nIf there is a question that’s not appropriate for the public forum, you are welcome to email me directly. If you email me, please include “STA 199” in the subject line. Barring extenuating circumstances, I will respond to STA 199 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday."
+    "text": "Email\nCourse content questions should be going to Slack. My email should mainly be used for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, accommodations, etc.). For such matters, you may email Dr. Elijah Meyer at elijah.meyer@duke.edu.\nIf there is a question that’s not appropriate for the public forum, you are welcome to email me directly. If you email me, please include “STA 199” in the subject line. Barring extenuating circumstances, I will respond to STA 199 emails within 24 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday."
   },
   {
     "objectID": "course-support.html#academic-support",
@@ -228,7 +228,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n16 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-1\nExploratory data analysis I\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-2\nExploratory data analysis II\n\n\n\n\n\n\n\n\n\nHW 1 Release\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-3\nData wrangling II\n\n\n\n\n\n\n\n\n\n\n\n\n3\nM\n29 May\nLec-6\nTidying Data\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Lab-4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\nM\n5 June\nLec-9\nSimple Linear Regression\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-6\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-7\nMultiple Linear Regression II\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n13 June\nLec-13; Lab-8\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release; Project Checkpoint 1\n\n\n\nTh\n15 June\nLec-14; Lab-9; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\nHW 4 Due; Exam-2 Release\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-10\nProject Work Day\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-11\nData Ethics\n\n\n\n\n\n\n\n\n\n\n\n\n7\nM\n26 June\nLec-18\n\n\n\n\n\n\n\n\n\n\nHW 5 Due; Project Checkpoint 2\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation (in-person or online post videos)."
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n16 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-1\nExploratory data analysis I\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-2\nExploratory data analysis II\n\n\n\n\n\n\n\n\n\nHW 1 Release\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-3\nData wrangling II\n\n\n\n\n\n\n\n\n\n\n\n\n3\nM\n29 May\nLec-6\nTidying Data\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Lab-4\nGroup Formation + Merge Conflicts\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\nDebugging + ggplot practice\n\n\n\n\n\n\n\n\n\nRelease Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-6\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-7\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-8\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-9; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-10\nProject Work Day\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-11\nData Ethics\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "prepare/sample.html",
@@ -450,6 +450,69 @@
   {
     "objectID": "project-description-s23.html#late-work-policy",
     "href": "project-description-s23.html#late-work-policy",
+    "title": "project-description-s23",
+    "section": "Late work policy",
+    "text": "Late work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "project-description-summer.html",
+    "href": "project-description-summer.html",
+    "title": "project-description-s23",
+    "section": "",
+    "text": "Proposal TBD\nDraft 1 TBD\nPeer review TBD\nPresentation + slides TBD\nFinal report and [final GitHub repo] TBD"
+  },
+  {
+    "objectID": "project-description-summer.html#criteria-for-datasets",
+    "href": "project-description-summer.html#criteria-for-datasets",
+    "title": "project-description-s23",
+    "section": "Criteria for datasets",
+    "text": "Criteria for datasets\nThe data sets should meet the following criteria:\n\nAt least 300 observations (or approved by me)\nAt least 6 unique columns that are useful and not simply identifiers (or approved by me)\nData must be real\n\nIdentifier variables such as “name”, “social security number”, etc. are not useful explanatory variables.\nIf you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique explanatory variables.\n\nYou may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.\n\nPlease ask a member of the teaching team if you’re unsure whether your data set meets the criteria."
+  },
+  {
+    "objectID": "project-description-summer.html#resources-for-datasets",
+    "href": "project-description-summer.html#resources-for-datasets",
+    "title": "project-description-s23",
+    "section": "Resources for datasets",
+    "text": "Resources for datasets\nYou can find data wherever you like, but here are some recommendations to get you started. You shouldn’t feel constrained to datasets that are already in a tidy format, you can start with data that needs cleaning and tidying, scrape data off the web, or collect your own data.\n\nAwesome public datasets\nBikeshare data portal\nCDC\nData.gov\nData is Plural\nDurham Open Data Portal\nEdinburgh Open Data\nElection Studies\nEuropean Statistics\nCORGIS: The Collection of Really Great, Interesting, Situated Datasets\nGeneral Social Survey\nGoogle Dataset Search\nHarvard Dataverse\nInternational Monetary Fund\nIPUMS survey data from around the world\nLos Angeles Open Data\nNHS Scotland Open Data\nNYC OpenData\nOpen access to Scotland’s official statistics\nPew Research\nPRISM Data Archive Project\nStatistics Canada\nThe National Bureau of Economic Research\nUCI Machine Learning Repository\nUK Government Data\nUNICEF Data\nUnited Nations Data\nUnited Nations Statistics Division\nUS Census Data\nUS Government Data\nWorld Bank Data\nYouth Risk Behavior Surveillance System (YRBSS)"
+  },
+  {
+    "objectID": "project-description-summer.html#proposal-components",
+    "href": "project-description-summer.html#proposal-components",
+    "title": "project-description-s23",
+    "section": "Proposal components",
+    "text": "Proposal components\nFor each data set, include the following:\n\nIntroduction and data\nFor each data set:\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations.\nAddress ethical concerns about the data, if any.\n\n\n\nResearch question\nYour research question should contain at least three variables, and should be a mix of categorical and quantitative variables. When writing a research question, please think about the following:\n\nWhat is your target population?\nIs the question original?\nCan the question be answered?\n\nFor each data set, include the following:\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nStatement on why this question is important.\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?\n\n\n\nLiterature\nA literature review is an overview of the previously published works on a topic. It is good practice to familiarize yourself with published work that has already been done on the topic you are researching. Often, a literature review spans many articles, and allows the researcher to communicate how their research fits in / extends our current understanding of a topic. For this project, we will do a “mini” literature review. For each data set:\n\nFind one published credible article on the topic you are interested in researching.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited.\n\nYou can find articles using Google Scholar or some other academic search engine. Please reach out if you have any questions about this.\n\n\nGlimpse of data\nFor each data set:\n\nPlace the file containing your data in the data folder of the project repo.\nUse the glimpse() function to provide a glimpse of the data set."
+  },
+  {
+    "objectID": "project-description-summer.html#proposal-grading",
+    "href": "project-description-summer.html#proposal-grading",
+    "title": "project-description-s23",
+    "section": "Proposal grading",
+    "text": "Proposal grading\n\n\n\nTotal\n15 pts\n\n\n\n\nIntroduction and data\n3\n\n\nResearch question\n3\n\n\nLiterature\n3\n\n\nGlimpse of data\n3\n\n\nWorkflow and formatting\n3\n\n\n\nEach component will be graded as follows:\n\nMeets expectations (full credit): All required elements are completed and are accurate. The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.\nClose to expectations (half credit): There are some elements missing and/or inaccurate. There are some issues with formatting.\nDoes not meet expectations (no credit): Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting.\n\nIt is critical to check feedback on your project proposal. Even if you earn full credit, it may not mean that your proposal is perfect."
+  },
+  {
+    "objectID": "project-description-summer.html#reproducibility-organization",
+    "href": "project-description-summer.html#reproducibility-organization",
+    "title": "project-description-s23",
+    "section": "Reproducibility + organization",
+    "text": "Reproducibility + organization\nAll written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized.\nPoints for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable."
+  },
+  {
+    "objectID": "project-description-summer.html#teamwork",
+    "href": "project-description-summer.html#teamwork",
+    "title": "project-description-s23",
+    "section": "Teamwork",
+    "text": "Teamwork\nYou will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please provide some explanation. If any individual gets an average peer score indicating that this was the case, their grade will be assessed accordingly and penalties may apply beyond the teamwork component of the grade.\nIf this is not indicated on the survey, I will assume everyone on the team equally contributed and will receive full credit for the teamwork portion of the grade."
+  },
+  {
+    "objectID": "project-description-summer.html#grading-summary",
+    "href": "project-description-summer.html#grading-summary",
+    "title": "project-description-s23",
+    "section": "Grading summary",
+    "text": "Grading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort."
+  },
+  {
+    "objectID": "project-description-summer.html#late-work-policy",
+    "href": "project-description-summer.html#late-work-policy",
     "title": "project-description-s23",
     "section": "Late work policy",
     "text": "Late work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."

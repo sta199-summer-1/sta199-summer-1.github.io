@@ -18,9 +18,9 @@ Have a question that can't wait for office hours? Prefer to write out your quest
 
 ## Email
 
-Please refrain from emailing any course content questions (those should go to Slack), and only use email for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, accommodations, etc.). For such matters, you may email Dr. Elijah Meyer at [elijah.meyer\@duke.edu](mailto:elijah.meyer@duke.edu).
+Course content questions should be going to Slack. My email should mainly be used for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, accommodations, etc.). For such matters, you may email Dr. Elijah Meyer at [elijah.meyer\@duke.edu](mailto:elijah.meyer@duke.edu).
 
-If there is a question that's not appropriate for the public forum, you are welcome to email me directly. **If you email me, please include "STA 199" in the subject line.** Barring extenuating circumstances, I will respond to STA 199 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.
+If there is a question that's not appropriate for the public forum, you are welcome to email me directly. **If you email me, please include "STA 199" in the subject line.** Barring extenuating circumstances, I will respond to STA 199 emails within 24 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.
 
 ## Academic support
 
