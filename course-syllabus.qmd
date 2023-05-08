@@ -13,7 +13,7 @@ title: "Syllabus"
 All books are **freely available online**.
 
 |                                                                         |                          |                                   |                                                                                                                                  |
-|----------------|----------------|----------------|--------------------------|
+|-----------------|-----------------|-----------------|-----------------------|
 | [R for Data Science, 2e](https://r4ds.hadley.nz/)                       | Grolemund, Wickham       | O'Reilly, 2nd edition, 2022       | Hard copy only available of 1st edition                                                                                          |
 | [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel, Hardin | OpenIntro Inc., 1st Edition, 2021 | Hard copy available [on Amazon](https://www.amazon.com/Introduction-Modern-Statistics-Mine-%C3%87etinkaya-Rundel/dp/1943450145/) |
 
@@ -100,8 +100,6 @@ In labs, you will apply the concepts discussed in lecture to various data analys
 ### Homework (Perform)
 
 In homework, you will apply what you've learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Similar to lab assignments, homework must be typed up using Quarto and GitHub and submitted as a PDF in Gradescope.
-
-One homework assignment will be dedicated to a *statistics experience*. The statistics experience is an opportunity to engage with statistics and data science outside of the classroom through podcasts, books, seminars, data analysis competitions, and other activities. As you complete these experiences, the goal is to consider how the material you're learning in the course connects with society more broadly.
 
 *The lowest homework grade will be dropped at the end of the semester.*
 
