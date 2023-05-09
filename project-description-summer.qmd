@@ -24,7 +24,6 @@ The goal is not to do an exhaustive data analysis i.e., do not calculate every s
 
 The expectation is that you apply **at least one** statistical procedure. Statistical procedures that we will cover include *confidence intervals*, *modeling*, and *hypothesis testing*. If using more than one statistical procedures helps answer your question, feel free to do so. However, more does not mean better.
 
-
 Once finished, think critically and critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data, and appropriateness of the statistical analysis should be discussed here.
 
 The project is very open ended. You should start by exploring your data and create some kind of compelling visualization(s) of these data in R. There is no limit on what tools or packages you may use. You do not need to visualize all of the data at once. A single high-quality visualization will receive a much higher grade than a large number of poor-quality visualizations. Also pay attention to your presentation. Neatness, coherency, and clarity will count. All analyses must be done in RStudio, using R, and all components of the project **must be reproducible** (with the exception of the presentation).
@@ -39,7 +38,7 @@ The four primary deliverables for the final project are
 
 You will not be submitting anything on Gradescope for the project. Submission of these deliverables will happen on GitHub and feedback will be provided as GitHub issues that you need to engage with and close. The collection of the documents in your GitHub repo will create a webpage for your project. To create the webpage go to the Build tab in RStudio, and click on Render Website.
 
-A large part of this project is the ability to demonstrate that you can work functionally in a group setting. Thus, there may be periodic surveys given to ensure that the group dynamic is productive and everyone is contributing. An individual's grade is subject to be different than your group members for each part of the project if there is overwhelming evidence that said individual is not contributing or communicating with the other team members. Survey evidence, GitHub commit history, and lab attendance will be used to dictate if any dedications need to be made to project component grades. 
+A large part of this project is the ability to demonstrate that you can work functionally in a group setting. Thus, there may be periodic surveys given to ensure that the group dynamic is productive and everyone is contributing. An individual's grade is subject to be different than your group members for each part of the project if there is overwhelming evidence that said individual is not contributing or communicating with the other team members. Survey evidence, GitHub commit history, and lab attendance will be used to dictate if any dedications need to be made to project component grades.
 
 # Proposal {#project-proposal}
 
@@ -179,8 +178,6 @@ Each component will be graded as follows:
 -   **Does not meet expectations (no credit)**: Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting.
 
 It is critical to check feedback on your project proposal. Even if you earn full credit, it may not mean that your proposal is perfect.
-
-
 
 ## Reproducibility + organization
 

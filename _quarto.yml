@@ -70,10 +70,15 @@ website:
             text: Cheatsheets
       - section: "Project"
         contents:
-          - href: project-description-s23.qmd
+          - href: project-description-summer.qmd
             text: Description
           - href: project-tips-resources.qmd
             text: Tips + resources
+      - section: "Example Work"
+        contents:
+          - href: project-examples.qmd
+            text: Student Project Examples
+
 
 format:
   html:
