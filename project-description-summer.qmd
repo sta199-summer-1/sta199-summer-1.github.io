@@ -4,15 +4,13 @@ title: "project-description-s23"
 
 # Timeline
 
-[Proposal](#project-proposal) TBD
+[Proposal](#project-proposal) June 12th
 
-[Draft 1](#draft-report) TBD
+[Draft 1](#draft-report) June 22nd
 
-[Peer review](#peer-review) TBD
+[Presentation + slides](#video-presentation--slides) June 29th
 
-[Presentation + slides](#video-presentation--slides) TBD
-
-[Final report](#written-report) and \[final GitHub repo\] TBD
+[Final report](#written-report) and \[final GitHub repo\] June 29th
 
 # Introduction
 
@@ -20,7 +18,7 @@ title: "project-description-s23"
 
 **May be too long, but please do read**
 
-The final project for this class will consist of analysis on a dataset of your own choosing. The dataset may already exist, or you may collect your own data using a survey or by conducting an experiment. You can choose the data based on your teams' interests or based on work in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like) and apply them to a novel dataset in a meaningful way.
+The final project for this class will consist of analysis on a dataset of your own choosing. The dataset should already exist. You can choose the data based on your teams' interests or based on work in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like) and apply them to a novel dataset in a meaningful way.
 
 The goal is not to do an exhaustive data analysis i.e., do not calculate every statistic and procedure you have learned for every variable, but rather let me know that you are proficient at asking meaningful questions and answering them with results of data analysis, that you are proficient in using R, and that you are proficient at interpreting and presenting the results. Focus on methods that help you begin to answer your research questions. You do not have to apply every statistical procedure we learned.
 
@@ -29,18 +27,19 @@ The expectation is that you apply **at least one** statistical procedure. Statis
 
 Once finished, think critically and critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data, and appropriateness of the statistical analysis should be discussed here.
 
-The project is very open ended. You should create some kind of compelling visualization(s) of this data in R. There is no limit on what tools or packages you may use. You do not need to visualize all of the data at once. A single high-quality visualization will receive a much higher grade than a large number of poor-quality visualizations. Also pay attention to your presentation. Neatness, coherency, and clarity will count. All analyses must be done in RStudio, using R, and all components of the project **must be reproducible** (with the exception of the presentation).
+The project is very open ended. You should start by exploring your data and create some kind of compelling visualization(s) of these data in R. There is no limit on what tools or packages you may use. You do not need to visualize all of the data at once. A single high-quality visualization will receive a much higher grade than a large number of poor-quality visualizations. Also pay attention to your presentation. Neatness, coherency, and clarity will count. All analyses must be done in RStudio, using R, and all components of the project **must be reproducible** (with the exception of the presentation).
 
 You will work on the project with your lab teams.
 
 The four primary deliverables for the final project are
 
-1.  A project **proposal** with three dataset ideas.
+1.  A project **proposal** with two dataset ideas.
 2.  A reproducible project **writeup** of your analysis, with one required and one optional draft along the way.
-3.  Formal **peer review** on another team's project.
-4.  A **presentation** with slides.
+3.  A **presentation** with slides.
 
 You will not be submitting anything on Gradescope for the project. Submission of these deliverables will happen on GitHub and feedback will be provided as GitHub issues that you need to engage with and close. The collection of the documents in your GitHub repo will create a webpage for your project. To create the webpage go to the Build tab in RStudio, and click on Render Website.
+
+A large part of this project is the ability to demonstrate that you can work functionally in a group setting. Thus, there may be periodic surveys given to ensure that the group dynamic is productive and everyone is contributing. An individual's grade is subject to be different than your group members for each part of the project if there is overwhelming evidence that said individual is not contributing or communicating with the other team members. Survey evidence, GitHub commit history, and lab attendance will be used to dictate if any dedications need to be made to project component grades. 
 
 # Proposal {#project-proposal}
 
@@ -49,7 +48,7 @@ There are two main purposes of the project proposal:
 -   To help you think about the project early, so you can get a head start on finding data, reading relevant literature, thinking about the questions you wish to answer, etc.
 -   To ensure that the data you wish to analyze, methods you plan to use, and the scope of your analysis are feasible and will allow you to be successful for this project.
 
-Identify 3 data sets you're interested in potentially using for the final project. If you're unsure where to find data, you can use the list of potential data sources in the [Tips + Resources](#tips--resources) section as a starting point. It may also help to think of topics you're interested in investigating and find data sets on those topics.
+Identify 2 data sets you're interested in potentially using for the final project. If you're unsure where to find data, you can use the list of potential data sources in the [Tips + Resources](#tips--resources) section as a starting point. It may also help to think of topics you're interested in investigating and find data sets on those topics.
 
 ::: callout-important
 You must use one of the data sets in the proposal for the final project, unless instructed otherwise when given feedback.
@@ -202,8 +201,7 @@ The grade breakdown is as follows:
 | Total                     | 100 pts |
 |---------------------------|---------|
 | **Project proposal**      | 15 pts  |
-| **Draft report**          | 10 pts  |
-| **Peer review**           | 5 pts   |
+| **Draft report**          | 15 pts  |
 | **Final report**          | 40 pts  |
 | **Slides + presentation** | 20 pts  |
 | **Teamwork**              | 10 pts  |
