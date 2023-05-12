@@ -158,6 +158,8 @@ Example R Figures
 
 -   Watch lecture content videos
 
+-   Clone the application exercise (can be done right before class)
+
 ### During Class
 
 -   Warm up question
