@@ -269,3 +269,88 @@ https://slack.com/get-started#/createnew
 -- Click Reserve Container for the STA198-199 container
 
 # Meet The Tool-Kit + Data Visualization 
+
+# R-Tour 
+
+## Some R essentials
+
+-- **Functions** are (normally) verbs, followed by what they will be applied to in parentheses:
+
+![](images/02-Meeting-the-toolkit/function.png){width="900" height="100" fig-align="right"}
+
+## R essentials
+
+-- **Packages** are installed with the install.packages function and loaded with the **library** function, once per session:
+
+![](images/02-Meeting-the-toolkit/packages.png){width="900" height="100" fig-align="left"}
+
+## Packages
+
+![](images/02-Meeting-the-toolkit/error1.png){width="900" height="100" fig-align="center"}
+
+`library(tidyverse)`
+
+![](images/02-Meeting-the-toolkit/nonerror1.png){width="900" height="100" fig-align="center"}
+
+## Packages
+
+![](images/02-Meeting-the-toolkit/error2.png){width="900" height="100" fig-align="center"}
+
+`library(tidyverse)`
+
+![](images/02-Meeting-the-toolkit/nonerror2.png){width="900" height="100" fig-align="center"}
+
+## tidyverse
+
+::: columns
+::: {.column width="40%"}
+![](images/02-Meeting-the-toolkit/tidyverse.png){width="400" height="300" fig-align="left"}
+:::
+
+::: {.column width="60%"}
+-- The **tidyverse** is a collection of R packages designed for data science.
+
+-- All packages share an underlying philosophy and a common grammar.
+:::
+:::
+
+## Quarto
+
+-- an open-source scientific and technical publishing system
+
+-- publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more
+
+-- Code goes in chunks, defined by three backticks, narrative goes outside of chunks
+
+## How will we use Quarto?
+
+-- Every assignment / lab / project will be given to you as a Quarto document
+
+-- You will always have a Quarto template document to start with
+
+-- As we get more familiar with R, the more code you will construct on your own
+
+## ae-01
+
+-- We will clone this from GitHub here: (insert link)
+
+-- You will not have the capability to "push changes" to GitHub (yet... this will happen during your first lab!)
+
+# ae-01
+
+## Summary 
+
+-- There area lot of moving parts in this course 
+
+-- Coding is not learned in a day 
+
+-- Ask questions often 
+
+-- What is version control? Why is it important?
+
+-- What is R vs RStudio?
+
+-- What is Quarto?
+
+-- Starting to work with code! 
+
