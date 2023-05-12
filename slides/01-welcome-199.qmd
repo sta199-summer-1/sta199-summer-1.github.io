@@ -150,9 +150,7 @@ Example R Figures
 <font size="120"> **This is a new language** </font>
 :::
 
-## Workflow & Website
-
-[sta199-summer-1.github.io/](https://sta199-summer-1.github.io/)
+## Workflow
 
 ### Before Class
 
@@ -165,6 +163,14 @@ Example R Figures
 -   Warm up question
 
 -   Mix of lecture and interaction
+
+## Website 
+
+[sta199-summer-1.github.io/](https://sta199-summer-1.github.io/)
+
+# Course Website Tour
+
+# Slack Tour
 
 # Please bring your laptops if able
 
@@ -196,7 +202,6 @@ Example R Figures
 
 -   Introduction to Modern Statistics by Cetinkaya-Rundel & Hardin (1st ed. OpenIntro)
 
-# Course Website Tour
 
 # Why learn the technology we do?
 
