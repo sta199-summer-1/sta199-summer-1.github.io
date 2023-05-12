@@ -609,6 +609,391 @@
     "text": "To be posted."
   },
   {
+    "objectID": "slides/01-welcome-199.html#welcome",
+    "href": "slides/01-welcome-199.html#welcome",
+    "title": "Welcome to STA 199",
+    "section": "Welcome",
+    "text": "Welcome"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#goals-for-day-1",
+    "href": "slides/01-welcome-199.html#goals-for-day-1",
+    "title": "Welcome to STA 199",
+    "section": "Goals for Day 1",
+    "text": "Goals for Day 1\nGet organized\n\nGet to know the professor\nGet to know each other\nCourse overview\nRegister with GitHub & Slack (if you haven’t already)\nGo over R + R-studio\nStart making visualizations"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#who-am-i",
+    "href": "slides/01-welcome-199.html#who-am-i",
+    "title": "Welcome to STA 199",
+    "section": "Who Am I?",
+    "text": "Who Am I?"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#who-are-you",
+    "href": "slides/01-welcome-199.html#who-are-you",
+    "title": "Welcome to STA 199",
+    "section": "Who Are You?",
+    "text": "Who Are You?\nPlease share with your neighbors:\n\nMajor\nYear\nWhy you are taking this course\nAnything else"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#what-is-data-science-1",
+    "href": "slides/01-welcome-199.html#what-is-data-science-1",
+    "title": "Welcome to STA 199",
+    "section": "What is data science?",
+    "text": "What is data science?\n“Data science is a concept to unify statistics, data analysis, machine learning and their related methods in order to understand and analyze actual phenomena with data. It employs techniques and theories drawn from many fields within the context of mathematics, statistics, information science, and computer science.”\n-Donoho, 2017"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#examples-of-data-science",
+    "href": "slides/01-welcome-199.html#examples-of-data-science",
+    "title": "Welcome to STA 199",
+    "section": "Examples of data science",
+    "text": "Examples of data science\n\nIdentification and prediction of disease\nTargeted advertising\nSupply chain optimization\nSports recruitment + strategist\nThe list goes on and on….."
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#jobs",
+    "href": "slides/01-welcome-199.html#jobs",
+    "title": "Welcome to STA 199",
+    "section": "Jobs",
+    "text": "Jobs"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#jobs-1",
+    "href": "slides/01-welcome-199.html#jobs-1",
+    "title": "Welcome to STA 199",
+    "section": "Jobs",
+    "text": "Jobs"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#jobs-2",
+    "href": "slides/01-welcome-199.html#jobs-2",
+    "title": "Welcome to STA 199",
+    "section": "Jobs",
+    "text": "Jobs"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#data-literacy",
+    "href": "slides/01-welcome-199.html#data-literacy",
+    "title": "Welcome to STA 199",
+    "section": "Data literacy",
+    "text": "Data literacy"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#our-classroom",
+    "href": "slides/01-welcome-199.html#our-classroom",
+    "title": "Welcome to STA 199",
+    "section": "Our Classroom",
+    "text": "Our Classroom\n\nCommunity\nCommunication\nRespect"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#course-objectives",
+    "href": "slides/01-welcome-199.html#course-objectives",
+    "title": "Welcome to STA 199",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nLearn to explore, visualize, and analyze data in a reproducible and shareable manner\nGain experience in data wrangling, exploratory data analysis, predictive modeling, and data visualization\nWork on problems and case studies inspired by and based on real-world questions and data\nLearn to effectively communicate results through written assignments and final project presentation"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#some-of-what-you-will-learn",
+    "href": "slides/01-welcome-199.html#some-of-what-you-will-learn",
+    "title": "Welcome to STA 199",
+    "section": "Some of what you will learn",
+    "text": "Some of what you will learn\n\n\n\n\n\n– Fundamentals of R\n– Data visualization\n– Version control with GitHub\n\n– Reproducible reports with Quarto\n– Regression\n– Statistical inference"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#r---figures",
+    "href": "slides/01-welcome-199.html#r---figures",
+    "title": "Welcome to STA 199",
+    "section": "R - figures",
+    "text": "R - figures\n\n\n\n\n\n\n\n\n\n\nFigure 1: Example R Figures"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#section",
+    "href": "slides/01-welcome-199.html#section",
+    "title": "Welcome to STA 199",
+    "section": "",
+    "text": "{fig.align = “center”}"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#r",
+    "href": "slides/01-welcome-199.html#r",
+    "title": "Welcome to STA 199",
+    "section": "R",
+    "text": "R\n\n\n\n\n\n\nNote\n\n\n This is a new language"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#workflow",
+    "href": "slides/01-welcome-199.html#workflow",
+    "title": "Welcome to STA 199",
+    "section": "Workflow",
+    "text": "Workflow\nBefore Class\n\nWatch lecture content videos\nClone the application exercise (can be done right before class)\n\nDuring Class\n\nWarm up question\nMix of lecture and interaction"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#website",
+    "href": "slides/01-welcome-199.html#website",
+    "title": "Welcome to STA 199",
+    "section": "Website",
+    "text": "Website\nsta199-summer-1.github.io/"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#activities-and-assessments",
+    "href": "slides/01-welcome-199.html#activities-and-assessments",
+    "title": "Welcome to STA 199",
+    "section": "Activities and assessments",
+    "text": "Activities and assessments\n\nHomework: Individual assignments combining conceptual and computational skills.\nLabs: Individual or team assignments focusing on computational skills.\nExams: Two take-home exams.\nFinal Project: Team project presented during the final exam period.\nApplication Exercises: Exercises worked on during the live lecture session.\nStatistics Experiences: Engage with statistics outside of the classroom and reflect on your experience."
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#lab",
+    "href": "slides/01-welcome-199.html#lab",
+    "title": "Welcome to STA 199",
+    "section": "Lab",
+    "text": "Lab\n\nFocus on computing using R tidyverse syntax\nApply concepts from lecture to case study scenarios\nWork on labs individually or in teams of 3 - 4"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#textbooks-and-readings",
+    "href": "slides/01-welcome-199.html#textbooks-and-readings",
+    "title": "Welcome to STA 199",
+    "section": "Textbooks and readings",
+    "text": "Textbooks and readings\n\nR for Data Science by Grolemund & Wickham (2nd ed. O’Reilly)\nIntroduction to Modern Statistics by Cetinkaya-Rundel & Hardin (1st ed. OpenIntro)"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#r-r-studio-posit",
+    "href": "slides/01-welcome-199.html#r-r-studio-posit",
+    "title": "Welcome to STA 199",
+    "section": "R + R-studio (Posit)",
+    "text": "R + R-studio (Posit)\n– Specialization in data visualization\n– Computing tools to fit models\n– Well respected\n– You can take these skills with you\n\nThe language has grown significantly in popularity and is now used in a range of professions including software development, business analysis, statistical reporting and scientific research"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#create-a-github-account-why",
+    "href": "slides/01-welcome-199.html#create-a-github-account-why",
+    "title": "Welcome to STA 199",
+    "section": "Create a GitHub account (Why?)",
+    "text": "Create a GitHub account (Why?)\nGitHub, Inc., is an Internet hosting service for software development and version control."
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#short-break-10-minutes",
+    "href": "slides/01-welcome-199.html#short-break-10-minutes",
+    "title": "Welcome to STA 199",
+    "section": "Short Break (10-minutes)",
+    "text": "Short Break (10-minutes)\n– If you have not set up:\n\nGitHub Account\nSlack Account\nReserved a Duke Container\n\nPlease do so now + fill out the getting to know you survey"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#create-a-github-account",
+    "href": "slides/01-welcome-199.html#create-a-github-account",
+    "title": "Welcome to STA 199",
+    "section": "Create a GitHub account",
+    "text": "Create a GitHub account\nPlease do this before the Getting to know you survey\nGo to https://github.com/, and create an account (unless you already have one).\nSome tips from Happy Git with R.\n– Incorporate your actual name!\n– Reuse your username from other contexts if you can, e. g., Twitter or Slack.\n– Pick a username you will be comfortable revealing to your future boss.\n– Be as unique as possible in as few characters as possible. Shorter is better than longer.\n– Avoid words with special meaning in programming (e.g. NA)."
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#github-account",
+    "href": "slides/01-welcome-199.html#github-account",
+    "title": "Welcome to STA 199",
+    "section": "GitHub account",
+    "text": "GitHub account\n\n\n\n\n\n\n\n\n\n\n\nInvite Example"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#slack",
+    "href": "slides/01-welcome-199.html#slack",
+    "title": "Welcome to STA 199",
+    "section": "Slack",
+    "text": "Slack\n\nhttps://slack.com/get-started#/createnew"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#r-studio",
+    "href": "slides/01-welcome-199.html#r-studio",
+    "title": "Welcome to STA 199",
+    "section": "R-Studio",
+    "text": "R-Studio\n– Reserve a STA198-1991 RStudio container\n– Go to https://cmgr.oit.duke.edu/containers\n– Click Reserve Container for the STA198-199 container"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#some-r-essentials",
+    "href": "slides/01-welcome-199.html#some-r-essentials",
+    "title": "Welcome to STA 199",
+    "section": "Some R essentials",
+    "text": "Some R essentials\n– Functions are (normally) verbs, followed by what they will be applied to in parentheses:"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#r-essentials",
+    "href": "slides/01-welcome-199.html#r-essentials",
+    "title": "Welcome to STA 199",
+    "section": "R essentials",
+    "text": "R essentials\n– Packages are installed with the install.packages function and loaded with the library function, once per session:"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#packages",
+    "href": "slides/01-welcome-199.html#packages",
+    "title": "Welcome to STA 199",
+    "section": "Packages",
+    "text": "Packages\n\n\n\n\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#packages-1",
+    "href": "slides/01-welcome-199.html#packages-1",
+    "title": "Welcome to STA 199",
+    "section": "Packages",
+    "text": "Packages\n\n\n\n\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#tidyverse",
+    "href": "slides/01-welcome-199.html#tidyverse",
+    "title": "Welcome to STA 199",
+    "section": "tidyverse",
+    "text": "tidyverse\n\n\n\n\n\n\n\n\n– The tidyverse is a collection of R packages designed for data science.\n– All packages share an underlying philosophy and a common grammar."
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#quarto",
+    "href": "slides/01-welcome-199.html#quarto",
+    "title": "Welcome to STA 199",
+    "section": "Quarto",
+    "text": "Quarto\n– an open-source scientific and technical publishing system\n– publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more\n– Code goes in chunks, defined by three backticks, narrative goes outside of chunks"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#how-will-we-use-quarto",
+    "href": "slides/01-welcome-199.html#how-will-we-use-quarto",
+    "title": "Welcome to STA 199",
+    "section": "How will we use Quarto?",
+    "text": "How will we use Quarto?\n– Every assignment / lab / project will be given to you as a Quarto document\n– You will always have a Quarto template document to start with\n– As we get more familiar with R, the more code you will construct on your own"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#ae-01",
+    "href": "slides/01-welcome-199.html#ae-01",
+    "title": "Welcome to STA 199",
+    "section": "ae-01",
+    "text": "ae-01\n– We will clone this from GitHub here: (insert link)\n– You will not have the capability to “push changes” to GitHub (yet… this will happen during your first lab!)"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#summary",
+    "href": "slides/01-welcome-199.html#summary",
+    "title": "Welcome to STA 199",
+    "section": "Summary",
+    "text": "Summary\n– There area lot of moving parts in this course\n– Coding is not learned in a day\n– Ask questions often\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n– Starting to work with code!\n\n\n\n🔗 sta199-s23-2.github.io"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#checklist",
+    "href": "slides/02-Meet-the-toolkit.html#checklist",
+    "title": "R Intro",
+    "section": "Checklist",
+    "text": "Checklist\n– Are you on Slack?\n– Have you reserved a Duke container?\n– Have you accepted your GitHub organization invite?\n– Do you see ae-1 on GitHub? If so, clone it for class!\n– Chat with me before or after class / send an email with your GitHub username if you do not see ae-01"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#announcements",
+    "href": "slides/02-Meet-the-toolkit.html#announcements",
+    "title": "R Intro",
+    "section": "Announcements",
+    "text": "Announcements\n– Slack postings\n– Lab 0\n– AE grading (Drop/Add ends - 25th)"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#clone-ae-01",
+    "href": "slides/02-Meet-the-toolkit.html#clone-ae-01",
+    "title": "R Intro",
+    "section": "Clone ae-01",
+    "text": "Clone ae-01\n– If you have not accepted your GitHub invitation, you can’t do this\n– If you don’t see ae-01 in your org, work with the people around you\n– Chat with me after class / send an email with your GitHub username if you do not see ae-01"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#goals-for-today",
+    "href": "slides/02-Meet-the-toolkit.html#goals-for-today",
+    "title": "R Intro",
+    "section": "Goals for today",
+    "text": "Goals for today\nBasics we will use throughout the semester\n\nR and RStudio\nQuarto Documents\nMore Practice\nTrain your brain."
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#what-is-r-and-rstudio",
+    "href": "slides/02-Meet-the-toolkit.html#what-is-r-and-rstudio",
+    "title": "R Intro",
+    "section": "What is R and RStudio?",
+    "text": "What is R and RStudio?\n– R is a statistical programming language\n– RStudio is a convenient interface for R"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#warm-up-question",
+    "href": "slides/02-Meet-the-toolkit.html#warm-up-question",
+    "title": "R Intro",
+    "section": "Warm Up Question",
+    "text": "Warm Up Question\nPlease think through / write down what each line of code would produce.\nTip (and good practice): if you have questions about a function, use ?function.name to pull up the help page! If the help page is not helpful, look at their examples section and click Run Examples."
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#some-r-essentials",
+    "href": "slides/02-Meet-the-toolkit.html#some-r-essentials",
+    "title": "R Intro",
+    "section": "Some R essentials",
+    "text": "Some R essentials\n– Functions are (normally) verbs, followed by what they will be applied to in parentheses:"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#r-essentials",
+    "href": "slides/02-Meet-the-toolkit.html#r-essentials",
+    "title": "R Intro",
+    "section": "R essentials",
+    "text": "R essentials\n– Packages are installed with the install.packages function and loaded with the library function, once per session:"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#packages",
+    "href": "slides/02-Meet-the-toolkit.html#packages",
+    "title": "R Intro",
+    "section": "Packages",
+    "text": "Packages\n\n\n\n\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#packages-1",
+    "href": "slides/02-Meet-the-toolkit.html#packages-1",
+    "title": "R Intro",
+    "section": "Packages",
+    "text": "Packages\n\n\n\n\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#tidyverse",
+    "href": "slides/02-Meet-the-toolkit.html#tidyverse",
+    "title": "R Intro",
+    "section": "tidyverse",
+    "text": "tidyverse\n\n\n\n\n\n\n\n\n– The tidyverse is a collection of R packages designed for data science.\n– All packages share an underlying philosophy and a common grammar."
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#github-version-control",
+    "href": "slides/02-Meet-the-toolkit.html#github-version-control",
+    "title": "R Intro",
+    "section": "GitHub: Version control",
+    "text": "GitHub: Version control"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#github-commands-pull-commit-push",
+    "href": "slides/02-Meet-the-toolkit.html#github-commands-pull-commit-push",
+    "title": "R Intro",
+    "section": "GitHub Commands: Pull Commit Push",
+    "text": "GitHub Commands: Pull Commit Push"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#github-commands-pull-commit-push-1",
+    "href": "slides/02-Meet-the-toolkit.html#github-commands-pull-commit-push-1",
+    "title": "R Intro",
+    "section": "GitHub Commands: Pull Commit Push",
+    "text": "GitHub Commands: Pull Commit Push"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#github-commands-pull-commit-push-2",
+    "href": "slides/02-Meet-the-toolkit.html#github-commands-pull-commit-push-2",
+    "title": "R Intro",
+    "section": "GitHub Commands: Pull Commit Push",
+    "text": "GitHub Commands: Pull Commit Push"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#quarto",
+    "href": "slides/02-Meet-the-toolkit.html#quarto",
+    "title": "R Intro",
+    "section": "Quarto",
+    "text": "Quarto\n– an open-source scientific and technical publishing system\n– publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more\n– Code goes in chunks, defined by three backticks, narrative goes outside of chunks"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#how-will-we-use-quarto",
+    "href": "slides/02-Meet-the-toolkit.html#how-will-we-use-quarto",
+    "title": "R Intro",
+    "section": "How will we use Quarto?",
+    "text": "How will we use Quarto?\n– Every assignment / lab / project will be given to you as a Quarto document\n– You will always have a Quarto template document to start with\n– As we get more familiar with R, the more code you will construct on your own"
+  },
+  {
+    "objectID": "slides/02-Meet-the-toolkit.html#wrap-up",
+    "href": "slides/02-Meet-the-toolkit.html#wrap-up",
+    "title": "R Intro",
+    "section": "Wrap up",
+    "text": "Wrap up\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n\n\n\n🔗 sta199-s23-2.github.io"
+  },
+  {
     "objectID": "workflow_formatting.html",
     "href": "workflow_formatting.html",
     "title": "Workflow and Formatting",

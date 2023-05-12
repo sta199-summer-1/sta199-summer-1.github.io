@@ -6,33 +6,31 @@ date: "January 18th, 2023"
 
 ## Checklist {.smaller}
 
--- Are you on Slack? 
+-- Are you on Slack?
 
 -- Have you reserved a Duke container?
 
--- Have you accepted your GitHub organization invite? 
+-- Have you accepted your GitHub organization invite?
 
 -- Do you see ae-1 on GitHub? If so, clone it for class!
 
 -- Chat with me before or after class / send an email with your GitHub username if you do not see ae-01
 
+## Announcements
 
-## Announcements 
+-- Slack postings
 
--- Slack postings 
-
--- Lab 0 
+-- Lab 0
 
 -- AE grading (Drop/Add ends - 25th)
 
 ## Clone ae-01
 
--- If you have not accepted your GitHub invitation, you can't do this 
+-- If you have not accepted your GitHub invitation, you can't do this
 
 -- If you don't see ae-01 in your org, work with the people around you
 
 -- Chat with me after class / send an email with your GitHub username if you do not see ae-01
-
 
 # Demo: clone ae-01
 
@@ -45,7 +43,6 @@ Basics we will use throughout the semester
 -   More Practice
 -   Train your brain.
 
-
 ## What is R and RStudio?
 
 -- R is a statistical programming language
@@ -54,9 +51,7 @@ Basics we will use throughout the semester
 
 ![](images/02-Meeting-the-toolkit/car.png){width="500" height="200" fig-align="center"}
 
-
 # R-layout
-
 
 ## Warm Up Question {.smaller}
 
@@ -78,7 +73,7 @@ Tip (and good practice): *if you have questions about a function, use ?function.
 
 ![](images/02-Meeting-the-toolkit/packages.png){width="900" height="100" fig-align="left"}
 
-## Packages 
+## Packages
 
 ![](images/02-Meeting-the-toolkit/error1.png){width="900" height="100" fig-align="center"}
 
@@ -86,15 +81,13 @@ Tip (and good practice): *if you have questions about a function, use ?function.
 
 ![](images/02-Meeting-the-toolkit/nonerror1.png){width="900" height="100" fig-align="center"}
 
-## Packages 
+## Packages
 
 ![](images/02-Meeting-the-toolkit/error2.png){width="900" height="100" fig-align="center"}
-
 
 `library(tidyverse)`
 
 ![](images/02-Meeting-the-toolkit/nonerror2.png){width="900" height="100" fig-align="center"}
-
 
 ## tidyverse
 
@@ -110,14 +103,11 @@ Tip (and good practice): *if you have questions about a function, use ?function.
 :::
 :::
 
-
-
-
-## GitHub: Version control 
+## GitHub: Version control
 
 ![](images/02-Meeting-the-toolkit/version.png)
 
-## GitHub Commands: Pull Commit Push 
+## GitHub Commands: Pull Commit Push
 
 ![](images/02-Meeting-the-toolkit/pull.png){fig-align="center"}
 
@@ -125,7 +115,7 @@ Tip (and good practice): *if you have questions about a function, use ?function.
 
 ![](images/02-Meeting-the-toolkit/commit.png){fig-align="center"}
 
-## GitHub Commands: Pull Commit Push 
+## GitHub Commands: Pull Commit Push
 
 ![](images/02-Meeting-the-toolkit/push2.png){fig-align="center"}
 
@@ -147,9 +137,7 @@ Tip (and good practice): *if you have questions about a function, use ?function.
 
 -- As we get more familiar with R, the more code you will construct on your own
 
-
 # ae-01
-
 
 ## Wrap up
 
