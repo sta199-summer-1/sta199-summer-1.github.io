@@ -1,0 +1,271 @@
+---
+title: "Welcome to STA 199"
+subtitle: "Lecture 1"
+date: "January 13, 2023"
+---
+
+Research is primarily focused on education, and how to better the teaching and learning experiences for those involved. Current research involves creating a dynamic interactive shiny application in R to better students' understanding of permutations and bootstrapping while simultaneously encouraging them to become independent coders. Other work involves identifying longitudinal breakthroughs in graduate student instructors knowledge about, emotions towards, and use of active learning. Further, the early stages have been set to help develop and instrument to measure different types of instructor's motivation towards using active learning teaching techniques in statistics.
+
+## Welcome
+
+![](images/logo.png){width="400" height="400" fig-align="center"}
+
+## Goals for Day 1
+
+Get organized
+
+-   Get to know the professor
+-   Get to know each other
+-   Course overview
+-   Register with **GitHub** & **Slack** (if you haven't already)
+-   Go over R + R-studio
+-   Start making visualizations
+
+## Who Am I?
+
+::: {layout="[[100], [50,-10,50]]"}
+![](images/01-welcome-199/Bozeman.png){width="650" height="400" fig-align="center"}
+
+![](images/01-welcome-199/RosePark.png)
+
+![](images/01-welcome-199/PD.png)
+:::
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(rvest)
+```
+
+## Who Are You?
+
+Please share with your neighbors:
+
+-   Major
+-   Year
+-   Why you are taking this course
+-   Anything else
+
+# What is data science?
+
+## What is data science?
+
+*"Data science is a concept to unify statistics, data analysis, machine learning and their related methods in order to understand and analyze actual phenomena with data. It employs techniques and theories drawn from many fields within the context of mathematics, statistics, information science, and computer science."*
+
+[-Donoho, 2017](doi:10.1080/10618600.2017.1384734)
+
+## Examples of data science
+
+-   Identification and prediction of disease
+-   Targeted advertising
+-   Supply chain optimization
+-   Sports recruitment + strategist
+-   The list goes on and on.....
+
+## Jobs
+
+![](images/01-welcome-199/Netflix.png){width="950" height="550" fig-align="center"}
+
+## Jobs
+
+![](images/01-welcome-199/NetflixHighlighted2.png){width="950" height="550" fig-align="center"}
+
+## Jobs
+
+![](images/01-welcome-199/jobs.png){fig-align="center"}
+
+## Data literacy
+
+![](images/01-welcome-199/DataLiteracy.png){fig-align="center"}
+
+# Our Course
+
+## Our Classroom
+
+-   Community
+-   Communication
+-   Respect
+
+## Course objectives
+
+-   Learn to explore, visualize, and analyze data in a *reproducible* and *shareable* manner
+
+-   Gain experience in data wrangling, exploratory data analysis, predictive modeling, and data visualization
+
+-   Work on problems and case studies inspired by and based on *real-world questions* and data
+
+-   Learn to *effectively communicate* results through written assignments and final project presentation
+
+## Some of what you will learn
+
+```{css echo=FALSE}
+.column {
+text-align: left;
+}
+```
+
+::: columns
+::: {.column width="40%"}
+-- Fundamentals of `R`
+
+-- Data visualization
+
+-- Version control with `GitHub`
+:::
+
+::: {.column width="60%"}
+-- Reproducible reports with `Quarto`
+
+-- Regression
+
+-- Statistical inference
+:::
+:::
+
+## R - figures
+
+::: {#fig-R layout-ncol="2"}
+![](images/01-welcome-199/figure1.png){width="750" height="700"}
+
+![](images/01-welcome-199/figure2.png){width="750" height="700"}
+
+Example R Figures
+:::
+
+## 
+
+![](images/01-welcome-199/NHLapp_demo.gif){fig.align = "center"}
+
+## R
+
+::: callout-note
+<font size="120"> **This is a new language** </font>
+:::
+
+## Workflow & Website
+
+[sta199-summer-1.github.io/](https://sta199-summer-1.github.io/)
+
+### Before Class
+
+-   Watch lecture content videos
+
+### During Class
+
+-   Warm up question
+
+-   Mix of lecture and interaction
+
+# Please bring your laptops if able
+
+## Activities and assessments {.smaller}
+
+-   **Homework:** Individual assignments combining conceptual and computational skills.
+
+-   **Labs:** Individual or team assignments focusing on computational skills.
+
+-   **Exams:** Two take-home exams.
+
+-   **Final Project:** Team project presented during the final exam period.
+
+-   **Application Exercises:** Exercises worked on during the live lecture session.
+
+-   **Statistics Experiences:** Engage with statistics outside of the classroom and reflect on your experience.
+
+## Lab
+
+-   Focus on computing using R tidyverse syntax
+
+-   Apply concepts from lecture to case study scenarios
+
+-   Work on labs individually or in teams of 3 - 4
+
+## Textbooks and readings
+
+-   R for Data Science by Grolemund & Wickham (2nd ed. O'Reilly)
+
+-   Introduction to Modern Statistics by Cetinkaya-Rundel & Hardin (1st ed. OpenIntro)
+
+# Course Website Tour
+
+# Why learn the technology we do?
+
+## R + R-studio (Posit)
+
+-- Specialization in data visualization
+
+-- Computing tools to fit models
+
+-- Well respected
+
+-- You can take these skills with you
+
+-   The language has grown significantly in popularity and is now used in a range of professions including software development, business analysis, statistical reporting and scientific research
+
+## Create a GitHub account (Why?)
+
+GitHub, Inc., is an Internet hosting service for software development and **version control**. ![](images/01-welcome-199/pnas.png){fig-align="center"}
+
+## Short Break (10-minutes)
+
+-- If you have not set up: 
+
+- GitHub Account 
+
+- Slack Account 
+
+- Reserved a Duke Container 
+
+Please do so now + fill out the **getting to know you survey**
+
+## Create a GitHub account {.smaller}
+
+Please do this before the *Getting to know you* survey
+
+Go to https://github.com/, and create an account (unless you already have one).
+
+Some tips from Happy Git with R.
+
+-- Incorporate your actual name!
+
+-- Reuse your username from other contexts if you can, e. g., Twitter or Slack.
+
+-- Pick a username you will be comfortable revealing to your future boss.
+
+-- Be as unique as possible in as few characters as possible. Shorter is better than longer.
+
+-- Avoid words with special meaning in programming (e.g. NA).
+
+## GitHub account
+
+::: {layout-ncol="2"}
+![](images/01-welcome-199/git.invite2.png){width="350" height="500"}
+
+![](images/01-welcome-199/git.invite.png){width="750" height="700"}
+
+Invite Example
+:::
+
+## Slack
+
+![](images/01-welcome-199/slack.png)
+
+https://slack.com/get-started#/createnew
+
+## R-Studio
+
+-- Reserve a STA198-1991 RStudio container
+
+-- Go to https://cmgr.oit.duke.edu/containers
+
+-- Click Reserve Container for the STA198-199 container
+
+# Meet The Tool-Kit + Data Visualization 
