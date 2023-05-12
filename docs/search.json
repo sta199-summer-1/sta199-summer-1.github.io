@@ -207,7 +207,7 @@
     "href": "course-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Elijah Meyer - Hello! I’m very excited to work with you all this semester. I’ve earned a Master’s degree in statistics and a Ph.D. in statistics with a focus in education from Montana State University. I have taught at STA199 at Duke University during the F22 and S23 semesters. My early research is in sports statistics, with an emphasis on spatial data visualizations to enhance sports strategy. My Ph.D. work is in how to best support graduate student instructors and early career teachers to use active learning in their classrooms. Currently, my research focus is around creating a dynamic interactive shiny application in R to better students’ understanding of statistics and data science. Other endeavors include creating an online data science course Coursera.\nPrior to my time at Duke, I’ve taught multiple sections of Introductory and Intermediate Statistics at Montana State, developed their Intermediate Statistics online course, and helped integrate R into the Introductory Statistics curricula. I prioritize community, communication, and respect in my classroom. I want to provide a space where we can freely talk about the material, embrace mistakes, and learn together throughout the semester.\nWhen I’m not in the books, I enjoy playing disc golf, tennis, basketball, and anything else that gets me outside and active. I’m looking forward to meeting you all and having a great semester!\n\n\n\nOffice hours\nLocation\n\n\n\n\nTBD\nOld Chemistry Building 208 / Zoom (Password: 5MYp7A)"
+    "text": "Dr. Elijah Meyer - Hello! I’m very excited to work with you all this semester. I’ve earned a Master’s degree in statistics and a Ph.D. in statistics with a focus in education from Montana State University. I have taught at STA199 at Duke University during the F22 and S23 semesters. My early research is in sports statistics, with an emphasis on spatial data visualizations to enhance sports strategy. My Ph.D. work is in how to best support graduate student instructors and early career teachers to use active learning in their classrooms. Currently, my research focus is around creating a dynamic interactive shiny application in R to better students’ understanding of statistics and data science. Other endeavors include creating an online data science course Coursera.\nPrior to my time at Duke, I’ve taught multiple sections of Introductory and Intermediate Statistics at Montana State, developed their Intermediate Statistics online course, and helped integrate R into the Introductory Statistics curricula. I prioritize community, communication, and respect in my classroom. I want to provide a space where we can freely talk about the material, embrace mistakes, and learn together throughout the semester.\nWhen I’m not in the books, I enjoy playing disc golf, tennis, basketball, and anything else that gets me outside and active. I’m looking forward to meeting you all and having a great semester!\n\n\n\nOffice hours\nLocation\n\n\n\n\nTue: 3:00 - 4:00 & Th: 10:00 - 12:00 OR by appointment\nOld Chemistry Building 208 / Zoom (Password: 5MYp7A)"
   },
   {
     "objectID": "course-team.html#lab-group-information",
@@ -805,6 +805,13 @@
     "text": "R-Studio\n– Reserve a STA198-1991 RStudio container\n– Go to https://cmgr.oit.duke.edu/containers\n– Click Reserve Container for the STA198-199 container"
   },
   {
+    "objectID": "slides/01-welcome-199.html#ae-01",
+    "href": "slides/01-welcome-199.html#ae-01",
+    "title": "Welcome to STA 199",
+    "section": "ae-01",
+    "text": "ae-01\n– We will clone this from GitHub here: (insert link)\n– You will do this every day before class & with homework & with labs\n– You will not have the capability to “push changes” to GitHub (yet… this will happen during your first lab!)"
+  },
+  {
     "objectID": "slides/01-welcome-199.html#some-r-essentials",
     "href": "slides/01-welcome-199.html#some-r-essentials",
     "title": "Welcome to STA 199",
@@ -852,13 +859,6 @@
     "title": "Welcome to STA 199",
     "section": "How will we use Quarto?",
     "text": "How will we use Quarto?\n– Every assignment / lab / project will be given to you as a Quarto document\n– You will always have a Quarto template document to start with\n– As we get more familiar with R, the more code you will construct on your own"
-  },
-  {
-    "objectID": "slides/01-welcome-199.html#ae-01",
-    "href": "slides/01-welcome-199.html#ae-01",
-    "title": "Welcome to STA 199",
-    "section": "ae-01",
-    "text": "ae-01\n– We will clone this from GitHub here: (insert link)\n– You will not have the capability to “push changes” to GitHub (yet… this will happen during your first lab!)"
   },
   {
     "objectID": "slides/01-welcome-199.html#summary",
