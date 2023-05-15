@@ -35,9 +35,9 @@ library(countdown)
 
 -- If you don't finish labs in-class... 
 
---- Thursday labs due Monday before lecture 
+--- Thursday labs due Noon Monday before lecture 
 
---- Monday labs due Thursday before lecture 
+--- Monday labs due Noon Thursday before lecture 
 
 ## Tips
 
