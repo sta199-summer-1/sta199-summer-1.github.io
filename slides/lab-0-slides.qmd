@@ -13,62 +13,64 @@ format: revealjs
 library(countdown)
 ```
 
--- Meet the TA!
-
--- Introduce yourself 
+-- Meet the Lab Leader!
 
 -- The file that you work in will be on `GitHub`
 
--- You can find Lab on `sta199-s23-2.github.io/`
+-- You can find Lab on `sta199-summer-1.github.io/`
 
--- Bookmark this website! 
+-- You can find your lab starter `github.com/sta199-summer-1`
+
+-- Bookmark these websites!
 
 ## What to expect in labs
 
 -- Introduce lab assignment (5-10 minutes, longer today)
 
--- Work on the lab assignment (you can find it on the course website). You will work with others but your submission must be your own for the first several labs.
+-- Work on the lab assignment. You are encouraged to work with others but your submission must be your own for the first several labs.
 
--- Lab may end with important announcements 
+-- Submissions will be done on Gradescope (demo at end of class)
 
--- If you don't finish labs in-class they will typically be due the upcoming Friday 
+-- Lab may end with important announcements
 
+-- If you don't finish labs in-class... 
 
+--- Thursday labs due Monday before lecture 
+
+--- Monday labs due Thursday before lecture 
 
 ## Tips
 
 -- Read all instructions on the lab.
 
--- Be involved! 
+-- Be involved! This will better prepare you for the exams + project
 
 -- Make use of office hours.
 
--- Make use of Slack. 
-
+-- Make use of Slack.
 
 ## Demo: setting up
 
-Now that your lab repo is created, let’s setup git to work within RStudio.
+Now that your lab repo is created, let's setup git to work within RStudio.
 
 To begin, open
 
--- the lab instructions [here](https://sta199-s23-2.github.io/labs/lab-0.html) and
+-- the lab instructions [here](https://sta199-summer-1.github.io/labs/lab-0.html) and
 
 -- the RStudio containers [here](https://cmgr.oit.duke.edu/containers)
 
 Follow the instructions in the lab as I demo.
 
+# Set Up R with Git
 
 ## Demo: How to turn something in via Gradescope
 
-**Please do not lose free points!** 
+**Please do not lose free points!**
 
 -- How to turn in a PDF
 
--- How to select pages 
+-- How to select pages
 
-## Remember 
+## Remember
 
-No programming experience is required or expected to take this class. Come to lecture, lab and office hours. It’s okay to be confused. Stick with it, you will get the hang of it!
-
-
+No programming experience is required or expected to take this class. Come to lecture, lab and office hours. It's okay to be confused. Stick with it, you will get the hang of it!

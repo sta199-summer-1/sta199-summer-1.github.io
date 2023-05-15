@@ -228,7 +228,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II\n\n\n\n\n\n\n\n\n\nHW 1 Release\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data\n\n\n\n\n\n\n\n\n\n\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Lab-3\nTidying Data | Group Formation + Merge Conflicts Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\nDebugging + ggplot practice\n\n\n\n\n\n\n\n\n\nRelease Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-4\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-6\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-8\nProject Work Day\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II\n\n\n\n\n\n\n\n\n\n\nHW 1 Release\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Lab-3\nTidying Data | Group Formation + Merge Conflicts Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\nDebugging + ggplot practice\n\n\n\n\n\n\n\n\n\n\nRelease Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-4\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-6\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-8\nProject Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -999,6 +999,48 @@
     "title": "R Intro",
     "section": "Wrap up",
     "text": "Wrap up\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n\n\n\n🔗 sta199-s23-2.github.io"
+  },
+  {
+    "objectID": "slides/lab-0-slides.html#introductions",
+    "href": "slides/lab-0-slides.html#introductions",
+    "title": "Welcome to Lab",
+    "section": "Introductions",
+    "text": "Introductions\n\n\n\n– Meet the Lab Leader!\n– The file that you work in will be on GitHub\n– You can find Lab on sta199-summer-1.github.io/\n– You can find your lab starter github.com/sta199-summer-1\n– Bookmark these websites!"
+  },
+  {
+    "objectID": "slides/lab-0-slides.html#what-to-expect-in-labs",
+    "href": "slides/lab-0-slides.html#what-to-expect-in-labs",
+    "title": "Welcome to Lab",
+    "section": "What to expect in labs",
+    "text": "What to expect in labs\n– Introduce lab assignment (5-10 minutes, longer today)\n– Work on the lab assignment. You are encouraged to work with others but your submission must be your own for the first several labs.\n– Submissions will be done on Gradescope (demo at end of class)\n– Lab may end with important announcements\n– If you don’t finish labs in-class…\n— Thursday labs due Monday before lecture\n— Monday labs due Thursday before lecture"
+  },
+  {
+    "objectID": "slides/lab-0-slides.html#tips",
+    "href": "slides/lab-0-slides.html#tips",
+    "title": "Welcome to Lab",
+    "section": "Tips",
+    "text": "Tips\n– Read all instructions on the lab.\n– Be involved! This will better prepare you for the exams + project\n– Make use of office hours.\n– Make use of Slack."
+  },
+  {
+    "objectID": "slides/lab-0-slides.html#demo-setting-up",
+    "href": "slides/lab-0-slides.html#demo-setting-up",
+    "title": "Welcome to Lab",
+    "section": "Demo: setting up",
+    "text": "Demo: setting up\nNow that your lab repo is created, let’s setup git to work within RStudio.\nTo begin, open\n– the lab instructions here and\n– the RStudio containers here\nFollow the instructions in the lab as I demo."
+  },
+  {
+    "objectID": "slides/lab-0-slides.html#demo-how-to-turn-something-in-via-gradescope",
+    "href": "slides/lab-0-slides.html#demo-how-to-turn-something-in-via-gradescope",
+    "title": "Welcome to Lab",
+    "section": "Demo: How to turn something in via Gradescope",
+    "text": "Demo: How to turn something in via Gradescope\nPlease do not lose free points!\n– How to turn in a PDF\n– How to select pages"
+  },
+  {
+    "objectID": "slides/lab-0-slides.html#remember",
+    "href": "slides/lab-0-slides.html#remember",
+    "title": "Welcome to Lab",
+    "section": "Remember",
+    "text": "Remember\nNo programming experience is required or expected to take this class. Come to lecture, lab and office hours. It’s okay to be confused. Stick with it, you will get the hang of it!\n\n\n\n🔗 sta199-s23-2.github.io"
   },
   {
     "objectID": "workflow_formatting.html",
