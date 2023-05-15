@@ -6,6 +6,10 @@ execute:
 ---
 
 ::: callout-important
+This lab is **due May 22nd at Noon**
+:::
+
+::: callout-important
 This lab is **not a part of your grade in this course**. You should still submit your completed lab to Gradescope to practice submitting to Gradescope and receive feedback.
 :::
 

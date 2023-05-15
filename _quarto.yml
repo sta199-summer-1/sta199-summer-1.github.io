@@ -35,7 +35,7 @@ website:
       - icon: person-fill
         text: "Sakai"
         menu:
-          - text: Gradescope #update when I get access
+          - text: Gradescope
             url: https://sakai.duke.edu/portal/site/d30a7ca1-ff1b-46f1-99b7-0555e181b10a/page/18625ab1-2a56-4c98-b345-bf841f60f328
           - text: Gradebook
             url: https://sakai.duke.edu/portal/site/d30a7ca1-ff1b-46f1-99b7-0555e181b10a/tool/2022220a-762f-4c4e-b81c-cbd494f4debc/
