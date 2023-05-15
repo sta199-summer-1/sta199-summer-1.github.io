@@ -1,0 +1,74 @@
+---
+title: "Welcome to Lab"
+subtitle: "Lab 0"
+date: "January 17, 2023"
+format: revealjs
+---
+
+## Introductions
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+-- Meet the TA!
+
+-- Introduce yourself 
+
+-- The file that you work in will be on `GitHub`
+
+-- You can find Lab on `sta199-s23-2.github.io/`
+
+-- Bookmark this website! 
+
+## What to expect in labs
+
+-- Introduce lab assignment (5-10 minutes, longer today)
+
+-- Work on the lab assignment (you can find it on the course website). You will work with others but your submission must be your own for the first several labs.
+
+-- Lab may end with important announcements 
+
+-- If you don't finish labs in-class they will typically be due the upcoming Friday 
+
+
+
+## Tips
+
+-- Read all instructions on the lab.
+
+-- Be involved! 
+
+-- Make use of office hours.
+
+-- Make use of Slack. 
+
+
+## Demo: setting up
+
+Now that your lab repo is created, let’s setup git to work within RStudio.
+
+To begin, open
+
+-- the lab instructions [here](https://sta199-s23-2.github.io/labs/lab-0.html) and
+
+-- the RStudio containers [here](https://cmgr.oit.duke.edu/containers)
+
+Follow the instructions in the lab as I demo.
+
+
+## Demo: How to turn something in via Gradescope
+
+**Please do not lose free points!** 
+
+-- How to turn in a PDF
+
+-- How to select pages 
+
+## Remember 
+
+No programming experience is required or expected to take this class. Come to lecture, lab and office hours. It’s okay to be confused. Stick with it, you will get the hang of it!
+
+
