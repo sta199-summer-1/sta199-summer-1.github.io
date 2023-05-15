@@ -279,7 +279,7 @@ https://slack.com/get-started#/createnew
 
 ## ae-01
 
--- We will clone this from GitHub here: (insert link)
+-- We will clone this from GitHub here: https://github.com/sta199-summer-1/ae-01-summer
 
 -- You will do this every day before class & with homework & with labs
 
@@ -345,7 +345,9 @@ https://slack.com/get-started#/createnew
 
 -- As we get more familiar with R, the more code you will construct on your own
 
-# ae-01
+## ae-01
+
+https://github.com/sta199-summer-1/ae-01-summer
 
 ## Summary 
 

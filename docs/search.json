@@ -809,7 +809,7 @@
     "href": "slides/01-welcome-199.html#ae-01",
     "title": "Welcome to STA 199",
     "section": "ae-01",
-    "text": "ae-01\n– We will clone this from GitHub here: (insert link)\n– You will do this every day before class & with homework & with labs\n– You will not have the capability to “push changes” to GitHub (yet… this will happen during your first lab!)"
+    "text": "ae-01\n– We will clone this from GitHub here: https://github.com/sta199-summer-1/ae-01-summer\n– You will do this every day before class & with homework & with labs\n– You will not have the capability to “push changes” to GitHub (yet… this will happen during your first lab!)"
   },
   {
     "objectID": "slides/01-welcome-199.html#some-r-essentials",
@@ -859,6 +859,13 @@
     "title": "Welcome to STA 199",
     "section": "How will we use Quarto?",
     "text": "How will we use Quarto?\n– Every assignment / lab / project will be given to you as a Quarto document\n– You will always have a Quarto template document to start with\n– As we get more familiar with R, the more code you will construct on your own"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#ae-01-1",
+    "href": "slides/01-welcome-199.html#ae-01-1",
+    "title": "Welcome to STA 199",
+    "section": "ae-01",
+    "text": "ae-01\nhttps://github.com/sta199-summer-1/ae-01-summer"
   },
   {
     "objectID": "slides/01-welcome-199.html#summary",
