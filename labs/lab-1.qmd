@@ -111,7 +111,7 @@ And once again, make sure to commit and push all changed files so that your Git 
 
 Hints:
 
--   [The `ggplot2` reference for themes](https://ggplot2.tidyverse.org/reference/ggtheme.html) will be helpful in determining the theme.
+-   Use theme minimal
 -   The `size` of the points is 2.
 -   The transparency (`alhpa`) of the points is 0.5.
 -   You can put line breaks in labels with `\n`.
@@ -159,8 +159,7 @@ To submit your assignment:
 | Workflow & formatting | 5      |
 
 ::: callout-note
-The "Workflow & formatting" grade is to assess the reproducible workflow.
-This includes:
+The "Workflow & formatting" grade is to assess the reproducible workflow. This includes:
 
 -   linking all pages appropriately on Gradescope
 -   putting your name in the YAML at the top of the document
