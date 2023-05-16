@@ -1,0 +1,146 @@
+---
+title: "Visualizing various types of data"
+subtitle: "Lecture 3"
+date: "January 20, 2022"
+format: revealjs
+---
+
+## Checklist
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+-- Go to the course [GitHub org](https://github.com/sta199-s23-2) and find your `ae-02-s23` (repo name will be suffixed with your GitHub name).
+
+-- Clone the repo in your container, open the Quarto document in the repo
+
+-- Are you on Slack?
+
+## Announcements
+
+Due Dates + Turn In
+
+-- AE's due Saturday and Monday (11:59) PM - GitHub
+
+-- Labs due Fri (11:59) - Gradescope
+
+-- HWs due Tue (11:59) - Gradescope
+
+## How to turn AE's via Github
+
+-- render, commit, and push
+
+1.  If you made any changes since the last render, render again to get the final version of the AE.
+
+2.  Check the box next to each document in the Git tab (this is called "staging" the changes). Commit the changes you made using an simple and informative message.
+
+3.  Use the **green arrow** to push your changes to your repo on GitHub.
+
+4.  Check your repo on GitHub and see the updated files. Once your updated files are in your repo on GitHub, you're good to go!
+
+## Announcements
+
+Prepare Material
+
+R4DS: Chp 2 - Data visualization - Sections 2.1 and 2.4
+
+## Goals for today
+
+Create plots!
+
+-- Understand `geoms`
+
+-- Scatterplots, boxplots, histograms, etc
+
+-- Practice with the fundamentals of ggplot
+
+## Tips and Tricks
+
+-- Let the types of variables dictate the plot
+
+-- Informative title
+
+-- Axes should be labeled
+
+-- Careful consideration of aesthetic choices (like color)
+
+## The process
+
+You have a data set you want to work with...
+
+`mtcars`
+
+## The process
+
+`mtcars`
+
+You want to create a visualization. The first thing we need to do is set up the canvas...
+
+## The process
+
+|     `mtcars |>`
+|         `ggplot()`
+
+![](images/04-Visualizing-various-types-of-data/canvas.jpg){width="400" height="400" fig-align="\"center"}
+
+## The process
+
+|     `mtcars |>`
+|         `ggplot(`
+|         `aes(`
+|              `x = variable.name, y = variable.name)`
+|                `)`
+
+aes: describe how variables in the data are mapped to your canvas
+
+## The process
+
+`+` "and"
+
+When working with ggplot functions, we will add to our canvus using `+`
+
+## The process
+
+|     `mtcars |>`
+|         `ggplot(`
+|         `aes(`
+|              `x = variable.name, y = variable.name)`
+|                `)` +
+|         `geom_point()`
+
+## The process
+
+![](images/04-Visualizing-various-types-of-data/paint.jpg){width="400" height="400" fig-align="\"center"}
+
+## The variables dictate the plot
+
+-- Two quantitative variables
+
+-- One quantitative variable
+
+-- One categorical variable
+
+-- Two categorical variables
+
+# geom reference
+
+https://ggplot2.tidyverse.org/reference/
+
+**A geom is the geometrical object that a plot uses to represent data. People often describe plots by the type of geom that the plot uses. For example, bar charts use bar geoms, line charts use line geoms, boxplots use boxplot geoms, and so on. Scatterplots break the trend; they use the point geom.**
+
+## ae-02-s23
+
+These data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license ("No Rights Reserved") in accordance with the Palmer Station Data Policy.
+
+## Recap of AE {.smaller}
+
+-   Pick geoms based on data types.
+
+-   Manipulate graphs to be more appropriate with arguments
+
+-   Take control of your labels
+
+-   Use color to your advantage. https://ggplot2.tidyverse.org/reference/ggtheme.html & \n https://ggplot2.tidyverse.org/reference/scale_viridis.html
