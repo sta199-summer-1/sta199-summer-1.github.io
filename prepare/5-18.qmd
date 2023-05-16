@@ -1,0 +1,17 @@
+---
+title: "Prepare"
+subtitle: "Due: January 13, 2023"
+categories: "prepare"
+---
+
+-   Watch: [Meet the toolkit](https://www.youtube.com/watch?v=Q2QN1RpvLq8)
+-   Read:
+    -   [R for Data Science: Chapter 1 - Introduction](https://r4ds.hadley.nz/intro.html)
+
+    -   [Intro to Modern Data Science: Chapter 1 - Hello data](https://openintro-ims.netlify.app/data-hello.html)
+-   If you haven't yet done so:
+    -   Join the course Slack using the invitation link in your email.
+
+    -   Complete the Getting to know you survey.
+
+    -   Reserve a STA 198-199 container at <https://cmgr.oit.duke.edu/containers>.
