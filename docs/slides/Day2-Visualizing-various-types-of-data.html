@@ -10,8 +10,7 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Dr.&nbsp;Elijah Meyer">
-  <meta name="dcterms.date" content="2023-01-13">
-  <title>STA 199 - Welcome to STA 199</title>
+  <title>STA 199 - Visualizing various types of data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -320,438 +319,77 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">Welcome to STA 199</h1>
-  <p class="subtitle">Lecture 1</p>
+  <h1 class="title">Visualizing various types of data</h1>
+  <p class="subtitle">Day-2</p>
   <p class="author">Dr.&nbsp;Elijah Meyer</p>
   <p class="institute">Duke University <br> STA 199 - Spring 2023</p>
-  <p class="date">January 13, 2023</p>
+  <p class="date">May 18th 2023</p>
 </section>
 
-<section id="welcome" class="slide level2">
-<h2>Welcome</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/logo.png" width="400" height="400"></p>
-</figure>
-</div>
-</section>
-<section id="goals-for-day-1" class="slide level2">
-<h2>Goals for Day 1</h2>
-<p>Get organized</p>
-<ul>
-<li class="fragment">Get to know the professor</li>
-<li class="fragment">Get to know each other</li>
-<li class="fragment">Course overview</li>
-<li class="fragment">Register with <strong>GitHub</strong> &amp; <strong>Slack</strong> (if you haven’t already)</li>
-<li class="fragment">Go over R + R-studio</li>
-<li class="fragment">Start making visualizations</li>
-</ul>
-</section>
-<section id="who-am-i" class="slide level2">
-<h2>Who Am I?</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/01-welcome-199/Bozeman.png" width="650"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 45.5%;justify-content: center;">
-<p><img data-src="images/01-welcome-199/RosePark.png"></p>
-</div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
-<p>&nbsp;</p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 45.5%;justify-content: center;">
-<p><img data-src="images/01-welcome-199/PD.png"></p>
-</div>
-</div>
-</div>
+<section id="checklist" class="slide level2">
+<h2>Checklist</h2>
 <div class="cell">
 
 </div>
+<p>– Go to the course <a href="https://github.com/sta199-summer-1">GitHub org</a> and find your <code>ae-02-summer</code> (repo name will be suffixed with your GitHub name).</p>
+<p>– If you don’t see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away</p>
+<p>– Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)</p>
+<p>– Are you on Slack?</p>
 </section>
-<section id="who-are-you" class="slide level2">
-<h2>Who Are You?</h2>
-<p>Please share with your neighbors:</p>
-<ul>
-<li class="fragment">Major</li>
-<li class="fragment">Year</li>
-<li class="fragment">Why you are taking this course</li>
-<li class="fragment">Anything else</li>
-</ul>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<p>Due Dates + Turn In</p>
+<p>– All AEs are due Friday night by 11:59 - GitHub</p>
+<p>– Labs due Thursday and Monday (before lecture)- Gradescope</p>
+<p>– HWs due ~ 1 week from assigned - Gradescope</p>
 </section>
-<section>
-<section id="what-is-data-science" class="title-slide slide level1 center">
-<h1>What is data science?</h1>
-
+<section id="how-to-turn-aes-via-github" class="slide level2">
+<h2>How to turn AE’s via Github</h2>
+<p>AEs will be graded via Week 2</p>
+<p>– render, commit, and push</p>
+<ol type="1">
+<li class="fragment"><p>If you made any changes since the last render, render again to get the final version of the AE.</p></li>
+<li class="fragment"><p>Check the box next to each document in the Git tab (this is called “staging” the changes). Commit the changes you made using an simple and informative message.</p></li>
+<li class="fragment"><p>Use the <strong>green arrow</strong> to push your changes to your repo on GitHub.</p></li>
+<li class="fragment"><p>Check your repo on GitHub and see the updated files. Once your updated files are in your repo on GitHub, you’re good to go!</p></li>
+</ol>
 </section>
-<section id="what-is-data-science-1" class="slide level2">
-<h2>What is data science?</h2>
-<p><em>“Data science is a concept to unify statistics, data analysis, machine learning and their related methods in order to understand and analyze actual phenomena with data. It employs techniques and theories drawn from many fields within the context of mathematics, statistics, information science, and computer science.”</em></p>
-<p><a href="doi:10.1080/10618600.2017.1384734">-Donoho, 2017</a></p>
+<section id="how-to-turn-aes-via-github-1" class="slide level2">
+<h2>How to turn AE’s via Github</h2>
+<p>– ae-01 Demo</p>
 </section>
-<section id="examples-of-data-science" class="slide level2">
-<h2>Examples of data science</h2>
-<ul>
-<li class="fragment">Identification and prediction of disease</li>
-<li class="fragment">Targeted advertising</li>
-<li class="fragment">Supply chain optimization</li>
-<li class="fragment">Sports recruitment + strategist</li>
-<li class="fragment">The list goes on and on…..</li>
-</ul>
+<section id="announcements-1" class="slide level2">
+<h2>Announcements</h2>
+<p>– Prepare Material</p>
 </section>
-<section id="jobs" class="slide level2">
-<h2>Jobs</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/01-welcome-199/Netflix.png" width="950" height="550"></p>
-</figure>
-</div>
+<section id="goals-for-today" class="slide level2">
+<h2>Goals for today</h2>
+<p>Create plots!</p>
+<p>– Understand <code>geoms</code></p>
+<p>– Scatterplots, boxplots, histograms, etc</p>
+<p>– Practice with the fundamentals of ggplot</p>
 </section>
-<section id="jobs-1" class="slide level2">
-<h2>Jobs</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/01-welcome-199/NetflixHighlighted2.png" width="950" height="550"></p>
-</figure>
-</div>
+<section id="tips-and-tricks" class="slide level2">
+<h2>Tips and Tricks</h2>
+<p>– Let the types of variables dictate the plot</p>
+<p>– Informative title</p>
+<p>– Axes should be labeled</p>
+<p>– Careful consideration of aesthetic choices (like color)</p>
 </section>
-<section id="jobs-2" class="slide level2">
-<h2>Jobs</h2>
-
-<img data-src="images/01-welcome-199/jobs.png" class="r-stretch quarto-figure-center"></section>
-<section id="data-literacy" class="slide level2">
-<h2>Data literacy</h2>
-
-<img data-src="images/01-welcome-199/DataLiteracy.png" class="r-stretch quarto-figure-center"></section></section>
-<section>
-<section id="our-course" class="title-slide slide level1 center">
-<h1>Our Course</h1>
-
-</section>
-<section id="our-classroom" class="slide level2">
-<h2>Our Classroom</h2>
-<ul>
-<li class="fragment">Community</li>
-<li class="fragment">Communication</li>
-<li class="fragment">Respect</li>
-<li class="fragment">Mindset</li>
-</ul>
-</section>
-<section id="course-objectives" class="slide level2">
-<h2>Course objectives</h2>
-<ul>
-<li class="fragment"><p>Learn to explore, visualize, and analyze data in a <em>reproducible</em> and <em>shareable</em> manner</p></li>
-<li class="fragment"><p>Gain experience in data wrangling, exploratory data analysis, predictive modeling, and data visualization</p></li>
-<li class="fragment"><p>Work on problems and case studies inspired by and based on <em>real-world questions</em> and data</p></li>
-<li class="fragment"><p>Learn to <em>effectively communicate</em> results through written assignments and final project presentation</p></li>
-</ul>
-</section>
-<section id="some-of-what-you-will-learn" class="slide level2">
-<h2>Some of what you will learn</h2>
-<div class="cell">
-<style type="text/css">
-.column {
-text-align: left;
-}
-</style>
-</div>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>– Fundamentals of <code>R</code></p>
-<p>– Data visualization</p>
-<p>– Version control with <code>GitHub</code></p>
-</div><div class="column" style="width:60%;">
-<p>– Reproducible reports with <code>Quarto</code></p>
-<p>– Regression</p>
-<p>– Statistical inference</p>
-</div>
-</div>
-</section>
-<section id="r---figures" class="slide level2">
-<h2>R - figures</h2>
-<div id="fig-R" class="quarto-layout-panel">
-<figure>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="images/01-welcome-199/figure1.png" width="750"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="images/01-welcome-199/figure2.png" width="750"></p>
-</div>
-</div>
-<p></p><figcaption>Figure 1: Example R Figures</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-<p><img data-src="images/01-welcome-199/NHLapp_demo.gif">{fig.align = “center”}</p>
-</section>
-<section id="r" class="slide level2">
-<h2>R</h2>
-<div class="callout callout-note callout-captioned callout-style-default">
-<div class="callout-body">
-<div class="callout-caption">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p><font size="120"> <strong>This is a new language</strong> </font></p>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="workflow" class="title-slide slide level1 center">
-<h1>Workflow</h1>
-
-</section>
-<h3 id="before-class">Before Class</h3>
-<ul>
-<li class="fragment"><p>Watch lecture content videos (will locate these during website tour)</p></li>
-<li class="fragment"><p>Clone the application exercise (can be done right before class; we will practice this today)</p></li>
-</ul>
-<h3 id="during-class">During Class</h3>
-<ul>
-<li class="fragment"><p>Warm up question</p></li>
-<li class="fragment"><p>Mix of lecture and live coding</p></li>
-</ul>
-<section id="website" class="slide level2">
-<h2>Website</h2>
-<p><a href="https://sta199-summer-1.github.io/">sta199-summer-1.github.io/</a></p>
-</section></section>
-<section id="course-website-tour" class="title-slide slide level1 center">
-<h1>Course Website Tour</h1>
-
-</section>
-
-<section id="slack-tour" class="title-slide slide level1 center">
-<h1>Slack Tour</h1>
-
-</section>
-
-<section>
-<section id="please-bring-your-laptops-if-able" class="title-slide slide level1 center">
-<h1>Please bring your laptops if able</h1>
-
-</section>
-<section id="activities-and-assessments" class="slide level2 smaller">
-<h2>Activities and assessments</h2>
-<ul>
-<li class="fragment"><p><strong>Homework:</strong> Individual assignments combining conceptual and computational skills.</p></li>
-<li class="fragment"><p><strong>Labs:</strong> Individual or team assignments focusing on computational skills.</p></li>
-<li class="fragment"><p><strong>Exams:</strong> Two take-home exams.</p></li>
-<li class="fragment"><p><strong>Final Project:</strong> Team project presented during the final exam period.</p></li>
-<li class="fragment"><p><strong>Application Exercises:</strong> Exercises worked on during the live lecture session.</p></li>
-</ul>
-</section>
-<section id="lab" class="slide level2">
-<h2>Lab</h2>
-<ul>
-<li class="fragment"><p>Run by TA Pritam Dey</p></li>
-<li class="fragment"><p>Focus on computing using R tidyverse syntax</p></li>
-<li class="fragment"><p>Apply concepts from lecture to case study scenarios</p></li>
-<li class="fragment"><p>Work on labs individually or in teams of 3 - 4</p></li>
-</ul>
-</section>
-<section id="textbooks-and-readings" class="slide level2">
-<h2>Textbooks and readings</h2>
-<ul>
-<li class="fragment"><p>R for Data Science by Grolemund &amp; Wickham (2nd ed.&nbsp;O’Reilly)</p></li>
-<li class="fragment"><p>Introduction to Modern Statistics by Cetinkaya-Rundel &amp; Hardin (1st ed.&nbsp;OpenIntro)</p></li>
-</ul>
-</section></section>
-<section id="questions" class="title-slide slide level1 center">
-<h1>Questions?</h1>
-
-</section>
-
-<section>
-<section id="why-learn-the-technology-we-do" class="title-slide slide level1 center">
-<h1>Why learn the technology we do?</h1>
-
-</section>
-<section id="r-r-studio-posit" class="slide level2">
-<h2>R + R-studio (Posit)</h2>
-<p>– Specialization in data visualization</p>
-<p>– Computing tools to fit models</p>
-<p>– Well respected</p>
-<p>– You can take these skills with you</p>
-<ul>
-<li class="fragment">The language has grown significantly in popularity and is now used in a range of professions including software development, business analysis, statistical reporting and scientific research</li>
-</ul>
-</section>
-<section id="create-a-github-account-why" class="slide level2">
-<h2>Create a GitHub account (Why?)</h2>
-<p>GitHub, Inc., is an Internet hosting service for software development and <strong>version control</strong>. <img data-src="images/01-welcome-199/pnas.png" data-fig-align="center"></p>
-</section>
-<section id="what-we-need-to-do-5-min" class="slide level2">
-<h2>What we need to do (5 min)</h2>
-<p>– If you have not set up:</p>
-<ul>
-<li class="fragment"><p>GitHub Account</p></li>
-<li class="fragment"><p>Slack Account</p></li>
-<li class="fragment"><p>Reserved a Duke Container</p></li>
-</ul>
-</section>
-<section id="create-a-github-account" class="slide level2 smaller">
-<h2>Create a GitHub account</h2>
-<p>Please do this before the <em>Getting to know you</em> survey</p>
-<p>Go to https://github.com/, and create an account (unless you already have one).</p>
-<p>Some tips from Happy Git with R.</p>
-<p>– Incorporate your actual name!</p>
-<p>– Reuse your username from other contexts if you can, e. g., Twitter or Slack.</p>
-<p>– Pick a username you will be comfortable revealing to your future boss.</p>
-<p>– Be as unique as possible in as few characters as possible. Shorter is better than longer.</p>
-<p>– Avoid words with special meaning in programming (e.g.&nbsp;NA).</p>
-</section>
-<section id="github-account" class="slide level2">
-<h2>GitHub account</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 31.8%;justify-content: center;">
-<p><img data-src="images/01-welcome-199/git.invite2.png" width="350"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 68.2%;justify-content: center;">
-<p><img data-src="images/01-welcome-199/git.invite.png" width="750"></p>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p>Invite Example</p>
-</div>
-</div>
-</div>
-</section>
-<section id="slack" class="slide level2">
-<h2>Slack</h2>
-
-<img data-src="images/01-welcome-199/slack.png" class="r-stretch"><p>https://slack.com/get-started#/createnew</p>
-</section>
-<section id="r-studio" class="slide level2">
-<h2>R-Studio</h2>
-<p>– Reserve a STA198-1991 RStudio container</p>
-<p>– Go to https://cmgr.oit.duke.edu/containers</p>
-<p>– Click Reserve Container for the STA198-199 container</p>
-</section></section>
-<section id="to-much-talking.-lets-take-a-break-10-min" class="title-slide slide level1 center">
-<h1>To much talking…. let’s take a break (10 min)</h1>
-
-</section>
-
-<section>
-<section id="meet-the-tool-kit-data-visualization" class="title-slide slide level1 center">
-<h1>Meet The Tool-Kit + Data Visualization</h1>
-
-</section>
-<section id="ae-01" class="slide level2">
-<h2>ae-01</h2>
-<p>– We will clone this from GitHub here: https://github.com/sta199-summer-1/ae-01-summer</p>
-<p>– You will do this every day before class &amp; with homework &amp; with labs</p>
-<p>– You will not have the capability to “push changes” to GitHub (yet… this will happen during your first lab!)</p>
-</section>
-<section id="cloning-demo" class="slide level2">
-<h2>Cloning Demo</h2>
-<p>https://github.com/sta199-summer-1/ae-01-summer</p>
-</section></section>
-<section>
-<section id="r-tour" class="title-slide slide level1 center">
-<h1>R-Tour</h1>
-
-</section>
-<section id="some-r-essentials" class="slide level2">
-<h2>Some R essentials</h2>
-<p>– <strong>Functions</strong> are (normally) verbs, followed by what they will be applied to in parentheses:</p>
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="images/02-Meeting-the-toolkit/function.png" width="900" height="100"></p>
-</figure>
-</div>
-</section>
-<section id="r-essentials" class="slide level2">
-<h2>R essentials</h2>
-<p>– <strong>Packages</strong> are installed with the install.packages function and loaded with the <strong>library</strong> function, once per session:</p>
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="images/02-Meeting-the-toolkit/packages.png" width="900" height="100"></p>
-</figure>
-</div>
-</section>
-<section id="packages" class="slide level2">
-<h2>Packages</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/02-Meeting-the-toolkit/error1.png" width="900" height="100"></p>
-</figure>
-</div>
-<p><code>library(tidyverse)</code></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/02-Meeting-the-toolkit/nonerror1.png" width="900" height="100"></p>
-</figure>
-</div>
-</section>
-<section id="packages-1" class="slide level2">
-<h2>Packages</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/02-Meeting-the-toolkit/error2.png" width="900" height="100"></p>
-</figure>
-</div>
-<p><code>library(tidyverse)</code></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/02-Meeting-the-toolkit/nonerror2.png" width="900" height="100"></p>
-</figure>
-</div>
-</section>
-<section id="tidyverse" class="slide level2">
-<h2>tidyverse</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="images/02-Meeting-the-toolkit/tidyverse.png" width="400" height="300"></p>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
-<p>– The <strong>tidyverse</strong> is a collection of R packages designed for data science.</p>
-<p>– All packages share an underlying philosophy and a common grammar.</p>
-</div>
-</div>
-</section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>– an open-source scientific and technical publishing system</p>
-<p>– publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more</p>
-<p>– Code goes in chunks, defined by three backticks, narrative goes outside of chunks</p>
-</section>
-<section id="how-will-we-use-quarto" class="slide level2">
-<h2>How will we use Quarto?</h2>
-<p>– Every assignment / lab / project will be given to you as a Quarto document</p>
-<p>– You will always have a Quarto template document to start with</p>
-<p>– As we get more familiar with R, the more code you will construct on your own</p>
-</section></section>
-<section>
-<section id="ae-01-1" class="title-slide slide level1 center">
-<h1>ae-01</h1>
-
-</section>
-<section id="the-process" class="slide level2">
-<h2>The process</h2>
+<section id="the-process-a-warm-up" class="slide level2">
+<h2>The process (A Warm Up)</h2>
+<p>You have a data set you want to work with…</p>
 <p><code>mtcars</code></p>
-<p>You want to create a visualization. The first thing we need to do is set up the canvas…</p>
 </section>
-<section id="the-process-1" class="slide level2">
-<h2>The process</h2>
+<section id="the-process-a-warm-up-1" class="slide level2">
+<h2>The process (A Warm Up)</h2>
+<p>What does the following code below achieve?</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot()</code></p>
+</section>
+<section id="the-process-a-warm-up-2" class="slide level2">
+<h2>The process (A Warm Up)</h2>
+<p>This code sets up our canvas to create!</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot()</code></p>
 <div class="quarto-figure quarto-figure-center">
@@ -760,8 +398,17 @@ text-align: left;
 </figure>
 </div>
 </section>
-<section id="the-process-2" class="slide level2">
-<h2>The process</h2>
+<section id="the-process-a-warm-up-3" class="slide level2">
+<h2>The process (A Warm Up)</h2>
+<p>What does the following code below achieve?</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>x = variable.name, y = variable.name)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code></p>
+</section>
+<section id="the-process-a-warm-up-4" class="slide level2">
+<h2>The process (A Warm Up)</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
@@ -769,13 +416,9 @@ text-align: left;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code></p>
 <p>aes: describe how variables in the data are mapped to your canvas</p>
 </section>
-<section id="the-process-3" class="slide level2">
-<h2>The process</h2>
-<p><code>+</code> “and”</p>
-<p>When working with ggplot functions, we will add to our canvus using <code>+</code></p>
-</section>
-<section id="the-process-4" class="slide level2">
-<h2>The process</h2>
+<section id="the-process-warm-up" class="slide level2">
+<h2>The process (Warm Up)</h2>
+<p>What does the following code below achieve?</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
@@ -783,23 +426,71 @@ text-align: left;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code> +<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>geom_point()</code></p>
 </section>
-<section id="the-process-5" class="slide level2">
-<h2>The process</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/04-Visualizing-various-types-of-data/paint.jpg" width="400" height="400"></p>
-</figure>
-</div>
+<section id="the-variables-dictate-the-plot" class="slide level2">
+<h2>The variables dictate the plot</h2>
+<p>– Two quantitative variables</p>
+<p>– One quantitative variable</p>
+<p>– One categorical variable</p>
+<p>– Two categorical variables</p>
 </section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<p>– There area lot of moving parts in this course</p>
-<p>– Coding is not learned in a day</p>
-<p>– Ask questions often</p>
-<p>– What is version control? Why is it important?</p>
-<p>– What is R vs RStudio?</p>
-<p>– What is Quarto?</p>
-<p>– Starting to work with code!</p>
+<section>
+<section id="geom-reference" class="title-slide slide level1 center">
+<h1>geom reference</h1>
+<p>https://ggplot2.tidyverse.org/reference/</p>
+<p><strong>A geom is the geometrical object that a plot uses to represent data. People often describe plots by the type of geom that the plot uses. For example, bar charts use bar geoms, line charts use line geoms, boxplots use boxplot geoms, and so on. Scatterplots break the trend; they use the point geom.</strong></p>
+</section>
+<section id="ae-02-s23" class="slide level2">
+<h2>ae-02-s23</h2>
+<p>These data were collected from 2007 - 2009 by Dr.&nbsp;Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license (“No Rights Reserved”) in accordance with the Palmer Station Data Policy.</p>
+</section></section>
+<section>
+<section id="ae-02-s23-1" class="title-slide slide level1 center">
+<h1>ae-02-s23</h1>
+
+</section>
+<section id="we-can-make-plots." class="slide level2">
+<h2>We can make plots….</h2>
+<p>But how do we talk about them?</p>
+</section>
+<section id="general-rules" class="slide level2">
+<h2>General Rules</h2>
+<p>– Look for patterns</p>
+<p>– Look at <code>shape</code></p>
+<p>– Look for outliers or anything unusual</p>
+<p>– Look for <code>spread</code> of the data</p>
+</section>
+<section id="shape" class="slide level2">
+<h2>Shape</h2>
+<p>We often talk about skew when describing shape of data</p>
+<p>– Positive Skew (Right Skew)</p>
+<p>– Negative Skew (Left Skew)</p>
+<p>– Roughlyl Symmentric</p>
+
+<img data-src="images/skew.png" class="r-stretch quarto-figure-center"></section>
+<section id="outliers" class="slide level2">
+<h2>Outliers</h2>
+<p>A data point that does not follow the general trend of the data</p>
+
+<img data-src="images/boxplot.out.png" class="r-stretch quarto-figure-center"></section>
+<section id="center" class="slide level2">
+<h2>Center</h2>
+<p>– What’s the mean</p>
+<p>– What’s the median</p>
+</section>
+<section id="spread-more-coming-later" class="slide level2">
+<h2>Spread (More Coming Later!)</h2>
+<p>How spread out things are…</p>
+<p>– Standard deviation</p>
+<p>– IQR</p>
+</section>
+<section id="recap-of-ae" class="slide level2 smaller">
+<h2>Recap of AE</h2>
+<ul>
+<li class="fragment"><p>Pick geoms based on data types.</p></li>
+<li class="fragment"><p>Manipulate graphs to be more appropriate with arguments</p></li>
+<li class="fragment"><p>Take control of your labels</p></li>
+<li class="fragment"><p>Use color to your advantage. https://ggplot2.tidyverse.org/reference/ggtheme.html &amp; https://ggplot2.tidyverse.org/reference/scale_viridis.html</p></li>
+</ul>
 
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -840,7 +531,7 @@ text-align: left;
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":"16839100278898081586","id":"b88c465c60bda035","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"4230cf7c59be91dd","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1014,7 +705,7 @@ text-align: left;
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
-          RevealNotes,
+          
           RevealSearch,
           RevealZoom
         ]

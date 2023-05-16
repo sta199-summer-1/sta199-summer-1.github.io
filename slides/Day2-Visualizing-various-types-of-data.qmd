@@ -1,7 +1,7 @@
 ---
 title: "Visualizing various types of data"
-subtitle: "Lecture 3"
-date: "January 20, 2022"
+subtitle: "Day-2"
+date: "May 18th 2023"
 format: revealjs
 ---
 
@@ -13,9 +13,11 @@ format: revealjs
 library(countdown)
 ```
 
--- Go to the course [GitHub org](https://github.com/sta199-s23-2) and find your `ae-02-s23` (repo name will be suffixed with your GitHub name).
+-- Go to the course [GitHub org](https://github.com/sta199-summer-1) and find your `ae-02-summer` (repo name will be suffixed with your GitHub name).
 
--- Clone the repo in your container, open the Quarto document in the repo
+-- If you don't see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away
+
+-- Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)
 
 -- Are you on Slack?
 
@@ -23,13 +25,15 @@ library(countdown)
 
 Due Dates + Turn In
 
--- AE's due Saturday and Monday (11:59) PM - GitHub
+-- All AEs are due Friday night by 11:59 - GitHub
 
--- Labs due Fri (11:59) - Gradescope
+-- Labs due Thursday and Monday (before lecture)- Gradescope
 
--- HWs due Tue (11:59) - Gradescope
+-- HWs due ~ 1 week from assigned - Gradescope
 
-## How to turn AE's via Github
+## How to turn AE's via Github 
+
+AEs will be graded via Week 2
 
 -- render, commit, and push
 
@@ -41,11 +45,13 @@ Due Dates + Turn In
 
 4.  Check your repo on GitHub and see the updated files. Once your updated files are in your repo on GitHub, you're good to go!
 
+## How to turn AE's via Github 
+
+-- ae-01 Demo
+
 ## Announcements
 
-Prepare Material
-
-R4DS: Chp 2 - Data visualization - Sections 2.1 and 2.4
+-- Prepare Material
 
 ## Goals for today
 
@@ -67,26 +73,44 @@ Create plots!
 
 -- Careful consideration of aesthetic choices (like color)
 
-## The process
+## The process (A Warm Up)
 
 You have a data set you want to work with...
 
 `mtcars`
 
-## The process
+## The process (A Warm Up)
 
-`mtcars`
-
-You want to create a visualization. The first thing we need to do is set up the canvas...
-
-## The process
+What does the following code below achieve? 
 
 |     `mtcars |>`
 |         `ggplot()`
 
-![](images/04-Visualizing-various-types-of-data/canvas.jpg){width="400" height="400" fig-align="\"center"}
 
-## The process
+## The process (A Warm Up)
+
+This code sets up our canvas to create!
+
+|     `mtcars |>`
+|         `ggplot()`
+
+![](images/04-Visualizing-various-types-of-data/canvas.jpg){width="400" height="400" fig-align="center"}
+
+
+## The process (A Warm Up)
+
+What does the following code below achieve? 
+
+|     `mtcars |>`
+|         `ggplot(`
+|         `aes(`
+|              `x = variable.name, y = variable.name)`
+|                `)`
+
+
+
+## The process (A Warm Up)
+
 
 |     `mtcars |>`
 |         `ggplot(`
@@ -96,13 +120,10 @@ You want to create a visualization. The first thing we need to do is set up the 
 
 aes: describe how variables in the data are mapped to your canvas
 
-## The process
 
-`+` "and"
+## The process (Warm Up)
 
-When working with ggplot functions, we will add to our canvus using `+`
-
-## The process
+What does the following code below achieve? 
 
 |     `mtcars |>`
 |         `ggplot(`
@@ -111,9 +132,7 @@ When working with ggplot functions, we will add to our canvus using `+`
 |                `)` +
 |         `geom_point()`
 
-## The process
 
-![](images/04-Visualizing-various-types-of-data/paint.jpg){width="400" height="400" fig-align="\"center"}
 
 ## The variables dictate the plot
 
@@ -134,6 +153,56 @@ https://ggplot2.tidyverse.org/reference/
 ## ae-02-s23
 
 These data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license ("No Rights Reserved") in accordance with the Palmer Station Data Policy.
+
+
+# ae-02-s23
+
+## We can make plots.... 
+
+But how do we talk about them? 
+
+## General Rules 
+
+-- Look for patterns 
+
+-- Look at `shape` 
+
+-- Look for outliers or anything unusual 
+
+-- Look for `spread` of the data
+
+## Shape
+
+We often talk about skew when describing shape of data
+
+-- Positive Skew (Right Skew)
+
+-- Negative Skew (Left Skew)
+
+-- Roughlyl Symmentric
+
+![](images/skew.png){fig-align="center"}
+
+## Outliers
+
+A data point that does not follow the general trend of the data
+
+![](images/boxplot.out.png){fig-align="center"}
+
+## Center
+
+-- What's the mean
+
+-- What's the median
+
+## Spread (More Coming Later!)
+
+How spread out things are...
+
+-- Standard deviation
+
+-- IQR
+
 
 ## Recap of AE {.smaller}
 

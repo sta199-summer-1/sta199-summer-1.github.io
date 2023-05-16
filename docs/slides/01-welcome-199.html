@@ -745,6 +745,52 @@ text-align: left;
 <h1>ae-01</h1>
 
 </section>
+<section id="the-process" class="slide level2">
+<h2>The process</h2>
+<p><code>mtcars</code></p>
+<p>You want to create a visualization. The first thing we need to do is set up the canvas…</p>
+</section>
+<section id="the-process-1" class="slide level2">
+<h2>The process</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot()</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/04-Visualizing-various-types-of-data/canvas.jpg" width="400" height="400"></p>
+</figure>
+</div>
+</section>
+<section id="the-process-2" class="slide level2">
+<h2>The process</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>x = variable.name, y = variable.name)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code></p>
+<p>aes: describe how variables in the data are mapped to your canvas</p>
+</section>
+<section id="the-process-3" class="slide level2">
+<h2>The process</h2>
+<p><code>+</code> “and”</p>
+<p>When working with ggplot functions, we will add to our canvus using <code>+</code></p>
+</section>
+<section id="the-process-4" class="slide level2">
+<h2>The process</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>x = variable.name, y = variable.name)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code> +<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>geom_point()</code></p>
+</section>
+<section id="the-process-5" class="slide level2">
+<h2>The process</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/04-Visualizing-various-types-of-data/paint.jpg" width="400" height="400"></p>
+</figure>
+</div>
+</section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
 <p>– There area lot of moving parts in this course</p>

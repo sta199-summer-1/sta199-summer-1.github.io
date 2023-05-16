@@ -228,7 +228,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Lab-3\nTidying Data | Group Formation + Merge Conflicts Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\nDebugging + ggplot practice\n\n\n\n\n\n\n\n\n\n\nRelease Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-4\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-6\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-8\nProject Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Lab-3\nTidying Data | Group Formation + Merge Conflicts Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\nDebugging + ggplot practice\n\n\n\n\n\n\n\n\n\n\nRelease Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-4\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-6\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-8\nProject Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -896,6 +896,48 @@
     "text": "How will we use Quarto?\n– Every assignment / lab / project will be given to you as a Quarto document\n– You will always have a Quarto template document to start with\n– As we get more familiar with R, the more code you will construct on your own"
   },
   {
+    "objectID": "slides/01-welcome-199.html#the-process",
+    "href": "slides/01-welcome-199.html#the-process",
+    "title": "Welcome to STA 199",
+    "section": "The process",
+    "text": "The process\nmtcars\nYou want to create a visualization. The first thing we need to do is set up the canvas…"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#the-process-1",
+    "href": "slides/01-welcome-199.html#the-process-1",
+    "title": "Welcome to STA 199",
+    "section": "The process",
+    "text": "The process\n    mtcars |>\n        ggplot()"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#the-process-2",
+    "href": "slides/01-welcome-199.html#the-process-2",
+    "title": "Welcome to STA 199",
+    "section": "The process",
+    "text": "The process\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               )\naes: describe how variables in the data are mapped to your canvas"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#the-process-3",
+    "href": "slides/01-welcome-199.html#the-process-3",
+    "title": "Welcome to STA 199",
+    "section": "The process",
+    "text": "The process\n+ “and”\nWhen working with ggplot functions, we will add to our canvus using +"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#the-process-4",
+    "href": "slides/01-welcome-199.html#the-process-4",
+    "title": "Welcome to STA 199",
+    "section": "The process",
+    "text": "The process\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               ) +\n        geom_point()"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#the-process-5",
+    "href": "slides/01-welcome-199.html#the-process-5",
+    "title": "Welcome to STA 199",
+    "section": "The process",
+    "text": "The process"
+  },
+  {
     "objectID": "slides/01-welcome-199.html#summary",
     "href": "slides/01-welcome-199.html#summary",
     "title": "Welcome to STA 199",
@@ -1027,6 +1069,160 @@
     "title": "R Intro",
     "section": "Wrap up",
     "text": "Wrap up\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n\n\n\n🔗 sta199-s23-2.github.io"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
+    "title": "Visualizing various types of data",
+    "section": "Checklist",
+    "text": "Checklist\n\n\n\n– Go to the course GitHub org and find your ae-02-summer (repo name will be suffixed with your GitHub name).\n– If you don’t see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away\n– Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)\n– Are you on Slack?"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#announcements",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#announcements",
+    "title": "Visualizing various types of data",
+    "section": "Announcements",
+    "text": "Announcements\nDue Dates + Turn In\n– All AEs are due Friday night by 11:59 - GitHub\n– Labs due Thursday and Monday (before lecture)- Gradescope\n– HWs due ~ 1 week from assigned - Gradescope"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github",
+    "title": "Visualizing various types of data",
+    "section": "How to turn AE’s via Github",
+    "text": "How to turn AE’s via Github\nAEs will be graded via Week 2\n– render, commit, and push\n\nIf you made any changes since the last render, render again to get the final version of the AE.\nCheck the box next to each document in the Git tab (this is called “staging” the changes). Commit the changes you made using an simple and informative message.\nUse the green arrow to push your changes to your repo on GitHub.\nCheck your repo on GitHub and see the updated files. Once your updated files are in your repo on GitHub, you’re good to go!"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github-1",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github-1",
+    "title": "Visualizing various types of data",
+    "section": "How to turn AE’s via Github",
+    "text": "How to turn AE’s via Github\n– ae-01 Demo"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#announcements-1",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#announcements-1",
+    "title": "Visualizing various types of data",
+    "section": "Announcements",
+    "text": "Announcements\n– Prepare Material"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#goals-for-today",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#goals-for-today",
+    "title": "Visualizing various types of data",
+    "section": "Goals for today",
+    "text": "Goals for today\nCreate plots!\n– Understand geoms\n– Scatterplots, boxplots, histograms, etc\n– Practice with the fundamentals of ggplot"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#tips-and-tricks",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#tips-and-tricks",
+    "title": "Visualizing various types of data",
+    "section": "Tips and Tricks",
+    "text": "Tips and Tricks\n– Let the types of variables dictate the plot\n– Informative title\n– Axes should be labeled\n– Careful consideration of aesthetic choices (like color)"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up",
+    "title": "Visualizing various types of data",
+    "section": "The process (A Warm Up)",
+    "text": "The process (A Warm Up)\nYou have a data set you want to work with…\nmtcars"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-1",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-1",
+    "title": "Visualizing various types of data",
+    "section": "The process (A Warm Up)",
+    "text": "The process (A Warm Up)\nWhat does the following code below achieve?\n    mtcars |>\n        ggplot()"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-2",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-2",
+    "title": "Visualizing various types of data",
+    "section": "The process (A Warm Up)",
+    "text": "The process (A Warm Up)\nThis code sets up our canvas to create!\n    mtcars |>\n        ggplot()"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-3",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-3",
+    "title": "Visualizing various types of data",
+    "section": "The process (A Warm Up)",
+    "text": "The process (A Warm Up)\nWhat does the following code below achieve?\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               )"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-4",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-4",
+    "title": "Visualizing various types of data",
+    "section": "The process (A Warm Up)",
+    "text": "The process (A Warm Up)\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               )\naes: describe how variables in the data are mapped to your canvas"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-warm-up",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-warm-up",
+    "title": "Visualizing various types of data",
+    "section": "The process (Warm Up)",
+    "text": "The process (Warm Up)\nWhat does the following code below achieve?\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               ) +\n        geom_point()"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-variables-dictate-the-plot",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-variables-dictate-the-plot",
+    "title": "Visualizing various types of data",
+    "section": "The variables dictate the plot",
+    "text": "The variables dictate the plot\n– Two quantitative variables\n– One quantitative variable\n– One categorical variable\n– Two categorical variables"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
+    "title": "Visualizing various types of data",
+    "section": "ae-02-s23",
+    "text": "ae-02-s23\nThese data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license (“No Rights Reserved”) in accordance with the Palmer Station Data Policy."
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#we-can-make-plots.",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#we-can-make-plots.",
+    "title": "Visualizing various types of data",
+    "section": "We can make plots….",
+    "text": "We can make plots….\nBut how do we talk about them?"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#general-rules",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#general-rules",
+    "title": "Visualizing various types of data",
+    "section": "General Rules",
+    "text": "General Rules\n– Look for patterns\n– Look at shape\n– Look for outliers or anything unusual\n– Look for spread of the data"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#shape",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#shape",
+    "title": "Visualizing various types of data",
+    "section": "Shape",
+    "text": "Shape\nWe often talk about skew when describing shape of data\n– Positive Skew (Right Skew)\n– Negative Skew (Left Skew)\n– Roughlyl Symmentric"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#outliers",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#outliers",
+    "title": "Visualizing various types of data",
+    "section": "Outliers",
+    "text": "Outliers\nA data point that does not follow the general trend of the data"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#center",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#center",
+    "title": "Visualizing various types of data",
+    "section": "Center",
+    "text": "Center\n– What’s the mean\n– What’s the median"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#spread-more-coming-later",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#spread-more-coming-later",
+    "title": "Visualizing various types of data",
+    "section": "Spread (More Coming Later!)",
+    "text": "Spread (More Coming Later!)\nHow spread out things are…\n– Standard deviation\n– IQR"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#recap-of-ae",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#recap-of-ae",
+    "title": "Visualizing various types of data",
+    "section": "Recap of AE",
+    "text": "Recap of AE\n\nPick geoms based on data types.\nManipulate graphs to be more appropriate with arguments\nTake control of your labels\nUse color to your advantage. https://ggplot2.tidyverse.org/reference/ggtheme.html & https://ggplot2.tidyverse.org/reference/scale_viridis.html\n\n\n\n\n🔗 sta199-s23-2.github.io"
   },
   {
     "objectID": "slides/lab-0-slides.html#introductions",

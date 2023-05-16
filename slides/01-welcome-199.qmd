@@ -355,6 +355,48 @@ https://github.com/sta199-summer-1/ae-01-summer
 
 # ae-01
 
+## The process
+
+`mtcars`
+
+You want to create a visualization. The first thing we need to do is set up the canvas...
+
+## The process
+
+|     `mtcars |>`
+|         `ggplot()`
+
+![](images/04-Visualizing-various-types-of-data/canvas.jpg){width="400" height="400" fig-align="\"center"}
+
+## The process
+
+|     `mtcars |>`
+|         `ggplot(`
+|         `aes(`
+|              `x = variable.name, y = variable.name)`
+|                `)`
+
+aes: describe how variables in the data are mapped to your canvas
+
+## The process
+
+`+` "and"
+
+When working with ggplot functions, we will add to our canvus using `+`
+
+## The process
+
+|     `mtcars |>`
+|         `ggplot(`
+|         `aes(`
+|              `x = variable.name, y = variable.name)`
+|                `)` +
+|         `geom_point()`
+
+## The process
+
+![](images/04-Visualizing-various-types-of-data/paint.jpg){width="400" height="400" fig-align="\"center"}
+
 ## Summary 
 
 -- There area lot of moving parts in this course 
