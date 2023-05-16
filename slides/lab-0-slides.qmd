@@ -19,9 +19,7 @@ library(countdown)
 
 -- You can find Lab on `sta199-summer-1.github.io/`
 
--- You can find your lab starter `github.com/sta199-summer-1`
-
--- Bookmark these websites!
+-- You can find your lab starter: https://github.com/sta199-summer-1/lab-0-starter
 
 ## What to expect in labs
 
