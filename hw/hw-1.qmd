@@ -5,20 +5,21 @@ editor: visual
 ---
 
 ::: callout-important
-This homework is due Tuesday, Jan 31 at 11:59pm.
+This homework is due Monday, May 29th at 11:59pm.
 :::
 
 # Getting Started
 
--   Go to the [sta199-s23-2](https://github.com/sta199-s23-2) organization on GitHub. Click on the repo with the prefix `hw-01`. It contains the starter documents you need to complete the homework assignment.
+-   Go to the [sta199-summer-1](https://github.com/sta199-summer-1) organization on GitHub. Click on the repo with the prefix `hw-01`. It contains the starter documents you need to complete the homework assignment.
 
--   Clone the repo and start a new project in RStudio. See the [Lab 0 instructions](https://sta199-s23-2.github.io/labs/lab-0.html#clone-the-repo-start-new-rstudio-project) for details on cloning a repo and starting a new R project.
+-   Clone the repo and start a new project in RStudio. See the [Lab 0 instructions](https://sta199-summer-1.github.io/labs/lab-0.html#clone-the-repo-start-new-rstudio-project) for details on cloning a repo and starting a new R project.
 
 ## Packages
 
 ```{r}
 #| label: load-packages
 #| message: false
+#| warning: false
 
 library(tidyverse)
 library(openintro)
@@ -51,8 +52,7 @@ Suppose you're helping some family friends who are looking to buy a house in Duk
 Luckily, you can help them answer this question with data visualization!
 
 -   Make histograms of the prices of houses in Duke Forest based on whether they have a garage.
-    -   In order to do this, you will first need to create a new variable called `garage` (with levels `"Garage"` and `"No garage"`).
-    -   Below is the code for creating this new variable. Here, we `mutate()` the `duke_forest` data frame to add a new variable called `garage` which takes the value `"Garage"` if the text string `"Garage"` is detected in the `parking` variable and takes the test string `"No garage"` if not.
+    -   In order to do this, you will first need to create a new variable called `garage` (with levels `"Garage"` and `"No garage"`). Below is the code for creating this new variable. Here, we `mutate()` the `duke_forest` data frame to add a new variable called `garage` which takes the value `"Garage"` if the text string `"Garage"` is detected in the `parking` variable and takes the test string `"No garage"` if not.
 
 ```{r}
 #| eval: false
@@ -67,7 +67,7 @@ duke_forest |>
 -   Finally, include a brief (2-3 sentence) narrative comparing the distributions of prices of Duke Forest houses that do and don't have garages. Your narrative should touch on whether having a garage "makes a difference" in terms of the price of the house.
 
 ::: render-commit-push
-Now is a good time to render, commit, and push. Make sure that you commit and push all changed documents and your Git pane is completely empty before proceding. <br>
+Now is a good time to render, commit, and push. Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding. <br>
 :::
 
 ## Exercise 2
@@ -159,8 +159,9 @@ brfss |>
 ## Exercise 6
 
 (a) Fill in the blanks:
-    -   The gg in the name of the package ggplot2 stands for \_\_\_.
-    -   If you map the same continuous variable to both `x` and `y` aesthetics in a scatterplot, you get a straight \_\_\_ line. (Choose between "vertical", "horizontal", or "diagonal".)
+    -   The gg in the name of the package ggplot2 stands for ... .
+    -   If you map the same continuous variable to both `x` and `y` aesthetics in a scatterplot, you get a straight ... line. (Choose between "vertical", "horizontal", or "diagonal".)
+
 (b) Code style: Fix up the code style by spaces and line breaks where needed. Briefly describe your fixes. (Hint: You can refer to the [Tidyverse style guide](https://style.tidyverse.org/).)
 
 ```{r}
