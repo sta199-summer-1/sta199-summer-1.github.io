@@ -4,8 +4,6 @@ subtitle: "Lecture 1"
 date: "January 13, 2023"
 ---
 
-Research is primarily focused on education, and how to better the teaching and learning experiences for those involved. Current research involves creating a dynamic interactive shiny application in R to better students' understanding of permutations and bootstrapping while simultaneously encouraging them to become independent coders. Other work involves identifying longitudinal breakthroughs in graduate student instructors knowledge about, emotions towards, and use of active learning. Further, the early stages have been set to help develop and instrument to measure different types of instructor's motivation towards using active learning teaching techniques in statistics.
-
 ## Welcome
 
 ![](images/logo.png){width="400" height="400" fig-align="center"}
@@ -93,6 +91,7 @@ Please share with your neighbors:
 -   Community
 -   Communication
 -   Respect
+-   Mindset 
 
 ## Course objectives
 
@@ -150,19 +149,19 @@ Example R Figures
 <font size="120"> **This is a new language** </font>
 :::
 
-## Workflow
+# Workflow
 
 ### Before Class
 
--   Watch lecture content videos
+-   Watch lecture content videos (will locate these during website tour)
 
--   Clone the application exercise (can be done right before class)
+-   Clone the application exercise (can be done right before class; we will practice this today)
 
 ### During Class
 
 -   Warm up question
 
--   Mix of lecture and interaction
+-   Mix of lecture and live coding 
 
 ## Website 
 
@@ -186,9 +185,10 @@ Example R Figures
 
 -   **Application Exercises:** Exercises worked on during the live lecture session.
 
--   **Statistics Experiences:** Engage with statistics outside of the classroom and reflect on your experience.
 
 ## Lab
+
+-   Run by TA Pritam Dey
 
 -   Focus on computing using R tidyverse syntax
 
@@ -201,6 +201,9 @@ Example R Figures
 -   R for Data Science by Grolemund & Wickham (2nd ed. O'Reilly)
 
 -   Introduction to Modern Statistics by Cetinkaya-Rundel & Hardin (1st ed. OpenIntro)
+
+
+# Questions? 
 
 
 # Why learn the technology we do?
@@ -221,7 +224,7 @@ Example R Figures
 
 GitHub, Inc., is an Internet hosting service for software development and **version control**. ![](images/01-welcome-199/pnas.png){fig-align="center"}
 
-## Short Break (10-minutes)
+## What we need to do (5 min)
 
 -- If you have not set up: 
 
@@ -230,8 +233,6 @@ GitHub, Inc., is an Internet hosting service for software development and **vers
 - Slack Account 
 
 - Reserved a Duke Container 
-
-Please do so now + fill out the **getting to know you survey**
 
 ## Create a GitHub account {.smaller}
 
@@ -275,6 +276,9 @@ https://slack.com/get-started#/createnew
 
 -- Click Reserve Container for the STA198-199 container
 
+
+# To much talking.... let's take a break (10 min)
+
 # Meet The Tool-Kit + Data Visualization 
 
 ## ae-01
@@ -284,6 +288,10 @@ https://slack.com/get-started#/createnew
 -- You will do this every day before class & with homework & with labs
 
 -- You will not have the capability to "push changes" to GitHub (yet... this will happen during your first lab!)
+
+## Cloning Demo
+
+https://github.com/sta199-summer-1/ae-01-summer
 
 # R-Tour 
 
@@ -345,9 +353,7 @@ https://slack.com/get-started#/createnew
 
 -- As we get more familiar with R, the more code you will construct on your own
 
-## ae-01
-
-https://github.com/sta199-summer-1/ae-01-summer
+# ae-01
 
 ## Summary 
 

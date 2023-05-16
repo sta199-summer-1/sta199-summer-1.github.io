@@ -200,14 +200,14 @@
     "href": "course-syllabus.html#important-dates",
     "title": "Syllabus",
     "section": "Important dates",
-    "text": "Important dates\n\nMay 16th: Classes begin\nMay 29th: Drop/Add for Term 1 ends at 11:59 p.m.\nJune 19th: Juneteenth holiday: No classes\nJune 28-29: Final exams\n\nFor more important dates, see the full Duke Academic Calendar."
+    "text": "Important dates\n\nMay 17th: Classes begin.\nMay 19th: Drop/Add for Term 1 ends at 11:59 p.m.\nMay 29th: Memorial Day. No classes are held.\nJune 14th: Last day to withdraw with “W” from Term 1 classes for a compelling reason. Last day for students to request S/U grading basis (they should contact their Academic Dean).\nJune 19th: Juneteenth holiday: No classes.\nJune 26th: Last Day of Class.\nJune 28-29: Final exams.\n\nFor more important dates, see the full Duke Academic Calendar."
   },
   {
     "objectID": "course-team.html",
     "href": "course-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Elijah Meyer - Hello! I’m very excited to work with you all this semester. I’ve earned a Master’s degree in statistics and a Ph.D. in statistics with a focus in education from Montana State University. I have taught at STA199 at Duke University during the F22 and S23 semesters. My early research is in sports statistics, with an emphasis on spatial data visualizations to enhance sports strategy. My Ph.D. work is in how to best support graduate student instructors and early career teachers to use active learning in their classrooms. Currently, my research focus is around creating a dynamic interactive shiny application in R to better students’ understanding of statistics and data science. Other endeavors include creating an online data science course Coursera.\nPrior to my time at Duke, I’ve taught multiple sections of Introductory and Intermediate Statistics at Montana State, developed their Intermediate Statistics online course, and helped integrate R into the Introductory Statistics curricula. I prioritize community, communication, and respect in my classroom. I want to provide a space where we can freely talk about the material, embrace mistakes, and learn together throughout the semester.\nWhen I’m not in the books, I enjoy playing disc golf, tennis, basketball, and anything else that gets me outside and active. I’m looking forward to meeting you all and having a great semester!\n\n\n\nOffice hours\nLocation\n\n\n\n\nTue: 3:00 - 4:00 & Th: 10:00 - 12:00 OR by appointment\nOld Chemistry Building 208 / Zoom (Password: 5MYp7A)"
+    "text": "Dr. Elijah Meyer - Hello! I’m very excited to work with you all this semester. I’ve earned a Master’s degree in statistics and a Ph.D. in statistics with a focus in education from Montana State University. I have taught at STA199 at Duke University during the F22 and S23 semesters. My early research is in sports statistics, with an emphasis on spatial data visualizations to enhance sports strategy. My Ph.D. work is in how to best support graduate student instructors and early career teachers to use active learning in their classrooms. Currently, my research focus is around creating a dynamic interactive shiny application in R to better students’ understanding of statistics and data science. Other endeavors include creating an online data science course Coursera.\nPrior to my time at Duke, I’ve taught multiple sections of Introductory and Intermediate Statistics at Montana State, developed their Intermediate Statistics online course, and helped integrate R into the Introductory Statistics curricula. I prioritize community, communication, and respect in my classroom. I want to provide a space where we can freely talk about the material, embrace mistakes, and learn together throughout the semester.\nWhen I’m not in the books, I enjoy playing disc golf, tennis, basketball, and anything else that gets me outside and active. I’m looking forward to meeting you all and having a great semester!\n\n\n\nOffice hours\nLocation\n\n\n\n\nTue: 3:00PM - 4:00PM & Th: 10:00AM - 12:00PM OR by appoi\nntment | Old Chemistry Building 208 / Zoom (Password: 5MYp7A)"
   },
   {
     "objectID": "course-team.html#lab-group-information",
@@ -704,7 +704,7 @@
     "href": "slides/01-welcome-199.html#our-classroom",
     "title": "Welcome to STA 199",
     "section": "Our Classroom",
-    "text": "Our Classroom\n\nCommunity\nCommunication\nRespect"
+    "text": "Our Classroom\n\nCommunity\nCommunication\nRespect\nMindset"
   },
   {
     "objectID": "slides/01-welcome-199.html#course-objectives",
@@ -742,13 +742,6 @@
     "text": "R\n\n\n\n\n\n\nNote\n\n\n This is a new language"
   },
   {
-    "objectID": "slides/01-welcome-199.html#workflow",
-    "href": "slides/01-welcome-199.html#workflow",
-    "title": "Welcome to STA 199",
-    "section": "Workflow",
-    "text": "Workflow\nBefore Class\n\nWatch lecture content videos\nClone the application exercise (can be done right before class)\n\nDuring Class\n\nWarm up question\nMix of lecture and interaction"
-  },
-  {
     "objectID": "slides/01-welcome-199.html#website",
     "href": "slides/01-welcome-199.html#website",
     "title": "Welcome to STA 199",
@@ -760,14 +753,14 @@
     "href": "slides/01-welcome-199.html#activities-and-assessments",
     "title": "Welcome to STA 199",
     "section": "Activities and assessments",
-    "text": "Activities and assessments\n\nHomework: Individual assignments combining conceptual and computational skills.\nLabs: Individual or team assignments focusing on computational skills.\nExams: Two take-home exams.\nFinal Project: Team project presented during the final exam period.\nApplication Exercises: Exercises worked on during the live lecture session.\nStatistics Experiences: Engage with statistics outside of the classroom and reflect on your experience."
+    "text": "Activities and assessments\n\nHomework: Individual assignments combining conceptual and computational skills.\nLabs: Individual or team assignments focusing on computational skills.\nExams: Two take-home exams.\nFinal Project: Team project presented during the final exam period.\nApplication Exercises: Exercises worked on during the live lecture session."
   },
   {
     "objectID": "slides/01-welcome-199.html#lab",
     "href": "slides/01-welcome-199.html#lab",
     "title": "Welcome to STA 199",
     "section": "Lab",
-    "text": "Lab\n\nFocus on computing using R tidyverse syntax\nApply concepts from lecture to case study scenarios\nWork on labs individually or in teams of 3 - 4"
+    "text": "Lab\n\nRun by TA Pritam Dey\nFocus on computing using R tidyverse syntax\nApply concepts from lecture to case study scenarios\nWork on labs individually or in teams of 3 - 4"
   },
   {
     "objectID": "slides/01-welcome-199.html#textbooks-and-readings",
@@ -791,11 +784,11 @@
     "text": "Create a GitHub account (Why?)\nGitHub, Inc., is an Internet hosting service for software development and version control."
   },
   {
-    "objectID": "slides/01-welcome-199.html#short-break-10-minutes",
-    "href": "slides/01-welcome-199.html#short-break-10-minutes",
+    "objectID": "slides/01-welcome-199.html#what-we-need-to-do-5-min",
+    "href": "slides/01-welcome-199.html#what-we-need-to-do-5-min",
     "title": "Welcome to STA 199",
-    "section": "Short Break (10-minutes)",
-    "text": "Short Break (10-minutes)\n– If you have not set up:\n\nGitHub Account\nSlack Account\nReserved a Duke Container\n\nPlease do so now + fill out the getting to know you survey"
+    "section": "What we need to do (5 min)",
+    "text": "What we need to do (5 min)\n– If you have not set up:\n\nGitHub Account\nSlack Account\nReserved a Duke Container"
   },
   {
     "objectID": "slides/01-welcome-199.html#create-a-github-account",
@@ -831,6 +824,13 @@
     "title": "Welcome to STA 199",
     "section": "ae-01",
     "text": "ae-01\n– We will clone this from GitHub here: https://github.com/sta199-summer-1/ae-01-summer\n– You will do this every day before class & with homework & with labs\n– You will not have the capability to “push changes” to GitHub (yet… this will happen during your first lab!)"
+  },
+  {
+    "objectID": "slides/01-welcome-199.html#cloning-demo",
+    "href": "slides/01-welcome-199.html#cloning-demo",
+    "title": "Welcome to STA 199",
+    "section": "Cloning Demo",
+    "text": "Cloning Demo\nhttps://github.com/sta199-summer-1/ae-01-summer"
   },
   {
     "objectID": "slides/01-welcome-199.html#some-r-essentials",
@@ -880,13 +880,6 @@
     "title": "Welcome to STA 199",
     "section": "How will we use Quarto?",
     "text": "How will we use Quarto?\n– Every assignment / lab / project will be given to you as a Quarto document\n– You will always have a Quarto template document to start with\n– As we get more familiar with R, the more code you will construct on your own"
-  },
-  {
-    "objectID": "slides/01-welcome-199.html#ae-01-1",
-    "href": "slides/01-welcome-199.html#ae-01-1",
-    "title": "Welcome to STA 199",
-    "section": "ae-01",
-    "text": "ae-01\nhttps://github.com/sta199-summer-1/ae-01-summer"
   },
   {
     "objectID": "slides/01-welcome-199.html#summary",
