@@ -329,6 +329,20 @@
     "text": "Data: Let’s take a trip to the Midwest\nThe data in this lab is in the midwest data frame. It is part of the ggplot2 R package, so the midwest data set is automatically loaded when you load the tidyverse package.\nThe data contains demographic characteristics of counties in the Midwest region of the United States.\nBecause the data set is part of the ggplot2 package, you can read documentation for the data set, including variable definitions by typing ?midwest in the console."
   },
   {
+    "objectID": "prepare/5-18.html",
+    "href": "prepare/5-18.html",
+    "title": "Prepare",
+    "section": "",
+    "text": "Watch: Meet the toolkit\nRead:\n\nR for Data Science: Chapter 1 - Introduction\nIntro to Modern Data Science: Chapter 1 - Hello data\nR4DS: Chp 2 - Data visualization - Sections 2.1 and 2.4\n\nIf you haven’t yet done so:\n\nJoin the course Slack using the invitation link in your email.\nComplete the Getting to know you survey.\nReserve a STA 198-199 container at https://cmgr.oit.duke.edu/containers."
+  },
+  {
+    "objectID": "prepare/5-22.html",
+    "href": "prepare/5-22.html",
+    "title": "Prepare",
+    "section": "",
+    "text": "::: callout-note Videos use the “old school” pipe (%>%) but we’ll be using the newer (|>) pipe operator in class. :::"
+  },
+  {
     "objectID": "prepare/sample.html",
     "href": "prepare/sample.html",
     "title": "Prepare",
