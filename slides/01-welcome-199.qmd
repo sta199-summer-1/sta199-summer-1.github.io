@@ -185,6 +185,14 @@ Example R Figures
 
 -   **Application Exercises:** Exercises worked on during the live lecture session.
 
+## Application Exercises 
+
+- Are not graded for the first week
+
+- Turned in on GitHub (You will have this ability after Lab-0)
+
+- What is due is what we get through in-class 
+
 
 ## Lab
 
