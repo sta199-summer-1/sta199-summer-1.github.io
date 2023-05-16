@@ -1075,7 +1075,7 @@
     "href": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
     "title": "Visualizing various types of data",
     "section": "Checklist",
-    "text": "Checklist\n\n\n\n– Go to the course GitHub org and find your ae-02-summer (repo name will be suffixed with your GitHub name).\n– If you don’t see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away\n– Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)\n– Are you on Slack?"
+    "text": "Checklist\n\n\n\n– Go to https://github.com/sta199-summer-1/ae-02-summer and find your ae-02-summer\n– If you don’t see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away\n– Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)\n– Are you on Slack?"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#announcements",
@@ -1169,13 +1169,6 @@
     "text": "The variables dictate the plot\n– Two quantitative variables\n– One quantitative variable\n– One categorical variable\n– Two categorical variables"
   },
   {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
-    "title": "Visualizing various types of data",
-    "section": "ae-02-s23",
-    "text": "ae-02-s23\nThese data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license (“No Rights Reserved”) in accordance with the Palmer Station Data Policy."
-  },
-  {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#we-can-make-plots.",
     "href": "slides/Day2-Visualizing-various-types-of-data.html#we-can-make-plots.",
     "title": "Visualizing various types of data",
@@ -1216,6 +1209,13 @@
     "title": "Visualizing various types of data",
     "section": "Spread (More Coming Later!)",
     "text": "Spread (More Coming Later!)\nHow spread out things are…\n– Standard deviation\n– IQR"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
+    "title": "Visualizing various types of data",
+    "section": "ae-02-s23",
+    "text": "ae-02-s23\nThese data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license (“No Rights Reserved”) in accordance with the Palmer Station Data Policy.\nhttps://github.com/sta199-summer-1/ae-02-summer"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#recap-of-ae",

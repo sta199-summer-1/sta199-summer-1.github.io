@@ -13,7 +13,7 @@ format: revealjs
 library(countdown)
 ```
 
--- Go to the course [GitHub org](https://github.com/sta199-summer-1) and find your `ae-02-summer` (repo name will be suffixed with your GitHub name).
+-- Go to https://github.com/sta199-summer-1/ae-02-summer and find your `ae-02-summer`
 
 -- If you don't see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away
 
@@ -150,12 +150,6 @@ https://ggplot2.tidyverse.org/reference/
 
 **A geom is the geometrical object that a plot uses to represent data. People often describe plots by the type of geom that the plot uses. For example, bar charts use bar geoms, line charts use line geoms, boxplots use boxplot geoms, and so on. Scatterplots break the trend; they use the point geom.**
 
-## ae-02-s23
-
-These data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license ("No Rights Reserved") in accordance with the Palmer Station Data Policy.
-
-
-# ae-02-s23
 
 ## We can make plots.... 
 
@@ -202,6 +196,13 @@ How spread out things are...
 -- Standard deviation
 
 -- IQR
+
+## ae-02-s23
+
+These data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license ("No Rights Reserved") in accordance with the Palmer Station Data Policy.
+
+
+https://github.com/sta199-summer-1/ae-02-summer
 
 
 ## Recap of AE {.smaller}
