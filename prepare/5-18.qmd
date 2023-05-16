@@ -1,6 +1,6 @@
 ---
 title: "Prepare"
-subtitle: "Due: January 13, 2023"
+subtitle: "Due: May 18th, 2023"
 categories: "prepare"
 ---
 
@@ -9,9 +9,16 @@ categories: "prepare"
     -   [R for Data Science: Chapter 1 - Introduction](https://r4ds.hadley.nz/intro.html)
 
     -   [Intro to Modern Data Science: Chapter 1 - Hello data](https://openintro-ims.netlify.app/data-hello.html)
+    
+    -   R4DS: [Chp 2 - Data visualization - Sections 2.1 and 2.4](https://r4ds.hadley.nz/data-visualize.html)
+        
+        
 -   If you haven't yet done so:
     -   Join the course Slack using the invitation link in your email.
 
     -   Complete the Getting to know you survey.
 
     -   Reserve a STA 198-199 container at <https://cmgr.oit.duke.edu/containers>.
+
+
+
