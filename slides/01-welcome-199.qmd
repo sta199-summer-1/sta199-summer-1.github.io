@@ -382,7 +382,7 @@ aes: describe how variables in the data are mapped to your canvas
 
 `+` "and"
 
-When working with ggplot functions, we will add to our canvus using `+`
+When working with ggplot functions, we will add to our canvas using `+`
 
 ## The process
 
