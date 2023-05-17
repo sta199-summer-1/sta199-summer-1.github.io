@@ -362,18 +362,39 @@
 <h2>Warm Up Questions</h2>
 <p>Why is the following code so important?</p>
 <ol type="1">
-<li class="fragment"><code>library(tidyverse)</code></li>
+<li class="fragment"><p><code>library(tidyverse)</code></p></li>
+<li class="fragment"><p>What word do we associate with <code>|&gt;</code> ?</p></li>
 </ol>
 </section>
-<section id="warm-up-questions-1" class="slide level2">
+<section id="warm-up-questions-1" class="slide level2 smaller">
 <h2>Warm Up Questions</h2>
 <p>Let’s practice reading code as a sentence</p>
-<p>Q1. | <code>mtcars |&gt;</code> | <code>ggplot(</code> | <code>aes(</code> | <code>x = mpg, y = wt)</code> | <code>)</code> + | <code>geom_point()</code></p>
-<p>Q2. | <code>mtcars |&gt;</code> | <code>summarize(med = median(wt))</code></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>x = mpg, y = wt)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code> +<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>geom_point()</code></p>
+<p>Q2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>summarize(med = median(wt))</code></p>
 </section>
-<section>
-<section id="geom-reference" class="title-slide slide level1 center">
-<h1>geom reference</h1>
+<section id="single-pipeline" class="slide level2">
+<h2>Single Pipeline</h2>
+<p>Goal: Calculate the mean weight of cards over 4000 lbs.</p>
+<p>Good:</p>
+<p>&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>filter(wt &gt; 4) |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>summarize(avg = mean(wt))</code></p>
+<p>Not as good:</p>
+<p>&nbsp;&nbsp;<code>large_cars &lt;- mtcars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>filter(wt &gt; 4)</code><br>
+<br>
+&nbsp;&nbsp;<code>large_cars |&gt;</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>summarize(avg = mean(wt))</code></p>
+</section>
+<section id="geom-reference" class="slide level2">
+<h2>geom reference</h2>
 <p>https://ggplot2.tidyverse.org/reference/</p>
 <p><strong>A geom is the geometrical object that a plot uses to represent data. People often describe plots by the type of geom that the plot uses. For example, bar charts use bar geoms, line charts use line geoms, boxplots use boxplot geoms, and so on. Scatterplots break the trend; they use the point geom.</strong></p>
 </section>
@@ -435,7 +456,7 @@
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="https://github.com/sta199-summer-1">🔗 sta199-summer-1.github.io</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

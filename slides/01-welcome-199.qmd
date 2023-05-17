@@ -92,7 +92,6 @@ Please share with your neighbors:
 -   Communication
 -   Respect
 
-
 ## Course objectives
 
 -   Learn to explore, visualize, and analyze data in a *reproducible* and *shareable* manner
@@ -161,22 +160,17 @@ During Class
 
 -   Warm up question
 
--   Mix of lecture and live coding 
+-   Mix of lecture and live coding
 
-
-## Website 
+## Website
 
 [sta199-summer-1.github.io/](https://sta199-summer-1.github.io/)
 
-
 # Course Website Tour
-
 
 # Slack Tour
 
-
 # Please bring your laptops if able
-
 
 ## Activities and assessments {.smaller}
 
@@ -190,14 +184,13 @@ During Class
 
 -   **Application Exercises:** Exercises worked on during the live lecture session.
 
-## Application Exercises 
+## Application Exercises
 
-- Are not graded for the first week
+-   Are not graded for the first week
 
-- Turned in on GitHub (You will have this ability after Lab-0)
+-   Turned in on GitHub (You will have this ability after Lab-0)
 
-- What is due is what we get through in-class 
-
+-   What is due is what we get through in-class
 
 ## Lab
 
@@ -215,9 +208,7 @@ During Class
 
 -   Introduction to Modern Statistics by Cetinkaya-Rundel & Hardin (1st ed. OpenIntro)
 
-
-# Questions? 
-
+# Questions?
 
 # Why learn the technology we do?
 
@@ -239,13 +230,13 @@ GitHub, Inc., is an Internet hosting service for software development and **vers
 
 ## What we need to do (5 min)
 
--- If you have not set up: 
+-- If you have not set up:
 
-- GitHub Account 
+-   GitHub Account
 
-- Slack Account 
+-   Slack Account
 
-- Reserved a Duke Container 
+-   Reserved a Duke Container
 
 ## Create a GitHub account {.smaller}
 
@@ -289,10 +280,9 @@ https://slack.com/get-started#/createnew
 
 -- Click Reserve Container for the STA198-199 container
 
-
 # To much talking.... let's take a break (10 min)
 
-# Meet The Tool-Kit + Data Visualization 
+# Meet The Tool-Kit + Data Visualization
 
 ## ae-01
 
@@ -306,7 +296,7 @@ https://slack.com/get-started#/createnew
 
 https://github.com/sta199-summer-1/ae-01-summer
 
-# R-Tour 
+# R-Tour
 
 ## Some R essentials
 
@@ -316,7 +306,7 @@ https://github.com/sta199-summer-1/ae-01-summer
 
 ## R essentials
 
--- **Packages** are installed with the install.packages function and loaded with the **library** function, once per session. 
+-- **Packages** are installed with the install.packages function and loaded with the **library** function, once per session.
 
 -- If you are using R through the container, almost all packages are already installed for you!
 
@@ -412,13 +402,13 @@ When working with ggplot functions, we will add to our canvas using `+`
 
 ![](images/04-Visualizing-various-types-of-data/paint.jpg){width="400" height="400" fig-align="center"}
 
-## Summary 
+## Summary
 
--- There area lot of moving parts in this course 
+-- There area lot of moving parts in this course
 
--- Coding is not learned in a day 
+-- Coding is not learned in a day
 
--- Ask questions often 
+-- Ask questions often
 
 -- What is version control? Why is it important?
 
@@ -426,5 +416,4 @@ When working with ggplot functions, we will add to our canvas using `+`
 
 -- What is Quarto?
 
--- Starting to work with code! 
-
+-- Starting to work with code!

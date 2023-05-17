@@ -1208,14 +1208,28 @@
     "href": "slides/Day2-Visualizing-various-types-of-data.html#warm-up-questions",
     "title": "Visualizing various types of data",
     "section": "Warm Up Questions",
-    "text": "Warm Up Questions\nWhy is the following code so important?\n\nlibrary(tidyverse)"
+    "text": "Warm Up Questions\nWhy is the following code so important?\n\nlibrary(tidyverse)\nWhat word do we associate with |> ?"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#warm-up-questions-1",
     "href": "slides/Day2-Visualizing-various-types-of-data.html#warm-up-questions-1",
     "title": "Visualizing various types of data",
     "section": "Warm Up Questions",
-    "text": "Warm Up Questions\nLet’s practice reading code as a sentence\nQ1. | mtcars |> | ggplot( | aes( | x = mpg, y = wt) | ) + | geom_point()\nQ2. | mtcars |> | summarize(med = median(wt))"
+    "text": "Warm Up Questions\nLet’s practice reading code as a sentence\n    mtcars |>\n        ggplot(\n        aes(\n             x = mpg, y = wt)\n               ) +\n        geom_point()\nQ2\n      mtcars |>\n          summarize(med = median(wt))"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#single-pipeline",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#single-pipeline",
+    "title": "Visualizing various types of data",
+    "section": "Single Pipeline",
+    "text": "Single Pipeline\nGoal: Calculate the mean weight of cards over 4000 lbs.\nGood:\n  mtcars |>\n      filter(wt > 4) |>\n      summarize(avg = mean(wt))\nNot as good:\n  large_cars <- mtcars |>\n        filter(wt > 4)\n\n  large_cars |>\n        summarize(avg = mean(wt))"
+  },
+  {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#geom-reference",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#geom-reference",
+    "title": "Visualizing various types of data",
+    "section": "geom reference",
+    "text": "geom reference\nhttps://ggplot2.tidyverse.org/reference/\nA geom is the geometrical object that a plot uses to represent data. People often describe plots by the type of geom that the plot uses. For example, bar charts use bar geoms, line charts use line geoms, boxplots use boxplot geoms, and so on. Scatterplots break the trend; they use the point geom."
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#we-can-make-plots.",

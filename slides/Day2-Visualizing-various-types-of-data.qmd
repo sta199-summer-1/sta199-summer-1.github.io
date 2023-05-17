@@ -60,11 +60,12 @@ Why is the following code so important?
 
 1. `library(tidyverse)`
 
-## Warm Up Questions
+2. What word do we associate with `|>` ?
+
+## Warm Up Questions{.smaller}
 
 Let's practice reading code as a sentence
 
-Q1. 
 |     `mtcars |>`
 |         `ggplot(`
 |         `aes(`
@@ -72,13 +73,32 @@ Q1.
 |                `)` +
 |         `geom_point()`
 
-Q2. 
+Q2
+
 |       `mtcars |>`
 |           `summarize(med = median(wt))`
 
 
 
-# geom reference
+## Single Pipeline 
+
+Goal: Calculate the mean weight of cards over 4000 lbs.
+
+Good: 
+
+|   `mtcars |>`
+|       `filter(wt > 4) |>`
+|       `summarize(avg = mean(wt))`
+
+Not as good: 
+
+|   `large_cars <- mtcars |>`
+|         `filter(wt > 4)`
+|  
+|   `large_cars |>` 
+|         `summarize(avg = mean(wt))`
+
+## geom reference
 
 https://ggplot2.tidyverse.org/reference/
 
