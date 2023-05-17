@@ -231,7 +231,7 @@ During Class
 
 -- You can take these skills with you
 
--   The language has grown significantly in popularity and is now used in a range of professions including software development, business analysis, statistical reporting and scientific research
+The language has grown significantly in popularity and is now used in a range of professions including software development, business analysis, statistical reporting and scientific research
 
 ## Create a GitHub account (Why?)
 
@@ -316,7 +316,9 @@ https://github.com/sta199-summer-1/ae-01-summer
 
 ## R essentials
 
--- **Packages** are installed with the install.packages function and loaded with the **library** function, once per session:
+-- **Packages** are installed with the install.packages function and loaded with the **library** function, once per session. 
+
+-- If you are using R through the container, almost all packages are already installed for you!
 
 ![](images/02-Meeting-the-toolkit/packages.png){width="900" height="100" fig-align="left"}
 
