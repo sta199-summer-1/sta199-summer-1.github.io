@@ -91,7 +91,7 @@ Please share with your neighbors:
 -   Community
 -   Communication
 -   Respect
--   Mindset 
+
 
 ## Course objectives
 
@@ -151,6 +151,7 @@ Example R Figures
 
 # Workflow
 
+
 ### Before Class
 
 -   Watch lecture content videos (will locate these during website tour)
@@ -163,15 +164,20 @@ Example R Figures
 
 -   Mix of lecture and live coding 
 
+
 ## Website 
 
 [sta199-summer-1.github.io/](https://sta199-summer-1.github.io/)
 
+
 # Course Website Tour
+
 
 # Slack Tour
 
+
 # Please bring your laptops if able
+
 
 ## Activities and assessments {.smaller}
 
