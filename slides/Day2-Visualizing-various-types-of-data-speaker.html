@@ -332,35 +332,17 @@
 
 </div>
 <p>– Go to https://github.com/sta199-summer-1/ae-02-summer and find your <code>ae-02-summer</code></p>
-<p>– If you don’t see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away</p>
 <p>– Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)</p>
+<p>– Have you filled out the Getting to know you survey?</p>
 <p>– Are you on Slack?</p>
+<p>– Prepare Material?</p>
 </section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
 <p>Due Dates + Turn In</p>
-<p>– All AEs are due Friday night by 11:59 - GitHub</p>
+<p>– All AEs are due the upcoming Friday night by 11:59 - GitHub</p>
 <p>– Labs due Thursday and Monday (before lecture)- Gradescope</p>
 <p>– HWs due ~ 1 week from assigned - Gradescope</p>
-</section>
-<section id="how-to-turn-aes-via-github" class="slide level2">
-<h2>How to turn AE’s via Github</h2>
-<p>AEs will be graded via Week 2</p>
-<p>– render, commit, and push</p>
-<ol type="1">
-<li class="fragment"><p>If you made any changes since the last render, render again to get the final version of the AE.</p></li>
-<li class="fragment"><p>Check the box next to each document in the Git tab (this is called “staging” the changes). Commit the changes you made using an simple and informative message.</p></li>
-<li class="fragment"><p>Use the <strong>green arrow</strong> to push your changes to your repo on GitHub.</p></li>
-<li class="fragment"><p>Check your repo on GitHub and see the updated files. Once your updated files are in your repo on GitHub, you’re good to go!</p></li>
-</ol>
-</section>
-<section id="how-to-turn-aes-via-github-1" class="slide level2">
-<h2>How to turn AE’s via Github</h2>
-<p>– ae-01 Demo</p>
-</section>
-<section id="announcements-1" class="slide level2">
-<h2>Announcements</h2>
-<p>– Prepare Material</p>
 </section>
 <section id="goals-for-today" class="slide level2">
 <h2>Goals for today</h2>
@@ -376,62 +358,18 @@
 <p>– Axes should be labeled</p>
 <p>– Careful consideration of aesthetic choices (like color)</p>
 </section>
-<section id="the-process-a-warm-up" class="slide level2">
-<h2>The process (A Warm Up)</h2>
-<p>You have a data set you want to work with…</p>
-<p><code>mtcars</code></p>
+<section id="warm-up-questions" class="slide level2">
+<h2>Warm Up Questions</h2>
+<p>Why is the following code so important?</p>
+<ol type="1">
+<li class="fragment"><code>library(tidyverse)</code></li>
+</ol>
 </section>
-<section id="the-process-a-warm-up-1" class="slide level2">
-<h2>The process (A Warm Up)</h2>
-<p>What does the following code below achieve?</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot()</code></p>
-</section>
-<section id="the-process-a-warm-up-2" class="slide level2">
-<h2>The process (A Warm Up)</h2>
-<p>This code sets up our canvas to create!</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot()</code></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/04-Visualizing-various-types-of-data/canvas.jpg" width="400" height="400"></p>
-</figure>
-</div>
-</section>
-<section id="the-process-a-warm-up-3" class="slide level2">
-<h2>The process (A Warm Up)</h2>
-<p>What does the following code below achieve?</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>x = variable.name, y = variable.name)</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code></p>
-</section>
-<section id="the-process-a-warm-up-4" class="slide level2">
-<h2>The process (A Warm Up)</h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>x = variable.name, y = variable.name)</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code></p>
-<p>aes: describe how variables in the data are mapped to your canvas</p>
-</section>
-<section id="the-process-warm-up" class="slide level2">
-<h2>The process (Warm Up)</h2>
-<p>What does the following code below achieve?</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>mtcars |&gt;</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>ggplot(</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>aes(</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>x = variable.name, y = variable.name)</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>)</code> +<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>geom_point()</code></p>
-</section>
-<section id="the-variables-dictate-the-plot" class="slide level2">
-<h2>The variables dictate the plot</h2>
-<p>– Two quantitative variables</p>
-<p>– One quantitative variable</p>
-<p>– One categorical variable</p>
-<p>– Two categorical variables</p>
+<section id="warm-up-questions-1" class="slide level2">
+<h2>Warm Up Questions</h2>
+<p>Let’s practice reading code as a sentence</p>
+<p>Q1. | <code>mtcars |&gt;</code> | <code>ggplot(</code> | <code>aes(</code> | <code>x = mpg, y = wt)</code> | <code>)</code> + | <code>geom_point()</code></p>
+<p>Q2. | <code>mtcars |&gt;</code> | <code>summarize(med = median(wt))</code></p>
 </section>
 <section>
 <section id="geom-reference" class="title-slide slide level1 center">

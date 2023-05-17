@@ -15,43 +15,24 @@ library(countdown)
 
 -- Go to https://github.com/sta199-summer-1/ae-02-summer and find your `ae-02-summer`
 
--- If you don't see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away
-
 -- Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)
 
+-- Have you filled out the Getting to know you survey?
+
 -- Are you on Slack?
+
+-- Prepare Material? 
 
 ## Announcements
 
 Due Dates + Turn In
 
--- All AEs are due Friday night by 11:59 - GitHub
+-- All AEs are due the upcoming Friday night by 11:59 - GitHub
 
 -- Labs due Thursday and Monday (before lecture)- Gradescope
 
 -- HWs due ~ 1 week from assigned - Gradescope
 
-## How to turn AE's via Github 
-
-AEs will be graded via Week 2
-
--- render, commit, and push
-
-1.  If you made any changes since the last render, render again to get the final version of the AE.
-
-2.  Check the box next to each document in the Git tab (this is called "staging" the changes). Commit the changes you made using an simple and informative message.
-
-3.  Use the **green arrow** to push your changes to your repo on GitHub.
-
-4.  Check your repo on GitHub and see the updated files. Once your updated files are in your repo on GitHub, you're good to go!
-
-## How to turn AE's via Github 
-
--- ae-01 Demo
-
-## Announcements
-
--- Prepare Material
 
 ## Goals for today
 
@@ -73,76 +54,29 @@ Create plots!
 
 -- Careful consideration of aesthetic choices (like color)
 
-## The process (A Warm Up)
+## Warm Up Questions
 
-You have a data set you want to work with...
+Why is the following code so important?
 
-`mtcars`
+1. `library(tidyverse)`
 
-## The process (A Warm Up)
+## Warm Up Questions
 
-What does the following code below achieve? 
+Let's practice reading code as a sentence
 
-|     `mtcars |>`
-|         `ggplot()`
-
-
-## The process (A Warm Up)
-
-This code sets up our canvas to create!
-
-|     `mtcars |>`
-|         `ggplot()`
-
-![](images/04-Visualizing-various-types-of-data/canvas.jpg){width="400" height="400" fig-align="center"}
-
-
-## The process (A Warm Up)
-
-What does the following code below achieve? 
-
+Q1. 
 |     `mtcars |>`
 |         `ggplot(`
 |         `aes(`
-|              `x = variable.name, y = variable.name)`
-|                `)`
-
-
-
-## The process (A Warm Up)
-
-
-|     `mtcars |>`
-|         `ggplot(`
-|         `aes(`
-|              `x = variable.name, y = variable.name)`
-|                `)`
-
-aes: describe how variables in the data are mapped to your canvas
-
-
-## The process (Warm Up)
-
-What does the following code below achieve? 
-
-|     `mtcars |>`
-|         `ggplot(`
-|         `aes(`
-|              `x = variable.name, y = variable.name)`
+|              `x = mpg, y = wt)`
 |                `)` +
 |         `geom_point()`
 
+Q2. 
+|       `mtcars |>`
+|           `summarize(med = median(wt))`
 
 
-## The variables dictate the plot
-
--- Two quantitative variables
-
--- One quantitative variable
-
--- One categorical variable
-
--- Two categorical variables
 
 # geom reference
 

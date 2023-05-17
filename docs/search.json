@@ -1180,35 +1180,14 @@
     "href": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
     "title": "Visualizing various types of data",
     "section": "Checklist",
-    "text": "Checklist\n\n\n\n– Go to https://github.com/sta199-summer-1/ae-02-summer and find your ae-02-summer\n– If you don’t see it, you did not fill out the Getting to Know you Survey; Talk to me after class so we can get you squared away\n– Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)\n– Are you on Slack?"
+    "text": "Checklist\n\n\n\n– Go to https://github.com/sta199-summer-1/ae-02-summer and find your ae-02-summer\n– Clone the repo in your container, open the Quarto document in the repo (as we did with ae-01)\n– Have you filled out the Getting to know you survey?\n– Are you on Slack?\n– Prepare Material?"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#announcements",
     "href": "slides/Day2-Visualizing-various-types-of-data.html#announcements",
     "title": "Visualizing various types of data",
     "section": "Announcements",
-    "text": "Announcements\nDue Dates + Turn In\n– All AEs are due Friday night by 11:59 - GitHub\n– Labs due Thursday and Monday (before lecture)- Gradescope\n– HWs due ~ 1 week from assigned - Gradescope"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github",
-    "title": "Visualizing various types of data",
-    "section": "How to turn AE’s via Github",
-    "text": "How to turn AE’s via Github\nAEs will be graded via Week 2\n– render, commit, and push\n\nIf you made any changes since the last render, render again to get the final version of the AE.\nCheck the box next to each document in the Git tab (this is called “staging” the changes). Commit the changes you made using an simple and informative message.\nUse the green arrow to push your changes to your repo on GitHub.\nCheck your repo on GitHub and see the updated files. Once your updated files are in your repo on GitHub, you’re good to go!"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github-1",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#how-to-turn-aes-via-github-1",
-    "title": "Visualizing various types of data",
-    "section": "How to turn AE’s via Github",
-    "text": "How to turn AE’s via Github\n– ae-01 Demo"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#announcements-1",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#announcements-1",
-    "title": "Visualizing various types of data",
-    "section": "Announcements",
-    "text": "Announcements\n– Prepare Material"
+    "text": "Announcements\nDue Dates + Turn In\n– All AEs are due the upcoming Friday night by 11:59 - GitHub\n– Labs due Thursday and Monday (before lecture)- Gradescope\n– HWs due ~ 1 week from assigned - Gradescope"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#goals-for-today",
@@ -1225,53 +1204,18 @@
     "text": "Tips and Tricks\n– Let the types of variables dictate the plot\n– Informative title\n– Axes should be labeled\n– Careful consideration of aesthetic choices (like color)"
   },
   {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up",
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#warm-up-questions",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#warm-up-questions",
     "title": "Visualizing various types of data",
-    "section": "The process (A Warm Up)",
-    "text": "The process (A Warm Up)\nYou have a data set you want to work with…\nmtcars"
+    "section": "Warm Up Questions",
+    "text": "Warm Up Questions\nWhy is the following code so important?\n\nlibrary(tidyverse)"
   },
   {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-1",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-1",
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#warm-up-questions-1",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#warm-up-questions-1",
     "title": "Visualizing various types of data",
-    "section": "The process (A Warm Up)",
-    "text": "The process (A Warm Up)\nWhat does the following code below achieve?\n    mtcars |>\n        ggplot()"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-2",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-2",
-    "title": "Visualizing various types of data",
-    "section": "The process (A Warm Up)",
-    "text": "The process (A Warm Up)\nThis code sets up our canvas to create!\n    mtcars |>\n        ggplot()"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-3",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-3",
-    "title": "Visualizing various types of data",
-    "section": "The process (A Warm Up)",
-    "text": "The process (A Warm Up)\nWhat does the following code below achieve?\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               )"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-4",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-a-warm-up-4",
-    "title": "Visualizing various types of data",
-    "section": "The process (A Warm Up)",
-    "text": "The process (A Warm Up)\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               )\naes: describe how variables in the data are mapped to your canvas"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-process-warm-up",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-process-warm-up",
-    "title": "Visualizing various types of data",
-    "section": "The process (Warm Up)",
-    "text": "The process (Warm Up)\nWhat does the following code below achieve?\n    mtcars |>\n        ggplot(\n        aes(\n             x = variable.name, y = variable.name)\n               ) +\n        geom_point()"
-  },
-  {
-    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#the-variables-dictate-the-plot",
-    "href": "slides/Day2-Visualizing-various-types-of-data.html#the-variables-dictate-the-plot",
-    "title": "Visualizing various types of data",
-    "section": "The variables dictate the plot",
-    "text": "The variables dictate the plot\n– Two quantitative variables\n– One quantitative variable\n– One categorical variable\n– Two categorical variables"
+    "section": "Warm Up Questions",
+    "text": "Warm Up Questions\nLet’s practice reading code as a sentence\nQ1. | mtcars |> | ggplot( | aes( | x = mpg, y = wt) | ) + | geom_point()\nQ2. | mtcars |> | summarize(med = median(wt))"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#we-can-make-plots.",
