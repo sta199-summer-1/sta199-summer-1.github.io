@@ -1,0 +1,134 @@
+---
+title: "Quarto & R Demo"
+subtitle: "Suggested Answers"
+format: html
+---
+
+## Quarto is great
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Render
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. Note: if something is wrong with your code, your document will not render.
+
+## Showing the Margin
+
+It is not professional to have your code run off the page. We are going to have R display the margin so we can avoid this in our rendered documents!
+
+1.  Go to Tools
+2.  Global Options
+3.  Click Code
+4.  Click Display
+5.  Click Show Margin (Should have 80 margin column)
+
+Notice the line appear? It may be faint, but it's important. If your code (not writing) goes beyond this, it will appear off the page causing you to lose points on assignments (and your document will look sloppy).
+
+## Packages for class
+
+```{r}
+library(tidyverse)
+```
+
+What is a package? Why is it important we library packages?
+
+Packages in R have a lot of different functions that we want to use!
+
+The term library = unpack! This tells R we want to use the functions inside the packages
+
+## How to take notes for class
+
+-- These AEs are for YOU
+
+-- Use \# within a code chunk to comment codes
+
+-- Scratch paper
+
+## mtcars
+
+For the remainder of the class, we will use the `mtcars` data set. This is a prebuilt data set in R. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973--74 models).
+
+To see more about these data, please visit here: https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars
+
+-   Take a glimpse of the data set using the `glimpse` function in R
+
+Before we use this function, run `?glimpse` in the console below. What happens?
+
+```{r}
+
+glimpse(mtcars)
+
+```
+
+You can run code in a few different ways. You can click the green arrow in the code chunk; use a keyboard short cut (Ctrl+Enter for PC; Cmd+Return for Mac). For a list of other keyboard shortcuts, please visit the following: https://support.posit.co/hc/en-us/articles/200711853-Keyboard-Shortcuts-in-the-RStudio-IDE
+
+I HIGHLY suggest using the posted cheat sheets throughout the session linked [here](https://sta199-summer-1.github.io/computing-cheatsheets.html). Before answering the next question, please follow the link and download the `dplyr` cheat sheet (top right).
+
+-   Now, filter out the any cars who weigh more than 4000 lbs *in a single pipeline*. Note, wt is input in 1000s of lbs in the data set.
+
+Things to note:
+
+-   What is our data set name?
+
+**mtcars**
+
+-   What is our variable?
+
+**wt**
+
+-   What is our objective?
+
+\*Remove cars that are more than 4000 lbs\*\*
+
+```{r}
+
+mtcars |> 
+  filter(wt > 4)
+
+```
+
+What does "in a single pipeline" mean?
+
+**No "breaks" in our code**
+
+-   Notice how the data were not overwritten by running `mtcars` in the console.
+
+Now, filter out the any cars who weigh more than 4000 lbs and save the new data set named `large_cars`.
+
+```{r}
+
+large_cars <- mtcars |>
+  filter(wt > 4)
+
+```
+
+-   Using your new data set, take the mean weight of cars using the `summarise` function. Report the mean below. Hint, look up the help file to the function, and scroll down to the examples. You are also encouraged to use the cheat sheet.
+
+```{r}
+
+large_cars |> 
+  summarise(avg = mean(wt))
+
+```
+
+## Let's make a plot!
+
+A large part of this course is going to focus on data visualization. Today we are going to make our first plot in R. You are encouraged to download the ggplot cheat sheet (top left). Additionally, we will be using this resource: https://ggplot2.tidyverse.org/reference/
+
+Let's make a plot of `mpg`. What are some plots that would be appropriate to create?
+
+**We could make a boxplot! Or a histogram.**
+
+## First Plot
+
+Let's walk through the steps to create a boxplot. For this exercise, we will use the `mtcars` data set.
+
+```{r}
+
+mtcars |>
+  ggplot(
+    aes(x = mpg)
+  ) + 
+  geom_boxplot()
+
+```
