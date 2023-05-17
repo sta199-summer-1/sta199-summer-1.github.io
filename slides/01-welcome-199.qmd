@@ -149,16 +149,15 @@ Example R Figures
 <font size="120"> **This is a new language** </font>
 :::
 
-# Workflow
+## Workflow
 
-
-### Before Class
+Before Class
 
 -   Watch lecture content videos (will locate these during website tour)
 
 -   Clone the application exercise (can be done right before class; we will practice this today)
 
-### During Class
+During Class
 
 -   Warm up question
 
