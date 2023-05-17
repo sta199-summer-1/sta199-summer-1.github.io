@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resouces:
-    - sta199-s23-2-syllabus.pdf #need to update
+    - sta199-summer-1-syllabus #need to update
 
 website:
   page-navigation: true
