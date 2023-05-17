@@ -131,6 +131,12 @@ How spread out things are...
 
 -- IQR
 
+## Useful function of the day 
+
+`names()`
+
+There are many ways we can extract variable names from our data set. I find myself using this a lot in practice.
+
 ## ae-02-s23
 
 These data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license ("No Rights Reserved") in accordance with the Palmer Station Data Policy.

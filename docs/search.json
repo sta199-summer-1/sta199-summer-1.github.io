@@ -1260,6 +1260,13 @@
     "text": "Spread (More Coming Later!)\nHow spread out things are…\n– Standard deviation\n– IQR"
   },
   {
+    "objectID": "slides/Day2-Visualizing-various-types-of-data.html#useful-function-of-the-day",
+    "href": "slides/Day2-Visualizing-various-types-of-data.html#useful-function-of-the-day",
+    "title": "Visualizing various types of data",
+    "section": "Useful function of the day",
+    "text": "Useful function of the day\nnames()\nThere are many ways we can extract variable names from our data set. I find myself using this a lot in practice."
+  },
+  {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
     "href": "slides/Day2-Visualizing-various-types-of-data.html#ae-02-s23",
     "title": "Visualizing various types of data",
