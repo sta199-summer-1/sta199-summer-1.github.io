@@ -1040,7 +1040,7 @@
     "href": "slides/01-welcome-199.html#summary",
     "title": "Welcome to STA 199",
     "section": "Summary",
-    "text": "Summary\n– There area lot of moving parts in this course\n– Coding is not learned in a day\n– Ask questions often\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n– Starting to work with code!\n\n\n\n🔗 sta199-s23-2.github.io"
+    "text": "Summary\n– There area lot of moving parts in this course\n– Coding is not learned in a day\n– Ask questions often\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n– Starting to work with code!\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/02-Meet-the-toolkit.html#checklist",
@@ -1166,7 +1166,7 @@
     "href": "slides/02-Meet-the-toolkit.html#wrap-up",
     "title": "R Intro",
     "section": "Wrap up",
-    "text": "Wrap up\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n\n\n\n🔗 sta199-s23-2.github.io"
+    "text": "Wrap up\n– What is version control? Why is it important?\n– What is R vs RStudio?\n– What is Quarto?\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
@@ -1320,7 +1320,7 @@
     "href": "slides/Day2-Visualizing-various-types-of-data.html#recap-of-ae",
     "title": "Visualizing various types of data",
     "section": "Recap of AE",
-    "text": "Recap of AE\n\nPick geoms based on data types.\nManipulate graphs to be more appropriate with arguments\nTake control of your labels\nUse color to your advantage. https://ggplot2.tidyverse.org/reference/ggtheme.html & https://ggplot2.tidyverse.org/reference/scale_viridis.html\n\n\n\n\n🔗 sta199-s23-2.github.io"
+    "text": "Recap of AE\n\nPick geoms based on data types.\nManipulate graphs to be more appropriate with arguments\nTake control of your labels\nUse color to your advantage. https://ggplot2.tidyverse.org/reference/ggtheme.html & https://ggplot2.tidyverse.org/reference/scale_viridis.html\n\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/lab-0-slides.html#introductions",
@@ -1362,7 +1362,7 @@
     "href": "slides/lab-0-slides.html#remember",
     "title": "Welcome to Lab",
     "section": "Remember",
-    "text": "Remember\nNo programming experience is required or expected to take this class. Come to lecture, lab and office hours. It’s okay to be confused. Stick with it, you will get the hang of it!\n\n\n\n🔗 sta199-s23-2.github.io"
+    "text": "Remember\nNo programming experience is required or expected to take this class. Come to lecture, lab and office hours. It’s okay to be confused. Stick with it, you will get the hang of it!\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "workflow_formatting.html",
