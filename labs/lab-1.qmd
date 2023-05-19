@@ -6,7 +6,7 @@ execute:
 ---
 
 ::: callout-important
-This lab is due Friday, January 27 at 11:59pm ET.
+This lab is due Thursday, May 25th at 11:59pm ET.
 :::
 
 # Learning goals
@@ -18,7 +18,7 @@ In this lab, you will...
 
 # Getting started
 
--   Go to the [**sta199-s23-2**](https://www.github.com/sta199-s23-2) organization on GitHub. Click on the repo with the prefix **lab-01**. It contains the starter documents you need to complete the lab.
+-   Go to the [**sta199-summer-1**](https://github.com/sta199-summer-1) organization on GitHub. Click on the repo with the prefix **lab-01**. It contains the starter documents you need to complete the lab.
 
 -   Clone the repo and start a new project in RStudio. See the [Lab 0 instructions](https://sta199-s23-2.github.io/labs/lab-0.html#clone-the-repo-start-new-rstudio-project) for details on cloning a repo and starting a new R project.
 
