@@ -1,0 +1,170 @@
+---
+title: "Data Viz + Data Wrangling"
+subtitle: "Day 3"
+date: "May 22nd"
+format: revealjs
+---
+
+## Checklist
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+-- Clone ae-03-summer-your-user-name using the SSH key
+
+Note: if you do not see an ae-03 specifically for you, you have not accepted your org invite
+
+
+## Announcements 
+
+-- AE's are being graded: We will demo how to turn AE's in today
+
+-- Keep up to date with Slack
+
+
+## Goals for today
+
+-- Finish off data visualization
+
+-- Introduce `dplyr` functions
+
+-- Continue R practice 
+
+## Warm up
+
+Identify which plot each`geom` creates 
+
+-- `geom_point()`
+
+-- `geom_density()`
+
+-- `geom_boxplot()`
+
+-- `geom_bar()`
+
+
+## Warm Up #2 
+
+What is the difference beweteen `|>` and `+` ? 
+
+## Warm Up #3 
+
+|`penguins |>`
+|  `ggplot(` 
+|       `aes(x = body_mass_g, fill = species )) +`
+|       `geom_histogram(binwidth = 200, alpha = 0.3)`
+
+# Types of variables 
+
+## Types of variables 
+
+Type is how an object is stored in memory.
+
+-- `glimpse` is a great way to check data types 
+
+-- Can also use `typeof()`
+
+## Examples 
+
+-- `glimpse(mtcars)`
+
+-- `typeof(mtcars$mpg)`
+
+## Types of variables 
+
+Some of the types of variables include: 
+
+-- "logical" 
+
+-- "integer" 
+
+-- "double" 
+
+-- "character" 
+
+-- "factor"
+
+## logical 
+
+-- `logi` in `glimpse`
+
+-- The logical data type in R is also known as boolean data type. It can only have two values: TRUE and FALSE. <br>
+
+-- `as.logical` can turn a variable into a logical. `False` = 0; `True` everything else
+
+## integer 
+
+-- `int` in `glimpse` 
+
+-- Integers are whole numbers (those numbers without a decimal point)
+
+-- `as.integer` can turn a double into an integer. Forces 22.8 -> 22. 
+
+## double 
+
+-- `dbl` in `glimpse`
+
+-- Real numbers (can include decimals)
+
+-- `as.double`can force a column to be a double. Identical to `as.numeric`. 
+
+## character 
+
+-- `chr` in `glimpse`
+
+-- Character string (text)
+
+-- `as.character` attempts to coerce its argument to character type
+
+## factor
+
+-- `fct` in `glimpse`
+
+-- Factor in R is also known as a categorical variable that stores both string and integer data values as **levels**.
+
+-- `factor` attempts to coerce its argument to factor type
+
+## Why this matters 
+
+-- Plotting 
+
+-- Summary statistics 
+
+## General takeaways 
+
+-- Can you identify variable types 
+
+-- Often need to turn something into a factor to make it categorical 
+
+-- Often need to turn something into a double (numeric) to make it quantitative 
+
+# More on this later
+
+## Today's live coding topic (Data Manipulation)
+
+![](images/messydata.png){fig-align="center"}
+
+## Data Manipulation 
+
+-- Want to subset 
+
+-- Want to manipulate 
+
+-- Want to create 
+
+... from data 
+
+# ae-03
+
+## Wrap up 
+
+-- Data types matter. Get in the habit of checking them at the beginning of analysis 
+
+-- Have the tools to create new variables, calculate summary statistics, etc. that accompany strong visualizations 
+
+-- Have the tools to manipulate data to be in a more usable format
+
+
