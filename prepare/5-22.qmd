@@ -1,6 +1,6 @@
 ---
 title: "Prepare"
-subtitle: "Due: January 20"
+subtitle: "Due: May 22nd"
 categories: "prepare"
 ---
 
@@ -10,9 +10,15 @@ categories: "prepare"
     -   IMS: [Chp 4 - Exploring categorical data](https://openintro-ims.netlify.app/explore-categorical.html)
     -   IMS: [Chp 5 - Exploring numerical data](https://openintro-ims.netlify.app/explore-numerical.html)
     -   [R-Code Style Guide](https://style.tidyverse.org/ggplot2.html)
--   Watch:
+    
+    -   IMS: [R4DS: Chp 4 - Data transformation](https://r4ds.hadley.nz/data-transform.html)
+
+
+-   ⌨️ Watch:
     -   [Visualizing numerical data](https://youtu.be/waBabVTI8ec)
     -   [Visualizing categorical data](https://youtu.be/21h3rEO8k2E)
+    -   [Grammar of data wrangling](https://www.youtube.com/watch?v=ZCaYBES_VEk)
+    -   [Working with a single data frame](https://www.youtube.com/watch?v=0229Uq2hkJo)
+
 
 ::: callout-note Videos use the "old school" pipe (%\>%) but we'll be using the newer (\|\>) pipe operator in class. :::
-
