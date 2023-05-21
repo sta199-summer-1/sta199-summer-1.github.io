@@ -1,8 +1,7 @@
 ---
 title: "Geom AE"
 subtitle: "Suggested Answers"
-author: "[INSERT NAME]"
-format: pdf
+format: html
 editor: visual
 ---
 
@@ -200,7 +199,7 @@ penguins |>
 
 In 1-2 sentences, describe what you see in the plot you created.
 
-*Add Response*
+*Can comment on center and skew of each distribution*
 
 6.  We need to think critically about color when thinking about creating visualizations for a larger audience: https://ggplot2.tidyverse.org/reference/scale_viridis.html
 
@@ -244,5 +243,4 @@ penguins |>
 
 This is a good time to practice with `size`. Remove `scale_colour_viridis_c()` and change `color =` to `size =`. What changed?
 
-**Add Response**
-
+**We now see the size of the points change by flipper length instead of being colored by flipper length**
