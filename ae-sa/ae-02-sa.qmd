@@ -1,0 +1,248 @@
+---
+title: "Geom AE"
+subtitle: "Suggested Answers"
+author: "[INSERT NAME]"
+format: pdf
+editor: visual
+---
+
+For this ae, we'll use the **tidyverse** and **palmerpenguins** packages.
+
+These data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license ("No Rights Reserved") in accordance with the Palmer Station Data Policy.
+
+## Packages
+
+```{r}
+#| label: load-packages
+#| warning: false
+#| message: false
+#| eval: true
+
+
+library(tidyverse)
+library(palmerpenguins)
+#The data set name is penguins
+```
+
+What are the `#|` above?
+
+*Code chunk arguments*
+
+Which ones will we use during the semester? State and define them below.
+
+label message warnings echo eval
+
+Why label? Makes navigation and referencing code easier.
+
+But sometimes, they can cause issues..... render your document and read the error. Why won't the document render?
+
+## Data
+
+The dataset we will visualize is called `penguins`. Let's `glimpse()` at it. Also let's practice using the useful function of the day `names()` on our data set.
+
+```{r}
+#| label: glimpse
+
+glimpse(penguins)
+names(penguins)
+
+```
+
+# Visualizing penguin weights - Demo
+
+## Useful links:
+
+https://ggplot2.tidyverse.org/reference/
+
+Don't forget about your ggplot cheetsheet as well!
+
+## Single variable
+
+::: callout-note
+Analyzing the a single variable is called **univariate** analysis.
+:::
+
+Create visualizations of the distribution of `weight`s of penguins.
+
+Before making a visualization of penguins' weight, let's brainstorm what types of would and would not be appropriate. Indicate Yes or No next to each. If no, suggest when it would be appropriate to make such a plot.
+
+-   Scatterplot? N
+-   Histogram? Y
+-   Boxplot? Y
+-   Bar plot? N
+-   Segmented Bar plot? N
+
+------------------------------------------------------------------------
+
+# Live Coding Questions
+
+1.  Make a histogram by filling in the `...` with the appropriate arguments. Set an appropriate binwidth. Once you have the correct code, delete `#| eval: false` or change false to true
+
+```{r}
+#| label: histogram-weight
+#| eval: false
+
+penguins |>
+  ggplot( 
+       aes(x = body_mass_g)) + #type variable name here
+       geom_histogram() #type geom here
+
+```
+
+Describe the shape of this distribution below..
+
+***Evidence of being right skewed***
+
+2.  Now, make a boxplot of `weight`s of penguins.
+
+```{r}
+#| label: boxplot-weight
+
+penguins |>
+  ggplot(
+    aes(x = body_mass_g)
+  ) + 
+  geom_boxplot()
+
+```
+
+What does this visualization tell you about penguins' weight?
+
+*Median close to 4000g*
+
+3.  Add a theme to your boxplot!
+
+https://ggplot2.tidyverse.org/reference/ggtheme.html
+
+```{r}
+#| label: theme
+
+penguins |>
+  ggplot(
+    aes(x = body_mass_g)) + 
+    geom_boxplot() + 
+    theme_bw() +
+    labs(x = "Body Mass in grams",
+         title = "This is my title",
+         subtitle = "Be more creative",
+         caption = "penguins data")
+
+
+```
+
+Why can / should we use themes?
+
+*Make plots more professional + add color*
+
+Now, let's take control of our labels. Using the ggplot cheet sheet, reference the `Labels and Legends` column. Add some labels to your plot above.
+
+## Two variables
+
+::: callout-note
+Analyzing the relationship between two variables is called **bivariate** analysis.
+:::
+
+What if we want to make side by side boxplots to look at body mass across species? Do so below...
+
+```{r}
+#| label: side-by-side
+
+penguins |>
+  ggplot(
+    aes(x = species, y = body_mass_g)
+  ) + 
+  geom_boxplot()
+
+```
+
+We can do more in the aesthetics then specify x and y variables. Note: `aes`thetic is a visual property of one of the objects in your plot. Aesthetic options are:
+
+-   shape
+-   color
+-   size
+-   fill
+
+Below, we are going to practice with each of these options.
+
+4.  Make a histogram of penguins' weight where the bars are filled in by species type. Set an appropriate binwidth and alpha value. At the same time, comment each line of code to articulate what it's doing.
+
+```{r}
+#| label: histogram-weight-species
+
+penguins |>
+  ggplot( 
+       aes(x = body_mass_g, fill = species )) +
+       geom_histogram(binwidth = 200, alpha = 0.3)
+
+
+```
+
+-   What happens when we change fill to color?
+
+-   What happens when we change fill to shape?
+
+-   What happens when you change the binwidth?
+
+-   What happens when you change alpha?
+
+5.  What if we don't want the overlap? We can use `facet_wrap` to split the histograms apart! This function takes the name of the variable you want to split by, and how many cols/rows you want your plots to show up in. Run `?facet_wrap` in your console and read the first two arguments of the function. Then, use facet_wrap to split the histograms apart!
+
+```{r}
+#| label: facet
+
+penguins |>
+  ggplot( 
+       aes(x = body_mass_g, fill = species )) +
+       geom_histogram(binwidth = 200, alpha = .7) +
+       facet_wrap(~species, ncol = 2)
+       
+```
+
+In 1-2 sentences, describe what you see in the plot you created.
+
+*Add Response*
+
+6.  We need to think critically about color when thinking about creating visualizations for a larger audience: https://ggplot2.tidyverse.org/reference/scale_viridis.html
+
+We will do more with colors throughout the semester. Think about this is as our first introduction. We can create a colorblind friendly pallet using `scale_colour_viridis_d() or scale_colour_viridis_c()` depending on the type of variable we are working with. Below, comment the code below to describe what it's doing:
+
+```{r}
+#| label: color-demo
+
+p <- penguins |> # this is the data set | we are saving this plot as object p
+  ggplot( #this sets up my plot
+    aes(x = body_mass_g, y = bill_length_mm , color = species)
+  ) + 
+    geom_point() 
+
+
+p
+
+p + scale_colour_viridis_d()
+
+```
+
+Change the above code to say `scale_colour_viridis_c()`. Does the code run? Why or why not?
+
+*Because species is categorical*
+
+Let's get practice using `scale_colour_viridis_c()`. Below, create a scatterplot between bill_length and bill_depth. Color the dots of the scatterplot by the penguins flipper length. Use `scale_colour_viridis_c()` to create a colorblind friendly pallet.
+
+Hint: if you create points, give it a color, not a fill. In general fill changes the color within shapes, and color changes the outline. However, default points are not considered shapes.
+
+```{r}
+
+penguins |> 
+  ggplot(
+    aes(x = bill_length_mm, y = bill_depth_mm, color = flipper_length_mm )
+  ) + 
+  geom_point() + 
+  scale_colour_viridis_c()
+  
+
+```
+
+This is a good time to practice with `size`. Remove `scale_colour_viridis_c()` and change `color =` to `size =`. What changed?
+
+**Add Response**
+
