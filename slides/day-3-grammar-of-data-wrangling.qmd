@@ -159,6 +159,17 @@ am: Transmission (0 = automatic; 1 = manual)
 
 ... from data
 
+## Function of the day (saw on lab-0)
+
+Themes are a powerful way to customize the non-data components of your plots: i.e. titles, labels, fonts, background, gridlines, and legends. 
+
+`theme()`
+
+-- https://ggplot2.tidyverse.org/reference/theme.html
+
+-- I often use it for legend manipulation... but there is so much more!
+
+
 # ae-03
 
 ## Wrap up

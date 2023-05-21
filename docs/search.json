@@ -1414,6 +1414,13 @@
     "text": "Data Manipulation\n– Want to subset\n– Want to manipulate\n– Want to create\n… from data"
   },
   {
+    "objectID": "slides/day-3-grammar-of-data-wrangling.html#function-of-the-day-saw-on-lab-0",
+    "href": "slides/day-3-grammar-of-data-wrangling.html#function-of-the-day-saw-on-lab-0",
+    "title": "Data Viz + Data Wrangling",
+    "section": "Function of the day (saw on lab-0)",
+    "text": "Function of the day (saw on lab-0)\nThemes are a powerful way to customize the non-data components of your plots: i.e. titles, labels, fonts, background, gridlines, and legends.\ntheme()\n– https://ggplot2.tidyverse.org/reference/theme.html\n– I often use it for legend manipulation… but there is so much more!"
+  },
+  {
     "objectID": "slides/day-3-grammar-of-data-wrangling.html#wrap-up",
     "href": "slides/day-3-grammar-of-data-wrangling.html#wrap-up",
     "title": "Data Viz + Data Wrangling",
