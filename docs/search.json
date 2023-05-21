@@ -1383,7 +1383,14 @@
     "href": "slides/day-3-grammar-of-data-wrangling.html#why-this-matters",
     "title": "Data Viz + Data Wrangling",
     "section": "Why this matters",
-    "text": "Why this matters\n– Plotting\n– Summary statistics"
+    "text": "Why this matters\nam: Transmission (0 = automatic; 1 = manual)"
+  },
+  {
+    "objectID": "slides/day-3-grammar-of-data-wrangling.html#why-this-matters-1",
+    "href": "slides/day-3-grammar-of-data-wrangling.html#why-this-matters-1",
+    "title": "Data Viz + Data Wrangling",
+    "section": "Why this matters",
+    "text": "Why this matters\n– Functions\n– Plotting\n– Summary statistics"
   },
   {
     "objectID": "slides/day-3-grammar-of-data-wrangling.html#general-takeaways",

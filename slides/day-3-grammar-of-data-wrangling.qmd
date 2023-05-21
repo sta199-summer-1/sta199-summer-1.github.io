@@ -17,13 +17,11 @@ library(countdown)
 
 Note: if you do not see an ae-03 specifically for you, you have not accepted your org invite
 
-
-## Announcements 
+## Announcements
 
 -- AE's are being graded: We will demo how to turn AE's in today
 
 -- Keep up to date with Slack
-
 
 ## Goals for today
 
@@ -31,11 +29,11 @@ Note: if you do not see an ae-03 specifically for you, you have not accepted you
 
 -- Introduce `dplyr` functions
 
--- Continue R practice 
+-- Continue R practice
 
 ## Warm up
 
-Identify which plot each`geom` creates 
+Identify which plot each`geom` creates
 
 -- `geom_point()`
 
@@ -45,49 +43,45 @@ Identify which plot each`geom` creates
 
 -- `geom_bar()`
 
+## Warm Up #2
 
-## Warm Up #2 
+What is the difference beweteen `|>` and `+` ?
 
-What is the difference beweteen `|>` and `+` ? 
+## Warm Up #3
 
-## Warm Up #3 
+\|`penguins |>` \| `ggplot(` \| `aes(x = body_mass_g, fill = species )) +` \| `geom_histogram(binwidth = 200, alpha = 0.3)`
 
-|`penguins |>`
-|  `ggplot(` 
-|       `aes(x = body_mass_g, fill = species )) +`
-|       `geom_histogram(binwidth = 200, alpha = 0.3)`
+# Types of variables
 
-# Types of variables 
-
-## Types of variables 
+## Types of variables
 
 Type is how an object is stored in memory.
 
--- `glimpse` is a great way to check data types 
+-- `glimpse` is a great way to check data types
 
 -- Can also use `typeof()`
 
-## Examples 
+## Examples
 
 -- `glimpse(mtcars)`
 
 -- `typeof(mtcars$mpg)`
 
-## Types of variables 
+## Types of variables
 
-Some of the types of variables include: 
+Some of the types of variables include:
 
--- "logical" 
+-- "logical"
 
--- "integer" 
+-- "integer"
 
--- "double" 
+-- "double"
 
--- "character" 
+-- "character"
 
 -- "factor"
 
-## logical 
+## logical
 
 -- `logi` in `glimpse`
 
@@ -95,23 +89,23 @@ Some of the types of variables include:
 
 -- `as.logical` can turn a variable into a logical. `False` = 0; `True` everything else
 
-## integer 
+## integer
 
--- `int` in `glimpse` 
+-- `int` in `glimpse`
 
 -- Integers are whole numbers (those numbers without a decimal point)
 
--- `as.integer` can turn a double into an integer. Forces 22.8 -> 22. 
+-- `as.integer` can turn a double into an integer. Forces 22.8 -\> 22.
 
-## double 
+## double
 
 -- `dbl` in `glimpse`
 
 -- Real numbers (can include decimals)
 
--- `as.double`can force a column to be a double. Identical to `as.numeric`. 
+-- `as.double`can force a column to be a double. Identical to `as.numeric`.
 
-## character 
+## character
 
 -- `chr` in `glimpse`
 
@@ -127,19 +121,27 @@ Some of the types of variables include:
 
 -- `factor` attempts to coerce its argument to factor type
 
-## Why this matters 
+## Why this matters
 
--- Plotting 
+am: Transmission (0 = automatic; 1 = manual)
 
--- Summary statistics 
+![](images/glimpsemtcars.png){fig-align="center"}
 
-## General takeaways 
+## Why this matters
 
--- Can you identify variable types 
+-- Functions
 
--- Often need to turn something into a factor to make it categorical 
+-- Plotting
 
--- Often need to turn something into a double (numeric) to make it quantitative 
+-- Summary statistics
+
+## General takeaways
+
+-- Can you identify variable types
+
+-- Often need to turn something into a factor to make it categorical
+
+-- Often need to turn something into a double (numeric) to make it quantitative
 
 # More on this later
 
@@ -147,24 +149,22 @@ Some of the types of variables include:
 
 ![](images/messydata.png){fig-align="center"}
 
-## Data Manipulation 
+## Data Manipulation
 
--- Want to subset 
+-- Want to subset
 
--- Want to manipulate 
+-- Want to manipulate
 
--- Want to create 
+-- Want to create
 
-... from data 
+... from data
 
 # ae-03
 
-## Wrap up 
+## Wrap up
 
--- Data types matter. Get in the habit of checking them at the beginning of analysis 
+-- Data types matter. Get in the habit of checking them at the beginning of analysis
 
--- Have the tools to create new variables, calculate summary statistics, etc. that accompany strong visualizations 
+-- Have the tools to create new variables, calculate summary statistics, etc. that accompany strong visualizations
 
 -- Have the tools to manipulate data to be in a more usable format
-
-
