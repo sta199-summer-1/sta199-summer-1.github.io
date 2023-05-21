@@ -1568,6 +1568,146 @@
     "text": "Recap of AE\n\nPick geoms based on data types.\nManipulate graphs to be more appropriate with arguments\nTake control of your labels\nUse color to your advantage. https://ggplot2.tidyverse.org/reference/ggtheme.html & https://ggplot2.tidyverse.org/reference/scale_viridis.html\n\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#checklist",
+    "href": "slides/day4-working-with-multiple-data-frames.html#checklist",
+    "title": "Working with multiple data frames",
+    "section": "Checklist",
+    "text": "Checklist\n\n\n\n– Clone ae-04\n– Make sure you are keeping up with Preparation Videos\n– Lab-1 due Thursday (25th before class)\n– HW-1 due Monday (29th at 11:59 PM)\n– All AEs for this week due Friday (26th at 11:59 PM)"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#announcements",
+    "href": "slides/day4-working-with-multiple-data-frames.html#announcements",
+    "title": "Working with multiple data frames",
+    "section": "Announcements",
+    "text": "Announcements\nVideos\n– Requesting videos for missed classes\nHomework + Labs\n– Late work policy\n– Drop 1"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#announcements-1",
+    "href": "slides/day4-working-with-multiple-data-frames.html#announcements-1",
+    "title": "Working with multiple data frames",
+    "section": "Announcements",
+    "text": "Announcements\nExam\n– June 1st\n– Take home\n– Open Notes / Internet / etc"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#exam",
+    "href": "slides/day4-working-with-multiple-data-frames.html#exam",
+    "title": "Working with multiple data frames",
+    "section": "Exam",
+    "text": "Exam\n– Coding + Short answer questions\n– Extension questions\n– Can NOT be late\n– Pull -> Commit -> Push after every question"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#class-questions",
+    "href": "slides/day4-working-with-multiple-data-frames.html#class-questions",
+    "title": "Working with multiple data frames",
+    "section": "Class Questions",
+    "text": "Class Questions\n– insert from Slack\n– insert from Slack\n…"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up",
+    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up",
+    "title": "Working with multiple data frames",
+    "section": "Warm up",
+    "text": "Warm up\nIdentify which dplyr functions chooses rows or changes columns of an existing data set\n– filter()\n– select()\n– slice()\n– arrange()"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-1",
+    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-1",
+    "title": "Working with multiple data frames",
+    "section": "Warm up",
+    "text": "Warm up\n– filter() - row\n– select()\n– slice()\n– arrange()"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-2",
+    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-2",
+    "title": "Working with multiple data frames",
+    "section": "Warm up",
+    "text": "Warm up\n– filter() - row\n– select() - column\n– slice()\n– arrange()"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-3",
+    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-3",
+    "title": "Working with multiple data frames",
+    "section": "Warm up",
+    "text": "Warm up\n– filter() - row\n– select() - column\n– slice() - row\n– arrange()"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-4",
+    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-4",
+    "title": "Working with multiple data frames",
+    "section": "Warm up",
+    "text": "Warm up\n– filter() - row\n– select() - column\n– slice() - row\n– arrange() - row"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#render-discussion",
+    "href": "slides/day4-working-with-multiple-data-frames.html#render-discussion",
+    "title": "Working with multiple data frames",
+    "section": "Render Discussion",
+    "text": "Render Discussion\nWhy can’t I Render?\n– Error in your code?\n– Duplicate code chunk label?\n– Are you using a function that brings up an external panel such as View()?"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#github-discussion",
+    "href": "slides/day4-working-with-multiple-data-frames.html#github-discussion",
+    "title": "Working with multiple data frames",
+    "section": "GitHub Discussion",
+    "text": "GitHub Discussion\nWhy are my changes not showing up in GitHub?\n– Are you in the right project?\nYou can see the project you are working in in the top right corner of your screen. This MUST be the project that you cloned for the exam / assignment / lab. Do not use the files tab to go search for a file outside of your project repo."
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#goals",
+    "href": "slides/day4-working-with-multiple-data-frames.html#goals",
+    "title": "Working with multiple data frames",
+    "section": "Goals",
+    "text": "Goals\n– Understand join functions\n– Join multiple data frames"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#motivation",
+    "href": "slides/day4-working-with-multiple-data-frames.html#motivation",
+    "title": "Working with multiple data frames",
+    "section": "Motivation",
+    "text": "Motivation\nMessy data\n– The sheer volume of information is sometimes referred to as “messy” data, because it’s hard to make sense of it all."
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#messy-data",
+    "href": "slides/day4-working-with-multiple-data-frames.html#messy-data",
+    "title": "Working with multiple data frames",
+    "section": "Messy data",
+    "text": "Messy data"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#joining-datasets",
+    "href": "slides/day4-working-with-multiple-data-frames.html#joining-datasets",
+    "title": "Working with multiple data frames",
+    "section": "Joining datasets",
+    "text": "Joining datasets\nData merging is the process of combining two or more data sets into a single data set. Most often, this process is necessary when you have raw data stored in multiple files, worksheets, or data tables, that you want to analyze together."
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#joining-datasets-1",
+    "href": "slides/day4-working-with-multiple-data-frames.html#joining-datasets-1",
+    "title": "Working with multiple data frames",
+    "section": "Joining datasets",
+    "text": "Joining datasets\n– Left Join\n– Inner Join\n– Right Join\n– Full Join"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#joining-datasets-2",
+    "href": "slides/day4-working-with-multiple-data-frames.html#joining-datasets-2",
+    "title": "Working with multiple data frames",
+    "section": "Joining datasets",
+    "text": "Joining datasets"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#ae-04",
+    "href": "slides/day4-working-with-multiple-data-frames.html#ae-04",
+    "title": "Working with multiple data frames",
+    "section": "AE-04",
+    "text": "AE-04\nClone ae-05"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#recap-of-ae",
+    "href": "slides/day4-working-with-multiple-data-frames.html#recap-of-ae",
+    "title": "Working with multiple data frames",
+    "section": "Recap of AE",
+    "text": "Recap of AE\n– This is important! Data are messy!\n– Think carefully about the join you use\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
     "objectID": "slides/lab-0-slides.html#introductions",
     "href": "slides/lab-0-slides.html#introductions",
     "title": "Welcome to Lab",

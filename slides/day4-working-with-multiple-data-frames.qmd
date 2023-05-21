@@ -1,0 +1,187 @@
+---
+title: "Working with multiple data frames"
+subtitle: "Day 4"
+date: "May 23rd, 2023"
+format: revealjs
+---
+
+## Checklist
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+-- Clone ae-04
+
+-- Make sure you are keeping up with **Preparation Videos**
+
+-- Lab-1 due Thursday (25th before class)
+
+-- HW-1 due Monday (29th at 11:59 PM)
+
+-- All AEs for this week due Friday (26th at 11:59 PM)
+
+
+## Announcements
+
+Videos
+
+-- Requesting videos for missed classes
+
+Homework + Labs
+
+-- Late work policy
+
+-- Drop 1
+
+## Announcements
+
+Exam 
+
+-- June 1st 
+
+-- Take home
+
+-- Open Notes / Internet / etc
+
+## Exam 
+
+-- Coding + Short answer questions 
+
+-- Extension questions 
+
+-- Can NOT be late 
+
+-- Pull -> Commit -> Push after every question
+
+
+
+## Class Questions
+
+-- insert from Slack 
+
+-- insert from Slack 
+
+...
+
+## Warm up
+
+Identify which `dplyr` functions chooses *rows* or changes *columns* of an existing data set 
+
+-- `filter()`
+
+-- `select()`
+
+-- `slice()`
+
+-- `arrange()`
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()`
+
+-- `slice()`
+
+-- `arrange()`
+
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()` - column 
+
+-- `slice()`
+
+-- `arrange()`
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()` - column 
+
+-- `slice()` - row
+
+-- `arrange()`
+
+## Warm up 
+
+-- `filter()` - row
+
+-- `select()` - column 
+
+-- `slice()` - row
+
+-- `arrange()` - row
+
+## Render Discussion 
+
+Why can't I Render? 
+
+-- Error in your code?
+
+-- Duplicate code chunk label? 
+
+-- Are you using a function that brings up an external panel such as `View()`?
+
+## GitHub Discussion 
+
+Why are my changes not showing up in GitHub? 
+
+-- Are you in the right project? 
+
+You can see the project you are working in in the top right corner of your screen. This MUST be the project that you cloned for the exam / assignment / lab. Do not use the files tab to go search for a file outside of your project repo.
+
+
+
+## Goals
+
+-- Understand join functions
+
+-- Join multiple data frames
+
+## Motivation 
+
+Messy data
+
+-- The sheer volume of information is sometimes referred to as “messy” data, because it's hard to make sense of it all. 
+
+## Messy data 
+
+![](images/join-motivation.png){width="950" height="550" fig-align="center"}
+
+# How? 
+
+## Joining datasets
+
+**Data merging** is the process of combining two or more data sets into a single data set. Most often, this process is necessary when you have raw data stored in multiple files, worksheets, or data tables, that you want to analyze together.
+
+## Joining datasets 
+
+-- Left Join 
+
+-- Inner Join 
+
+-- Right Join 
+
+-- Full Join
+
+## Joining datasets 
+
+![](images/join.png){width="950" height="500" fig-align="center"}
+
+
+## AE-04
+
+Clone ae-05
+
+## Recap of AE
+
+-- This is important! Data are messy!
+
+-- Think carefully about the join you use
