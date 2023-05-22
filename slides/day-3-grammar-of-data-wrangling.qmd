@@ -45,11 +45,14 @@ Identify which plot each`geom` creates
 
 ## Warm Up #2
 
-What is the difference beweteen `|>` and `+` ?
+What is the difference between `|>` and `+` ?
 
-## Warm Up #3
+## Warm Up #3 (Reading Practice)
 
-\|`penguins |>` \| `ggplot(` \| `aes(x = body_mass_g, fill = species )) +` \| `geom_histogram(binwidth = 200, alpha = 0.3)`
+    penguins |>
+     ggplot(
+     aes(x = body_mass_g, fill = species )) +
+     geom_histogram(binwidth = 200, alpha = 0.3)
 
 # Types of variables
 
@@ -161,7 +164,7 @@ am: Transmission (0 = automatic; 1 = manual)
 
 ## Function of the day (saw on lab-0)
 
-Themes are a powerful way to customize the non-data components of your plots: i.e. titles, labels, fonts, background, gridlines, and legends. 
+Themes are a powerful way to customize the non-data components of your plots: i.e. titles, labels, fonts, background, gridlines, and legends.
 
 `theme()`
 
@@ -169,8 +172,12 @@ Themes are a powerful way to customize the non-data components of your plots: i.
 
 -- I often use it for legend manipulation... but there is so much more!
 
-
 # ae-03
+
+## Plot Recreate 
+
+![](images/penguinplotrecreate.png){fig-align="center"}
+
 
 ## Wrap up
 

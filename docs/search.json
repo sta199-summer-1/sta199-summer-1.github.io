@@ -1355,14 +1355,14 @@
     "href": "slides/day-3-grammar-of-data-wrangling.html#warm-up-2",
     "title": "Data Viz + Data Wrangling",
     "section": "Warm Up #2",
-    "text": "Warm Up #2\nWhat is the difference beweteen |> and + ?"
+    "text": "Warm Up #2\nWhat is the difference between |> and + ?"
   },
   {
-    "objectID": "slides/day-3-grammar-of-data-wrangling.html#warm-up-3",
-    "href": "slides/day-3-grammar-of-data-wrangling.html#warm-up-3",
+    "objectID": "slides/day-3-grammar-of-data-wrangling.html#warm-up-3-reading-practice",
+    "href": "slides/day-3-grammar-of-data-wrangling.html#warm-up-3-reading-practice",
     "title": "Data Viz + Data Wrangling",
-    "section": "Warm Up #3",
-    "text": "Warm Up #3\n|penguins |> | ggplot( | aes(x = body_mass_g, fill = species )) + | geom_histogram(binwidth = 200, alpha = 0.3)"
+    "section": "Warm Up #3 (Reading Practice)",
+    "text": "Warm Up #3 (Reading Practice)\npenguins |>\n ggplot(\n aes(x = body_mass_g, fill = species )) +\n geom_histogram(binwidth = 200, alpha = 0.3)"
   },
   {
     "objectID": "slides/day-3-grammar-of-data-wrangling.html#types-of-variables-1",
@@ -1461,6 +1461,13 @@
     "title": "Data Viz + Data Wrangling",
     "section": "Function of the day (saw on lab-0)",
     "text": "Function of the day (saw on lab-0)\nThemes are a powerful way to customize the non-data components of your plots: i.e. titles, labels, fonts, background, gridlines, and legends.\ntheme()\n– https://ggplot2.tidyverse.org/reference/theme.html\n– I often use it for legend manipulation… but there is so much more!"
+  },
+  {
+    "objectID": "slides/day-3-grammar-of-data-wrangling.html#plot-recreate",
+    "href": "slides/day-3-grammar-of-data-wrangling.html#plot-recreate",
+    "title": "Data Viz + Data Wrangling",
+    "section": "Plot Recreate",
+    "text": "Plot Recreate"
   },
   {
     "objectID": "slides/day-3-grammar-of-data-wrangling.html#wrap-up",
