@@ -1656,42 +1656,21 @@
     "href": "slides/day4-working-with-multiple-data-frames.html#class-questions",
     "title": "Working with multiple data frames",
     "section": "Class Questions",
-    "text": "Class Questions\n– insert from Slack\n– insert from Slack\n…"
+    "text": "Class Questions\n– insert from Slack\n– insert from Slack"
   },
   {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up",
     "href": "slides/day4-working-with-multiple-data-frames.html#warm-up",
     "title": "Working with multiple data frames",
     "section": "Warm up",
-    "text": "Warm up\nIdentify which dplyr functions chooses rows or changes columns of an existing data set\n– filter()\n– select()\n– slice()\n– arrange()"
-  },
-  {
-    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-1",
-    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-1",
-    "title": "Working with multiple data frames",
-    "section": "Warm up",
-    "text": "Warm up\n– filter() - row\n– select()\n– slice()\n– arrange()"
+    "text": "Warm up\nPlease define the following…\n– select()\n– slice()\n– arrange()"
   },
   {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-2",
     "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-2",
     "title": "Working with multiple data frames",
-    "section": "Warm up",
-    "text": "Warm up\n– filter() - row\n– select() - column\n– slice()\n– arrange()"
-  },
-  {
-    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-3",
-    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-3",
-    "title": "Working with multiple data frames",
-    "section": "Warm up",
-    "text": "Warm up\n– filter() - row\n– select() - column\n– slice() - row\n– arrange()"
-  },
-  {
-    "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up-4",
-    "href": "slides/day4-working-with-multiple-data-frames.html#warm-up-4",
-    "title": "Working with multiple data frames",
-    "section": "Warm up",
-    "text": "Warm up\n– filter() - row\n– select() - column\n– slice() - row\n– arrange() - row"
+    "section": "Warm up (2)",
+    "text": "Warm up (2)\nWe glossed over this on Monday…. it needs more attention!\nWe can string multiple pipes together. That’s the purpose of tidyverse!\nflights |> \n  select(tailnum, carrier, dep_delay) |>\n  arrange(desc(dep_delay)) |>\n  slice(1)"
   },
   {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#render-discussion",
@@ -1708,11 +1687,25 @@
     "text": "GitHub Discussion\nWhy are my changes not showing up in GitHub?\n– Are you in the right project?\nYou can see the project you are working in in the top right corner of your screen. This MUST be the project that you cloned for the exam / assignment / lab. Do not use the files tab to go search for a file outside of your project repo."
   },
   {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#tibble-vs-data-frame-in-r",
+    "href": "slides/day4-working-with-multiple-data-frames.html#tibble-vs-data-frame-in-r",
+    "title": "Working with multiple data frames",
+    "section": "Tibble vs Data Frame in R",
+    "text": "Tibble vs Data Frame in R\nIn the console, type mtcars in the data set\nNow, type as_tibble(mtcars)"
+  },
+  {
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#tibble-vs-data-frame-in-r-1",
+    "href": "slides/day4-working-with-multiple-data-frames.html#tibble-vs-data-frame-in-r-1",
+    "title": "Working with multiple data frames",
+    "section": "TIbble vs Data Frame in R",
+    "text": "TIbble vs Data Frame in R\n– A tibble is often considered a neater format of a data frame\n– Tibble has a more advanced print function\n– Tidyverse functions are built to work with tibbles\nhttps://stackoverflow.com/questions/64856424/what-are-the-differences-between-data-frame-tibble-and-matrix"
+  },
+  {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#goals",
     "href": "slides/day4-working-with-multiple-data-frames.html#goals",
     "title": "Working with multiple data frames",
     "section": "Goals",
-    "text": "Goals\n– Understand join functions\n– Join multiple data frames"
+    "text": "Goals\n– Play with dplyr function\n– Understand join functions\n– Join multiple data frames"
   },
   {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#motivation",
@@ -1750,8 +1743,8 @@
     "text": "Joining datasets"
   },
   {
-    "objectID": "slides/day4-working-with-multiple-data-frames.html#ae-04",
-    "href": "slides/day4-working-with-multiple-data-frames.html#ae-04",
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#ae-04-1",
+    "href": "slides/day4-working-with-multiple-data-frames.html#ae-04-1",
     "title": "Working with multiple data frames",
     "section": "AE-04",
     "text": "AE-04\nClone ae-05"

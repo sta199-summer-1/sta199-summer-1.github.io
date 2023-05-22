@@ -363,43 +363,22 @@
 <h2>Class Questions</h2>
 <p>– insert from Slack</p>
 <p>– insert from Slack</p>
-<p>…</p>
 </section>
 <section id="warm-up" class="slide level2">
 <h2>Warm up</h2>
-<p>Identify which <code>dplyr</code> functions chooses <em>rows</em> or changes <em>columns</em> of an existing data set</p>
-<p>– <code>filter()</code></p>
-<p>– <code>select()</code></p>
-<p>– <code>slice()</code></p>
-<p>– <code>arrange()</code></p>
-</section>
-<section id="warm-up-1" class="slide level2">
-<h2>Warm up</h2>
-<p>– <code>filter()</code> - row</p>
+<p>Please define the following…</p>
 <p>– <code>select()</code></p>
 <p>– <code>slice()</code></p>
 <p>– <code>arrange()</code></p>
 </section>
 <section id="warm-up-2" class="slide level2">
-<h2>Warm up</h2>
-<p>– <code>filter()</code> - row</p>
-<p>– <code>select()</code> - column</p>
-<p>– <code>slice()</code></p>
-<p>– <code>arrange()</code></p>
-</section>
-<section id="warm-up-3" class="slide level2">
-<h2>Warm up</h2>
-<p>– <code>filter()</code> - row</p>
-<p>– <code>select()</code> - column</p>
-<p>– <code>slice()</code> - row</p>
-<p>– <code>arrange()</code></p>
-</section>
-<section id="warm-up-4" class="slide level2">
-<h2>Warm up</h2>
-<p>– <code>filter()</code> - row</p>
-<p>– <code>select()</code> - column</p>
-<p>– <code>slice()</code> - row</p>
-<p>– <code>arrange()</code> - row</p>
+<h2>Warm up (2)</h2>
+<p>We glossed over this on Monday…. it needs more attention!</p>
+<p>We can string multiple pipes together. That’s the purpose of tidyverse!</p>
+<pre><code>flights |&gt; 
+  select(tailnum, carrier, dep_delay) |&gt;
+  arrange(desc(dep_delay)) |&gt;
+  slice(1) </code></pre>
 </section>
 <section id="render-discussion" class="slide level2">
 <h2>Render Discussion</h2>
@@ -414,10 +393,28 @@
 <p>– Are you in the right project?</p>
 <p>You can see the project you are working in in the top right corner of your screen. This MUST be the project that you cloned for the exam / assignment / lab. Do not use the files tab to go search for a file outside of your project repo.</p>
 </section>
+<section id="tibble-vs-data-frame-in-r" class="slide level2">
+<h2>Tibble vs Data Frame in R</h2>
+<p>In the console, type <code>mtcars</code> in the data set</p>
+<p>Now, type <code>as_tibble(mtcars)</code></p>
+</section>
+<section id="tibble-vs-data-frame-in-r-1" class="slide level2">
+<h2>TIbble vs Data Frame in R</h2>
+<p>– A tibble is often considered a neater format of a data frame</p>
+<p>– Tibble has a more advanced print function</p>
+<p>– Tidyverse functions are built to work with tibbles</p>
+<p>https://stackoverflow.com/questions/64856424/what-are-the-differences-between-data-frame-tibble-and-matrix</p>
+</section>
 <section id="goals" class="slide level2">
 <h2>Goals</h2>
+<p>– Play with <code>dplyr</code> function</p>
 <p>– Understand join functions</p>
 <p>– Join multiple data frames</p>
+</section>
+<section>
+<section id="ae-04" class="title-slide slide level1 center">
+<h1>ae-04</h1>
+
 </section>
 <section id="motivation" class="slide level2">
 <h2>Motivation</h2>
@@ -431,7 +428,7 @@
 <p><img data-src="images/join-motivation.png" width="950" height="550"></p>
 </figure>
 </div>
-</section>
+</section></section>
 <section>
 <section id="how" class="title-slide slide level1 center">
 <h1>How?</h1>
@@ -456,7 +453,7 @@
 </figure>
 </div>
 </section>
-<section id="ae-04" class="slide level2">
+<section id="ae-04-1" class="slide level2">
 <h2>AE-04</h2>
 <p>Clone ae-05</p>
 </section>

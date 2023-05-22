@@ -57,20 +57,16 @@ Exam
 -- Pull -> Commit -> Push after every question
 
 
-
 ## Class Questions
 
 -- insert from Slack 
 
 -- insert from Slack 
 
-...
 
 ## Warm up
 
-Identify which `dplyr` functions chooses *rows* or changes *columns* of an existing data set 
-
--- `filter()`
+Please define the following...
 
 -- `select()`
 
@@ -78,46 +74,19 @@ Identify which `dplyr` functions chooses *rows* or changes *columns* of an exist
 
 -- `arrange()`
 
-## Warm up 
+## Warm up (2) 
 
--- `filter()` - row
+We glossed over this on Monday.... it needs more attention!
 
--- `select()`
+We can string multiple pipes together. That's the purpose of tidyverse!
 
--- `slice()`
+```
+flights |> 
+  select(tailnum, carrier, dep_delay) |>
+  arrange(desc(dep_delay)) |>
+  slice(1) 
+```
 
--- `arrange()`
-
-
-## Warm up 
-
--- `filter()` - row
-
--- `select()` - column 
-
--- `slice()`
-
--- `arrange()`
-
-## Warm up 
-
--- `filter()` - row
-
--- `select()` - column 
-
--- `slice()` - row
-
--- `arrange()`
-
-## Warm up 
-
--- `filter()` - row
-
--- `select()` - column 
-
--- `slice()` - row
-
--- `arrange()` - row
 
 ## Render Discussion 
 
@@ -137,13 +106,31 @@ Why are my changes not showing up in GitHub?
 
 You can see the project you are working in in the top right corner of your screen. This MUST be the project that you cloned for the exam / assignment / lab. Do not use the files tab to go search for a file outside of your project repo.
 
+## Tibble vs Data Frame in R
 
+In the console, type `mtcars` in the data set
+
+Now, type `as_tibble(mtcars)`
+
+## TIbble vs Data Frame in R 
+
+-- A tibble is often considered a neater format of a data frame
+
+-- Tibble has a more advanced print function
+
+-- Tidyverse functions are built to work with tibbles
+
+https://stackoverflow.com/questions/64856424/what-are-the-differences-between-data-frame-tibble-and-matrix
 
 ## Goals
+
+-- Play with `dplyr` function 
 
 -- Understand join functions
 
 -- Join multiple data frames
+
+# ae-04
 
 ## Motivation 
 
