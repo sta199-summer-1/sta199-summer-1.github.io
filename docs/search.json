@@ -1652,11 +1652,11 @@
     "text": "Exam\n– Coding + Short answer questions\n– Extension questions\n– Can NOT be late\n– Pull -> Commit -> Push after every question"
   },
   {
-    "objectID": "slides/day4-working-with-multiple-data-frames.html#class-questions",
-    "href": "slides/day4-working-with-multiple-data-frames.html#class-questions",
+    "objectID": "slides/day4-working-with-multiple-data-frames.html#questions-on-content-for-class",
+    "href": "slides/day4-working-with-multiple-data-frames.html#questions-on-content-for-class",
     "title": "Working with multiple data frames",
-    "section": "Class Questions",
-    "text": "Class Questions\n– insert from Slack\n– insert from Slack"
+    "section": "Questions on Content for Class",
+    "text": "Questions on Content for Class\n– Posted in Slack #class-questions\n– Reply under the comment\n– Will guide warm up questions for Thursday"
   },
   {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#warm-up",
@@ -1705,7 +1705,7 @@
     "href": "slides/day4-working-with-multiple-data-frames.html#goals",
     "title": "Working with multiple data frames",
     "section": "Goals",
-    "text": "Goals\n– Play with dplyr function\n– Understand join functions\n– Join multiple data frames"
+    "text": "Goals\n– Play with dplyr functions\n– Understand join functions\n– Join multiple data frames"
   },
   {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#motivation",
@@ -1747,7 +1747,7 @@
     "href": "slides/day4-working-with-multiple-data-frames.html#ae-04-1",
     "title": "Working with multiple data frames",
     "section": "AE-04",
-    "text": "AE-04\nClone ae-05"
+    "text": "AE-04\n– ae-04 part 2!\n– Joining Fisheries"
   },
   {
     "objectID": "slides/day4-working-with-multiple-data-frames.html#recap-of-ae",

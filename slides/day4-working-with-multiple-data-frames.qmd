@@ -56,12 +56,13 @@ Exam
 
 -- Pull -> Commit -> Push after every question
 
+## Questions on Content for Class
 
-## Class Questions
+-- Posted in Slack #class-questions
 
--- insert from Slack 
+-- Reply under the comment
 
--- insert from Slack 
+-- Will guide warm up questions for Thursday 
 
 
 ## Warm up
@@ -124,7 +125,7 @@ https://stackoverflow.com/questions/64856424/what-are-the-differences-between-da
 
 ## Goals
 
--- Play with `dplyr` function 
+-- Play with `dplyr` functions
 
 -- Understand join functions
 
@@ -165,7 +166,9 @@ Messy data
 
 ## AE-04
 
-Clone ae-05
+-- ae-04 part 2! 
+
+-- Joining Fisheries
 
 ## Recap of AE
 
