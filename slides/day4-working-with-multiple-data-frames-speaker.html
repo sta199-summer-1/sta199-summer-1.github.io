@@ -406,6 +406,21 @@
 <p>– Tidyverse functions are built to work with tibbles</p>
 <p>https://stackoverflow.com/questions/64856424/what-are-the-differences-between-data-frame-tibble-and-matrix</p>
 </section>
+<section id="function-of-the-day" class="slide level2">
+<h2>Function of the day</h2>
+<p><code>fct_reorder</code></p>
+
+<img data-src="images/fct_reorder_no.png" class="r-stretch quarto-figure-center"></section>
+<section id="function-of-the-day-1" class="slide level2">
+<h2>Function of the day</h2>
+<pre><code>iris |&gt;
+  ggplot(
+  aes(x = fct_reorder(Species, Sepal.Width), y = Sepal.Width)
+) + 
+  geom_boxplot()
+  </code></pre>
+
+<img data-src="images/fct_reorder_yes.png" class="r-stretch quarto-figure-center"></section>
 <section id="goals" class="slide level2">
 <h2>Goals</h2>
 <p>– Play with <code>dplyr</code> functions</p>

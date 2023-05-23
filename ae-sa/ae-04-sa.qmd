@@ -1,0 +1,361 @@
+---
+title: "Dplyr + Joins"
+subtitle: "Suggested Answers"
+format: html
+editor: visual
+---
+
+::: callout-important
+Go to the [course GitHub organization](https://github.com/sta199-summer-1) and locate the repo titled `ae-04-YOUR_GITHUB_USERNAME` to get started.
+
+This AE is due Friday, May 26th at 11:59pm.
+:::
+
+```{r}
+#| label: load-packages
+#| warning: false
+#| message: false
+
+
+library(tidyverse)
+library(nycflights13)
+library(scales)
+```
+
+## Data
+
+These data were collected from 2007 - 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data were imported directly from the Environmental Data Initiative (EDI) Data Portal, and are available for use by CC0 license ("No Rights Reserved") in accordance with the Palmer Station Data Policy.
+
+## `filter()`
+
+-   Demo: Filter the data frame by selecting the rows where the destination airport is RDU. Comment the code below.
+
+```{r}
+#| label: rdu
+
+flights |>
+  filter(dest == "RDU")
+
+# = is the same as <-
+
+```
+
+Now, run the following code with one equals sign instead of two. Does it still work?
+
+*(=) is a Assignment operator while (==) is a Equal to operator. (=) is used for assigning the values from right to left while (==) is used for showing equality between values.*
+
+-   Demo: We can also filter using more than one condition. Here we select all rows where the destination airport is RDU and the arrival delay is less than 0. As we've learned, conditions within functions are separated by a `,`.
+
+```{r}
+#| label: rdu-ontime
+
+flights |>
+  filter(dest == "RDU" , arr_delay < 0 )
+
+```
+
+We can do more complex tasks using logical operators:
+
+| operator      | definition                   |
+|:--------------|:-----------------------------|
+| `<`           | is less than?                |
+| `<=`          | is less than or equal to?    |
+| `>`           | is greater than?             |
+| `>=`          | is greater than or equal to? |
+| `==`          | is exactly equal to?         |
+| `!=`          | is not equal to?             |
+| `x & y`       | is x AND y?                  |
+| `x  | y`      | is x OR y?                   |
+| `is.na(x)`    | is x NA?                     |
+| `!is.na(x)`   | is x not NA?                 |
+| `x %in% y`    | is x in y?                   |
+| `!(x %in% y)` | is x not in y?               |
+| `!x`          | is not x?                    |
+
+The final operator only makes sense if `x` is logical (TRUE / FALSE).
+
+-   **Your turn (4 minutes):** Describe what the code is doing in words.
+
+```{r}
+#| label: nc-early
+
+flights |> # data set and 
+  filter(dest %in% "RDU", 
+         arr_delay < 0 | dep_delay < 0
+         )
+```
+
+-   What if we want to land at destinations of RDU and GSO? How does the below code change?
+
+```{r}
+#| label: GSO
+
+flights |>
+  filter(dest %in% c("RDU", "GSO"),
+         arr_delay < 0 | dep_delay < 0
+         )
+```
+
+Why `c`?
+
+Combine. Use when we have a list larger than one.
+
+## `count()`
+
+-   Demo: Create a frequency table of the destination locations for flights from New York.
+
+```{r}
+#| label: count-dest
+
+flights |>
+  count(dest)
+
+```
+
+-   Demo: In which month was there the fewest number of flights? How many flights were there in that month? Hint: Type `?min` into the console.
+
+```{r}
+#| label: count-month
+#| eval: false
+
+flights |>
+  count(month) |>
+  filter(n == min(n))
+```
+
+-   On which date (month + day) was there the largest number of flights? How many flights were there on that day? Comment the code below.
+
+```{r}
+#| label: count-date
+
+flights |>
+  count(month, day) |>
+  filter(n == max(n))
+  
+  
+```
+
+## `mutate()`
+
+Use `mutate()` to create a new variable.
+
+-   Demo: In the code chunk below, `air_time` (minutes in the air) is converted to hours, and then new variable `mph` is created, corresponding to the miles per hour of the flight. Comment each line of code below.
+
+```{r}
+#| label: calculate-mph
+
+flights |> 
+  mutate(hours = air_time / 60, 
+         mph = distance / hours) |>
+select(air_time, distance, hours, mph)
+```
+
+-   **Your turn (4 minutes):** Create a new variable to calculate the percentage of flights in each month. What percentage of flights take place in July?
+
+```{r}
+#| label: months-perc
+
+flights |> 
+  count(month) |>
+  mutate(perc = (n / sum(n)) *100)
+
+```
+
+We can also use `mutate` to change the type of the same variable (think back to Monday slides)
+
+First, show / justify why we can not currently make boxplots of `dep_delay` by month without altering these data. Next write the following code to create boxplots of `dep_delay` by month.
+
+```{r}
+
+flights |> 
+  mutate(month = as.factor(month)) 
+
+glimpse(flights)
+
+```
+
+## `summarize()`
+
+`summarize()` collapses the rows into summary statistics and removes columns irrelevant to the calculation.
+
+Below, find the mean `dep_delay` time.
+
+```{r}
+#| label: find-mean-delay
+#| eval: false
+
+flights |> 
+  summarize(mean_dep_delay = mean(dep_delay))
+```
+
+**Question: Why did this code return `NA`?**
+
+Let's fix it! We can use `na.rm` to remove `NA`s.
+
+```{r}
+#| label: find-mean-delay-no-na
+#| eval: false
+
+flights |> 
+  summarize(mean_dep_delay = mean(dep_delay, na.rm = T))
+```
+
+## `group_by()`
+
+`group_by()` is used for grouped operations. It's very powerful when paired with `summarise()` to calculate summary statistics by group.
+
+Here we find the mean and standard deviation of departure delay for each month. Comment each line of code below.
+
+```{r}
+#| label: delays-by-month
+
+flights |> 
+  group_by(month) |>
+  summarize(mean_dep_delay = mean(dep_delay, na.rm=T),
+            sd_dep_delay = sd(dep_delay, na.rm=T)
+            )
+```
+
+-   **Your turn (4 minutes):** What is the median departure delay for each airports around NYC (`origin`)?
+
+```{r}
+#| label: dep-origin
+
+flights |>
+  group_by(origin) |>
+  summarize(med_dep_delay = median(dep_delay, na.rm = T))
+
+```
+
+## Joining Fisheries
+
+```{r}
+#| label: load-data
+
+fisheries <- read_csv("data/fisheries.csv")
+continents <- read_csv("data/continents.csv")
+```
+
+## Working with multiple data frames
+
+Often instead of being provided the data you need for your analysis in a single data frame, you will need to bring information from multiple datasets together into a data frame yourself. These datasets will be linked to each other via a column (usually an identifier, something that links the two datasets together) that you can use to join them together.
+
+There are many possible types of joins. All have the format `something_join(x, y)`.
+
+```{r}
+#| label: test-joins
+
+x <- tibble(
+  value = c(1, 2, 3),
+  xcol = c("x1", "x2", "x3")
+  )
+
+y <- tibble(
+  value = c(1, 2, 4),
+  ycol = c("y1", "y2", "y4")
+  )
+
+x
+y
+```
+
+We will demonstrate each of the joins on these small, toy datasets.
+
+**Note: These functions below know to join `x` and `y` by `value` because each dataset has `value` as a column. See for yourself!**
+
+```{r}
+#| label: names
+
+names(x)
+names(y)
+```
+
+### `inner_join()` join all rows in x where there are matching y values
+
+```{r}
+#| label: inner-join
+
+inner_join(x, y)
+```
+
+### `left_join()` keeps all values of x
+
+```{r}
+#| label: left-join
+
+left_join(x , y)
+```
+
+### `right_join()` keeps all rows of y
+
+```{r}
+#| label: right-join
+
+right_join(x, y) 
+```
+
+### `full_join()` keeping all rows (both x and y)
+
+```{r}
+#| label: full-join
+
+full_join(x, y)
+```
+
+### `semi_join()`returns all rows from x only that match y
+
+```{r}
+#| label: semi-join
+
+semi_join(x, y)
+```
+
+### `anti_join()` reutrns all rows from x that do not match y
+
+```{r}
+#| label: anti-join
+
+anti_join(x,y)
+```
+
+## Global aquaculture production
+
+The Fisheries and Aquaculture Department of the Food and Agriculture Organization of the United Nations collects data on fisheries production of countries.
+
+**Our goal is to create a visualization of the mean share of aquaculture by continent.**
+
+![](images/aquaculture-production-by-continent.png){fig-align="center"}
+
+Let's start by looking at the `fisheries` data frame.
+
+```{r}
+#| label: glimpse-fisheries
+
+glimpse(fisheries)
+
+```
+
+We have the countries, but our goal is to make a visualization by continent. Let's take a look at the continents data frame.
+
+```{r}
+#| label: glimpse-continents
+
+glimpse(continents)
+```
+
+-   **Your turn (2 minutes):**
+    -   Which variable(s) will we use to join the `fisheries` and `continents` data frames?
+    -   We want to keep all rows and columns from `fisheries` and add a column for corresponding continents. Which join function should we use?
+-   **Demo:** Join the two data frames and name assign the joined data frame back to `fisheries`.
+
+```{r}
+#| label: join-fisheries-continents
+
+fisheries <- fisheries |>
+  left_join(continents)
+
+#same as the following
+
+left_join(fisheries, continents)
+
+```

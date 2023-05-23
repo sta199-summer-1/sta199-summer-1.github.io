@@ -123,6 +123,26 @@ Now, type `as_tibble(mtcars)`
 
 https://stackoverflow.com/questions/64856424/what-are-the-differences-between-data-frame-tibble-and-matrix
 
+## Function of the day 
+
+`fct_reorder` 
+
+![](images/fct_reorder_no.png){fig-align="center"}
+
+## Function of the day 
+
+```
+iris |>
+  ggplot(
+  aes(x = fct_reorder(Species, Sepal.Width), y = Sepal.Width)
+) + 
+  geom_boxplot()
+  
+```
+
+![](images/fct_reorder_yes.png){fig-align="center"}
+
+
 ## Goals
 
 -- Play with `dplyr` functions
