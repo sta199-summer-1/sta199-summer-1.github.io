@@ -161,7 +161,6 @@ brfss |>
 (a) Fill in the blanks:
     -   The gg in the name of the package ggplot2 stands for ... .
     -   If you map the same continuous variable to both `x` and `y` aesthetics in a scatterplot, you get a straight ... line. (Choose between "vertical", "horizontal", or "diagonal".)
-
 (b) Code style: Fix up the code style by spaces and line breaks where needed. Briefly describe your fixes. (Hint: You can refer to the [Tidyverse style guide](https://style.tidyverse.org/).)
 
 ```{r}
