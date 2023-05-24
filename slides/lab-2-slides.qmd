@@ -31,7 +31,7 @@ Is due Monday (29th) before class. You will turn in the following:
 
 -- Team Agreement (1 per group)
 
--- Data Wranging (individual assignment)
+-- Data Wrangling (individual assignment)
 
 Some groups may want to start on the data wrangling portion during lab, while others may want to start with the team agreement. Please prioritize whichever you see fit.  
 
