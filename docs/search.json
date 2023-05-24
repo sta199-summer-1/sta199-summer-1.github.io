@@ -2023,6 +2023,118 @@
     "text": "Recap of AE\n– This is important! Data are messy!\n– Think carefully about the join you use\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
+    "objectID": "slides/day5.html#checklist",
+    "href": "slides/day5.html#checklist",
+    "title": "Joins + Tidy Data",
+    "section": "Checklist",
+    "text": "Checklist\n\n\n\n– Clone ae-05\n– Make sure you are keeping up with Preparation Videos\n– HW-1 due Monday (29th at 11:59 PM)\n– All AEs for this week due Friday (26th at 11:59 PM)"
+  },
+  {
+    "objectID": "slides/day5.html#lab-2-announcement",
+    "href": "slides/day5.html#lab-2-announcement",
+    "title": "Joins + Tidy Data",
+    "section": "Lab 2 Announcement",
+    "text": "Lab 2 Announcement\n– Group Formation\n– 3-4 students\n– GitHub is a tool for collaboration\n– It is a skill to be able to communicate and work together on common projects"
+  },
+  {
+    "objectID": "slides/day5.html#warm-up---joins",
+    "href": "slides/day5.html#warm-up---joins",
+    "title": "Joins + Tidy Data",
+    "section": "Warm up - Joins",
+    "text": "Warm up - Joins\n\n– left_join(x,y); right_join(x,y); full_join(x,y)"
+  },
+  {
+    "objectID": "slides/day5.html#function-of-the-day",
+    "href": "slides/day5.html#function-of-the-day",
+    "title": "Joins + Tidy Data",
+    "section": "Function of the day",
+    "text": "Function of the day\nif_else\n– If this, do this, else this\n– Commonly used to create new variables"
+  },
+  {
+    "objectID": "slides/day5.html#function-of-the-day-1",
+    "href": "slides/day5.html#function-of-the-day-1",
+    "title": "Joins + Tidy Data",
+    "section": "Function of the day",
+    "text": "Function of the day"
+  },
+  {
+    "objectID": "slides/day5.html#function-of-the-day-2",
+    "href": "slides/day5.html#function-of-the-day-2",
+    "title": "Joins + Tidy Data",
+    "section": "Function of the day",
+    "text": "Function of the day\n ## Function of the day (Bonus!)\nfct_reorder"
+  },
+  {
+    "objectID": "slides/day5.html#function-of-the-day-bonus",
+    "href": "slides/day5.html#function-of-the-day-bonus",
+    "title": "Joins + Tidy Data",
+    "section": "Function of the day (Bonus!)",
+    "text": "Function of the day (Bonus!)\niris |>\n  ggplot(\n  aes(x = fct_reorder(Species, Sepal.Width), y = Sepal.Width)\n) + \n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/day5.html#goals",
+    "href": "slides/day5.html#goals",
+    "title": "Joins + Tidy Data",
+    "section": "Goals",
+    "text": "Goals\n– Finish Joins\n– Define Tidy Data\n– Play with pivot functions in R"
+  },
+  {
+    "objectID": "slides/day5.html#data-format-wide-vs-long",
+    "href": "slides/day5.html#data-format-wide-vs-long",
+    "title": "Joins + Tidy Data",
+    "section": "Data Format (Wide vs Long)",
+    "text": "Data Format (Wide vs Long)\n– Wide data contains values that do not repeat in the first column\n– Long data contains values that do repeat in the first column"
+  },
+  {
+    "objectID": "slides/day5.html#data-format-wide-vs-long-1",
+    "href": "slides/day5.html#data-format-wide-vs-long-1",
+    "title": "Joins + Tidy Data",
+    "section": "Data Format (Wide vs Long)",
+    "text": "Data Format (Wide vs Long)\n– Which have we typically used to create plots in this class?"
+  },
+  {
+    "objectID": "slides/day5.html#tidy-data",
+    "href": "slides/day5.html#tidy-data",
+    "title": "Joins + Tidy Data",
+    "section": "Tidy Data",
+    "text": "Tidy Data\nThere are three interrelated rules that make a dataset tidy:\n\nEach variable is a column; each column is a variable.\nEach observation is row; each row is an observation.\nEach value is a cell; each cell is a single value."
+  },
+  {
+    "objectID": "slides/day5.html#motivation",
+    "href": "slides/day5.html#motivation",
+    "title": "Joins + Tidy Data",
+    "section": "Motivation",
+    "text": "Motivation\n– Sometimes, data are not in this format…"
+  },
+  {
+    "objectID": "slides/day5.html#pivots",
+    "href": "slides/day5.html#pivots",
+    "title": "Joins + Tidy Data",
+    "section": "pivots",
+    "text": "pivots\n– pivot_longer\n– pivot_wider"
+  },
+  {
+    "objectID": "slides/day5.html#pivot_wider-1",
+    "href": "slides/day5.html#pivot_wider-1",
+    "title": "Joins + Tidy Data",
+    "section": "pivot_wider",
+    "text": "pivot_wider\n– Making tables for quick comparison / display purposes\n– names_to\n– values_to"
+  },
+  {
+    "objectID": "slides/day5.html#ae-summary",
+    "href": "slides/day5.html#ae-summary",
+    "title": "Joins + Tidy Data",
+    "section": "ae-summary",
+    "text": "ae-summary"
+  },
+  {
+    "objectID": "slides/day5.html#recap-of-ae",
+    "href": "slides/day5.html#recap-of-ae",
+    "title": "Joins + Tidy Data",
+    "section": "Recap of AE",
+    "text": "Recap of AE\n\nThere are many different types of joins. Think critically about your goal in order to decide which join you should use.\nWhen pivoting longer, variable names that turn into values are characters by default. If you need them to be in another format, you need to explicitly make that transformation, which you can do so within the pivot_longer() function.\npivot_wider() which makes data sets wider by increasing columns and reducing rows. pivot_wider() has the opposite interface to pivot_longer(): we need to provide the existing columns that define the values (values_from) and the column name (names_from).\n\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
     "objectID": "slides/lab-0-slides.html#introductions",
     "href": "slides/lab-0-slides.html#introductions",
     "title": "Welcome to Lab",
