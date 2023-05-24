@@ -1,5 +1,5 @@
 ---
-title: "Lab 2 - Data wrangling"
+title: "Lab 2 - Group Formation Data wrangling"
 categories: "Lab"
 execute:
   eval: true
@@ -13,6 +13,7 @@ This lab is due Monday May 29th at 11:59pm.
 
 In this lab, you will...
 
+-   form teams for future labs + project
 -   use data wrangling to extract meaning from data
 -   continue developing a workflow for reproducible data analysis
 -   continue working with data visualization tools
@@ -23,6 +24,70 @@ In this lab, you will...
 -   Clone the repo and start a new project in RStudio. See the [Lab 0 instructions](https://sta199-summer-1.github.io/labs/lab-0.html#clone-the-repo-start-new-rstudio-project) for details on cloning a repo and starting a new R project.
 -   First, open the Quarto document `lab-02.qmd` and Render it.
 -   Make sure it compiles without errors.
+
+## Group Formation 
+
+After lab-2, lab assignments will be group based, and we will shortly be starting the group project. 
+
+In this lab, you are going **choose who you want to work with**. Groups are to be made up of 3-4 students per group. If you would like to be assigned to a group, please reach out to the TA.
+
+## Why Teams: Rationale
+
+In the real world, data scientists and statisticians often work in research teams. It is a skill to be able to communicate and work together on common projects. Thus, the remaining labs + your project will be team based.
+
+Teams work is better when members have a common understanding of the team's goals and expectations for collaboration. The purpose of this activity is to help your team making a plan for working together during lab and outside of the scheduled lab time.
+
+Each team member will have some ideas about how a team should operate. These ideas may be very different. This is your opportunity to share your thoughts and ideas to promote optimal team function and prevent misunderstandings in the future.
+
+## Team Name
+
+Discuss with your group a team name to be called. Your GitHub repos will be created for this team name moving forward. Report your team name to your Lab Leader before moving on.
+
+## Instructions
+
+**There are two items you need to complete when forming your group.**
+
+-- Report your group members and team name to your TA to be recorded 
+
+-- Fill out the team agreement
+
+Team agreement: Discuss each of the items below with all in-person team members. If necessary, also follow up this week with any missing team members.
+
+Have *one person* act as the recorder and type the team's decisions in the `team-agreement.qmd` file.
+
+*Be sure the team agrees on an item before it is added to the document.*
+
+Once the document is complete, the recorder should render, commit, and push the team agreement to GitHub. All team members can refer to this document throughout the semester.
+
+This is not graded for accuracy, and simply acts as a tool to facilitate good group work. 
+
+## Team Agreement
+
+### Weekly meetings
+
+Identify a 1 - 2 hour weekly block outside of lab where the team can meet to work on assignments. All team members should block off this time on their calendar in case the group needs to meet to finish lab or work on the project.
+
+### Meeting "location"
+
+How the team will meet to work together (e.g. in-person, Zoom, Facetime, Google Hangouts). Be sure every member is able to access the virtual meeting space, if needed. If you are unable to find a weekly time when the team can meet, briefly outline a plan to work on assignments outside of lab. Otherwise, you can delete this item.
+
+### Primary method of communication
+
+The team's primary method of communication outside of meetings (e.g. Slack, text messages, etc.)
+
+### How should someone notify the other members if they are unable to attend lab or a scheduled team meeting?
+
+### By when should everyone have their portion of the lab completed?
+
+Keep in mind your team may want to have time to review the lab before turning it in to make sure it is a cohesive write up.
+
+### Any other items the team would like to discuss or plan.
+
+### Missing Teammates
+
+If someone is missing in your lab, and you would like them to be a part of your team, please communicate this information with both them and the TA so this can be documented. 
+
+# Data Wrangling
 
 ## Warm up
 

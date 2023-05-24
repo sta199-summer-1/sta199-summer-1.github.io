@@ -627,7 +627,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Lab-3\nTidying Data | Group Formation + Merge Conflicts Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\nDebugging + ggplot practice\n\n\n\n\n\n\n\n\n\n\nRelease Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-4\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-6\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-8\nProject Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7; Optional Review\nTidying Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 2 Due\n\n\n\nTh\n1 June\nLec-8; Exam-1\nMerge Conflicts + Debugging + ggplot practice\n\n\n\n\n\n\n\n\n\n\nRelease Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-4\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-6\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-8\nProject Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -730,49 +730,84 @@
   {
     "objectID": "labs/lab-2.html",
     "href": "labs/lab-2.html",
-    "title": "Lab 2 - Data wrangling",
+    "title": "Lab 2 - Group Formation Data wrangling",
     "section": "",
     "text": "Important\n\n\n\nThis lab is due Monday May 29th at 11:59pm."
   },
   {
+    "objectID": "labs/lab-2.html#group-formation",
+    "href": "labs/lab-2.html#group-formation",
+    "title": "Lab 2 - Group Formation Data wrangling",
+    "section": "Group Formation",
+    "text": "Group Formation\nAfter lab-2, lab assignments will be group based, and we will shortly be starting the group project.\nIn this lab, you are going choose who you want to work with. Groups are to be made up of 3-4 students per group. If you would like to be assigned to a group, please reach out to the TA."
+  },
+  {
+    "objectID": "labs/lab-2.html#why-teams-rationale",
+    "href": "labs/lab-2.html#why-teams-rationale",
+    "title": "Lab 2 - Group Formation Data wrangling",
+    "section": "Why Teams: Rationale",
+    "text": "Why Teams: Rationale\nIn the real world, data scientists and statisticians often work in research teams. It is a skill to be able to communicate and work together on common projects. Thus, the remaining labs + your project will be team based.\nTeams work is better when members have a common understanding of the team’s goals and expectations for collaboration. The purpose of this activity is to help your team making a plan for working together during lab and outside of the scheduled lab time.\nEach team member will have some ideas about how a team should operate. These ideas may be very different. This is your opportunity to share your thoughts and ideas to promote optimal team function and prevent misunderstandings in the future."
+  },
+  {
+    "objectID": "labs/lab-2.html#team-name",
+    "href": "labs/lab-2.html#team-name",
+    "title": "Lab 2 - Group Formation Data wrangling",
+    "section": "Team Name",
+    "text": "Team Name\nDiscuss with your group a team name to be called. Your GitHub repos will be created for this team name moving forward. Report your team name to your Lab Leader before moving on."
+  },
+  {
+    "objectID": "labs/lab-2.html#instructions",
+    "href": "labs/lab-2.html#instructions",
+    "title": "Lab 2 - Group Formation Data wrangling",
+    "section": "Instructions",
+    "text": "Instructions\nThere are two items you need to complete when forming your group.\n– Report your group members and team name to your TA to be recorded\n– Fill out the team agreement\nTeam agreement: Discuss each of the items below with all in-person team members. If necessary, also follow up this week with any missing team members.\nHave one person act as the recorder and type the team’s decisions in the team-agreement.qmd file.\nBe sure the team agrees on an item before it is added to the document.\nOnce the document is complete, the recorder should render, commit, and push the team agreement to GitHub. All team members can refer to this document throughout the semester.\nThis is not graded for accuracy, and simply acts as a tool to facilitate good group work."
+  },
+  {
+    "objectID": "labs/lab-2.html#team-agreement",
+    "href": "labs/lab-2.html#team-agreement",
+    "title": "Lab 2 - Group Formation Data wrangling",
+    "section": "Team Agreement",
+    "text": "Team Agreement\nWeekly meetings\nIdentify a 1 - 2 hour weekly block outside of lab where the team can meet to work on assignments. All team members should block off this time on their calendar in case the group needs to meet to finish lab or work on the project.\nMeeting “location”\nHow the team will meet to work together (e.g. in-person, Zoom, Facetime, Google Hangouts). Be sure every member is able to access the virtual meeting space, if needed. If you are unable to find a weekly time when the team can meet, briefly outline a plan to work on assignments outside of lab. Otherwise, you can delete this item.\nPrimary method of communication\nThe team’s primary method of communication outside of meetings (e.g. Slack, text messages, etc.)\nHow should someone notify the other members if they are unable to attend lab or a scheduled team meeting?\nBy when should everyone have their portion of the lab completed?\nKeep in mind your team may want to have time to review the lab before turning it in to make sure it is a cohesive write up.\nAny other items the team would like to discuss or plan.\nMissing Teammates\nIf someone is missing in your lab, and you would like them to be a part of your team, please communicate this information with both them and the TA so this can be documented."
+  },
+  {
     "objectID": "labs/lab-2.html#warm-up",
     "href": "labs/lab-2.html#warm-up",
-    "title": "Lab 2 - Data wrangling",
+    "title": "Lab 2 - Group Formation Data wrangling",
     "section": "Warm up",
     "text": "Warm up\nBefore we introduce the data, let’s warm up with some simple exercises.\n\nUpdate the YAML, changing the author name to your name, and render the document.\nCommit your changes with a meaningful commit message.\nPush your changes to GitHub.\nGo to your repo on GitHub and confirm that your changes are visible in your `.qmd and .pdf files. If anything is missing, render, commit, and push again."
   },
   {
     "objectID": "labs/lab-2.html#packages",
     "href": "labs/lab-2.html#packages",
-    "title": "Lab 2 - Data wrangling",
+    "title": "Lab 2 - Group Formation Data wrangling",
     "section": "Packages",
     "text": "Packages\nWe’ll use the tidyverse package for much of the data wrangling. This package is already installed for you. You can load it by running the following in your Console:\n\nlibrary(tidyverse)"
   },
   {
     "objectID": "labs/lab-2.html#data",
     "href": "labs/lab-2.html#data",
-    "title": "Lab 2 - Data wrangling",
+    "title": "Lab 2 - Group Formation Data wrangling",
     "section": "Data",
     "text": "Data\nThe dataset for this assignment can be found as a CSV (comma separated values) file in the data folder of your repository. You can read it in using the following.\n\nnobel <- read_csv(\"data/nobel.csv\")\n\nThe descriptions of the variables are as follows:\n\n\nid: ID number\n\nfirstname: First name of laureate\n\nsurname: Surname\n\nyear: Year prize won\n\ncategory: Category of prize\n\naffiliation: Affiliation of laureate\n\ncity: City of laureate in prize year\n\ncountry: Country of laureate in prize year\n\nborn_date: Birth date of laureate\n\ndied_date: Death date of laureate\n\ngender: Gender of laureate\n\nborn_city: City where laureate was born\n\nborn_country: Country where laureate was born\n\nborn_country_code: Code of country where laureate was born\n\ndied_city: City where laureate died\n\ndied_country: Country where laureate died\n\ndied_country_code: Code of country where laureate died\n\noverall_motivation: Overall motivation for recognition\n\nshare: Number of other winners award is shared with\n\nmotivation: Motivation for recognition\n\nIn a few cases the name of the city/country changed after laureate was given (e.g. in 1975 Bosnia and Herzegovina was called the Socialist Federative Republic of Yugoslavia). In these cases the variables below reflect a different name than their counterparts without the suffix _original.\n\n\nborn_country_original: Original country where laureate was born\n\nborn_city_original: Original city where laureate was born\n\ndied_country_original: Original country where laureate died\n\ndied_city_original: Original city where laureate died\n\ncity_original: Original city where laureate lived at the time of winning the award\n\ncountry_original: Original country where laureate lived at the time of winning the award"
   },
   {
     "objectID": "labs/lab-2.html#get-to-know-your-data",
     "href": "labs/lab-2.html#get-to-know-your-data",
-    "title": "Lab 2 - Data wrangling",
+    "title": "Lab 2 - Group Formation Data wrangling",
     "section": "Get to know your data",
     "text": "Get to know your data\n\nHow many observations and how many variables are in the dataset? Use inline code to answer this question. What does each row represent?\n\nThere are some observations in this dataset that we will exclude from our analysis to match the Buzzfeed results.\n\nCreate a new data frame called nobel_living that filters for\n\n\nlaureates for whom country is available\nlaureates who are people as opposed to organizations (organizations are denoted with \"org\" as their gender)\nlaureates who are still alive (their died_date is NA)\n\n\n\n\nConfirm that once you have filtered for these characteristics you are left with a data frame with 228 observations, once again using inline code."
   },
   {
     "objectID": "labs/lab-2.html#most-living-nobel-laureates-were-based-in-the-us-when-they-won-their-prizes",
     "href": "labs/lab-2.html#most-living-nobel-laureates-were-based-in-the-us-when-they-won-their-prizes",
-    "title": "Lab 2 - Data wrangling",
+    "title": "Lab 2 - Group Formation Data wrangling",
     "section": "Most living Nobel laureates were based in the US when they won their prizes",
     "text": "Most living Nobel laureates were based in the US when they won their prizes\n… says the Buzzfeed article. Let’s see if that’s true.\nFirst, we’ll create a new variable to identify whether the laureate was in the US when they won their prize. We’ll use the mutate() function for this. The following pipeline mutates the nobel_living data frame by adding a new variable called country_us. We use an if statement to create this variable. The first argument in the if_else() function we’re using to write this if statement is the condition we’re testing for. If country is equal to \"USA\", we set country_us to \"USA\". If not, we set the country_us to \"Other\".\n\nnobel_living <- nobel_living |>\n  mutate(\n    country_us = if_else(country == \"USA\", \"USA\", \"Other\")\n  )\n\nNext, we will limit our analysis to only the following categories: Physics, Medicine, Chemistry, and Economics.\n\nnobel_living_science <- nobel_living |>\n  filter(category %in% c(\"Physics\", \"Medicine\", \"Chemistry\", \"Economics\"))\n\nFor the following exercises, work with the nobel_living_science data frame you created above. This means you’ll need to define this data frame in your Quarto document, even though the next exercise doesn’t explicitly ask you to do so.\n\n\nCreate a faceted bar plot visualizing the relationship between the category of prize and whether the laureate was in the US when they won the nobel prize. Interpret your visualization, and say a few words about whether the Buzzfeed headline is supported by the data.\n\nYour visualization should be faceted by category.\nFor each facet you should have two bars, one for winners in the US and one for Other.\nFlip the coordinates so the bars are horizontal, not vertical.\n\n\n\n\nNow is a good time to render, commit, and push. Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding."
   },
   {
     "objectID": "labs/lab-2.html#but-of-those-us-based-nobel-laureates-many-were-born-in-other-countries",
     "href": "labs/lab-2.html#but-of-those-us-based-nobel-laureates-many-were-born-in-other-countries",
-    "title": "Lab 2 - Data wrangling",
+    "title": "Lab 2 - Group Formation Data wrangling",
     "section": "But of those US-based Nobel laureates, many were born in other countries",
     "text": "But of those US-based Nobel laureates, many were born in other countries\n\nCreate a new variable called born_country_us in nobel_living_science that has the value \"USA\" if the laureate is born in the US, and \"Other\" otherwise. How many of the winners are born in the US?\n\n\n\n\n\n\n\nNote\n\n\n\nYou should be able to cheat borrow from code you used earlier to create the country_us variable.\n\n\n\n\nAdd a second variable to your visualization from Exercise 3 based on whether the laureate was born in the US or not. Create two visualizations with this new variable added:\n\nPlot 1: Segmented frequency bar plot\nPlot 2: Segmented relative frequency bar plot (Hint: Add position = \"fill\" to geom_bar().)\n\nHere are some instructions that apply to both of these visualizations:\n\nYour final visualization should contain a facet for each category.\nWithin each facet, there should be two bars for whether the laureate won the award in the US or not.\nEach bar should have segments for whether the laureate was born in the US or not.\n\nWhich of these visualizations is a better fit for answering the following question: “Do the data appear to support Buzzfeed’s claim that of those US-based Nobel laureates, most were born in other countries?” First, state which plot you’re using to answer the question. Then, answer the question, explaining your reasoning in 1-2 sentences.\n\n\n\nNow is a good time to render, commit, and push. Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding.\n\n\n\nIn a single pipeline, filter the nobel_living_science data frame for laureates who won their prize in the US, but were born outside of the US, and then create a frequency table (with the count() function) for their birth country (born_country) and arrange the resulting data frame in descending order of number of observations for each country. Which country is the most common?\n\n\nNow is a good time to render, commit, and push. Make sure that you commit and push all changed documents and your Git pane is completely empty before proceeding."
   },
@@ -793,6 +828,13 @@
   {
     "objectID": "prepare/5-23.html",
     "href": "prepare/5-23.html",
+    "title": "Prepare",
+    "section": "",
+    "text": "Note\n\n\n\nVideos use the “old school” pipe (%>%) but we’ll be using the newer (|>) pipe operator in class."
+  },
+  {
+    "objectID": "prepare/5-25.html",
+    "href": "prepare/5-25.html",
     "title": "Prepare",
     "section": "",
     "text": "Note\n\n\n\nVideos use the “old school” pipe (%>%) but we’ll be using the newer (|>) pipe operator in class."
