@@ -1,0 +1,37 @@
+---
+title: "Data Wranging + Group Formation"
+subtitle: "Lab 2"
+date: "May 25th"
+format: revealjs
+---
+
+## Lab 2 
+
+Three parts for today's lab
+
+-- Group Formation (Do this first)
+
+-- Team Agreement 
+
+-- Data Wranging 
+
+## Group Formation 
+
+-- 3-4 students
+
+-- You may choose your group 
+
+-- If you would like to work with a student who is missing, communicate this with them, other groupmates, and the TA
+
+-- Come up with **Team Name** and report name + all group members to TA when ready
+
+## Lab 2 
+
+Is due Monday (29th) before class. You will turn in the following:
+
+-- Team Agreement (1 per group)
+
+-- Data Wranging (individual assignment)
+
+Some groups may want to start on the data wrangling portion during lab, while others may want to start with the team agreement. Please prioritize whichever you see fit.  
+

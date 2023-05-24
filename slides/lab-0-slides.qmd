@@ -31,11 +31,11 @@ library(countdown)
 
 -- Lab may end with important announcements
 
--- If you don't finish labs in-class... 
+-- If you don't finish labs in-class...
 
---- Thursday labs due Noon Monday before lecture 
+--- Thursday labs due Noon Monday before lecture
 
---- Monday labs due Noon Thursday before lecture 
+--- Monday labs due Noon Thursday before lecture
 
 ## Tips
 
