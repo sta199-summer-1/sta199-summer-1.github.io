@@ -89,6 +89,8 @@ If someone is missing in your lab, and you would like them to be a part of your 
 
 # Data Wrangling
 
+Note: This lab still requires individual submissions!
+
 ## Warm up
 
 Before we introduce the data, let's warm up with some simple exercises.
@@ -294,12 +296,13 @@ To submit your assignment:
 
 | Component             | Points |
 |:----------------------|:-------|
-| Ex 1                  | 6      |
-| Ex 2                  | 7      |
-| Ex 3                  | 8      |
-| Ex 4                  | 6      |
+| Ex 1                  | 5      |
+| Ex 2                  | 6      |
+| Ex 3                  | 7      |
+| Ex 4                  | 5      |
 | Ex 5                  | 10     |
-| Ex 6                  | 8      |
+| Ex 6                  | 7      |
+| Team Agreement        | 5      |
 | Workflow & formatting | 5      |
 | **Total**             | **50** |
 
