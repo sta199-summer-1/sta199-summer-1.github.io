@@ -21,55 +21,50 @@ library(countdown)
 
 -- All AEs for this week due Friday (26th at 11:59 PM)
 
-## Lab 2 Announcement 
+## Lab 2 Announcement
 
--- Group Formation 
+-- Group Formation
 
--- 3-4 students 
+-- 3-4 students
 
--- GitHub is a tool for collaboration 
+-- GitHub is a tool for collaboration
 
 -- It is a skill to be able to communicate and work together on common projects
 
-## Warm up - Joins 
+## Warm up - Joins
 
 ![](images/joinprac.png){fig-align="center"}
 
 -- `left_join(x,y)`; `right_join(x,y)`; `full_join(x,y)`
 
+## Function of the day
 
-
-## Function of the day 
-
-`if_else` 
+`if_else`
 
 -- If this, do this, else this
 
--- Commonly used to create new variables 
+-- Commonly used to create new variables
 
-## Function of the day 
+## Function of the day
 
 ![](images/slicecars.png){fig-align="center"}
 
-## Function of the day 
+## Function of the day
 
-![](images/ifslicecars.png){fig-align="center"}
-## Function of the day (Bonus!)
+![](images/ifslicecars.png){fig-align="center"} \## Function of the day (Bonus!)
 
-`fct_reorder` 
+`fct_reorder`
 
 ![](images/fct_reorder_no.png){fig-align="center"}
 
 ## Function of the day (Bonus!)
 
-```
-iris |>
-  ggplot(
-  aes(x = fct_reorder(Species, Sepal.Width), y = Sepal.Width)
-) + 
-  geom_boxplot()
-  
-```
+    iris |>
+      ggplot(
+      aes(x = fct_reorder(Species, Sepal.Width), y = Sepal.Width)
+    ) + 
+      geom_boxplot()
+      
 
 ![](images/fct_reorder_yes.png){fig-align="center"}
 
@@ -119,9 +114,9 @@ There are three interrelated rules that make a dataset tidy:
 
 # pivot_wider
 
-## pivot_wider{.smaller}
+## pivot_wider {.smaller}
 
---  Making tables for quick comparison / display purposes 
+-- Making tables for quick comparison / display purposes
 
 -- `names_to`
 
@@ -129,13 +124,19 @@ There are three interrelated rules that make a dataset tidy:
 
 ![](images/pivot-wider.png){width="950" height="500" fig-align="center"}
 
-## ae-summary 
+## Pivot Motivation 
+
+Look at points by game
+
+![](images/port.png){}
+
+
+## ae-summary
 
 ## Recap of AE {.smaller}
 
--   There are many different types of joins. Think critically about your goal in order to decide which join you should use. 
+-   There are many different types of joins. Think critically about your goal in order to decide which join you should use.
 
 -   When pivoting longer, variable names that turn into values are characters by default. If you need them to be in another format, you need to explicitly make that transformation, which you can do so within the `pivot_longer()` function.
 
 -   `pivot_wider()` which makes data sets wider by increasing columns and reducing rows. `pivot_wider()` has the opposite interface to pivot_longer(): we need to provide the existing columns that define the values (values_from) and the column name (names_from).
-

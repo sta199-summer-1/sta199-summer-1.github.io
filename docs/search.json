@@ -2121,6 +2121,13 @@
     "text": "pivot_wider\n– Making tables for quick comparison / display purposes\n– names_to\n– values_to"
   },
   {
+    "objectID": "slides/day5.html#pivot-motivation",
+    "href": "slides/day5.html#pivot-motivation",
+    "title": "Joins + Tidy Data",
+    "section": "Pivot Motivation",
+    "text": "Pivot Motivation\nLook at points by game"
+  },
+  {
     "objectID": "slides/day5.html#ae-summary",
     "href": "slides/day5.html#ae-summary",
     "title": "Joins + Tidy Data",
