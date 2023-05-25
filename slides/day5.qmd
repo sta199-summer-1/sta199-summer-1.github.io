@@ -19,6 +19,8 @@ library(countdown)
 
 -- HW-1 due Monday (29th at 11:59 PM)
 
+-- Lab-1 due Today (25th at 11:59 PM) <- We will talk about this deadline
+
 -- All AEs for this week due Friday (26th at 11:59 PM)
 
 ## Lab 2 Announcement

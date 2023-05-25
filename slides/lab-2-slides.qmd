@@ -13,7 +13,7 @@ Three parts for today's lab
 
 -- Team Agreement 
 
--- Data Wranging 
+-- Data Wrangling 
 
 ## Group Formation 
 
