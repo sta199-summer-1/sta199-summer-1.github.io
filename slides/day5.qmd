@@ -57,6 +57,7 @@ library(countdown)
 
 ![](images/fct_reorder_no.png){fig-align="center"}
 
+
 ## Function of the day (Bonus!)
 
     iris |>
