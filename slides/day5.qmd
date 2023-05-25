@@ -49,15 +49,21 @@ library(countdown)
 
 ![](images/slicecars.png){fig-align="center"}
 
+
 ## Function of the day
 
-![](images/ifslicecars.png){fig-align="center"} \## Function of the day (Bonus!)
+![](images/ifslicecars.png){fig-align="center"} 
+
+New column added
+
+
+# Bonus Function
 
 `fct_reorder`
 
 ![](images/fct_reorder_no.png){fig-align="center"}
 
-
+ 
 ## Function of the day (Bonus!)
 
     iris |>
@@ -68,6 +74,7 @@ library(countdown)
       
 
 ![](images/fct_reorder_yes.png){fig-align="center"}
+
 
 ## Goals
 
@@ -81,9 +88,9 @@ library(countdown)
 
 ## Data Format (Wide vs Long)
 
--- **Wide** data contains values that do not repeat in the first column
+-- **Wide**  data contains values that do not repeat in the first column. Also called "unstacked". Tabular format.  
 
--- **Long** data contains values that do repeat in the first column
+-- **Long** data contains values that do repeat in the first column. Each row is a single observation of a particular group. 
 
 ![](images/wide_and_long.png){width="950" height="450" fig-align="center"}
 
@@ -102,6 +109,8 @@ There are three interrelated rules that make a dataset tidy:
 -   **Each observation is row; each row is an observation.**
 
 -   Each value is a cell; each cell is a single value.
+
+This typically describes long data 
 
 ## Motivation
 

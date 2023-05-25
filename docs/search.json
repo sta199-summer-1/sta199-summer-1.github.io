@@ -2062,7 +2062,7 @@
     "href": "slides/day5.html#function-of-the-day-2",
     "title": "Joins + Tidy Data",
     "section": "Function of the day",
-    "text": "Function of the day\n ## Function of the day (Bonus!)\nfct_reorder"
+    "text": "Function of the day\n\nNew column added"
   },
   {
     "objectID": "slides/day5.html#function-of-the-day-bonus",
@@ -2083,7 +2083,7 @@
     "href": "slides/day5.html#data-format-wide-vs-long",
     "title": "Joins + Tidy Data",
     "section": "Data Format (Wide vs Long)",
-    "text": "Data Format (Wide vs Long)\n– Wide data contains values that do not repeat in the first column\n– Long data contains values that do repeat in the first column"
+    "text": "Data Format (Wide vs Long)\n– Wide data contains values that do not repeat in the first column. Also called “unstacked”. Tabular format.\n– Long data contains values that do repeat in the first column. Each row is a single observation of a particular group."
   },
   {
     "objectID": "slides/day5.html#data-format-wide-vs-long-1",
@@ -2097,7 +2097,7 @@
     "href": "slides/day5.html#tidy-data",
     "title": "Joins + Tidy Data",
     "section": "Tidy Data",
-    "text": "Tidy Data\nThere are three interrelated rules that make a dataset tidy:\n\nEach variable is a column; each column is a variable.\nEach observation is row; each row is an observation.\nEach value is a cell; each cell is a single value."
+    "text": "Tidy Data\nThere are three interrelated rules that make a dataset tidy:\n\nEach variable is a column; each column is a variable.\nEach observation is row; each row is an observation.\nEach value is a cell; each cell is a single value.\n\nThis typically describes long data"
   },
   {
     "objectID": "slides/day5.html#motivation",

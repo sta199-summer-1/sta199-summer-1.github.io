@@ -360,14 +360,15 @@
 <img data-src="images/slicecars.png" class="r-stretch quarto-figure-center"></section>
 <section id="function-of-the-day-2" class="slide level2">
 <h2>Function of the day</h2>
-<p><img data-src="images/ifslicecars.png" data-fig-align="center"> ## Function of the day (Bonus!)</p>
-<p><code>fct_reorder</code></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/fct_reorder_no.png"></p>
-</figure>
-</div>
+
+<img data-src="images/ifslicecars.png" class="r-stretch quarto-figure-center"><p>New column added</p>
 </section>
+<section>
+<section id="bonus-function" class="title-slide slide level1 center">
+<h1>Bonus Function</h1>
+<p><code>fct_reorder</code></p>
+
+<img data-src="images/fct_reorder_no.png" class="r-stretch quarto-figure-center"></section>
 <section id="function-of-the-day-bonus" class="slide level2">
 <h2>Function of the day (Bonus!)</h2>
 <pre><code>iris |&gt;
@@ -383,7 +384,7 @@
 <p>– Finish Joins</p>
 <p>– Define <code>Tidy Data</code></p>
 <p>– Play with <code>pivot</code> functions in R</p>
-</section>
+</section></section>
 <section>
 <section id="ae-05" class="title-slide slide level1 center">
 <h1>ae-05</h1>
@@ -391,8 +392,8 @@
 </section>
 <section id="data-format-wide-vs-long" class="slide level2">
 <h2>Data Format (Wide vs Long)</h2>
-<p>– <strong>Wide</strong> data contains values that do not repeat in the first column</p>
-<p>– <strong>Long</strong> data contains values that do repeat in the first column</p>
+<p>– <strong>Wide</strong> data contains values that do not repeat in the first column. Also called “unstacked”. Tabular format.</p>
+<p>– <strong>Long</strong> data contains values that do repeat in the first column. Each row is a single observation of a particular group.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/wide_and_long.png" width="950" height="450"></p>
@@ -416,6 +417,7 @@
 <li class="fragment"><p><strong>Each observation is row; each row is an observation.</strong></p></li>
 <li class="fragment"><p>Each value is a cell; each cell is a single value.</p></li>
 </ul>
+<p>This typically describes long data</p>
 </section>
 <section id="motivation" class="slide level2">
 <h2>Motivation</h2>
