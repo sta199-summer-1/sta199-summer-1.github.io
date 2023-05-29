@@ -2244,35 +2244,63 @@
     "href": "slides/day6-debugging.html#exam-questions",
     "title": "Debugging + ggplot practice",
     "section": "Exam Questions",
-    "text": "Exam Questions\nWill cover data viz and data wrangling\nQuestions will be similar"
+    "text": "Exam Questions\nWill cover data viz and data wrangling\nQuestions will be similar\nRender + Commit + Push after EVERY question"
   },
   {
     "objectID": "slides/day6-debugging.html#warm-up",
     "href": "slides/day6-debugging.html#warm-up",
     "title": "Debugging + ggplot practice",
     "section": "Warm-Up",
-    "text": "Warm-Up\nSuppose a researcher wants to subset the mtcars data set to only include cars with 4 and 6 cylinders."
+    "text": "Warm-Up\nWide vs Long Data\n– What’s the difference?"
   },
   {
     "objectID": "slides/day6-debugging.html#warm-up-1",
     "href": "slides/day6-debugging.html#warm-up-1",
     "title": "Debugging + ggplot practice",
     "section": "Warm-Up",
-    "text": "Warm-Up\nTwo researchers set out to subset these data using the following code. What’s different? What’s correct?\nResearcher 1:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)\nResearcher 2:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)"
+    "text": "Warm-Up"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-thought-exercise",
+    "href": "slides/day6-debugging.html#warm-up-thought-exercise",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm-Up (Thought Exercise)",
+    "text": "Warm-Up (Thought Exercise)\nSuppose a researcher wants to subset the mtcars data set to only include cars with 4 and 6 cylinders."
   },
   {
     "objectID": "slides/day6-debugging.html#warm-up-2",
     "href": "slides/day6-debugging.html#warm-up-2",
     "title": "Debugging + ggplot practice",
-    "section": "Warm up",
-    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)"
+    "section": "Warm-Up",
+    "text": "Warm-Up\nTwo researchers set out to subset these data using the following code. What’s different? What’s correct?\nResearcher 1:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)\nResearcher 2:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)"
   },
   {
     "objectID": "slides/day6-debugging.html#warm-up-3",
     "href": "slides/day6-debugging.html#warm-up-3",
     "title": "Debugging + ggplot practice",
     "section": "Warm up",
+    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-4",
+    "href": "slides/day6-debugging.html#warm-up-4",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm up",
     "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)\n}"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#function-of-the-day",
+    "href": "slides/day6-debugging.html#function-of-the-day",
+    "title": "Debugging + ggplot practice",
+    "section": "Function of the day",
+    "text": "Function of the day\nnrow() and ncol()"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#inline-code",
+    "href": "slides/day6-debugging.html#inline-code",
+    "title": "Debugging + ggplot practice",
+    "section": "Inline Code",
+    "text": "Inline Code"
   },
   {
     "objectID": "slides/day6-debugging.html#not-seeing-my-changes-in-git",
@@ -2293,7 +2321,7 @@
     "href": "slides/day6-debugging.html#tips-for-not-rendering-1",
     "title": "Debugging + ggplot practice",
     "section": "Tips for not rendering",
-    "text": "Tips for not rendering\n\nSomething wrong with your code chunk arguments?"
+    "text": "Tips for not rendering\n– Something wrong with your code chunk arguments?"
   },
   {
     "objectID": "slides/day6-debugging.html#expected",
@@ -2301,13 +2329,6 @@
     "title": "Debugging + ggplot practice",
     "section": "Expected :",
     "text": "Expected :"
-  },
-  {
-    "objectID": "slides/day6-debugging.html#spacing",
-    "href": "slides/day6-debugging.html#spacing",
-    "title": "Debugging + ggplot practice",
-    "section": "Spacing",
-    "text": "Spacing"
   },
   {
     "objectID": "slides/day6-debugging.html#duplicate-labels",
@@ -2338,11 +2359,11 @@
     "text": "General Strategies\n– Help files (?function.name)\n– https://ggplot2.tidyverse.org/reference/index.html\n– Slack\n– Keys\n– Google"
   },
   {
-    "objectID": "slides/day6-debugging.html#ae-07",
-    "href": "slides/day6-debugging.html#ae-07",
+    "objectID": "slides/day6-debugging.html#ae-06",
+    "href": "slides/day6-debugging.html#ae-06",
     "title": "Debugging + ggplot practice",
-    "section": "ae-07",
-    "text": "ae-07\n– We will start with the debugging qmd."
+    "section": "ae-06",
+    "text": "ae-06\n– We will start with the debugging qmd."
   },
   {
     "objectID": "slides/day6-debugging.html#goal",

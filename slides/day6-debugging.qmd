@@ -11,62 +11,57 @@ format: revealjs
 
 -   HW-2 is out. **Due Thursday by 5:00**
 
--   Are you in a project group? 
+-   Are you in a project group?
 
 -   Are you keeping up with prepare material?
 
-
 ## Announcements
 
--- Exam 1 - June 1st 
+-- Exam 1 - June 1st
 
 -- Project is starting up!
 
-
 ## Project
 
--- Find a data set 
+-- Find a data set
 
--- Come up with a research question 
+-- Come up with a research question
 
 -- Perform EDA
 
 -- Perform Statistical Procedure
 
--- Give a presentation 
+-- Give a presentation
 
-
-## Project 
+## Project
 
 Can be found on the website
 
-Identify 2 data sets you’re interested in potentially using for the final project. 
+Identify 2 data sets you're interested in potentially using for the final project.
 
--- 300 observations 
+-- 300 observations
 
--- 6 variables 
+-- 6 variables
 
 Plenty of places to find data online
 
-## Project Data 
+## Project Data
 
 Data must be real
 
-Identifier variables such as “name”, “social security number”, etc. are not useful explanatory variables.
-If you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique explanatory variables.
+Identifier variables such as "name", "social security number", etc. are not useful explanatory variables. If you have multiple columns with the same information (e.g. "state abbreviation" and "state name"), then they are not unique explanatory variables.
 
 You may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.
 
-## Project Proposal 
+## Project Proposal
 
 Introduction and data
 
 Research question
 
-Literature 
+Literature
 
-Glimpse 
-
+Glimpse
 
 ## Exam Instructions
 
@@ -94,19 +89,31 @@ Glimpse
 
 -- Pages not marked on Gradescope (-10 points)
 
-## Exam Questions 
+## Exam Questions
 
-Will cover data viz and data wrangling 
+Will cover data viz and data wrangling
 
 Questions will be similar
 
+Render + Commit + Push after EVERY question
+
 ## Warm-Up
+
+Wide vs Long Data
+
+-- What's the difference?
+
+## Warm-Up
+
+![](images/widelong.png)
+
+## Warm-Up (Thought Exercise)
 
 Suppose a researcher wants to subset the `mtcars` data set to only include cars with 4 and 6 cylinders.
 
 ![](images/mtcars.png)
 
-## Warm-Up{.smaller}
+## Warm-Up {.smaller}
 
 Two researchers set out to subset these data using the following code. What's different? What's correct?
 
@@ -118,7 +125,7 @@ Researcher 1:
       mutate(cyl = factor(cyl)) |>
       filter(cyl == cylinders)
 
-Researcher 2: 
+Researcher 2:
 
     cylinders <- c("6", "4")
 
@@ -126,30 +133,36 @@ Researcher 2:
       mutate(cyl = factor(cyl)) |>
       filter(cyl %in% cylinders)
 
-## Warm up 
+## Warm up
 
-```
-cylinders <- c("6", "4")
+    cylinders <- c("6", "4")
 
-mtcars |>
-  mutate(cyl = factor(cyl)) |>
-  filter(cyl == cylinders)
-```      
+    mtcars |>
+      mutate(cyl = factor(cyl)) |>
+      filter(cyl == cylinders)
 
 ![](images/mtcars.researcher1.png)
 
-## Warm up 
+## Warm up
 
-```
-cylinders <- c("6", "4")
+    cylinders <- c("6", "4")
 
-mtcars |>
-  mutate(cyl = factor(cyl)) |>
-  filter(cyl %in% cylinders)
-```      
+    mtcars |>
+      mutate(cyl = factor(cyl)) |>
+      filter(cyl %in% cylinders)
 
 ![](images/mtcars.researcher2.png){fig-align="center"}}
-      
+
+## Function of the day
+
+`nrow()` and `ncol()`
+
+## Inline Code
+
+
+![](images/inline.png){width="800" height="220" fig-align="center"}
+
+
 # Debugging
 
 ## Not seeing my changes in Git
@@ -164,17 +177,11 @@ mtcars |>
 
 ## Tips for not rendering
 
--   Something wrong with your code chunk arguments?
+-- Something wrong with your code chunk arguments?
 
 ## Expected :
 
 ![](images/missing.png) ![](images/missing.answer.png){width="400" height="270"}
-
-## Spacing
-
-![](images/spacing.png)
-
-![](images/spacing.answer.png){width="400" height="240"}
 
 ## Duplicate labels
 
@@ -210,10 +217,10 @@ mtcars |>
 
 -- Google
 
-## ae-07
+## ae-06
 
 -- We will start with the debugging qmd.
 
-## Goal 
+## Goal
 
 ![](images/statsci-plot.png){fig-alt="Line plot of numbers of Statistical Science majors over the years (2011 - 2021). Degree types represented are BS, BS2, AB, AB2. There is an increasing trend in BS degrees and somewhat steady trend in AB degrees." fig-align="center"}

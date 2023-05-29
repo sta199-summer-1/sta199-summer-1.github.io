@@ -392,13 +392,23 @@
 <h2>Exam Questions</h2>
 <p>Will cover data viz and data wrangling</p>
 <p>Questions will be similar</p>
+<p>Render + Commit + Push after EVERY question</p>
 </section>
 <section id="warm-up" class="slide level2">
 <h2>Warm-Up</h2>
+<p>Wide vs Long Data</p>
+<p>– What’s the difference?</p>
+</section>
+<section id="warm-up-1" class="slide level2">
+<h2>Warm-Up</h2>
+
+<img data-src="images/widelong.png" class="r-stretch"></section>
+<section id="warm-up-thought-exercise" class="slide level2">
+<h2>Warm-Up (Thought Exercise)</h2>
 <p>Suppose a researcher wants to subset the <code>mtcars</code> data set to only include cars with 4 and 6 cylinders.</p>
 
 <img data-src="images/mtcars.png" class="r-stretch"></section>
-<section id="warm-up-1" class="slide level2 smaller">
+<section id="warm-up-2" class="slide level2 smaller">
 <h2>Warm-Up</h2>
 <p>Two researchers set out to subset these data using the following code. What’s different? What’s correct?</p>
 <p>Researcher 1:</p>
@@ -414,7 +424,7 @@ mtcars |&gt;
   mutate(cyl = factor(cyl)) |&gt;
   filter(cyl %in% cylinders)</code></pre>
 </section>
-<section id="warm-up-2" class="slide level2">
+<section id="warm-up-3" class="slide level2">
 <h2>Warm up</h2>
 <pre><code>cylinders &lt;- c("6", "4")
 
@@ -423,7 +433,7 @@ mtcars |&gt;
   filter(cyl == cylinders)</code></pre>
 
 <img data-src="images/mtcars.researcher1.png" class="r-stretch"></section>
-<section id="warm-up-3" class="slide level2">
+<section id="warm-up-4" class="slide level2">
 <h2>Warm up</h2>
 <pre><code>cylinders &lt;- c("6", "4")
 
@@ -431,6 +441,18 @@ mtcars |&gt;
   mutate(cyl = factor(cyl)) |&gt;
   filter(cyl %in% cylinders)</code></pre>
 <p><img data-src="images/mtcars.researcher2.png" data-fig-align="center">}</p>
+</section>
+<section id="function-of-the-day" class="slide level2">
+<h2>Function of the day</h2>
+<p><code>nrow()</code> and <code>ncol()</code></p>
+</section>
+<section id="inline-code" class="slide level2">
+<h2>Inline Code</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/inline.png" width="800" height="220"></p>
+</figure>
+</div>
 </section>
 <section>
 <section id="debugging" class="title-slide slide level1 center">
@@ -448,18 +470,11 @@ mtcars |&gt;
 </section>
 <section id="tips-for-not-rendering-1" class="slide level2">
 <h2>Tips for not rendering</h2>
-<ul>
-<li class="fragment">Something wrong with your code chunk arguments?</li>
-</ul>
+<p>– Something wrong with your code chunk arguments?</p>
 </section>
 <section id="expected" class="slide level2">
 <h2>Expected :</h2>
 <p><img data-src="images/missing.png"> <img data-src="images/missing.answer.png" width="400" height="270"></p>
-</section>
-<section id="spacing" class="slide level2">
-<h2>Spacing</h2>
-<p><img data-src="images/spacing.png"></p>
-<p><img data-src="images/spacing.answer.png" width="400" height="240"></p>
 </section>
 <section id="duplicate-labels" class="slide level2">
 <h2>Duplicate labels</h2>
@@ -488,8 +503,8 @@ mtcars |&gt;
 <p>– Keys</p>
 <p>– Google</p>
 </section>
-<section id="ae-07" class="slide level2">
-<h2>ae-07</h2>
+<section id="ae-06" class="slide level2">
+<h2>ae-06</h2>
 <p>– We will start with the debugging qmd.</p>
 </section>
 <section id="goal" class="slide level2">
