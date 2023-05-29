@@ -1,0 +1,151 @@
+---
+title: "ae-07 - Merge Conflicts and Data Science Ethics"
+execute:
+  eval: true
+---
+
+# Learning Goals
+
+-   Collaborating on GitHub and resolving merge conflicts
+
+::: callout-important
+Pull up the merge.qmd to complete this short activity
+:::
+
+
+# Resolving merge conflicts
+
+What is a merge conflict? 
+
+![](images/pull-push.jpg)
+
+A merge conflict is an event that takes place when Git is unable to automatically resolve differences in code between two commits. This happens when you work on the same lines of code at the same time.
+
+Working in teams includes using a shared GitHub repo for labs and projects. Sometimes things will go swimmingly, and sometimes you'll run into merge conflicts.
+
+When you and your teammates work on the lines of code within a document, and both try to push your changes, you will run into issues. Merge conflicts happen when you merge branches that have competing renders, and Git needs your help to decide which changes to incorporate in the final merge.\
+
+Our first task today is to walk you through a merge conflict!\
+
+-   Pushing to a repo replaces the code on GitHub with the code you have on your computer.
+-   If a collaborator has made a change to your repo on GitHub that you haven't incorporated into your local work, GitHub will stop you from pushing to the repo because this could overwrite your collaborator's work!
+-   So you need to explicitly "merge" your collaborator's work before you can push.
+-   If your and your collaborator's changes are in different files or in different parts of the same file, git merges the work for you automatically when you \*pull\*.
+-   If you both changed the same part of a file, git will produce a \*\*merge conflict\*\* because it doesn't know how which change you want to keep and which change you want to overwrite.
+
+Git will put conflict markers in your code that look like:
+
+    <<<<<<< HEAD 
+
+    See also: [dplyr documentation](https://dplyr.tidyverse.org/)   
+
+    ======= 
+
+    See also [ggplot2 documentation](https://ggplot2.tidyverse.org/)  
+
+    >>>>>>> some1alpha2numeric3string4
+
+The `===`s separate *your* changes (top) from *their* changes (bottom).
+
+Note that on top you see the word `HEAD`, which indicates that these are your changes.
+
+And at the bottom you see `some1alpha2numeric3string4` (well, it probably looks more like `28e7b2ceb39972085a0860892062810fb812a08f`).
+
+This is the **hash** (a unique identifier) of the render your collaborator made with the conflicting change.
+
+Your job is to *reconcile* the changes: edit the file so that it incorporates the best of both versions and delete the `<<<`, `===`, and `>>>` lines. Then you can stage and render the result.
+
+# Merge conflict activity
+
+## Setup
+
+-   Clone the repo and open the .qmd file.
+-   Assign the numbers 1, 2, 3, and 4 to each of the team members. If your team has fewer than 4 people, some people will need to have multiple numbers. If your team has more than 4 people, some people will need to share some numbers.
+
+## Let's cause a merge conflict!
+
+Our goal is to see two different types of merges: first we'll see a type of merge that git can't figure out on its own how to do on its own (a **merge conflict**) and requires human intervention, then another type of where that git can figure out how to do without human intervention.
+
+Doing this will require some tight choreography, so pay attention!
+
+Take turns in completing the exercises, only one member at a time. **Others should just watch, not doing anything on their own projects (this includes not even pulling changes!)** until they are instructed to. If you feel like you won't be able to resist the urge to touch your computer when it's not your turn, we recommend putting your hands in your pockets or sitting on them!
+
+**Before starting**: everyone should have the repo cloned, open the `lab4.qmd` document, and know which role number(s) they are.
+
+**Everyone**:
+
+-   In order to resolve merge conflicts using the instructions below, git needs to have the correct settings.
+-   To ensure this is true, copy and paste `git config pull.rebase false` into your **terminal** and press enter. (Look for the tab next to the console, and ask if you can't find it.)
+-   Note that if a merge conflict comes up in a later assignment, you may need to do this step again before resolving it. If that's the case, you'll likely get a warning suggesting it when you try to pull and there's a conflict.
+
+🛑 Make sure everyone has completed this step before moving on.
+
+**Role 1:**
+
+-   Change "TEAM NAME" in the YAML to your actual team name.
+-   render, commit, push.
+
+🛑 Make sure the previous role has finished before moving on to the next step.
+
+**Role 2:**
+
+-   Change "TEAM NAME" to some other word.
+-   Render, commit, push. You should get an error.
+-   Pull. Take a look at the document with the merge conflict.
+-   Clear the merge conflict by editing the document to choose the correct/preferred change.
+-   Render.
+-   **Click the Stage checkbox** for all files in your Git tab. Make sure they all have check marks, not filled-in boxes.
+-   commit and push.
+
+🛑 Make sure the previous role has finished before moving on to the next step.
+
+**Role 3:**
+
+-   Add a code chunk for Exercise 1 and give it a label.
+-   Render, commit, push. You should get an error.
+-   Pull. No merge conflicts should occur, but you should see a message about merging.
+-   Now push.
+
+🛑 Make sure the previous role has finished before moving on to the next step.
+
+**Role 4:**
+
+-   Add a code chunk to Exercise 1 and give it a different label.
+-   Render, commit, push. You should get an error.
+-   Pull. Take a look at the document with the merge conflict. Clear the merge conflict by choosing the correct/preferred change. render, and push.
+
+🛑 Make sure the previous role has finished before moving on to the next step.
+
+**Everyone:** Pull, and observe the changes in your document.
+
+## Merge Conflicts are not always bad! 
+
+Merge conflicts are a part of group work. If you don't work on the same lines, merge conflicts can be a good thing. 
+
+**Role 1:**
+
+-   In Exercise 2, write 2 + 2 in the code chunk
+
+-   Render, commit, push.
+
+🛑 Make sure the previous role has finished before moving on to the next step.
+
+**Role 2:**
+
+-   In Exercise 3, write 3 + 5 in the code chunk
+
+-   Render, commit, push.
+
+-   Now pull. What happened? 
+
+**Role 1:**
+
+-   Now pull. What happened? 
+
+
+## Tips for collaborating via GitHub
+
+-   **Always pull first before you start working.**
+-   Resolve a merge conflict (render and push) *before* continuing your work. Never do new work while resolving a merge conflict.
+-   Render, commit, and push often to minimize merge conflicts and/or to make merge conflicts easier to resolve.
+-   If you find yourself in a situation that is difficult to resolve, ask questions ASAP. Don't let it linger and get bigger.
