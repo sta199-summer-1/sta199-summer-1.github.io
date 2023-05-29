@@ -655,7 +655,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Exam-1\nMerge conflicts + The Language of Models\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10; Lab-4\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13; Lab-6\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16; Lab-8\nProject Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Exam-1\nMerge conflicts + The Language of Models\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-5\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-6\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nData Ethics\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nData Ethics; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -2175,6 +2175,181 @@
     "title": "Joins + Tidy Data",
     "section": "Recap of AE",
     "text": "Recap of AE\n\nThere are many different types of joins. Think critically about your goal in order to decide which join you should use.\nWhen pivoting longer, variable names that turn into values are characters by default. If you need them to be in another format, you need to explicitly make that transformation, which you can do so within the pivot_longer() function.\npivot_wider() which makes data sets wider by increasing columns and reducing rows. pivot_wider() has the opposite interface to pivot_longer(): we need to provide the existing columns that define the values (values_from) and the column name (names_from).\n\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#checklist",
+    "href": "slides/day6-debugging.html#checklist",
+    "title": "Debugging + ggplot practice",
+    "section": "Checklist",
+    "text": "Checklist\n\nClone your ae-06 project in RStudio\nHW-2 is out. Due Thursday by 5:00\nAre you in a project group?\nAre you keeping up with prepare material?"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#announcements",
+    "href": "slides/day6-debugging.html#announcements",
+    "title": "Debugging + ggplot practice",
+    "section": "Announcements",
+    "text": "Announcements\n– Exam 1 - June 1st\n– Project is starting up!"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#project",
+    "href": "slides/day6-debugging.html#project",
+    "title": "Debugging + ggplot practice",
+    "section": "Project",
+    "text": "Project\n– Find a data set\n– Come up with a research question\n– Perform EDA\n– Perform Statistical Procedure\n– Give a presentation"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#project-1",
+    "href": "slides/day6-debugging.html#project-1",
+    "title": "Debugging + ggplot practice",
+    "section": "Project",
+    "text": "Project\nCan be found on the website\nIdentify 2 data sets you’re interested in potentially using for the final project.\n– 300 observations\n– 6 variables\nPlenty of places to find data online"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#project-data",
+    "href": "slides/day6-debugging.html#project-data",
+    "title": "Debugging + ggplot practice",
+    "section": "Project Data",
+    "text": "Project Data\nData must be real\nIdentifier variables such as “name”, “social security number”, etc. are not useful explanatory variables. If you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique explanatory variables.\nYou may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#project-proposal",
+    "href": "slides/day6-debugging.html#project-proposal",
+    "title": "Debugging + ggplot practice",
+    "section": "Project Proposal",
+    "text": "Project Proposal\nIntroduction and data\nResearch question\nLiterature\nGlimpse"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#exam-instructions",
+    "href": "slides/day6-debugging.html#exam-instructions",
+    "title": "Debugging + ggplot practice",
+    "section": "Exam Instructions",
+    "text": "Exam Instructions\n– You must submit a PDF document to Gradescope\n– With the exception of major emergencies, late submissions will not be accepted. A last-minute technical issue is not a major emergency.\n– Include appropriate labels, titles, etc. when making any plot."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#exam-instructions-1",
+    "href": "slides/day6-debugging.html#exam-instructions-1",
+    "title": "Debugging + ggplot practice",
+    "section": "Exam Instructions",
+    "text": "Exam Instructions\n– This is an individual assignment.\n– You may post clarification questions on Slack in the #exam-1 channel.\n– Don’t cheat\n– You may use R documentation, as well as course materials (notes and textbooks), or existing internet resources to answer exam questions. You may not, under any circumstances, use ChatGPT on the exam. Doing so will result in an 0."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#exam-instructions-2",
+    "href": "slides/day6-debugging.html#exam-instructions-2",
+    "title": "Debugging + ggplot practice",
+    "section": "Exam Instructions",
+    "text": "Exam Instructions\n– PDF not submitted on Gradescope (-10 points): If a PDF is not uploaded to Gradescope by the submission deadline, the PDF at your latest commit prior to the deadline will be used as your submission.\n– If there is no PDF in your repo, i.e., you’ve never rendered your .qmd file, your work will not be graded and you will receive a 0 on the exam.\n– Pages not marked on Gradescope (-10 points)"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#exam-questions",
+    "href": "slides/day6-debugging.html#exam-questions",
+    "title": "Debugging + ggplot practice",
+    "section": "Exam Questions",
+    "text": "Exam Questions\nWill cover data viz and data wrangling\nQuestions will be similar"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up",
+    "href": "slides/day6-debugging.html#warm-up",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm-Up",
+    "text": "Warm-Up\nSuppose a researcher wants to subset the mtcars data set to only include cars with 4 and 6 cylinders."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-1",
+    "href": "slides/day6-debugging.html#warm-up-1",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm-Up",
+    "text": "Warm-Up\nTwo researchers set out to subset these data using the following code. What’s different? What’s correct?\nResearcher 1:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)\nResearcher 2:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-2",
+    "href": "slides/day6-debugging.html#warm-up-2",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm up",
+    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-3",
+    "href": "slides/day6-debugging.html#warm-up-3",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm up",
+    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)\n}"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#not-seeing-my-changes-in-git",
+    "href": "slides/day6-debugging.html#not-seeing-my-changes-in-git",
+    "title": "Debugging + ggplot practice",
+    "section": "Not seeing my changes in Git",
+    "text": "Not seeing my changes in Git\n– You can see the project you are working in in the top right corner of your screen. This MUST be the project that you cloned for the exam / assignment / lab. Do not use the files tab to go search for a file outside of your project repo."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#tips-for-not-rendering",
+    "href": "slides/day6-debugging.html#tips-for-not-rendering",
+    "title": "Debugging + ggplot practice",
+    "section": "Tips for not rendering",
+    "text": "Tips for not rendering\n– External viewer error?\n– Did you put View() in a code chunk? We don’t use View often, but we need to be aware that any function that calls for an external viewer will break the render."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#tips-for-not-rendering-1",
+    "href": "slides/day6-debugging.html#tips-for-not-rendering-1",
+    "title": "Debugging + ggplot practice",
+    "section": "Tips for not rendering",
+    "text": "Tips for not rendering\n\nSomething wrong with your code chunk arguments?"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#expected",
+    "href": "slides/day6-debugging.html#expected",
+    "title": "Debugging + ggplot practice",
+    "section": "Expected :",
+    "text": "Expected :"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#spacing",
+    "href": "slides/day6-debugging.html#spacing",
+    "title": "Debugging + ggplot practice",
+    "section": "Spacing",
+    "text": "Spacing"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#duplicate-labels",
+    "href": "slides/day6-debugging.html#duplicate-labels",
+    "title": "Debugging + ggplot practice",
+    "section": "Duplicate labels",
+    "text": "Duplicate labels"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#something-in-the-yaml",
+    "href": "slides/day6-debugging.html#something-in-the-yaml",
+    "title": "Debugging + ggplot practice",
+    "section": "Something in the YAML",
+    "text": "Something in the YAML\n– The YAML is the metadata that tells Quarto exactly how to process or display the document. This happens in the first few lines of the document between the tick marks."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#tips-for-not-rendering-2",
+    "href": "slides/day6-debugging.html#tips-for-not-rendering-2",
+    "title": "Debugging + ggplot practice",
+    "section": "Tips for not rendering",
+    "text": "Tips for not rendering\n— Does your code run? If you have errors in your code, you will also have errors when rendering the document.\n\nError should give you an idea about where the error is occurring.\nIf error can’t be found, go through question by question to find it."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#general-strategies",
+    "href": "slides/day6-debugging.html#general-strategies",
+    "title": "Debugging + ggplot practice",
+    "section": "General Strategies",
+    "text": "General Strategies\n– Help files (?function.name)\n– https://ggplot2.tidyverse.org/reference/index.html\n– Slack\n– Keys\n– Google"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#ae-07",
+    "href": "slides/day6-debugging.html#ae-07",
+    "title": "Debugging + ggplot practice",
+    "section": "ae-07",
+    "text": "ae-07\n– We will start with the debugging qmd."
+  },
+  {
+    "objectID": "slides/day6-debugging.html#goal",
+    "href": "slides/day6-debugging.html#goal",
+    "title": "Debugging + ggplot practice",
+    "section": "Goal",
+    "text": "Goal\n\n\n\n\n\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/lab-0-slides.html#introductions",
