@@ -11,6 +11,8 @@ format: revealjs
 
 -   HW-2 is out. **Due Thursday by 5:00**
 
+-   Lab-02 - Team Agreement on Gradescope
+
 -   Are you in a project group?
 
 -   Are you keeping up with prepare material?
