@@ -131,7 +131,7 @@ Wide vs Long Data
 
     new.blazer |>
       pivot_wider(
-      names_from = Location,
+      names_from = Game,
       values_from = Points
       )
 

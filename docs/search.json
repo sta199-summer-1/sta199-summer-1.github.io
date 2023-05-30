@@ -2314,7 +2314,7 @@
     "href": "slides/day6-debugging.html#warm-up-go-back-to-wide",
     "title": "Debugging + ggplot practice",
     "section": "Warm-Up (Go Back to Wide)",
-    "text": "Warm-Up (Go Back to Wide)\n\nnew.blazer |>\n  pivot_wider(\n  names_from = Location,\n  values_from = Points\n  )"
+    "text": "Warm-Up (Go Back to Wide)\n\nnew.blazer |>\n  pivot_wider(\n  names_from = Game,\n  values_from = Points\n  )"
   },
   {
     "objectID": "slides/day6-debugging.html#warm-up-thought-exercise",
