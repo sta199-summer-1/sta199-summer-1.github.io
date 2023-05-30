@@ -2251,7 +2251,7 @@
     "href": "slides/day6-debugging.html#project-proposal",
     "title": "Debugging + ggplot practice",
     "section": "Project Proposal",
-    "text": "Project Proposal\nIntroduction and data\nResearch question\nLiterature\nGlimpse"
+    "text": "Project Proposal\nIntroduction and data\nResearch question\nLiterature\nGlimpse\nRepos will be coming soon for each group!"
   },
   {
     "objectID": "slides/day6-debugging.html#exam-instructions",
@@ -2307,21 +2307,21 @@
     "href": "slides/day6-debugging.html#warm-up-2",
     "title": "Debugging + ggplot practice",
     "section": "Warm-Up",
-    "text": "Warm-Up\nTwo researchers set out to subset these data using the following code. What’s different? What’s correct?\nResearcher 1:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)\nResearcher 2:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)"
+    "text": "Warm-Up\n\nnew.blazer <- trailblazer |>\n    pivot_longer(cols = !Player,\n                 names_to = \"Game\", \n                 values_to = \"Points\")"
   },
   {
     "objectID": "slides/day6-debugging.html#warm-up-3",
     "href": "slides/day6-debugging.html#warm-up-3",
     "title": "Debugging + ggplot practice",
-    "section": "Warm up",
-    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)"
+    "section": "Warm-Up",
+    "text": "Warm-Up"
   },
   {
     "objectID": "slides/day6-debugging.html#warm-up-4",
     "href": "slides/day6-debugging.html#warm-up-4",
     "title": "Debugging + ggplot practice",
-    "section": "Warm up",
-    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)\n}"
+    "section": "Warm-Up",
+    "text": "Warm-Up\nTwo researchers set out to subset these data using the following code. What’s different? What’s correct?\nResearcher 1:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)\nResearcher 2:\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)"
   },
   {
     "objectID": "slides/day6-debugging.html#function-of-the-day",
@@ -2476,5 +2476,26 @@
     "title": "Workflow and Formatting",
     "section": "",
     "text": "Common Mistakes\n1. meaningless labels\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.4.0     ✔ purrr   0.3.5\n✔ tibble  3.1.8     ✔ dplyr   1.0.9\n✔ tidyr   1.2.1     ✔ stringr 1.4.1\n✔ readr   2.1.3     ✔ forcats 0.5.2\n\n\nWarning: package 'ggplot2' was built under R version 4.2.2\n\n\nWarning: package 'tidyr' was built under R version 4.2.2\n\n\nWarning: package 'readr' was built under R version 4.2.2\n\n\nWarning: package 'purrr' was built under R version 4.2.2\n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\n\n\niris |>\n  glimpse()\n\nRows: 150\nColumns: 5\n$ Sepal.Length <dbl> 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9, 5.4, 4.…\n$ Sepal.Width  <dbl> 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.…\n$ Petal.Length <dbl> 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5, 1.5, 1.…\n$ Petal.Width  <dbl> 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.…\n$ Species      <fct> setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n\n\nSome good examples\n\niris |>\n  glimpse()\n\nRows: 150\nColumns: 5\n$ Sepal.Length <dbl> 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9, 5.4, 4.…\n$ Sepal.Width  <dbl> 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.…\n$ Petal.Length <dbl> 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5, 1.5, 1.…\n$ Petal.Width  <dbl> 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.…\n$ Species      <fct> setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n\n\n\niris |>\n  glimpse()\n\nRows: 150\nColumns: 5\n$ Sepal.Length <dbl> 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9, 5.4, 4.…\n$ Sepal.Width  <dbl> 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.…\n$ Petal.Length <dbl> 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5, 1.5, 1.…\n$ Petal.Width  <dbl> 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.…\n$ Species      <fct> setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n\n\nIf you have multiple models or plots for the homework/labs, you can number them.\n\niris_sum <- iris |>\n  as_tibble() |>\n  lm(formula = Petal.Width ~ Sepal.Width) |>\n  summary()\n\n\niris_boxplot <- iris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + geom_boxplot()\n\n2. Inconsistent use of operator\nBad examples: use both %>% and |>, both <- and = in the homework/lab.\n\niris_boxplot <- iris |>\n  as_tibble() %>%\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot()\n\n\niris_tbl <- iris |>\n  as_tibble()\niris_boxplot = ggplot(iris_tbl, aes(y = Petal.Width, x = Species)) + \n  geom_boxplot()\n\nGood examples:\n\niris_boxplot <- iris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot()\n\n\niris_tbl <- iris |>\n  as_tibble()\niris_boxplot <- ggplot(iris_tbl, aes(y = Petal.Width, x = Species)) + \n  geom_boxplot()\n\n3. Narrative and text exceeding character limit\nBad examples: text overflow. Only part of the text will appear in both coding part and plot.\n\niris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot() +\n  labs(title = \"The title is super long and exceeds the word limits. Please do not take my points off.\")\n\n\n\n\nPossible solutions: have a new line inside your code or have subtitle. It is always a good idea to do proofreading on your knitted pdf file.\n\niris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot() +\n  labs(title = \"The title is super long and exceeds the word limits.\n       Please do not take my points off.\")\n\n\n\niris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot() +\n  labs(title = \"The title is super long and exceeds the word limits.\",\n       subtitle = \"Please do not take my points off.\")\n\n\n\n\nBad examples: text overflow when the functions have a lot of arguments needed specification\n\niris_boxplot <- iris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species, fill = Species)) + \n  geom_boxplot() +\n  labs(title = \"Boxplot for petal width versus species\", x = \"species\", y = \"petal width\", fill = \"species\")\n\nA solution: represent them in separate lines\n\niris_boxplot <- iris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species, fill = Species)) + \n  geom_boxplot() +\n  labs(title = \"Boxplot for petal width versus species\", \n       x = \"species\", \n       y = \"petal width\", \n       fill = \"species\")\n\n4. Inappropriate use of spacing\nBad example: +/-/=/</| are not surrounded by spaces\n\niris_boxplot<-iris|>\n  as_tibble()|>\n  ggplot(aes(y=Petal.Width, x=Species, fill=Species))+ \n  geom_boxplot() \n\nGood example:\n\niris_boxplot <- iris |>\n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species, fill = Species)) + \n  geom_boxplot() \n\n5. New layer/pipline not begin with a newline\nThe code should be in a newline if it is a new function, such as pipeline, ggplot layers, model fitting.\nBad examples:\n\niris_boxplot <- iris |> as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot() \n\n\niris_boxplot <- iris |> \n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + geom_boxplot() \n\n\niris_boxplot <- iris |> \n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot() + ggtitle(\"Boxplot for width versus species\")\n\n\niris_sum <- iris |>\n  as_tibble() |>\n  lm(formula = Petal.Width ~ Sepal.Width) |> summary()\n\nGood examples\n\niris_boxplot <- iris |> \n  as_tibble() |>\n  ggplot(aes(y = Petal.Width, x = Species)) + \n  geom_boxplot() + \n  ggtitle(\"Boxplot for width versus species\")"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-go-back-to-wide",
+    "href": "slides/day6-debugging.html#warm-up-go-back-to-wide",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm-Up (Go Back to Wide)",
+    "text": "Warm-Up (Go Back to Wide)\n\nnew.blazer |>\n  pivot_wider(\n  names_from = Location,\n  values_from = Points\n  )"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-5",
+    "href": "slides/day6-debugging.html#warm-up-5",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm up",
+    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl == cylinders)"
+  },
+  {
+    "objectID": "slides/day6-debugging.html#warm-up-6",
+    "href": "slides/day6-debugging.html#warm-up-6",
+    "title": "Debugging + ggplot practice",
+    "section": "Warm up",
+    "text": "Warm up\ncylinders <- c(\"6\", \"4\")\n\nmtcars |>\n  mutate(cyl = factor(cyl)) |>\n  filter(cyl %in% cylinders)\n}"
   }
 ]

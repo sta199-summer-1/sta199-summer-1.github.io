@@ -63,6 +63,8 @@ Literature
 
 Glimpse
 
+Repos will be coming soon for each group!
+
 ## Exam Instructions
 
 -- You must submit a PDF document to Gradescope
@@ -106,6 +108,30 @@ Wide vs Long Data
 ## Warm-Up
 
 ![](images/widelong.png)
+
+## Warm-Up 
+
+![](images/widelillard.png)
+
+
+    new.blazer <- trailblazer |>
+        pivot_longer(cols = !Player,
+                     names_to = "Game", 
+                     values_to = "Points")
+
+## Warm-Up 
+
+![](images/longlillard.png)
+
+## Warm-Up (Go Back to Wide)
+
+![](images/longlillard.png)
+
+    new.blazer |>
+      pivot_wider(
+      names_from = Location,
+      values_from = Points
+      )
 
 ## Warm-Up (Thought Exercise)
 

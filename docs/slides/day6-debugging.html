@@ -368,6 +368,7 @@
 <p>Research question</p>
 <p>Literature</p>
 <p>Glimpse</p>
+<p>Repos will be coming soon for each group!</p>
 </section>
 <section id="exam-instructions" class="slide level2">
 <h2>Exam Instructions</h2>
@@ -403,12 +404,33 @@
 <h2>Warm-Up</h2>
 
 <img data-src="images/widelong.png" class="r-stretch"></section>
+<section id="warm-up-2" class="slide level2">
+<h2>Warm-Up</h2>
+
+<img data-src="images/widelillard.png" class="r-stretch"><pre><code>new.blazer &lt;- trailblazer |&gt;
+    pivot_longer(cols = !Player,
+                 names_to = "Game", 
+                 values_to = "Points")</code></pre>
+</section>
+<section id="warm-up-3" class="slide level2">
+<h2>Warm-Up</h2>
+
+<img data-src="images/longlillard.png" class="r-stretch"></section>
+<section id="warm-up-go-back-to-wide" class="slide level2">
+<h2>Warm-Up (Go Back to Wide)</h2>
+
+<img data-src="images/longlillard.png" class="r-stretch"><pre><code>new.blazer |&gt;
+  pivot_wider(
+  names_from = Location,
+  values_from = Points
+  )</code></pre>
+</section>
 <section id="warm-up-thought-exercise" class="slide level2">
 <h2>Warm-Up (Thought Exercise)</h2>
 <p>Suppose a researcher wants to subset the <code>mtcars</code> data set to only include cars with 4 and 6 cylinders.</p>
 
 <img data-src="images/mtcars.png" class="r-stretch"></section>
-<section id="warm-up-2" class="slide level2 smaller">
+<section id="warm-up-4" class="slide level2 smaller">
 <h2>Warm-Up</h2>
 <p>Two researchers set out to subset these data using the following code. What’s different? What’s correct?</p>
 <p>Researcher 1:</p>
@@ -424,7 +446,7 @@ mtcars |&gt;
   mutate(cyl = factor(cyl)) |&gt;
   filter(cyl %in% cylinders)</code></pre>
 </section>
-<section id="warm-up-3" class="slide level2">
+<section id="warm-up-5" class="slide level2">
 <h2>Warm up</h2>
 <pre><code>cylinders &lt;- c("6", "4")
 
@@ -433,7 +455,7 @@ mtcars |&gt;
   filter(cyl == cylinders)</code></pre>
 
 <img data-src="images/mtcars.researcher1.png" class="r-stretch"></section>
-<section id="warm-up-4" class="slide level2">
+<section id="warm-up-6" class="slide level2">
 <h2>Warm up</h2>
 <pre><code>cylinders &lt;- c("6", "4")
 
