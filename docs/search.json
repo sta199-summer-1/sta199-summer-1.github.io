@@ -2629,7 +2629,14 @@
     "href": "slides/projectworkday1.html#workflow-and-formatting",
     "title": "Project Work Day",
     "section": "Workflow and formatting",
-    "text": "Workflow and formatting\n– Is everyone contributing? Have a meaningful commit?\n– Does it Render?\n– Is the Repo organized? No added unnecessary documents?\n\n\n\n🔗 sta199-summer-1.github.io"
+    "text": "Workflow and formatting\n– Is everyone contributing? Have a meaningful commit?\n– Does it Render?\n– Is the Repo organized? No added unnecessary documents?"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#merge-conflict-you-cant-fix",
+    "href": "slides/projectworkday1.html#merge-conflict-you-cant-fix",
+    "title": "Project Work Day",
+    "section": "Merge Conflict You Can’t Fix?",
+    "text": "Merge Conflict You Can’t Fix?\nSometimes, we create multiple merge conflicts that become “to far gone” to fix. In these circumstances for this class, we resort to the following:\n– If you do not have any work that you would like saved (all your group’s current work is on GitHub), delete your local repo by clicking the repo file in the Files tab of R and Delete.\n– Next, go re-clone the project repo.\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "workflow_formatting.html",

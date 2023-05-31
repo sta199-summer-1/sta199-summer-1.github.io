@@ -89,3 +89,11 @@ Lastly, take a `glimpse` of your data in the `proposal.qmd`
 
 -- Is the Repo organized? No added unnecessary documents? 
 
+## Merge Conflict You Can't Fix?
+
+Sometimes, we create multiple merge conflicts that become "to far gone" to fix. In these circumstances for this class, we resort to the following:
+
+-- If you do not have any work that you would like saved (all your group's current work is on GitHub), delete your local repo by clicking the repo file in the `Files` tab of R and `Delete`.
+
+-- Next, go re-clone the project repo. 
+
