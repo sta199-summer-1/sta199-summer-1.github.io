@@ -59,7 +59,7 @@ Let's take a tour...
 
 -- Are we justified to always change `NAs` to 0? 
 
-## Warm Up 2 
+## Warm Up 2{.smaller} 
 
 ![](images/AB2.png)
 
@@ -136,7 +136,7 @@ Duke Students' Height
 
 -- Variability is understood as the lack of consistency. As we take samples from a population, will we always get the same value back? 
 
-## Distribution 
+## Distribution{.smaller} 
 
 But some values are more common and some are uncommon
 
