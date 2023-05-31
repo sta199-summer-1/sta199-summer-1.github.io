@@ -1,0 +1,91 @@
+---
+title: "Project Work Day"
+subtitle: "Lab 4"
+date: "June 1st"
+format: revealjs
+---
+
+## Announcements 
+
+-- Your assigned group can be found on the website [here](https://sta199-summer-1.github.io/course-team.html)
+
+-- Your group has a `summer-project` repo with your team name on GitHub. Each of you are to clone this repo. Each component of the project will be completed here. 
+
+-- Today, you will work in the `proposal.qmd`
+
+## Today's Lab 
+
+-- Find two data sets that meet the criteria. The `Resources for datasets` section in your project instructions are a great resource. 
+
+-- Next, you will then upload each dataset into your `data` folder in your `summer-project` repo.
+
+## Upload Data 
+
+There are a few ways to upload data into this data folder. I suggest the following: 
+
+1) On the GitHub repo website, have 1 group member click the data folder; click `Add file` in the top right; Click upload files; Drag your file into the repository; Click `Commit Changes`
+
+2) Next, have EVERY team member `pull`
+
+3) Repeat steps when you are ready to upload your second data set 
+
+## Data Format 
+
+For this class, we have worked with `csv` files. These are comma separated excel files. If you have an excel file that is not a `csv` file, you can make it one by going to File -> Save as -> CSV UTF-8 (Comma delimited)
+
+## Introduction + Data 
+
+-- Identify the source of the data.
+
+-- State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
+
+-- Write a brief description of the observations.
+
+-- Address ethical concerns about the data, if any.
+
+Reminder, this is done in the `proposal.qmd`
+
+## Research question 
+
+-- There is no recommendation to the number of variables you need to include when writing your research question. It can be between 2, it can have more than 2. 
+
+-- Your research question can (and probably will) change as you get feedback / we move through the Summer session. That's okay for this class project!
+
+-- You will answer this question using statistical procedures we will learn after Exam 1.
+
+## Example research question
+
+-- What is the **relationship** between baldness and age?
+
+-- Is it possible that VEGF has **an effect** in plant photosynthesis?
+
+## Incomplete research question 
+
+-- 	How are children affected by exposure to social media?
+
+Unclear what social media means in this context. Unclear how children are defined. 
+
+**Better:** What is the effect of Instagram Likes on the self-esteem of young children under the age of 12?
+
+## Literature 
+
+-- Find one published credible article on the topic you are interested in researching. Typically, people use [Google Scholar](https://scholar.google.com/)
+
+-- Provide a one paragraph summary about the article.
+
+-- In 1-2 sentences, explain how your research question builds on / is different than the article you have cited.
+
+Literature reviews are often exhaustive. This is meant to get us initial experience with what literature reviews are and why they are important!
+
+## glimpse
+
+Lastly, take a `glimpse` of your data in the `proposal.qmd`
+
+## Workflow and formatting
+
+-- Is everyone contributing? Have a meaningful commit? 
+
+-- Does it Render? 
+
+-- Is the Repo organized? No added unnecessary documents? 
+

@@ -125,7 +125,7 @@ For each data set:
 
 ### Research question
 
-Your research question should contain at least three variables, and should be a mix of categorical and quantitative variables. When writing a research question, please think about the following:
+Your research question should be clear and easily understood by a general audience. When writing a research question, please think about the following:
 
 -   What is your target population?
 

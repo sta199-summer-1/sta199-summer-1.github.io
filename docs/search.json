@@ -753,7 +753,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-4; Exam-1\nMerge conflicts + The Language of Models\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-5\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-6\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-7\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-8; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nData Ethics\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-4; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-5\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11; Lab-6\nProject Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-7\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-8; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nData Ethics\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-9\nData Ethics; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -1222,7 +1222,7 @@
     "href": "project-description-summer.html#proposal-components",
     "title": "project-description-s23",
     "section": "Proposal components",
-    "text": "Proposal components\nFor each data set, include the following:\n\nIntroduction and data\nFor each data set:\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations.\nAddress ethical concerns about the data, if any.\n\n\n\nResearch question\nYour research question should contain at least three variables, and should be a mix of categorical and quantitative variables. When writing a research question, please think about the following:\n\nWhat is your target population?\nIs the question original?\nCan the question be answered?\n\nFor each data set, include the following:\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nStatement on why this question is important.\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?\n\n\n\nLiterature\nA literature review is an overview of the previously published works on a topic. It is good practice to familiarize yourself with published work that has already been done on the topic you are researching. Often, a literature review spans many articles, and allows the researcher to communicate how their research fits in / extends our current understanding of a topic. For this project, we will do a “mini” literature review. For each data set:\n\nFind one published credible article on the topic you are interested in researching.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited.\n\nYou can find articles using Google Scholar or some other academic search engine. Please reach out if you have any questions about this.\n\n\nGlimpse of data\nFor each data set:\n\nPlace the file containing your data in the data folder of the project repo.\nUse the glimpse() function to provide a glimpse of the data set."
+    "text": "Proposal components\nFor each data set, include the following:\n\nIntroduction and data\nFor each data set:\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations.\nAddress ethical concerns about the data, if any.\n\n\n\nResearch question\nYour research question should be clear and easily understood by a general audience. When writing a research question, please think about the following:\n\nWhat is your target population?\nIs the question original?\nCan the question be answered?\n\nFor each data set, include the following:\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nStatement on why this question is important.\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?\n\n\n\nLiterature\nA literature review is an overview of the previously published works on a topic. It is good practice to familiarize yourself with published work that has already been done on the topic you are researching. Often, a literature review spans many articles, and allows the researcher to communicate how their research fits in / extends our current understanding of a topic. For this project, we will do a “mini” literature review. For each data set:\n\nFind one published credible article on the topic you are interested in researching.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited.\n\nYou can find articles using Google Scholar or some other academic search engine. Please reach out if you have any questions about this.\n\n\nGlimpse of data\nFor each data set:\n\nPlace the file containing your data in the data folder of the project repo.\nUse the glimpse() function to provide a glimpse of the data set."
   },
   {
     "objectID": "project-description-summer.html#proposal-grading",
@@ -2553,6 +2553,83 @@
     "title": "Data Wranging + Group Formation",
     "section": "Lab 2",
     "text": "Lab 2\nIs due Monday (29th) before class. You will turn in the following:\n– Team Agreement (1 per group)\n– Data Wrangling (individual assignment)\nSome groups may want to start on the data wrangling portion during lab, while others may want to start with the team agreement. Please prioritize whichever you see fit.\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#announcements",
+    "href": "slides/projectworkday1.html#announcements",
+    "title": "Project Work Day",
+    "section": "Announcements",
+    "text": "Announcements\n– Your assigned group can be found on the website here\n– Your group has a summer-project repo with your team name on GitHub. Each of you are to clone this repo. Each component of the project will be completed here.\n– Today, you will work in the proposal.qmd"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#todays-lab",
+    "href": "slides/projectworkday1.html#todays-lab",
+    "title": "Project Work Day",
+    "section": "Today’s Lab",
+    "text": "Today’s Lab\n– Find two data sets that meet the criteria. The Resources for datasets section in your project instructions are a great resource.\n– Next, you will then upload each dataset into your data folder in your summer-project repo."
+  },
+  {
+    "objectID": "slides/projectworkday1.html#upload-data",
+    "href": "slides/projectworkday1.html#upload-data",
+    "title": "Project Work Day",
+    "section": "Upload Data",
+    "text": "Upload Data\nThere are a few ways to upload data into this data folder. I suggest the following:\n\nOn the GitHub repo website, have 1 group member click the data folder; click Add file in the top right; Click upload files; Drag your file into the repository; Click Commit Changes\nNext, have EVERY team member pull\nRepeat steps when you are ready to upload your second data set"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#data-format",
+    "href": "slides/projectworkday1.html#data-format",
+    "title": "Project Work Day",
+    "section": "Data Format",
+    "text": "Data Format\nFor this class, we have worked with csv files. These are comma separated excel files. If you have an excel file that is not a csv file, you can make it one by going to File -> Save as -> CSV UTF-8 (Comma delimited)"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#introduction-data",
+    "href": "slides/projectworkday1.html#introduction-data",
+    "title": "Project Work Day",
+    "section": "Introduction + Data",
+    "text": "Introduction + Data\n– Identify the source of the data.\n– State when and how it was originally collected (by the original data curator, not necessarily how you found the data).\n– Write a brief description of the observations.\n– Address ethical concerns about the data, if any.\nReminder, this is done in the proposal.qmd"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#research-question",
+    "href": "slides/projectworkday1.html#research-question",
+    "title": "Project Work Day",
+    "section": "Research question",
+    "text": "Research question\n– There is no recommendation to the number of variables you need to include when writing your research question. It can be between 2, it can have more than 2.\n– Your research question can (and probably will) change as you get feedback / we move through the Summer session. That’s okay for this class project!\n– You will answer this question using statistical procedures we will learn after Exam 1."
+  },
+  {
+    "objectID": "slides/projectworkday1.html#example-research-question",
+    "href": "slides/projectworkday1.html#example-research-question",
+    "title": "Project Work Day",
+    "section": "Example research question",
+    "text": "Example research question\n– What is the relationship between baldness and age?\n– Is it possible that VEGF has an effect in plant photosynthesis?"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#incomplete-research-question",
+    "href": "slides/projectworkday1.html#incomplete-research-question",
+    "title": "Project Work Day",
+    "section": "Incomplete research question",
+    "text": "Incomplete research question\n– How are children affected by exposure to social media?\nUnclear what social media means in this context. Unclear how children are defined.\nBetter: What is the effect of Instagram Likes on the self-esteem of young children under the age of 12?"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#literature",
+    "href": "slides/projectworkday1.html#literature",
+    "title": "Project Work Day",
+    "section": "Literature",
+    "text": "Literature\n– Find one published credible article on the topic you are interested in researching. Typically, people use Google Scholar\n– Provide a one paragraph summary about the article.\n– In 1-2 sentences, explain how your research question builds on / is different than the article you have cited.\nLiterature reviews are often exhaustive. This is meant to get us initial experience with what literature reviews are and why they are important!"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#glimpse",
+    "href": "slides/projectworkday1.html#glimpse",
+    "title": "Project Work Day",
+    "section": "glimpse",
+    "text": "glimpse\nLastly, take a glimpse of your data in the proposal.qmd"
+  },
+  {
+    "objectID": "slides/projectworkday1.html#workflow-and-formatting",
+    "href": "slides/projectworkday1.html#workflow-and-formatting",
+    "title": "Project Work Day",
+    "section": "Workflow and formatting",
+    "text": "Workflow and formatting\n– Is everyone contributing? Have a meaningful commit?\n– Does it Render?\n– Is the Repo organized? No added unnecessary documents?\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "workflow_formatting.html",
