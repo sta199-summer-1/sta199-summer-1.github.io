@@ -2492,6 +2492,104 @@
     "text": "Goal\n\n\n\n\n\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
+    "objectID": "slides/day7merge.html#checklist",
+    "href": "slides/day7merge.html#checklist",
+    "title": "GitHub + ggplot practice",
+    "section": "Checklist",
+    "text": "Checklist\n\nClone your merge-demo-summer project in RStudio. Do not make any changes to it after you clone.\nHW-2 is out. Due Thursday by 5:00\nAre you keeping up with prepare material?"
+  },
+  {
+    "objectID": "slides/day7merge.html#announcements",
+    "href": "slides/day7merge.html#announcements",
+    "title": "GitHub + ggplot practice",
+    "section": "Announcements",
+    "text": "Announcements\n– Exam 1 - June 1st\n– Project is starting up!"
+  },
+  {
+    "objectID": "slides/day7merge.html#exam",
+    "href": "slides/day7merge.html#exam",
+    "title": "GitHub + ggplot practice",
+    "section": "Exam",
+    "text": "Exam\n– Will be released today between 5-6\n– Individual assignment only\n– RENDER AND PUSH AFTER EVERY QUESTION\n– Due Monday at Noon\n– Slack for clarification questions\n– All questions will be in the README of the exam-summer repo\n– All questions will be answered in the exam.qmd\n– Start early. It make take you 5 hours…. or 15…. and that’s fine!"
+  },
+  {
+    "objectID": "slides/day7merge.html#project",
+    "href": "slides/day7merge.html#project",
+    "title": "GitHub + ggplot practice",
+    "section": "Project",
+    "text": "Project\nYou now have your project repos!\nLet’s take a tour…"
+  },
+  {
+    "objectID": "slides/day7merge.html#lab-expectations",
+    "href": "slides/day7merge.html#lab-expectations",
+    "title": "GitHub + ggplot practice",
+    "section": "Lab Expectations",
+    "text": "Lab Expectations\n– During lab, you will work on your project with your group\n– After lab, you are to “table” the project until after the exam\n– Project proposal due June 12th"
+  },
+  {
+    "objectID": "slides/day7merge.html#warm-up-1",
+    "href": "slides/day7merge.html#warm-up-1",
+    "title": "GitHub + ggplot practice",
+    "section": "Warm Up 1",
+    "text": "Warm Up 1\n– When you see an NA in a data set, what are some possibilities it could represent?\n– Are we justified to always change NAs to 0?"
+  },
+  {
+    "objectID": "slides/day7merge.html#warm-up-2",
+    "href": "slides/day7merge.html#warm-up-2",
+    "title": "GitHub + ggplot practice",
+    "section": "Warm Up 2",
+    "text": "Warm Up 2\n\nseparate(degree, sep = \"\\\\(\" , into = c(\"major\", \"degree_type\"))"
+  },
+  {
+    "objectID": "slides/day7merge.html#warm-up-3",
+    "href": "slides/day7merge.html#warm-up-3",
+    "title": "GitHub + ggplot practice",
+    "section": "Warm Up 3",
+    "text": "Warm Up 3\n– Why do we use GitHub?"
+  },
+  {
+    "objectID": "slides/day7merge.html#github",
+    "href": "slides/day7merge.html#github",
+    "title": "GitHub + ggplot practice",
+    "section": "GitHub",
+    "text": "GitHub\nAt its core, Git keeps track of changes to files and allows multiple users to coordinate updates to those files."
+  },
+  {
+    "objectID": "slides/day7merge.html#github-1",
+    "href": "slides/day7merge.html#github-1",
+    "title": "GitHub + ggplot practice",
+    "section": "GitHub",
+    "text": "GitHub\nBut…. not on the same lines of code at the same time….."
+  },
+  {
+    "objectID": "slides/day7merge.html#github-2",
+    "href": "slides/day7merge.html#github-2",
+    "title": "GitHub + ggplot practice",
+    "section": "GitHub",
+    "text": "GitHub"
+  },
+  {
+    "objectID": "slides/day7merge.html#github-3",
+    "href": "slides/day7merge.html#github-3",
+    "title": "GitHub + ggplot practice",
+    "section": "GitHub",
+    "text": "GitHub\nNot all merge conflicts are bad!"
+  },
+  {
+    "objectID": "slides/day7merge.html#github-rules-for-collaboration",
+    "href": "slides/day7merge.html#github-rules-for-collaboration",
+    "title": "GitHub + ggplot practice",
+    "section": "GitHub Rules for Collaboration",
+    "text": "GitHub Rules for Collaboration\n– ALWAYS PULL before starting your work\n– Commit and push every and all documents. Merge conflicts occur when someone saves changes, but doesn’t push them to GitHub.\n– If merge conflicts happen, we can fix (most) of them! We will talk about this during our first activity today."
+  },
+  {
+    "objectID": "slides/day7merge.html#merge-conflict",
+    "href": "slides/day7merge.html#merge-conflict",
+    "title": "GitHub + ggplot practice",
+    "section": "merge conflict",
+    "text": "merge conflict\n– The first activity we will do is the merge-demo-summer activity.\n– Clone this and assign a Role number 1 through 4. If you have more than 4 members, alternate.\n– Do not change this document until the activity begins.\n– Click on the icon under the ae_sa column on the website for today to find activity instructions.\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
     "objectID": "slides/lab-0-slides.html#introductions",
     "href": "slides/lab-0-slides.html#introductions",
     "title": "Welcome to Lab",

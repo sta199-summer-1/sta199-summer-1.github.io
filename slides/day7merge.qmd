@@ -19,6 +19,25 @@ format: revealjs
 
 -- Project is starting up!
 
+## Exam{.smaller} 
+
+-- Will be released today between 5-6 
+
+-- Individual assignment only
+
+-- RENDER AND PUSH AFTER EVERY QUESTION 
+
+-- Due Monday at **Noon** 
+
+-- Slack for clarification questions 
+
+-- All questions will be in the README of the exam-summer repo 
+
+-- All questions will be answered in the exam.qmd
+
+-- Start early. It make take you 5 hours.... or 15.... and that's fine!
+
+
 ## Project
 
 You now have your project repos! 
@@ -33,17 +52,56 @@ Let's take a tour...
 
 -- Project proposal due **June 12th**
 
-## Warm Up (Reminder)
 
--- Why do we use GitHub? 
+## Warm Up 1 
 
-## Warm Up 2 
-
--- When you see an `NA` in a data set, what are some posibilities it could represent?
+-- When you see an `NA` in a data set, what are some possibilities it could represent?
 
 -- Are we justified to always change `NAs` to 0? 
 
+## Warm Up 2 
+
+![](images/AB2.png)
+
+    separate(degree, sep = "\\(" , into = c("major", "degree_type"))
+    
 ## Warm Up 3 
 
+-- Why do we use GitHub? 
 
+
+## GitHub 
+
+At its core, Git keeps track of changes to files and allows multiple users to coordinate updates to those files.
+
+## GitHub 
+
+But.... not on the same lines of code at the same time..... 
+
+## GitHub 
+
+![](images/pull-push.jpg)
+
+## GitHub 
+
+Not all merge conflicts are bad! 
+
+
+## GitHub Rules for Collaboration 
+
+-- ALWAYS PULL before starting your work 
+
+-- Commit and push every and all documents. Merge conflicts occur when someone saves changes, but doesn't push them to GitHub. 
+
+-- If merge conflicts happen, we can fix (most) of them! We will talk about this during our first activity today. 
+
+## merge conflict 
+
+-- The first activity we will do is the merge-demo-summer activity. 
+
+-- Clone this and assign a Role number 1 through 4. If you have more than 4 members, alternate. 
+
+-- Do not change this document until the activity begins. 
+
+-- Click on the icon under the `ae_sa` column on the website for today to find activity instructions. 
 
