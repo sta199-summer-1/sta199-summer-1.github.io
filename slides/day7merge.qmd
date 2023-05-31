@@ -1,0 +1,49 @@
+---
+title: "GitHub + ggplot practice"
+subtitle: "Day-7"
+date: "May 30th, 2023"
+format: revealjs
+---
+
+## Checklist
+
+-   Clone your `merge-demo-summer` project in RStudio. Do not make any changes to it after you clone.
+
+-   HW-2 is out. **Due Thursday by 5:00**
+
+-   Are you keeping up with prepare material?
+
+## Announcements
+
+-- Exam 1 - June 1st
+
+-- Project is starting up!
+
+## Project
+
+You now have your project repos! 
+
+Let's take a tour...
+
+## Lab Expectations 
+
+-- During lab, you will work on your project with your group 
+
+-- After lab, you are to "table" the project until after the exam
+
+-- Project proposal due **June 12th**
+
+## Warm Up (Reminder)
+
+-- Why do we use GitHub? 
+
+## Warm Up 2 
+
+-- When you see an `NA` in a data set, what are some posibilities it could represent?
+
+-- Are we justified to always change `NAs` to 0? 
+
+## Warm Up 3 
+
+
+
