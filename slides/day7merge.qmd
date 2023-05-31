@@ -105,3 +105,45 @@ Not all merge conflicts are bad!
 
 -- Click on the icon under the `ae_sa` column on the website for today to find activity instructions. 
 
+# Part 2: Statistical Inference 
+
+## What is it? 
+
+-- The claims that we can make from research around population parameters 
+
+- So what are population parameters? 
+
+## Populatin Parameters 
+
+-- Population parameters represent the *truth* or *true summary statistics* of an entire population. 
+
+- We are almost always interested in these as the researcher 
+
+- And we can almost never know exactly what these are.... 
+
+## Example 
+
+Duke Students' Height 
+
+
+## Statistical Inference 
+
+-- Test to see if parameters are different from a value, or from each other 
+
+-- Estimate population parameters 
+
+## Quantifying variability 
+
+-- Variability is understood as the lack of consistency. As we take samples from a population, will we always get the same value back? 
+
+## Distribution 
+
+But some values are more common and some are uncommon
+
+We use distributions to understand that. This allows us to conduct hypothesis tests and make confidence intervals.
+
+![](images/dist.png)
+
+
+
+
