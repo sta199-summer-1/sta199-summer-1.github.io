@@ -103,7 +103,11 @@ Not all merge conflicts are bad!
 
 -- Do not change this document until the activity begins. 
 
--- Click on the icon under the `ae_sa` column on the website for today to find activity instructions. 
+-- Click on the icon under the `ae_sa` column on the website for today to find activity instructions.
+
+## Fisheries Plot 
+
+![](images/statsci-plot.png)
 
 # Part 2: Statistical Inference 
 
