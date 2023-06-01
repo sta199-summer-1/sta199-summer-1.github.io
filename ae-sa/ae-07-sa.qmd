@@ -1,0 +1,222 @@
+---
+title: "AE 07: Finishing Pivoting StatSci Majors"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+## Packages
+
+```{r}
+#| label: packages
+#| message: false
+#| warning: false
+
+library(tidyverse)
+```
+
+## Goal
+
+Our ultimate goal in this application exercise is to make the following data visualization.
+
+![](images/statsci-plot.png){fig-alt="Line plot of numbers of Statistical Science majors over the years (2011 - 2021). Degree types represented are BS, BS2, AB, AB2. There is an increasing trend in BS degrees and somewhat steady trend in AB degrees." fig-align="center"}
+
+## Data
+
+The data come from the [Office of the University Registrar](https://registrar.duke.edu/registration/enrollment-statistics). They make the data available as a table that you can download as a PDF, but I've put the data exported in a CSV file for you. Let's load that in.
+
+The first column (variable) is the `degree`, and there are 4 possible degrees: BS (Bachelor of Science), BS2 (Bachelor of Science, 2nd major), AB (Bachelor of Arts), AB2 (Bachelor of Arts, 2nd major). The remaining columns show the number of students graduating with that major in a given academic year from 2011 to 2021.
+
+Take a look at the origional data set.... 
+
+## Data In
+
+```{r}
+#| label: load-statsci
+
+statsci <- read_csv("data/statsci.csv")
+```
+
+```{r}
+#| label: glimpse-data
+
+slice(statsci)
+```
+
+Last class, we got this point where we making the following draft plot. Below, please talk through the code as a sentence to situate ourselves 
+
+![](images/statsci-plot-draft.png){fig-alt="Line plot of numbers of Statistical Science majors over the years (2011 - 2021). Degree types represented are BS, BS2, AB, AB2. There is an increasing trend in BS degrees and somewhat steady trend in AB degrees." fig-align="center"}
+
+```{r}
+#| label: initial-plot
+
+statsci |>
+  pivot_longer(
+    cols = !c(id,degree),
+    names_to = "year",
+    names_transform = as.numeric,
+    values_to = "n"
+  ) |>
+  mutate(n = if_else(is.na(n), 0, n)) |>
+  separate(degree, sep = " \\(", into = c("major", "degree_type")) |>
+  mutate(
+    degree_type = str_remove(degree_type, "\\)"),
+    degree_type = fct_relevel(degree_type, "BS", "BS2", "AB", "AB2")
+    ) |> 
+  ggplot(
+    aes(x = year, y = n, color = degree_type)
+  ) + 
+  geom_point() + 
+  geom_line()
+
+```
+
+-   **Your turn (4 minutes):** What aspects of the plot need to be updated to go from the draft you created above to the [Goal] plot at the beginning of this application exercise.
+
+**Axis, legend, color, labels**
+
+-   Demo: Update x-axis scale such that the years displayed go from 2011 to 2021 in increments of 2 years. Do this by adding on to your pipeline from earlier.
+
+```{r}
+#| label: x-axis
+#| eval: false
+statsci |>
+  pivot_longer(
+    cols = !c(id,degree),
+    names_to = "year",
+    names_transform = as.numeric,
+    values_to = "n"
+  ) |>
+  mutate(n = if_else(is.na(n), 0, n)) |>
+  separate(degree, sep = " \\(", into = c("major", "degree_type")) |>
+  mutate(
+    degree_type = str_remove(degree_type, "\\)"),
+    degree_type = fct_relevel(degree_type, "BS", "BS2", "AB", "AB2")
+    ) |>
+  ggplot(aes(x = year, y = n, color = degree_type)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2011,2021,2))
+
+```
+
+-   **Demo:** Update line colors using the following level / color assignments. Once again, do this by adding on to your pipeline from earlier. Hint: we can use `scale_color_manual` when we want to manually set colors!
+
+    -   "BS" = "cadetblue4"
+
+    -   "BS2" = "cadetblue3"
+
+    -   "AB" = "lightgoldenrod4"
+
+    -   "AB2" = "lightgoldenrod3"
+
+```{r}
+#| label: color
+#| eval: false
+statsci |>
+  pivot_longer(
+    cols = !c(id,degree),
+    names_to = "year",
+    names_transform = as.numeric,
+    values_to = "n"
+  ) |>
+  mutate(n = if_else(is.na(n), 0, n)) |>
+  separate(degree, sep = " \\(", into = c("major", "degree_type")) |>
+  mutate(
+    degree_type = str_remove(degree_type, "\\)"),
+    degree_type = fct_relevel(degree_type, "BS", "BS2", "AB", "AB2")
+    ) |>
+  ggplot(aes(x = year, y = n, color = degree_type)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2011, 2021, 2)) +
+  scale_color_manual(values = c("BS" = "cadetblue4", "BS2" = "cadetblue3", "AB" = "lightgoldenrod4", "AB2" = "lightgoldenrod3"))
+```
+
+Now, let's fix the labels and add `theme_minimal` to the plot!
+
+```{r}
+#| label: minimal 
+#| eval: false
+
+statsci |>
+  pivot_longer(
+    cols = !c(id,degree),
+    names_to = "year",
+    names_transform = as.numeric,
+    values_to = "n"
+  ) |>
+  mutate(n = if_else(is.na(n), 0, n)) |>
+  separate(degree, sep = " \\(", into = c("major", "degree_type")) |>
+  mutate(
+    degree_type = str_remove(degree_type, "\\)"),
+    degree_type = fct_relevel(degree_type, "BS", "BS2", "AB", "AB2")
+    ) |>
+  ggplot(aes(x = year, y = n, color = degree_type)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2011, 2021, 2)) +
+  scale_color_manual(
+    values = c("BS" = "cadetblue4",
+               "BS2" = "cadetblue3",
+               "AB" = "lightgoldenrod4",
+               "AB2" = "lightgoldenrod3")) +
+  labs(x = "Graduation year", 
+       y = "Number of majors graduating",
+       color = "Degree type", 
+       title = "Statistical Science majors over the years",
+       subtitle = "Academic year 2011-2021",
+       caption = "Source: Office of the University") +
+  theme_minimal()
+```
+
+-   **Demo:** Finally, adding to your pipeline you've developed so far, move the legend into the plot, make its background white, and its border gray. Set `fig-width: 7` and `fig-height: 5` for your plot in the chunk options. The code below does this for you. Practice reading the code as a sentence below.
+
+Hint: What function have we used to work with legends?
+
+**theme!**
+
+```{r}
+#| label: final-plot
+#| fig-width: 7
+#| fig-height: 5
+
+statsci |>
+  pivot_longer(
+    cols = !c(id,degree),
+    names_to = "year",
+    names_transform = as.numeric,
+    values_to = "n"
+  ) |>
+  mutate(n = if_else(is.na(n), 0, n)) |>
+  separate(degree, sep = " \\(", into = c("major", "degree_type")) |>
+  mutate(
+    degree_type = str_remove(degree_type, "\\)"),
+    degree_type = fct_relevel(degree_type, "BS", "BS2", "AB", "AB2")
+    ) |>
+  ggplot(aes(x = year, y = n, color = degree_type)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2011, 2021, 2)) +
+  scale_color_manual(
+    values = c("BS" = "cadetblue4",
+               "BS2" = "cadetblue3",
+               "AB" = "lightgoldenrod4",
+               "AB2" = "lightgoldenrod3")) +
+  labs(
+    x = "Graduation year",
+    y = "Number of majors graduating",
+    color = "Degree type",
+    title = "Statistical Science majors over the years",
+    subtitle = "Academic years 2011 - 2021",
+    caption = "Source: Office of the University Registrar\nhttps://registrar.duke.edu/registration/enrollment-statistics"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = c(0.2,0.8),
+    legend.background = element_rect(
+      fill = "white" , color = "gray"
+    )
+  )
+
+```
