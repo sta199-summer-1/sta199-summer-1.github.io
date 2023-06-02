@@ -519,6 +519,28 @@
 <p><strong>“we estimate, on average…..”</strong></p>
 <p><strong>This is extremely important when we think about interpretation</strong></p>
 </section>
+<section id="is-the-predictor-any-good" class="slide level2">
+<h2>Is the predictor any good?</h2>
+<p>– Correlation and r-squared</p>
+</section>
+<section id="correlation-r" class="slide level2">
+<h2>Correlation (r)</h2>
+<p>– Between [-1,1]</p>
+<p>– Measures the strength and direction of a linear relationship</p>
+<p>– We can calculate correlation using the <code>cor</code> function in R</p>
+<p>– Click <a href="https://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html">here</a> to play a game</p>
+</section>
+<section id="r-squared" class="slide level2">
+<h2>r-squared</h2>
+<p>– For SLR, r-squared is the correlation coefficient squared</p>
+<p>– Quantifies the amount of variability in our response y that is explained by x</p>
+<p>– In general, the higher the value is, the better or important the predictor is!</p>
+<p>– Note: We do need to be careful with over fitting, and want to be wary of r-squared values close to one. More on this later….</p>
+</section>
+<section id="r-squared-1" class="slide level2">
+<h2>r-squared</h2>
+<p>We can calculate this in R using <code>glance(model.name)$r.squared</code></p>
+</section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
 <p>– Y is a random variable.</p>

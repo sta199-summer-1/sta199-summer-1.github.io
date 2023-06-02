@@ -236,6 +236,34 @@ Or, Y is a mean response
 
 **This is extremely important when we think about interpretation**
 
+## Is the predictor any good? 
+
+-- Correlation and r-squared 
+
+## Correlation (r)
+
+-- Between [-1,1]
+
+-- Measures the strength and direction of a linear relationship 
+
+-- We can calculate correlation using the `cor` function in R
+
+-- Click [here](https://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html) to play a game 
+
+## r-squared 
+
+-- For SLR, r-squared is the correlation coefficient squared 
+
+-- Quantifies the amount of variability in our response y that is explained by x
+
+-- In general, the higher the value is, the better or important the predictor is! 
+
+-- Note: We do need to be careful with over fitting, and want to be wary of r-squared values close to one. More on this later.... 
+
+## r-squared 
+
+We can calculate this in R using `glance(model.name)$r.squared`
+
 ## Summary
 
 -- Y is a random variable.
