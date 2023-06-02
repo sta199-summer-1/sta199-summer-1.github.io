@@ -2667,6 +2667,244 @@
     "text": "Distribution\nBut some values are more common and some are uncommon\nWe use distributions to understand that. This allows us to conduct hypothesis tests and make confidence intervals.\n\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
+    "objectID": "slides/day8slr.html#checklist",
+    "href": "slides/day8slr.html#checklist",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Checklist",
+    "text": "Checklist\n\nClone your ae-08 project in RStudio. Do not make any changes to it after you clone.\nExam-1 is over. Nice work!\nAre you keeping up with prepare material?"
+  },
+  {
+    "objectID": "slides/day8slr.html#announcements",
+    "href": "slides/day8slr.html#announcements",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Announcements",
+    "text": "Announcements\n– Project is here! Let’s talk about it."
+  },
+  {
+    "objectID": "slides/day8slr.html#project",
+    "href": "slides/day8slr.html#project",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Project",
+    "text": "Project\nRight now, you are working on the project proposal (June 12th)\nProject draft report due (June 22nd)\nProject presentation (June 29th)"
+  },
+  {
+    "objectID": "slides/day8slr.html#project-proposal",
+    "href": "slides/day8slr.html#project-proposal",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Project proposal",
+    "text": "Project proposal\n– 2 data sets\n– Research question for each data set\n– Introduction for each data set\n– “Literature review” for each data set\n– glimpse for each data set"
+  },
+  {
+    "objectID": "slides/day8slr.html#research-questions",
+    "href": "slides/day8slr.html#research-questions",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Research Questions",
+    "text": "Research Questions\n– Should be clear and focused\n– Should be something that can be answered"
+  },
+  {
+    "objectID": "slides/day8slr.html#research-questions-1",
+    "href": "slides/day8slr.html#research-questions-1",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Research Questions",
+    "text": "Research Questions\n– There is no recommendation to the number of variables you need to include when writing your research question. It can be between 2, it can have more than 2.\n– Your research question can (and probably will) change as you get feedback / we move through the Summer session. That’s okay for this class project!\n– You will answer this question using statistical procedures we will learn starting now! This includes modeling, hypothesis testing, and confidence intervals."
+  },
+  {
+    "objectID": "slides/day8slr.html#examples",
+    "href": "slides/day8slr.html#examples",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Examples",
+    "text": "Examples\n– What is the relationship between baldness and age?\n– What is the relationship between baldness and age? Does this change based on sex?\n– Does the mean age of retirement differ based on region of the US?\n– What is the estiamted difference in GPA between those who live on vs off the dorms at Duke University?"
+  },
+  {
+    "objectID": "slides/day8slr.html#teamwork",
+    "href": "slides/day8slr.html#teamwork",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Teamwork",
+    "text": "Teamwork\n– Everyone must contribute\n– You are not guarenteed the same grade on the project as your group members\n– Commit messages + group surveys"
+  },
+  {
+    "objectID": "slides/day8slr.html#draft-report",
+    "href": "slides/day8slr.html#draft-report",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Draft Report",
+    "text": "Draft Report\n– Introduction and Data (Updated)\n– Literature Review (Updated)\n– Methodology: visualizations and summary statistics relevant to your research question. You should also justify the choice of statistical method(s) used to answer your research question.\n– Showcase how you arrived at answers to your research question using the techniques we have learned in class"
+  },
+  {
+    "objectID": "slides/day8slr.html#draft-report-1",
+    "href": "slides/day8slr.html#draft-report-1",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Draft Report",
+    "text": "Draft Report\nThe goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data, that you are skilled in interpreting and presenting results, and that you can accomplish these tasks using R. More is not better."
+  },
+  {
+    "objectID": "slides/day8slr.html#presentation",
+    "href": "slides/day8slr.html#presentation",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Presentation",
+    "text": "Presentation\n– Short 5-10 minute presentation on all of the hard work you have accomplished\n– This takes place of your final exam"
+  },
+  {
+    "objectID": "slides/day8slr.html#warm-up",
+    "href": "slides/day8slr.html#warm-up",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Warm Up",
+    "text": "Warm Up\nWhat is the true mean height for all Duke students who take Summer classes?"
+  },
+  {
+    "objectID": "slides/day8slr.html#you-dont-know.",
+    "href": "slides/day8slr.html#you-dont-know.",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "You don’t know….",
+    "text": "You don’t know….\nBut we can collect data and try to better answer this question!"
+  },
+  {
+    "objectID": "slides/day8slr.html#warm-up-2",
+    "href": "slides/day8slr.html#warm-up-2",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Warm Up-2",
+    "text": "Warm Up-2\nIs the weight of a car a good predictor for miles per gallon?\nHow many miles per gallon would we estimate a car to have if the weight was equal to 5000 pounds?"
+  },
+  {
+    "objectID": "slides/day8slr.html#you-dont-know.-1",
+    "href": "slides/day8slr.html#you-dont-know.-1",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "You don’t know….",
+    "text": "You don’t know….\nBut we can collect data, fit a model, and use this model to better understand relationships and make predictions!"
+  },
+  {
+    "objectID": "slides/day8slr.html#warm-up-3",
+    "href": "slides/day8slr.html#warm-up-3",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Warm up 3",
+    "text": "Warm up 3\nHow many miles per gallon would we estimate a car to have if the weight was equal to 5000 pounds?"
+  },
+  {
+    "objectID": "slides/day8slr.html#goals",
+    "href": "slides/day8slr.html#goals",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Goals",
+    "text": "Goals\n– Introduce the idea of modeling\n— Modeling with single predictors\n— How to write equations\n— Interpret Slopes\n— Interpret Intercepts"
+  },
+  {
+    "objectID": "slides/day8slr.html#what-is-a-statistical-model",
+    "href": "slides/day8slr.html#what-is-a-statistical-model",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "What is a statistical model?",
+    "text": "What is a statistical model?\n– Statistical modeling is the process of applying statistical analysis to a data set.\n– A statistical model is a mathematical representation of observed data."
+  },
+  {
+    "objectID": "slides/day8slr.html#why",
+    "href": "slides/day8slr.html#why",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Why",
+    "text": "Why\n– Interpretation\n– Prediction"
+  },
+  {
+    "objectID": "slides/day8slr.html#what-is-linear-regression",
+    "href": "slides/day8slr.html#what-is-linear-regression",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "What is linear regression?",
+    "text": "What is linear regression?\n– Model data using a straight line\n– Quantitative response\n– Quantitative or categorical explanatory"
+  },
+  {
+    "objectID": "slides/day8slr.html#vocab---response-variable",
+    "href": "slides/day8slr.html#vocab---response-variable",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Vocab - Response variable",
+    "text": "Vocab - Response variable"
+  },
+  {
+    "objectID": "slides/day8slr.html#vocab---explanatory-variable",
+    "href": "slides/day8slr.html#vocab---explanatory-variable",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Vocab - Explanatory variable",
+    "text": "Vocab - Explanatory variable"
+  },
+  {
+    "objectID": "slides/day8slr.html#how-are-models-fit---2-minutes",
+    "href": "slides/day8slr.html#how-are-models-fit---2-minutes",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "How are Models Fit? - 2 minutes",
+    "text": "How are Models Fit? - 2 minutes"
+  },
+  {
+    "objectID": "slides/day8slr.html#how-are-models-fit",
+    "href": "slides/day8slr.html#how-are-models-fit",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "How are Models Fit?",
+    "text": "How are Models Fit?"
+  },
+  {
+    "objectID": "slides/day8slr.html#how-are-models-fit-1",
+    "href": "slides/day8slr.html#how-are-models-fit-1",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "How are Models Fit?",
+    "text": "How are Models Fit?"
+  },
+  {
+    "objectID": "slides/day8slr.html#what-about-when-x-is-categorical",
+    "href": "slides/day8slr.html#what-about-when-x-is-categorical",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "What about when X is categorical?",
+    "text": "What about when X is categorical?"
+  },
+  {
+    "objectID": "slides/day8slr.html#what-about-when-x-is-categorical-1",
+    "href": "slides/day8slr.html#what-about-when-x-is-categorical-1",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "What about when X is categorical?",
+    "text": "What about when X is categorical?"
+  },
+  {
+    "objectID": "slides/day8slr.html#in-r-slr",
+    "href": "slides/day8slr.html#in-r-slr",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "In R: SLR",
+    "text": "In R: SLR\nlinear_reg() |>\n\n     set_engine(\"lm\") |>\n\n     fit(y ~ x , data = data-set ) |>\n\n     tidy()"
+  },
+  {
+    "objectID": "slides/day8slr.html#model-notation---population",
+    "href": "slides/day8slr.html#model-notation---population",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Model Notation - Population",
+    "text": "Model Notation - Population\n\\[ Y_i = \\beta\\_o + \\beta\\_1x_i +\\epsilon\\_i\\]\n\\[ Y\\; - True\\; mean\\;response \\]\n\\[\\beta\\_o\\; -True\\; intercept\\]\n\\[\\beta\\_1\\; - True\\; slope\\; coefficient\\]\n\\[\\epsilon\\_i\\; -  Error\\; term\\; for\\; each\\; observation\\; i\\]"
+  },
+  {
+    "objectID": "slides/day8slr.html#model-notation---estimated",
+    "href": "slides/day8slr.html#model-notation---estimated",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Model Notation - Estimated",
+    "text": "Model Notation - Estimated\n\\[\\hat{Y} = b + b_1x\\]\n\\[\\hat{Y} = \\hat{\\beta_o} + \\hat{\\beta_1}x\\]\n\\[\\hat{Y} - estimated\\; (predicted)\\; mean \\;response\\]\n\\[\\hat{\\beta_o} - estimated\\; intercept\\]\n\\[\\hat{\\beta_1} - estimated\\; slope\\] We assume that our error term is normally distributed and has a mean of 0. Thus, it does not show up in our model."
+  },
+  {
+    "objectID": "slides/day8slr.html#model-notes",
+    "href": "slides/day8slr.html#model-notes",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Model Notes",
+    "text": "Model Notes\nThings to note:\nX is our explanatory variable and is not random. We know the value of X.\nY is our response variable. For a fixed X, Y will be a random variable (have a random outcome).\nThis random outcome is observed based on a random draw from a distribution we assume.\nWhen using this model for prediction, we expect Y to take on the most likely value for a given X… which is the center of the distribution.\nLet’s draw it out…"
+  },
+  {
+    "objectID": "slides/day8slr.html#takeaway",
+    "href": "slides/day8slr.html#takeaway",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Takeaway",
+    "text": "Takeaway\nSo, for an observed X….. we are modeling the mean of the distribution of Y\nOr, Y is a mean response\n“we estimate a mean change in Y”\n“we estimate, on average…..”\nThis is extremely important when we think about interpretation"
+  },
+  {
+    "objectID": "slides/day8slr.html#summary",
+    "href": "slides/day8slr.html#summary",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Summary",
+    "text": "Summary\n– Y is a random variable.\n– We assume that observations from this random variable are normally distributed.\n– Because of this distributional assumption, we are modeling the mean of Y and not just Y."
+  },
+  {
+    "objectID": "slides/day8slr.html#wrap-up-check-yourself",
+    "href": "slides/day8slr.html#wrap-up-check-yourself",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "Wrap up: Check yourself",
+    "text": "Wrap up: Check yourself\n– What is a model?\n– What are the 2 main reasons we fit models?\n– Slope coefficients? Intercepts?\n– How does linear regression change when x is quantitative vs categorical?\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
     "objectID": "slides/lab-0-slides.html#introductions",
     "href": "slides/lab-0-slides.html#introductions",
     "title": "Welcome to Lab",
