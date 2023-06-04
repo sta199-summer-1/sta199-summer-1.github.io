@@ -2891,6 +2891,13 @@
     "text": "How are Models Fit?"
   },
   {
+    "objectID": "slides/day8slr.html#its-all-linear-algebra-beyond-the-scope",
+    "href": "slides/day8slr.html#its-all-linear-algebra-beyond-the-scope",
+    "title": "Statistical Inference + Simple Linear Regression",
+    "section": "It’s all linear algebra (beyond the scope)",
+    "text": "It’s all linear algebra (beyond the scope)\nFirst derivative of \\((y-XB)`(y-XB)\\)\n… and set it equal to 0 to find the set of betas that minimizes RSS"
+  },
+  {
     "objectID": "slides/day8slr.html#what-about-when-x-is-categorical",
     "href": "slides/day8slr.html#what-about-when-x-is-categorical",
     "title": "Statistical Inference + Simple Linear Regression",
@@ -2980,6 +2987,153 @@
     "title": "Statistical Inference + Simple Linear Regression",
     "section": "Wrap up: Check yourself",
     "text": "Wrap up: Check yourself\n– What is a model?\n– What are the 2 main reasons we fit models?\n– Slope coefficients? Intercepts?\n– How does linear regression change when x is quantitative vs categorical?\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/day9MLR.html#checklist",
+    "href": "slides/day9MLR.html#checklist",
+    "title": "SLR + MLR",
+    "section": "Checklist",
+    "text": "Checklist\n– Clone `ae-09\n– Homework 3 Release Today\n– Lab 4 due Thursday (11:59)\n— 1 submission. Attach everyone to it"
+  },
+  {
+    "objectID": "slides/day9MLR.html#lab-4",
+    "href": "slides/day9MLR.html#lab-4",
+    "title": "SLR + MLR",
+    "section": "Lab 4",
+    "text": "Lab 4\n– Team Submission\n– Attach ALL team members to submission on Gradescope\n– Communicate!\n– “It was my responsibility to turn the lab in and I forgot….”"
+  },
+  {
+    "objectID": "slides/day9MLR.html#warm-up",
+    "href": "slides/day9MLR.html#warm-up",
+    "title": "SLR + MLR",
+    "section": "Warm up",
+    "text": "Warm up\nBelow is a scatterplot from ae-08. Alone or with a partner, discuss how R chose to fit this line over any other."
+  },
+  {
+    "objectID": "slides/day9MLR.html#warm-up-1",
+    "href": "slides/day9MLR.html#warm-up-1",
+    "title": "SLR + MLR",
+    "section": "Warm up",
+    "text": "Warm up"
+  },
+  {
+    "objectID": "slides/day9MLR.html#warm-up-correlation",
+    "href": "slides/day9MLR.html#warm-up-correlation",
+    "title": "SLR + MLR",
+    "section": "Warm Up: Correlation",
+    "text": "Warm Up: Correlation\n– Proper notation?\n– Definition?\n– Bounds?"
+  },
+  {
+    "objectID": "slides/day9MLR.html#correlation",
+    "href": "slides/day9MLR.html#correlation",
+    "title": "SLR + MLR",
+    "section": "Correlation",
+    "text": "Correlation\nCan find this with the cor or correlate function in R\n\nhttps://www.tidyverse.org/blog/2020/12/corrr-0-4-3/"
+  },
+  {
+    "objectID": "slides/day9MLR.html#warm-up-3",
+    "href": "slides/day9MLR.html#warm-up-3",
+    "title": "SLR + MLR",
+    "section": "Warm Up 3",
+    "text": "Warm Up 3\nDefine each of these terms below:\n\\(\\beta_0\\)\n\\(\\beta_1\\)\n\\(b_0\\)\n\\(b_1\\)\n\\(\\epsilon\\)\n\\(\\hat{y}\\)"
+  },
+  {
+    "objectID": "slides/day9MLR.html#multiple-linear-regression",
+    "href": "slides/day9MLR.html#multiple-linear-regression",
+    "title": "SLR + MLR",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression\nestimates the relationship between a quantitative response variable and two or more explanatory variables\nmotivated by scenarios where many variables may be simultaneously connected to an output"
+  },
+  {
+    "objectID": "slides/day9MLR.html#multiple-linear-regression-1",
+    "href": "slides/day9MLR.html#multiple-linear-regression-1",
+    "title": "SLR + MLR",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression"
+  },
+  {
+    "objectID": "slides/day9MLR.html#slight-change-in-interpretation",
+    "href": "slides/day9MLR.html#slight-change-in-interpretation",
+    "title": "SLR + MLR",
+    "section": "Slight Change in interpretation",
+    "text": "Slight Change in interpretation\n– Holding all else constant\nBecause we estimate our coefficients all at the same time. Thus, when we add variables to the model, our estimates will change!"
+  },
+  {
+    "objectID": "slides/day9MLR.html#beyond-the-scope",
+    "href": "slides/day9MLR.html#beyond-the-scope",
+    "title": "SLR + MLR",
+    "section": "Beyond the scope",
+    "text": "Beyond the scope\n– Linear algebra is driving what we do in R\n– Least squares estimator: estimating parameters by minimizing the squared discrepancies between observed data\n– \\[\\hat{\\beta} = (X^t X)^{-1} X^tY\\]"
+  },
+  {
+    "objectID": "slides/day9MLR.html#additive-model-vs-interaction-model",
+    "href": "slides/day9MLR.html#additive-model-vs-interaction-model",
+    "title": "SLR + MLR",
+    "section": "Additive Model vs Interaction Model",
+    "text": "Additive Model vs Interaction Model\nIn words….\nThe relationship between x and y do not change based on the values of z (additive)\nThe relationship between x and y DO change based on the values of z (interaction)"
+  },
+  {
+    "objectID": "slides/day9MLR.html#additive-model-for-today",
+    "href": "slides/day9MLR.html#additive-model-for-today",
+    "title": "SLR + MLR",
+    "section": "Additive Model for Today",
+    "text": "Additive Model for Today"
+  },
+  {
+    "objectID": "slides/day9MLR.html#interaction-model-for-today",
+    "href": "slides/day9MLR.html#interaction-model-for-today",
+    "title": "SLR + MLR",
+    "section": "Interaction Model for Today",
+    "text": "Interaction Model for Today"
+  },
+  {
+    "objectID": "slides/day9MLR.html#principle-of-parsimony-occams-razor",
+    "href": "slides/day9MLR.html#principle-of-parsimony-occams-razor",
+    "title": "SLR + MLR",
+    "section": "Principle of parsimony (Occam’s Razor)",
+    "text": "Principle of parsimony (Occam’s Razor)\nfor a statistical model states that: a simpler model with fewer parameters is favored over more complex models with more parameters, provided the models fit the data similarly well\nKEEP IT SIMPLE (when you can)"
+  },
+  {
+    "objectID": "slides/day9MLR.html#so-how-do-we-choose",
+    "href": "slides/day9MLR.html#so-how-do-we-choose",
+    "title": "SLR + MLR",
+    "section": "So how do we choose?",
+    "text": "So how do we choose?\nMany different ways\n– Initial visual evidence\n– R-squared & Adjusted R-squared"
+  },
+  {
+    "objectID": "slides/day9MLR.html#r-squared",
+    "href": "slides/day9MLR.html#r-squared",
+    "title": "SLR + MLR",
+    "section": "R-squared",
+    "text": "R-squared\n– statistical measure in a regression model that determines the proportion of variance in the response variable that can be explained by the explanatory variable(s)."
+  },
+  {
+    "objectID": "slides/day9MLR.html#r-squared-1",
+    "href": "slides/day9MLR.html#r-squared-1",
+    "title": "SLR + MLR",
+    "section": "R-squared",
+    "text": "R-squared"
+  },
+  {
+    "objectID": "slides/day9MLR.html#r-squared-2",
+    "href": "slides/day9MLR.html#r-squared-2",
+    "title": "SLR + MLR",
+    "section": "R-squared",
+    "text": "R-squared"
+  },
+  {
+    "objectID": "slides/day9MLR.html#r-squared-takeaway",
+    "href": "slides/day9MLR.html#r-squared-takeaway",
+    "title": "SLR + MLR",
+    "section": "R-squared: Takeaway",
+    "text": "R-squared: Takeaway\n– statistical measure in a regression model that determines the proportion of variance in the response variable that can be explained by the explanatory variable(s).\n– The more variables you include, the larger the R-squared value will be (always)"
+  },
+  {
+    "objectID": "slides/day9MLR.html#adjusted-r-squared",
+    "href": "slides/day9MLR.html#adjusted-r-squared",
+    "title": "SLR + MLR",
+    "section": "Adjusted R-squared",
+    "text": "Adjusted R-squared\nTakeaway: Adds a penalty for “unimportant” predictors (x’s)"
   },
   {
     "objectID": "slides/lab-0-slides.html#introductions",

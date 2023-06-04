@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Dr.&nbsp;Elijah Meyer">
-  <title>STA 199 - Statistical Inference + Simple Linear Regression</title>
+  <title>STA 199 - SLR + MLR</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -319,251 +319,133 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">Statistical Inference + Simple Linear Regression</h1>
-  <p class="subtitle">Day-8</p>
+  <h1 class="title">SLR + MLR</h1>
+  <p class="subtitle">Lecture 13</p>
   <p class="author">Dr.&nbsp;Elijah Meyer</p>
   <p class="institute">Duke University <br> STA 199 - Summer 2023</p>
-  <p class="date">June 5th, 2023</p>
+  <p class="date">Feburary 24th, 2023</p>
 </section>
 
 <section id="checklist" class="slide level2">
 <h2>Checklist</h2>
-<ul>
-<li class="fragment"><p>Clone your <code>ae-08</code> project in RStudio. Do not make any changes to it after you clone.</p></li>
-<li class="fragment"><p>Exam-1 is over. Nice work!</p></li>
-<li class="fragment"><p>Are you keeping up with prepare material?</p></li>
-</ul>
+<p>– Clone `ae-09</p>
+<p>– Homework 3 Release Today</p>
+<p>– Lab 4 due Thursday (11:59)</p>
+<p>— 1 submission. Attach everyone to it</p>
 </section>
-<section id="announcements" class="slide level2">
-<h2>Announcements</h2>
-<p>– Project is here! Let’s talk about it.</p>
-</section>
-<section id="project" class="slide level2">
-<h2>Project</h2>
-<p>Right now, you are working on the project proposal (June 12th)</p>
-<p>Project draft report due (June 22nd)</p>
-<p>Project presentation (June 29th)</p>
-</section>
-<section id="project-proposal" class="slide level2">
-<h2>Project proposal</h2>
-<p>– 2 data sets</p>
-<p>– Research question for each data set</p>
-<p>– Introduction for each data set</p>
-<p>– “Literature review” for each data set</p>
-<p>– <code>glimpse</code> for each data set</p>
-</section>
-<section id="research-questions" class="slide level2">
-<h2>Research Questions</h2>
-<p>– Should be clear and focused</p>
-<p>– Should be something that can be answered</p>
-</section>
-<section id="research-questions-1" class="slide level2">
-<h2>Research Questions</h2>
-<p>– There is no recommendation to the number of variables you need to include when writing your research question. It can be between 2, it can have more than 2.</p>
-<p>– Your research question can (and probably will) change as you get feedback / we move through the Summer session. That’s okay for this class project!</p>
-<p>– You will answer this question using statistical procedures we will learn starting now! This includes modeling, hypothesis testing, and confidence intervals.</p>
-</section>
-<section id="examples" class="slide level2">
-<h2>Examples</h2>
-<p>– What is the <strong>relationship</strong> between baldness and age?</p>
-<p>– What is the <strong>relationship</strong> between baldness and age? Does this change based on sex?</p>
-<p>– Does the mean age of retirement <strong>differ</strong> based on region of the US?</p>
-<p>– What is the estiamted <strong>difference</strong> in GPA between those who live on vs off the dorms at Duke University?</p>
-</section>
-<section id="teamwork" class="slide level2">
-<h2>Teamwork</h2>
-<p>– Everyone must contribute</p>
-<p>– You are not guarenteed the same grade on the project as your group members</p>
-<p>– Commit messages + group surveys</p>
-</section>
-<section>
-<section id="questions-on-project-proposal" class="title-slide slide level1 center">
-<h1>Questions on Project Proposal</h1>
-
-</section>
-<section id="draft-report" class="slide level2">
-<h2>Draft Report</h2>
-<p>– Introduction and Data (Updated)</p>
-<p>– Literature Review (Updated)</p>
-<p>– Methodology: visualizations and summary statistics relevant to your research question. You should also justify the choice of statistical method(s) used to answer your research question.</p>
-<p>– Showcase how you arrived at answers to your research question using the techniques we have learned in class</p>
-</section>
-<section id="draft-report-1" class="slide level2">
-<h2>Draft Report</h2>
-<p>The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data, that you are skilled in interpreting and presenting results, and that you can accomplish these tasks using R. More is not better.</p>
-</section>
-<section id="presentation" class="slide level2">
-<h2>Presentation</h2>
-<p>– Short 5-10 minute presentation on all of the hard work you have accomplished</p>
-<p>– This takes place of your final exam</p>
+<section id="lab-4" class="slide level2">
+<h2>Lab 4</h2>
+<p>– Team Submission</p>
+<p>– Attach ALL team members to submission on Gradescope</p>
+<p>– Communicate!</p>
+<p>– “It was my responsibility to turn the lab in and I forgot….”</p>
 </section>
 <section id="warm-up" class="slide level2">
-<h2>Warm Up</h2>
-<p>What is the true mean height for all Duke students who take Summer classes?</p>
+<h2>Warm up</h2>
+<p>Below is a scatterplot from <code>ae-08</code>. Alone or with a partner, discuss how R chose to fit this line over any other.</p>
+
+<img data-src="images/penguinplot.png" class="r-stretch"></section>
+<section id="warm-up-1" class="slide level2">
+<h2>Warm up</h2>
+
+<img data-src="images/residspenguins.png" class="r-stretch"></section>
+<section id="warm-up-correlation" class="slide level2">
+<h2>Warm Up: Correlation</h2>
+<p>– Proper notation?</p>
+<p>– Definition?</p>
+<p>– Bounds?</p>
 </section>
-<section id="you-dont-know." class="slide level2">
-<h2>You don’t know….</h2>
-<p>But we can collect data and try to better answer this question!</p>
-</section>
-<section id="warm-up-2" class="slide level2">
-<h2>Warm Up-2</h2>
-<p>Is the weight of a car a good predictor for miles per gallon?</p>
-<p>How many miles per gallon would we estimate a car to have if the weight was equal to 5000 pounds?</p>
-</section>
-<section id="you-dont-know.-1" class="slide level2">
-<h2>You don’t know….</h2>
-<p>But we can collect data, fit a model, and use this model to better understand relationships and make predictions!</p>
+<section id="correlation" class="slide level2">
+<h2>Correlation</h2>
+<p>Can find this with the <code>cor</code> or <code>correlate</code> function in R</p>
+
+<img data-src="images/corr-example.23.png" class="r-stretch"><p>https://www.tidyverse.org/blog/2020/12/corrr-0-4-3/</p>
 </section>
 <section id="warm-up-3" class="slide level2">
-<h2>Warm up 3</h2>
-<p>How many miles per gallon would we estimate a car to have if the weight was equal to 5000 pounds?</p>
+<h2>Warm Up 3</h2>
+<p>Define each of these terms below:</p>
+<p><span class="math inline">\(\beta_0\)</span></p>
+<p><span class="math inline">\(\beta_1\)</span></p>
+<p><span class="math inline">\(b_0\)</span></p>
+<p><span class="math inline">\(b_1\)</span></p>
+<p><span class="math inline">\(\epsilon\)</span></p>
+<p><span class="math inline">\(\hat{y}\)</span></p>
+</section>
+<section id="multiple-linear-regression" class="slide level2">
+<h2>Multiple Linear Regression</h2>
+<p>estimates the relationship between a quantitative response variable and two or more explanatory variables</p>
+<p>motivated by scenarios where many variables may be simultaneously connected to an output</p>
+</section>
+<section id="multiple-linear-regression-1" class="slide level2">
+<h2>Multiple Linear Regression</h2>
 
-<img data-src="images/scattercar.png" width="700" class="r-stretch quarto-figure-center"></section>
-<section id="goals" class="slide level2">
-<h2>Goals</h2>
-<p>– Introduce the idea of modeling</p>
-<p>— Modeling with single predictors</p>
-<p>— How to write equations</p>
-<p>— Interpret Slopes</p>
-<p>— Interpret Intercepts</p>
+<img data-src="images/simp.4.png" class="r-stretch"></section>
+<section id="slight-change-in-interpretation" class="slide level2">
+<h2>Slight Change in interpretation</h2>
+<p>– <strong>Holding all else constant</strong></p>
+<p>Because we estimate our coefficients all at the same time. Thus, when we add variables to the model, our estimates will change!</p>
 </section>
-<section id="what-is-a-statistical-model" class="slide level2">
-<h2>What is a statistical model?</h2>
-<p>– Statistical modeling is the process of applying statistical analysis to a data set.</p>
-<p>– A statistical model is a mathematical representation of observed data.</p>
+<section id="beyond-the-scope" class="slide level2">
+<h2>Beyond the scope</h2>
+<p>– Linear algebra is driving what we do in R</p>
+<p>– Least squares estimator: estimating parameters by minimizing the squared discrepancies between observed data</p>
+<p>– <span class="math display">\[\hat{\beta} = (X^t X)^{-1} X^tY\]</span></p>
 </section>
-<section id="why" class="slide level2">
-<h2>Why</h2>
-<p>– Interpretation</p>
-<p>– Prediction</p>
+<section id="additive-model-vs-interaction-model" class="slide level2">
+<h2>Additive Model vs Interaction Model</h2>
+<p>In words….</p>
+<p>The relationship between x and y do not change based on the values of z (additive)</p>
+<p>The relationship between x and y DO change based on the values of z (interaction)</p>
 </section>
-<section id="what-is-linear-regression" class="slide level2">
-<h2>What is linear regression?</h2>
-<p>– Model data using <strong>a straight line</strong></p>
-<p>– Quantitative response</p>
-<p>– Quantitative or categorical explanatory</p>
-</section>
-<section id="vocab---response-variable" class="slide level2">
-<h2>Vocab - Response variable</h2>
+<section id="additive-model-for-today" class="slide level2">
+<h2>Additive Model for Today</h2>
 
-<img data-src="images/response.png" width="700" class="r-stretch quarto-figure-center"></section>
-<section id="vocab---explanatory-variable" class="slide level2">
-<h2>Vocab - Explanatory variable</h2>
+<img data-src="images/addmodel.png" class="r-stretch"></section>
+<section id="interaction-model-for-today" class="slide level2">
+<h2>Interaction Model for Today</h2>
 
-<img data-src="images/explan.png" width="700" class="r-stretch quarto-figure-center"></section>
-<section id="how-are-models-fit---2-minutes" class="slide level2">
-<h2>How are Models Fit? - 2 minutes</h2>
-
-<img data-src="images/scattercar.png" width="700" class="r-stretch quarto-figure-center"></section>
-<section id="how-are-models-fit" class="slide level2">
-<h2>How are Models Fit?</h2>
-
-<img data-src="images/residexample.png" class="r-stretch"></section>
-<section id="how-are-models-fit-1" class="slide level2">
-<h2>How are Models Fit?</h2>
-
-<img data-src="images/RSS.png" class="r-stretch"></section>
-<section id="its-all-linear-algebra-beyond-the-scope" class="slide level2">
-<h2>It’s all linear algebra (beyond the scope)</h2>
-<p>First derivative of <span class="math inline">\((y-XB)`(y-XB)\)</span></p>
-<p>… and set it equal to 0 to find the set of betas that minimizes RSS</p>
+<img data-src="images/intmodel.png" class="r-stretch"></section>
+<section id="principle-of-parsimony-occams-razor" class="slide level2">
+<h2>Principle of parsimony (Occam’s Razor)</h2>
+<p>for a statistical model states that: a simpler model with fewer parameters is favored over more complex models with more parameters, provided the models fit the data similarly well</p>
+<p>KEEP IT SIMPLE (when you can)</p>
 </section>
-<section id="what-about-when-x-is-categorical" class="slide level2">
-<h2>What about when X is categorical?</h2>
-</section>
-<section id="what-about-when-x-is-categorical-1" class="slide level2">
-<h2>What about when X is categorical?</h2>
-
-<img data-src="images/cat-resid.png" class="r-stretch"></section>
-<section id="in-r-slr" class="slide level2">
-<h2>In R: SLR</h2>
-<pre><code>linear_reg() |&gt;
-
-     set_engine("lm") |&gt;
-
-     fit(y ~ x , data = data-set ) |&gt;
-
-     tidy()
-     </code></pre>
-</section></section>
-<section>
-<section id="ae-11" class="title-slide slide level1 center">
-<h1>ae-11</h1>
-
-</section>
-<section id="model-notation---population" class="slide level2">
-<h2>Model Notation - Population</h2>
-<p><span class="math display">\[ Y_i = \beta\_o + \beta\_1x_i +\epsilon\_i\]</span></p>
-<p><span class="math display">\[ Y\; - True\; mean\;response \]</span></p>
-<p><span class="math display">\[\beta\_o\; -True\; intercept\]</span></p>
-<p><span class="math display">\[\beta\_1\; - True\; slope\; coefficient\]</span></p>
-<p><span class="math display">\[\epsilon\_i\; -  Error\; term\; for\; each\; observation\; i\]</span></p>
-</section>
-<section id="model-notation---estimated" class="slide level2">
-<h2>Model Notation - Estimated</h2>
-<p><span class="math display">\[\hat{Y} = b + b_1x\]</span></p>
-<p><span class="math display">\[\hat{Y} = \hat{\beta_o} + \hat{\beta_1}x\]</span></p>
-<p><span class="math display">\[\hat{Y} - estimated\; (predicted)\; mean \;response\]</span></p>
-<p><span class="math display">\[\hat{\beta_o} - estimated\; intercept\]</span></p>
-<p><span class="math display">\[\hat{\beta_1} - estimated\; slope\]</span> We assume that our error term is normally distributed and has a mean of 0. Thus, it does not show up in our model.</p>
-</section>
-<section id="model-notes" class="slide level2 smaller">
-<h2>Model Notes</h2>
-<p>Things to note:</p>
-<p>X is our explanatory variable and is not random. We know the value of X.</p>
-<p>Y is our response variable. For a fixed X, Y will be a random variable (have a random outcome).</p>
-<p>This random outcome is observed based on a random draw from a distribution we assume.</p>
-<p>When using this model for prediction, we expect Y to take on the most likely value for a given X… which is the center of the distribution.</p>
-<p>Let’s draw it out…</p>
-</section>
-<section id="takeaway" class="slide level2">
-<h2>Takeaway</h2>
-<p>So, for an observed X….. we are modeling the mean of the distribution of Y</p>
-<p>Or, Y is a mean response</p>
-<p><strong>“we estimate a mean change in Y”</strong></p>
-<p><strong>“we estimate, on average…..”</strong></p>
-<p><strong>This is extremely important when we think about interpretation</strong></p>
-</section>
-<section id="is-the-predictor-any-good" class="slide level2">
-<h2>Is the predictor any good?</h2>
-<p>– Correlation and r-squared</p>
-</section>
-<section id="correlation-r" class="slide level2">
-<h2>Correlation (r)</h2>
-<p>– Between [-1,1]</p>
-<p>– Measures the strength and direction of a linear relationship</p>
-<p>– We can calculate correlation using the <code>cor</code> function in R</p>
-<p>– Click <a href="https://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html">here</a> to play a game</p>
+<section id="so-how-do-we-choose" class="slide level2">
+<h2>So how do we choose?</h2>
+<p>Many different ways</p>
+<p>– Initial visual evidence</p>
+<p>– R-squared &amp; Adjusted R-squared</p>
 </section>
 <section id="r-squared" class="slide level2">
-<h2>r-squared</h2>
-<p>– For SLR, r-squared is the correlation coefficient squared</p>
-<p>– Quantifies the amount of variability in our response y that is explained by x</p>
-<p>– In general, the higher the value is, the better or important the predictor is!</p>
-<p>– Note: We do need to be careful with over fitting, and want to be wary of r-squared values close to one. More on this later….</p>
+<h2>R-squared</h2>
+<p>– statistical measure in a regression model that determines the proportion of variance in the response variable that can be explained by the explanatory variable(s).</p>
 </section>
 <section id="r-squared-1" class="slide level2">
-<h2>r-squared</h2>
-<p>We can calculate this in R using <code>glance(model.name)$r.squared</code></p>
+<h2>R-squared</h2>
+
+<img data-src="images/R-squared.png" class="r-stretch"></section>
+<section id="r-squared-2" class="slide level2">
+<h2>R-squared</h2>
+
+<img data-src="images/sst.2.png" class="r-stretch"></section>
+<section id="r-squared-takeaway" class="slide level2">
+<h2>R-squared: Takeaway</h2>
+<p>– statistical measure in a regression model that determines the proportion of variance in the response variable that can be explained by the explanatory variable(s).</p>
+<p>– The more variables you include, the larger the R-squared value will be (always)</p>
 </section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<p>– Y is a random variable.</p>
-<p>– We assume that observations from this random variable are normally distributed.</p>
-<p>– Because of this distributional assumption, we are modeling the <strong>mean</strong> of Y and not just Y.</p>
-</section>
-<section id="wrap-up-check-yourself" class="slide level2">
-<h2>Wrap up: Check yourself</h2>
-<p>– What is a model?</p>
-<p>– What are the 2 main reasons we fit models?</p>
-<p>– Slope coefficients? Intercepts?</p>
-<p>– How does linear regression change when x is quantitative vs categorical?</p>
+<section id="adjusted-r-squared" class="slide level2">
+<h2>Adjusted R-squared</h2>
+<p>Takeaway: Adds a penalty for “unimportant” predictors (x’s)</p>
+
+<img data-src="images/adjustedR2.png" class="r-stretch"></section>
+<section id="ae-09" class="title-slide slide level1 center">
+<h1>ae-09</h1>
 
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="https://github.com/sta199-summer-1">🔗 sta199-summer-1.github.io</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -598,7 +480,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":"16857213409886496268","id":"7d08e746b4c24874","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":"16858888185131954902","id":"ac5d99622015661f","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner

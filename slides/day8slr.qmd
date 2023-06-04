@@ -170,6 +170,13 @@ How many miles per gallon would we estimate a car to have if the weight was equa
 
 ![](images/RSS.png)
 
+## It's all linear algebra (beyond the scope)
+
+First derivative of $(y-XB)`(y-XB)$
+
+... and set it equal to 0 to find the set of betas that minimizes RSS
+
+
 ## What about when X is categorical?
 
 ## What about when X is categorical?
