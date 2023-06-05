@@ -255,7 +255,6 @@ Or, Y is a mean response
 
 -- We can calculate correlation using the `cor` function in R
 
--- Click [here](https://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html) to play a game 
 
 ## r-squared 
 

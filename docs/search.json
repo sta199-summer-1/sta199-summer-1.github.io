@@ -2958,7 +2958,7 @@
     "href": "slides/day8slr.html#correlation-r",
     "title": "Statistical Inference + Simple Linear Regression",
     "section": "Correlation (r)",
-    "text": "Correlation (r)\n– Between [-1,1]\n– Measures the strength and direction of a linear relationship\n– We can calculate correlation using the cor function in R\n– Click here to play a game"
+    "text": "Correlation (r)\n– Between [-1,1]\n– Measures the strength and direction of a linear relationship\n– We can calculate correlation using the cor function in R"
   },
   {
     "objectID": "slides/day8slr.html#r-squared",
