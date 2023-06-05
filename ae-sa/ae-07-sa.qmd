@@ -27,7 +27,7 @@ The data come from the [Office of the University Registrar](https://registrar.du
 
 The first column (variable) is the `degree`, and there are 4 possible degrees: BS (Bachelor of Science), BS2 (Bachelor of Science, 2nd major), AB (Bachelor of Arts), AB2 (Bachelor of Arts, 2nd major). The remaining columns show the number of students graduating with that major in a given academic year from 2011 to 2021.
 
-Take a look at the origional data set.... 
+Take a look at the origional data set....
 
 ## Data In
 
@@ -43,7 +43,7 @@ statsci <- read_csv("data/statsci.csv")
 slice(statsci)
 ```
 
-Last class, we got this point where we making the following draft plot. Below, please talk through the code as a sentence to situate ourselves 
+Last class, we got this point where we making the following draft plot. Below, please talk through the code as a sentence to situate ourselves
 
 ![](images/statsci-plot-draft.png){fig-alt="Line plot of numbers of Statistical Science majors over the years (2011 - 2021). Degree types represented are BS, BS2, AB, AB2. There is an increasing trend in BS degrees and somewhat steady trend in AB degrees." fig-align="center"}
 

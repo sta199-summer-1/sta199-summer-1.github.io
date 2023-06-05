@@ -98,6 +98,8 @@ See the code below. Note: this code is beyond the scope of this course, although
 
 ```{r}
 
+penguins <- na.omit(penguins)
+
 fit <- lm(body_mass_g ~ flipper_length_mm, data = penguins)
 
 
