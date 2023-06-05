@@ -1,0 +1,248 @@
+---
+title: "Regression with a Single Predictor"
+format: html
+editor: visual
+---
+
+## Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+library(tidyverse)
+library(tidymodels)
+library(palmerpenguins)
+```
+
+Today, we will revisit the penguins data set. If needed, please re-familiarize yourself by reading the following context and taking a `glimpse` at the data set before we get started.
+
+This data set comprising various measurements of three different penguin species, namely Adelie, Gentoo, and Chinstrap. The rigorous study was conducted in the islands of the Palmer Archipelago, Antarctica. These data were collected from 2007 to 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data set is called `penguins`.
+
+-   Take a glimpse of the data set below.
+
+```{r}
+
+glimpse(penguins)
+
+```
+
+We are going to investigate the relationship between a penguin's flipper length and their body mass. Specifically, we are interested in the effect flipper length has on the body mass of penguins.
+
+-   Based on our research question, which variable is the response variable?
+
+**body mass in the response; flipper length is the explanatory**
+
+-   Now, visualize the relationship between the two variables. Include the "line of best fit" in your plot. Recall from a a previous lab, we can fit this line using `geom_smooth`. If we want to fit a straight line, use the argument `method = "lm"`. Turn the standard error bars off using `se=F` argument. 
+
+```{r}
+
+penguins |>
+  ggplot(
+    aes(x = flipper_length_mm, y = body_mass_g)
+  ) + 
+  geom_point() + 
+  geom_smooth(method = "lm" , se = F)
+
+```
+
+This line **estimates** the relationship between our two variables. Below, we will practice writing out population and estimated models.
+
+## Model these Data
+
+-   Write the population model below that explains the relationship between body mass and flipper length.
+
+Hint: You can type equations within dollar signs. LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and treat the equation as math in the code chunks). It will appear as rendered math in your document.
+
+Useful tips:
+
+";" is a space in Pandoc markdown
+
+More tips below:
+
+$x^2 \; superscript$
+
+$x_2 \; subscript$
+
+$\hat{x}\; adds\; hat\; to\; x$
+
+$\beta \; this\; is\; beta$
+
+$\epsilon\; this\; is\; epsilon$
+
+Example:
+
+$\hat{x^n} + \beta^n = z_n + \epsilon_i$
+
+$body-mass_i = \beta_o + \beta_1*flipper-length_i +\epsilon_i$
+
+-   Now, fit the linear regression model and display the results. Write the estimated model output below. 
+
+```{r}
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm, data = penguins) |>
+  tidy()
+
+
+```
+
+
+$\widehat{body-mass} = -5872 + 50.2*flipper-length $
+
+## How was this model fit? 
+
+See the code below. Note: this code is beyond the scope of this course, although I bet we know most of it already!
+
+```{r}
+
+fit <- lm(body_mass_g ~ flipper_length_mm, data = penguins)
+
+
+penguins$predicted <- predict(fit)
+penguins$residuals <- residuals(fit)
+
+penguins |>
+ggplot(aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_smooth(method = "lm", se = FALSE, color = "lightgrey") +
+  geom_segment(aes(xend = flipper_length_mm, yend = predicted), alpha = .2) +
+
+  # > Color AND size adjustments made here...
+  geom_point(aes(color = abs(residuals), size = abs(residuals))) + # size also mapped
+  scale_color_continuous(low = "black", high = "red") +
+  guides(color = "none", size = "none") +  # Size legend also removed
+  # <
+
+  geom_point(aes(y = predicted), shape = 1) +
+  theme_bw()
+
+```
+
+
+## Model question
+
+Please write the model equation below: 
+
+$\widehat{body-mass} = -5872 + 50.2*flipper-length $
+
+## Interpretation
+
+-   Interpret the slope and the intercept in the context of the data.
+
+Hint: Think about what happens to y when we increase x by 1.
+
+**For a 1 mm increase in flipper length, we estimate on average a 50.2 g increase in body mass**
+
+**For a 1 mm increase in flipper length, we estimate a mean increase of 50.2 g in body mass**
+
+**For a penguin with 0 mm flipper length, we estimate on average a body mass of -5782g.**
+
+Does the intercept make sense? Why or why not? In statistics, what does predicting outside the bounds of our data called?
+
+**Extrapolation** 
+
+## Prediction
+
+-   What is the estimated mean body mass for a penguin with a flipper length of 210?
+
+```{r}
+
+-5872 + 50.2*210
+
+```
+
+-   What is the estimated mean body mass for a penguin with a flipper length of 100?
+
+```{r}
+
+-5872 + 50.2*100
+
+```
+
+## How can we make these predictions in R? 
+
+1) Fit your model in R below 
+
+2) Name it model1 and make sure to not use the `tidy()` argument when fitting your model 
+
+3) Next, we can use the `predict` function in R
+
+
+
+Steps 1 and 2
+
+```{r}
+
+model1 <- linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm, data = penguins)
+
+```
+
+Step 3
+
+Fill in the code below
+
+```{r}
+#| eval: false 
+
+predict(model1, data.frame(flipper_length_mm = 210))
+```
+
+## Correlation and r-squared 
+
+Below, calculate both the correlation coefficient and r-squared value between flipper length and body mass. Interpret each in the context of the problem. 
+
+```{r}
+
+penguins <- na.omit(penguins)
+
+penguins |>
+  select(flipper_length_mm, body_mass_g) |>
+  cor()
+ #go to slack and post how to na.rm with Cor
+
+
+glance(model1)$r.squared
+
+```
+
+
+
+## Next Question
+
+-   Now, we will investigate another question. A different researcher wants to look at body weight of penguins based on the island they were recorded on. What's different between this question and the last? Hint: Think about the variable type.
+
+**island is categorical**
+
+-   Make a dot plot, using geom_point, with species on the x-axis to investigate this relationship below. Additionally, calculate the mean body mass by island below.
+
+```{r}
+
+penguins |>
+  ggplot(
+    aes(
+    x = island, y = body_mass_g
+  )) + 
+  geom_point()
+
+
+```
+
+-   Now, fit the linear regression model and display the results. Write the estimated model output below.
+
+```{r}
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island, data = penguins) |>
+  tidy()
+
+```
+
+Interpretation ...
+
+**To Start Class on Tuesday!**
+
+
