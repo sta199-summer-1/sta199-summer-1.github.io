@@ -1,6 +1,8 @@
 ---
 title: "Regression with a Single Predictor"
-format: html
+subtitle: "Suggested Answers"
+categories: 
+  - Application exercise
 editor: visual
 ---
 
@@ -33,7 +35,7 @@ We are going to investigate the relationship between a penguin's flipper length 
 
 **body mass in the response; flipper length is the explanatory**
 
--   Now, visualize the relationship between the two variables. Include the "line of best fit" in your plot. Recall from a a previous lab, we can fit this line using `geom_smooth`. If we want to fit a straight line, use the argument `method = "lm"`. Turn the standard error bars off using `se=F` argument. 
+-   Now, visualize the relationship between the two variables. Include the "line of best fit" in your plot. Recall from a a previous lab, we can fit this line using `geom_smooth`. If we want to fit a straight line, use the argument `method = "lm"`. Turn the standard error bars off using `se=F` argument.
 
 ```{r}
 
@@ -76,7 +78,7 @@ $\hat{x^n} + \beta^n = z_n + \epsilon_i$
 
 $body-mass_i = \beta_o + \beta_1*flipper-length_i +\epsilon_i$
 
--   Now, fit the linear regression model and display the results. Write the estimated model output below. 
+-   Now, fit the linear regression model and display the results. Write the estimated model output below.
 
 ```{r}
 
@@ -88,10 +90,9 @@ linear_reg() |>
 
 ```
 
+\$\widehat{body-mass} = -5872 + 50.2\*flipper-length \$
 
-$\widehat{body-mass} = -5872 + 50.2*flipper-length $
-
-## How was this model fit? 
+## How was this model fit?
 
 See the code below. Note: this code is beyond the scope of this course, although I bet we know most of it already!
 
@@ -119,12 +120,11 @@ ggplot(aes(x = flipper_length_mm, y = body_mass_g)) +
 
 ```
 
-
 ## Model question
 
-Please write the model equation below: 
+Please write the model equation below:
 
-$\widehat{body-mass} = -5872 + 50.2*flipper-length $
+\$\widehat{body-mass} = -5872 + 50.2\*flipper-length \$
 
 ## Interpretation
 
@@ -140,7 +140,7 @@ Hint: Think about what happens to y when we increase x by 1.
 
 Does the intercept make sense? Why or why not? In statistics, what does predicting outside the bounds of our data called?
 
-**Extrapolation** 
+**Extrapolation**
 
 ## Prediction
 
@@ -160,15 +160,13 @@ Does the intercept make sense? Why or why not? In statistics, what does predicti
 
 ```
 
-## How can we make these predictions in R? 
+## How can we make these predictions in R?
 
-1) Fit your model in R below 
+1)  Fit your model in R below
 
-2) Name it model1 and make sure to not use the `tidy()` argument when fitting your model 
+2)  Name it model1 and make sure to not use the `tidy()` argument when fitting your model
 
-3) Next, we can use the `predict` function in R
-
-
+3)  Next, we can use the `predict` function in R
 
 Steps 1 and 2
 
@@ -190,9 +188,9 @@ Fill in the code below
 predict(model1, data.frame(flipper_length_mm = 210))
 ```
 
-## Correlation and r-squared 
+## Correlation and r-squared
 
-Below, calculate both the correlation coefficient and r-squared value between flipper length and body mass. Interpret each in the context of the problem. 
+Below, calculate both the correlation coefficient and r-squared value between flipper length and body mass. Interpret each in the context of the problem.
 
 ```{r}
 
@@ -207,8 +205,6 @@ penguins |>
 glance(model1)$r.squared
 
 ```
-
-
 
 ## Next Question
 
@@ -244,5 +240,3 @@ linear_reg() |>
 Interpretation ...
 
 **To Start Class on Tuesday!**
-
-
