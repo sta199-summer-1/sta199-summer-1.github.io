@@ -7,7 +7,7 @@ format: revealjs
 
 ## Checklist
 
--   Clone your `ae-08` project in RStudio. Do not make any changes to it after you clone.
+-   Clone your `ae-08`.
 
 -   Exam-1 is over. Nice work!
 
