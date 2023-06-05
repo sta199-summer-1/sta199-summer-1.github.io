@@ -840,6 +840,48 @@
     "text": "Grading\n\nExercise 1: 10 points\nExercise 2: 10 points\nExercise 3: 10 points\nExercise 4: 15 points\nWorkflow + formatting: 5 points\nTotal: 50 points"
   },
   {
+    "objectID": "hw/hw-3.html",
+    "href": "hw/hw-3.html",
+    "title": "HW 3 - Do you even lift?",
+    "section": "",
+    "text": "Important\n\n\n\nThis homework is due Tuesday, June 13th at 11:59pm."
+  },
+  {
+    "objectID": "hw/hw-3.html#getting-started",
+    "href": "hw/hw-3.html#getting-started",
+    "title": "HW 3 - Do you even lift?",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nGo to the Github Organization page and open your hw3-username repo\nClone the repository, open a new project in RStudio. It contains the starter documents you need to complete the homework assignment."
+  },
+  {
+    "objectID": "hw/hw-3.html#exercises",
+    "href": "hw/hw-3.html#exercises",
+    "title": "HW 3 - Do you even lift?",
+    "section": "Exercises",
+    "text": "Exercises\nFor all of the following exercises, you should include units on axes labels, e.g. “Bench press (lbs)” or “Bench press (kg)”. “Age (years)” etc. This is good practice.\n\nLet’s begin by taking a look at the squat powerlifting records. To begin, remove any observations that are negative for squat. Next, create a new column called best3_squat_lbs that converts the record from kg to lbs (you may have to google the conversion). Save your data frame as ipf_squat.\n\n\nUsing ipf_squat, create a scatter plot to investigate the relationship between squat (in lbs) and age. Age should be on the x-axis. Add a linear best fit line. Remove the standard error. Be sure to label all axes and give the plot a title. Comment on what you observe.\n\n\nWrite down the population linear model to predict lift squat lbs from age using proper notation. Note: if you use generic \\(x\\) and \\(y\\), define each after your model? Next, fit the estimated linear model. Use the ipf_squat data frame. Using the output, write out the estimated linear regression model. This is called the “fitted” (estimated) linear model. Interpret each estimate of \\(\\beta\\). Is the intercept interpretation reasonable? Why or why not?\nBuilding on your ipf_squat data frame, create a new column called age2 that takes the age of each lifter and squares it. Save your data frame with an appropriate name. Next, plot squat in lbs vs age2 and add a linear best fit line. Do you notice any difference in how well this model fits the data compared to your previous model? Justify your answer.\nOne metric to assess the fit of a model is the correlation squared, also known as \\(R^2\\). Fit the age\\(^2\\) model and save the object as age2Fit. Subsequently report the \\(R^2\\). Compare \\(R^2\\) of the age\\(^2\\) model to the model from exercise 2. Which model do you prefer based on these values?\n\n\nIf you were to add body weight as a second predictor to the age\\(^2\\) model, would \\(R^2\\) increase or decrease? Explain.\n\n\nStarting with the original ipf dataframe, filter and mutate the data as we did in exercise 1, but this time filtering for best3bench_kg \\(>0\\) and creating a best3_bench_lbs variable, a bodyweight_lbs variable, and a sex variable that is a factor rather than a character.\n\nBefore fitting the model, please explain the following: What does it mean for bodyweight and sex to interact when modeling bench press? Hint: use the definition.\nNow, fit an interaction effects model with bodywieght (in lbs) and sex as predictors of best bench press (in lbs). Write down the fitted model equation using proper notation.\n\nPlot the model from exercise 5. Bodyweight should be on the x-axis. Add a linear best fit line. Be sure to label all axes and give the plot a title. Comment on what you observe.\nDo lifters who fail a drug test perform better or worse at bench press than other lifters? Does this vary across sexes? We’ll answer this question in two parts. First, remove all observations from the ipf data frame that have NA listed under bench press. Save this data set. In the same pipeline, create a new column called doping_status that takes value doping if the lifter failed a drug test and not doping otherwise. Save this data frame as ipf_dope.\n\n\n\n\n\n\n\nHint\n\n\n\nCheck the data dictionary at the top to figure out what variables will help you build the doping_status column.\n\n\n\nUsing ipf_dope from the previous exercise, compute the 5%, 50%, 95% quantiles for bench press across all combinations of sex and doping_status, i.e., male and doping, male and not doping, female and doping, female and not doping. You can use either bench press in kg or lbs here. With this information, answer the question “Do lifters who fail a drug test perform better or worse at bench press than other lifters?”\n\nHint: You can use the quantile function in R to calculate quantiles."
+  },
+  {
+    "objectID": "hw/hw-3.html#reminder",
+    "href": "hw/hw-3.html#reminder",
+    "title": "HW 3 - Do you even lift?",
+    "section": "Reminder:",
+    "text": "Reminder:\n\nAll plots should follow the best visualization practices: include an informed title, label axes, and carefully consider aesthetic choices.\nAll code should follow the tidyverse style guidelines, including not exceeding the 80 character limit."
+  },
+  {
+    "objectID": "hw/hw-3.html#submission",
+    "href": "hw/hw-3.html#submission",
+    "title": "HW 3 - Do you even lift?",
+    "section": "Submission",
+    "text": "Submission\n\nGo to http://www.gradescope.com and click Log in in the top right corner.\nClick School Credentials Duke Net ID and log in using your Net ID credentials.\nClick on your STA 199 course.\nClick on the assignment, and you’ll be prompted to submit it.\nMark all the pages associated with exercise. All the pages of your homework should be associated with at least one question (i.e., should be “checked”). If you do not do this, you will be subject to lose points on the assignment.\nDo not select any pages of your PDF submission to be associated with the “Workflow & formatting” question."
+  },
+  {
+    "objectID": "hw/hw-3.html#rubric",
+    "href": "hw/hw-3.html#rubric",
+    "title": "HW 3 - Do you even lift?",
+    "section": "Rubric",
+    "text": "Rubric\n\nEx 1: 6 pts.\nEx 2: 6 pts.\nEx 3: 5 pts.\nEx 4: 5 pts.\nEx 5: 10 pts.\nEx 6: 5 pts.\nEx 7: 3 pts\nEx 8: 5 pts\nWorkflow and formatting - 5 pts\n\n\n\n\n\n\n\nNote\n\n\n\nThe “Workflow & formatting” grade is to assess the reproducible workflow. This includes:\n\nlinking all pages appropriately on Gradescope\nputting your name in the YAML at the top of the document\ncommitting the submitted version of your .qmd to GitHub\nAre you under the 80 character code limit? (You shouldn’t have to scroll to see all your code).\nPipes %>%, |> and ggplot layers + should be followed by a new line\nYou should be consistent with stylistic choices, e.g. only use 1 of = vs <- and %>% vs |>\nAll binary operators should be surrounded by space. For example x + y is appropriate. x+y is not."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
