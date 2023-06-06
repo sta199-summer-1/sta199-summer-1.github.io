@@ -25,53 +25,51 @@ Project draft report due (June 22nd)
 
 Project presentation (June 29th)
 
-## Project proposal 
+## Project proposal
 
--- 2 data sets 
+-- 2 data sets
 
--- Research question for each data set 
+-- Research question for each data set
 
 -- Introduction for each data set
 
--- "Literature review" for each data set 
+-- "Literature review" for each data set
 
 -- `glimpse` for each data set
 
-## Research Questions 
+## Research Questions
 
--- Should be clear and focused 
+-- Should be clear and focused
 
--- Should be something that can be answered 
+-- Should be something that can be answered
 
 ## Research Questions
 
-– There is no recommendation to the number of variables you need to include when writing your research question. It can be between 2, it can have more than 2.
+-- There is no recommendation to the number of variables you need to include when writing your research question. It can be between 2, it can have more than 2.
 
-– Your research question can (and probably will) change as you get feedback / we move through the Summer session. That’s okay for this class project!
+-- Your research question can (and probably will) change as you get feedback / we move through the Summer session. That's okay for this class project!
 
-– You will answer this question using statistical procedures we will learn starting now! This includes modeling, hypothesis testing, and confidence intervals. 
+-- You will answer this question using statistical procedures we will learn starting now! This includes modeling, hypothesis testing, and confidence intervals.
 
-## Examples 
+## Examples
 
 -- What is the **relationship** between baldness and age?
 
--- What is the **relationship** between baldness and age? Does this change based on sex? 
+-- What is the **relationship** between baldness and age? Does this change based on sex?
 
 -- Does the mean age of retirement **differ** based on region of the US?
 
 -- What is the estiamted **difference** in GPA between those who live on vs off the dorms at Duke University?
 
-## Teamwork 
+## Teamwork
 
--- Everyone must contribute 
+-- Everyone must contribute
 
--- You are not guarenteed the same grade on the project as your group members 
+-- You are not guarenteed the same grade on the project as your group members
 
--- Commit messages + group surveys 
+-- Commit messages + group surveys
 
-
-# Questions on Project Proposal 
-
+# Questions on Project Proposal
 
 ## Draft Report
 
@@ -83,34 +81,33 @@ Project presentation (June 29th)
 
 -- Showcase how you arrived at answers to your research question using the techniques we have learned in class
 
-## Draft Report 
+## Draft Report
 
 The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data, that you are skilled in interpreting and presenting results, and that you can accomplish these tasks using R. More is not better.
 
-## Presentation 
+## Presentation
 
--- Short 5-10 minute presentation on all of the hard work you have accomplished 
+-- Short 5-10 minute presentation on all of the hard work you have accomplished
 
--- This takes place of your final exam 
+-- This takes place of your final exam
 
+## Warm Up
 
-## Warm Up 
+What is the true mean height for all Duke students who take Summer classes?
 
-What is the true mean height for all Duke students who take Summer classes? 
-
-## You don't know.... 
+## You don't know....
 
 But we can collect data and try to better answer this question!
 
 ## Warm Up-2
 
-Is the weight of a car a good predictor for miles per gallon? 
+Is the weight of a car a good predictor for miles per gallon?
 
-How many miles per gallon would we estimate a car to have if the weight was equal to 5000 pounds? 
+How many miles per gallon would we estimate a car to have if the weight was equal to 5000 pounds?
 
-## You don't know.... 
+## You don't know....
 
-But we can collect data, fit a model, and use this model to better understand relationships and make predictions! 
+But we can collect data, fit a model, and use this model to better understand relationships and make predictions!
 
 ## Warm up 3
 
@@ -176,7 +173,6 @@ First derivative of $(y-XB)`(y-XB)$
 
 ... and set it equal to 0 to find the set of betas that minimizes RSS
 
-
 ## What about when X is categorical?
 
 ## What about when X is categorical?
@@ -193,6 +189,7 @@ First derivative of $(y-XB)`(y-XB)$
 
          tidy()
          
+
 # ae-11
 
 ## Model Notation - Population
@@ -213,9 +210,7 @@ $$\hat{Y} = b + b_1x$$
 
 $$\hat{Y} = \hat{\beta_o} + \hat{\beta_1}x$$
 
-$$\hat{Y} - estimated\; (predicted)\; mean \;response$$
-$$\hat{\beta_o} - estimated\; intercept$$
-$$\hat{\beta_1} - estimated\; slope$$ We assume that our error term is normally distributed and has a mean of 0. Thus, it does not show up in our model.
+$$\hat{Y} - estimated\; (predicted)\; mean \;response$$ $$\hat{\beta_o} - estimated\; intercept$$ $$\hat{\beta_1} - estimated\; slope$$ We assume that our error term is normally distributed and has a mean of 0. Thus, it does not show up in our model.
 
 ## Model Notes {.smaller}
 
@@ -243,30 +238,29 @@ Or, Y is a mean response
 
 **This is extremely important when we think about interpretation**
 
-## Is the predictor any good? 
+## Is the predictor any good?
 
--- Correlation and r-squared 
+-- Correlation and r-squared
 
 ## Correlation (r)
 
--- Between [-1,1]
+-- Between \[-1,1\]
 
--- Measures the strength and direction of a linear relationship 
+-- Measures the strength and direction of a linear relationship
 
 -- We can calculate correlation using the `cor` function in R
 
+## r-squared
 
-## r-squared 
-
--- For SLR, r-squared is the correlation coefficient squared 
+-- For SLR, r-squared is the correlation coefficient squared
 
 -- Quantifies the amount of variability in our response y that is explained by x
 
--- In general, the higher the value is, the better or important the predictor is! 
+-- In general, the higher the value is, the better or important the predictor is!
 
--- Note: We do need to be careful with over fitting, and want to be wary of r-squared values close to one. More on this later.... 
+-- Note: We do need to be careful with over fitting, and want to be wary of r-squared values close to one. More on this later....
 
-## r-squared 
+## r-squared
 
 We can calculate this in R using `glance(model.name)$r.squared`
 
