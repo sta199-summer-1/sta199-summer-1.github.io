@@ -1,0 +1,9 @@
+---
+title: "Prepare"
+subtitle: "Due: Wednesday June 8th, 2023"
+categories: "prepare"
+---
+
+-   Watch [Logistic Regression](https://www.youtube.com/watch?v=AidXFYSYfJg)
+-   Watch [StringR](https://warpwire.duke.edu/w/Lw4GAA/)
+-   Read (optional): [chapter 9: logistic regression](https://openintro-ims.netlify.app/model-logistic.html)

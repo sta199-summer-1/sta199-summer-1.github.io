@@ -80,6 +80,14 @@ Takeaway: Adds a penalty for "unimportant" predictors (x's)
 
 # Any questions? 
 
+## Finish MLR 
+
+-- clone ae-10 
+
+-- finish MLR (2 quantitative explanatory variables)
+
+# Logistic Regression
+
 ## Goals
 
 -- The What, Why, and How of Logistic Regression
