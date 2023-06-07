@@ -442,19 +442,17 @@
 <section id="a-linear-model" class="slide level2">
 <h2>A linear model</h2>
 <p><span class="math inline">\(\eta_i = \beta_o + \beta_1*X_i + ...\)</span></p>
-<p>Note: We use <span class="math inline">\(p_i\)</span> for estimated probabilities</p>
+<p>Note: <span class="math inline">\(\eta_i\)</span> is some response of our linear model</p>
 <ul>
-<li class="fragment">But we can’t stop here</li>
+<li class="fragment"><p>But we can’t stop here… <span class="math inline">\(\eta_i\)</span> isn’t the probability of success of our response</p></li>
+<li class="fragment"><p>Think about what a linear model looks like</p></li>
 </ul>
-</section></section>
-<section>
-<section id="think-about-what-a-linear-model-looks-like" class="title-slide slide level1 center">
-<h1>Think about what a linear model looks like</h1>
-
 </section>
 <section id="next-steps" class="slide level2">
 <h2>Next steps</h2>
 <p>– Preform a transformation to our response variable so it has the appropriate range of values</p>
+<p>– “Link” our linear model to the paramater of the outcome distribution</p>
+<p>– <span class="math inline">\(y_i\)</span> ~ Bern(p)</p>
 </section>
 <section id="generalized-linear-model" class="slide level2">
 <h2>Generalized linear model</h2>
@@ -463,6 +461,13 @@
 </ul>
 </section>
 <section id="logit-link-function" class="slide level2">
+<h2>Logit Link Function</h2>
+<p>The logit link function is defined as follows:</p>
+
+<img data-src="images/logitlink.png" class="r-stretch quarto-figure-center"><p><span class="math inline">\(\eta_i\)</span> = <span class="math inline">\(log (\frac{p}{1-p})\)</span></p>
+<p>– Note: log is in reference to natural log</p>
+</section>
+<section id="logit-link-function-1" class="slide level2">
 <h2>Logit Link function</h2>
 <p>– A logit link function transforms the probabilities of the levels of a categorical response variable to a continuous scale that is unbounded</p>
 <p>– Note: log is in reference to natural log</p>
@@ -477,15 +482,10 @@
 <p>This isn’t exactly what we need though…..</p>
 <p>Will help us get to our goal</p>
 </section>
-<section id="logit-link-function-1" class="slide level2">
-<h2>Logit Link Function</h2>
-<p>The logit link function is defined as follows:</p>
-
-<img data-src="images/logitlink.png" class="r-stretch quarto-figure-center"></section>
-<section id="generalized-linear-model-1" class="slide level2">
-<h2>Generalized linear model</h2>
+<section id="so-we-have-a-generalized-linear-model-glm" class="slide level2">
+<h2>So we have a generalized linear model (GLM)</h2>
 <ul>
-<li class="fragment"><p><span class="math inline">\(logit(p)\)</span> = <span class="math inline">\(\widehat{\beta_o} +\widehat{\beta}_1X1 + ....\)</span></p></li>
+<li class="fragment"><p><span class="math inline">\(logit(p_i)\)</span> = <span class="math inline">\(\widehat{\beta_o} +\widehat{\beta}_1X1_i + ....\)</span></p></li>
 <li class="fragment"><p>logit(p) is also known as the log-odds</p></li>
 <li class="fragment"><p>logit(p) = <span class="math inline">\(log(\frac{p}{1-p})\)</span></p></li>
 <li class="fragment"><p><span class="math inline">\(log(\frac{p}{1-p})\)</span> = <span class="math inline">\(\widehat{\beta_o} +\widehat{\beta}_1X1 + ....\)</span></p></li>
@@ -501,24 +501,24 @@
 </section>
 <section id="so" class="slide level2">
 <h2>So</h2>
+<p>We need to take the inverse of the logit function</p>
 <ul>
-<li class="fragment"><p><span class="math inline">\(logit(p)\)</span> = <span class="math inline">\(\widehat{\beta_o} +\widehat{\beta}_1X1 + ....\)</span></p></li>
-<li class="fragment"><p><span class="math display">\[log(\frac{p}{1-p}) = \widehat{\beta_o} +\widehat{\beta}_1X1 + ....\]</span></p></li>
-<li class="fragment"><p>Lets take the inverse of the logit function</p></li>
+<li class="fragment"><span class="math display">\[log(\frac{p}{1-p}) = \widehat{\beta_o} +\widehat{\beta}_1X1 + ....\]</span></li>
 </ul>
 </section></section>
 <section>
-<section id="p-fracewidehatbeta_o-widehatbeta_1x1-...1-ewidehatbeta_o-widehatbeta_1x1-..." class="title-slide slide level1 center">
-<h1><span class="math display">\[p = \frac{e^{\widehat{\beta_o} + \widehat{\beta_1}X1 + ...}}{1 + e^{\widehat{\beta_o} + \widehat{\beta_1}X1 + ...}}\]</span></h1>
+<section id="math-time" class="title-slide slide level1 center">
+<h1>Math Time</h1>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="inverse-logit-link" class="slide level2">
+<h2>Inverse Logit Link</h2>
 <p>Example Figure:</p>
 
 <img data-src="day10logistic_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="what-we-will-do-today-1" class="slide level2">
 <h2>What we will do today</h2>
+<p>Calculate probabilities of success of a response based on values of explanatory variable x.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/logistic.png"></p>

@@ -2181,14 +2181,14 @@
     "href": "slides/day10logistic.html#a-linear-model",
     "title": "MLR - Logistic Regression",
     "section": "A linear model",
-    "text": "A linear model\n\\(\\eta_i = \\beta_o + \\beta_1*X_i + ...\\)\nNote: We use \\(p_i\\) for estimated probabilities\n\nBut we can’t stop here"
+    "text": "A linear model\n\\(\\eta_i = \\beta_o + \\beta_1*X_i + ...\\)\nNote: \\(\\eta_i\\) is some response of our linear model\n\nBut we can’t stop here… \\(\\eta_i\\) isn’t the probability of success of our response\nThink about what a linear model looks like"
   },
   {
     "objectID": "slides/day10logistic.html#next-steps",
     "href": "slides/day10logistic.html#next-steps",
     "title": "MLR - Logistic Regression",
     "section": "Next steps",
-    "text": "Next steps\n– Preform a transformation to our response variable so it has the appropriate range of values"
+    "text": "Next steps\n– Preform a transformation to our response variable so it has the appropriate range of values\n– “Link” our linear model to the paramater of the outcome distribution\n– \\(y_i\\) ~ Bern(p)"
   },
   {
     "objectID": "slides/day10logistic.html#generalized-linear-model",
@@ -2200,6 +2200,13 @@
   {
     "objectID": "slides/day10logistic.html#logit-link-function",
     "href": "slides/day10logistic.html#logit-link-function",
+    "title": "MLR - Logistic Regression",
+    "section": "Logit Link Function",
+    "text": "Logit Link Function\nThe logit link function is defined as follows:\n\n\\(\\eta_i\\) = \\(log (\\frac{p}{1-p})\\)\n– Note: log is in reference to natural log"
+  },
+  {
+    "objectID": "slides/day10logistic.html#logit-link-function-1",
+    "href": "slides/day10logistic.html#logit-link-function-1",
     "title": "MLR - Logistic Regression",
     "section": "Logit Link function",
     "text": "Logit Link function\n– A logit link function transforms the probabilities of the levels of a categorical response variable to a continuous scale that is unbounded\n– Note: log is in reference to natural log"
@@ -2219,18 +2226,11 @@
     "text": "Almost….\nThis isn’t exactly what we need though…..\nWill help us get to our goal"
   },
   {
-    "objectID": "slides/day10logistic.html#logit-link-function-1",
-    "href": "slides/day10logistic.html#logit-link-function-1",
+    "objectID": "slides/day10logistic.html#so-we-have-a-generalized-linear-model-glm",
+    "href": "slides/day10logistic.html#so-we-have-a-generalized-linear-model-glm",
     "title": "MLR - Logistic Regression",
-    "section": "Logit Link Function",
-    "text": "Logit Link Function\nThe logit link function is defined as follows:"
-  },
-  {
-    "objectID": "slides/day10logistic.html#generalized-linear-model-1",
-    "href": "slides/day10logistic.html#generalized-linear-model-1",
-    "title": "MLR - Logistic Regression",
-    "section": "Generalized linear model",
-    "text": "Generalized linear model\n\n\\(logit(p)\\) = \\(\\widehat{\\beta_o} +\\widehat{\\beta}_1X1 + ....\\)\nlogit(p) is also known as the log-odds\nlogit(p) = \\(log(\\frac{p}{1-p})\\)\n\\(log(\\frac{p}{1-p})\\) = \\(\\widehat{\\beta_o} +\\widehat{\\beta}_1X1 + ....\\)"
+    "section": "So we have a generalized linear model (GLM)",
+    "text": "So we have a generalized linear model (GLM)\n\n\\(logit(p_i)\\) = \\(\\widehat{\\beta_o} +\\widehat{\\beta}_1X1_i + ....\\)\nlogit(p) is also known as the log-odds\nlogit(p) = \\(log(\\frac{p}{1-p})\\)\n\\(log(\\frac{p}{1-p})\\) = \\(\\widehat{\\beta_o} +\\widehat{\\beta}_1X1 + ....\\)"
   },
   {
     "objectID": "slides/day10logistic.html#one-final-fix",
@@ -2244,21 +2244,21 @@
     "href": "slides/day10logistic.html#so",
     "title": "MLR - Logistic Regression",
     "section": "So",
-    "text": "So\n\n\\(logit(p)\\) = \\(\\widehat{\\beta_o} +\\widehat{\\beta}_1X1 + ....\\)\n\\[log(\\frac{p}{1-p}) = \\widehat{\\beta_o} +\\widehat{\\beta}_1X1 + ....\\]\nLets take the inverse of the logit function"
+    "text": "So\nWe need to take the inverse of the logit function\n\n\\[log(\\frac{p}{1-p}) = \\widehat{\\beta_o} +\\widehat{\\beta}_1X1 + ....\\]"
   },
   {
-    "objectID": "slides/day10logistic.html#section",
-    "href": "slides/day10logistic.html#section",
+    "objectID": "slides/day10logistic.html#inverse-logit-link",
+    "href": "slides/day10logistic.html#inverse-logit-link",
     "title": "MLR - Logistic Regression",
-    "section": "",
-    "text": "Example Figure:"
+    "section": "Inverse Logit Link",
+    "text": "Inverse Logit Link\nExample Figure:"
   },
   {
     "objectID": "slides/day10logistic.html#what-we-will-do-today-1",
     "href": "slides/day10logistic.html#what-we-will-do-today-1",
     "title": "MLR - Logistic Regression",
     "section": "What we will do today",
-    "text": "What we will do today\n\n\n\n\n\n\n\n\n🔗 sta199-summer-1.github.io"
+    "text": "What we will do today\nCalculate probabilities of success of a response based on values of explanatory variable x.\n\n\n\n\n\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
