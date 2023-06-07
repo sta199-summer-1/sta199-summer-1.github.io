@@ -1,0 +1,213 @@
+---
+title: "MLR - Logistic Regression"
+subtitle: "Day 10"
+date: "June 8th"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-10`
+
+-- Homework 3 Due Tuesday (6-13)
+
+-- Project Proposal due Monday (6-12)
+
+--- Turn in on GitHub
+
+--- Lab today is a project work day 
+
+## Warm Up: Question 1 
+
+-- What is the main difference between Simple Linear Regression and Multiple Linear Regression? 
+
+## Warm Up: Question 2
+
+-- What is the main difference between an additive model and an interaction model? 
+
+## Goals
+
+-- Understand R-squared vs Adjusted R-squared
+
+-- What, why and how of logistic regression
+
+## More about R-Squared vs Adjusted R-Squared 
+
+R-squared has...
+
+- A meaningful definition 
+
+- a relationship with `cor` when in the SLR case
+
+## R-Squared 
+
+![](images/R-squared.png)
+
+
+## R-squared
+
+![](images/sst.2.png)
+
+
+## More about R-Squared vs Adjusted R-Squared 
+
+When can we use R-squared for model selection? 
+
+- When models have the same number of variables 
+
+- Why can't we use it to compare models with different number of variables? See ae-09 for demonstration.
+
+## R-squared: Takeaway
+
+-- statistical measure in a regression model that determines the proportion of variance in the response variable that can be explained by the explanatory variable(s).
+
+-- The more variables you include, the larger the R-squared value will be (always)
+
+
+## More about R-Squared vs Adjusted R-Squared 
+
+Adjusted R-squared ...
+
+- Doesn't have a clean definition 
+
+- Is very useful for model selection 
+
+## Adjusted R-Squared 
+
+Takeaway: Adds a penalty for "unimportant" predictors (x's)
+
+![](images/adjustedR2.png)
+
+# Any questions? 
+
+## Goals
+
+-- The What, Why, and How of Logistic Regression
+
+## What is Logistic Regreesion
+
+-   Similar to linear regression.... but
+
+-   Modeling tool when our response is categorical
+
+## What we will do today
+
+-- This type of model is called a generalized linear model
+
+![](images/logistic.png){fig-align="center"}
+
+# Start from the beginning
+
+## Terms
+
+-- Bernoulli Distribution
+
+-   2 outcomes: Success (p) or Failure (1-p)
+
+-   $y_i$ \~ Bern(p)
+
+-   What we can do is we can use our explanatory variable(s) to model p
+
+## 2 Steps
+
+-- 1: Define a linear model
+
+-- 2: Define a link function
+
+## A linear model
+
+$\eta_i = \beta_o + \beta_1*X_i + ...$
+
+Note: We use $p_i$ for estimated probabilities
+
+-   But we can't stop here
+
+# Think about what a linear model looks like 
+
+## Next steps 
+
+-- Preform a transformation to our response variable so it has the appropriate range of values
+
+## Generalized linear model
+
+-   Next, we need a link function that relates the linear model to the parameter of the outcome distribution i.e. **transform the linear model to have an appropriate range**
+
+
+## Logit Link function
+
+-- A logit link function transforms the probabilities of the levels of a categorical response variable to a continuous scale that is unbounded
+
+-- Note: log is in reference to natural log
+
+## What's this look like
+
+Takes a \[0,1\] probability and maps it to log odds (-$\infty$ to $\infty$.)
+
+![](images/logit.png){fig-align="center"}
+
+## Almost.... 
+
+This isn't exactly what we need though.....
+
+Will help us get to our goal
+
+## Logit Link Function 
+
+The logit link function is defined as follows: 
+
+![](images/logitlink.png){fig-align="center"}
+
+
+## Generalized linear model
+
+-   $logit(p)$ = $\widehat{\beta_o} +\widehat{\beta}_1X1 + ....$
+
+-   logit(p) is also known as the log-odds
+
+-   logit(p) = $log(\frac{p}{1-p})$
+
+-   $log(\frac{p}{1-p})$ = $\widehat{\beta_o} +\widehat{\beta}_1X1 + ....$
+
+## One final fix
+
+-- Recall, the goal is to take values between -$\infty$ and $\infty$ and map them to probabilities. We need the opposite of the link function... or the *inverse*
+
+-- How do we take the inverse of a natural log?
+
+-   Taking the inverse of the logit function will map arbitrary real values back to the range \[0, 1\]
+
+## So
+
+-   $logit(p)$ = $\widehat{\beta_o} +\widehat{\beta}_1X1 + ....$
+
+-   $$log(\frac{p}{1-p}) = \widehat{\beta_o} +\widehat{\beta}_1X1 + ....$$
+
+-   Lets take the inverse of the logit function
+
+# $$p = \frac{e^{\widehat{\beta_o} + \widehat{\beta_1}X1 + ...}}{1 + e^{\widehat{\beta_o} + \widehat{\beta_1}X1 + ...}}$$
+
+## 
+
+Example Figure:
+
+```{r}
+#| echo: false
+sigmoid = function(x) 1 / (1 + exp(-x + 10))
+plot.function(sigmoid, from = 0, to = 20, n = 101, ylab="P(y = 1)", 
+              xlab = "Explanatory variable", 
+              main="Example predicted probabilities based on explanatory variable", 
+              lwd = 3)
+box()
+```
+
+
+## What we will do today
+
+![](images/logistic.png){fig-align="center"}
+
+
+
+
+
+
+
