@@ -357,6 +357,111 @@
     "text": "Next Question\n\nNow, we will investigate another question. A different researcher wants to look at body weight of penguins based on the island they were recorded on. What’s different between this question and the last? Hint: Think about the variable type.\n\nisland is categorical\n\nMake a dot plot, using geom_point, with species on the x-axis to investigate this relationship below. Additionally, calculate the mean body mass by island below.\n\n\npenguins |>\n  ggplot(\n    aes(\n    x = island, y = body_mass_g\n  )) + \n  geom_point()\n\n\n\n\n\nNow, fit the linear regression model and display the results. Write the estimated model output below.\n\n\nlinear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ island, data = penguins) |>\n  tidy()\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  <chr>              <dbl>     <dbl>     <dbl>     <dbl>\n1 (Intercept)        4719.      49.4     95.4  2.22e-242\n2 islandDream       -1000.      75.4    -13.3  1.74e- 32\n3 islandTorgersen   -1011.     105.      -9.67 1.23e- 19\n\n\nInterpretation …\nTo Start Class on Tuesday!"
   },
   {
+    "objectID": "ae-sa/ae-09-sa.html",
+    "href": "ae-sa/ae-09-sa.html",
+    "title": "Regression with a Multiple Predictors",
+    "section": "",
+    "text": "Note - if you don’t have the plotly or widgetframe package, you can install these before running library by writing the following code in the console:\ninstall.packages(“plotly”) install.packages(“widgetframe”)\nThese packages are not necessary to finish the AE.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(palmerpenguins)\nlibrary(plotly)\nlibrary(widgetframe)"
+  },
+  {
+    "objectID": "ae-sa/ae-09-sa.html#finishing-slr",
+    "href": "ae-sa/ae-09-sa.html#finishing-slr",
+    "title": "Regression with a Multiple Predictors",
+    "section": "Finishing SLR",
+    "text": "Finishing SLR\nNow, fit the linear regression model and display the results.\n\nlinear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ island, data = penguins) |>\n  tidy()\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  <chr>              <dbl>     <dbl>     <dbl>     <dbl>\n1 (Intercept)        4716.      48.5      97.3 8.93e-250\n2 islandDream       -1003.      74.2     -13.5 1.42e- 33\n3 islandTorgersen   -1010.     100.      -10.1 4.66e- 21\n\n\nInterpret the intercept term in the context of the problem:\nFor a penguin on the Biscoe island, the estimated mean body mass is roughly 4716 g.\nInterpret the Dream coefficient in the context of the problem:\nFor a penguin on the Dream island, the estimated mean body mass is roughly 4716 - 1003 g. OR\nFor a penguin on the Dream island, the estimated mean body mass is roughly 1003 g less than the estimated mean body mass for a penguin on the Bisoce island."
+  },
+  {
+    "objectID": "ae-sa/ae-09-sa.html#changing-the-intercept",
+    "href": "ae-sa/ae-09-sa.html#changing-the-intercept",
+    "title": "Regression with a Multiple Predictors",
+    "section": "Changing the intercept",
+    "text": "Changing the intercept\nOften times, we want to take control of what the intercept is. We can do this by changing the levels of the categorical variable prior to fitting the model using fct_relevel. Save over the original penguins data set for this example.\n\npenguin.new <- penguins |>\n  mutate(island = fct_relevel(island, levels = \"Dream\", \"Biscoe\", \"Torgersen\"))\n\nlinear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ island, data = penguin.new) |>\n  tidy()\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  <chr>              <dbl>     <dbl>     <dbl>     <dbl>\n1 (Intercept)      3713.        56.2   66.0    1.44e-195\n2 islandBiscoe     1003.        74.2   13.5    1.42e- 33\n3 islandTorgersen    -6.53     104.    -0.0627 9.50e-  1"
+  },
+  {
+    "objectID": "ae-sa/ae-09-sa.html#multiple-linear-regression",
+    "href": "ae-sa/ae-09-sa.html#multiple-linear-regression",
+    "title": "Regression with a Multiple Predictors",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression\nAdditive model\nIn the last class, we modeled body mass by flipper length and also by island. Could it be possible that the estimated body mass of a penguin changes by both their flipper length AND by the island they are on?\nIn multiple linear regression, we will discuss two different types of models. Additive models and interaction models. What’s the difference?\nAdditive models: The relationship between x and y does not change based on z\nInteraction models: The relationship between x and y does change by z\nNow, fit an additive model to assess the relationship between our response variable body mass, and our explanatory variables flipper length and island. Produce the summary output. Write out the estimate regression equation below.\n\nmodel1 <- linear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ flipper_length_mm + island, data = penguins)\n\n\\(\\widehat{body\\_mass} = -4625 + 44.5*flipper\\_length - 262*Dream - 185*Torgersen\\)\n\\(I_t {1 if Torgersen; 0 else}\\)\n\\(I_d {1 if Dream; 0 else}\\)\n– Interpret the slope coefficient for flipper length in the context of the problem\nHolding island constant, for a 1 mm increase in flipper length, we estimate on average a 44.54 g increase in body mass\n– Interpret the slope coefficient for Dream island in the context of the problem\nHolding flipper length constant, we estimate the mean body mass for penguins on the dream island to be -262.18g less than those on the Biscoe island.\n– Predict the body mass of a penguin with a flipper length of 200 on the Dream island\nNote: Above….name your model and do not pipe it into tidy() if you want to use the predict function. Next, fill in the code below.\n\npredict(model1, data.frame(flipper_length_mm = 200, island = \"Dream\"))\n\n# A tibble: 1 × 1\n  .pred\n  <dbl>\n1 4021."
+  },
+  {
+    "objectID": "ae-sa/ae-09-sa.html#interaciton-model",
+    "href": "ae-sa/ae-09-sa.html#interaciton-model",
+    "title": "Regression with a Multiple Predictors",
+    "section": "Interaciton Model",
+    "text": "Interaciton Model\nWhat changes in the R code when fitting an interaction model instead of an additive model in R?\n+ to a *\n– Now fit the interaction model. Display the summary output and write out the estimate regression equation below.\n\nint_model <- linear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ flipper_length_mm * island, data = penguins)\n\n\\(\\widehat{body\\_mass} = -5464 + 48.5*flipper + 3551*Dream + 3218*Torg -19.4*flipper*Dream - 17.4*flipper*Torg\\)\nWhat does it mean for island and flipper length to interact? How do we interpret an interaction effect?\nThis means that the relaionship between body mass and flipper length depends on the island the penguin was located on\nNow, name your interaction model int_model and remove the tidy() from the pipeline. Use this named model to make this prediction below.\n– Predict the body mass of a penguin with a flipper length of 200 on the Dream island\n\npredict(int_model, data.frame(flipper_length_mm = 200, island = \"Dream\"))\n\n# A tibble: 1 × 1\n  .pred\n  <dbl>\n1 3915."
+  },
+  {
+    "objectID": "ae-sa/ae-09-sa.html#how-do-we-talk-about-interaction-terms",
+    "href": "ae-sa/ae-09-sa.html#how-do-we-talk-about-interaction-terms",
+    "title": "Regression with a Multiple Predictors",
+    "section": "How do we talk about interaction terms?",
+    "text": "How do we talk about interaction terms?\nNo general interpretation like with main effects\nDiscuss in general: The relationship between mean body mass and penguin’s flipper length changes based on island + describe the plot\nWe can then use these estimates for prediction (as seen above)"
+  },
+  {
+    "objectID": "ae-sa/ae-09-sa.html#how-can-we-choose",
+    "href": "ae-sa/ae-09-sa.html#how-can-we-choose",
+    "title": "Regression with a Multiple Predictors",
+    "section": "How can we choose?",
+    "text": "How can we choose?\n– What is R-squared (reminder)? What is adjusted R-squared?\nR-squared is the percent variability in the response that is explained by our model. (Can use when models have same number of variables for model selection)\nAdjusted R-squared is similar, but has a penalty for the number of variables in the model. (Should use for model selection when models have different numbers of variables).\nHow can we calculate this in R?\nHint: We can use glance(model.name)$r.squared and glance(model.name)$adj.r.squared\n\nglance(model1)$r.squared\n\n[1] 0.7742334\n\nglance(int_model)$r.squared\n\n[1] 0.7857486\n\nglance(model1)$adj.r.squared\n\n[1] 0.7722296\n\nglance(int_model)$adj.r.squared\n\n[1] 0.7825604\n\n\nWhich model should we pick? Which measure did you use to justify your decision?\nWe can use adjusted R squared to provide evidence to choose the interaction model over the additive one."
+  },
+  {
+    "objectID": "ae-sa/ae-09-sa.html#we-can-not-use-r-squared-to-compare-models-of-different-variables",
+    "href": "ae-sa/ae-09-sa.html#we-can-not-use-r-squared-to-compare-models-of-different-variables",
+    "title": "Regression with a Multiple Predictors",
+    "section": "We can not use R-squared to compare models of different variables",
+    "text": "We can not use R-squared to compare models of different variables\n\nset.seed(333)\n\npenguins <- penguins |>\n  mutate(random = rnorm(mean = 10, sd = 2, nrow(penguins)))\n\nNow, fit an additive model that estimates body mass by flipper length, island, AND by this random variable. What is the r-squared. How does that compare to the additive model with just flipper length and island?\n\nrandom_model <- linear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ flipper_length_mm + island + random, data = penguins) \n\nglance(random_model)$r.squared\n\n[1] 0.7742907\n\nglance(model1)$r.squared\n\n[1] 0.7742334\n\n\nThe r-squared went up, despite adding a nonsense variable! We can not use this measure to select a model when the models have a different number of variables."
+  },
+  {
+    "objectID": "ae-sa/ae-10-sa.html",
+    "href": "ae-sa/ae-10-sa.html",
+    "title": "Regression with MLR and Logistic Regression",
+    "section": "",
+    "text": "Note - if you don’t have the plotly or widgetframe package, you can install these before running library by writing the following code in the console:\ninstall.packages(“plotly”) install.packages(“widgetframe”)\nThese packages are not necessary to finish the AE.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(palmerpenguins)\nlibrary(plotly)\nlibrary(widgetframe)\nlibrary(ggridges)\nlibrary(patchwork)"
+  },
+  {
+    "objectID": "ae-sa/ae-10-sa.html#two-quantitative-explanatory-variables",
+    "href": "ae-sa/ae-10-sa.html#two-quantitative-explanatory-variables",
+    "title": "Regression with MLR and Logistic Regression",
+    "section": "Two Quantitative Explanatory Variables",
+    "text": "Two Quantitative Explanatory Variables\nHow does the picture change if our two explanatory variables are quantitative?\nIn this example, let’s explore body mass, and it’s relationship to bill length and flipper length.\n– Brainstorm, how could we visualize this?\nNote: This code is beyond the scope of this course!\n\nquanplot <- plot_ly(penguins, \n                    x = ~ flipper_length_mm, y = ~ body_mass_g, z = ~bill_length_mm,\n                    marker = list(size = 3, color = \"lightgray\" , alpha = 0.5, \n                                  line = list(color = \"gray\" , width = 2))) |>\n                      add_markers() |>\n                      plotly::layout(scene = list(\n                        xaxis = list(title = \"Flipper (mm)\"),\n                        yaxis = list(title = \"Bill (mm)\"), \n                        zaxis = list(title = \"Body Mass (g)\")\n                      )) |>\n                    config(displayModeBar = FALSE)\n                  frameWidget(quanplot)\n\nNow, fit the additive model in R below:\n\nlinear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ flipper_length_mm + bill_length_mm, data = penguins) |>\n  tidy()\n\n# A tibble: 3 × 5\n  term              estimate std.error statistic  p.value\n  <chr>                <dbl>     <dbl>     <dbl>    <dbl>\n1 (Intercept)       -5737.      308.      -18.6  7.80e-54\n2 flipper_length_mm    48.1       2.01     23.9  7.56e-75\n3 bill_length_mm        6.05      5.18      1.17 2.44e- 1\n\n\nHolding bill length constant, for a 1 mm increase in flipper length, we estimate on average a 48.1 g increase in body mass\nAnd finally, fit the interaction model in R below:\n\nlinear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ flipper_length_mm * bill_length_mm , data = penguins) |>\n  tidy()\n\n# A tibble: 4 × 5\n  term                             estimate std.error statistic  p.value\n  <chr>                               <dbl>     <dbl>     <dbl>    <dbl>\n1 (Intercept)                       5091.    2925.        1.74  0.0827  \n2 flipper_length_mm                   -7.31    15.0      -0.486 0.627   \n3 bill_length_mm                    -229.      63.4      -3.61  0.000347\n4 flipper_length_mm:bill_length_mm     1.20     0.322     3.72  0.000232"
+  },
+  {
+    "objectID": "ae-sa/ae-10-sa.html#exploratory-data-analysis",
+    "href": "ae-sa/ae-10-sa.html#exploratory-data-analysis",
+    "title": "Regression with MLR and Logistic Regression",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\nLet’s start by taking a look at our data. Create an density plot to investigate the relationship between spam and exclaim_mess. Additionally, calculate the mean number of exclamation points for both spam and non-spam emails.\n\nemail |>\n  ggplot(\n    aes(x = exclaim_mess , fill = spam)\n  ) + \n  geom_density()\n\n\n\nemail |> \n  group_by(spam) |>\n  summarize(exmean = mean(exclaim_mess))\n\n# A tibble: 2 × 2\n  spam  exmean\n  <fct>  <dbl>\n1 0       4.04\n2 1       1.27"
+  },
+  {
+    "objectID": "ae-sa/ae-10-sa.html#lets-try-a-linear-model-but-we-know-it-wont-work.",
+    "href": "ae-sa/ae-10-sa.html#lets-try-a-linear-model-but-we-know-it-wont-work.",
+    "title": "Regression with MLR and Logistic Regression",
+    "section": "Let’s try a linear model (but we know it won’t work….)",
+    "text": "Let’s try a linear model (but we know it won’t work….)\nSuppose we try using a linear model to describe the relationship between the number of exclamation points and whether an email is spam. Write up a linear model that models spam by exclamation marks.\n\nlinear_reg() |>\n  set_engine(\"lm\") |>\n  fit(spam ~ exclaim_mess , data = email) |>\n  tidy()\n\nIt won’t run!\nA visualization of a linear model is below.\n\nemail |>\n  ggplot() + \n  geom_jitter(aes(x = exclaim_mess, y = spam, color = spam), alpha = 0.5) + \n  geom_smooth(aes(x = exclaim_mess, y = as.numeric(spam)), method = \"lm\", se = FALSE, color = \"black\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\nIs the linear model a good fit for the data? Why or why not?\n\nNo. That line doesn’t make sense\nHow do you build a model to fit a binary response variable (a categorical response variable with 2 outcomes)?"
+  },
+  {
+    "objectID": "ae-sa/ae-10-sa.html#exercise-1",
+    "href": "ae-sa/ae-10-sa.html#exercise-1",
+    "title": "Regression with MLR and Logistic Regression",
+    "section": "Exercise 1",
+    "text": "Exercise 1\nBefore we fit a model, we need to understand what R thinks is a success….\nAs a factor: ‘success’ is interpreted as:\n\nthe factor not having the first level (and hence usually of having the second level). added note: this usually means the first level alphabetically, since this is how R defines factors by default.\n\nSo, let’s assume you are in the situation where your response variable is “Yes” and “No”. The default will be to treat “No” as a failure (because alphabetical), but you can treat “No” as the success by making it the second level using fct_relevel!\n\nAs a numerical vector with values between ‘0’ and ‘1’, interpreted as the proportion of successful cases (with the total number of cases given by the ‘weights’). Or, R treats the value of 1 as a success.\n\n\nLet’s fit the logistic regression model using the number of exclamation points to predict the probability an email is spam.\n\nThings to note: We are no longer doing linear regression (we are doing logistic regression); We are not fitting a linear model (we are fitting a generalized linear model); we need to specify family = binomial in the fit function.\nName this model spam_model\n\nspam_model <- logistic_reg() |>\n  set_engine(\"glm\") |>\n  fit(spam ~ exclaim_mess , data = email, family = \"binomial\")\n\nspam_model |>\n  tidy()\n\n# A tibble: 2 × 5\n  term         estimate std.error statistic   p.value\n  <chr>           <dbl>     <dbl>     <dbl>     <dbl>\n1 (Intercept)    -1.91     0.0640    -29.8  9.82e-196\n2 exclaim_mess   -0.168    0.0240     -7.02 2.21e- 12\n\n\n\nHow does the code above differ from previous code we’ve used to fit regression models?\n\n**logistc_reg(); “glm” , family = “binomial”*\n\nNow, compare your summary output to the estimated model below.\n\n\\[\\log\\Big(\\frac{p}{1-p}\\Big) = -1.9114 - 0.1684 \\times exclaim\\_mess\\]\nInterpretation\nWhat does -0.1684 mean in this context?\nFor an additional exclaim_mess, we estimate the log odds of a spam email to decrease by 0.1684"
+  },
+  {
+    "objectID": "ae-sa/ae-10-sa.html#exercise-2",
+    "href": "ae-sa/ae-10-sa.html#exercise-2",
+    "title": "Regression with MLR and Logistic Regression",
+    "section": "Exercise 2",
+    "text": "Exercise 2\nWhat is the probability the email is spam if it contains 10 exclamation points?\nUse R as a calculator to calculate the predicted probability (do not use predict)\nFirst, calculate the log odds by plugging in 10.\n\n-1.91 - 0.168*10\n\n[1] -3.59\n\n\nNow, exponentiate!\n\nexp(-3.59) / (1+exp(-3.59))\n\n[1] 0.02685712\n\n\nThe predicted probability of a spam email when the number of exclamation points equals 10 is 0.027\nWe can use the predict function in R to produce the probability as well.\nNote, in logistic, we have to pull out the model estimates using $fit. The type=“response” option tells R to output probabilities of the form P(Y = 1|X), as opposed to other information such as the logit.\n\nnew_email <- tibble(exclaim_mess = 2)\n\npredict(spam_model$fit, new_email) # log-odds\n\n        1 \n-2.248108 \n\npredict(spam_model$fit, new_email, type = \"response\") # probability\n\n        1 \n0.0955128"
+  },
+  {
+    "objectID": "ae-sa/ae-10-sa.html#exercise-3---classification",
+    "href": "ae-sa/ae-10-sa.html#exercise-3---classification",
+    "title": "Regression with MLR and Logistic Regression",
+    "section": "Exercise 3 - Classification",
+    "text": "Exercise 3 - Classification\nWe have the probability an email is spam, but ultimately we want to use the probability to classify an email as spam or not spam. Therefore, we need to set a decision-making threshold, such that an email is classified as spam if the predicted probability is greater than the threshold and not spam otherwise.\nSuppose you are a data scientist working on a spam filter. You must determine how high the predicted probability must be before you think it would be reasonable to call it spam and put it in the junk folder (which the user is unlikely to check).\nWhat are some tradeoffs you would consider as you set the decision-making threshold? Discuss with your neighbor.\nAWV: Think about benefits and consequences of making a threshold to low vs to high in this context…. what about in a situation more serious?\n\nemail <- email |>\n  mutate(pred_prob = predict(spam_model$fit, type = \"response\"))\nggplot(data = email) + \n  geom_point(aes(x = exclaim_mess, y = as.numeric(spam) -1, \n                        color = spam)) + \n  geom_line(aes(x = exclaim_mess, y = pred_prob)) + \n  labs(x = \"Number of exclamation points\", \n       y = \"Predicted probability an email is spam\", \n       color = \"Is email spam?\"\n       )\n\n\n\n\nNext time, we will discuss how to evaluate these models with testing + training data sets!"
+  },
+  {
     "objectID": "ae-sa/ae-6-sa.html",
     "href": "ae-sa/ae-6-sa.html",
     "title": "AE 06: Suggested Answers",

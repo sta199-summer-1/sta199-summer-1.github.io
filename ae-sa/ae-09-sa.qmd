@@ -1,0 +1,212 @@
+---
+title: "Regression with a Multiple Predictors"
+subtitle: "Suggested Answers"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+## Packages
+
+Note - if you don't have the plotly or widgetframe package, you can install these before running `library` by writing the following code in the console:
+
+install.packages("plotly") install.packages("widgetframe")
+
+These packages are not necessary to finish the AE.
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+library(tidyverse)
+library(tidymodels)
+library(palmerpenguins)
+library(plotly)
+library(widgetframe)
+```
+
+## Finishing SLR
+
+Now, fit the linear regression model and display the results.
+
+```{r}
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island, data = penguins) |>
+  tidy()
+
+```
+
+Interpret the intercept term in the context of the problem:
+
+**For a penguin on the Biscoe island, the estimated mean body mass is roughly 4716 g.**
+
+Interpret the Dream coefficient in the context of the problem:
+
+**For a penguin on the Dream island, the estimated mean body mass is roughly 4716 - 1003 g.** OR
+
+For a penguin on the Dream island, the estimated mean body mass is roughly 1003 g less than the estimated mean body mass for a penguin on the Bisoce island.
+
+## Changing the intercept
+
+Often times, we want to take control of what the intercept is. We can do this by changing the levels of the categorical variable prior to fitting the model using `fct_relevel`. Save over the original penguins data set for this example.
+
+```{r}
+
+penguin.new <- penguins |>
+  mutate(island = fct_relevel(island, levels = "Dream", "Biscoe", "Torgersen"))
+
+linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ island, data = penguin.new) |>
+  tidy()
+
+```
+
+## Multiple Linear Regression
+
+### Additive model
+
+In the last class, we modeled body mass by flipper length and also by island. Could it be possible that the estimated body mass of a penguin changes by both their flipper length AND by the island they are on?
+
+In multiple linear regression, we will discuss two different types of models. Additive models and interaction models. What's the difference?
+
+Additive models: **The relationship between x and y does not change based on z**
+
+Interaction models: **The relationship between x and y does change by z**
+
+Now, fit an *additive* model to assess the relationship between our response variable body mass, and our explanatory variables flipper length and island. Produce the summary output. Write out the estimate regression equation below.
+
+```{r}
+#| label: linear-model-2
+
+model1 <- linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm + island, data = penguins)
+
+```
+
+$\widehat{body\_mass} = -4625 + 44.5*flipper\_length - 262*Dream - 185*Torgersen$
+
+$I_t {1 if Torgersen; 0 else}$
+
+$I_d {1 if Dream; 0 else}$
+
+-- Interpret the slope coefficient for flipper length in the context of the problem
+
+**Holding island constant, for a 1 mm increase in flipper length, we estimate on average a 44.54 g increase in body mass**
+
+-- Interpret the slope coefficient for Dream island in the context of the problem
+
+**Holding flipper length constant, we estimate the mean body mass for penguins on the dream island to be -262.18g less than those on the Biscoe island.**
+
+-- Predict the body mass of a penguin with a flipper length of 200 on the Dream island
+
+Note: Above....name your model and do not pipe it into `tidy()` if you want to use the `predict` function. Next, fill in the code below.
+
+```{r}
+#| label: prediction
+
+predict(model1, data.frame(flipper_length_mm = 200, island = "Dream"))
+
+```
+
+## Interaciton Model
+
+What changes in the R code when fitting an interaction model instead of an additive model in R?
+
+**+ to a \***
+
+-- Now fit the interaction model. Display the summary output and write out the estimate regression equation below.
+
+```{r}
+#| label: int-model
+
+int_model <- linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm * island, data = penguins)
+
+```
+
+$\widehat{body\_mass} = -5464 + 48.5*flipper + 3551*Dream + 3218*Torg -19.4*flipper*Dream - 17.4*flipper*Torg$
+
+What does it mean for island and flipper length to interact? How do we interpret an interaction effect?
+
+**This means that the relaionship between body mass and flipper length depends on the island the penguin was located on**
+
+Now, name your interaction model `int_model` and remove the tidy() from the pipeline. Use this named model to make this prediction below.
+
+-- Predict the body mass of a penguin with a flipper length of 200 on the Dream island
+
+```{r}
+#| label: int-pred
+
+predict(int_model, data.frame(flipper_length_mm = 200, island = "Dream"))
+
+```
+
+## How do we talk about interaction terms?
+
+No general interpretation like with main effects
+
+Discuss in general: The relationship between mean body mass and penguin's flipper length changes based on island + describe the plot
+
+We can then use these estimates for prediction (as seen above)
+
+## How can we choose?
+
+-- What is R-squared (reminder)? What is adjusted R-squared?
+
+R-squared is the percent variability in the response that is explained by our model. (Can use when models have same number of variables for model selection)
+
+Adjusted R-squared is similar, but has a penalty for the number of variables in the model. (Should use for model selection when models have different numbers of variables).
+
+How can we calculate this in R?
+
+Hint: We can use `glance(model.name)$r.squared and glance(model.name)$adj.r.squared`
+
+```{r}
+#| label: r-squared
+
+glance(model1)$r.squared
+glance(int_model)$r.squared
+
+glance(model1)$adj.r.squared
+glance(int_model)$adj.r.squared
+
+
+
+```
+
+Which model should we pick? Which measure did you use to justify your decision?
+
+We can use adjusted R squared to provide evidence to choose the interaction model over the additive one.
+
+## We can not use R-squared to compare models of different variables
+
+```{r}
+
+set.seed(333)
+
+penguins <- penguins |>
+  mutate(random = rnorm(mean = 10, sd = 2, nrow(penguins)))
+
+```
+
+Now, fit an additive model that estimates body mass by flipper length, island, AND by this random variable. What is the r-squared. How does that compare to the additive model with just flipper length and island?
+
+```{r}
+
+random_model <- linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm + island + random, data = penguins) 
+
+glance(random_model)$r.squared
+
+glance(model1)$r.squared
+
+
+```
+
+The r-squared went up, despite adding a nonsense variable! We can not use this measure to select a model when the models have a different number of variables.
