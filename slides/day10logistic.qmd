@@ -15,15 +15,15 @@ format: revealjs
 
 --- Turn in on GitHub
 
---- Lab today is a project work day 
+--- Lab today is a project work day
 
-## Warm Up: Question 1 
+## Warm Up: Question 1
 
--- What is the main difference between Simple Linear Regression and Multiple Linear Regression? 
+-- What is the main difference between Simple Linear Regression and Multiple Linear Regression?
 
 ## Warm Up: Question 2
 
--- What is the main difference between an additive model and an interaction model? 
+-- What is the main difference between an additive model and an interaction model?
 
 ## Goals
 
@@ -31,31 +31,29 @@ format: revealjs
 
 -- What, why and how of logistic regression
 
-## More about R-Squared vs Adjusted R-Squared 
+## More about R-Squared vs Adjusted R-Squared
 
 R-squared has...
 
-- A meaningful definition 
+-   A meaningful definition
 
-- a relationship with `cor` when in the SLR case
+-   a relationship with `cor` when in the SLR case
 
-## R-Squared 
+## R-Squared
 
 ![](images/R-squared.png)
-
 
 ## R-squared
 
 ![](images/sst.2.png)
 
+## More about R-Squared vs Adjusted R-Squared
 
-## More about R-Squared vs Adjusted R-Squared 
+When can we use R-squared for model selection?
 
-When can we use R-squared for model selection? 
+-   When models have the same number of variables
 
-- When models have the same number of variables 
-
-- Why can't we use it to compare models with different number of variables? See ae-09 for demonstration.
+-   Why can't we use it to compare models with different number of variables? See ae-09 for demonstration.
 
 ## R-squared: Takeaway
 
@@ -63,26 +61,25 @@ When can we use R-squared for model selection?
 
 -- The more variables you include, the larger the R-squared value will be (always)
 
-
-## More about R-Squared vs Adjusted R-Squared 
+## More about R-Squared vs Adjusted R-Squared
 
 Adjusted R-squared ...
 
-- Doesn't have a clean definition 
+-   Doesn't have a clean definition
 
-- Is very useful for model selection 
+-   Is very useful for model selection
 
-## Adjusted R-Squared 
+## Adjusted R-Squared
 
 Takeaway: Adds a penalty for "unimportant" predictors (x's)
 
 ![](images/adjustedR2.png)
 
-# Any questions? 
+# Any questions?
 
-## Finish MLR 
+## Finish MLR
 
--- clone ae-10 
+-- clone ae-10
 
 -- finish MLR (2 quantitative explanatory variables)
 
@@ -130,13 +127,13 @@ Note: $\eta_i$ is some response of our linear model
 
 -   But we can't stop here... $\eta_i$ isn't the probability of success of our response
 
-- Think about what a linear model looks like 
+-   Think about what a linear model looks like
 
-## Next steps 
+## Next steps
 
 -- Preform a transformation to our response variable so it has the appropriate range of values
 
--- "Link" our linear model to the paramater of the outcome distribution 
+-- "Link" our linear model to the paramater of the outcome distribution
 
 -- $y_i$ \~ Bern(p)
 
@@ -144,9 +141,9 @@ Note: $\eta_i$ is some response of our linear model
 
 -   Next, we need a link function that relates the linear model to the parameter of the outcome distribution i.e. **transform the linear model to have an appropriate range**
 
-## Logit Link Function 
+## Logit Link Function
 
-The logit link function is defined as follows: 
+The logit link function is defined as follows:
 
 ![](images/logitlink.png){fig-align="center"}
 
@@ -166,12 +163,11 @@ Takes a \[0,1\] probability and maps it to log odds (-$\infty$ to $\infty$.)
 
 ![](images/logit.png){fig-align="center"}
 
-## Almost.... 
+## Almost....
 
 This isn't exactly what we need though.....
 
 Will help us get to our goal
-
 
 ## So we have a generalized linear model (GLM)
 
@@ -195,9 +191,7 @@ Will help us get to our goal
 
 We need to take the inverse of the logit function
 
-
 -   $$log(\frac{p}{1-p}) = \widehat{\beta_o} +\widehat{\beta}_1X1 + ....$$
-
 
 # Math Time
 
@@ -215,16 +209,8 @@ plot.function(sigmoid, from = 0, to = 20, n = 101, ylab="P(y = 1)",
 box()
 ```
 
-
 ## What we will do today
 
 Calculate probabilities of success of a response based on values of explanatory variable x.
 
 ![](images/logistic.png){fig-align="center"}
-
-
-
-
-
-
-
