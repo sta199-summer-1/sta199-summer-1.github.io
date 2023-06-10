@@ -991,7 +991,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression I\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nData Ethics\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nData Ethics; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression II\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nCentral Limit Theorm + Hypothesis Testing I\n\n\n\n\n\n\n\n\n\n\nHW 3 Due; HW 4 Release\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nHypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nHW 4 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nData Ethics\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 5 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nData Ethics; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 5 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -1304,6 +1304,13 @@
   {
     "objectID": "prepare/6-1.html",
     "href": "prepare/6-1.html",
+    "title": "Prepare",
+    "section": "",
+    "text": "Note\n\n\n\nVideos use the “old school” pipe (%>%) but we’ll be using the newer (|>) pipe operator in class."
+  },
+  {
+    "objectID": "prepare/6-13.html",
+    "href": "prepare/6-13.html",
     "title": "Prepare",
     "section": "",
     "text": "Note\n\n\n\nVideos use the “old school” pipe (%>%) but we’ll be using the newer (|>) pipe operator in class."
@@ -2427,6 +2434,174 @@
     "title": "MLR - Logistic Regression",
     "section": "What we will do today",
     "text": "What we will do today\nCalculate probabilities of success of a response based on values of explanatory variable x.\n\n\n\n\n\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/day11log2.html#checklist",
+    "href": "slides/day11log2.html#checklist",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Checklist",
+    "text": "Checklist\n– Clone ae-11\n– Homework 3 Due Tuesday (6-13)\n– Project Proposal due tonight (6-12)\n— Turn in on GitHub\n— Feedback coming in the next day or two"
+  },
+  {
+    "objectID": "slides/day11log2.html#feedback-for-your-project",
+    "href": "slides/day11log2.html#feedback-for-your-project",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Feedback for your project",
+    "text": "Feedback for your project\n– Will be on GitHub Issues\n— Demo"
+  },
+  {
+    "objectID": "slides/day11log2.html#warm-up-question",
+    "href": "slides/day11log2.html#warm-up-question",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Warm Up: Question",
+    "text": "Warm Up: Question\nWhat are the main differences between:\n– Simple Linear Regression vs Multiple Linear Regression\n– Logistic Regression vs Linear Regression"
+  },
+  {
+    "objectID": "slides/day11log2.html#warm-up-logistic-interpretation",
+    "href": "slides/day11log2.html#warm-up-logistic-interpretation",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Warm Up: Logistic Interpretation",
+    "text": "Warm Up: Logistic Interpretation\nRecall: Fit a logistic regression model to predict if an email was spam or not.\n\n– Interpret the estimate associated with exclaim_mess\n– Using this output, how can we calculate probabilities of a spam email?\nNote: If you are interested in log-odds, I found this small article useful here"
+  },
+  {
+    "objectID": "slides/day11log2.html#model-selection",
+    "href": "slides/day11log2.html#model-selection",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Model Selection",
+    "text": "Model Selection\n\nR-squared (if number of variables are the same)\nAdj-R-squared (if number of variables are same / different)\nAIC"
+  },
+  {
+    "objectID": "slides/day11log2.html#akaike-information-criterion-aic",
+    "href": "slides/day11log2.html#akaike-information-criterion-aic",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Akaike information criterion (AIC)",
+    "text": "Akaike information criterion (AIC)\n– which of multiple models is most likely to be the best model for a given data set.\n– based on the data, which model is the most likely"
+  },
+  {
+    "objectID": "slides/day11log2.html#akaike-information-criterion-aic-1",
+    "href": "slides/day11log2.html#akaike-information-criterion-aic-1",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Akaike information criterion (AIC)",
+    "text": "Akaike information criterion (AIC)\n– No “nice” definition\n– Lower is better (different than Adj-R-squared)\n– Lower AIC and BIC values mean that a model is considered to be closer to the ‘truth’"
+  },
+  {
+    "objectID": "slides/day11log2.html#aic-in-r",
+    "href": "slides/day11log2.html#aic-in-r",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "AIC in R",
+    "text": "AIC in R\n– glance(model1)$AIC"
+  },
+  {
+    "objectID": "slides/day11log2.html#aic-vs-adj-r-squared",
+    "href": "slides/day11log2.html#aic-vs-adj-r-squared",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "AIC vs Adj-R-squared",
+    "text": "AIC vs Adj-R-squared\n– Common to see AIC and Adj-R-squared used for model selection\n– The differences are more clear in a theory course. In there own way, they provide evidence of the “best” model.\n– In short: Use one in practice, but do not mix…\n— They are built off a different theoretical foundation"
+  },
+  {
+    "objectID": "slides/day11log2.html#situation",
+    "href": "slides/day11log2.html#situation",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Situation",
+    "text": "Situation\nWant to build a model that predicts well.\n– What should that model look like?\n– How do we build it?\n– How do we know if it predicts well?"
+  },
+  {
+    "objectID": "slides/day11log2.html#what-should-it-look-like",
+    "href": "slides/day11log2.html#what-should-it-look-like",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "What should it look like?",
+    "text": "What should it look like?\nWhich model would you prefer?"
+  },
+  {
+    "objectID": "slides/day11log2.html#model-selection-tools",
+    "href": "slides/day11log2.html#model-selection-tools",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Model Selection tools",
+    "text": "Model Selection tools\n– can most definitely select an overfit model"
+  },
+  {
+    "objectID": "slides/day11log2.html#overfitting",
+    "href": "slides/day11log2.html#overfitting",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Overfitting",
+    "text": "Overfitting\n– Overfitting is a concept in data science, which occurs when a statistical model fits exactly against its data.\n– This doesn’t make sense if are goal is to predict!"
+  },
+  {
+    "objectID": "slides/day11log2.html#assessing-model-prediction",
+    "href": "slides/day11log2.html#assessing-model-prediction",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Assessing model prediction",
+    "text": "Assessing model prediction\nVocab…\n– Testing Data Set\n– Training Data Set\n– ROC Curve\n– Sensitivity (True Positive)\n– Specificity (True Negative)"
+  },
+  {
+    "objectID": "slides/day11log2.html#splitting-the-data",
+    "href": "slides/day11log2.html#splitting-the-data",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Splitting the data",
+    "text": "Splitting the data\nWhen the goal is prediction….\n– When able, it may be advantageous to withhold a part of your data when creating your model\n– Can use what’s withheld to evaluate how well your model predicts"
+  },
+  {
+    "objectID": "slides/day11log2.html#training-data-set",
+    "href": "slides/day11log2.html#training-data-set",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Training Data Set",
+    "text": "Training Data Set\n– training data is the dataset you use to build your model\n– roughly 80% of a larger data set\n“Sandbox” for model building."
+  },
+  {
+    "objectID": "slides/day11log2.html#testing-data-set",
+    "href": "slides/day11log2.html#testing-data-set",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Testing Data Set",
+    "text": "Testing Data Set\n– data to be used to evaluate your model\n– evaluate the predictive performance\n– roughly 20% of the larger data set"
+  },
+  {
+    "objectID": "slides/day11log2.html#important-note",
+    "href": "slides/day11log2.html#important-note",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Important Note",
+    "text": "Important Note\n– Training and Testing data sets are created at random"
+  },
+  {
+    "objectID": "slides/day11log2.html#true-positive-rate",
+    "href": "slides/day11log2.html#true-positive-rate",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "True Positive Rate",
+    "text": "True Positive Rate\n– Also known as sensitivity\n– Probability of correctly detecting a “success”"
+  },
+  {
+    "objectID": "slides/day11log2.html#false-negative",
+    "href": "slides/day11log2.html#false-negative",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "False Negative",
+    "text": "False Negative\n– Incorrectly predicting a “failure”\n– 1 - specificity\nWhere specificity is the percentage of true negatives"
+  },
+  {
+    "objectID": "slides/day11log2.html#email-context",
+    "href": "slides/day11log2.html#email-context",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Email Context",
+    "text": "Email Context\nGoal: Create a spam filter (want to predict if an email is spam)\n– Define a true positive\n– Define a true negative\n– Define a false positive"
+  },
+  {
+    "objectID": "slides/day11log2.html#plotting-predictive-performance",
+    "href": "slides/day11log2.html#plotting-predictive-performance",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Plotting predictive performance",
+    "text": "Plotting predictive performance"
+  },
+  {
+    "objectID": "slides/day11log2.html#receiver-operating-characteristic-curve-roc",
+    "href": "slides/day11log2.html#receiver-operating-characteristic-curve-roc",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Receiver operating characteristic curve (ROC)",
+    "text": "Receiver operating characteristic curve (ROC)\n– Is a graph showing the performance of a classification model at different classification thresholds\n– The larger the area under the curve is, the better the performance of the model across all thresholds"
+  },
+  {
+    "objectID": "slides/day11log2.html#goals",
+    "href": "slides/day11log2.html#goals",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Goals",
+    "text": "Goals\n– Assess how good your model is at prediction\n– Visualize how well your model predicts new observations\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",

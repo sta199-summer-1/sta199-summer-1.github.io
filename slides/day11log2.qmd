@@ -1,0 +1,222 @@
+---
+title: "More Model Selection + Logistic Regression II"
+subtitle: "Day 11"
+date: "June 12th"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-11`
+
+-- Homework 3 Due Tuesday (6-13)
+
+-- Project Proposal due tonight (6-12)
+
+--- Turn in on GitHub
+
+--- Feedback coming in the next day or two
+
+## Feedback for your project 
+
+-- Will be on GitHub `Issues` 
+
+--- Demo
+
+## Warm Up: Question
+
+What are the main differences between: 
+
+-- Simple Linear Regression vs Multiple Linear Regression 
+
+-- Logistic Regression vs Linear Regression 
+
+## Warm Up: Logistic Interpretation 
+
+Recall: Fit a logistic regression model to predict if an email was spam or not. 
+
+![](images/email.png)
+
+-- Interpret the estimate associated with exclaim_mess
+
+-- Using this output, how can we calculate probabilities of a spam email? 
+
+
+Note: If you are interested in log-odds, I found this small article useful [here](https://towardsdatascience.com/https-towardsdatascience-com-what-and-why-of-log-odds-64ba988bf704)
+
+## Model Selection 
+
+- R-squared (if number of variables are the same)
+
+- Adj-R-squared (if number of variables are same / different)
+
+- AIC 
+
+## Akaike information criterion (AIC)
+
+-- which of multiple models is most likely to be the best model for a given data set. 
+
+-- based on the data, which model is the most `likely` 
+
+![](images/AIC.png)
+
+## Akaike information criterion (AIC)
+
+-- No "nice" definition 
+
+-- Lower is better (different than Adj-R-squared)
+
+-- Lower AIC and BIC values mean that a model is considered to be closer to the ‘truth’
+
+## AIC in R
+
+-- `glance(model1)$AIC`
+
+## AIC vs Adj-R-squared
+
+-- Common to see AIC and Adj-R-squared used for model selection
+
+-- The differences are more clear in a theory course. In there own way, they provide evidence of the "best" model. 
+
+-- In short: Use one in practice, but do not mix... 
+
+--- They are built off a different theoretical foundation
+
+
+## Situation 
+
+Want to build a model that predicts well.
+
+-- What should that model look like?
+
+-- How do we build it?
+
+-- How do we know if it predicts well?
+
+## What should it look like?
+
+Which model would you prefer?
+
+![](images/fitting.png)
+
+## Model Selection tools 
+
+-- can most definitely select an overfit model
+
+## Overfitting
+
+-- Overfitting is a concept in data science, which occurs when a statistical model fits exactly against its data.
+
+-- This doesn't make sense if are goal is to predict!
+
+## Assessing model prediction 
+
+Vocab...
+
+-- Testing Data Set
+
+-- Training Data Set
+
+-- ROC Curve
+
+-- Sensitivity (True Positive)
+
+-- Specificity (True Negative)
+
+## Splitting the data
+
+When the goal is prediction....
+
+-- When able, it may be advantageous to withhold a part of your data when creating your model
+
+-- Can use what's withheld to evaluate how well your model predicts
+
+## Training Data Set
+
+-- training data is the dataset you use to build your model
+
+-- roughly 80% of a larger data set
+
+"Sandbox" for model building.
+
+## Testing Data Set
+
+-- data to be used to evaluate your model
+
+-- evaluate the predictive performance
+
+-- roughly 20% of the larger data set
+
+## Important Note
+
+-- Training and Testing data sets are created *at random*
+
+## True Positive Rate
+
+-- Also known as sensitivity
+
+-- Probability of correctly detecting a "success"
+
+## False Negative 
+
+-- Incorrectly predicting a "failure" 
+
+-- 1 - specificity 
+
+Where specificity is the percentage of true negatives
+
+## Email Context 
+
+Goal: Create a spam filter (want to predict if an email is spam)
+
+-- Define a true positive
+
+-- Define a true negative 
+
+-- Define a false positive 
+
+## Plotting predictive performance
+
+![](images/roc-curve.png)
+
+## Receiver operating characteristic curve (ROC)
+
+-- Is a graph showing the performance of a classification model at different classification thresholds
+
+-- The larger the area under the curve is, the better the performance of the model across all thresholds
+
+# ae-10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Goals
+
+-- Assess how good your model is at prediction
+
+-- Visualize how well your model predicts new observations
+
+
+
+
+
+

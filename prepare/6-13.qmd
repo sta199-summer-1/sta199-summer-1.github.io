@@ -1,0 +1,12 @@
+---
+title: "Prepare"
+subtitle: "Due: June 13th, 2023"
+categories: "prepare"
+---
+
+-   ⌨️ Watch:
+    -   [Prediction and overfitting](https://youtu.be/Qd4lu_Lmwi0)
+
+::: callout-note
+Videos use the "old school" pipe (`%>%`) but we'll be using the newer (`|>`) pipe operator in class.
+:::
