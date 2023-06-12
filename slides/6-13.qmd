@@ -1,0 +1,16 @@
+---
+title: "Prepare"
+subtitle: "Due: Wednesday March 22, 2023"
+categories: "prepare"
+---
+
+- Watch [Bootstrapping](https://www.youtube.com/watch?v=bdqpI3iVOso)
+
+[Central limit theorem](https://warpwire.duke.edu/w/Vw4GAA/)
+
+[Hypothesis testing](https://warpwire.duke.edu/w/YQ4GAA/)
+
+
+- Read (optional): [section 12](https://openintro-ims.netlify.app/foundations-bootstrapping.html)
+
+(optional): [13.1, 13.2, 13.3: inference with mathematical models](https://openintro-ims.netlify.app/index.html)

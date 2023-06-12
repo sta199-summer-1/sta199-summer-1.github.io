@@ -34,7 +34,7 @@ Today, we will be working with data from [www.openpowerlifting.org](https://www.
 #### Dictionary
 
 | variable         | class     | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|:-----------------|:-----------------|:-----------------------------------|
+|:-----------------|:-----------------|:----------------------------------|
 | name             | character | Individual lifter name                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | sex              | character | Binary gender (M/F)                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | event            | character | The type of competition that the lifter entered.<br><br>Values are as follows:<br>- SBD: Squat-Bench-Deadlift, also commonly called "Full Power".<br>- BD: Bench-Deadlift, also commonly called "Ironman" or "Push-Pull"<br>- SD: Squat-Deadlift, very uncommon.<br>- SB: Squat-Bench, very uncommon.<br>- S: Squat-only.<br>- B: Bench-only.<br>- D: Deadlift-only.                                                                                                       |
@@ -62,23 +62,21 @@ For all of the following exercises, you should include units on axes labels, e.g
 
 2.  Write down the population linear model to predict lift squat lbs from age using proper notation. Note: if you use generic $x$ and $y$, define each after your model? Next, fit the estimated linear model. Use the `ipf_squat` data frame. Using the output, write out the estimated linear regression model. This is called the "fitted" (estimated) linear model. Interpret each estimate of $\beta$. Is the intercept interpretation reasonable? Why or why not?
 
-3.  Building on your `ipf_squat` data frame, create a new column called `age2` that takes the age of each lifter and squares it. Save your data frame with an appropriate name. Next, plot squat in lbs vs `age2` and add a linear best fit line. Do you notice any difference in how well this model fits the data compared to your previous model? Justify your answer. 
+3.  Building on your `ipf_squat` data frame, create a new column called `age2` that takes the age of each lifter and squares it. Save your data frame with an appropriate name. Next, plot squat in lbs vs `age2` and add a linear best fit line. Do you notice any difference in how well this model fits the data compared to your previous model? Justify your answer.
 
 4.  One metric to assess the fit of a model is the correlation squared, also known as $R^2$. Fit the age$^2$ model and save the object as `age2Fit`. Subsequently report the $R^2$. Compare $R^2$ of the age$^2$ model to the model from exercise 2. Which model do you prefer based on these values?
 
 -   If you were to add body weight as a second predictor to the age$^2$ model, would $R^2$ increase or decrease? Explain.
 
-5.  Starting with the original `ipf` dataframe, filter and mutate the data as we did in exercise 1, but this time filtering for `best3bench_kg` $>0$ and creating a `best3_bench_lbs`      variable, a `bodyweight_lbs` variable, and a `sex` variable that is a factor rather than a character.
+5.  Starting with the original `ipf` dataframe, filter and mutate the data as we did in exercise 1, but this time filtering for `best3bench_kg` $>0$ and creating a `best3_bench_lbs` variable, a `bodyweight_lbs` variable, and a `sex` variable that is a factor rather than a character.
 
 Before fitting the model, please explain the following: What does it mean for bodyweight and sex to interact when modeling bench press? Hint: use the definition.
 
-Now, fit an interaction effects model with bodywieght (in lbs) and sex as predictors of best bench press (in lbs). Write down the **fitted model equation** using proper notation. 
-    
-
+Now, fit an interaction effects model with bodywieght (in lbs) and sex as predictors of best bench press (in lbs). Write down the **fitted model equation** using proper notation.
 
 6.  Plot the model from exercise 5. Bodyweight should be on the x-axis. Add a linear best fit line. Be sure to label all axes and give the plot a title. Comment on what you observe.
 
-7.  Do lifters who fail a drug test perform better or worse at bench press than other lifters? Does this vary across sexes? We'll answer this question in two parts. First, remove all observations from the `ipf` data frame that have `NA` listed under bench press. Save this data set. In the same pipeline, create a new column called `doping_status` that takes value `doping` if the lifter failed a drug test and `not doping` otherwise. Save this data frame as `ipf_dope`.
+7.  Do lifters who fail a drug test perform better or worse at bench press than other lifters? Does this vary across sexes? We'll answer this question in two parts. First, remove all observations from the `ipf` data frame that have `NA` listed under bench press. In the same pipeline, create a new column called `doping_status` that takes value `doping` if the lifter failed a drug test and `not doping` otherwise. Save this data frame as `ipf_dope`.
 
 ::: callout-hint
 Check the data dictionary at the top to figure out what variables will help you build the `doping_status` column.
@@ -86,7 +84,7 @@ Check the data dictionary at the top to figure out what variables will help you 
 
 8.  Using `ipf_dope` from the previous exercise, compute the 5%, 50%, 95% quantiles for bench press across all combinations of `sex` and `doping_status`, i.e., male and doping, male and not doping, female and doping, female and not doping. You can use either bench press in kg or lbs here. With this information, answer the question "Do lifters who fail a drug test perform better or worse at bench press than other lifters?"
 
-Hint: You can use the `quantile` function in R to calculate quantiles. 
+Hint: You can use the `quantile` function in R to calculate quantiles.
 
 # Wrap up
 
