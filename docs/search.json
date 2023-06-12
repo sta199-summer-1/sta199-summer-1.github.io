@@ -2580,7 +2580,7 @@
     "href": "slides/day11log2.html#email-context",
     "title": "More Model Selection + Logistic Regression II",
     "section": "Email Context",
-    "text": "Email Context\nGoal: Create a spam filter (want to predict if an email is spam)\n– Define a true positive\n– Define a true negative\n– Define a false positive"
+    "text": "Email Context\nGoal: Create a spam filter (want to predict if an email is spam)\n– Define a true positive\n– Define a true negative\n– Define a false negative"
   },
   {
     "objectID": "slides/day11log2.html#plotting-predictive-performance",

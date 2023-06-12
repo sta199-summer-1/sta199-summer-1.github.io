@@ -174,7 +174,7 @@ Goal: Create a spam filter (want to predict if an email is spam)
 
 -- Define a true negative 
 
--- Define a false positive 
+-- Define a false negative 
 
 ## Plotting predictive performance
 
