@@ -2597,6 +2597,41 @@
     "text": "Receiver operating characteristic curve (ROC)\n– Is a graph showing the performance of a classification model at different classification thresholds\n– The larger the area under the curve is, the better the performance of the model across all thresholds"
   },
   {
+    "objectID": "slides/day11log2.html#statistical-inference-1",
+    "href": "slides/day11log2.html#statistical-inference-1",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Statistical Inference",
+    "text": "Statistical Inference\n Cleaning Data  EDA   Modeling   Statistical Inference \n— Hypothesis Testing\n— Confidence Intervals"
+  },
+  {
+    "objectID": "slides/day11log2.html#motivate-discussion",
+    "href": "slides/day11log2.html#motivate-discussion",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Motivate Discussion",
+    "text": "Motivate Discussion\nHow tall are Duke Students?\n\nWe don’t know…. but we can collect data and learn more about this"
+  },
+  {
+    "objectID": "slides/day11log2.html#population-parameters",
+    "href": "slides/day11log2.html#population-parameters",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Population Parameters",
+    "text": "Population Parameters\n– What we are interested in\n\\(\\mu\\)\n\\(\\pi\\)"
+  },
+  {
+    "objectID": "slides/day11log2.html#population-parameters-1",
+    "href": "slides/day11log2.html#population-parameters-1",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "Population Parameters",
+    "text": "Population Parameters\n– Are these population parameters different than some value?\n– What is a range of plausible values that the population parameter could be?"
+  },
+  {
+    "objectID": "slides/day11log2.html#general-process",
+    "href": "slides/day11log2.html#general-process",
+    "title": "More Model Selection + Logistic Regression II",
+    "section": "General Process",
+    "text": "General Process\n– Decide what we want to investigate\n– Collect data\n– We need to quantify variability!"
+  },
+  {
     "objectID": "slides/day11log2.html#goals",
     "href": "slides/day11log2.html#goals",
     "title": "More Model Selection + Logistic Regression II",

@@ -157,6 +157,7 @@ When the goal is prediction....
 
 -- Probability of correctly detecting a "success"
 
+
 ## False Negative 
 
 -- Incorrectly predicting a "failure" 
@@ -186,6 +187,60 @@ Goal: Create a spam filter (want to predict if an email is spam)
 -- The larger the area under the curve is, the better the performance of the model across all thresholds
 
 # ae-11
+
+# Statistical Inference 
+
+## Statistical Inference 
+
+<input type="checkbox" unchecked> Cleaning Data</input>
+<input type="checkbox" unchecked> EDA </input>
+<input type="checkbox" unchecked> Modeling </input>
+<input type="checkbox" unchecked> Statistical Inference </input>
+
+--- Hypothesis Testing 
+
+--- Confidence Intervals
+
+## Motivate Discussion 
+
+How tall are Duke Students? 
+
+- We don't know.... but we can collect data and learn more about this
+
+
+## Population Parameters 
+
+-- What we are interested in 
+
+$\mu$
+
+$\pi$
+
+## Population Parameters 
+
+-- Are these population parameters different than some value?
+
+-- What is a range of plausible values that the population parameter could be? 
+
+## General Process 
+
+-- Decide what we want to investigate 
+
+-- Collect data
+
+-- We need to quantify variability!
+
+
+# Distribution 
+
+
+
+
+
+
+
+
+
 
 
 
