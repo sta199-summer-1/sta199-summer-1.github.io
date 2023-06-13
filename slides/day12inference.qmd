@@ -1,0 +1,131 @@
+---
+title: "Intro to Inference"
+subtitle: "Day 12"
+date: "June 13th"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-12`
+
+-- Homework 3 Due tonight (6-13)
+
+-- Project Proposal Feedback Soon
+
+--- Issues
+
+
+## Warm Up
+
+Last class, we fit a model to predict 
+
+![](images/roc-curve.png)
+
+
+## Warm Up 
+
+Go to ae-12. Go to the roc.qmd
+
+Create your own roc curve using `email_fit2`. 
+
+Compare the predictive performance to `email_fit`. 
+
+Is this new model better? Worse? How can you tell? 
+
+## Statistical Inference 
+
+-- the methods of forming judgments about **population parameters**
+
+## Population Parameters 
+
+-- $\mu$
+
+-- $\pi$
+
+## Population Parameters 
+
+-- $\mu_1 - \mu_2$
+
+-- $\pi_1 - pi_2$
+
+## Motivation 
+
+But.... we don't know what these values are, so we collect data!
+
+
+## Sample Statistics 
+
+-- $\bar{x}$
+
+-- $\hat{p}$
+
+## Sample Statistics 
+
+-- $\bar{x_1} - \bar{x_2}$
+
+-- $\hat{p_1} - \hat{p_2}$
+
+## Questions that we will answer 
+
+-- Test to see if our population parameter is different than a value (hypothesis testing)
+
+-- Estimate the value of the population parameter 
+
+and we will use data and the idea of variability to answer these questions
+
+
+## Today 
+
+We will go through how to conduct a hypothesis test using bootstrapping procedures!
+
+## Bootstrap 
+
+Bootstrapping is a statistical procedure that re samples or permutes (shuffles) a single data set to create many simulated samples.
+
+The term bootstrapping comes from the phrase “pulling oneself up by one’s bootstraps”, which is a metaphor for accomplishing an impossible task without any outside help
+
+## Why
+
+Impossible task: estimating a population parameter using data from only the given sample.
+
+Note: This notion of saying something about a population parameter using only information from an observed sample is the crux of statistical inference, it is not limited to bootstrapping.
+
+## Hypothesis Testing 
+
+-- Null hypothesis $\H_o:$
+
+-- Alternative hypothesis $\H_a:$
+
+## Null hypothesis 
+
+-- Assumes "nothing is going on"
+
+-- Sets a parameter = 0 
+
+-- Sets group equal to each other 
+
+## Alternative hypothesis 
+
+-- This is what we are interested in!
+
+-- We dictate this by the sign of our alternative hypothesis 
+
+## Alternative hypothesis 
+
+-- > 
+
+-- < 
+
+-- $\neq$
+
+# ae-12
+
+
+
+
+
+
+
+
+

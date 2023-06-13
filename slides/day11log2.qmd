@@ -158,13 +158,15 @@ When the goal is prediction....
 -- Probability of correctly detecting a "success"
 
 
-## False Negative 
+## False Positive
 
--- Incorrectly predicting a "failure" 
+-- a result which incorrectly indicates that a particular condition or attribute is present (something is not there, but we say it is)
+
+-- Incorrectly predicting the truth of "not present" 
 
 -- 1 - specificity 
 
-Where specificity is the percentage of true negatives
+Specificity - how well a test can classify something who truly does not have the condition of interest
 
 ## Email Context 
 
@@ -172,9 +174,7 @@ Goal: Create a spam filter (want to predict if an email is spam)
 
 -- Define a true positive
 
--- Define a true negative 
-
--- Define a false negative 
+-- Define a false positive 
 
 ## Plotting predictive performance
 
