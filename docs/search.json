@@ -2741,7 +2741,7 @@
     "href": "slides/day12inference.html#hypothesis-testing",
     "title": "Intro to Inference",
     "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n– Null hypothesis \\(\\H_o:\\)\n– Alternative hypothesis \\(\\H_a:\\)"
+    "text": "Hypothesis Testing\n– Null hypothesis \\(H_o:\\)\n– Alternative hypothesis \\(H_a:\\)"
   },
   {
     "objectID": "slides/day12inference.html#null-hypothesis",

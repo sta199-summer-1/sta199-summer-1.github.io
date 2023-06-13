@@ -103,9 +103,9 @@ Note: This notion of saying something about a population parameter using only in
 
 ## Hypothesis Testing 
 
--- Null hypothesis $\H_o:$
+-- Null hypothesis $H_o:$
 
--- Alternative hypothesis $\H_a:$
+-- Alternative hypothesis $H_a:$
 
 ## Null hypothesis 
 
