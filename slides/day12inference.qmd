@@ -139,6 +139,14 @@ Note: This notion of saying something about a population parameter using only in
 
 **Sample size is not very small**
 
+# ae-12
+
+## Can you read Martian? Bumba & Kiki
+
+Alone, please think about which option is Bumba
+
+![](images/bumba-kiki.png)
+
 
 
 
