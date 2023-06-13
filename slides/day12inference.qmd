@@ -13,9 +13,11 @@ format: revealjs
 
 -- Project Proposal Feedback Soon
 
--- Lab due Thursday 11:59 (6-15)
+-- Lab due Thursday 5:00 (6-15)
 
 --- Issues
+
+-- Exam 2: June 15th Start | June 20th due date
 
 
 ## Warm Up
