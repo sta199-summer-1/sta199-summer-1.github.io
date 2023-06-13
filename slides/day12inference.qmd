@@ -55,7 +55,7 @@ Is this new model better? Worse? How can you tell?
 
 -- $\mu_1 - \mu_2$
 
--- $\pi_1 - pi_2$
+-- $\pi_1 - \pi_2$
 
 ## Motivation 
 
