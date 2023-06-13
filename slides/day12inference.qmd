@@ -17,6 +17,10 @@ format: revealjs
 
 --- Issues
 
+-- Group Feedback Survey in Sakai Coming Today (look for announcement)
+
+-- Exam 1 common mistakes to be posted on Slack today 
+
 -- Exam 2: June 15th Start | June 20th due date
 
 
