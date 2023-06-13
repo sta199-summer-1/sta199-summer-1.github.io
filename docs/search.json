@@ -2569,18 +2569,18 @@
     "text": "True Positive Rate\n– Also known as sensitivity\n– Probability of correctly detecting a “success”"
   },
   {
-    "objectID": "slides/day11log2.html#false-negative",
-    "href": "slides/day11log2.html#false-negative",
+    "objectID": "slides/day11log2.html#false-positive",
+    "href": "slides/day11log2.html#false-positive",
     "title": "More Model Selection + Logistic Regression II",
-    "section": "False Negative",
-    "text": "False Negative\n– Incorrectly predicting a “failure”\n– 1 - specificity\nWhere specificity is the percentage of true negatives"
+    "section": "False Positive",
+    "text": "False Positive\n– a result which incorrectly indicates that a particular condition or attribute is present (something is not there, but we say it is)\n– Incorrectly predicting the truth of “not present”\n– 1 - specificity\nSpecificity - how well a test can classify something who truly does not have the condition of interest"
   },
   {
     "objectID": "slides/day11log2.html#email-context",
     "href": "slides/day11log2.html#email-context",
     "title": "More Model Selection + Logistic Regression II",
     "section": "Email Context",
-    "text": "Email Context\nGoal: Create a spam filter (want to predict if an email is spam)\n– Define a true positive\n– Define a true negative\n– Define a false negative"
+    "text": "Email Context\nGoal: Create a spam filter (want to predict if an email is spam)\n– Define a true positive\n– Define a false positive"
   },
   {
     "objectID": "slides/day11log2.html#plotting-predictive-performance",
@@ -2637,6 +2637,139 @@
     "title": "More Model Selection + Logistic Regression II",
     "section": "Goals",
     "text": "Goals\n– Assess how good your model is at prediction\n– Visualize how well your model predicts new observations\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/day12inference.html#checklist",
+    "href": "slides/day12inference.html#checklist",
+    "title": "Intro to Inference",
+    "section": "Checklist",
+    "text": "Checklist\n– Clone ae-12\n– Homework 3 Due tonight 11:59 (6-13)\n– Project Proposal Feedback Soon\n– Lab due Thursday 11:59 (6-15)\n— Issues"
+  },
+  {
+    "objectID": "slides/day12inference.html#warm-up",
+    "href": "slides/day12inference.html#warm-up",
+    "title": "Intro to Inference",
+    "section": "Warm Up",
+    "text": "Warm Up\nLast class, we fit a model to predict"
+  },
+  {
+    "objectID": "slides/day12inference.html#warm-up-1",
+    "href": "slides/day12inference.html#warm-up-1",
+    "title": "Intro to Inference",
+    "section": "Warm Up",
+    "text": "Warm Up\nGo to ae-12. Go to the roc.qmd\nCreate your own roc curve using email_fit2.\nCompare the predictive performance to email_fit.\nIs this new model better? Worse? How can you tell?"
+  },
+  {
+    "objectID": "slides/day12inference.html#statistical-inference",
+    "href": "slides/day12inference.html#statistical-inference",
+    "title": "Intro to Inference",
+    "section": "Statistical Inference",
+    "text": "Statistical Inference\n– the methods of forming judgments about population parameters"
+  },
+  {
+    "objectID": "slides/day12inference.html#population-parameters",
+    "href": "slides/day12inference.html#population-parameters",
+    "title": "Intro to Inference",
+    "section": "Population Parameters",
+    "text": "Population Parameters\n– \\(\\mu\\)\n– \\(\\pi\\)"
+  },
+  {
+    "objectID": "slides/day12inference.html#population-parameters-1",
+    "href": "slides/day12inference.html#population-parameters-1",
+    "title": "Intro to Inference",
+    "section": "Population Parameters",
+    "text": "Population Parameters\n– \\(\\mu_1 - \\mu_2\\)\n– \\(\\pi_1 - pi_2\\)"
+  },
+  {
+    "objectID": "slides/day12inference.html#motivation",
+    "href": "slides/day12inference.html#motivation",
+    "title": "Intro to Inference",
+    "section": "Motivation",
+    "text": "Motivation\nBut…. we don’t know what these values are, so we collect data!"
+  },
+  {
+    "objectID": "slides/day12inference.html#sample-statistics",
+    "href": "slides/day12inference.html#sample-statistics",
+    "title": "Intro to Inference",
+    "section": "Sample Statistics",
+    "text": "Sample Statistics\n– \\(\\bar{x}\\)\n– \\(\\hat{p}\\)"
+  },
+  {
+    "objectID": "slides/day12inference.html#sample-statistics-1",
+    "href": "slides/day12inference.html#sample-statistics-1",
+    "title": "Intro to Inference",
+    "section": "Sample Statistics",
+    "text": "Sample Statistics\n– \\(\\bar{x_1} - \\bar{x_2}\\)\n– \\(\\hat{p_1} - \\hat{p_2}\\)"
+  },
+  {
+    "objectID": "slides/day12inference.html#questions-that-we-will-answer",
+    "href": "slides/day12inference.html#questions-that-we-will-answer",
+    "title": "Intro to Inference",
+    "section": "Questions that we will answer",
+    "text": "Questions that we will answer\n– Test to see if our population parameter is different than a value (hypothesis testing)\n– Estimate the value of the population parameter\nand we will use data and the idea of variability to answer these questions"
+  },
+  {
+    "objectID": "slides/day12inference.html#today",
+    "href": "slides/day12inference.html#today",
+    "title": "Intro to Inference",
+    "section": "Today",
+    "text": "Today\nWe will go through how to conduct a hypothesis test using bootstrapping procedures!"
+  },
+  {
+    "objectID": "slides/day12inference.html#bootstrap-randomization",
+    "href": "slides/day12inference.html#bootstrap-randomization",
+    "title": "Intro to Inference",
+    "section": "Bootstrap & Randomization",
+    "text": "Bootstrap & Randomization\nBootstrapping is a statistical procedure that re samples within a single data set to create many simulated samples.\nThe term bootstrapping comes from the phrase “pulling oneself up by one’s bootstraps”, which is a metaphor for accomplishing an impossible task without any outside help\nRandomization is when we randomly shuffle within a single data set to create many simulated samples"
+  },
+  {
+    "objectID": "slides/day12inference.html#why",
+    "href": "slides/day12inference.html#why",
+    "title": "Intro to Inference",
+    "section": "Why",
+    "text": "Why\nImpossible task: estimating / testing a population parameter using data from only the given sample.\nNote: This notion of saying something about a population parameter using only information from an observed sample is the crux of statistical inference."
+  },
+  {
+    "objectID": "slides/day12inference.html#hypothesis-testing",
+    "href": "slides/day12inference.html#hypothesis-testing",
+    "title": "Intro to Inference",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n– Null hypothesis \\(\\H_o:\\)\n– Alternative hypothesis \\(\\H_a:\\)"
+  },
+  {
+    "objectID": "slides/day12inference.html#null-hypothesis",
+    "href": "slides/day12inference.html#null-hypothesis",
+    "title": "Intro to Inference",
+    "section": "Null hypothesis",
+    "text": "Null hypothesis\n– Assumes “nothing is going on”\n– Sets a parameter = 0\n– Sets group equal to each other"
+  },
+  {
+    "objectID": "slides/day12inference.html#alternative-hypothesis",
+    "href": "slides/day12inference.html#alternative-hypothesis",
+    "title": "Intro to Inference",
+    "section": "Alternative hypothesis",
+    "text": "Alternative hypothesis\n– This is what we are interested in!\n– We dictate this by the sign of our alternative hypothesis"
+  },
+  {
+    "objectID": "slides/day12inference.html#alternative-hypothesis-1",
+    "href": "slides/day12inference.html#alternative-hypothesis-1",
+    "title": "Intro to Inference",
+    "section": "Alternative hypothesis",
+    "text": "Alternative hypothesis\n– >\n– <\n– \\(\\neq\\)"
+  },
+  {
+    "objectID": "slides/day12inference.html#ae-12",
+    "href": "slides/day12inference.html#ae-12",
+    "title": "Intro to Inference",
+    "section": "ae-12",
+    "text": "ae-12\n– p-value\n– significance level\n– Decisions; Conclusions; Interpretations"
+  },
+  {
+    "objectID": "slides/day12inference.html#when-can-we-trust-these-results",
+    "href": "slides/day12inference.html#when-can-we-trust-these-results",
+    "title": "Intro to Inference",
+    "section": "When can we trust these results?",
+    "text": "When can we trust these results?\n– When the sample we take is representative\nWe have a random sample\nSample size is not very small\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",

@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Dr.&nbsp;Elijah Meyer">
-  <title>STA 199 - More Model Selection + Logistic Regression II</title>
+  <title>STA 199 - Intro to Inference</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -319,205 +319,121 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">More Model Selection + Logistic Regression II</h1>
-  <p class="subtitle">Day 11</p>
+  <h1 class="title">Intro to Inference</h1>
+  <p class="subtitle">Day 12</p>
   <p class="author">Dr.&nbsp;Elijah Meyer</p>
   <p class="institute">Duke University <br> STA 199 - Summer 2023</p>
-  <p class="date">June 12th</p>
+  <p class="date">June 13th</p>
 </section>
 
 <section id="checklist" class="slide level2">
 <h2>Checklist</h2>
-<p>– Clone <code>ae-11</code></p>
-<p>– Homework 3 Due Tuesday (6-13)</p>
-<p>– Project Proposal due tonight (6-12)</p>
-<p>— Turn in on GitHub</p>
-<p>— Feedback coming in the next day or two</p>
+<p>– Clone <code>ae-12</code></p>
+<p>– Homework 3 Due tonight 11:59 (6-13)</p>
+<p>– Project Proposal Feedback Soon</p>
+<p>– Lab due Thursday 11:59 (6-15)</p>
+<p>— Issues</p>
 </section>
-<section id="feedback-for-your-project" class="slide level2">
-<h2>Feedback for your project</h2>
-<p>– Will be on GitHub <code>Issues</code></p>
-<p>— Demo</p>
-</section>
-<section id="warm-up-question" class="slide level2">
-<h2>Warm Up: Question</h2>
-<p>What are the main differences between:</p>
-<p>– Simple Linear Regression vs Multiple Linear Regression</p>
-<p>– Logistic Regression vs Linear Regression</p>
-</section>
-<section id="warm-up-logistic-interpretation" class="slide level2">
-<h2>Warm Up: Logistic Interpretation</h2>
-<p>Recall: Fit a logistic regression model to predict if an email was spam or not.</p>
-
-<img data-src="images/email.png" class="r-stretch"><p>– Interpret the estimate associated with exclaim_mess</p>
-<p>– Using this output, how can we calculate probabilities of a spam email?</p>
-<p>Note: If you are interested in log-odds, I found this small article useful <a href="https://towardsdatascience.com/https-towardsdatascience-com-what-and-why-of-log-odds-64ba988bf704">here</a></p>
-</section>
-<section id="model-selection" class="slide level2">
-<h2>Model Selection</h2>
-<ul>
-<li class="fragment"><p>R-squared (if number of variables are the same)</p></li>
-<li class="fragment"><p>Adj-R-squared (if number of variables are same / different)</p></li>
-<li class="fragment"><p>AIC</p></li>
-</ul>
-</section>
-<section id="akaike-information-criterion-aic" class="slide level2">
-<h2>Akaike information criterion (AIC)</h2>
-<p>– which of multiple models is most likely to be the best model for a given data set.</p>
-<p>– based on the data, which model is the most <code>likely</code></p>
-
-<img data-src="images/AIC.png" class="r-stretch"></section>
-<section id="akaike-information-criterion-aic-1" class="slide level2">
-<h2>Akaike information criterion (AIC)</h2>
-<p>– No “nice” definition</p>
-<p>– Lower is better (different than Adj-R-squared)</p>
-<p>– Lower AIC and BIC values mean that a model is considered to be closer to the ‘truth’</p>
-</section>
-<section id="aic-in-r" class="slide level2">
-<h2>AIC in R</h2>
-<p>– <code>glance(model1)$AIC</code></p>
-</section>
-<section id="aic-vs-adj-r-squared" class="slide level2">
-<h2>AIC vs Adj-R-squared</h2>
-<p>– Common to see AIC and Adj-R-squared used for model selection</p>
-<p>– The differences are more clear in a theory course. In there own way, they provide evidence of the “best” model.</p>
-<p>– In short: Use one in practice, but do not mix…</p>
-<p>— They are built off a different theoretical foundation</p>
-</section>
-<section id="situation" class="slide level2">
-<h2>Situation</h2>
-<p>Want to build a model that predicts well.</p>
-<p>– What should that model look like?</p>
-<p>– How do we build it?</p>
-<p>– How do we know if it predicts well?</p>
-</section>
-<section id="what-should-it-look-like" class="slide level2">
-<h2>What should it look like?</h2>
-<p>Which model would you prefer?</p>
-
-<img data-src="images/fitting.png" class="r-stretch"></section>
-<section id="model-selection-tools" class="slide level2">
-<h2>Model Selection tools</h2>
-<p>– can most definitely select an overfit model</p>
-</section>
-<section id="overfitting" class="slide level2">
-<h2>Overfitting</h2>
-<p>– Overfitting is a concept in data science, which occurs when a statistical model fits exactly against its data.</p>
-<p>– This doesn’t make sense if are goal is to predict!</p>
-</section>
-<section id="assessing-model-prediction" class="slide level2">
-<h2>Assessing model prediction</h2>
-<p>Vocab…</p>
-<p>– Testing Data Set</p>
-<p>– Training Data Set</p>
-<p>– ROC Curve</p>
-<p>– Sensitivity (True Positive)</p>
-<p>– Specificity (True Negative)</p>
-</section>
-<section id="splitting-the-data" class="slide level2">
-<h2>Splitting the data</h2>
-<p>When the goal is prediction….</p>
-<p>– When able, it may be advantageous to withhold a part of your data when creating your model</p>
-<p>– Can use what’s withheld to evaluate how well your model predicts</p>
-</section>
-<section id="training-data-set" class="slide level2">
-<h2>Training Data Set</h2>
-<p>– training data is the dataset you use to build your model</p>
-<p>– roughly 80% of a larger data set</p>
-<p>“Sandbox” for model building.</p>
-</section>
-<section id="testing-data-set" class="slide level2">
-<h2>Testing Data Set</h2>
-<p>– data to be used to evaluate your model</p>
-<p>– evaluate the predictive performance</p>
-<p>– roughly 20% of the larger data set</p>
-</section>
-<section id="important-note" class="slide level2">
-<h2>Important Note</h2>
-<p>– Training and Testing data sets are created <em>at random</em></p>
-</section>
-<section id="true-positive-rate" class="slide level2">
-<h2>True Positive Rate</h2>
-<p>– Also known as sensitivity</p>
-<p>– Probability of correctly detecting a “success”</p>
-</section>
-<section id="false-positive" class="slide level2">
-<h2>False Positive</h2>
-<p>– a result which incorrectly indicates that a particular condition or attribute is present (something is not there, but we say it is)</p>
-<p>– Incorrectly predicting the truth of “not present”</p>
-<p>– 1 - specificity</p>
-<p>Specificity - how well a test can classify something who truly does not have the condition of interest</p>
-</section>
-<section id="email-context" class="slide level2">
-<h2>Email Context</h2>
-<p>Goal: Create a spam filter (want to predict if an email is spam)</p>
-<p>– Define a true positive</p>
-<p>– Define a false positive</p>
-</section>
-<section id="plotting-predictive-performance" class="slide level2">
-<h2>Plotting predictive performance</h2>
+<section id="warm-up" class="slide level2">
+<h2>Warm Up</h2>
+<p>Last class, we fit a model to predict</p>
 
 <img data-src="images/roc-curve.png" class="r-stretch"></section>
-<section id="receiver-operating-characteristic-curve-roc" class="slide level2">
-<h2>Receiver operating characteristic curve (ROC)</h2>
-<p>– Is a graph showing the performance of a classification model at different classification thresholds</p>
-<p>– The larger the area under the curve is, the better the performance of the model across all thresholds</p>
+<section id="warm-up-1" class="slide level2">
+<h2>Warm Up</h2>
+<p>Go to ae-12. Go to the roc.qmd</p>
+<p>Create your own roc curve using <code>email_fit2</code>.</p>
+<p>Compare the predictive performance to <code>email_fit</code>.</p>
+<p>Is this new model better? Worse? How can you tell?</p>
 </section>
-<section id="ae-11" class="title-slide slide level1 center">
-<h1>ae-11</h1>
-
-</section>
-
-<section>
-<section id="statistical-inference" class="title-slide slide level1 center">
-<h1>Statistical Inference</h1>
-
-</section>
-<section id="statistical-inference-1" class="slide level2">
+<section id="statistical-inference" class="slide level2">
 <h2>Statistical Inference</h2>
-<p><input type="checkbox" unchecked=""> Cleaning Data <input type="checkbox" unchecked=""> EDA  <input type="checkbox" unchecked=""> Modeling  <input type="checkbox" unchecked=""> Statistical Inference </p>
-<p>— Hypothesis Testing</p>
-<p>— Confidence Intervals</p>
-</section>
-<section id="motivate-discussion" class="slide level2">
-<h2>Motivate Discussion</h2>
-<p>How tall are Duke Students?</p>
-<ul>
-<li class="fragment">We don’t know…. but we can collect data and learn more about this</li>
-</ul>
+<p>– the methods of forming judgments about <strong>population parameters</strong></p>
 </section>
 <section id="population-parameters" class="slide level2">
 <h2>Population Parameters</h2>
-<p>– What we are interested in</p>
-<p><span class="math inline">\(\mu\)</span></p>
-<p><span class="math inline">\(\pi\)</span></p>
+<p>– <span class="math inline">\(\mu\)</span></p>
+<p>– <span class="math inline">\(\pi\)</span></p>
 </section>
 <section id="population-parameters-1" class="slide level2">
 <h2>Population Parameters</h2>
-<p>– Are these population parameters different than some value?</p>
-<p>– What is a range of plausible values that the population parameter could be?</p>
+<p>– <span class="math inline">\(\mu_1 - \mu_2\)</span></p>
+<p>– <span class="math inline">\(\pi_1 - pi_2\)</span></p>
 </section>
-<section id="general-process" class="slide level2">
-<h2>General Process</h2>
-<p>– Decide what we want to investigate</p>
-<p>– Collect data</p>
-<p>– We need to quantify variability!</p>
-</section></section>
-<section>
-<section id="distribution" class="title-slide slide level1 center">
-<h1>Distribution</h1>
-
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<p>But…. we don’t know what these values are, so we collect data!</p>
 </section>
-<section id="goals" class="slide level2">
-<h2>Goals</h2>
-<p>– Assess how good your model is at prediction</p>
-<p>– Visualize how well your model predicts new observations</p>
+<section id="sample-statistics" class="slide level2">
+<h2>Sample Statistics</h2>
+<p>– <span class="math inline">\(\bar{x}\)</span></p>
+<p>– <span class="math inline">\(\hat{p}\)</span></p>
+</section>
+<section id="sample-statistics-1" class="slide level2">
+<h2>Sample Statistics</h2>
+<p>– <span class="math inline">\(\bar{x_1} - \bar{x_2}\)</span></p>
+<p>– <span class="math inline">\(\hat{p_1} - \hat{p_2}\)</span></p>
+</section>
+<section id="questions-that-we-will-answer" class="slide level2">
+<h2>Questions that we will answer</h2>
+<p>– Test to see if our population parameter is different than a value (hypothesis testing)</p>
+<p>– Estimate the value of the population parameter</p>
+<p>and we will use data and the idea of variability to answer these questions</p>
+</section>
+<section id="today" class="slide level2">
+<h2>Today</h2>
+<p>We will go through how to conduct a hypothesis test using bootstrapping procedures!</p>
+</section>
+<section id="bootstrap-randomization" class="slide level2">
+<h2>Bootstrap &amp; Randomization</h2>
+<p>Bootstrapping is a statistical procedure that re samples within a single data set to create many simulated samples.</p>
+<p>The term bootstrapping comes from the phrase “pulling oneself up by one’s bootstraps”, which is a metaphor for accomplishing an impossible task without any outside help</p>
+<p>Randomization is when we randomly shuffle within a single data set to create many simulated samples</p>
+</section>
+<section id="why" class="slide level2">
+<h2>Why</h2>
+<p>Impossible task: estimating / testing a population parameter using data from only the given sample.</p>
+<p>Note: This notion of saying something about a population parameter using only information from an observed sample is the crux of statistical inference.</p>
+</section>
+<section id="hypothesis-testing" class="slide level2">
+<h2>Hypothesis Testing</h2>
+<p>– Null hypothesis <span class="math inline">\(\H_o:\)</span></p>
+<p>– Alternative hypothesis <span class="math inline">\(\H_a:\)</span></p>
+</section>
+<section id="null-hypothesis" class="slide level2">
+<h2>Null hypothesis</h2>
+<p>– Assumes “nothing is going on”</p>
+<p>– Sets a parameter = 0</p>
+<p>– Sets group equal to each other</p>
+</section>
+<section id="alternative-hypothesis" class="slide level2">
+<h2>Alternative hypothesis</h2>
+<p>– This is what we are interested in!</p>
+<p>– We dictate this by the sign of our alternative hypothesis</p>
+</section>
+<section id="alternative-hypothesis-1" class="slide level2">
+<h2>Alternative hypothesis</h2>
+<p>– &gt;</p>
+<p>– &lt;</p>
+<p>– <span class="math inline">\(\neq\)</span></p>
+</section>
+<section id="ae-12" class="slide level2">
+<h2>ae-12</h2>
+<p>– p-value</p>
+<p>– significance level</p>
+<p>– Decisions; Conclusions; Interpretations</p>
+</section>
+<section id="when-can-we-trust-these-results" class="slide level2">
+<h2>When can we trust these results?</h2>
+<p>– When the sample we take is representative</p>
+<p><strong>We have a random sample</strong></p>
+<p><strong>Sample size is not very small</strong></p>
 
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="https://github.com/sta199-summer-1">🔗 sta199-summer-1.github.io</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -552,7 +468,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"9b946e9becba71c7","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":"16866265934453593168","id":"f33385346065b658","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -726,7 +642,7 @@
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
-          
+          RevealNotes,
           RevealSearch,
           RevealZoom
         ]

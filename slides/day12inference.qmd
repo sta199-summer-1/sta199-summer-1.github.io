@@ -9,9 +9,11 @@ format: revealjs
 
 -- Clone `ae-12`
 
--- Homework 3 Due tonight (6-13)
+-- Homework 3 Due tonight 11:59 (6-13)
 
 -- Project Proposal Feedback Soon
+
+-- Lab due Thursday 11:59 (6-15)
 
 --- Issues
 
@@ -79,17 +81,19 @@ and we will use data and the idea of variability to answer these questions
 
 We will go through how to conduct a hypothesis test using bootstrapping procedures!
 
-## Bootstrap 
+## Bootstrap & Randomization
 
-Bootstrapping is a statistical procedure that re samples or permutes (shuffles) a single data set to create many simulated samples.
+Bootstrapping is a statistical procedure that re samples within a single data set to create many simulated samples.
 
 The term bootstrapping comes from the phrase “pulling oneself up by one’s bootstraps”, which is a metaphor for accomplishing an impossible task without any outside help
 
+Randomization is when we randomly shuffle within a single data set to create many simulated samples
+
 ## Why
 
-Impossible task: estimating a population parameter using data from only the given sample.
+Impossible task: estimating / testing a population parameter using data from only the given sample.
 
-Note: This notion of saying something about a population parameter using only information from an observed sample is the crux of statistical inference, it is not limited to bootstrapping.
+Note: This notion of saying something about a population parameter using only information from an observed sample is the crux of statistical inference.
 
 ## Hypothesis Testing 
 
@@ -119,7 +123,25 @@ Note: This notion of saying something about a population parameter using only in
 
 -- $\neq$
 
-# ae-12
+## ae-12
+
+-- p-value 
+
+-- significance level 
+
+-- Decisions; Conclusions; Interpretations 
+
+## When can we trust these results? 
+
+-- When the sample we take is representative
+
+**We have a random sample** 
+
+**Sample size is not very small**
+
+
+
+
 
 
 
