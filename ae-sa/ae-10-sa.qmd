@@ -259,7 +259,7 @@ new_email <- tibble(exclaim_mess = 2)
 
 predict(spam_model$fit, new_email) # log-odds
 
-predict(spam_model$fit, new_email, type = "response") # probability
+round(predict(spam_model$fit, new_email, type = "response"),3) # probability
 
 ```
 

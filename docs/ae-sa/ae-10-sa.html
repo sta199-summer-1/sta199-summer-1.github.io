@@ -568,10 +568,10 @@ $ number       &lt;chr&gt; "big", "small", "small", "small", "none", "none", "bi
 <pre><code>        1 
 -2.248108 </code></pre>
 </div>
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">spam_model</span><span class="op">$</span><span class="va">fit</span>, <span class="va">new_email</span>, type <span class="op">=</span> <span class="st">"response"</span><span class="op">)</span> <span class="co"># probability</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">spam_model</span><span class="op">$</span><span class="va">fit</span>, <span class="va">new_email</span>, type <span class="op">=</span> <span class="st">"response"</span><span class="op">)</span>,<span class="fl">3</span><span class="op">)</span> <span class="co"># probability</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>        1 
-0.0955128 </code></pre>
+<pre><code>    1 
+0.096 </code></pre>
 </div>
 </div>
 </section><section id="exercise-3---classification" class="level2"><h2 class="anchored" data-anchor-id="exercise-3---classification">Exercise 3 - Classification</h2>
