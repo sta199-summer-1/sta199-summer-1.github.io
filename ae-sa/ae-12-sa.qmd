@@ -1,0 +1,156 @@
+---
+title: "Intro to Inference: Bootstrap + Hypothesis Testing"
+subtitle: "Suggested Answers"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+# Packages
+
+```{r}
+
+library(tidyverse)
+library(tidymodels)
+library(openintro)
+
+```
+
+# Bootstrap methods: Categorical Variables
+
+## Bumba or Kiki
+
+How well can humans distinguish one "Martian" letter from another?
+
+In today's activity, we'll find out. When shown the two Martian letters, kiki and bumba, please think TO YOURSELF about which letter is kiki. When asked, reveal your answer.
+
+Once it's revealed which option is correct, please write our sample statistic below:
+
+$\hat{p}$ = 13/14 or 0.929 the SAMPLE proportion of students who correctly identified Bumba
+
+Let's write out the null and alternative hypotheses below. This is new! please take notes on all of this information as we go through it.
+
+$\pi$ = the TRUE proportion of students who correctly identified Bumba
+
+$H_o$: $\pi$ = 0.5
+
+$H_a$: $\pi$ \> 0.5
+
+Now, let's quickly make a data frame of the data we just collected as a class. Replace the ... with the number of correct and incorrect guesses.
+
+```{r}
+#| eval: false
+
+
+class_data <- tibble(
+  correct_guess = c((rep("Correct" , 13)), rep("Incorrect" , 1))
+
+)
+```
+
+Now let's simulate our null distribution by filling in the blanks. Below, detail how this distribution is created.
+
+```{r}
+set.seed(333)
+
+null_dist <- class_data |>
+  specify(response = correct_guess, success = "Correct") |>
+  hypothesize(null = "point", p = 0.5) |>
+  generate(reps = 1000, type = "draw") |>
+  calculate(stat = "prop")
+```
+
+Helpful Hint: Remember that you can use `?` next to the function name to pull up the help file!
+
+-- Assume pi = .5
+
+-- Take a random sample with replacement n = 14 times
+
+-- Calculate the new sample proportion
+
+-- Do that entire process 1000 (or something large)
+
+-- Plot it! Plot our null distribution
+
+Calculate and visualize the distribution below. Using this distribution, we are going to calculate a p-value.
+
+What is a p-value?
+
+**A probability of observing our observed statistic, or something "more extreme" given the null hypothesis is true**
+
+How is it used to make decisions?
+
+**We see how small/large it is. We can compare it to a significance level (alpha).**
+
+```{r}
+#| eval: false
+visualize(null_dist) +
+  shade_p_value(0.929 , direction = "right")
+
+null_dist |>
+  get_p_value(0.929 , direction = "right")
+```
+
+Based on our p-value, let's write an appropriate decision, conclusion, and interpretation of a p-value in the context of the problem.
+
+## Significance level
+
+What is it?
+
+$\alpha$ = a measure of the strength of the evidence that must be present in your sample before rejecting the null and concluding your alternative hypothesis. This is normally 0.05, but can be set by the researcher prior to the study.
+
+0.001 \< 0.05
+
+**Decision**: We have evidence to reject the null hypothesis that the true (population) proportion of students who can correctly identify bumba is equal to .5.
+
+-- Always in the context of the null hypothesis
+
+**Conclusion**:
+
+We have evidence to conclude that the true proportion of students who correctly identify bumba is larger than .5.
+
+-- Always in the context of the alternative hypothesis
+
+**Interpretation**: The probability of observing 13 out of 14 students correctly identifying bumba, or something larger, given that the true proportion of students who can correctly identify bumba is equal to 0.5 is 0.001.
+
+So, can we read Martian?
+
+## Ted Talk
+
+http://www.ted.com/talks/vilayanur_ramachandran_on_your_mind
+
+# How does this change if we work with Two Categorical Variables?
+
+## Two Categorical Variables: Case study: CPR and blood thinner
+
+Cardiopulmonary resuscitation (CPR) is a procedure used on individuals suffering a heart attack when other emergency resources are unavailable. This procedure is helpful in providing some blood circulation to keep a person alive, but CPR chest compressions can also cause internal injuries. Internal bleeding and other injuries that can result from CPR complicate additional treatment efforts. For instance, blood thinners may be used to help release a clot that is causing the heart attack once a patient arrives in the hospital. However, blood thinners negatively affect internal injuries.
+
+Here we consider an experiment with patients who underwent CPR for a heart attack and were subsequently admitted to a hospital. Each patient was randomly assigned to either receive a blood thinner (treatment group) or not receive a blood thinner (control group). The outcome variable of interest was whether the patient survived for at least 24 hours. We are interested in if the proportion of patients who died were different between those who were given blood thinners or not. Note: We will considered "died" as a "success"
+
+```{r}
+data(cpr)
+```
+
+Now, write out your null and alternative hypothesis in proper notation (control - treatment).
+
+$H_0$: $\pi_c - \pi_t$ = 0
+
+$H_a$: $\pi_c - \pi_t$ $\neq$ 0
+
+Calculate your sample statistic below. Use proper notation (control - treatment). We will considered "died" as a "success" - what we are taking the proportion of, for the remainder of this activity.
+
+```{r}
+
+cpr |> 
+  group_by(group, outcome) |>
+  summarize(count = n())
+
+estimate <- .78 - .65
+
+```
+
+(Note: Normally, we calculate EDA with summary statistics, but to save time, we are going to skip this part)
+
+## Simulate
+
+Start next class here!

@@ -1,0 +1,272 @@
+---
+title: "Prediction"
+subtitle: "Suggested Answers"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+```{r}
+#| label: load-packages
+#| message: false
+library(tidyverse)
+library(tidymodels)
+library(ggridges)
+library(patchwork)
+library(palmerpenguins)
+```
+
+By the end of today, you will...
+
+-   Practice calculating AIC
+-   Understand the ideas behind testing vs training data sets
+-   (continued) fit a logistic regression model in R
+-   Evaluate your model based on predictions
+
+We will again be working with the email data set. Please re-familiarize yourself with these data below:
+
+```{r}
+email <- read_csv("data/email.csv") |>
+  mutate(spam = factor(spam),
+         image = factor(image),
+         winner = factor(winner))
+```
+
+```{r}
+#|label: glimpse
+
+glimpse(email)
+```
+
+Much like in the multiple linear regression case, we can have multiple predictors to model our categorical response. See example below:
+
+```{r}
+logistic_reg() |>
+  set_engine("glm") |>
+  fit(spam ~ exclaim_mess + winner, data = email) |>
+  tidy()
+```
+
+Based on this output, is it more or less likely an email is spam if the email contains the phrase "winner", after holding the number of exclamation points constant?
+
+**More likely. 1.88 is positive**
+
+What is the predicted probability of an email being spam if there is only 1 exclamation point, and the email contains the phrase winner?
+
+How much does the probability increase/decrease if the email does not contain the phrase "winner"?
+
+```{r}
+#| eval: false
+
+email_fit <- logistic_reg() |>
+  set_engine("glm") |>
+  fit(spam ~ exclaim_mess + winner, data = email, family = "binomial") 
+
+
+new_email <- tibble(exclaim_mess = 1, winner = "yes" )
+
+predict(email_fit$fit, new_email, type = "response") # probability
+
+```
+
+(5-min) The person responsible for this model claims that this is the best model to classify emails as spam. Below, calculate the AIC for their model. Then, create a model that is "better" based on AIC evidence.
+
+```{r}
+
+glance(email_fit)$AIC
+
+class_model <- logistic_reg() |>
+  set_engine("glm") |>
+  fit(spam ~ line_breaks + dollar + winner, data = email , family = "binomial")
+
+glance(class_model)$AIC
+
+```
+
+# Prediction
+
+For the next portion, we are going to compare predictive performance between two models.
+
+The variables we'll use for the first model will be:
+
+-   `spam`: 1 if the email is spam, 0 otherwise
+-   `exclaim_mess`: The number of exclamation points in the email message
+-   `winner`: Has the word "winner" in the email or not
+
+The variables we'll use for the second model will be:
+
+-   `spam`: 1 if the email is spam, 0 otherwise
+-   `exclaim_mess`: The number of exclamation points in the email message
+-   `image`: Had an image attached to the email
+
+## Testing vs Training
+
+Let's build a testing and training data set using the following code.
+
+-- Go through line by line and comment what the code is doing...
+
+Once complete, take a glimpse at each new data set.
+
+```{r}
+set.seed(0610) 
+
+email_split <- initial_split(email, prop = 0.80) 
+
+train_data <- training(email_split)
+test_data <- testing(email_split)
+
+glimpse(test_data)
+```
+
+Now that our testing and training data sets have been built, let's practice picking a model!
+
+1)  Refit the first model with the training data. Next, fit the other additive generalized linear model below (you have fit email_fit above). Name these models email_fit and email_fit2
+
+```{r}
+
+email_fit <- logistic_reg() |>
+  set_engine("glm") |>
+  fit(spam ~ exclaim_mess + winner, data = train_data, family = "binomial")
+
+email_fit2 <- logistic_reg() |>
+  set_engine("glm") |>
+  fit(spam ~ exclaim_mess + image , data = train_data, family = "binomial")
+
+```
+
+## Prediction
+
+Now, let's evaluate our models using our test data using the following code below. Comment on what the code is doing...
+
+```{r}
+email_pred <- predict(email_fit, test_data, type = "prob") |>  
+  bind_cols(test_data |> select(spam))  
+```
+
+## How can we plot this?
+
+Make an Receiver operating characteristic (ROC) curve (plot true positive rate vs false positive rate)
+
+```{r}
+email_pred |>
+  roc_curve(
+    truth = spam, 
+    .pred_1, 
+    event_level = "second" #which level is a success?
+  ) |>
+  autoplot()
+
+
+```
+
+What is this ROC curve telling us? How was the ROC curve created?
+
+**The relationship at different cutoffs between true positive and false positives**
+
+```{r}
+
+## all of the thresholds and predictions are in these data here
+
+email_pred |>
+  roc_curve(
+    truth = spam, 
+    .pred_1, 
+    event_level = "second" #which level is a success?
+  ) 
+
+email_pred |>
+  arrange(.pred_1)
+```
+
+## Area under the curve
+
+We can calculate the area under the curve using the following code:
+
+```{r}
+
+email_pred |>
+  roc_auc(
+    truth = spam, 
+    .pred_1, 
+    event_level = "second" #which level is a success
+  ) 
+
+```
+
+What is the AUC?
+
+**0.663**
+
+There are two things we can do with this number...
+
+-- Is this number \> 0.5?
+
+-- How does this number compare to another AUC calculation?
+
+# Check Linear Regression Models
+
+## What if we don't have a testing data set?
+
+![](images/penguin.png){fig-align="center"}
+
+These are the data our model were trained on. Not optimal for assessing performance but it is something.
+
+Even if we don't have a test data set, we could still create a new column of predictions like before:
+
+Context of Penguins data set
+
+```{r}
+# predict based on new data
+
+myPredictiveModel <- linear_reg() |>
+  set_engine("lm") |>
+  fit(body_mass_g ~ flipper_length_mm, data = penguins)
+
+predict_peng <- penguins |>
+  mutate(myPrediction = predict(myPredictiveModel, penguins)$.pred)
+
+```
+
+From here we can plot $\hat{y}$ vs $y$:
+
+```{r}
+predict_peng |>
+  ggplot(aes(x = body_mass_g, y = myPrediction)) +
+  geom_point() +
+  labs(x = "True Body Mass", y = "Predicted Body Mass", title = "Predicted vs True Body Mass") +
+  geom_abline(slope = 1, intercept = 0, color = "steelblue")
+```
+
+## Assumptions of Linear Regression
+
+Alternatively, we could create a **residual plot**. Residual plots can be used to assess whether a linear model is appropriate.
+
+A common assumption of linear regression models is that the error term, $\epsilon$, has constant variance everywhere.
+
+-   If the linear model is appropriate, a residual plot should show this.
+
+-   **Patterned or non-constant residual spread may sometimes be indicative a model is missing predictors or missing interactions.**
+
+## Residuals
+
+Create a new column `residuals` in `predict_peng` and save your data frame as `predict_peng_2`
+
+```{r}
+
+predict_peng_2 <- predict_peng |>
+  mutate(residuals = body_mass_g - myPrediction)
+
+
+```
+
+## The Plot
+
+```{r}
+predict_peng_2 |>
+  ggplot(aes(x = myPrediction, y = residuals)) + 
+  geom_point() +
+  geom_hline(yintercept = 0) +
+  labs(x = "Predicted body_mass", y = "Residual")
+```
+
+Note: If you encounter a residual plot where the points in the plot have a curved pattern, it likely means that the regression model you have specified for the data is not correct.
