@@ -236,6 +236,29 @@ ul.task-list{list-style: none;}
   </ul></li>
   <li><a href="#proposal-grading" id="toc-proposal-grading" class="nav-link" data-scroll-target="#proposal-grading">Proposal grading</a></li>
   <li><a href="#reproducibility-organization" id="toc-reproducibility-organization" class="nav-link" data-scroll-target="#reproducibility-organization">Reproducibility + organization</a></li>
+  </ul></li>
+  <li><a href="#draft" id="toc-draft" class="nav-link" data-scroll-target="#draft">Draft</a>
+  <ul class="collapse">
+  <li><a href="#draft-components" id="toc-draft-components" class="nav-link" data-scroll-target="#draft-components">Draft components</a></li>
+  <li><a href="#draft-grading" id="toc-draft-grading" class="nav-link" data-scroll-target="#draft-grading">Draft grading</a></li>
+  </ul></li>
+  <li><a href="#presentation-slides" id="toc-presentation-slides" class="nav-link" data-scroll-target="#presentation-slides">Presentation + slides</a>
+  <ul class="collapse">
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a>
+  <ul class="collapse">
+  <li><a href="#tips-for-slides-presentation" id="toc-tips-for-slides-presentation" class="nav-link" data-scroll-target="#tips-for-slides-presentation">Tips for Slides / Presentation</a></li>
+  </ul></li>
+  <li><a href="#report-components" id="toc-report-components" class="nav-link" data-scroll-target="#report-components">Report components</a>
+  <ul class="collapse">
+  <li><a href="#introduction-and-data-2" id="toc-introduction-and-data-2" class="nav-link" data-scroll-target="#introduction-and-data-2">Introduction and data</a></li>
+  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review">Literature Review</a></li>
+  <li><a href="#methodology-1" id="toc-methodology-1" class="nav-link" data-scroll-target="#methodology-1">Methodology</a></li>
+  <li><a href="#results-1" id="toc-results-1" class="nav-link" data-scroll-target="#results-1">Results</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#organization-formatting" id="toc-organization-formatting" class="nav-link" data-scroll-target="#organization-formatting">Organization + formatting</a></li>
+  </ul></li>
+  <li><a href="#report-grading" id="toc-report-grading" class="nav-link" data-scroll-target="#report-grading">Report grading</a></li>
   <li><a href="#teamwork" id="toc-teamwork" class="nav-link" data-scroll-target="#teamwork">Teamwork</a></li>
   </ul></li>
   <li><a href="#overall-grading" id="toc-overall-grading" class="nav-link" data-scroll-target="#overall-grading">Overall grading</a>
@@ -458,9 +481,199 @@ Important
 <p>All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized.</p>
 <p>Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.</p>
 </section>
+</section>
+<section id="draft" class="level1">
+<h1>Draft</h1>
+<p>The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis and initial interpretations.</p>
+<p>Write the draft in the <code>report.qmd</code> file in your project repo after you have selected ONE data set to use and have responded to all feedback given from the proposal. Note, that your RQ can change from the proposal if you are interested in some of the new methodology we are starting to learn now.</p>
+<p>As you work on the draft, the focus should be on the analysis and less on crafting the final report. <strong>Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, prediction or modeling, and deriving initial results and conclusions.</strong></p>
+<p>Below is a brief description of the sections to focus on in the draft.</p>
+<section id="draft-components" class="level2">
+<h2 class="anchored" data-anchor-id="draft-components">Draft components</h2>
+<section id="introduction-and-data-1" class="level4">
+<h4 class="anchored" data-anchor-id="introduction-and-data-1">Introduction and data</h4>
+<p>The introduction provides motivation and context for your research. Describe your topic (citing sources) and provide a concise, clear statement of your research question and hypotheses. Additionally, consider any potential ethical issues that you believe should be addressed (if any) regarding how your data were collected.</p>
+<p>Then identify the source of the data, when and how it was collected, the cases, a general description of relevant variables.</p>
+</section>
+<section id="methodology" class="level4">
+<h4 class="anchored" data-anchor-id="methodology">Methodology</h4>
+<p>The methodology section should include visualizations and summary statistics relevant to your research question. You should also justify the choice of statistical method(s) used to answer your research question.</p>
+</section>
+<section id="results" class="level4">
+<h4 class="anchored" data-anchor-id="results">Results</h4>
+<p>Showcase how you arrived at answers to your research question using the techniques we have learned in class (and beyond, if you’re feeling adventurous).</p>
+<p>Provide only the main results from your analysis. The goal is not to do an exhaustive data analysis (calculate every possible statistic and perform every possible procedure for all variables). Rather, you should demonstrate that you are proficient at asking meaningful questions and answering them using data, that you are skilled in interpreting and presenting results, and that you can accomplish these tasks using R. More is not better.</p>
+</section>
+<section id="workflow-formatting" class="level4">
+<h4 class="anchored" data-anchor-id="workflow-formatting">Workflow + Formatting</h4>
+<p>To earn full credit, please be mindful of the following:</p>
+<p>Have an updated <code>about</code> qmd for your project.</p>
+<p>Responded to / Closed all <em>issues</em> from your proposal.</p>
+<p>Your website must be able to be rendered by me and your lab leader prior to submission.</p>
+<p><strong>EVERYONE</strong> in your group must have at least 1 meaningful commit.</p>
+<p>Pipes %&gt;%, |&gt; and ggplot layers + should be followed by a new line.</p>
+<p>All binary operators should be surrounded by space. For example x + y is appropriate. x+y is not.</p>
+</section>
+</section>
+<section id="draft-grading" class="level2">
+<h2 class="anchored" data-anchor-id="draft-grading">Draft grading</h2>
+<p>The project draft report grade is worth 10 points and will be graded by your Lab Leaders and will be graded as follows:</p>
+<ul>
+<li><p><strong>Meets expectations (full credit)</strong>: All required elements are completed and are accurate. The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.</p></li>
+<li><p><strong>Close to expectations (half credit)</strong>: There are some elements missing and/or inaccurate. There are some issues with formatting.</p></li>
+<li><p><strong>Does not meet expectations (no credit)</strong>: Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting.</p></li>
+</ul>
+<p>It is critical to check feedback on your project proposal. Even if you earn full credit, it may not mean that your proposal is perfect.</p>
+</section>
+</section>
+<section id="presentation-slides" class="level1">
+<h1>Presentation + slides</h1>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>In addition to the written report, your team will also create presentation slides and record a video presentation that summarize and showcase your project. Introduce your research question and data set, showcase visualizations, and discuss the primary conclusions. These slides should serve as a brief visual addition to your written report and will be graded for content and quality.</p>
+<p>You can create your slides with any software you like (Keynote, PowerPoint, Google Slides, etc.). We recommend choosing an option that’s easy to collaborate with, e.g., Google Slides.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can also use Quarto to make your slides! While we won’t be covering making slides with Quarto in the class, we would be happy to help you with it in office hours. It’s no different than writing other documents with Quarto, so the learning curve will not be steep!</p>
+</div>
+</div>
+<p>Here is a <em>suggested</em> outline as you think through the slides; Note, you should feel free to add additional slides to help better explain your research.</p>
+<ul>
+<li>Title Slide</li>
+<li>Slide 1: Introduce the topic and motivation</li>
+<li>Slide 2: Introduce the data</li>
+<li>Slide 3: Highlights from EDA</li>
+<li>Slide 4-5: Inference/modeling/other analysis</li>
+<li>Slide 6: Conclusions + future work</li>
+</ul>
+</section>
+<section id="presentation" class="level2">
+<h2 class="anchored" data-anchor-id="presentation">Presentation</h2>
+<p>Presentations will take place in class during our scheduled final exam time on June 29th from 9AM- 12PM. We will not need the full three hours. <strong>The presentation should be between 5-15 minutes.</strong> The expectation is that you present live in class (recommended). Additionally, you <strong>must attend the final session</strong> for the Q&amp;A following your presentation. If you have an extreme circumstance that prohibits you from attending class, you must complete the following:</p>
+<ol type="1">
+<li><p>Communicate this with your group ASAP.</p></li>
+<li><p>Pre-record your portion of the presentation to be played during presentation time.</p></li>
+<li><p>Expect an email with 1-2 questions (from me) about the content from your pre-recorded section to ensure you get practice answering questions. Failure to answer these questions will impact your grade.</p></li>
+</ol>
+<p>If you must pre-record your presentation, you may use can use any platform that works best for your group to record your presentation. Below are a few resources on recording videos:</p>
+<ul>
+<li><a href="https://kb.siue.edu/61721">Recording presentations in Zoom</a></li>
+<li><a href="https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac">Apple Quicktime for screen recording</a></li>
+<li><a href="https://www.youtube.com/watch?v=OfPbr1mRDuo">Windows 10 built-in screen recording functionality</a></li>
+<li><a href="https://getkap.co/">Kap for screen recording</a></li>
+</ul>
+<section id="tips-for-slides-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="tips-for-slides-presentation">Tips for Slides / Presentation</h3>
+<p>– When presenting, we should be focusing on YOU and not trying to read your slides.</p>
+<p>– The less words, the better.</p>
+<p>– Visualizations do a great job at helping the audience through your presentation.</p>
+<p>– Visualizations can often appear to small when projected, making them more distracting than useful. Make sure that your visualizations are large enough for the audience to be able to read labels / understand what is going on.</p>
+<p>– Tell a story. Nobody knows about the research you have done. Why are you interested in it? Why is this topic important? Quickly situating the audience here can help grab their attention prior to going into the details.</p>
+<p>– Limitations: No research study is perfect, and it is important to reconize this (normally at the end of the presentation). What limitations did you face with data / statistical inference? If you could continue this project, what new steps might you take? etc.</p>
+</section>
+</section>
+<section id="report-components" class="level2">
+<h2 class="anchored" data-anchor-id="report-components">Report components</h2>
+<section id="introduction-and-data-2" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-and-data-2">Introduction and data</h3>
+<p>This section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.</p>
+<section id="grading-criteria" class="level4">
+<h4 class="anchored" data-anchor-id="grading-criteria">Grading criteria</h4>
+<p>The research question and motivation are clearly stated in the introduction, including citations for the data source and any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report. The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.)</p>
+</section>
+</section>
+<section id="literature-review" class="level3">
+<h3 class="anchored" data-anchor-id="literature-review">Literature Review</h3>
+<p>This section includes an overview of one previously published work on your topic of interest. This includes a summary on the author’s study design, findings/results, as well as how your study is related to + adds to the existing literature on the topic. You may use footnote citations for referenced literature.</p>
+<section id="grading-criteria-1" class="level4">
+<h4 class="anchored" data-anchor-id="grading-criteria-1">Grading criteria</h4>
+<p>The article is clearly referenced and the connection between the article you have chosen with your research is clear. The article is well summarized to the point that the reader understands the article “at a high level”, including how the study were designed and the results that came out of it. It is clearly articulated how your study pushes the existing literature on your topic of interest, answering the question “Why is your research important?”</p>
+</section>
+</section>
+<section id="methodology-1" class="level3">
+<h3 class="anchored" data-anchor-id="methodology-1">Methodology</h3>
+<p>This section includes any exploratory data analysis and a brief description of your statistical procedure. If you are fitting a model, explain the reasoning for the type of model you’re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.</p>
+<p>If you are conducting a hypothesis test or creating a confidence interval, justify your decision, specifically on how it relates to your research question. Justify if you are going to use theory or simulation based techniques. Use resulting output to help address your research question.</p>
+<p>You may use more than one statistical method to answer your research question.</p>
+<section id="grading-criteria-2" class="level4">
+<h4 class="anchored" data-anchor-id="grading-criteria-2">Grading criteria</h4>
+<p>The analysis steps are appropriate for the data and research question. The group used a thorough and careful approach to determine analyses types and addressed any concerns over appropriateness of analyses chosen.</p>
+</section>
+</section>
+<section id="results-1" class="level3">
+<h3 class="anchored" data-anchor-id="results-1">Results</h3>
+<p>This is where you will discuss your overall finding and describe the key results from your analysis. The goal is not to interpret every single element of an output shown, but instead to address the research questions, using the interpretations to support your conclusions. Focus on the variables that help you answer the research question and that provide relevant context for the reader.</p>
+<section id="grading-criteria-3" class="level4">
+<h4 class="anchored" data-anchor-id="grading-criteria-3">Grading criteria</h4>
+<p>The analysis results are clearly assessed and interesting findings from the analysis are described. Interpretations are used to to support the key findings and conclusions, rather than merely listing, e.g., the interpretation of every model coefficient.</p>
+</section>
+</section>
+<section id="discussion" class="level3">
+<h3 class="anchored" data-anchor-id="discussion">Discussion</h3>
+<p>In this section you’ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Lastly, this section will include ideas for future work.</p>
+<section id="grading-criteria-4" class="level4">
+<h4 class="anchored" data-anchor-id="grading-criteria-4">Grading criteria</h4>
+<p>Overall conclusions from analysis are clearly described, and the analysis results are put into the larger context of the subject matter and original research question. There is thoughtful consideration of potential limitations of the data and/or analysis, and ideas for future work are clearly described.</p>
+</section>
+</section>
+<section id="organization-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="organization-formatting">Organization + formatting</h3>
+<p>This is an assessment of the overall presentation and formatting of the written report.</p>
+<section id="grading-criteria-5" class="level4">
+<h4 class="anchored" data-anchor-id="grading-criteria-5">Grading criteria</h4>
+<p>The report neatly written and organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All citations and links are properly formatted. If there is an appendix, it is reasonably organized and easy for the reader to find relevant information. All code, warnings, and messages are suppressed. The main body of the written report (not including the appendix or plots) is recommended to be no longer than 10 pages. If you go past this, it is okay, but you may need to start thinking about the content of your report, and if their is “fluff” added to it.</p>
+</section>
+</section>
+</section>
+<section id="report-grading" class="level2">
+<h2 class="anchored" data-anchor-id="report-grading">Report grading</h2>
+<p>The written report is worth 40 points, broken down as follows</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Total</th>
+<th>40 pts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Introduction/data</strong></td>
+<td>5 pts</td>
+</tr>
+<tr class="even">
+<td><strong>Literature Review</strong></td>
+<td>3 pts</td>
+</tr>
+<tr class="odd">
+<td><strong>Methodology</strong></td>
+<td>10 pts</td>
+</tr>
+<tr class="even">
+<td><strong>Results</strong></td>
+<td>12 pts</td>
+</tr>
+<tr class="odd">
+<td><strong>Discussion</strong></td>
+<td>6 pts</td>
+</tr>
+<tr class="even">
+<td><strong>Organization + formatting</strong></td>
+<td>4 pts</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="teamwork" class="level2">
 <h2 class="anchored" data-anchor-id="teamwork">Teamwork</h2>
-<p>You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please provide some explanation. <strong>If any individual gets an average peer score indicating that this was the case, their grade will be assessed accordingly and penalties may apply beyond the teamwork component of the grade.</strong></p>
+<p>You will be asked to fill out a surveys where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please provide some explanation. <strong>If any individual gets an average peer score indicating that this was the case, their grade will be assessed accordingly and penalties may apply beyond the teamwork component of the grade.</strong></p>
 <p>If this is not indicated on the survey, I will assume everyone on the team equally contributed and will receive full credit for the teamwork portion of the grade.</p>
 </section>
 </section>

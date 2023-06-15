@@ -12,7 +12,7 @@ title: "project-description-s23"
 
 [Presentation + slides](#video-presentation--slides) due April 25th
 
-[Final report](#written-report) and [final GitHub repo] due April 28th
+[Final report](#written-report) and \[final GitHub repo\] due April 28th
 
 # Introduction
 
@@ -254,7 +254,7 @@ This section includes an introduction to the project motivation, data, and resea
 
 #### Grading criteria
 
-The research question and motivation are clearly stated in the introduction, including citations for the data source and any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report. The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.) 
+The research question and motivation are clearly stated in the introduction, including citations for the data source and any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report. The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.)
 
 ### Literature Review
 
