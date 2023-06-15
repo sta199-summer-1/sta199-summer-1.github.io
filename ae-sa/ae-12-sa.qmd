@@ -39,7 +39,6 @@ $H_a$: $\pi$ \> 0.5
 Now, let's quickly make a data frame of the data we just collected as a class. Replace the ... with the number of correct and incorrect guesses.
 
 ```{r}
-#| eval: false
 
 
 class_data <- tibble(

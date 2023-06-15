@@ -462,6 +462,111 @@
     "text": "Exercise 3 - Classification\nWe have the probability an email is spam, but ultimately we want to use the probability to classify an email as spam or not spam. Therefore, we need to set a decision-making threshold, such that an email is classified as spam if the predicted probability is greater than the threshold and not spam otherwise.\nSuppose you are a data scientist working on a spam filter. You must determine how high the predicted probability must be before you think it would be reasonable to call it spam and put it in the junk folder (which the user is unlikely to check).\nWhat are some tradeoffs you would consider as you set the decision-making threshold? Discuss with your neighbor.\nAWV: Think about benefits and consequences of making a threshold to low vs to high in this context…. what about in a situation more serious?\n\nemail <- email |>\n  mutate(pred_prob = predict(spam_model$fit, type = \"response\"))\nggplot(data = email) + \n  geom_point(aes(x = exclaim_mess, y = as.numeric(spam) -1, \n                        color = spam)) + \n  geom_line(aes(x = exclaim_mess, y = pred_prob)) + \n  labs(x = \"Number of exclamation points\", \n       y = \"Predicted probability an email is spam\", \n       color = \"Is email spam?\"\n       )\n\n\n\n\nNext time, we will discuss how to evaluate these models with testing + training data sets!"
   },
   {
+    "objectID": "ae-sa/ae-11-sa.html",
+    "href": "ae-sa/ae-11-sa.html",
+    "title": "Prediction",
+    "section": "",
+    "text": "library(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.2.2\n\n\nWarning: package 'tidyr' was built under R version 4.2.2\n\n\nWarning: package 'readr' was built under R version 4.2.2\n\n\nWarning: package 'purrr' was built under R version 4.2.2\n\nlibrary(tidymodels)\n\nWarning: package 'broom' was built under R version 4.2.2\n\n\nWarning: package 'dials' was built under R version 4.2.2\n\n\nWarning: package 'parsnip' was built under R version 4.2.2\n\n\nWarning: package 'recipes' was built under R version 4.2.2\n\nlibrary(ggridges)\n\nWarning: package 'ggridges' was built under R version 4.2.2\n\nlibrary(patchwork)\nlibrary(palmerpenguins)\nBy the end of today, you will…\nWe will again be working with the email data set. Please re-familiarize yourself with these data below:\nMuch like in the multiple linear regression case, we can have multiple predictors to model our categorical response. See example below:\nBased on this output, is it more or less likely an email is spam if the email contains the phrase “winner”, after holding the number of exclamation points constant?\nMore likely. 1.88 is positive\nWhat is the predicted probability of an email being spam if there is only 1 exclamation point, and the email contains the phrase winner?\nHow much does the probability increase/decrease if the email does not contain the phrase “winner”?\n(5-min) The person responsible for this model claims that this is the best model to classify emails as spam. Below, calculate the AIC for their model. Then, create a model that is “better” based on AIC evidence."
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#testing-vs-training",
+    "href": "ae-sa/ae-11-sa.html#testing-vs-training",
+    "title": "Prediction",
+    "section": "Testing vs Training",
+    "text": "Testing vs Training\nLet’s build a testing and training data set using the following code.\n– Go through line by line and comment what the code is doing…\nOnce complete, take a glimpse at each new data set.\n\nset.seed(0610) \n\nemail_split <- initial_split(email, prop = 0.80) \n\ntrain_data <- training(email_split)\ntest_data <- testing(email_split)\n\nglimpse(test_data)\n\nRows: 778\nColumns: 21\n$ spam         <fct> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ to_multiple  <dbl> 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, …\n$ from         <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …\n$ cc           <dbl> 0, 2, 0, 0, 2, 0, 0, 0, 0, 3, 0, 1, 0, 0, 0, 1, 0, 0, 2, …\n$ sent_email   <dbl> 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, …\n$ time         <dttm> 2012-01-01 10:00:01, 2012-01-01 23:32:53, 2012-01-02 01:…\n$ image        <fct> 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ attach       <dbl> 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ dollar       <dbl> 0, 2, 0, 9, 0, 0, 0, 2, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ winner       <fct> no, no, no, no, no, no, no, no, yes, no, no, no, no, no, …\n$ inherit      <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ viagra       <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ password     <dbl> 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ num_char     <dbl> 1.231, 19.693, 0.596, 11.453, 7.813, 1.566, 15.420, 7.844…\n$ line_breaks  <dbl> 29, 330, 33, 344, 97, 39, 595, 142, 134, 248, 279, 68, 38…\n$ format       <dbl> 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, …\n$ re_subj      <dbl> 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, …\n$ exclaim_subj <dbl> 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, …\n$ urgent_subj  <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …\n$ exclaim_mess <dbl> 1, 4, 2, 4, 1, 3, 9, 6, 10, 0, 2, 16, 0, 1, 4, 4, 0, 8, 4…\n$ number       <chr> \"none\", \"big\", \"small\", \"big\", \"small\", \"small\", \"big\", \"…\n\n\nNow that our testing and training data sets have been built, let’s practice picking a model!\n\nRefit the first model with the training data. Next, fit the other additive generalized linear model below (you have fit email_fit above). Name these models email_fit and email_fit2\n\n\nemail_fit <- logistic_reg() |>\n  set_engine(\"glm\") |>\n  fit(spam ~ exclaim_mess + winner, data = train_data, family = \"binomial\")\n\nemail_fit2 <- logistic_reg() |>\n  set_engine(\"glm\") |>\n  fit(spam ~ exclaim_mess + image , data = train_data, family = \"binomial\")"
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#prediction-1",
+    "href": "ae-sa/ae-11-sa.html#prediction-1",
+    "title": "Prediction",
+    "section": "Prediction",
+    "text": "Prediction\nNow, let’s evaluate our models using our test data using the following code below. Comment on what the code is doing…\n\nemail_pred <- predict(email_fit, test_data, type = \"prob\") |>  \n  bind_cols(test_data |> select(spam))"
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#how-can-we-plot-this",
+    "href": "ae-sa/ae-11-sa.html#how-can-we-plot-this",
+    "title": "Prediction",
+    "section": "How can we plot this?",
+    "text": "How can we plot this?\nMake an Receiver operating characteristic (ROC) curve (plot true positive rate vs false positive rate)\n\nemail_pred |>\n  roc_curve(\n    truth = spam, \n    .pred_1, \n    event_level = \"second\" #which level is a success?\n  ) |>\n  autoplot()\n\n\n\n\nWhat is this ROC curve telling us? How was the ROC curve created?\nThe relationship at different cutoffs between true positive and false positives\n\n## all of the thresholds and predictions are in these data here\n\nemail_pred |>\n  roc_curve(\n    truth = spam, \n    .pred_1, \n    event_level = \"second\" #which level is a success?\n  ) \n\n# A tibble: 47 × 3\n      .threshold specificity sensitivity\n           <dbl>       <dbl>       <dbl>\n 1 -Inf              0             1    \n 2    0.00000952     0             1    \n 3    0.0000144      0.00280       1    \n 4    0.0000217      0.00420       1    \n 5    0.0000494      0.00420       0.984\n 6    0.0000917      0.00560       0.984\n 7    0.000138       0.00700       0.984\n 8    0.000209       0.00840       0.984\n 9    0.000257       0.0126        0.984\n10    0.000315       0.0182        0.984\n# … with 37 more rows\n\nemail_pred |>\n  arrange(.pred_1)\n\n# A tibble: 778 × 3\n   .pred_0    .pred_1 spam \n     <dbl>      <dbl> <fct>\n 1    1.00 0.00000952 0    \n 2    1.00 0.00000952 0    \n 3    1.00 0.0000144  0    \n 4    1.00 0.0000217  1    \n 5    1.00 0.0000494  0    \n 6    1.00 0.0000917  0    \n 7    1.00 0.000138   0    \n 8    1.00 0.000209   0    \n 9    1.00 0.000209   0    \n10    1.00 0.000209   0    \n# … with 768 more rows"
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#area-under-the-curve",
+    "href": "ae-sa/ae-11-sa.html#area-under-the-curve",
+    "title": "Prediction",
+    "section": "Area under the curve",
+    "text": "Area under the curve\nWe can calculate the area under the curve using the following code:\n\nemail_pred |>\n  roc_auc(\n    truth = spam, \n    .pred_1, \n    event_level = \"second\" #which level is a success\n  ) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  <chr>   <chr>          <dbl>\n1 roc_auc binary         0.663\n\n\nWhat is the AUC?\n0.663\nThere are two things we can do with this number…\n– Is this number > 0.5?\n– How does this number compare to another AUC calculation?"
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#what-if-we-dont-have-a-testing-data-set",
+    "href": "ae-sa/ae-11-sa.html#what-if-we-dont-have-a-testing-data-set",
+    "title": "Prediction",
+    "section": "What if we don’t have a testing data set?",
+    "text": "What if we don’t have a testing data set?\n\n\n\n\nThese are the data our model were trained on. Not optimal for assessing performance but it is something.\nEven if we don’t have a test data set, we could still create a new column of predictions like before:\nContext of Penguins data set\n\n# predict based on new data\n\nmyPredictiveModel <- linear_reg() |>\n  set_engine(\"lm\") |>\n  fit(body_mass_g ~ flipper_length_mm, data = penguins)\n\npredict_peng <- penguins |>\n  mutate(myPrediction = predict(myPredictiveModel, penguins)$.pred)\n\nFrom here we can plot \\(\\hat{y}\\) vs \\(y\\):\n\npredict_peng |>\n  ggplot(aes(x = body_mass_g, y = myPrediction)) +\n  geom_point() +\n  labs(x = \"True Body Mass\", y = \"Predicted Body Mass\", title = \"Predicted vs True Body Mass\") +\n  geom_abline(slope = 1, intercept = 0, color = \"steelblue\")\n\nWarning: Removed 2 rows containing missing values (`geom_point()`)."
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#assumptions-of-linear-regression",
+    "href": "ae-sa/ae-11-sa.html#assumptions-of-linear-regression",
+    "title": "Prediction",
+    "section": "Assumptions of Linear Regression",
+    "text": "Assumptions of Linear Regression\nAlternatively, we could create a residual plot. Residual plots can be used to assess whether a linear model is appropriate.\nA common assumption of linear regression models is that the error term, \\(\\epsilon\\), has constant variance everywhere.\n\nIf the linear model is appropriate, a residual plot should show this.\nPatterned or non-constant residual spread may sometimes be indicative a model is missing predictors or missing interactions."
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#residuals",
+    "href": "ae-sa/ae-11-sa.html#residuals",
+    "title": "Prediction",
+    "section": "Residuals",
+    "text": "Residuals\nCreate a new column residuals in predict_peng and save your data frame as predict_peng_2\n\npredict_peng_2 <- predict_peng |>\n  mutate(residuals = body_mass_g - myPrediction)"
+  },
+  {
+    "objectID": "ae-sa/ae-11-sa.html#the-plot",
+    "href": "ae-sa/ae-11-sa.html#the-plot",
+    "title": "Prediction",
+    "section": "The Plot",
+    "text": "The Plot\n\npredict_peng_2 |>\n  ggplot(aes(x = myPrediction, y = residuals)) + \n  geom_point() +\n  geom_hline(yintercept = 0) +\n  labs(x = \"Predicted body_mass\", y = \"Residual\")\n\nWarning: Removed 2 rows containing missing values (`geom_point()`).\n\n\n\n\n\nNote: If you encounter a residual plot where the points in the plot have a curved pattern, it likely means that the regression model you have specified for the data is not correct."
+  },
+  {
+    "objectID": "ae-sa/ae-12-sa.html",
+    "href": "ae-sa/ae-12-sa.html",
+    "title": "Intro to Inference: Bootstrap + Hypothesis Testing",
+    "section": "",
+    "text": "library(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.4.0     ✔ purrr   0.3.5\n✔ tibble  3.1.8     ✔ dplyr   1.0.9\n✔ tidyr   1.2.1     ✔ stringr 1.4.1\n✔ readr   2.1.3     ✔ forcats 0.5.2\n\n\nWarning: package 'ggplot2' was built under R version 4.2.2\n\n\nWarning: package 'tidyr' was built under R version 4.2.2\n\n\nWarning: package 'readr' was built under R version 4.2.2\n\n\nWarning: package 'purrr' was built under R version 4.2.2\n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(tidymodels)\n\n── Attaching packages ────────────────────────────────────── tidymodels 1.0.0 ──\n✔ broom        1.0.1     ✔ rsample      1.1.0\n✔ dials        1.1.0     ✔ tune         1.0.1\n✔ infer        1.0.3     ✔ workflows    1.1.0\n✔ modeldata    1.0.1     ✔ workflowsets 1.0.0\n✔ parsnip      1.0.3     ✔ yardstick    1.1.0\n✔ recipes      1.0.3     \n\n\nWarning: package 'broom' was built under R version 4.2.2\n\n\nWarning: package 'dials' was built under R version 4.2.2\n\n\nWarning: package 'parsnip' was built under R version 4.2.2\n\n\nWarning: package 'recipes' was built under R version 4.2.2\n\n\n── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──\n✖ scales::discard() masks purrr::discard()\n✖ dplyr::filter()   masks stats::filter()\n✖ recipes::fixed()  masks stringr::fixed()\n✖ dplyr::lag()      masks stats::lag()\n✖ yardstick::spec() masks readr::spec()\n✖ recipes::step()   masks stats::step()\n• Dig deeper into tidy modeling with R at https://www.tmwr.org\n\nlibrary(openintro)\n\nLoading required package: airports\nLoading required package: cherryblossom\nLoading required package: usdata\n\nAttaching package: 'openintro'\n\nThe following object is masked from 'package:modeldata':\n\n    ames"
+  },
+  {
+    "objectID": "ae-sa/ae-12-sa.html#bumba-or-kiki",
+    "href": "ae-sa/ae-12-sa.html#bumba-or-kiki",
+    "title": "Intro to Inference: Bootstrap + Hypothesis Testing",
+    "section": "Bumba or Kiki",
+    "text": "Bumba or Kiki\nHow well can humans distinguish one “Martian” letter from another?\nIn today’s activity, we’ll find out. When shown the two Martian letters, kiki and bumba, please think TO YOURSELF about which letter is kiki. When asked, reveal your answer.\nOnce it’s revealed which option is correct, please write our sample statistic below:\n\\(\\hat{p}\\) = 13/14 or 0.929 the SAMPLE proportion of students who correctly identified Bumba\nLet’s write out the null and alternative hypotheses below. This is new! please take notes on all of this information as we go through it.\n\\(\\pi\\) = the TRUE proportion of students who correctly identified Bumba\n\\(H_o\\): \\(\\pi\\) = 0.5\n\\(H_a\\): \\(\\pi\\) > 0.5\nNow, let’s quickly make a data frame of the data we just collected as a class. Replace the … with the number of correct and incorrect guesses.\n\nclass_data <- tibble(\n  correct_guess = c((rep(\"Correct\" , 13)), rep(\"Incorrect\" , 1))\n\n)\n\nNow let’s simulate our null distribution by filling in the blanks. Below, detail how this distribution is created.\n\nset.seed(333)\n\nnull_dist <- class_data |>\n  specify(response = correct_guess, success = \"Correct\") |>\n  hypothesize(null = \"point\", p = 0.5) |>\n  generate(reps = 1000, type = \"draw\") |>\n  calculate(stat = \"prop\")\n\nHelpful Hint: Remember that you can use ? next to the function name to pull up the help file!\n– Assume pi = .5\n– Take a random sample with replacement n = 14 times\n– Calculate the new sample proportion\n– Do that entire process 1000 (or something large)\n– Plot it! Plot our null distribution\nCalculate and visualize the distribution below. Using this distribution, we are going to calculate a p-value.\nWhat is a p-value?\nA probability of observing our observed statistic, or something “more extreme” given the null hypothesis is true\nHow is it used to make decisions?\nWe see how small/large it is. We can compare it to a significance level (alpha).\n\nvisualize(null_dist) +\n  shade_p_value(0.929 , direction = \"right\")\n\nnull_dist |>\n  get_p_value(0.929 , direction = \"right\")\n\nBased on our p-value, let’s write an appropriate decision, conclusion, and interpretation of a p-value in the context of the problem."
+  },
+  {
+    "objectID": "ae-sa/ae-12-sa.html#significance-level",
+    "href": "ae-sa/ae-12-sa.html#significance-level",
+    "title": "Intro to Inference: Bootstrap + Hypothesis Testing",
+    "section": "Significance level",
+    "text": "Significance level\nWhat is it?\n\\(\\alpha\\) = a measure of the strength of the evidence that must be present in your sample before rejecting the null and concluding your alternative hypothesis. This is normally 0.05, but can be set by the researcher prior to the study.\n0.001 < 0.05\nDecision: We have evidence to reject the null hypothesis that the true (population) proportion of students who can correctly identify bumba is equal to .5.\n– Always in the context of the null hypothesis\nConclusion:\nWe have evidence to conclude that the true proportion of students who correctly identify bumba is larger than .5.\n– Always in the context of the alternative hypothesis\nInterpretation: The probability of observing 13 out of 14 students correctly identifying bumba, or something larger, given that the true proportion of students who can correctly identify bumba is equal to 0.5 is 0.001.\nSo, can we read Martian?"
+  },
+  {
+    "objectID": "ae-sa/ae-12-sa.html#ted-talk",
+    "href": "ae-sa/ae-12-sa.html#ted-talk",
+    "title": "Intro to Inference: Bootstrap + Hypothesis Testing",
+    "section": "Ted Talk",
+    "text": "Ted Talk\nhttp://www.ted.com/talks/vilayanur_ramachandran_on_your_mind"
+  },
+  {
+    "objectID": "ae-sa/ae-12-sa.html#two-categorical-variables-case-study-cpr-and-blood-thinner",
+    "href": "ae-sa/ae-12-sa.html#two-categorical-variables-case-study-cpr-and-blood-thinner",
+    "title": "Intro to Inference: Bootstrap + Hypothesis Testing",
+    "section": "Two Categorical Variables: Case study: CPR and blood thinner",
+    "text": "Two Categorical Variables: Case study: CPR and blood thinner\nCardiopulmonary resuscitation (CPR) is a procedure used on individuals suffering a heart attack when other emergency resources are unavailable. This procedure is helpful in providing some blood circulation to keep a person alive, but CPR chest compressions can also cause internal injuries. Internal bleeding and other injuries that can result from CPR complicate additional treatment efforts. For instance, blood thinners may be used to help release a clot that is causing the heart attack once a patient arrives in the hospital. However, blood thinners negatively affect internal injuries.\nHere we consider an experiment with patients who underwent CPR for a heart attack and were subsequently admitted to a hospital. Each patient was randomly assigned to either receive a blood thinner (treatment group) or not receive a blood thinner (control group). The outcome variable of interest was whether the patient survived for at least 24 hours. We are interested in if the proportion of patients who died were different between those who were given blood thinners or not. Note: We will considered “died” as a “success”\n\ndata(cpr)\n\nNow, write out your null and alternative hypothesis in proper notation (control - treatment).\n\\(H_0\\): \\(\\pi_c - \\pi_t\\) = 0\n\\(H_a\\): \\(\\pi_c - \\pi_t\\) \\(\\neq\\) 0\nCalculate your sample statistic below. Use proper notation (control - treatment). We will considered “died” as a “success” - what we are taking the proportion of, for the remainder of this activity.\n\ncpr |> \n  group_by(group, outcome) |>\n  summarize(count = n())\n\n`summarise()` has grouped output by 'group'. You can override using the\n`.groups` argument.\n\n\n# A tibble: 4 × 3\n# Groups:   group [2]\n  group     outcome  count\n  <fct>     <fct>    <int>\n1 control   died        39\n2 control   survived    11\n3 treatment died        26\n4 treatment survived    14\n\nestimate <- .78 - .65\n\n(Note: Normally, we calculate EDA with summary statistics, but to save time, we are going to skip this part)"
+  },
+  {
+    "objectID": "ae-sa/ae-12-sa.html#simulate",
+    "href": "ae-sa/ae-12-sa.html#simulate",
+    "title": "Intro to Inference: Bootstrap + Hypothesis Testing",
+    "section": "Simulate",
+    "text": "Simulate\nStart next class here!"
+  },
+  {
     "objectID": "ae-sa/ae-6-sa.html",
     "href": "ae-sa/ae-6-sa.html",
     "title": "AE 06: Suggested Answers",

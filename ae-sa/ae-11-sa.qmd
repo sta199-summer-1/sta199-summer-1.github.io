@@ -56,7 +56,6 @@ What is the predicted probability of an email being spam if there is only 1 excl
 How much does the probability increase/decrease if the email does not contain the phrase "winner"?
 
 ```{r}
-#| eval: false
 
 email_fit <- logistic_reg() |>
   set_engine("glm") |>

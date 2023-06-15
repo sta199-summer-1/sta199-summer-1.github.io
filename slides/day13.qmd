@@ -65,7 +65,7 @@ Here's why
 
 **Sample size is not very small**
 
-## CPR 
+## CPR{.smaller} 
 
 Here we consider an experiment with patients who underwent CPR for a heart attack and were subsequently admitted to a hospital. Each patient was randomly assigned to either receive a blood thinner (treatment group) or not receive a blood thinner (control group). The outcome variable of interest was whether the patient survived for at least 24 hours. We are interested in if the proportion of patients who died were different between those who were given blood thinners or not. Note: We will considered "died" as a "success"
 
