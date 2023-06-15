@@ -991,7 +991,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression II\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nBootstrap Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\nHW 3 Due\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nBootstrap Confidence Intervals\n\n\n\n\n\n\n\n\n\n\nLab 5 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nInference for more Complex Situations\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 4 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nData Ethics; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nSpecial Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 4 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression II\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nBootstrap Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\nHW 3 Due\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nBootstrap Hypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nLab 5 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nConfidence Intervals; Project Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 4 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nCLT; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nData Ethics + Special Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 4 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -1321,6 +1321,13 @@
     "title": "Prepare",
     "section": "",
     "text": "Hypothesis testing\n\nRead (optional): section 12\n\n(optional): 13.1, 13.2, 13.3: inference with mathematical models"
+  },
+  {
+    "objectID": "prepare/6-15.html",
+    "href": "prepare/6-15.html",
+    "title": "Prepare",
+    "section": "",
+    "text": "Read: chapter 20 - section 20.1"
   },
   {
     "objectID": "prepare/6-5.html",
@@ -2784,6 +2791,104 @@
     "title": "Intro to Inference",
     "section": "Can you read Martian? Bumba & Kiki",
     "text": "Can you read Martian? Bumba & Kiki\nAlone, please think about which option is Bumba\n\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/day13.html#checklist",
+    "href": "slides/day13.html#checklist",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "Checklist",
+    "text": "Checklist\n– Proposal feedback has been given. See issues.\n– Exam 2 released at 5 (post in Slack if you have any questions)\n— Start early. This is slightly longer than Exam 1\n– Group Feedback Survey in Sakai Due by 5\n– Lab Due by 5\n– Keep up with Slack!"
+  },
+  {
+    "objectID": "slides/day13.html#warm-up---notation-check",
+    "href": "slides/day13.html#warm-up---notation-check",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "Warm Up - Notation Check",
+    "text": "Warm Up - Notation Check\n– \\(\\pi\\)\n– \\(\\bar{x}\\)\n– \\(\\mu\\)\n– \\(\\hat{p}\\)"
+  },
+  {
+    "objectID": "slides/day13.html#p-value-of-0",
+    "href": "slides/day13.html#p-value-of-0",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "P-value of 0?",
+    "text": "P-value of 0?\nWhen would a p-value of 0 be reported? Let’s draw it.\nIn R, you will get this error…\nPlease be cautious in reporting a p-value of 0. This result is an approximation based on the number of reps chosen in the generate()"
+  },
+  {
+    "objectID": "slides/day13.html#we-have-been-very-carful-with-our-language",
+    "href": "slides/day13.html#we-have-been-very-carful-with-our-language",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "We have been very carful with our language",
+    "text": "We have been very carful with our language\nHere’s why\n– \\(\\alpha\\) > p-value (Reject Ho, Conclude Ha)\n– \\(\\alpha\\) < p-value (Fail to reject Ho, Weak evidence for Ha)\n– ae-13 + click on accepting_null.qmd"
+  },
+  {
+    "objectID": "slides/day13.html#the-research-process",
+    "href": "slides/day13.html#the-research-process",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "The research process",
+    "text": "The research process\n– Set up your null and alternative\n– Collect data\n– Conduct a hypothesis test using simulation methods\n– Talk about the results"
+  },
+  {
+    "objectID": "slides/day13.html#when-can-we-trust-these-results",
+    "href": "slides/day13.html#when-can-we-trust-these-results",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "When can we trust these results?",
+    "text": "When can we trust these results?\n– When the sample we take is representative\nWe have a random sample\nSample size is not very small"
+  },
+  {
+    "objectID": "slides/day13.html#cpr",
+    "href": "slides/day13.html#cpr",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "CPR",
+    "text": "CPR\nHere we consider an experiment with patients who underwent CPR for a heart attack and were subsequently admitted to a hospital. Each patient was randomly assigned to either receive a blood thinner (treatment group) or not receive a blood thinner (control group). The outcome variable of interest was whether the patient survived for at least 24 hours. We are interested in if the proportion of patients who died were different between those who were given blood thinners or not. Note: We will considered “died” as a “success”\n– Null\n– Alternative"
+  },
+  {
+    "objectID": "slides/day13.html#how-do-we-simulate-this-distribution",
+    "href": "slides/day13.html#how-do-we-simulate-this-distribution",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "How do we simulate this distribution?",
+    "text": "How do we simulate this distribution?\nLet’s demonstrate!"
+  },
+  {
+    "objectID": "slides/day13.html#confidence-intervals",
+    "href": "slides/day13.html#confidence-intervals",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n– Confidence Intervals are a statistical method uses to estimate population parameters"
+  },
+  {
+    "objectID": "slides/day13.html#ci-vs-hypo-testing",
+    "href": "slides/day13.html#ci-vs-hypo-testing",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "CI vs Hypo Testing",
+    "text": "CI vs Hypo Testing\n– Both are curious about population parameters\n– Both use the idea of variability"
+  },
+  {
+    "objectID": "slides/day13.html#ci-vs-hypo-testing-1",
+    "href": "slides/day13.html#ci-vs-hypo-testing-1",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "CI vs Hypo Testing",
+    "text": "CI vs Hypo Testing\n– CIs do not assume a hypothesis\n– The distribution used is not centered at the null value (more on this in a second)"
+  },
+  {
+    "objectID": "slides/day13.html#confidence-vs-probability",
+    "href": "slides/day13.html#confidence-vs-probability",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "Confidence vs Probability",
+    "text": "Confidence vs Probability\n– Before making confidence intervals, let’s define what it is and how it is different than probability.\n\nTakeaway: Being unknown is not the same as being random"
+  },
+  {
+    "objectID": "slides/day13.html#confidence",
+    "href": "slides/day13.html#confidence",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "Confidence",
+    "text": "Confidence\nConfidence - the percentage of all possible confidence intervals, created under the same conditions, expected to include the true population parameter\n– https://www.rossmanchance.com/applets/2021/confsim/ConfSim.html\n– For your confidence interval, the parameter is not random"
+  },
+  {
+    "objectID": "slides/day13.html#confidence-interval",
+    "href": "slides/day13.html#confidence-interval",
+    "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\nNow, let’s make one and talk through it!\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
