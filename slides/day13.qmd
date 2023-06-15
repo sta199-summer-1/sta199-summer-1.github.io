@@ -45,7 +45,7 @@ Here's why
 
 -- $\alpha$ < p-value (Fail to reject Ho, Weak evidence for Ha)
 
--- ae-13 + click on accepting_null.qmd
+-- Demo after airbnb example
 
 ## The research process 
 

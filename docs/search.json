@@ -2965,7 +2965,7 @@
     "href": "slides/day13.html#we-have-been-very-carful-with-our-language",
     "title": "Bootstrap Hypothesis Testing Continued",
     "section": "We have been very carful with our language",
-    "text": "We have been very carful with our language\nHere’s why\n– \\(\\alpha\\) > p-value (Reject Ho, Conclude Ha)\n– \\(\\alpha\\) < p-value (Fail to reject Ho, Weak evidence for Ha)\n– ae-13 + click on accepting_null.qmd"
+    "text": "We have been very carful with our language\nHere’s why\n– \\(\\alpha\\) > p-value (Reject Ho, Conclude Ha)\n– \\(\\alpha\\) < p-value (Fail to reject Ho, Weak evidence for Ha)\n– Demo after airbnb example"
   },
   {
     "objectID": "slides/day13.html#the-research-process",
