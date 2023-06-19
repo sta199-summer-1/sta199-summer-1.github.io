@@ -1,0 +1,201 @@
+---
+title: "HW 4"
+categories: "Homework"
+---
+
+::: callout-important
+This homework is due Thursday, June 26th at 11:59pm.
+:::
+
+## Getting Started
+
+-   Go to the [Github Organization page](https://github.com/sta199-summer-1) and open your `hw4-username` repo
+
+-   Clone the repository, open a new project in RStudio. It contains the starter documents you need to complete the homework assignment.
+
+# Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(tidymodels)
+```
+
+# Data
+
+Load the data:
+
+```{r}
+#| warning: false
+#| message: false
+sleep = read_csv("https://sta101-fa22.netlify.app/static/labs/data/sleep.csv")
+```
+
+The data we are working with today comes from Herbie Lee. Please read information about the data set [here](https://stat.duke.edu/datasets/sleep), where you will also find a codebook.
+
+## Exercises
+
+### Investigating sleep
+
+1.  
+
+    a.  Find the mean time it takes the participant to fall asleep.
+
+    b.  Check whether or not you can use central limit theorem to construct a 95% confidence interval to report with your estimate. For purposes of this exercise, you may consider samples of time to sleep as random.
+
+    c.  If you can use CLT, please do so to construct and report the confidence interval. Otherwise, construct a bootstrap confidence interval with `set.seed(5)` and `1000` reps. Interpret your interval in context.
+    
+2. Now, we want to estimate the difference in mean total sleep time between group 1 and group 2. Use the following order (group 1 - group 2).
+
+    a.  Report your summary statistic in proper notation below. 
+    
+    b.  Construct a bootstrap confidence interval with `set.seed(5)` and `1000` reps. Interpret your interval in context.
+    
+    c. Suppose instead you made a 99% confidence interval. Please indicate all that would change below. If you conclude that something would change, please be specific on how. 
+    
+    - Center of the confidence interval
+    - Width of the confidence interval 
+    
+    d. If we were to use CLT to re-calculate our 95% confidence interval, would you expect the results to be similar or different? Justify your answer.  
+
+3.  Does the participant take more than 35 minutes on average to fall asleep? 
+
+    a. Perform a hypothesis test to investigate. What is the null? What is the alternative? Use `set.seed(2)` and `reps=5000` to simulate a distribution under the assumption of the null hypothesis.
+
+    b.  Visualize the null distribution and shade the p-value. Be sure to label the x-axis.
+
+    c.  Write a proper decision and conclusion based on a significance level of $\alpha$ = 0.05. Given your response from the previous exercise, does this result surprise you? Why or why not?
+
+    d.  What is the probability of rejecting the null if it's actually true? What type of error is this (type 1 or type 2)?
+
+4.  
+
+    a.  *Do calcium-magnesium supplements reduce median time to fall asleep?* Construct a hypothesis test to investigate. To begin, state the null and alternative hypothesis in words and in proper notation.
+
+    b.  Use simulation-based inference to generate `1000` samples from the null distribution with `set.seed(5)`.
+
+    c.  Compute and state your observed statistic.
+
+    d.  Finally, compute the p-value and report it as well as significance at the alpha = 0.05 level and state your conclusion in context of the problem.
+
+::: callout-tip
+## Hint
+
+For the following problem, you will need to mutate to ensure that one of the variables is non-numeric.
+:::
+
+::: callout-tip
+## Hint
+
+You may find running `?calculate` in the console useful!
+:::
+
+
+## Hint
+
+For the next exercise, feel free to use the `sleep` data set for demonstration, or another data set we've used in class. 
+:::
+
+### Beyond this class: pick a package
+
+6.  In this exercise, you will find a new package that you haven't used in class and learn how to use it. Being able to find new packages, install them, read the documentation and finally use the package is an essential skill beyond the classroom.
+
+::: callout-tip
+## Important
+
+Sharing a package that is just a data set is not sufficient for this question. Please pick a package where you can demonstrate some functionality. 
+
+If your package creates a plot that is causing render issues, you may set your code chunk to eval: false and discuss what the code creates / include a screen shot. 
+
+:::
+
+To begin,
+
+-   Pick a package. You can choose one from the list below, or venture into the great unknown and find another online. If you have trouble getting a package to work, ask for help on slack or come to office hours.
+
+-   Install the package. Be sure to do this in the Console, not in your Quarto document because you do not want to keep re-installing every time you render the document.
+
+Depending on where the package comes from, how you install the package differs:
+
+-   If the package is on CRAN (Comprehensive R Archive Network), you can install it with `install.packages`.
+
+-   If the package is only on Github (most likely because it is still under development), you need to use the `install_github` function, click here for more details.
+
+-   Load the package. Regardless of how you installed the package you can load it with the `library` function.
+
+-   Do something with the package. Typically, simpler is better. The goal is for you to read and understand the package documentation to carry out a simple task.
+
+-   Finally, write a short 3-4 sentence statement (at the beginning of your solution to this exercise) and include:
+
+1.  The name of the package you use and whether it is from CRAN or GitHub
+
+2.  A short description of what the package does (in your own words)
+
+3.  A short description of what you do with the package.
+
+Sample list of packages on CRAN:
+
+| package name                                                                                  | description                                                                                                                                                                                                                                                                                                                              |
+|---------------------|---------------------------------------------------|
+| [ape](https://cran.r-project.org/web/packages/ape/index.html)                                 | Manipulate, plot and interact with phylogenetic trees and models. Comes with sample data                                                                                                                                                                                                                                                 |
+| [astrodatR](https://cran.r-project.org/web/packages/astrodatR/index.html)                     | Astronomy datasets                                                                                                                                                                                                                                                                                                                       |
+| [cowsay](https://cran.r-project.org/web/packages/cowsay/vignettes/cowsay_tutorial.html)       | Allows printing of character strings as messages/warnings/etc. with ASCII animals, including cats, cows, frogs, chickens, ghosts, and more                                                                                                                                                                                                 |
+| [datapasta](https://milesmcbain.github.io/datapasta/)                                         | RStudio addins and R functions that make copy-pasting vectors and tables to text painless                                                                                                                                                                                                                                                |
+| [DiagrammeR](https://rich-iannone.github.io/DiagrammeR/)                                      | Graph/Network Visualization                                                                                                                                                                                                                                                                                                              |
+                                                                                                                               |
+| [ggimage](https://cran.r-project.org/web/packages/ggimage/vignettes/ggimage.html)             | Supports image files and graphic objects to be visualized in 'ggplot2' graphic system                                                                                                                                                                                                                                                    |
+| [gganimate](https://github.com/dgrtwo/gganimate)                                              | Create easy animations with ggplot2                                                                                                                                                                                                                                                                                                      |
+| [gt](https://gt.rstudio.com/)                                                                 | Easily Create Presentation-Ready Display Tables                                                                                                                                                                                                                                                                                          |
+| [leaflet](https://rstudio.github.io/leaflet/)                                                 | Create Interactive Web Maps with the JavaScript 'Leaflet' Library                                                                                                                                                                                                                                                                        |
+| [praise](https://cran.r-project.org/web/packages/praise/praise.pdf)                           | Build friendly R packages that praise their users if they have done something good, or they just need it to feel better                                                                                                                                                                                                                  |
+| [plotly](https://plotly-r.com/)                                                               | Create interactive web graphics from ggplot2 graphs and/or a custom interface to the JavaScript library plotly.js inspired by the grammar of graphics                                                                                                                                                                                    |
+| [suncalc](https://cran.r-project.org/web/packages/suncalc/suncalc.pdf)                        | R interface to `suncalc.js` library, part of the [SunCalc.net project](http://suncalc.net), for calculating sun position, sunlight phases (times for sunrise, sunset, dusk, etc.), moon position and lunar phase for the given location and time                                                                                                                                                                                                                                                                                                                                 |
+| [statebins](https://cran.r-project.org/web/packages/statebins/statebins.pdf)                  | The cartogram heatmaps generated by the included methods are an alternative to choropleth maps for the United States and are based on work by the Washington Post graphics department in their report on ["The states most threatened by trade"](http://www.washingtonpost.com/wp-srv/special/business/states-most-threatened-by-trade/) |
+| [ttbbeer](https://cran.r-project.org/web/packages/ttbbeer/ttbbeer.pdf)                        | An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)                                                                                                                                                                                                                |
+                                                                                                                                                                                                             |                                                                                                                                                                           |
+| [wesanderson](https://cran.r-project.org/web/packages/wesanderson/wesanderson.pdf)            | Color palettes from Wes Anderson films                                                                                                                                                                                                                                                                                                   |
+| [scatterplot3d](https://cran.r-project.org/web/packages/scatterplot3d/scatterplot3d.pdf)      | Create 3D plots                                                                                                                                                                                                                                                                                                                   
+
+## Rubric
+
+-   Ex 1:7 pts.
+
+-   Ex 2: 10 pts.
+
+-   Ex 3: 8 pts.
+
+-   Ex 4: 8 pts.
+
+-   Ex 5: 12 pts.
+
+-   Workflow and formatting - 5 pts
+
+## Submission
+
+-   Go to <http://www.gradescope.com> and click Log in in the top right corner.
+-   Click School Credentials Duke Net ID and log in using your Net ID credentials.
+-   Click on your STA 199 course.
+-   Click on the assignment, and you'll be prompted to submit it.
+-   Mark all the pages associated with exercise. All the pages of your homework should be associated with at least one question (i.e., should be "checked"). If you do not do this, you will be subject to lose points on the assignment.
+-   Select **all pages** of your PDF submission to be associated with the "Workflow & formatting" question.
+
+::: callout-note
+The "Workflow & formatting" grade is to assess the reproducible workflow. This includes:
+
+-   linking all pages appropriately on Gradescope
+
+-   putting your name in the YAML at the top of the document
+
+-   committing the submitted version of your `.qmd` to GitHub
+
+-   Are you under the 80 character code limit? (You shouldn't have to scroll to see all your code).
+
+-   Pipes `%>%`, `|>` and ggplot layers `+` should be followed by a new line
+
+-   You should be consistent with stylistic choices, e.g. only use 1 of `=` vs `<-` and `%>%` vs `|>`
+
+-   All binary operators should be surrounded by space. For example `x + y` is appropriate. `x+y` is not.
+:::

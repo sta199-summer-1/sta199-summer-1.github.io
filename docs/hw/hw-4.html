@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.0.36">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>STA 199 - HW 3 - Do you even lift?</title>
+<title>STA 199 - HW 4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,7 +117,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">HW 3 - Do you even lift?</h1>
+      <h1 class="quarto-secondary-nav-title">HW 4</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -269,22 +269,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li>
 <a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
   <ul class="collapse">
-<li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+<li>
+<a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
+  <ul class="collapse">
+<li><a href="#investigating-sleep" id="toc-investigating-sleep" class="nav-link" data-scroll-target="#investigating-sleep">Investigating sleep</a></li>
   </ul>
 </li>
   <li>
-<a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up">Wrap up</a>
+<a href="#hint-2" id="toc-hint-2" class="nav-link" data-scroll-target="#hint-2">Hint</a>
   <ul class="collapse">
-<li><a href="#reminder" id="toc-reminder" class="nav-link" data-scroll-target="#reminder">Reminder:</a></li>
-  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
-  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
+<li><a href="#beyond-this-class-pick-a-package" id="toc-beyond-this-class-pick-a-package" class="nav-link" data-scroll-target="#beyond-this-class-pick-a-package">Beyond this class: pick a package</a></li>
   </ul>
 </li>
-  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sta199-summer-1/sta199-summer-1.github.io/edit/main/hw/hw-3.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/sta199-summer-1/sta199-summer-1.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  </ul>
+</li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sta199-summer-1/sta199-summer-1.github.io/edit/main/hw/hw-4.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/sta199-summer-1/sta199-summer-1.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title d-none d-lg-block">HW 3 - Do you even lift?</h1>
+<h1 class="title d-none d-lg-block">HW 4</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Homework</div>
   </div>
@@ -309,12 +314,12 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This homework is due Tuesday, June 13th at 11:59pm.</p>
+<p>This homework is due Thursday, June 26th at 11:59pm.</p>
 </div>
 </div>
 <section id="getting-started" class="level2"><h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
 <ul>
-<li><p>Go to the <a href="https://github.com/sta199-summer-1">Github Organization page</a> and open your <code>hw3-username</code> repo</p></li>
+<li><p>Go to the <a href="https://github.com/sta199-summer-1">Github Organization page</a> and open your <code>hw4-username</code> repo</p></li>
 <li><p>Clone the repository, open a new project in RStudio. It contains the starter documents you need to complete the homework assignment.</p></li>
 </ul></section><section id="packages" class="level1"><h1>Packages</h1>
 <div class="cell">
@@ -322,149 +327,203 @@ Important
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidymodels.tidymodels.org">tidymodels</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="data" class="level1"><h1>Data</h1>
-<p>Today, we will be working with data from <a href="https://www.openpowerlifting.org/">www.openpowerlifting.org</a>. This data was sourced from <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-10-08">tidy tuesday</a> and contains international powerlifting records at various meets. At each meet, each lifter gets three attempts at lifting max weight on three lifts: the bench press, squat and deadlift. The data dictionary for this dataset from tidytuesday is reproduced below:</p>
-<section id="dictionary" class="level4"><h4 class="anchored" data-anchor-id="dictionary">Dictionary</h4>
-<table class="table">
-<colgroup>
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 47%">
-</colgroup>
-<thead><tr class="header">
-<th style="text-align: left;">variable</th>
-<th style="text-align: left;">class</th>
-<th style="text-align: left;">description</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">name</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">Individual lifter name</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">sex</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">Binary gender (M/F)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">event</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">The type of competition that the lifter entered.<br><br>Values are as follows:<br>- SBD: Squat-Bench-Deadlift, also commonly called “Full Power”.<br>- BD: Bench-Deadlift, also commonly called “Ironman” or “Push-Pull”<br>- SD: Squat-Deadlift, very uncommon.<br>- SB: Squat-Bench, very uncommon.<br>- S: Squat-only.<br>- B: Bench-only.<br>- D: Deadlift-only.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">equipment</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">The equipment category under which the lifts were performed.<br><br>Values are as follows:<br>- Raw: Bare knees or knee sleeves.<br>- Wraps: Knee wraps were allowed.<br>- Single-ply: Equipped, single-ply suits.<br>- Multi-ply: Equipped, multi-ply suits (includes Double-ply).<br>- Straps: Allowed straps on the deadlift (used mostly for exhibitions, not real meets).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">age</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">The age of the lifter on the start date of the meet, if known.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">age_class</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">The age class in which the filter falls, for example <code>40-45</code>
-</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">division</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">Free-form UTF-8 text describing the division of competition, like <code>Open</code> or <code>Juniors 20-23</code> or <code>Professional</code>.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">bodyweight_kg</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">The recorded bodyweight of the lifter at the time of competition, to two decimal places.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">weight_class_kg</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">The weight class in which the lifter competed, to two decimal places.<br>Weight classes can be specified as a maximum or as a minimum. Maximums are specified by just the number, for example <code>90</code> means “up to (and including) 90kg.” minimums are specified by a <code>+</code> to the right of the number, for example <code>90+</code> means “above (and excluding) 90kg.”</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">best3squat_kg</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">Maximum of the first three successful attempts for the lift.<br>Rarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">best3bench_kg</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">Maximum of the first three successful attempts for the lift.<br>Rarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">best3deadlift_kg</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">Maximum of the first three successful attempts for the lift.<br>Rarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">place</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">The recorded place of the lifter in the given division at the end of the meet.<br><br>Values are as follows:<br>- Positive number: the place the lifter came in.<br>- G: Guest lifter. The lifter succeeded, but wasn’t eligible for awards.<br>- DQ: Disqualified. Note that DQ could be for procedural reasons, not just failed attempts.<br>- DD: Doping Disqualification. The lifter failed a drug test.<br>- NS: No-Show. The lifter did not show up on the meet day.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">date</td>
-<td style="text-align: left;">double</td>
-<td style="text-align: left;">ISO 8601 Date of the event</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">federation</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">The federation that hosted the meet. (limited to IPF for this data subset)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">meet_name</td>
-<td style="text-align: left;">character</td>
-<td style="text-align: left;">The name of the meet.<br>The name is defined to never include the year or the federation. For example, the meet officially called <code>2019 USAPL Raw National Championships</code> would have the MeetName <code>Raw National Championshps</code>.</td>
-</tr>
-</tbody>
-</table></section><section id="exercises" class="level2"><h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<p>For all of the following exercises, you should include units on axes labels, e.g.&nbsp;“Bench press (lbs)” or “Bench press (kg)”. “Age (years)” etc. This is good practice.</p>
+<p>Load the data:</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sleep</span> <span class="op">=</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"https://sta101-fa22.netlify.app/static/labs/data/sleep.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The data we are working with today comes from Herbie Lee. Please read information about the data set <a href="https://stat.duke.edu/datasets/sleep">here</a>, where you will also find a codebook.</p>
+<section id="exercises" class="level2"><h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<section id="investigating-sleep" class="level3"><h3 class="anchored" data-anchor-id="investigating-sleep">Investigating sleep</h3>
 <ol type="1">
-<li>Let’s begin by taking a look at the squat powerlifting records. To begin, remove any observations that are negative for squat. Next, create a new column called <code>best3_squat_lbs</code> that converts the record from kg to lbs (you may have to google the conversion). Save your data frame as <code>ipf_squat</code>.</li>
+<li><ol type="a">
+<li><p>Find the mean time it takes the participant to fall asleep.</p></li>
+<li><p>Check whether or not you can use central limit theorem to construct a 95% confidence interval to report with your estimate. For purposes of this exercise, you may consider samples of time to sleep as random.</p></li>
+<li><p>If you can use CLT, please do so to construct and report the confidence interval. Otherwise, construct a bootstrap confidence interval with <code>set.seed(5)</code> and <code>1000</code> reps. Interpret your interval in context.</p></li>
+</ol></li>
+<li>
+<p>Now, we want to estimate the difference in mean total sleep time between group 1 and group 2. Use the following order (group 1 - group 2).</p>
+<ol type="a">
+<li><p>Report your summary statistic in proper notation below.</p></li>
+<li><p>Construct a bootstrap confidence interval with <code>set.seed(5)</code> and <code>1000</code> reps. Interpret your interval in context.</p></li>
+<li><p>Suppose instead you made a 99% confidence interval. Please indicate all that would change below. If you conclude that something would change, please be specific on how.</p></li>
 </ol>
 <ul>
-<li>Using <code>ipf_squat</code>, create a scatter plot to investigate the relationship between squat (in lbs) and age. Age should be on the x-axis. Add a linear best fit line. Remove the standard error. Be sure to label all axes and give the plot a title. Comment on what you observe.</li>
+<li>Center of the confidence interval</li>
+<li>Width of the confidence interval</li>
 </ul>
-<ol start="2" type="1">
-<li><p>Write down the population linear model to predict lift squat lbs from age using proper notation. Note: if you use generic <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, define each after your model? Next, fit the estimated linear model. Use the <code>ipf_squat</code> data frame. Using the output, write out the estimated linear regression model. This is called the “fitted” (estimated) linear model. Interpret each estimate of <span class="math inline">\(\beta\)</span>. Is the intercept interpretation reasonable? Why or why not?</p></li>
-<li><p>Building on your <code>ipf_squat</code> data frame, create a new column called <code>age2</code> that takes the age of each lifter and squares it. Save your data frame with an appropriate name. Next, plot squat in lbs vs <code>age2</code> and add a linear best fit line. Do you notice any difference in how well this model fits the data compared to your previous model? Justify your answer.</p></li>
-<li><p>One metric to assess the fit of a model is the correlation squared, also known as <span class="math inline">\(R^2\)</span>. Fit the age<span class="math inline">\(^2\)</span> model and save the object as <code>age2Fit</code>. Subsequently report the <span class="math inline">\(R^2\)</span>. Compare <span class="math inline">\(R^2\)</span> of the age<span class="math inline">\(^2\)</span> model to the model from exercise 2. Which model do you prefer based on these values?</p></li>
+<ol start="4" type="a">
+<li>If we were to use CLT to re-calculate our 95% confidence interval, would you expect the results to be similar or different? Justify your answer.</li>
 </ol>
-<ul>
-<li>If you were to add body weight as a second predictor to the age<span class="math inline">\(^2\)</span> model, would <span class="math inline">\(R^2\)</span> increase or decrease? Explain.</li>
-</ul>
-<ol start="5" type="1">
-<li>Starting with the original <code>ipf</code> dataframe, filter and mutate the data as we did in exercise 1, but this time filtering for <code>best3bench_kg</code> <span class="math inline">\(&gt;0\)</span> and creating a <code>best3_bench_lbs</code> variable, a <code>bodyweight_lbs</code> variable, and a <code>sex</code> variable that is a factor rather than a character.</li>
+</li>
+<li>
+<p>Does the participant take more than 35 minutes on average to fall asleep?</p>
+<ol type="a">
+<li><p>Perform a hypothesis test to investigate. What is the null? What is the alternative? Use <code>set.seed(2)</code> and <code>reps=5000</code> to simulate a distribution under the assumption of the null hypothesis.</p></li>
+<li><p>Visualize the null distribution and shade the p-value. Be sure to label the x-axis.</p></li>
+<li><p>Write a proper decision and conclusion based on a significance level of <span class="math inline">\(\alpha\)</span> = 0.05. Given your response from the previous exercise, does this result surprise you? Why or why not?</p></li>
+<li><p>What is the probability of rejecting the null if it’s actually true? What type of error is this (type 1 or type 2)?</p></li>
 </ol>
-<p>Before fitting the model, please explain the following: What does it mean for bodyweight and sex to interact when modeling bench press? Hint: use the definition.</p>
-<p>Now, fit an interaction effects model with bodywieght (in lbs) and sex as predictors of best bench press (in lbs). Write down the <strong>fitted model equation</strong> using proper notation.</p>
-<ol start="6" type="1">
-<li><p>Plot the model from exercise 5. Bodyweight should be on the x-axis. Add a linear best fit line. Be sure to label all axes and give the plot a title. Comment on what you observe.</p></li>
-<li><p>Do lifters who fail a drug test perform better or worse at bench press than other lifters? Does this vary across sexes? We’ll answer this question in two parts. First, remove all observations from the <code>ipf</code> data frame that have <code>NA</code> listed under bench press. In the same pipeline, create a new column called <code>doping_status</code> that takes value <code>doping</code> if the lifter failed a drug test and <code>not doping</code> otherwise. Save this data frame as <code>ipf_dope</code>.</p></li>
+</li>
+<li><ol type="a">
+<li><p><em>Do calcium-magnesium supplements reduce median time to fall asleep?</em> Construct a hypothesis test to investigate. To begin, state the null and alternative hypothesis in words and in proper notation.</p></li>
+<li><p>Use simulation-based inference to generate <code>1000</code> samples from the null distribution with <code>set.seed(5)</code>.</p></li>
+<li><p>Compute and state your observed statistic.</p></li>
+<li><p>Finally, compute the p-value and report it as well as significance at the alpha = 0.05 level and state your conclusion in context of the problem.</p></li>
+</ol></li>
 </ol>
-<div class="callout-hint callout callout-style-default no-icon callout-captioned">
+<div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
 Hint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Check the data dictionary at the top to figure out what variables will help you build the <code>doping_status</code> column.</p>
+<p>For the following problem, you will need to mutate to ensure that one of the variables is non-numeric.</p>
 </div>
 </div>
-<ol start="8" type="1">
-<li>Using <code>ipf_dope</code> from the previous exercise, compute the 5%, 50%, 95% quantiles for bench press across all combinations of <code>sex</code> and <code>doping_status</code>, i.e., male and doping, male and not doping, female and doping, female and not doping. You can use either bench press in kg or lbs here. With this information, answer the question “Do lifters who fail a drug test perform better or worse at bench press than other lifters?”</li>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Hint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You may find running <code>?calculate</code> in the console useful!</p>
+</div>
+</div>
+</section></section><section id="hint-2" class="level2"><h2 class="anchored" data-anchor-id="hint-2">Hint</h2>
+<p>For the next exercise, feel free to use the <code>sleep</code> data set for demonstration, or another data set we’ve used in class. :::</p>
+<section id="beyond-this-class-pick-a-package" class="level3"><h3 class="anchored" data-anchor-id="beyond-this-class-pick-a-package">Beyond this class: pick a package</h3>
+<ol start="6" type="1">
+<li>In this exercise, you will find a new package that you haven’t used in class and learn how to use it. Being able to find new packages, install them, read the documentation and finally use the package is an essential skill beyond the classroom.</li>
 </ol>
-<p>Hint: You can use the <code>quantile</code> function in R to calculate quantiles.</p>
-</section></section><section id="wrap-up" class="level1"><h1>Wrap up</h1>
-<section id="reminder" class="level2"><h2 class="anchored" data-anchor-id="reminder">Reminder:</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sharing a package that is just a data set is not sufficient for this question. Please pick a package where you can demonstrate some functionality.</p>
+<p>If your package creates a plot that is causing render issues, you may set your code chunk to eval: false and discuss what the code creates / include a screen shot.</p>
+</div>
+</div>
+<p>To begin,</p>
 <ul>
-<li>All plots should follow the best visualization practices: include an informed title, label axes, and carefully consider aesthetic choices.</li>
-<li>All code should follow the tidyverse style guidelines, including not exceeding the 80 character limit.</li>
+<li><p>Pick a package. You can choose one from the list below, or venture into the great unknown and find another online. If you have trouble getting a package to work, ask for help on slack or come to office hours.</p></li>
+<li><p>Install the package. Be sure to do this in the Console, not in your Quarto document because you do not want to keep re-installing every time you render the document.</p></li>
+</ul>
+<p>Depending on where the package comes from, how you install the package differs:</p>
+<ul>
+<li><p>If the package is on CRAN (Comprehensive R Archive Network), you can install it with <code>install.packages</code>.</p></li>
+<li><p>If the package is only on Github (most likely because it is still under development), you need to use the <code>install_github</code> function, click here for more details.</p></li>
+<li><p>Load the package. Regardless of how you installed the package you can load it with the <code>library</code> function.</p></li>
+<li><p>Do something with the package. Typically, simpler is better. The goal is for you to read and understand the package documentation to carry out a simple task.</p></li>
+<li><p>Finally, write a short 3-4 sentence statement (at the beginning of your solution to this exercise) and include:</p></li>
+</ul>
+<ol type="1">
+<li><p>The name of the package you use and whether it is from CRAN or GitHub</p></li>
+<li><p>A short description of what the package does (in your own words)</p></li>
+<li><p>A short description of what you do with the package.</p></li>
+</ol>
+<p>Sample list of packages on CRAN:</p>
+<table class="table">
+<thead><tr class="header">
+<th>package name</th>
+<th>description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/ape/index.html">ape</a></td>
+<td>Manipulate, plot and interact with phylogenetic trees and models. Comes with sample data</td>
+</tr>
+<tr class="even">
+<td><a href="https://cran.r-project.org/web/packages/astrodatR/index.html">astrodatR</a></td>
+<td>Astronomy datasets</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/cowsay/vignettes/cowsay_tutorial.html">cowsay</a></td>
+<td>Allows printing of character strings as messages/warnings/etc. with ASCII animals, including cats, cows, frogs, chickens, ghosts, and more</td>
+</tr>
+<tr class="even">
+<td><a href="https://milesmcbain.github.io/datapasta/">datapasta</a></td>
+<td>RStudio addins and R functions that make copy-pasting vectors and tables to text painless</td>
+</tr>
+<tr class="odd">
+<td><a href="https://rich-iannone.github.io/DiagrammeR/">DiagrammeR</a></td>
+<td>Graph/Network Visualization</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/ggimage/vignettes/ggimage.html">ggimage</a></td>
+<td>Supports image files and graphic objects to be visualized in ‘ggplot2’ graphic system</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/dgrtwo/gganimate">gganimate</a></td>
+<td>Create easy animations with ggplot2</td>
+</tr>
+<tr class="odd">
+<td><a href="https://gt.rstudio.com/">gt</a></td>
+<td>Easily Create Presentation-Ready Display Tables</td>
+</tr>
+<tr class="even">
+<td><a href="https://rstudio.github.io/leaflet/">leaflet</a></td>
+<td>Create Interactive Web Maps with the JavaScript ‘Leaflet’ Library</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/praise/praise.pdf">praise</a></td>
+<td>Build friendly R packages that praise their users if they have done something good, or they just need it to feel better</td>
+</tr>
+<tr class="even">
+<td><a href="https://plotly-r.com/">plotly</a></td>
+<td>Create interactive web graphics from ggplot2 graphs and/or a custom interface to the JavaScript library plotly.js inspired by the grammar of graphics</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/suncalc/suncalc.pdf">suncalc</a></td>
+<td>R interface to <code>suncalc.js</code> library, part of the <a href="http://suncalc.net">SunCalc.net project</a>, for calculating sun position, sunlight phases (times for sunrise, sunset, dusk, etc.), moon position and lunar phase for the given location and time</td>
+</tr>
+<tr class="even">
+<td><a href="https://cran.r-project.org/web/packages/statebins/statebins.pdf">statebins</a></td>
+<td>The cartogram heatmaps generated by the included methods are an alternative to choropleth maps for the United States and are based on work by the Washington Post graphics department in their report on <a href="http://www.washingtonpost.com/wp-srv/special/business/states-most-threatened-by-trade/">“The states most threatened by trade”</a>
+</td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/ttbbeer/ttbbeer.pdf">ttbbeer</a></td>
+<td>An R data package of beer statistics from U.S. Department of the Treasury, Alcohol and Tobacco Tax and Trade Bureau (TTB)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://cran.r-project.org/web/packages/wesanderson/wesanderson.pdf">wesanderson</a></td>
+<td>Color palettes from Wes Anderson films</td>
+</tr>
+<tr class="even">
+<td><a href="https://cran.r-project.org/web/packages/scatterplot3d/scatterplot3d.pdf">scatterplot3d</a></td>
+<td>Create 3D plots</td>
+</tr>
+</tbody>
+</table></section></section><section id="rubric" class="level2"><h2 class="anchored" data-anchor-id="rubric">Rubric</h2>
+<ul>
+<li><p>Ex 1:7 pts.</p></li>
+<li><p>Ex 2: 10 pts.</p></li>
+<li><p>Ex 3: 8 pts.</p></li>
+<li><p>Ex 4: 8 pts.</p></li>
+<li><p>Ex 5: 12 pts.</p></li>
+<li><p>Workflow and formatting - 5 pts</p></li>
 </ul></section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
 <ul>
 <li>Go to <a href="http://www.gradescope.com" class="uri">http://www.gradescope.com</a> and click Log in in the top right corner.</li>
@@ -472,18 +531,7 @@ Hint
 <li>Click on your STA 199 course.</li>
 <li>Click on the assignment, and you’ll be prompted to submit it.</li>
 <li>Mark all the pages associated with exercise. All the pages of your homework should be associated with at least one question (i.e., should be “checked”). If you do not do this, you will be subject to lose points on the assignment.</li>
-<li>Do not select any pages of your PDF submission to be associated with the “Workflow &amp; formatting” question.</li>
-</ul></section><section id="rubric" class="level2"><h2 class="anchored" data-anchor-id="rubric">Rubric</h2>
-<ul>
-<li><p>Ex 1: 6 pts.</p></li>
-<li><p>Ex 2: 6 pts.</p></li>
-<li><p>Ex 3: 5 pts.</p></li>
-<li><p>Ex 4: 5 pts.</p></li>
-<li><p>Ex 5: 10 pts.</p></li>
-<li><p>Ex 6: 5 pts.</p></li>
-<li><p>Ex 7: 3 pts</p></li>
-<li><p>Ex 8: 5 pts</p></li>
-<li><p>Workflow and formatting - 5 pts</p></li>
+<li>Select <strong>all pages</strong> of your PDF submission to be associated with the “Workflow &amp; formatting” question.</li>
 </ul>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
