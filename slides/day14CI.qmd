@@ -158,7 +158,57 @@ Confidence - the percentage of all possible confidence intervals, created under 
 
 ## Confidence Interval
 
-Now, let's make one and talk through it!
+-- Two ways to create a CI 
+
+- Bootstrap methods 
+
+- Central Limit Theorm (can also conduct Hypo tests this way)
+
+## Confidence Interval - Bootstrap
+
+-- Resample from our data to simulate many different samples 
+
+-- Calculate confidence interval from distribution 
+
+## Confidence Interval - CLT 
+
+-- Mathematical property that says: For a large enough n, the shape of the sampling distribution of the means is approximately normally distributed
+
+-- And we can use the approximately normally distributed exactly like we do our simulated distribution to calculate confidence intervals 
+
+## Confidence Interval - CLT 
+
+-- We need to estimate the center and the spread of this approximately normal distribution 
+
+-- center -> mean 
+
+-- spread -> $\frac{s}{\sqrt(n)}$
+
+## Assumptions
+
+To trust our results...
+
+-- Independence
+
+-- Sample Size
+
+## Independence
+
+-- Independent observations
+
+## Sample Size
+
+--  n > 30 (for quantitative variables)
+
+--  10 successes + 10 failures (for categorical variables)
+
+– “Does one observation influence the other?”
+
+## ae-13
+
+Let's create a CI using each method! 
+
+
 
 
 
