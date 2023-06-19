@@ -1159,7 +1159,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression II\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nBootstrap Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\nHW 3 Due\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nBootstrap Hypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nLab 5 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nConfidence Intervals; Project Work Day\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 4 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nCLT; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nData Ethics + Special Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 4 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression II\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nBootstrap Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\nHW 3 Due\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nBootstrap Hypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nLab 5 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nSimulation Confidence Intervals\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 4 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nCLT; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nData Ethics + Special Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 4 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -3097,6 +3097,139 @@
     "objectID": "slides/day13.html#confidence-interval",
     "href": "slides/day13.html#confidence-interval",
     "title": "Bootstrap Hypothesis Testing Continued",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\nNow, let’s make one and talk through it!\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/day14CI.html#checklist",
+    "href": "slides/day14CI.html#checklist",
+    "title": "Intro to Confidence Intervals",
+    "section": "Checklist",
+    "text": "Checklist\n– Exam-2 is over. Nice work!\n– Clone ae-14\n– Homework 4 is Live (Due 6-26)\n– Project Report (Due 6-22)\n– Lab Thursday (6-22) is a Project Work Day\n— If you want your report to be graded on 6-21, please have the final draft on your website updated by Noon + send me an email and I will have feedback for you prior to Lab Thursday.\n– Group Feedback Survey-2 in Sakai Coming 6-22"
+  },
+  {
+    "objectID": "slides/day14CI.html#warm-up-hypothesis-test",
+    "href": "slides/day14CI.html#warm-up-hypothesis-test",
+    "title": "Intro to Confidence Intervals",
+    "section": "Warm Up: Hypothesis Test",
+    "text": "Warm Up: Hypothesis Test\nIn going from a one-sided test to a two-sided (assuming all else is the same), which of the following change:\n– sample statistic\n– p-value\n– null distribution\n– null hypothesis\n– alternative hypothesis"
+  },
+  {
+    "objectID": "slides/day14CI.html#warm-up",
+    "href": "slides/day14CI.html#warm-up",
+    "title": "Intro to Confidence Intervals",
+    "section": "Warm Up",
+    "text": "Warm Up\n– What is the definition of a representative sample? What is one way we can achieve this in research?"
+  },
+  {
+    "objectID": "slides/day14CI.html#discussion-scope-of-inference",
+    "href": "slides/day14CI.html#discussion-scope-of-inference",
+    "title": "Intro to Confidence Intervals",
+    "section": "Discussion: Scope of Inference",
+    "text": "Discussion: Scope of Inference\n– Who can our results apply to?\n– X -> Y\n— Causation or Assocciation?"
+  },
+  {
+    "objectID": "slides/day14CI.html#scope-of-inference",
+    "href": "slides/day14CI.html#scope-of-inference",
+    "title": "Intro to Confidence Intervals",
+    "section": "Scope of Inference",
+    "text": "Scope of Inference\n– Do we have a representative sample?\n\nYes? Apply the results to the population\nNo? Apply the results to a sample or similar sample"
+  },
+  {
+    "objectID": "slides/day14CI.html#scope-of-inference-1",
+    "href": "slides/day14CI.html#scope-of-inference-1",
+    "title": "Intro to Confidence Intervals",
+    "section": "Scope of Inference",
+    "text": "Scope of Inference\n– Causation or Assocciation?\n– This comes down to the idea of confounding variables.\n– Let’s draw it out."
+  },
+  {
+    "objectID": "slides/day14CI.html#scope-of-inference-2",
+    "href": "slides/day14CI.html#scope-of-inference-2",
+    "title": "Intro to Confidence Intervals",
+    "section": "Scope of Inference",
+    "text": "Scope of Inference\n– There are some exceptions to the rule..\n\nDoes smoking cause cancer?\nWe can not randomly assign people to smoke… but with repeated studies, you can start to draw causal inference\nTake a causal inference course if you are interested"
+  },
+  {
+    "objectID": "slides/day14CI.html#alpha-discussion",
+    "href": "slides/day14CI.html#alpha-discussion",
+    "title": "Intro to Confidence Intervals",
+    "section": "Alpha: Discussion",
+    "text": "Alpha: Discussion\nLet’s talk more about \\(\\alpha\\)\n– We know alpha as our significance level\n\np-value > alpha\np-value < alpha\nWe set alpha prior to our research study to determine amount of evidence needed to reject the null"
+  },
+  {
+    "objectID": "slides/day14CI.html#alpha-discussion-1",
+    "href": "slides/day14CI.html#alpha-discussion-1",
+    "title": "Intro to Confidence Intervals",
+    "section": "Alpha: Discussion",
+    "text": "Alpha: Discussion\n\\(\\alpha\\) = Probability of a Type I error\n– Type 1 error - Rejecting the null hypothesis when we actually shouldn’t\n– Higher the alpha, the easier it is to reject\n– Higher the alpha, the more likely you are rejecting just due to random chance"
+  },
+  {
+    "objectID": "slides/day14CI.html#alpha-and-p-values-discussion",
+    "href": "slides/day14CI.html#alpha-and-p-values-discussion",
+    "title": "Intro to Confidence Intervals",
+    "section": "Alpha and p-values: Discussion",
+    "text": "Alpha and p-values: Discussion\n– Journals have been getting away from “fixed level testing”\n– \\(\\alpha\\) = 0.05\n– p-value 0.052\n– It’s easy (but not good practice) to retroactively change alpha after….\n– P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone."
+  },
+  {
+    "objectID": "slides/day14CI.html#american-statistical-assocciation-asa",
+    "href": "slides/day14CI.html#american-statistical-assocciation-asa",
+    "title": "Intro to Confidence Intervals",
+    "section": "American Statistical Assocciation (ASA)",
+    "text": "American Statistical Assocciation (ASA)\n“The p-value was never intended to be a substitute for scientific reasoning,” said Ron Wasserstein, the ASA’s executive director. “Well-reasoned statistical arguments contain much more than the value of a single number and whether that number exceeds an arbitrary threshold. The ASA statement is intended to steer research into a ‘post p<0.05 era.’”"
+  },
+  {
+    "objectID": "slides/day14CI.html#asa",
+    "href": "slides/day14CI.html#asa",
+    "title": "Intro to Confidence Intervals",
+    "section": "ASA",
+    "text": "ASA\n“Over time it appears the p-value has become a gatekeeper for whether work is publishable, at least in some fields,” said Jessica Utts, ASA president. “This apparent editorial bias leads to the ‘file-drawer effect,’ in which research with statistically significant outcomes are much more likely to get published, while other work that might well be just as important scientifically is never seen in print.\nSee full statement here"
+  },
+  {
+    "objectID": "slides/day14CI.html#p-values",
+    "href": "slides/day14CI.html#p-values",
+    "title": "Intro to Confidence Intervals",
+    "section": "p-values",
+    "text": "p-values\nSome journals, such as Basic and Applied Psychology, Epidemiology, and Political Analysis, have banned the use of p-values in an attempt to improve statistical inferences\n\nbut not confidence intervals…"
+  },
+  {
+    "objectID": "slides/day14CI.html#confidence-intervals",
+    "href": "slides/day14CI.html#confidence-intervals",
+    "title": "Intro to Confidence Intervals",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n– Confidence Intervals are a statistical method uses to estimate population parameters"
+  },
+  {
+    "objectID": "slides/day14CI.html#ci-vs-hypo-testing",
+    "href": "slides/day14CI.html#ci-vs-hypo-testing",
+    "title": "Intro to Confidence Intervals",
+    "section": "CI vs Hypo Testing",
+    "text": "CI vs Hypo Testing\n– Both are curious about population parameters\n– Both use the idea of variability"
+  },
+  {
+    "objectID": "slides/day14CI.html#ci-vs-hypo-testing-1",
+    "href": "slides/day14CI.html#ci-vs-hypo-testing-1",
+    "title": "Intro to Confidence Intervals",
+    "section": "CI vs Hypo Testing",
+    "text": "CI vs Hypo Testing\n– CIs do not assume a hypothesis\n– The distribution used is not centered at the null value (more on this in a second)"
+  },
+  {
+    "objectID": "slides/day14CI.html#confidence-vs-probability",
+    "href": "slides/day14CI.html#confidence-vs-probability",
+    "title": "Intro to Confidence Intervals",
+    "section": "Confidence vs Probability",
+    "text": "Confidence vs Probability\n– Before making confidence intervals, let’s define what it is and how it is different than probability.\n\nTakeaway: Being unknown is not the same as being random"
+  },
+  {
+    "objectID": "slides/day14CI.html#confidence",
+    "href": "slides/day14CI.html#confidence",
+    "title": "Intro to Confidence Intervals",
+    "section": "Confidence",
+    "text": "Confidence\nConfidence - the percentage of all possible confidence intervals, created under the same conditions, expected to include the true population parameter\n– https://www.rossmanchance.com/applets/2021/confsim/ConfSim.html\n– For your confidence interval, the parameter is not random"
+  },
+  {
+    "objectID": "slides/day14CI.html#confidence-interval",
+    "href": "slides/day14CI.html#confidence-interval",
+    "title": "Intro to Confidence Intervals",
     "section": "Confidence Interval",
     "text": "Confidence Interval\nNow, let’s make one and talk through it!\n\n\n\n🔗 sta199-summer-1.github.io"
   },

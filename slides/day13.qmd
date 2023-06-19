@@ -7,7 +7,7 @@ format: revealjs
 
 ## Checklist
 
--- Proposal feedback has been given. See issues. 
+-- Proposal feedback has been given. See issues.
 
 -- Exam 2 released at 5 (post in Slack if you have any questions)
 
@@ -15,11 +15,11 @@ format: revealjs
 
 -- Group Feedback Survey in Sakai Due by 5
 
--- Lab Due by 5 
+-- Lab Due by 5
 
--- Keep up with Slack! 
+-- Keep up with Slack!
 
-## Warm Up - Notation Check 
+## Warm Up - Notation Check
 
 -- $\pi$
 
@@ -29,7 +29,7 @@ format: revealjs
 
 -- $\hat{p}$
 
-## P-value of 0? 
+## P-value of 0?
 
 When would a p-value of 0 be reported? Let's draw it.
 
@@ -37,79 +37,75 @@ In `R`, you will get this error...
 
 Please be cautious in reporting a p-value of 0. This result is an approximation based on the number of `reps` chosen in the `generate()`
 
-## We have been very carful with our language 
+## We have been very carful with our language
 
-Here's why 
+Here's why
 
--- $\alpha$ > p-value (Reject Ho, Conclude Ha)
+-- $\alpha$ \> p-value (Reject Ho, Conclude Ha)
 
--- $\alpha$ < p-value (Fail to reject Ho, Weak evidence for Ha)
+-- $\alpha$ \< p-value (Fail to reject Ho, Weak evidence for Ha)
 
 -- Demo after airbnb example
 
-## The research process 
+## The research process
 
--- Set up your null and alternative 
+-- Set up your null and alternative
 
--- Collect data 
+-- Collect data
 
--- Conduct a hypothesis test using simulation methods 
+-- Conduct a hypothesis test using simulation methods
 
--- Talk about the results 
+-- Talk about the results
 
-## When can we trust these results? 
+## When can we trust these results?
 
 -- When the sample we take is representative
 
-**We have a random sample** 
+**We have a random sample**
 
 **Sample size is not very small**
 
-## CPR{.smaller} 
+## CPR {.smaller}
 
 Here we consider an experiment with patients who underwent CPR for a heart attack and were subsequently admitted to a hospital. Each patient was randomly assigned to either receive a blood thinner (treatment group) or not receive a blood thinner (control group). The outcome variable of interest was whether the patient survived for at least 24 hours. We are interested in if the proportion of patients who died were different between those who were given blood thinners or not. Note: We will considered "died" as a "success"
 
--- Null 
+-- Null
 
--- Alternative 
+-- Alternative
 
-## How do we simulate this distribution? 
+## How do we simulate this distribution?
 
 Let's demonstrate!
 
-
-
 ## Confidence Intervals
 
--- Confidence Intervals are a statistical method uses to **estimate** population parameters 
-
-## CI vs Hypo Testing 
-
--- Both are curious about population parameters 
-
--- Both use the idea of variability 
+-- Confidence Intervals are a statistical method uses to **estimate** population parameters
 
 ## CI vs Hypo Testing
 
--- CIs do not assume a hypothesis 
+-- Both are curious about population parameters
+
+-- Both use the idea of variability
+
+## CI vs Hypo Testing
+
+-- CIs do not assume a hypothesis
 
 -- The distribution used is not centered at the null value (more on this in a second)
 
-## Confidence vs Probability 
+## Confidence vs Probability
 
--- Before making confidence intervals, let's define what it is and how it is different than probability. 
+-- Before making confidence intervals, let's define what it is and how it is different than probability.
 
-- Takeaway: Being unknown is not the same as being random
+-   Takeaway: Being unknown is not the same as being random
 
-## Confidence 
+## Confidence
 
 Confidence - the percentage of all possible confidence intervals, created under the same conditions, expected to include the true population parameter
 
 -- https://www.rossmanchance.com/applets/2021/confsim/ConfSim.html
 
-– For your confidence interval, the parameter is not random
-
-
+-- For your confidence interval, the parameter is not random
 
 ## Confidence Interval
 

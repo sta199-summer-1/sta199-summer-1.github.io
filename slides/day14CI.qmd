@@ -1,0 +1,169 @@
+---
+title: "Intro to Confidence Intervals"
+subtitle: "Day 14"
+date: "June 20th"
+format: revealjs
+---
+
+## Checklist
+
+-- Exam-2 is over. Nice work! 
+
+-- Clone `ae-14`
+
+-- Homework 4 is Live (Due 6-26)
+
+-- Project Report (Due 6-22)
+
+-- Lab Thursday (6-22) is a Project Work Day
+
+--- If you want your report to be graded on 6-21, please have the final draft on your website updated by Noon + send me an email and I will have feedback for you prior to Lab Thursday. 
+
+-- Group Feedback Survey-2 in Sakai Coming 6-22 
+
+## Warm Up: Hypothesis Test
+
+In going from a one-sided test to a two-sided (assuming all else is the same), which of the following change: 
+
+-- sample statistic 
+
+-- p-value 
+
+-- null distribution 
+
+-- null hypothesis 
+
+-- alternative hypothesis 
+
+## Warm Up 
+
+-- What is the definition of a *representative sample*? What is one way we can achieve this in research? 
+
+## Discussion: Scope of Inference 
+
+-- Who can our results apply to?
+
+-- X -> Y
+
+--- Causation or Assocciation? 
+
+## Scope of Inference 
+
+-- Do we have a representative sample? 
+
+- Yes? Apply the results to the population 
+
+- No? Apply the results to a sample or similar sample 
+
+## Scope of Inference 
+
+-- Causation or Assocciation? 
+
+-- This comes down to the idea of confounding variables. 
+
+-- Let's draw it out.
+
+
+## Scope of Inference 
+
+-- There are some exceptions to the rule.. 
+
+- Does smoking cause cancer? 
+
+- We can not randomly assign people to smoke... but with repeated studies, you can start to draw causal inference
+
+- Take a causal inference course if you are interested 
+
+## Alpha: Discussion 
+
+Let's talk more about $\alpha$ 
+
+-- We know alpha as our significance level 
+
+- p-value > alpha 
+
+- p-value < alpha 
+
+- We set alpha prior to our research study to determine amount of evidence needed to reject the null 
+
+
+## Alpha: Discussion 
+
+$\alpha$ = Probability of a Type I error 
+
+-- Type 1 error - Rejecting the null hypothesis when we actually shouldn't 
+
+-- Higher the alpha, the easier it is to reject 
+
+-- Higher the alpha, the more likely you are rejecting just due to random chance 
+
+## Alpha and p-values: Discussion 
+
+-- Journals have been getting away from "fixed level testing" 
+
+-- $\alpha$ = 0.05 
+
+-- p-value 0.052
+
+-- It's easy (but not good practice) to retroactively change alpha after....
+
+-- P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone. 
+
+## American Statistical Assocciation (ASA)
+
+"The p-value was never intended to be a substitute for scientific reasoning,” said Ron Wasserstein, the ASA’s executive director. “Well-reasoned statistical arguments contain much
+more than the value of a single number and whether that number exceeds an arbitrary threshold. The ASA statement is intended to steer research into a ‘post p<0.05 era.’” 
+
+## ASA
+
+**“Over time it appears the p-value has become a gatekeeper for whether work is publishable, at least in some fields,” said Jessica Utts, ASA president.** “This apparent editorial bias leads to the ‘file-drawer effect,’ in which research with statistically significant outcomes are much more likely to get published, while other work that might well be just as important scientifically is never seen in print.
+
+See full statement [here](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf)
+
+## p-values 
+
+Some journals, such as Basic and Applied Psychology, Epidemiology, and Political Analysis, have banned the use of p-values in an attempt to improve statistical inferences
+
+- but not confidence intervals...
+
+## Confidence Intervals
+
+-- Confidence Intervals are a statistical method uses to **estimate** population parameters
+
+## CI vs Hypo Testing
+
+-- Both are curious about population parameters
+
+-- Both use the idea of variability
+
+## CI vs Hypo Testing
+
+-- CIs do not assume a hypothesis
+
+-- The distribution used is not centered at the null value (more on this in a second)
+
+## Confidence vs Probability
+
+-- Before making confidence intervals, let's define what it is and how it is different than probability.
+
+-   Takeaway: Being unknown is not the same as being random
+
+## Confidence
+
+Confidence - the percentage of all possible confidence intervals, created under the same conditions, expected to include the true population parameter
+
+-- https://www.rossmanchance.com/applets/2021/confsim/ConfSim.html
+
+-- For your confidence interval, the parameter is not random
+
+## Confidence Interval
+
+Now, let's make one and talk through it!
+
+
+
+
+
+
+
+
