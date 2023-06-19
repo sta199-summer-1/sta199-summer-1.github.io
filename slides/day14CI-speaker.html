@@ -448,7 +448,47 @@
 </section>
 <section id="confidence-interval" class="slide level2">
 <h2>Confidence Interval</h2>
-<p>Now, let’s make one and talk through it!</p>
+<p>– Two ways to create a CI</p>
+<ul>
+<li class="fragment"><p>Bootstrap methods</p></li>
+<li class="fragment"><p>Central Limit Theorm (can also conduct Hypo tests this way)</p></li>
+</ul>
+</section>
+<section id="confidence-interval---bootstrap" class="slide level2">
+<h2>Confidence Interval - Bootstrap</h2>
+<p>– Resample from our data to simulate many different samples</p>
+<p>– Calculate confidence interval from distribution</p>
+</section>
+<section id="confidence-interval---clt" class="slide level2">
+<h2>Confidence Interval - CLT</h2>
+<p>– Mathematical property that says: For a large enough n, the shape of the sampling distribution of the means is approximately normally distributed</p>
+<p>– And we can use the approximately normally distributed exactly like we do our simulated distribution to calculate confidence intervals</p>
+</section>
+<section id="confidence-interval---clt-1" class="slide level2">
+<h2>Confidence Interval - CLT</h2>
+<p>– We need to estimate the center and the spread of this approximately normal distribution</p>
+<p>– center -&gt; mean</p>
+<p>– spread -&gt; <span class="math inline">\(\frac{s}{\sqrt(n)}\)</span></p>
+</section>
+<section id="assumptions" class="slide level2">
+<h2>Assumptions</h2>
+<p>To trust our results…</p>
+<p>– Independence</p>
+<p>– Sample Size</p>
+</section>
+<section id="independence" class="slide level2">
+<h2>Independence</h2>
+<p>– Independent observations</p>
+</section>
+<section id="sample-size" class="slide level2">
+<h2>Sample Size</h2>
+<p>– n &gt; 30 (for quantitative variables)</p>
+<p>– 10 successes + 10 failures (for categorical variables)</p>
+<p>– “Does one observation influence the other?”</p>
+</section>
+<section id="ae-13" class="slide level2">
+<h2>ae-13</h2>
+<p>Let’s create a CI using each method!</p>
 
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">

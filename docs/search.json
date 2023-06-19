@@ -3231,7 +3231,56 @@
     "href": "slides/day14CI.html#confidence-interval",
     "title": "Intro to Confidence Intervals",
     "section": "Confidence Interval",
-    "text": "Confidence Interval\nNow, let’s make one and talk through it!\n\n\n\n🔗 sta199-summer-1.github.io"
+    "text": "Confidence Interval\n– Two ways to create a CI\n\nBootstrap methods\nCentral Limit Theorm (can also conduct Hypo tests this way)"
+  },
+  {
+    "objectID": "slides/day14CI.html#confidence-interval---bootstrap",
+    "href": "slides/day14CI.html#confidence-interval---bootstrap",
+    "title": "Intro to Confidence Intervals",
+    "section": "Confidence Interval - Bootstrap",
+    "text": "Confidence Interval - Bootstrap\n– Resample from our data to simulate many different samples\n– Calculate confidence interval from distribution"
+  },
+  {
+    "objectID": "slides/day14CI.html#confidence-interval---clt",
+    "href": "slides/day14CI.html#confidence-interval---clt",
+    "title": "Intro to Confidence Intervals",
+    "section": "Confidence Interval - CLT",
+    "text": "Confidence Interval - CLT\n– Mathematical property that says: For a large enough n, the shape of the sampling distribution of the means is approximately normally distributed\n– And we can use the approximately normally distributed exactly like we do our simulated distribution to calculate confidence intervals"
+  },
+  {
+    "objectID": "slides/day14CI.html#confidence-interval---clt-1",
+    "href": "slides/day14CI.html#confidence-interval---clt-1",
+    "title": "Intro to Confidence Intervals",
+    "section": "Confidence Interval - CLT",
+    "text": "Confidence Interval - CLT\n– We need to estimate the center and the spread of this approximately normal distribution\n– center -> mean\n– spread -> \\(\\frac{s}{\\sqrt(n)}\\)"
+  },
+  {
+    "objectID": "slides/day14CI.html#assumptions",
+    "href": "slides/day14CI.html#assumptions",
+    "title": "Intro to Confidence Intervals",
+    "section": "Assumptions",
+    "text": "Assumptions\nTo trust our results…\n– Independence\n– Sample Size"
+  },
+  {
+    "objectID": "slides/day14CI.html#independence",
+    "href": "slides/day14CI.html#independence",
+    "title": "Intro to Confidence Intervals",
+    "section": "Independence",
+    "text": "Independence\n– Independent observations"
+  },
+  {
+    "objectID": "slides/day14CI.html#sample-size",
+    "href": "slides/day14CI.html#sample-size",
+    "title": "Intro to Confidence Intervals",
+    "section": "Sample Size",
+    "text": "Sample Size\n– n > 30 (for quantitative variables)\n– 10 successes + 10 failures (for categorical variables)\n– “Does one observation influence the other?”"
+  },
+  {
+    "objectID": "slides/day14CI.html#ae-13",
+    "href": "slides/day14CI.html#ae-13",
+    "title": "Intro to Confidence Intervals",
+    "section": "ae-13",
+    "text": "ae-13\nLet’s create a CI using each method!\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
