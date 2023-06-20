@@ -204,9 +204,9 @@ To trust our results...
 
 – “Does one observation influence the other?”
 
-## ae-13
+## ae-14
 
-Let's create a CI using each method! 
+Let's create a CI using each method + really learn about the CLT
 
 
 

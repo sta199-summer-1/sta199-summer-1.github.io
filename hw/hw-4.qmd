@@ -48,7 +48,7 @@ The data we are working with today comes from Herbie Lee. Please read informatio
 
     c.  If you can use CLT, please do so to construct and report the confidence interval. Otherwise, construct a bootstrap confidence interval with `set.seed(5)` and `1000` reps. Interpret your interval in context.
     
-2. Now, we want to estimate the difference in mean total sleep time between group 1 and group 2. Use the following order (group 1 - group 2).
+2. Now, we want to estimate the difference in mean total sleep time between those who consumed a calcium-magnesium supplement with dinner versus those who did not. Use the following order (Yes - No).
 
     a.  Report your summary statistic in proper notation below. 
     

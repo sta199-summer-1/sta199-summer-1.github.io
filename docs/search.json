@@ -1173,7 +1173,7 @@
     "href": "hw/hw-4.html#exercises",
     "title": "HW 4",
     "section": "Exercises",
-    "text": "Exercises\nInvestigating sleep\n\n\nFind the mean time it takes the participant to fall asleep.\nCheck whether or not you can use central limit theorem to construct a 95% confidence interval to report with your estimate. For purposes of this exercise, you may consider samples of time to sleep as random.\nIf you can use CLT, please do so to construct and report the confidence interval. Otherwise, construct a bootstrap confidence interval with set.seed(5) and 1000 reps. Interpret your interval in context.\n\n\nNow, we want to estimate the difference in mean total sleep time between group 1 and group 2. Use the following order (group 1 - group 2).\n\nReport your summary statistic in proper notation below.\nConstruct a bootstrap confidence interval with set.seed(5) and 1000 reps. Interpret your interval in context.\nSuppose instead you made a 99% confidence interval. Please indicate all that would change below. If you conclude that something would change, please be specific on how.\n\n\nCenter of the confidence interval\nWidth of the confidence interval\n\n\nIf we were to use CLT to re-calculate our 95% confidence interval, would you expect the results to be similar or different? Justify your answer.\n\n\n\nDoes the participant take more than 35 minutes on average to fall asleep?\n\nPerform a hypothesis test to investigate. What is the null? What is the alternative? Use set.seed(2) and reps=5000 to simulate a distribution under the assumption of the null hypothesis.\nVisualize the null distribution and shade the p-value. Be sure to label the x-axis.\nWrite a proper decision and conclusion based on a significance level of \\(\\alpha\\) = 0.05. Given your response from the previous exercise, does this result surprise you? Why or why not?\nWhat is the probability of rejecting the null if it’s actually true? What type of error is this (type 1 or type 2)?\n\n\n\nDo calcium-magnesium supplements reduce median time to fall asleep? Construct a hypothesis test to investigate. To begin, state the null and alternative hypothesis in words and in proper notation.\nUse simulation-based inference to generate 1000 samples from the null distribution with set.seed(5).\nCompute and state your observed statistic.\nFinally, compute the p-value and report it as well as significance at the alpha = 0.05 level and state your conclusion in context of the problem.\n\n\n\n\n\n\n\n\nHint\n\n\n\nFor the following problem, you will need to mutate to ensure that one of the variables is non-numeric.\n\n\n\n\n\n\n\n\nHint\n\n\n\nYou may find running ?calculate in the console useful!"
+    "text": "Exercises\nInvestigating sleep\n\n\nFind the mean time it takes the participant to fall asleep.\nCheck whether or not you can use central limit theorem to construct a 95% confidence interval to report with your estimate. For purposes of this exercise, you may consider samples of time to sleep as random.\nIf you can use CLT, please do so to construct and report the confidence interval. Otherwise, construct a bootstrap confidence interval with set.seed(5) and 1000 reps. Interpret your interval in context.\n\n\nNow, we want to estimate the difference in mean total sleep time between those who consumed a calcium-magnesium supplement with dinner versus those who did not. Use the following order (Yes - No).\n\nReport your summary statistic in proper notation below.\nConstruct a bootstrap confidence interval with set.seed(5) and 1000 reps. Interpret your interval in context.\nSuppose instead you made a 99% confidence interval. Please indicate all that would change below. If you conclude that something would change, please be specific on how.\n\n\nCenter of the confidence interval\nWidth of the confidence interval\n\n\nIf we were to use CLT to re-calculate our 95% confidence interval, would you expect the results to be similar or different? Justify your answer.\n\n\n\nDoes the participant take more than 35 minutes on average to fall asleep?\n\nPerform a hypothesis test to investigate. What is the null? What is the alternative? Use set.seed(2) and reps=5000 to simulate a distribution under the assumption of the null hypothesis.\nVisualize the null distribution and shade the p-value. Be sure to label the x-axis.\nWrite a proper decision and conclusion based on a significance level of \\(\\alpha\\) = 0.05. Given your response from the previous exercise, does this result surprise you? Why or why not?\nWhat is the probability of rejecting the null if it’s actually true? What type of error is this (type 1 or type 2)?\n\n\n\nDo calcium-magnesium supplements reduce median time to fall asleep? Construct a hypothesis test to investigate. To begin, state the null and alternative hypothesis in words and in proper notation.\nUse simulation-based inference to generate 1000 samples from the null distribution with set.seed(5).\nCompute and state your observed statistic.\nFinally, compute the p-value and report it as well as significance at the alpha = 0.05 level and state your conclusion in context of the problem.\n\n\n\n\n\n\n\n\nHint\n\n\n\nFor the following problem, you will need to mutate to ensure that one of the variables is non-numeric.\n\n\n\n\n\n\n\n\nHint\n\n\n\nYou may find running ?calculate in the console useful!"
   },
   {
     "objectID": "hw/hw-4.html#hint-2",
@@ -3325,11 +3325,11 @@
     "text": "Sample Size\n– n > 30 (for quantitative variables)\n– 10 successes + 10 failures (for categorical variables)\n– “Does one observation influence the other?”"
   },
   {
-    "objectID": "slides/day14CI.html#ae-13",
-    "href": "slides/day14CI.html#ae-13",
+    "objectID": "slides/day14CI.html#ae-14",
+    "href": "slides/day14CI.html#ae-14",
     "title": "Intro to Confidence Intervals",
-    "section": "ae-13",
-    "text": "ae-13\nLet’s create a CI using each method!\n\n\n\n🔗 sta199-summer-1.github.io"
+    "section": "ae-14",
+    "text": "ae-14\nLet’s create a CI using each method + really learn about the CLT\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",
@@ -4653,6 +4653,62 @@
     "title": "SLR + MLR",
     "section": "Adjusted R-squared",
     "text": "Adjusted R-squared\nTakeaway: Adds a penalty for “unimportant” predictors (x’s)"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#outline-for-talk",
+    "href": "slides/jsmtalk_move.html#outline-for-talk",
+    "title": "Teaching (with) Quarto",
+    "section": "Outline for Talk",
+    "text": "Outline for Talk\n– Opening: Lack of trust in science\nOne way we can combat this is transparency and reproducibility"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#reproducibility-crisis-lack-of-trust-in-science",
+    "href": "slides/jsmtalk_move.html#reproducibility-crisis-lack-of-trust-in-science",
+    "title": "Teaching (with) Quarto",
+    "section": "Reproducibility Crisis: Lack of Trust in Science",
+    "text": "Reproducibility Crisis: Lack of Trust in Science"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#quarto",
+    "href": "slides/jsmtalk_move.html#quarto",
+    "title": "Teaching (with) Quarto",
+    "section": "Quarto",
+    "text": "Quarto\nMake reproducible research and publications the norm rather than the exception\nBringing this into an intro course helps have conversations about the importance of reproducibility and instills a foundation of good habits early and often"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#background-sta199",
+    "href": "slides/jsmtalk_move.html#background-sta199",
+    "title": "Teaching (with) Quarto",
+    "section": "Background: STA199",
+    "text": "Background: STA199\n– What it is\n– Who the students are\n– Topics involved\nThis is all done through Quarto"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#how",
+    "href": "slides/jsmtalk_move.html#how",
+    "title": "Teaching (with) Quarto",
+    "section": "How",
+    "text": "How\nSeamlessly integrates into more modernized teaching\nDo we talk about GitHub’s role in helping students with Quarto? ex. Repo generation with quarto documents inside <- I think if the title is changed, then this makes sense. This falls under the category of an extension to “teaching WITH quarto”"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#what-topics-are-covered",
+    "href": "slides/jsmtalk_move.html#what-topics-are-covered",
+    "title": "Teaching (with) Quarto",
+    "section": "What topics are covered",
+    "text": "What topics are covered\n– Topic 1\n– Topic 2\n– Topic 3"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#example-application-exericse",
+    "href": "slides/jsmtalk_move.html#example-application-exericse",
+    "title": "Teaching (with) Quarto",
+    "section": "Example Application Exericse",
+    "text": "Example Application Exericse\n– Emphasis on reproducibility and taking time to show that during activities"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#topics-specific-in-quarto",
+    "href": "slides/jsmtalk_move.html#topics-specific-in-quarto",
+    "title": "Teaching (with) Quarto",
+    "section": "Topics specific in Quarto",
+    "text": "Topics specific in Quarto\n– How to create professional documents…\n— YAML customization\n— Integrate R-code (control with code chunk arguments)\n— customize figures\n— website generation (show off student work at the end of presentation)\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/lab-0-slides.html#introductions",

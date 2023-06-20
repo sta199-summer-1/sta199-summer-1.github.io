@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Dr.&nbsp;Elijah Meyer">
-  <title>STA 199 - Intro to Confidence Intervals</title>
+  <title>STA 199 - Teaching (with) Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -319,176 +319,60 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">Intro to Confidence Intervals</h1>
-  <p class="subtitle">Day 14</p>
+  <h1 class="title">Teaching (with) Quarto</h1>
+  <p class="subtitle">Teaching Quarto in Intro to Data Science</p>
   <p class="author">Dr.&nbsp;Elijah Meyer</p>
   <p class="institute">Duke University <br> STA 199 - Summer 2023</p>
-  <p class="date">June 20th</p>
+  <p class="date">Aug</p>
 </section>
 
-<section id="checklist" class="slide level2">
-<h2>Checklist</h2>
-<p>– Exam-2 is over. Nice work!</p>
-<p>– Clone <code>ae-14</code></p>
-<p>– Homework 4 is Live (Due 6-26)</p>
-<p>– Project Report (Due 6-22)</p>
-<p>– Lab Thursday (6-22) is a Project Work Day</p>
-<p>— If you want your report to be graded on 6-21, please have the final draft on your website updated by Noon + send me an email and I will have feedback for you prior to Lab Thursday.</p>
-<p>– Group Feedback Survey-2 in Sakai Coming 6-22</p>
+<section class="slide level2">
+
+<p>Should the title be “Teaching WITH Quarto in Intro to Data Science? This would make it a lot more broad and easier to discuss vs just focusing in on the the quarto logistics we teach</p>
 </section>
-<section id="warm-up-hypothesis-test" class="slide level2">
-<h2>Warm Up: Hypothesis Test</h2>
-<p>In going from a one-sided test to a two-sided (assuming all else is the same), which of the following change:</p>
-<p>– sample statistic</p>
-<p>– p-value</p>
-<p>– null distribution</p>
-<p>– null hypothesis</p>
-<p>– alternative hypothesis</p>
+<section id="outline-for-talk" class="slide level2">
+<h2>Outline for Talk</h2>
+<p>– Opening: Lack of trust in science</p>
+<p>One way we can combat this is transparency and reproducibility</p>
 </section>
-<section id="warm-up" class="slide level2">
-<h2>Warm Up</h2>
-<p>– What is the definition of a <em>representative sample</em>? What is one way we can achieve this in research?</p>
+<section id="reproducibility-crisis-lack-of-trust-in-science" class="slide level2">
+<h2>Reproducibility Crisis: Lack of Trust in Science</h2>
+
+<img data-src="images/01-welcome-199/pnas.png" class="r-stretch quarto-figure-center"></section>
+<section id="quarto" class="slide level2">
+<h2>Quarto</h2>
+<p>Make reproducible research and publications the norm rather than the exception</p>
+<p>Bringing this into an intro course helps have conversations about the importance of reproducibility and instills a foundation of good habits early and often</p>
 </section>
-<section id="discussion-scope-of-inference" class="slide level2">
-<h2>Discussion: Scope of Inference</h2>
-<p>– Who can our results apply to?</p>
-<p>– X -&gt; Y</p>
-<p>— Causation or Assocciation?</p>
+<section id="background-sta199" class="slide level2">
+<h2>Background: STA199</h2>
+<p>– What it is</p>
+<p>– Who the students are</p>
+<p>– Topics involved</p>
+<p>This is all done through Quarto</p>
 </section>
-<section id="scope-of-inference" class="slide level2">
-<h2>Scope of Inference</h2>
-<p>– Do we have a representative sample?</p>
-<ul>
-<li class="fragment"><p>Yes? Apply the results to the population</p></li>
-<li class="fragment"><p>No? Apply the results to a sample or similar sample</p></li>
-</ul>
+<section id="how" class="slide level2">
+<h2>How</h2>
+<p>Seamlessly integrates into more modernized teaching</p>
+<p><strong>Do we talk about GitHub’s role in helping students with Quarto? ex. Repo generation with quarto documents inside</strong> &lt;- I think if the title is changed, then this makes sense. This falls under the category of an extension to “teaching WITH quarto”</p>
 </section>
-<section id="scope-of-inference-1" class="slide level2">
-<h2>Scope of Inference</h2>
-<p>– Causation or Assocciation?</p>
-<p>– This comes down to the idea of confounding variables.</p>
-<p>– Let’s draw it out.</p>
+<section id="what-topics-are-covered" class="slide level2">
+<h2>What topics are covered</h2>
+<p>– Topic 1</p>
+<p>– Topic 2</p>
+<p>– Topic 3</p>
 </section>
-<section id="scope-of-inference-2" class="slide level2">
-<h2>Scope of Inference</h2>
-<p>– There are some exceptions to the rule..</p>
-<ul>
-<li class="fragment"><p>Does smoking cause cancer?</p></li>
-<li class="fragment"><p>We can not randomly assign people to smoke… but with repeated studies, you can start to draw causal inference</p></li>
-<li class="fragment"><p>Take a causal inference course if you are interested</p></li>
-</ul>
+<section id="example-application-exericse" class="slide level2">
+<h2>Example Application Exericse</h2>
+<p>– Emphasis on reproducibility and taking time to show that during activities</p>
 </section>
-<section id="alpha-discussion" class="slide level2">
-<h2>Alpha: Discussion</h2>
-<p>Let’s talk more about <span class="math inline">\(\alpha\)</span></p>
-<p>– We know alpha as our significance level</p>
-<ul>
-<li class="fragment"><p>p-value &gt; alpha</p></li>
-<li class="fragment"><p>p-value &lt; alpha</p></li>
-<li class="fragment"><p>We set alpha prior to our research study to determine amount of evidence needed to reject the null</p></li>
-</ul>
-</section>
-<section id="alpha-discussion-1" class="slide level2">
-<h2>Alpha: Discussion</h2>
-<p><span class="math inline">\(\alpha\)</span> = Probability of a Type I error</p>
-<p>– Type 1 error - Rejecting the null hypothesis when we actually shouldn’t</p>
-<p>– Higher the alpha, the easier it is to reject</p>
-<p>– Higher the alpha, the more likely you are rejecting just due to random chance</p>
-</section>
-<section id="alpha-and-p-values-discussion" class="slide level2">
-<h2>Alpha and p-values: Discussion</h2>
-<p>– Journals have been getting away from “fixed level testing”</p>
-<p>– <span class="math inline">\(\alpha\)</span> = 0.05</p>
-<p>– p-value 0.052</p>
-<p>– It’s easy (but not good practice) to retroactively change alpha after….</p>
-<p>– P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.</p>
-</section>
-<section id="american-statistical-assocciation-asa" class="slide level2">
-<h2>American Statistical Assocciation (ASA)</h2>
-<p>“The p-value was never intended to be a substitute for scientific reasoning,” said Ron Wasserstein, the ASA’s executive director. “Well-reasoned statistical arguments contain much more than the value of a single number and whether that number exceeds an arbitrary threshold. The ASA statement is intended to steer research into a ‘post p&lt;0.05 era.’”</p>
-</section>
-<section id="asa" class="slide level2">
-<h2>ASA</h2>
-<p><strong>“Over time it appears the p-value has become a gatekeeper for whether work is publishable, at least in some fields,” said Jessica Utts, ASA president.</strong> “This apparent editorial bias leads to the ‘file-drawer effect,’ in which research with statistically significant outcomes are much more likely to get published, while other work that might well be just as important scientifically is never seen in print.</p>
-<p>See full statement <a href="https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf">here</a></p>
-</section>
-<section id="p-values" class="slide level2">
-<h2>p-values</h2>
-<p>Some journals, such as Basic and Applied Psychology, Epidemiology, and Political Analysis, have banned the use of p-values in an attempt to improve statistical inferences</p>
-<ul>
-<li class="fragment">but not confidence intervals…</li>
-</ul>
-</section>
-<section id="confidence-intervals" class="slide level2">
-<h2>Confidence Intervals</h2>
-<p>– Confidence Intervals are a statistical method uses to <strong>estimate</strong> population parameters</p>
-</section>
-<section id="ci-vs-hypo-testing" class="slide level2">
-<h2>CI vs Hypo Testing</h2>
-<p>– Both are curious about population parameters</p>
-<p>– Both use the idea of variability</p>
-</section>
-<section id="ci-vs-hypo-testing-1" class="slide level2">
-<h2>CI vs Hypo Testing</h2>
-<p>– CIs do not assume a hypothesis</p>
-<p>– The distribution used is not centered at the null value (more on this in a second)</p>
-</section>
-<section id="confidence-vs-probability" class="slide level2">
-<h2>Confidence vs Probability</h2>
-<p>– Before making confidence intervals, let’s define what it is and how it is different than probability.</p>
-<ul>
-<li class="fragment">Takeaway: Being unknown is not the same as being random</li>
-</ul>
-</section>
-<section id="confidence" class="slide level2">
-<h2>Confidence</h2>
-<p>Confidence - the percentage of all possible confidence intervals, created under the same conditions, expected to include the true population parameter</p>
-<p>– https://www.rossmanchance.com/applets/2021/confsim/ConfSim.html</p>
-<p>– For your confidence interval, the parameter is not random</p>
-</section>
-<section id="confidence-interval" class="slide level2">
-<h2>Confidence Interval</h2>
-<p>– Two ways to create a CI</p>
-<ul>
-<li class="fragment"><p>Bootstrap methods</p></li>
-<li class="fragment"><p>Central Limit Theorm (can also conduct Hypo tests this way)</p></li>
-</ul>
-</section>
-<section id="confidence-interval---bootstrap" class="slide level2">
-<h2>Confidence Interval - Bootstrap</h2>
-<p>– Resample from our data to simulate many different samples</p>
-<p>– Calculate confidence interval from distribution</p>
-</section>
-<section id="confidence-interval---clt" class="slide level2">
-<h2>Confidence Interval - CLT</h2>
-<p>– Mathematical property that says: For a large enough n, the shape of the sampling distribution of the means is approximately normally distributed</p>
-<p>– And we can use the approximately normally distributed exactly like we do our simulated distribution to calculate confidence intervals</p>
-</section>
-<section id="confidence-interval---clt-1" class="slide level2">
-<h2>Confidence Interval - CLT</h2>
-<p>– We need to estimate the center and the spread of this approximately normal distribution</p>
-<p>– center -&gt; mean</p>
-<p>– spread -&gt; <span class="math inline">\(\frac{s}{\sqrt(n)}\)</span></p>
-</section>
-<section id="assumptions" class="slide level2">
-<h2>Assumptions</h2>
-<p>To trust our results…</p>
-<p>– Independence</p>
-<p>– Sample Size</p>
-</section>
-<section id="independence" class="slide level2">
-<h2>Independence</h2>
-<p>– Independent observations</p>
-</section>
-<section id="sample-size" class="slide level2">
-<h2>Sample Size</h2>
-<p>– n &gt; 30 (for quantitative variables)</p>
-<p>– 10 successes + 10 failures (for categorical variables)</p>
-<p>– “Does one observation influence the other?”</p>
-</section>
-<section id="ae-14" class="slide level2">
-<h2>ae-14</h2>
-<p>Let’s create a CI using each method + really learn about the CLT</p>
+<section id="topics-specific-in-quarto" class="slide level2">
+<h2>Topics specific in Quarto</h2>
+<p>– How to create professional documents…</p>
+<p>— YAML customization</p>
+<p>— Integrate R-code (control with code chunk arguments)</p>
+<p>— customize figures</p>
+<p>— website generation (show off student work at the end of presentation)</p>
 
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -529,7 +413,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"5b5de7e87071c469","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"87e122793737c4db","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
