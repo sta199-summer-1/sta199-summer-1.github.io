@@ -1,0 +1,8 @@
+---
+title: "Prepare"
+subtitle: "Due: Tuesday June 22nd, 2023"
+categories: "prepare"
+---
+
+-  Read chapter [20.3 to end of chapter](https://openintro-ims.netlify.app/inference-two-means.html)
+

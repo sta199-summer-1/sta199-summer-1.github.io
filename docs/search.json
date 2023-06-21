@@ -1201,7 +1201,7 @@
     "href": "index.html",
     "title": "STA 199: Introduction to Data Science",
     "section": "",
-    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression II\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nBootstrap Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\nHW 3 Due\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nBootstrap Hypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nLab 5 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nSimulation Confidence Intervals\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 4 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nCLT; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nData Ethics + Special Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 4 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
+    "text": "week\n      dow\n      date\n      what\n      topic\n      prepare\n      class_slides\n      lab_slides\n      ae_sa\n      hw\n      hw_sa\n      lab\n      lab_sa\n      exam\n      project\n      notes\n    \n\n\n1\nM\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n17 May\nLec-1\nWelcome to R & GitHub; \nExpectations; Tips to be Successful\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n18 May\nLec-2; Lab-0\nExploratory data analysis I | Connecting R with Git Lab\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nM\n22 May\nLec-3; Lab-1\nExploratory data analysis II + Intro to Data Wrangling | Data Visualization\n\n\n\n\n\n\n\n\n\n\nHW 1 Release; Lab-0 Due\n\n\n\nTu\n23 May\nLec-4\nData wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n25 May\nLec-5; Lab-2\nData wrangling II + Tidying Data | Group Formation + Data Wrangling\n\n\n\n\n\n\n\n\n\n\nLab-1 Due\n\n\n3\nM\n29 May\nHoliday\nMemorial holiday: No classes are held\n\n\n\n\n\n\n\n\n\n\nHW 1 Due; HW 2 Release\n\n\n\nTu\n30 May\nLec-7\nggplot practice + debugging practice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nW\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n1 June\nLec-8; Lab-3; Exam-1\nMerge conflicts + The Language of Models; Project Work Day\n\n\n\n\n\n\n\n\n\n\nHW 2 Due; Release Exam 1\n\n\n4\nM\n5 June\nLec-9; Lab-4\nResearch Questions + Simple Linear Regression\n\n\n\n\n\n\n\n\n\n\nExam-1 Due\n\n\n\nTu\n6 June\nLec-10\nMultiple Linear Regression I\n\n\n\n\n\n\n\n\n\n\nHW 3 Release; Start Project\n\n\n\nTh\n8 June\nLec-11;\nFinish MLR + Logistic Regression; Project Work Day\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nM\n12 June\nLec-12; Lab-5\nLogistic Regression II\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 1 Due\n\n\n\nTu\n13 June\nLec-13;\nBootstrap Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\nHW 3 Due\n\n\n\nTh\n15 June\nLec-14; Lab-7; Exam-2\nBootstrap Hypothesis Testing II\n\n\n\n\n\n\n\n\n\n\nLab 5 Due; Release Exam-2\n\n\n6\nM\n19 June\nHoliday\nJuneteenth holiday. No classes are held\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTu\n20 June\nLec-16\nSimulation Confidence Intervals\n\n\n\n\n\n\n\n\n\n\nExam-2 Due; HW 4 Release\n\n\n\nTh\n22 June\nLec-17; Lab-8\nFinish CI + Hypo Testing; Project Work Day\n\n\n\n\n\n\n\n\n\n\nProject Checkpoint 2 (Draft) Due\n\n\n7\nM\n26 June\nLec-18\nData Ethics + Special Topics (R-Shiny)\n\n\n\n\n\n\n\n\n\n\nHW 4 Due\n\n\n\nTu\n27 June\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\n29 June\n\n\n\n\n\n\n\n\n\n\n\n\nProject Presentation"
   },
   {
     "objectID": "labs/lab-0.html",
@@ -1545,6 +1545,13 @@
     "title": "Prepare",
     "section": "",
     "text": "Watch Central limit theorem\nRead (optional): 13.1, 13.2, 13.3: inference with mathematical models"
+  },
+  {
+    "objectID": "prepare/6-22.html",
+    "href": "prepare/6-22.html",
+    "title": "Prepare",
+    "section": "",
+    "text": "Read chapter 20.3 to end of chapter"
   },
   {
     "objectID": "prepare/6-5.html",
@@ -3330,6 +3337,139 @@
     "title": "Intro to Confidence Intervals",
     "section": "ae-14",
     "text": "ae-14\nLet’s create a CI using each method + really learn about the CLT\n\n\n\n🔗 sta199-summer-1.github.io"
+  },
+  {
+    "objectID": "slides/day15.html#checklist",
+    "href": "slides/day15.html#checklist",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Checklist",
+    "text": "Checklist\n– Clone ae-15\n– Homework 4 is Live (Due 6-26)\n– Project Report Draft Due Tonight\n– Lab Today is a Project Work Day\n– Group Feedback Survey-2 in Sakai Coming Today\n– Instructor Evaluations"
+  },
+  {
+    "objectID": "slides/day15.html#evaluations-5-10-minutes",
+    "href": "slides/day15.html#evaluations-5-10-minutes",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Evaluations (5-10 minutes)",
+    "text": "Evaluations (5-10 minutes)\n– Please go to: eval-duke.evaluationkit.com.\n– I take these seriously\n– Duke takes these seriously"
+  },
+  {
+    "objectID": "slides/day15.html#by-the-way",
+    "href": "slides/day15.html#by-the-way",
+    "title": "Finish CI and Hypo Testing",
+    "section": "By the way…",
+    "text": "By the way…\nYou have been my favorite summer session to teach…"
+  },
+  {
+    "objectID": "slides/day15.html#project-talk-rough-draft",
+    "href": "slides/day15.html#project-talk-rough-draft",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Project Talk: Rough Draft",
+    "text": "Project Talk: Rough Draft\nThe draft and peer review will focus primarily on the exploratory data analysis and initial interpretations.\n– Write the draft in the report.qmd\n– Make sure you are Building your entire website (demo)\n– Change author information"
+  },
+  {
+    "objectID": "slides/day15.html#project-talk-rough-draft-1",
+    "href": "slides/day15.html#project-talk-rough-draft-1",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Project Talk: Rough Draft",
+    "text": "Project Talk: Rough Draft\n– Introduction and data (incorporate feedback / add missing details)\n– Methodology\n+  include visualizations and summary statistics relevant to your research question\n\n+  justify the choice of statistical method(s) used to answer your research question\n– Results\n+ Provide the main results from your analysis"
+  },
+  {
+    "objectID": "slides/day15.html#typical-feedback-questions",
+    "href": "slides/day15.html#typical-feedback-questions",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Typical Feedback / Questions",
+    "text": "Typical Feedback / Questions\n– Do your methods actually answer your research question?\n– Do you have the data to answer your research question?\n– Did you consider including any other variables in your model? (modeling question)"
+  },
+  {
+    "objectID": "slides/day15.html#presentation",
+    "href": "slides/day15.html#presentation",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Presentation",
+    "text": "Presentation\n– The presentation should be between 5-15 minutes\n– Short QA after\n– Record presentation part if you can not make it due to an extreme circumstance + follow up with an email I send of questions\n– Use whatever platform you are most comfortable with. Google slides is recommended for collaboration"
+  },
+  {
+    "objectID": "slides/day15.html#presentation-tips",
+    "href": "slides/day15.html#presentation-tips",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Presentation Tips",
+    "text": "Presentation Tips\n– More plots; Less words\n– Make sure the audience understands..\n+ Why \n\n+ What your research question is \n– Your plots are distracting if your labels are hard to read. Make them bigger than you think you need on your slides!\n– Don’t read from slides. You are welcome to note cards (but don’t just read from those either)\n– Everyone needs to contribute something meaningful\n– Practice"
+  },
+  {
+    "objectID": "slides/day15.html#warm-up",
+    "href": "slides/day15.html#warm-up",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Warm Up",
+    "text": "Warm Up\n– Why do we make confidence intervals? What is the purpose of confidence intervals?\n– Where are bootstrap distributions centered? Why does this make sense?"
+  },
+  {
+    "objectID": "slides/day15.html#a-review-from-last-time",
+    "href": "slides/day15.html#a-review-from-last-time",
+    "title": "Finish CI and Hypo Testing",
+    "section": "A Review from Last Time",
+    "text": "A Review from Last Time\n– We can use the CLT to create confidence intervals (last-ae) and conduct hypothesis tests (this-ae)\n– The CLT states for a sufficiently large sample from the population, the distribution of the sample statistic will be approximately normally distributed\n– Which we need for our statistical inference methods"
+  },
+  {
+    "objectID": "slides/day15.html#assumptions",
+    "href": "slides/day15.html#assumptions",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Assumptions",
+    "text": "Assumptions\n– Independence\n– Large sample size"
+  },
+  {
+    "objectID": "slides/day15.html#large-sample-size",
+    "href": "slides/day15.html#large-sample-size",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Large sample size",
+    "text": "Large sample size\nQuantitative Response\n– n > 30 (in each group if multiple)\n– At least 10 successes and 10 failures (in each group if multiple)"
+  },
+  {
+    "objectID": "slides/day15.html#last-time",
+    "href": "slides/day15.html#last-time",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Last Time:",
+    "text": "Last Time:\nPokemon Heights\nestimate \\(\\pm\\) Margin of Error\nMargin of error = \\(t_{df}^* * \\frac{s}{\\sqrt(n)}\\)"
+  },
+  {
+    "objectID": "slides/day15.html#today-difference-in-means",
+    "href": "slides/day15.html#today-difference-in-means",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Today: Difference in Means",
+    "text": "Today: Difference in Means"
+  },
+  {
+    "objectID": "slides/day15.html#hypothesis-testing-using-clt",
+    "href": "slides/day15.html#hypothesis-testing-using-clt",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Hypothesis Testing using CLT",
+    "text": "Hypothesis Testing using CLT\n– First, we need to standardize our estimate\nStandardized test statistic: (statistic - null value)/(standard error of the statistic).\nStandardized test statistics are a way for you to compare your results to a “normal” distribution of statistics"
+  },
+  {
+    "objectID": "slides/day15.html#hypothesis-testing-using-clt-1",
+    "href": "slides/day15.html#hypothesis-testing-using-clt-1",
+    "title": "Finish CI and Hypo Testing",
+    "section": "Hypothesis Testing using CLT",
+    "text": "Hypothesis Testing using CLT\n\nThen use pt to calculate the p-value!"
+  },
+  {
+    "objectID": "slides/day15.html#the-categorical-cases",
+    "href": "slides/day15.html#the-categorical-cases",
+    "title": "Finish CI and Hypo Testing",
+    "section": "The Categorical Cases",
+    "text": "The Categorical Cases\n– Chapter 16 and 17"
+  },
+  {
+    "objectID": "slides/day15.html#the-categorical-cases-confidence-intervals",
+    "href": "slides/day15.html#the-categorical-cases-confidence-intervals",
+    "title": "Finish CI and Hypo Testing",
+    "section": "The Categorical Cases (Confidence Intervals)",
+    "text": "The Categorical Cases (Confidence Intervals)\n– Very similar to what we have done\n\n– Notice the \\(z^*\\) instead of the \\(t*\\)"
+  },
+  {
+    "objectID": "slides/day15.html#the-categorical-cases-hypothesis-testing",
+    "href": "slides/day15.html#the-categorical-cases-hypothesis-testing",
+    "title": "Finish CI and Hypo Testing",
+    "section": "The Categorical Cases (Hypothesis Testing)",
+    "text": "The Categorical Cases (Hypothesis Testing)\n– Very similar to what we have done\n\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
     "objectID": "slides/Day2-Visualizing-various-types-of-data.html#checklist",

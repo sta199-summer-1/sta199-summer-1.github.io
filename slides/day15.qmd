@@ -1,0 +1,176 @@
+---
+title: "Finish CI and Hypo Testing"
+subtitle: "Day 15"
+date: "June 22nd"
+format: revealjs
+---
+
+## Checklist
+
+-- Clone `ae-15`
+
+-- Homework 4 is Live (Due 6-26)
+
+-- Project Report Draft Due Tonight
+
+-- Lab Today is a Project Work Day
+
+-- Group Feedback Survey-2 in Sakai Coming Today
+
+-- Instructor Evaluations 
+
+## Evaluations (5-10 minutes)
+
+-- Please go to: `eval-duke.evaluationkit.com.`  
+
+-- I take these seriously 
+
+-- Duke takes these seriously 
+
+## By the way... 
+
+You have been my favorite summer session to teach...
+
+![](images/smile.png){fig-align="center"}
+
+## Project Talk: Rough Draft 
+
+The draft and peer review will focus primarily on the exploratory data analysis and initial interpretations.
+
+-- Write the draft in the report.qmd 
+
+-- Make sure you are Building your entire website (demo)
+
+-- Change author information 
+
+
+## Project Talk: Rough Draft 
+
+-- Introduction and data (incorporate feedback / add missing details)
+
+-- Methodology
+
+    +  include visualizations and summary statistics relevant to your research question
+
+    +  justify the choice of statistical method(s) used to answer your research question
+
+-- Results
+
+    + Provide the main results from your analysis
+    
+
+## Typical Feedback / Questions 
+
+-- Do your methods actually answer your research question? 
+
+-- Do you have the data to answer your research question? 
+
+-- Did you consider including any other variables in your model? (modeling question)
+
+
+## Presentation 
+
+-- The presentation should be between 5-15 minutes
+
+-- Short QA after
+
+-- Record presentation part if you can not make it due to an extreme circumstance + follow up with an email I send of questions 
+
+-- Use whatever platform you are most comfortable with. Google slides is recommended for collaboration 
+
+## Presentation Tips{.smaller}
+
+-- More plots; Less words 
+
+-- Make sure the audience understands..
+
+    + Why 
+    
+    + What your research question is 
+    
+-- Your plots are distracting if your labels are hard to read. Make them bigger than you think you need on your slides! 
+
+-- Don't read from slides. You are welcome to note cards (but don't just read from those either)
+
+-- Everyone needs to contribute something meaningful 
+
+-- Practice 
+
+
+# Questions? 
+
+## Warm Up
+
+-- Why do we make confidence intervals? What is the purpose of confidence intervals? 
+
+-- Where are bootstrap distributions centered? Why does this make sense? 
+
+## A Review from Last Time 
+
+-- We can use the CLT to create confidence intervals (last-ae) and conduct hypothesis tests (this-ae)
+
+-- The CLT states for a sufficiently large sample from the population, the distribution of the sample statistic will be approximately normally distributed
+
+-- Which we need for our statistical inference methods 
+
+## Assumptions 
+
+-- Independence 
+
+-- Large sample size 
+
+## Large sample size 
+
+Quantitative Response 
+
+-- n > 30 (in each group if multiple)
+
+-- At least 10 successes and 10 failures (in each group if multiple)
+
+## Last Time: 
+
+Pokemon Heights 
+
+estimate $\pm$ Margin of Error 
+
+Margin of error = $t_{df}^* * \frac{s}{\sqrt(n)}$ 
+
+## Today: Difference in Means 
+
+![](images/me.png){}
+
+# ae-15
+
+## Hypothesis Testing using CLT
+
+-- First, we need to standardize our estimate
+
+Standardized test statistic: (statistic - null value)/(standard error of the statistic).
+
+Standardized test statistics are a way for you to compare your results to a “normal” distribution of statistics
+
+
+## Hypothesis Testing using CLT
+
+
+![](images/t-score.png){}
+
+Then use `pt` to calculate the p-value!
+
+## The Categorical Cases 
+
+-- Chapter [16](https://openintro-ims.netlify.app/inference-one-prop.html) and [17](https://openintro-ims.netlify.app/inference-two-props.html) 
+
+## The Categorical Cases (Confidence Intervals)
+
+-- Very similar to what we have done 
+
+![](images/pme.png){}
+
+-- Notice the $z^*$ instead of the $t*$
+
+## The Categorical Cases (Hypothesis Testing)
+
+-- Very similar to what we have done 
+
+![](images/z-score.png){}
