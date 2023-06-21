@@ -952,6 +952,27 @@
     "text": "Teaching assistants\n\n\n\n\n\n\n\n\n\nName\nRole\nLab section\nOffice hours\n\n\n\n\nPritam Dey \npritam.dey@duke.edu\nLab Leader\nM & Th 3:30PM - 4:45PM: Perkins LINK 087 (Classroom 3)\nWed: 12:00PM - 2:00PM  In-person only: Old chem 203B"
   },
   {
+    "objectID": "hw/extra_boot_prac.html",
+    "href": "hw/extra_boot_prac.html",
+    "title": "Bootstrap Practice",
+    "section": "",
+    "text": "Important\n\n\n\nThis is a practice sheet for bootstrap methods"
+  },
+  {
+    "objectID": "hw/extra_boot_prac.html#getting-started",
+    "href": "hw/extra_boot_prac.html#getting-started",
+    "title": "Bootstrap Practice",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nGo to the Github Organization page and open your hw4-username repo\nClone the repository, open a new project in RStudio. It contains the starter documents you need to complete the homework assignment."
+  },
+  {
+    "objectID": "hw/extra_boot_prac.html#exercises",
+    "href": "hw/extra_boot_prac.html#exercises",
+    "title": "Bootstrap Practice",
+    "section": "Exercises",
+    "text": "Exercises\n\nTo begin, join the data frames. Save your result as ultra. Next, drop all rows without an observed race time_in_seconds. Your final data frame should have 60924 rows and 20 columns. Print the number of rows of ultra to the screen.\nYour friend computes the mean time in seconds it takes participants of 170+ km races to finish. Your friend also constructs a 90% confidence interval and states, “There is a .9 probability that the sample mean race time for races over 170 km is between 130000 and 160000 seconds.” Without running any code, what is wrong with your friend’s statement? Please correct the statement as well (without running any code).\nReport the mean race time for races 170 km or longer and construct a 99% bootstrap confidence interval for the mean race time using set.seed(6) and 5000 reps.\nNow, using the same set.seed, calculate a 95% bootstrap confidence interval for mean race time for races 170 km or longer using 5000 reps. What following characteristics changed compared to the interval created in question 3. (Please answer Yes or No to each of the following. If you answer yes, explain the change observed.)\n\n\nThe center of the confidence interval\nThe width of the confidence interval\n\n\nDoes the standard deviation of the bootstrap distribution change when you change confidence levels? Use appropriate code to justify your answer. (Note: the standard deviation of the bootstrap resampled means is an estimate of the standard error of our statistic!)\n\n\nExplain the process of how one observation (one dot) was created on your bootstrap distribution used to create your confidence interval in question 4. Be specific.\nIs it appropriate to construct a 99% confidence interval for mean race time for races 170 km or longer using the central limit theorem? Why or why not?\n\n\nRegardless of your answer above, use CLT to construct a 99% confidence interval for mean race time for races 170 km or longer. Compare your result to your bootstrap interval in question 3. Then, interpret the interval in the context of the problem.\n\n\nGiven the race was in Argentina, what is the median race time in seconds? Can you use Central Limit Theorem (CLT) to construct a confidence interval about this estimate? Explain. If not, construct a 90% bootstrap confidence interval for the median race time in seconds. Use set.seed(8) and 10000 reps. Interpret your interval in context.\nA fellow colleague wants your next investigation to be about mean race times in France. They are adamant that we must use 80% confidence intervals when reporting results. In 1-2 sentences, discuss both any potential benefits and concerns you may have with creating a confidence interval with this low of level."
+  },
+  {
     "objectID": "hw/hw-1.html",
     "href": "hw/hw-1.html",
     "title": "HW 1 - Data visualization",
