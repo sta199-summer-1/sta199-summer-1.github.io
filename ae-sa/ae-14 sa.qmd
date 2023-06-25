@@ -1,0 +1,313 @@
+---
+title: "Bootstrap + CLT Confidence"
+subtitle: "Suggested Answers"
+categories: 
+  - Application exercise
+editor: visual
+---
+
+```{r}
+#| label: packages
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(tidymodels)
+
+```
+
+## Central Limit Theorem
+
+To start this activity, we are going to demonstrate what the CLT is all about.
+
+Below, we are going to generate a *population distribution*. This is not observed in real life. We are simply pretending we know this for demonstration purposes.
+
+```{r}
+
+rs_pop <- tibble(x = rbeta(100000, 1, 5) * 100)
+
+
+rs_pop |>
+  ggplot(
+    aes(x = x)) +
+  geom_density(fill = "blue") 
+  
+
+```
+
+We are now going to draw samples from this population distribution, take the mean and repeat this process!
+
+Below, draw one sample.
+
+```{r}
+
+set.seed(2)
+
+samp_2 <- rs_pop |>
+  sample_n(size = 50) |>
+  summarize(x_bar = mean(x))
+
+samp_2
+
+```
+
+To make a distribution of sample means.... we need to do this process over and over and over again. Let's do this below.
+
+```{r}
+set.seed(333) 
+
+sampling <- rs_pop |>
+  rep_sample_n(size = 50, reps = 1000) |>
+  group_by(replicate) |>
+  summarize(xbar = mean(x))
+```
+
+Now, create a histogram of the sample means below. Is the distribution of sample means normal?
+
+**The distribution of the means in \~ Normal!**
+
+```{r}
+
+sampling |> 
+  ggplot(
+    aes(x = xbar)
+  ) + 
+  geom_histogram()
+
+```
+
+We know that the mean of our sampling distribution should be about the same as the mean of our population distribution. Check this below:
+
+```{r}
+
+sampling |>
+  summarize(m = mean(xbar))
+
+rs_pop |>
+  summarize(m = mean(x))
+
+```
+
+**Takeaway** And we can use this to create confidence intervals for our population parameter of interest (much like we can with bootstrap methods)
+
+## Small Sample Size
+
+Now, let's change our sample size to 3, violating as assumption of the CLT, and see how it impacts our sampling distribution.
+
+```{r}
+set.seed(333) 
+
+sampling <- rs_pop |>
+  rep_sample_n(size = 3, reps = 1000) |>
+  group_by(replicate) |>
+  summarize(xbar = mean(x))
+```
+
+Again, create a histogram of the sample means and comment on the shape of the distribution below.
+
+```{r}
+
+sampling |>
+  ggplot(
+    aes(x = xbar)
+  ) + 
+  geom_histogram()
+
+```
+
+**Skewed Right**
+
+## Load Data: Pokemon
+
+We will be using the `pokemon` data set, which contains information about 42 randomly selected Pokemon (from all generations). Pokemon is a Japanese media franchise managed by The Pokémon Company, founded by Nintendo, Game Freak, and Creatures. Within this franchise, there are over 1000 different pokemon characters. In this activity, we are going to be taking estimating the mean height of them all.
+
+$\mu$ = True mean height of all pokemon
+
+You may load in the data set with the following code:
+
+```{r}
+pokemon <-  read_csv("https://sta101.github.io/static/appex/data/pokemon.csv")
+```
+
+In this analysis, we will use CLT-based inference to draw conclusions about the mean height among all Pokemon species.
+
+### EDA
+
+Let's start by looking at the distribution of `height_m`, the typical height in meters for a Pokemon species, using a visualization and summary statistics.
+
+```{r}
+
+pokemon |>
+  ggplot(
+    aes(x = height_m)
+  ) + 
+  geom_histogram(binwidth = .15)
+
+```
+
+Below, calculate the mean, standard deviation, and sample size
+
+```{r}
+
+pokemon |>
+  summarise(mean_height = mean(height_m),
+            sd_height = sd(height_m),
+            n_pokemon = n())
+
+```
+
+-   What is the point estimate for $\sigma$?
+
+s = 0.497
+
+What is the standard deviation mean?
+
+**Add response**
+
+-   What is the point estimate for $\mu$, i.e., the "best guess" for the mean height of all Pokemon? Use proper notation.
+
+$\bar{x}$ = **0.929**
+
+## Bootstrap Distribution
+
+Below, we are going to create a bootstrap distribution using simulation techniques. How is this distribution created?
+
+## Assumptions
+
+-   Independence?
+
+That one pokemon's height does not impact the other
+
+-   Sample size?
+
+n \> 10
+
+## Create
+
+```{r}
+boot_df <- pokemon |>
+  specify(response = height_m) |>
+  generate(reps = 1000, type = "bootstrap") |>
+  calculate(stat = "mean")
+
+```
+
+**Resample with replacment "n" number of times. Calculate the new sample mean. Do this process 1000 times to create your bootstrap resample distribution.**
+
+Visualize this distribution below:
+
+```{r}
+
+boot_df |>
+  ggplot(
+    aes(x = stat)
+  ) + 
+  geom_histogram()
+
+boot_df |>
+  summarize(center = mean(stat))
+
+```
+
+Now, let's use this distribution to create a 95% confidence interval...
+
+```{r}
+
+boot_df |> 
+  summarize(lower = quantile(stat , .025),
+            upper = quantile(stat , .975))
+
+```
+
+What changes if we were to create a 90% confidence interval?
+
+**Becomes more narrow**
+
+Interpret your 95% confidence interval in the context of the problem below:
+
+**We are 95% confident that the true mean height of all pokemon is between 0.783 and 1.08 meters.**
+
+## CLT
+
+Now, we will be using the Central Limit Theorem to draw conclusions about the $\mu$, the mean height in the population of Pokemon.
+
+### CLT Conditions
+
+Before moving forward, let's check the conditions required to apply the Central Limit Theorem. Are the following conditions met:
+
+-   Independence?
+
+That one pokemon's height does not impact the other
+
+-   Sample size?
+
+42 \> **30**
+
+#### Central limit theorem
+
+Remember, when the independence and sample size assumptions are met, the central limit theorem states
+
+$$
+\bar{x} \sim N(\mu, \sigma / \sqrt{n})
+$$
+
+We estimate $\mu$ with x-bar. When we also need to estimate $\sigma$ (which we do in this case when working with a quantitative variable), we no longer can use a normal distribution. We need to use a t-distribution
+
+### Why the t-dist
+
+We don't know the true population mean $\mu$ and standard deviation $\sigma$, how do we use CLT to construct a confidence interval? t-distribution!
+
+We approximate $\mu$ by $\bar{x}$ and $\sigma$ with $s$. However $s$ may be smaller than $\sigma$ and our confidence interval could be too narrow, for example, run the code below to compute the standard deviation of three draws from a standard normal.
+
+```{r}
+samples = rnorm(3, mean = 0, sd = 1)
+sd(samples) 
+
+# Compare this value to 1. Are some higher? Lower?
+
+```
+
+Run this code a few times to repeat the simulation; you will find that $s$ is sometimes above and sometimes below the true standard deviation we have set of 1.
+
+To account for this uncertainty, we will use a distribution with thicker tails. This sampling distribution is called a **t-distribution**.
+
+```{r t-versus-normal}
+ggplot(data = data.frame(x = c(0 - 1*3, 0 + 1*3)), aes(x = x)) +
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1),
+                color = "black") +
+  stat_function(fun = dt, args = list(df = 3),
+                color = "red",lty = 2) + theme_bw() +
+  labs(title = "Black solid line = normal, Red dotted line = t-distribution")
+```
+
+The t-distribution has a bell shape but the extra thick tails help us correct for the variability introduced by using $s$ instead of $\sigma$.
+
+Unlike the normal distribution.... there are many many many different t-distributions. We can distinguish the differences by their degrees of freedom. The degrees of freedom describes the precise form of the bell-shaped t-distribution. In general, we'll use a t-distribution with $df=n−1$ to model the sample mean when the sample size is $n$.
+
+$$
+\bar{x} \pm t^*_{n-1} \times \frac{s}{\sqrt{n}}
+$$
+
+We can use `qt` and `pt` to find quantiles and probabilities respectively under the t-distribution.
+
+## Calculation
+
+-   Calculate the 95% confidence interval for pokemon height using the t-distribution.
+
+```{r}
+#| eval: false
+
+tscore <- qt(0.975, df = 41)
+
+s <- .497
+xbar <- 0.929
+
+n <- 42
+
+xbar + tscore*(s/sqrt(n)) 
+
+xbar - tscore*(s/sqrt(n))
+
+```
+
+(0.774, 1.083)
