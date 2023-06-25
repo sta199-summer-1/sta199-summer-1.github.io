@@ -5026,6 +5026,160 @@
     "text": "Lab 2\nIs due Monday (29th) before class. You will turn in the following:\n– Team Agreement (1 per group)\n– Data Wrangling (individual assignment)\nSome groups may want to start on the data wrangling portion during lab, while others may want to start with the team agreement. Please prioritize whichever you see fit.\n\n\n\n🔗 sta199-summer-1.github.io"
   },
   {
+    "objectID": "slides/last-day.html#checklist",
+    "href": "slides/last-day.html#checklist",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Checklist",
+    "text": "Checklist\n– Clone ae-extensions\n– Homework 4 is Live (Due 6-26)\n– Project Final Draft Due 11:59 Thursday (6-29)\n– Final Presentation (6-29)\n– Group Feedback Survey-2 in Sakai Due Tonight\n– Instructor Evaluations\n– Check out some r-shiny apps: https://shiny.rstudio.com/gallery/"
+  },
+  {
+    "objectID": "slides/last-day.html#questionsa-about-the-project",
+    "href": "slides/last-day.html#questionsa-about-the-project",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Questionsa about the project",
+    "text": "Questionsa about the project\n– When / What / How?\n– Expectations\n– Strategies\n– etc.\n\nGive me noitce; Can be flexiable to meet"
+  },
+  {
+    "objectID": "slides/last-day.html#data-ethics-abbreviated",
+    "href": "slides/last-day.html#data-ethics-abbreviated",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Data Ethics (Abbreviated)",
+    "text": "Data Ethics (Abbreviated)\n– Could be it’s own course\n– Data Misrepresentation\n– Data Privacy"
+  },
+  {
+    "objectID": "slides/last-day.html#data-misrepresentation",
+    "href": "slides/last-day.html#data-misrepresentation",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Data Misrepresentation",
+    "text": "Data Misrepresentation\nWhat’s going on with this graph?"
+  },
+  {
+    "objectID": "slides/last-day.html#data-misrepresentation-1",
+    "href": "slides/last-day.html#data-misrepresentation-1",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Data Misrepresentation",
+    "text": "Data Misrepresentation\nHow do we effectively communicate data?"
+  },
+  {
+    "objectID": "slides/last-day.html#data-misrepresentation-2",
+    "href": "slides/last-day.html#data-misrepresentation-2",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Data Misrepresentation",
+    "text": "Data Misrepresentation\nHow do we effectively communicate data?"
+  },
+  {
+    "objectID": "slides/last-day.html#general-strategies",
+    "href": "slides/last-day.html#general-strategies",
+    "title": "Data Ethics + Extension Topics",
+    "section": "General Strategies",
+    "text": "General Strategies\n– Represent percentages as parts of a whole – Do not misrepresent time on the axes – Pay attention to data types, e.g., represent time as time on a continuous scale, not years as levels of a categorical variable – Prefer direct labeling over legends – Use accessible colors – Pick a purpose and label, color, annotate for that purpose – Communicate your main message directly in the plot labels – Simplify before you call it done"
+  },
+  {
+    "objectID": "slides/last-day.html#misleading-with-techniques",
+    "href": "slides/last-day.html#misleading-with-techniques",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Misleading with Techniques",
+    "text": "Misleading with Techniques\n\nA team of German researchers had found that people on a low-carb diet lost weight 10 percent faster if they ate a chocolate bar every day.\nWe ran an actual clinical trial, with subjects randomly assigned to different diet regimes. And the statistically significant benefits of chocolate that we reported are based on the actual data. It was, in fact, a fairly typical study for the field of diet research."
+  },
+  {
+    "objectID": "slides/last-day.html#the-study",
+    "href": "slides/last-day.html#the-study",
+    "title": "Data Ethics + Extension Topics",
+    "section": "The Study",
+    "text": "The Study\n5 men and 11 women showed up, aged 19 to 67. . . . After a round of questionnaires and blood tests to ensure that no one had eating disorders, diabetes, or other illnesses that might endanger them, Frank randomly assigned the subjects to one of three diet groups. One group followed a low-carbohydrate diet. Another followed the same low-carb diet plus a daily 1.5 oz. bar of dark chocolate. And the rest, a control group, were instructed to make no changes to their current diet. They weighed themselves each morning for 21 days, and the study finished with a final round of questionnaires and blood tests."
+  },
+  {
+    "objectID": "slides/last-day.html#the-hoax",
+    "href": "slides/last-day.html#the-hoax",
+    "title": "Data Ethics + Extension Topics",
+    "section": "The Hoax",
+    "text": "The Hoax\n“One beer-fueled weekend later and… jackpot! Both of the treatment groups lost about 5 pounds over the course of the study, while the control group’s average body weight fluctuated up and down around zero. But the people on the low-carb diet plus chocolate? They lost weight 10 percent faster. Not only was that difference statistically significant, but the chocolate group had better cholesterol readings and higher scores on the well-being survey.”"
+  },
+  {
+    "objectID": "slides/last-day.html#the-hoax-1",
+    "href": "slides/last-day.html#the-hoax-1",
+    "title": "Data Ethics + Extension Topics",
+    "section": "The Hoax",
+    "text": "The Hoax\nIf you measure a large number of things about a small number of people, you are almost guaranteed to get a “statistically significant” result. Our study included 18 different measurements—weight, cholesterol, sodium, blood protein levels, sleep quality, well-being, etc…. from 15 people. . . .\nWith our 18 measurements, we had a 60% chance of getting some “significant” result with p < 0.05."
+  },
+  {
+    "objectID": "slides/last-day.html#i-fooled-millions-into-thinking-chocolate-helps-weight-loss.-heres-how",
+    "href": "slides/last-day.html#i-fooled-millions-into-thinking-chocolate-helps-weight-loss.-heres-how",
+    "title": "Data Ethics + Extension Topics",
+    "section": "I Fooled Millions Into Thinking Chocolate Helps Weight Loss. Here’s How",
+    "text": "I Fooled Millions Into Thinking Chocolate Helps Weight Loss. Here’s How\nIt was, in fact, a fairly typical study for the field of diet research. Which is to say: It was terrible science. The results are meaningless, and the health claims that the media blasted out to millions of people around the world are utterly unfounded."
+  },
+  {
+    "objectID": "slides/last-day.html#data-ethics-bias",
+    "href": "slides/last-day.html#data-ethics-bias",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Data Ethics + Bias",
+    "text": "Data Ethics + Bias\n– You leave a lot of data online to be used…\n\nbrowsing history\npersonal information\nand so much more…\ncompanies + researchers have access to these data"
+  },
+  {
+    "objectID": "slides/last-day.html#okcupid-data-breach",
+    "href": "slides/last-day.html#okcupid-data-breach",
+    "title": "Data Ethics + Extension Topics",
+    "section": "OKcupid Data Breach",
+    "text": "OKcupid Data Breach\n– In 2016, researchers published data of 70,000 OkCupid users—including usernames, political leanings, drug usage, and intimate sexual details\n– Researchers didn’t release the real names and pictures of OKCupid users, but their identities could easily be uncovered from the details provided, e.g. usernames"
+  },
+  {
+    "objectID": "slides/last-day.html#garbage-data",
+    "href": "slides/last-day.html#garbage-data",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Garbage Data",
+    "text": "Garbage Data\n– In statistical modeling and inference we talk about “garbage in, garbage out” – if you don’t have good (random, representative) data, results of your analysis will not be reliable or generalizable.\n– Corollary: Statistical tools don’t fix garbage data"
+  },
+  {
+    "objectID": "slides/last-day.html#examples",
+    "href": "slides/last-day.html#examples",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Examples",
+    "text": "Examples\n– Predicting ethnicity to fill in voting maps\n– Algorithm used for rating a defendant’s risk of future crime"
+  },
+  {
+    "objectID": "slides/last-day.html#simpsons-paradox",
+    "href": "slides/last-day.html#simpsons-paradox",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Simpson’s Paradox",
+    "text": "Simpson’s Paradox"
+  },
+  {
+    "objectID": "slides/last-day.html#takeaway",
+    "href": "slides/last-day.html#takeaway",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Takeaway",
+    "text": "Takeaway\n– Think critically about what your data actually measure + what data needs to be collected to try and tell the full story (i.e. confounding variables)\n\nquestions?\ndiscussion points?"
+  },
+  {
+    "objectID": "slides/last-day.html#what-and-why-shiny",
+    "href": "slides/last-day.html#what-and-why-shiny",
+    "title": "Data Ethics + Extension Topics",
+    "section": "What and Why Shiny?",
+    "text": "What and Why Shiny?\n– Shiny is an R package that makes it easy to build interactive web apps straight from R\n– Shiny combines the computational power of R with the interactivity of the modern web\n– https://christianstratton.shinyapps.io/batapp/?_ga=2.176377317.1341335816.1666368887-1922592585.1666368887"
+  },
+  {
+    "objectID": "slides/last-day.html#moives",
+    "href": "slides/last-day.html#moives",
+    "title": "Data Ethics + Extension Topics",
+    "section": "moives",
+    "text": "moives"
+  },
+  {
+    "objectID": "slides/last-day.html#spatial-modeling-overview",
+    "href": "slides/last-day.html#spatial-modeling-overview",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Spatial Modeling Overview",
+    "text": "Spatial Modeling Overview\nResearchers in many fields are faced with analyzing data with a spatial component. These analyses typically include:\n– modeling trends and correlation structures\n– estimation of underlying model parameters\n– hypothesis testing or model comparison\n– prediction of observations at unobserved times or locations"
+  },
+  {
+    "objectID": "slides/last-day.html#example",
+    "href": "slides/last-day.html#example",
+    "title": "Data Ethics + Extension Topics",
+    "section": "Example",
+    "text": "Example"
+  },
+  {
     "objectID": "slides/projectworkday1.html#announcements",
     "href": "slides/projectworkday1.html#announcements",
     "title": "Project Work Day",
