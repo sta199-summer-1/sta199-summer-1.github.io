@@ -630,64 +630,64 @@
     "text": "Visualize\nNow, create an appropriate visualization fo your null distribution. Where is this distribution centered? Why does this make sense?\n\nnull_dist |> \n  ggplot(\n    aes(x = stat)\n  ) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nNow, add a vertical line on your null distribution that represents your sample statistic. Based on the position of this line, do you your sample mean is an unusual observation under the assumption of the null hypothesis?\n\nnull_dist |> \n  ggplot(\n    aes(x = stat)\n  ) + \n  geom_histogram() + \n  geom_vline(xintercept = -0.93)\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nCalculate your p-value below\n\nnull_dist |>\n  get_p_value(obs_stat = -.93, direction = \"both\")\n\np-value ~ < 0.001\nAnd visualize it..\nLet’s visualize it!\n\nvisualize(null_dist) +\n shade_p_value(obs_stat = -0.93, direction = \"both\") + \n shade_p_value(obs_stat = 0.93, direction = \"two sided\")\n\n\n\n\nUsing your associated p-value, please write the following in the context of the problem. Assume that \\(\\alpha\\) = 0.05.\n– Interpretation of p-value: The probability of observing a difference in mean sepal length between setosa and versicolor (setosa - versicolor) equal to -0.93 or something more extreme given the true mean sepal length between setosa and versicolor are equal is roughly < 0.001.\n– Decision: We have evidence to reject the null hypothesis that the true mean sepal length for the setosa species is equal to the true mean sepal length for the versicolor species.\n– Conclusion: Strong evidence to conclude that the true mean sepal length for the setosa species is different than the true mean sepal length for the versicolor species."
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html",
-    "href": "ae-sa/ae-14 sa.html",
+    "objectID": "ae-sa/ae-14-sa.html",
+    "href": "ae-sa/ae-14-sa.html",
     "title": "Bootstrap + CLT Confidence",
     "section": "",
     "text": "library(tidyverse)\nlibrary(tidymodels)"
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#central-limit-theorem",
-    "href": "ae-sa/ae-14 sa.html#central-limit-theorem",
+    "objectID": "ae-sa/ae-14-sa.html#central-limit-theorem",
+    "href": "ae-sa/ae-14-sa.html#central-limit-theorem",
     "title": "Bootstrap + CLT Confidence",
     "section": "Central Limit Theorem",
-    "text": "Central Limit Theorem\nTo start this activity, we are going to demonstrate what the CLT is all about.\nBelow, we are going to generate a population distribution. This is not observed in real life. We are simply pretending we know this for demonstration purposes.\n\nrs_pop <- tibble(x = rbeta(100000, 1, 5) * 100)\n\n\nrs_pop |>\n  ggplot(\n    aes(x = x)) +\n  geom_density(fill = \"blue\") \n\n\n\n\nWe are now going to draw samples from this population distribution, take the mean and repeat this process!\nBelow, draw one sample.\n\nset.seed(2)\n\nsamp_2 <- rs_pop |>\n  sample_n(size = 50) |>\n  summarize(x_bar = mean(x))\n\nsamp_2\n\n# A tibble: 1 × 1\n  x_bar\n  <dbl>\n1  13.9\n\n\nTo make a distribution of sample means…. we need to do this process over and over and over again. Let’s do this below.\n\nset.seed(333) \n\nsampling <- rs_pop |>\n  rep_sample_n(size = 50, reps = 1000) |>\n  group_by(replicate) |>\n  summarize(xbar = mean(x))\n\nNow, create a histogram of the sample means below. Is the distribution of sample means normal?\nThe distribution of the means in ~ Normal!\n\nsampling |> \n  ggplot(\n    aes(x = xbar)\n  ) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nWe know that the mean of our sampling distribution should be about the same as the mean of our population distribution. Check this below:\n\nsampling |>\n  summarize(m = mean(xbar))\n\n# A tibble: 1 × 1\n      m\n  <dbl>\n1  16.6\n\nrs_pop |>\n  summarize(m = mean(x))\n\n# A tibble: 1 × 1\n      m\n  <dbl>\n1  16.6\n\n\nTakeaway And we can use this to create confidence intervals for our population parameter of interest (much like we can with bootstrap methods)"
+    "text": "Central Limit Theorem\nTo start this activity, we are going to demonstrate what the CLT is all about.\nBelow, we are going to generate a population distribution. This is not observed in real life. We are simply pretending we know this for demonstration purposes.\n\nrs_pop <- tibble(x = rbeta(100000, 1, 5) * 100)\n\n\nrs_pop |>\n  ggplot(\n    aes(x = x)) +\n  geom_density(fill = \"blue\") \n\n\n\n\nWe are now going to draw samples from this population distribution, take the mean and repeat this process!\nBelow, draw one sample.\n\nset.seed(2)\n\nsamp_2 <- rs_pop |>\n  sample_n(size = 50) |>\n  summarize(x_bar = mean(x))\n\nsamp_2\n\n# A tibble: 1 × 1\n  x_bar\n  <dbl>\n1  14.3\n\n\nTo make a distribution of sample means…. we need to do this process over and over and over again. Let’s do this below.\n\nset.seed(333) \n\nsampling <- rs_pop |>\n  rep_sample_n(size = 50, reps = 1000) |>\n  group_by(replicate) |>\n  summarize(xbar = mean(x))\n\nNow, create a histogram of the sample means below. Is the distribution of sample means normal?\nThe distribution of the means in ~ Normal!\n\nsampling |> \n  ggplot(\n    aes(x = xbar)\n  ) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nWe know that the mean of our sampling distribution should be about the same as the mean of our population distribution. Check this below:\n\nsampling |>\n  summarize(m = mean(xbar))\n\n# A tibble: 1 × 1\n      m\n  <dbl>\n1  16.7\n\nrs_pop |>\n  summarize(m = mean(x))\n\n# A tibble: 1 × 1\n      m\n  <dbl>\n1  16.7\n\n\nTakeaway And we can use this to create confidence intervals for our population parameter of interest (much like we can with bootstrap methods)"
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#small-sample-size",
-    "href": "ae-sa/ae-14 sa.html#small-sample-size",
+    "objectID": "ae-sa/ae-14-sa.html#small-sample-size",
+    "href": "ae-sa/ae-14-sa.html#small-sample-size",
     "title": "Bootstrap + CLT Confidence",
     "section": "Small Sample Size",
     "text": "Small Sample Size\nNow, let’s change our sample size to 3, violating as assumption of the CLT, and see how it impacts our sampling distribution.\n\nset.seed(333) \n\nsampling <- rs_pop |>\n  rep_sample_n(size = 3, reps = 1000) |>\n  group_by(replicate) |>\n  summarize(xbar = mean(x))\n\nAgain, create a histogram of the sample means and comment on the shape of the distribution below.\n\nsampling |>\n  ggplot(\n    aes(x = xbar)\n  ) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nSkewed Right"
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#load-data-pokemon",
-    "href": "ae-sa/ae-14 sa.html#load-data-pokemon",
+    "objectID": "ae-sa/ae-14-sa.html#load-data-pokemon",
+    "href": "ae-sa/ae-14-sa.html#load-data-pokemon",
     "title": "Bootstrap + CLT Confidence",
     "section": "Load Data: Pokemon",
     "text": "Load Data: Pokemon\nWe will be using the pokemon data set, which contains information about 42 randomly selected Pokemon (from all generations). Pokemon is a Japanese media franchise managed by The Pokémon Company, founded by Nintendo, Game Freak, and Creatures. Within this franchise, there are over 1000 different pokemon characters. In this activity, we are going to be taking estimating the mean height of them all.\n\\(\\mu\\) = True mean height of all pokemon\nYou may load in the data set with the following code:\n\npokemon <-  read_csv(\"https://sta101.github.io/static/appex/data/pokemon.csv\")\n\nRows: 42 Columns: 15\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (4): name, leg_status, type_1, type_2\ndbl (11): pokedex_number, generation, height_m, weight_kg, bst, hp, atk, def...\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nIn this analysis, we will use CLT-based inference to draw conclusions about the mean height among all Pokemon species.\nEDA\nLet’s start by looking at the distribution of height_m, the typical height in meters for a Pokemon species, using a visualization and summary statistics.\n\npokemon |>\n  ggplot(\n    aes(x = height_m)\n  ) + \n  geom_histogram(binwidth = .15)\n\n\n\n\nBelow, calculate the mean, standard deviation, and sample size\n\npokemon |>\n  summarise(mean_height = mean(height_m),\n            sd_height = sd(height_m),\n            n_pokemon = n())\n\n# A tibble: 1 × 3\n  mean_height sd_height n_pokemon\n        <dbl>     <dbl>     <int>\n1       0.929     0.497        42\n\n\n\nWhat is the point estimate for \\(\\sigma\\)?\n\ns = 0.497\nWhat is the standard deviation mean?\nAdd response\n\nWhat is the point estimate for \\(\\mu\\), i.e., the “best guess” for the mean height of all Pokemon? Use proper notation.\n\n\\(\\bar{x}\\) = 0.929"
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#bootstrap-distribution",
-    "href": "ae-sa/ae-14 sa.html#bootstrap-distribution",
+    "objectID": "ae-sa/ae-14-sa.html#bootstrap-distribution",
+    "href": "ae-sa/ae-14-sa.html#bootstrap-distribution",
     "title": "Bootstrap + CLT Confidence",
     "section": "Bootstrap Distribution",
     "text": "Bootstrap Distribution\nBelow, we are going to create a bootstrap distribution using simulation techniques. How is this distribution created?"
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#assumptions",
-    "href": "ae-sa/ae-14 sa.html#assumptions",
+    "objectID": "ae-sa/ae-14-sa.html#assumptions",
+    "href": "ae-sa/ae-14-sa.html#assumptions",
     "title": "Bootstrap + CLT Confidence",
     "section": "Assumptions",
     "text": "Assumptions\n\nIndependence?\n\nThat one pokemon’s height does not impact the other\n\nSample size?\n\nn > 10"
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#create",
-    "href": "ae-sa/ae-14 sa.html#create",
+    "objectID": "ae-sa/ae-14-sa.html#create",
+    "href": "ae-sa/ae-14-sa.html#create",
     "title": "Bootstrap + CLT Confidence",
     "section": "Create",
     "text": "Create\n\nboot_df <- pokemon |>\n  specify(response = height_m) |>\n  generate(reps = 1000, type = \"bootstrap\") |>\n  calculate(stat = \"mean\")\n\nResample with replacment “n” number of times. Calculate the new sample mean. Do this process 1000 times to create your bootstrap resample distribution.\nVisualize this distribution below:\n\nboot_df |>\n  ggplot(\n    aes(x = stat)\n  ) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\nboot_df |>\n  summarize(center = mean(stat))\n\n# A tibble: 1 × 1\n  center\n   <dbl>\n1  0.930\n\n\nNow, let’s use this distribution to create a 95% confidence interval…\n\nboot_df |> \n  summarize(lower = quantile(stat , .025),\n            upper = quantile(stat , .975))\n\n# A tibble: 1 × 2\n  lower upper\n  <dbl> <dbl>\n1 0.783  1.08\n\n\nWhat changes if we were to create a 90% confidence interval?\nBecomes more narrow\nInterpret your 95% confidence interval in the context of the problem below:\nWe are 95% confident that the true mean height of all pokemon is between 0.783 and 1.08 meters."
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#clt",
-    "href": "ae-sa/ae-14 sa.html#clt",
+    "objectID": "ae-sa/ae-14-sa.html#clt",
+    "href": "ae-sa/ae-14-sa.html#clt",
     "title": "Bootstrap + CLT Confidence",
     "section": "CLT",
     "text": "CLT\nNow, we will be using the Central Limit Theorem to draw conclusions about the \\(\\mu\\), the mean height in the population of Pokemon.\nCLT Conditions\nBefore moving forward, let’s check the conditions required to apply the Central Limit Theorem. Are the following conditions met:\n\nIndependence?\n\nThat one pokemon’s height does not impact the other\n\nSample size?\n\n42 > 30\nCentral limit theorem\nRemember, when the independence and sample size assumptions are met, the central limit theorem states\n\\[\n\\bar{x} \\sim N(\\mu, \\sigma / \\sqrt{n})\n\\]\nWe estimate \\(\\mu\\) with x-bar. When we also need to estimate \\(\\sigma\\) (which we do in this case when working with a quantitative variable), we no longer can use a normal distribution. We need to use a t-distribution\nWhy the t-dist\nWe don’t know the true population mean \\(\\mu\\) and standard deviation \\(\\sigma\\), how do we use CLT to construct a confidence interval? t-distribution!\nWe approximate \\(\\mu\\) by \\(\\bar{x}\\) and \\(\\sigma\\) with \\(s\\). However \\(s\\) may be smaller than \\(\\sigma\\) and our confidence interval could be too narrow, for example, run the code below to compute the standard deviation of three draws from a standard normal.\n\nsamples = rnorm(3, mean = 0, sd = 1)\nsd(samples) \n\n[1] 0.5449586\n\n# Compare this value to 1. Are some higher? Lower?\n\nRun this code a few times to repeat the simulation; you will find that \\(s\\) is sometimes above and sometimes below the true standard deviation we have set of 1.\nTo account for this uncertainty, we will use a distribution with thicker tails. This sampling distribution is called a t-distribution.\n\nggplot(data = data.frame(x = c(0 - 1*3, 0 + 1*3)), aes(x = x)) +\n  stat_function(fun = dnorm, args = list(mean = 0, sd = 1),\n                color = \"black\") +\n  stat_function(fun = dt, args = list(df = 3),\n                color = \"red\",lty = 2) + theme_bw() +\n  labs(title = \"Black solid line = normal, Red dotted line = t-distribution\")\n\n\n\n\nThe t-distribution has a bell shape but the extra thick tails help us correct for the variability introduced by using \\(s\\) instead of \\(\\sigma\\).\nUnlike the normal distribution…. there are many many many different t-distributions. We can distinguish the differences by their degrees of freedom. The degrees of freedom describes the precise form of the bell-shaped t-distribution. In general, we’ll use a t-distribution with \\(df=n−1\\) to model the sample mean when the sample size is \\(n\\).\n\\[\n\\bar{x} \\pm t^*_{n-1} \\times \\frac{s}{\\sqrt{n}}\n\\]\nWe can use qt and pt to find quantiles and probabilities respectively under the t-distribution."
   },
   {
-    "objectID": "ae-sa/ae-14 sa.html#calculation",
-    "href": "ae-sa/ae-14 sa.html#calculation",
+    "objectID": "ae-sa/ae-14-sa.html#calculation",
+    "href": "ae-sa/ae-14-sa.html#calculation",
     "title": "Bootstrap + CLT Confidence",
     "section": "Calculation",
     "text": "Calculation\n\nCalculate the 95% confidence interval for pokemon height using the t-distribution.\n\n\ntscore <- qt(0.975, df = 41)\n\ns <- .497\nxbar <- 0.929\n\nn <- 42\n\nxbar + tscore*(s/sqrt(n)) \n\nxbar - tscore*(s/sqrt(n))\n\n(0.774, 1.083)"
