@@ -5030,14 +5030,14 @@
     "href": "slides/last-day.html#checklist",
     "title": "Data Ethics + Extension Topics",
     "section": "Checklist",
-    "text": "Checklist\n– Clone ae-extensions\n– Homework 4 is Live (Due 6-26)\n– Project Final Draft Due 11:59 Thursday (6-29)\n– Final Presentation (6-29)\n– Group Feedback Survey-2 in Sakai Due Tonight\n– Instructor Evaluations\n– Check out some r-shiny apps: https://shiny.rstudio.com/gallery/"
+    "text": "Checklist\n– Clone ae-extensions\n– Homework 4 is Live (Due 6-26)\n– Project Final Draft Due 11:59 Thursday (6-29)\n– Final Presentation (6-29)\n– Group Feedback Survey-2 in Sakai Due Tonight\n– No Feedback Survey-3. Expectation is to reach out..\n– Instructor Evaluations\n– Check out some r-shiny apps: https://shiny.rstudio.com/gallery/"
   },
   {
-    "objectID": "slides/last-day.html#questionsa-about-the-project",
-    "href": "slides/last-day.html#questionsa-about-the-project",
+    "objectID": "slides/last-day.html#questions-about-the-project",
+    "href": "slides/last-day.html#questions-about-the-project",
     "title": "Data Ethics + Extension Topics",
-    "section": "Questionsa about the project",
-    "text": "Questionsa about the project\n– When / What / How?\n– Expectations\n– Strategies\n– etc.\n\nGive me noitce; Can be flexiable to meet"
+    "section": "Questions about the project",
+    "text": "Questions about the project\n– When / What / How?\n– Expectations\n– Strategies\n– etc.\n\nGive me notice; Can be flexible to meet"
   },
   {
     "objectID": "slides/last-day.html#data-ethics-abbreviated",
@@ -5072,7 +5072,7 @@
     "href": "slides/last-day.html#general-strategies",
     "title": "Data Ethics + Extension Topics",
     "section": "General Strategies",
-    "text": "General Strategies\n– Represent percentages as parts of a whole – Do not misrepresent time on the axes – Pay attention to data types, e.g., represent time as time on a continuous scale, not years as levels of a categorical variable – Prefer direct labeling over legends – Use accessible colors – Pick a purpose and label, color, annotate for that purpose – Communicate your main message directly in the plot labels – Simplify before you call it done"
+    "text": "General Strategies\n– Represent percentages as parts of a whole\n– Do not misrepresent time on the axes\n– Pay attention to data types, e.g., represent time as time on a continuous scale, not years as levels of a categorical variable\n– Prefer direct labeling over legends\n– Use accessible colors\n– Pick a purpose and label, color, annotate for that purpose\n– Communicate your main message directly in the plot labels\n– Simplify before you call it done"
   },
   {
     "objectID": "slides/last-day.html#misleading-with-techniques",

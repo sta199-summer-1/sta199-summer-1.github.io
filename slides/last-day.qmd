@@ -17,11 +17,13 @@ format: revealjs
 
 -- Group Feedback Survey-2 in Sakai Due Tonight
 
+-- No Feedback Survey-3. Expectation is to reach out..
+
 -- Instructor Evaluations
 
 -- Check out some r-shiny apps: https://shiny.rstudio.com/gallery/
 
-## Questionsa about the project
+## Questions about the project
 
 -- When / What / How?
 
@@ -31,7 +33,7 @@ format: revealjs
 
 -- etc.
 
--   Give me noitce; Can be flexiable to meet
+-   Give me notice; Can be flexible to meet
 
 ## Data Ethics (Abbreviated)
 
@@ -59,11 +61,25 @@ How do we effectively communicate data?
 
 ![](images/foxgraph.png){fig-align="center"}
 
-## General Strategies
+## General Strategies{.smaller}
 
--- Represent percentages as parts of a whole -- Do not misrepresent time on the axes -- Pay attention to data types, e.g., represent time as time on a continuous scale, not years as levels of a categorical variable -- Prefer direct labeling over legends -- Use accessible colors -- Pick a purpose and label, color, annotate for that purpose -- Communicate your main message directly in the plot labels -- Simplify before you call it done
+-- Represent percentages as parts of a whole 
 
-## Misleading with Techniques
+-- Do not misrepresent time on the axes 
+
+-- Pay attention to data types, e.g., represent time as time on a continuous scale, not years as levels of a categorical variable 
+
+-- Prefer direct labeling over legends 
+
+-- Use accessible colors 
+
+-- Pick a purpose and label, color, annotate for that purpose 
+
+-- Communicate your main message directly in the plot labels 
+
+-- Simplify before you call it done
+
+## Misleading with Techniques{.smaller}
 
 ![](/slides/images/psychjournal.png){width="200" height="300"}
 
