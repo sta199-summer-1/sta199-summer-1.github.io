@@ -326,35 +326,150 @@
   <p class="date">Aug</p>
 </section>
 
-<section class="slide level2">
-
-<p>Should the title be “Teaching WITH Quarto in Intro to Data Science? This would make it a lot more broad and easier to discuss vs just focusing in on the the quarto logistics we teach</p>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<p>– What</p>
+<p>– Why</p>
+<p>– How</p>
+<p>– Benefits</p>
+<p>… of Quarto in Introductory Data Science</p>
 </section>
-<section id="outline-for-talk" class="slide level2">
-<h2>Outline for Talk</h2>
-<p>– Opening: Lack of trust in science</p>
-<p>One way we can combat this is transparency and reproducibility</p>
+<section id="what-is-data-science" class="slide level2">
+<h2>What Is Data Science</h2>
+<ul>
+<li class="fragment"><p>Answers will vary</p></li>
+<li class="fragment"><p>science of planning for, acquisition, management, analysis of, and inference from data” (NSF2014)</p></li>
+</ul>
 </section>
-<section id="reproducibility-crisis-lack-of-trust-in-science" class="slide level2">
-<h2>Reproducibility Crisis: Lack of Trust in Science</h2>
+<section id="what-is-data-science-1" class="slide level2">
+<h2>What Is Data Science</h2>
+<ul>
+<li class="fragment"><p>Data scientists are involved from the beginning to end stages of the research process</p></li>
+<li class="fragment"><p>The research process is much more than learning how to model data</p></li>
+</ul>
+</section>
+<section id="what-is-quarto" class="slide level2">
+<h2>What is Quarto</h2>
+<p>– Reproducibility tool</p>
+<p>– New generation R-markdown</p>
+<p>– results from your data analysis and written commentary into a reproducible document</p>
+<p>(Create figure instead of bullet points here)</p>
+</section>
+<section id="the-connection" class="slide level2">
+<h2>The Connection</h2>
+<p>Reproducibility tool &lt;==&gt; Research Process</p>
+<p>Quarto &lt;==&gt; Data Science</p>
+<p>Thus, Quarto isn’t something “extra” in a data science course…. it’s the foundation FOR it!</p>
+</section>
+<section id="argument-for-quarto" class="slide level2">
+<h2>Argument for Quarto</h2>
+<p>Teaching reproducibility tools (such as Quarto) should not be viewed as an additional topic, but instead should be the foundation behind any introductory course to instill good habits for future researchers</p>
+<p>Make reproducible research and publications the norm rather than the exception</p>
+</section>
+<section id="reproducibility-why-this-matter" class="slide level2">
+<h2>Reproducibility: Why This Matter</h2>
+<p>Crisis: Lack of Trust in Science</p>
 
 <img data-src="images/01-welcome-199/pnas.png" class="r-stretch quarto-figure-center"></section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Make reproducible research and publications the norm rather than the exception</p>
-<p>Bringing this into an intro course helps have conversations about the importance of reproducibility and instills a foundation of good habits early and often</p>
+<section>
+<section id="how" class="title-slide slide level1 center">
+<h1>How</h1>
+
 </section>
-<section id="background-sta199" class="slide level2">
-<h2>Background: STA199</h2>
-<p>– What it is</p>
-<p>– Who the students are</p>
-<p>– Topics involved</p>
-<p>This is all done through Quarto</p>
+<section id="quarto-in-introductory-data-science" class="slide level2">
+<h2>Quarto in Introductory Data Science</h2>
+<p>From the perspective of …</p>
+<p>– 150 students with little to no statistics / data science / coding experience</p>
+<p>– Teaching using the <code>dsbox</code> curricula (cite)</p>
+<p>– Students are expected to use R</p>
+<p>– Topics include data visualization; data cleaning; data modeling</p>
 </section>
-<section id="how" class="slide level2">
+<section id="how-1" class="slide level2">
 <h2>How</h2>
-<p>Seamlessly integrates into more modernized teaching</p>
-<p><strong>Do we talk about GitHub’s role in helping students with Quarto? ex. Repo generation with quarto documents inside</strong> &lt;- I think if the title is changed, then this makes sense. This falls under the category of an extension to “teaching WITH quarto”</p>
+<p>Common Themes in the following demonstrations…</p>
+<p>– Teach quarto code side-by-side with the other coding languages</p>
+<p>– Make reproducibility an expectation</p>
+<p>– Lean into what Quarto has to offer</p>
+<ul>
+<li class="fragment"><p>Informative Syntax Completion</p></li>
+<li class="fragment"><p>Visual and Source Mode</p></li>
+<li class="fragment"><p>Informative Error Messages</p></li>
+<li class="fragment"><p>More…</p></li>
+</ul>
+</section>
+<section id="quarto-tour" class="slide level2">
+<h2>Quarto Tour</h2>
+<p>First things we teach…</p>
+<p>(Picture of qmd)</p>
+<p>Highlight YAML; Highlight Render; Where to put code; Where to put text</p>
+</section>
+<section id="informative-syntax-and-completion" class="slide level2">
+<h2>Informative Syntax and Completion</h2>
+<p>Informative syntax aligns with what you want to accomplish “how do I turn these messages off?”</p>
+<p><img data-src="images/demo1.gif" width="1000" height="600"></p>
+</section>
+<section id="informative-syntax-and-completion-1" class="slide level2">
+<h2>Informative Syntax and Completion</h2>
+<p>Fig-height and width is as important as making the figure itself. It’s all learned together. “How do I adjust my figure width and figure height?”</p>
+<p><img data-src="images/demo2.gif" width="1000" height="600"></p>
+</section>
+<section id="visual-tab" class="slide level2">
+<h2>Visual Tab</h2>
+<div id="fig-R" class="quarto-layout-panel">
+<figure>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/source.png"></p>
+</div>
+</div>
+<p></p><figcaption>Figure 1: <img data-src="images/visual.png"></figcaption><p></p>
+</figure>
+</div>
+<p>Highlight how coding can be more approachable in the visual tab</p>
+<p>Gets students trained to think about and visualize professional documents throughout the process. Making this the expectation, and again not something additional</p>
+</section>
+<section id="errors" class="slide level2">
+<h2>Errors</h2>
+<p>Highlight the approachability of Quarto error messages and how this can help alleviate some tension in an intro class</p>
+<p>Examples of common errors and the error messages (Ask Mine)</p>
+</section>
+<section id="example-ae" class="slide level2">
+<h2>Example AE</h2>
+<p>Link to AE that shows off what is highlighted above</p>
+<p>Highlight the following:</p>
+<p>Minimal YAML Minimal chunk options Use well scaffolded Quarto documents Render early and often!</p>
+</section></section>
+<section>
+<section id="benefits" class="title-slide slide level1 center">
+<h1>Benefits</h1>
+
+</section>
+<section id="from-the-students-perspective" class="slide level2">
+<h2>From the student’s perspective</h2>
+<p>– Useful tool: Good habit to build for future coursework / career</p>
+<p>– Work they can be proud of</p>
+<p>– <a href="Lisa%20Work">Example</a></p>
+</section>
+<section id="from-the-instructors-perspective" class="slide level2">
+<h2>From the instructor’s perspective</h2>
+<p>Efficiency: Consistent formatting -&gt; easier grading</p>
+<p>Invest time into lessons / activities now -&gt; adapt later</p>
+</section>
+<section id="if-you-dont-use-r" class="slide level2">
+<h2>If you don’t use R</h2>
+<p>Extendability: Use with Python, and Julia, and Observable, and more</p>
+</section>
+<section id="in-summary" class="slide level2">
+<h2>In Summary</h2>
+<p>– Reproducibility is not optional</p>
+<p>– And has a place in any introductory class with coding</p>
+<p>– Set the expectation</p>
+<p>– Start <strong>Minimal</strong> and build up!</p>
+</section></section>
+<section>
+<section id="questions" class="title-slide slide level1 center">
+<h1>Questions</h1>
+
 </section>
 <section id="what-topics-are-covered" class="slide level2">
 <h2>What topics are covered</h2>
@@ -378,7 +493,7 @@
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="https://github.com/sta199-summer-1">🔗 sta199-summer-1.github.io</a></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

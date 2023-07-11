@@ -5,42 +5,191 @@ date: "Aug"
 format: revealjs
 ---
 
-Should the title be "Teaching WITH Quarto in Intro to Data Science? This would make it a lot more broad and easier to discuss vs just focusing in on the the quarto logistics we teach 
+## Outline 
 
-## Outline for Talk 
+-- What 
 
--- Opening: Lack of trust in science 
+-- Why 
 
-One way we can combat this is transparency and reproducibility 
+-- How
 
+-- Benefits 
 
-## Reproducibility  Crisis: Lack of Trust in Science 
+... of Quarto in Introductory Data Science
 
-![](images/01-welcome-199/pnas.png){fig-align="center"}
+## What Is Data Science
 
-## Quarto 
+- Answers will vary 
+
+- science of planning for, acquisition, management, analysis of, and inference from data” (NSF2014)
+
+## What Is Data Science
+
+- Data scientists are involved from the beginning to end stages of the research process 
+
+- The research process is much more than learning how to model data 
+
+## What is Quarto 
+
+-- Reproducibility tool 
+
+-- New generation R-markdown 
+
+-- results from your data analysis and written commentary into a reproducible document 
+
+(Create figure instead of bullet points here)
+
+## The Connection 
+
+Reproducibility tool <==> Research Process 
+
+Quarto <==> Data Science 
+
+Thus, Quarto isn't something "extra" in a data science course.... it's the foundation FOR it!
+
+## Argument for Quarto
+
+Teaching reproducibility tools (such as Quarto) should not be viewed as an additional topic, but instead should be the foundation behind any introductory course to instill good habits for future researchers 
 
 Make reproducible research and publications the norm rather than the exception
 
-Bringing this into an intro course helps have conversations about the importance of reproducibility and instills a foundation of good habits early and often 
 
-## Background: STA199 
+## Reproducibility: Why This Matter 
 
--- What it is 
+Crisis: Lack of Trust in Science 
 
--- Who the students are 
+![](images/01-welcome-199/pnas.png){fig-align="center"}
 
--- Topics involved 
+# How 
 
-This is all done through Quarto 
+## Quarto in Introductory Data Science 
 
+From the perspective of ...
 
+-- 150 students with little to no statistics / data science / coding experience 
+
+-- Teaching using the `dsbox` curricula (cite) 
+
+-- Students are expected to use R 
+
+-- Topics include data visualization; data cleaning; data modeling 
 
 ## How 
 
-Seamlessly integrates into more modernized teaching 
+Common Themes in the following demonstrations...
 
-**Do we talk about GitHub's role in helping students with Quarto? ex. Repo generation with quarto documents inside** <- I think if the title is changed, then this makes sense. This falls under the category of an extension to "teaching WITH quarto"
+-- Teach quarto code side-by-side with the other coding languages
+
+-- Make reproducibility an expectation
+
+-- Lean into what Quarto has to offer 
+
+- Informative Syntax Completion 
+
+- Visual and Source Mode 
+
+- Informative Error Messages 
+
+- More...
+
+## Quarto Tour 
+
+First things we teach...
+
+(Picture of qmd)
+
+Highlight YAML; Highlight Render; Where to put code; Where to put text 
+
+## Informative Syntax and Completion
+
+Informative syntax aligns with what you want to accomplish "how do I turn these messages off?"
+
+![](images/demo1.gif){width="1000" height="600"}
+
+
+
+## Informative Syntax and Completion 
+
+Fig-height and width is as important as making the figure itself. It's all learned together. "How do I adjust my figure width and figure height?"
+
+![](images/demo2.gif){width="1000" height="600"}
+
+
+
+## Visual Tab 
+
+::: {#fig-R layout-ncol="2"}
+
+![](images/source.png)
+
+![](images/visual.png)
+:::
+
+Highlight how coding can be more approachable in the visual tab 
+
+Gets students trained to think about and visualize professional documents throughout the process. Making this the expectation, and again not something additional 
+
+## Errors 
+
+Highlight the approachability of Quarto error messages and how this can help alleviate some tension in an intro class
+
+Examples of common errors and the error messages (Ask Mine)
+
+## Example AE 
+
+Link to AE that shows off what is highlighted above
+
+Highlight the following: 
+
+Minimal YAML
+Minimal chunk options
+Use well scaffolded Quarto documents
+Render early and often!
+
+# Benefits 
+
+## From the student's perspective 
+
+-- Useful tool: Good habit to build for future coursework / career
+
+-- Work they can be proud of 
+
+-- [Example](Lisa Work)
+
+
+## From the instructor's perspective 
+
+Efficiency: Consistent formatting -> easier grading
+
+Invest time into lessons / activities now -> adapt later 
+
+## If you don't use R 
+
+Extendability: Use with Python, and Julia, and Observable, and more
+
+## In Summary 
+
+-- Reproducibility is not optional
+
+-- And has a place in any introductory class with coding
+
+-- Set the expectation 
+
+-- Start **Minimal** and build up!
+
+# Questions 
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## What topics are covered 
 
