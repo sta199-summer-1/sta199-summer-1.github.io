@@ -19,39 +19,75 @@ format: revealjs
 
 ## What Is Data Science
 
-- Answers will vary 
+-- National Science Foundation (2014) 
 
-- science of planning for, acquisition, management, analysis of, and inference from data” (NSF2014)
+![](images/process.png){fig-align="center"}
 
 ## What Is Data Science
 
-- Data scientists are involved from the beginning to end stages of the research process 
+-- National Science Foundation (2014) 
 
-- The research process is much more than learning how to model data 
+![](images/process2.png){fig-align="center"}
+
+
+## What Is Data Science
+
+-- National Science Foundation (2014) 
+
+![](images/process3.png){fig-align="center"}
+
+## What Is Data Science
+
+-- National Science Foundation (2014) 
+
+![](images/process4.png){fig-align="center"}
+
+## What Is Data Science
+
+-- National Science Foundation (2014) 
+
+![](images/process5.png){fig-align="center"}
+
+
+
+## What Is Data Science
+
+-- National Science Foundation (2014) 
+
+![](images/process6.png){fig-align="center"}
+
+An Intro Data Science course is setting the foundation for students to engage in the research process  
 
 ## What is Quarto 
 
--- Reproducibility tool 
+![](images/reproduce.png){fig-align="center"}
 
--- New generation R-markdown 
+## What is Quarto 
 
--- results from your data analysis and written commentary into a reproducible document 
+::: {#fig-R layout-ncol=2}
 
-(Create figure instead of bullet points here)
+![](images/doc.png){#fig-surus}
 
-## The Connection 
+![](images/demodoc.png){#fig-hanno}
 
-Reproducibility tool <==> Research Process 
+Code (a) to Document (b)
+:::
 
-Quarto <==> Data Science 
+## Research and Reprodicibility{.smaller} 
 
-Thus, Quarto isn't something "extra" in a data science course.... it's the foundation FOR it!
+Since the growing use of computational workflows...
 
-## Argument for Quarto
+-- In the 1990s, Jon Claerbout launched the “reproducible research movement
 
-Teaching reproducibility tools (such as Quarto) should not be viewed as an additional topic, but instead should be the foundation behind any introductory course to instill good habits for future researchers 
+-- In the 2000s and 2010s, several high-profile journal and general media publications focused on concerns about reproducibility...
 
-Make reproducible research and publications the norm rather than the exception
+## Research and Reprodicibility
+
+-- Reproducibility tool <==> Research Process 
+
+- Quarto <==> Data Science 
+
+- ...  serious errors in interpretation reported results
 
 
 ## Reproducibility: Why This Matter 
@@ -60,23 +96,31 @@ Crisis: Lack of Trust in Science
 
 ![](images/01-welcome-199/pnas.png){fig-align="center"}
 
+- Thus, Quarto isn't something "extra" in a data science course.... it's the foundation FOR it!
+
+## Argument for Quarto
+
+Teaching reproducibility tools (such as Quarto) should not be viewed as an additional topic, but instead should be the foundation behind any introductory course to instill good habits for future researchers 
+
+Make reproducible research the norm rather than the exception
+
 # How 
 
 ## Quarto in Introductory Data Science 
 
 From the perspective of ...
 
--- 150 students with little to no statistics / data science / coding experience 
+- 150 students with little to no statistics / data science / coding experience 
 
--- Teaching using the `dsbox` curricula (cite) 
+- Teaching using the `dsbox` curricula (cite) 
 
--- Students are expected to use R 
+- Students are expected to use R 
 
--- Topics include data visualization; data cleaning; data modeling 
+- Topics include data visualization; data cleaning; data modeling 
 
-## How 
+## How{.smaller}
 
-Common Themes in the following demonstrations...
+High level Suggestions
 
 -- Teach quarto code side-by-side with the other coding languages
 
@@ -94,19 +138,29 @@ Common Themes in the following demonstrations...
 
 ## Quarto Tour 
 
-First things we teach...
+![](images/render.png){fig-align="center"}
 
-(Picture of qmd)
+## Quarto Tour 
 
-Highlight YAML; Highlight Render; Where to put code; Where to put text 
+![](images/YAML.png){fig-align="center"}
+ 
+## Quarto Tour 
+
+![](images/text.png){fig-align="center"}
+
+## Quarto Tour 
+
+![](images/ChunkArguments.png){fig-align="center"}
+
+## Quarto Tour 
+
+![](images/Code.png){fig-align="center"}
 
 ## Informative Syntax and Completion
 
 Informative syntax aligns with what you want to accomplish "how do I turn these messages off?"
 
 ![](images/demo1.gif){width="1000" height="600"}
-
-
 
 ## Informative Syntax and Completion 
 
@@ -115,15 +169,19 @@ Fig-height and width is as important as making the figure itself. It's all learn
 ![](images/demo2.gif){width="1000" height="600"}
 
 
-
 ## Visual Tab 
 
-::: {#fig-R layout-ncol="2"}
+::: {#fig-R2 layout-ncol=2}
 
-![](images/source.png)
+![](images/source.png){#fig-s}
 
-![](images/visual.png)
+![](images/visual.png){#fig-v}
+
+Source (a) to Visual (b)
 :::
+
+
+## Visual Tab
 
 Highlight how coding can be more approachable in the visual tab 
 
@@ -137,14 +195,15 @@ Examples of common errors and the error messages (Ask Mine)
 
 ## Example AE 
 
-Link to AE that shows off what is highlighted above
+In class [exercise](https://github.com/ElijahMeyer3/demo-ae/blob/main/demo-ae.qmd) to teach Quarto
 
-Highlight the following: 
+- Minimal YAML
 
-Minimal YAML
-Minimal chunk options
-Use well scaffolded Quarto documents
-Render early and often!
+- Minimal chunk options
+
+- Use well scaffolded Quarto documents
+
+- Render early and often!
 
 # Benefits 
 
@@ -154,7 +213,7 @@ Render early and often!
 
 -- Work they can be proud of 
 
--- [Example](Lisa Work)
+-- [Example](https://sta199-s23-2.github.io/project-sec-7-team-4/)
 
 
 ## From the instructor's perspective 
@@ -165,7 +224,7 @@ Invest time into lessons / activities now -> adapt later
 
 ## If you don't use R 
 
-Extendability: Use with Python, and Julia, and Observable, and more
+Extendability: Use with Python, Julia, and more
 
 ## In Summary 
 
@@ -180,39 +239,10 @@ Extendability: Use with Python, and Julia, and Observable, and more
 # Questions 
 
 
+## Outstanding Questions 
 
+-- More about YAML 
 
+-- More about Errors 
 
-
-
-
-
-
-
-
-
-## What topics are covered 
-
--- Topic 1 
-
--- Topic 2 
-
--- Topic 3 
-
-## Example Application Exericse 
-
--- Emphasis on reproducibility and taking time to show that during activities 
-
-
-## Topics specific in Quarto 
-
--- How to create professional documents...
-
---- YAML customization
-
---- Integrate R-code (control with code chunk arguments)
-
---- customize figures 
-
---- website generation (show off student work at the end of presentation)
-
+-- What am I missing? 

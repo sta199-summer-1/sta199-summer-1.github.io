@@ -5282,14 +5282,14 @@
     "href": "slides/jsmtalk_move.html#what-is-data-science",
     "title": "Teaching (with) Quarto",
     "section": "What Is Data Science",
-    "text": "What Is Data Science\n\nAnswers will vary\nscience of planning for, acquisition, management, analysis of, and inference from data” (NSF2014)"
+    "text": "What Is Data Science\n– National Science Foundation (2014)"
   },
   {
     "objectID": "slides/jsmtalk_move.html#what-is-data-science-1",
     "href": "slides/jsmtalk_move.html#what-is-data-science-1",
     "title": "Teaching (with) Quarto",
     "section": "What Is Data Science",
-    "text": "What Is Data Science\n\nData scientists are involved from the beginning to end stages of the research process\nThe research process is much more than learning how to model data"
+    "text": "What Is Data Science\n– National Science Foundation (2014)"
   },
   {
     "objectID": "slides/jsmtalk_move.html#reproduciability",
@@ -5303,7 +5303,7 @@
     "href": "slides/jsmtalk_move.html#argument-for-quarto",
     "title": "Teaching (with) Quarto",
     "section": "Argument for Quarto",
-    "text": "Argument for Quarto\nTeaching reproducibility tools (such as Quarto) should not be viewed as an additional topic, but instead should be the foundation behind any introductory course to instill good habits for future researchers\nMake reproducible research and publications the norm rather than the exception"
+    "text": "Argument for Quarto\nTeaching reproducibility tools (such as Quarto) should not be viewed as an additional topic, but instead should be the foundation behind any introductory course to instill good habits for future researchers\nMake reproducible research the norm rather than the exception"
   },
   {
     "objectID": "slides/jsmtalk_move.html#argument-for-quarto-1",
@@ -5317,14 +5317,14 @@
     "href": "slides/jsmtalk_move.html#quarto-in-introductory-data-science",
     "title": "Teaching (with) Quarto",
     "section": "Quarto in Introductory Data Science",
-    "text": "Quarto in Introductory Data Science\nFrom the perspective of …\n– 150 students with little to no statistics / data science / coding experience\n– Teaching using the dsbox curricula (cite)\n– Students are expected to use R\n– Topics include data visualization; data cleaning; data modeling"
+    "text": "Quarto in Introductory Data Science\nFrom the perspective of …\n\n150 students with little to no statistics / data science / coding experience\nTeaching using the dsbox curricula (cite)\nStudents are expected to use R\nTopics include data visualization; data cleaning; data modeling"
   },
   {
     "objectID": "slides/jsmtalk_move.html#how-1",
     "href": "slides/jsmtalk_move.html#how-1",
     "title": "Teaching (with) Quarto",
     "section": "How",
-    "text": "How\nCommon Themes in the following demonstrations…\n– Teach quarto code side-by-side with the other coding languages\n– Make reproducibility an expectation\n– Lean into what Quarto has to offer\n\nInformative Syntax Completion\nVisual and Source Mode\nInformative Error Messages\nMore…"
+    "text": "How\nHigh level Suggestions\n– Teach quarto code side-by-side with the other coding languages\n– Make reproducibility an expectation\n– Lean into what Quarto has to offer\n\nInformative Syntax Completion\nVisual and Source Mode\nInformative Error Messages\nMore…"
   },
   {
     "objectID": "slides/jsmtalk_move.html#example",
@@ -5352,7 +5352,7 @@
     "href": "slides/jsmtalk_move.html#visual-tab",
     "title": "Teaching (with) Quarto",
     "section": "Visual Tab",
-    "text": "Visual Tab\n\n\n\n\n\n\n\nFigure 1: \n\n\nHighlight how coding can be more approachable in the visual tab\nGets students trained to think about and visualize professional documents throughout the process. Making this the expectation, and again not something additional"
+    "text": "Visual Tab\n\n\n\n\n\n\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\nFigure 2: Source (a) to Visual (b)"
   },
   {
     "objectID": "slides/jsmtalk_move.html#errors",
@@ -5373,7 +5373,7 @@
     "href": "slides/jsmtalk_move.html#if-you-dont-use-r",
     "title": "Teaching (with) Quarto",
     "section": "If you don’t use R",
-    "text": "If you don’t use R\nExtendability: Use with Python, and Julia, and Observable, and more"
+    "text": "If you don’t use R\nExtendability: Use with Python, Julia, and more"
   },
   {
     "objectID": "slides/jsmtalk_move.html#tips-for-starting-with-quarto",
@@ -5408,7 +5408,7 @@
     "href": "slides/jsmtalk_move.html#what-is-quarto",
     "title": "Teaching (with) Quarto",
     "section": "What is Quarto",
-    "text": "What is Quarto\n– Reproducibility tool\n– New generation R-markdown\n– results from your data analysis and written commentary into a reproducible document\n(Create figure instead of bullet points here)"
+    "text": "What is Quarto"
   },
   {
     "objectID": "slides/jsmtalk_move.html#the-connection",
@@ -5422,21 +5422,21 @@
     "href": "slides/jsmtalk_move.html#reproducibility-why-this-matter",
     "title": "Teaching (with) Quarto",
     "section": "Reproducibility: Why This Matter",
-    "text": "Reproducibility: Why This Matter\nCrisis: Lack of Trust in Science"
+    "text": "Reproducibility: Why This Matter\nCrisis: Lack of Trust in Science\n\n\nThus, Quarto isn’t something “extra” in a data science course…. it’s the foundation FOR it!"
   },
   {
     "objectID": "slides/jsmtalk_move.html#quarto-tour",
     "href": "slides/jsmtalk_move.html#quarto-tour",
     "title": "Teaching (with) Quarto",
     "section": "Quarto Tour",
-    "text": "Quarto Tour\nFirst things we teach…\n(Picture of qmd)\nHighlight YAML; Highlight Render; Where to put code; Where to put text"
+    "text": "Quarto Tour"
   },
   {
     "objectID": "slides/jsmtalk_move.html#example-ae",
     "href": "slides/jsmtalk_move.html#example-ae",
     "title": "Teaching (with) Quarto",
     "section": "Example AE",
-    "text": "Example AE\nLink to AE that shows off what is highlighted above\nHighlight the following:\nMinimal YAML Minimal chunk options Use well scaffolded Quarto documents Render early and often!"
+    "text": "Example AE\nIn class exercise to teach Quarto\n\nMinimal YAML\nMinimal chunk options\nUse well scaffolded Quarto documents\nRender early and often!"
   },
   {
     "objectID": "slides/jsmtalk_move.html#from-the-students-perspective",
@@ -5451,5 +5451,103 @@
     "title": "Teaching (with) Quarto",
     "section": "In Summary",
     "text": "In Summary\n– Reproducibility is not optional\n– And has a place in any introductory class with coding\n– Set the expectation\n– Start Minimal and build up!"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#what-is-data-science-2",
+    "href": "slides/jsmtalk_move.html#what-is-data-science-2",
+    "title": "Teaching (with) Quarto",
+    "section": "What Is Data Science",
+    "text": "What Is Data Science\n– National Science Foundation (2014)"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#what-is-data-science-3",
+    "href": "slides/jsmtalk_move.html#what-is-data-science-3",
+    "title": "Teaching (with) Quarto",
+    "section": "What Is Data Science",
+    "text": "What Is Data Science\n– National Science Foundation (2014)"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#what-is-data-science-4",
+    "href": "slides/jsmtalk_move.html#what-is-data-science-4",
+    "title": "Teaching (with) Quarto",
+    "section": "What Is Data Science",
+    "text": "What Is Data Science\n– National Science Foundation (2014)"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#what-is-data-science-5",
+    "href": "slides/jsmtalk_move.html#what-is-data-science-5",
+    "title": "Teaching (with) Quarto",
+    "section": "What Is Data Science",
+    "text": "What Is Data Science\n– National Science Foundation (2014)\n\nAn Intro Data Science course is setting the foundation for students to engage in the research process"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#what-is-quarto-1",
+    "href": "slides/jsmtalk_move.html#what-is-quarto-1",
+    "title": "Teaching (with) Quarto",
+    "section": "What is Quarto",
+    "text": "What is Quarto\n\n\n\n\n\n\n\n(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\nFigure 1: Code (a) to Document (b)"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#research-and-reprodicibility-the-connection",
+    "href": "slides/jsmtalk_move.html#research-and-reprodicibility-the-connection",
+    "title": "Teaching (with) Quarto",
+    "section": "Research and Reprodicibility: The Connection",
+    "text": "Research and Reprodicibility: The Connection\nhttps://www.ncbi.nlm.nih.gov/books/NBK547546/\nSince the growing use of computational workflows…\n– In the 1990s, Jon Claerbout launched the “reproducible research movement…\n– In the 2000s and 2010s, several high-profile journal and general media publications focused on concerns about reproducibility…"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#research-and-reprodicibility-the-connection-1",
+    "href": "slides/jsmtalk_move.html#research-and-reprodicibility-the-connection-1",
+    "title": "Teaching (with) Quarto",
+    "section": "Research and Reprodicibility: The Connection",
+    "text": "Research and Reprodicibility: The Connection\nReproducibility tool <==> Research Process\nQuarto <==> Data Science\n… serious errors in interpretation reported results"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#quarto-tour-1",
+    "href": "slides/jsmtalk_move.html#quarto-tour-1",
+    "title": "Teaching (with) Quarto",
+    "section": "Quarto Tour",
+    "text": "Quarto Tour"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#quarto-tour-2",
+    "href": "slides/jsmtalk_move.html#quarto-tour-2",
+    "title": "Teaching (with) Quarto",
+    "section": "Quarto Tour",
+    "text": "Quarto Tour"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#quarto-tour-3",
+    "href": "slides/jsmtalk_move.html#quarto-tour-3",
+    "title": "Teaching (with) Quarto",
+    "section": "Quarto Tour",
+    "text": "Quarto Tour"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#quarto-tour-4",
+    "href": "slides/jsmtalk_move.html#quarto-tour-4",
+    "title": "Teaching (with) Quarto",
+    "section": "Quarto Tour",
+    "text": "Quarto Tour"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#research-and-reprodicibility",
+    "href": "slides/jsmtalk_move.html#research-and-reprodicibility",
+    "title": "Teaching (with) Quarto",
+    "section": "Research and Reprodicibility",
+    "text": "Research and Reprodicibility\nSince the growing use of computational workflows…\n– In the 1990s, Jon Claerbout launched the “reproducible research movement\n– In the 2000s and 2010s, several high-profile journal and general media publications focused on concerns about reproducibility…"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#research-and-reprodicibility-1",
+    "href": "slides/jsmtalk_move.html#research-and-reprodicibility-1",
+    "title": "Teaching (with) Quarto",
+    "section": "Research and Reprodicibility",
+    "text": "Research and Reprodicibility\n– Reproducibility tool <==> Research Process\n\nQuarto <==> Data Science\n… serious errors in interpretation reported results"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#visual-tab-1",
+    "href": "slides/jsmtalk_move.html#visual-tab-1",
+    "title": "Teaching (with) Quarto",
+    "section": "Visual Tab",
+    "text": "Visual Tab\nHighlight how coding can be more approachable in the visual tab\nGets students trained to think about and visualize professional documents throughout the process. Making this the expectation, and again not something additional"
   }
 ]
