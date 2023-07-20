@@ -5549,5 +5549,12 @@
     "title": "Teaching (with) Quarto",
     "section": "Visual Tab",
     "text": "Visual Tab\nHighlight how coding can be more approachable in the visual tab\nGets students trained to think about and visualize professional documents throughout the process. Making this the expectation, and again not something additional"
+  },
+  {
+    "objectID": "slides/jsmtalk_move.html#outstanding-questions",
+    "href": "slides/jsmtalk_move.html#outstanding-questions",
+    "title": "Teaching (with) Quarto",
+    "section": "Outstanding Questions",
+    "text": "Outstanding Questions\n– More about YAML\n– More about Errors\n– What am I missing?\n\n\n\n🔗 sta199-summer-1.github.io"
   }
 ]
